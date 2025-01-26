@@ -1,0 +1,9153 @@
+; benchmark generated from Z3 python API
+(set-info :status unknown)
+(declare-fun priority_d2_20 () Real)
+(declare-fun tpriority_d2_21 () Bool)
+(declare-fun clear_d2_l4_20 () Bool)
+(declare-fun clear_d2_l3_20 () Bool)
+(declare-fun clear_d2_l2_20 () Bool)
+(declare-fun clear_d2_l1_20 () Bool)
+(declare-fun tclear_d2_l4_21 () Bool)
+(declare-fun tclear_d2_l1_21 () Bool)
+(declare-fun tclear_d2_l3_21 () Bool)
+(declare-fun tclear_d2_l2_21 () Bool)
+(declare-fun priority_d1_20 () Real)
+(declare-fun tpriority_d1_21 () Bool)
+(declare-fun factor_20 () Real)
+(declare-fun tfactor_21 () Bool)
+(declare-fun clear_d1_l2_20 () Bool)
+(declare-fun clear_d1_l4_20 () Bool)
+(declare-fun clear_d1_l3_20 () Bool)
+(declare-fun clear_d1_l1_20 () Bool)
+(declare-fun tclear_d1_l4_21 () Bool)
+(declare-fun tclear_d1_l2_21 () Bool)
+(declare-fun tclear_d1_l1_21 () Bool)
+(declare-fun tclear_d1_l3_21 () Bool)
+(declare-fun |(authorize_d2_l1 )_19| () Bool)
+(declare-fun |(authorize_all_d1 )_19| () Bool)
+(declare-fun |(authorize_d1_l1 )_19| () Bool)
+(declare-fun |(decrease_factor )_19| () Bool)
+(declare-fun |(authorize_all_d2 )_19| () Bool)
+(declare-fun |(authorize_d2_l4 )_19| () Bool)
+(declare-fun |(authorize_d1_l2 )_19| () Bool)
+(declare-fun |(increase_priority_d1 )_19| () Bool)
+(declare-fun |(authorize_d2_l3 )_19| () Bool)
+(declare-fun |(authorize_d1_l3 )_19| () Bool)
+(declare-fun |(authorize_d1_l4 )_19| () Bool)
+(declare-fun |(increase_priority_d2 )_19| () Bool)
+(declare-fun |(authorize_d2_l2 )_19| () Bool)
+(declare-fun |(increase_factor )_19| () Bool)
+(declare-fun |(authorize_d2_l1 )_18| () Bool)
+(declare-fun |(authorize_all_d1 )_18| () Bool)
+(declare-fun |(authorize_d1_l1 )_18| () Bool)
+(declare-fun |(decrease_factor )_18| () Bool)
+(declare-fun |(authorize_all_d2 )_18| () Bool)
+(declare-fun |(authorize_d2_l4 )_18| () Bool)
+(declare-fun |(authorize_d1_l2 )_18| () Bool)
+(declare-fun |(increase_priority_d1 )_18| () Bool)
+(declare-fun |(authorize_d2_l3 )_18| () Bool)
+(declare-fun |(authorize_d1_l3 )_18| () Bool)
+(declare-fun |(authorize_d1_l4 )_18| () Bool)
+(declare-fun |(increase_priority_d2 )_18| () Bool)
+(declare-fun |(authorize_d2_l2 )_18| () Bool)
+(declare-fun |(increase_factor )_18| () Bool)
+(declare-fun |(authorize_d2_l1 )_17| () Bool)
+(declare-fun |(authorize_all_d1 )_17| () Bool)
+(declare-fun |(authorize_d1_l1 )_17| () Bool)
+(declare-fun |(decrease_factor )_17| () Bool)
+(declare-fun |(authorize_all_d2 )_17| () Bool)
+(declare-fun |(authorize_d2_l4 )_17| () Bool)
+(declare-fun |(authorize_d1_l2 )_17| () Bool)
+(declare-fun |(increase_priority_d1 )_17| () Bool)
+(declare-fun |(authorize_d2_l3 )_17| () Bool)
+(declare-fun |(authorize_d1_l3 )_17| () Bool)
+(declare-fun |(authorize_d1_l4 )_17| () Bool)
+(declare-fun |(increase_priority_d2 )_17| () Bool)
+(declare-fun |(authorize_d2_l2 )_17| () Bool)
+(declare-fun |(increase_factor )_17| () Bool)
+(declare-fun |(authorize_d2_l1 )_16| () Bool)
+(declare-fun |(authorize_all_d1 )_16| () Bool)
+(declare-fun |(authorize_d1_l1 )_16| () Bool)
+(declare-fun |(decrease_factor )_16| () Bool)
+(declare-fun |(authorize_all_d2 )_16| () Bool)
+(declare-fun |(authorize_d2_l4 )_16| () Bool)
+(declare-fun |(authorize_d1_l2 )_16| () Bool)
+(declare-fun |(increase_priority_d1 )_16| () Bool)
+(declare-fun |(authorize_d2_l3 )_16| () Bool)
+(declare-fun |(authorize_d1_l3 )_16| () Bool)
+(declare-fun |(authorize_d1_l4 )_16| () Bool)
+(declare-fun |(increase_priority_d2 )_16| () Bool)
+(declare-fun |(authorize_d2_l2 )_16| () Bool)
+(declare-fun |(increase_factor )_16| () Bool)
+(declare-fun |(authorize_d2_l1 )_15| () Bool)
+(declare-fun |(authorize_all_d1 )_15| () Bool)
+(declare-fun |(authorize_d1_l1 )_15| () Bool)
+(declare-fun |(decrease_factor )_15| () Bool)
+(declare-fun |(authorize_all_d2 )_15| () Bool)
+(declare-fun |(authorize_d2_l4 )_15| () Bool)
+(declare-fun |(authorize_d1_l2 )_15| () Bool)
+(declare-fun |(increase_priority_d1 )_15| () Bool)
+(declare-fun |(authorize_d2_l3 )_15| () Bool)
+(declare-fun |(authorize_d1_l3 )_15| () Bool)
+(declare-fun |(authorize_d1_l4 )_15| () Bool)
+(declare-fun |(increase_priority_d2 )_15| () Bool)
+(declare-fun |(authorize_d2_l2 )_15| () Bool)
+(declare-fun |(increase_factor )_15| () Bool)
+(declare-fun |(authorize_d2_l1 )_14| () Bool)
+(declare-fun |(authorize_all_d1 )_14| () Bool)
+(declare-fun |(authorize_d1_l1 )_14| () Bool)
+(declare-fun |(decrease_factor )_14| () Bool)
+(declare-fun |(authorize_all_d2 )_14| () Bool)
+(declare-fun |(authorize_d2_l4 )_14| () Bool)
+(declare-fun |(authorize_d1_l2 )_14| () Bool)
+(declare-fun |(increase_priority_d1 )_14| () Bool)
+(declare-fun |(authorize_d2_l3 )_14| () Bool)
+(declare-fun |(authorize_d1_l3 )_14| () Bool)
+(declare-fun |(authorize_d1_l4 )_14| () Bool)
+(declare-fun |(increase_priority_d2 )_14| () Bool)
+(declare-fun |(authorize_d2_l2 )_14| () Bool)
+(declare-fun |(increase_factor )_14| () Bool)
+(declare-fun |(authorize_d2_l1 )_13| () Bool)
+(declare-fun |(authorize_all_d1 )_13| () Bool)
+(declare-fun |(authorize_d1_l1 )_13| () Bool)
+(declare-fun |(decrease_factor )_13| () Bool)
+(declare-fun |(authorize_all_d2 )_13| () Bool)
+(declare-fun |(authorize_d2_l4 )_13| () Bool)
+(declare-fun |(authorize_d1_l2 )_13| () Bool)
+(declare-fun |(increase_priority_d1 )_13| () Bool)
+(declare-fun |(authorize_d2_l3 )_13| () Bool)
+(declare-fun |(authorize_d1_l3 )_13| () Bool)
+(declare-fun |(authorize_d1_l4 )_13| () Bool)
+(declare-fun |(increase_priority_d2 )_13| () Bool)
+(declare-fun |(authorize_d2_l2 )_13| () Bool)
+(declare-fun |(increase_factor )_13| () Bool)
+(declare-fun |(authorize_d2_l1 )_12| () Bool)
+(declare-fun |(authorize_all_d1 )_12| () Bool)
+(declare-fun |(authorize_d1_l1 )_12| () Bool)
+(declare-fun |(decrease_factor )_12| () Bool)
+(declare-fun |(authorize_all_d2 )_12| () Bool)
+(declare-fun |(authorize_d2_l4 )_12| () Bool)
+(declare-fun |(authorize_d1_l2 )_12| () Bool)
+(declare-fun |(increase_priority_d1 )_12| () Bool)
+(declare-fun |(authorize_d2_l3 )_12| () Bool)
+(declare-fun |(authorize_d1_l3 )_12| () Bool)
+(declare-fun |(authorize_d1_l4 )_12| () Bool)
+(declare-fun |(increase_priority_d2 )_12| () Bool)
+(declare-fun |(authorize_d2_l2 )_12| () Bool)
+(declare-fun |(increase_factor )_12| () Bool)
+(declare-fun |(authorize_d2_l1 )_11| () Bool)
+(declare-fun |(authorize_all_d1 )_11| () Bool)
+(declare-fun |(authorize_d1_l1 )_11| () Bool)
+(declare-fun |(decrease_factor )_11| () Bool)
+(declare-fun |(authorize_all_d2 )_11| () Bool)
+(declare-fun |(authorize_d2_l4 )_11| () Bool)
+(declare-fun |(authorize_d1_l2 )_11| () Bool)
+(declare-fun |(increase_priority_d1 )_11| () Bool)
+(declare-fun |(authorize_d2_l3 )_11| () Bool)
+(declare-fun |(authorize_d1_l3 )_11| () Bool)
+(declare-fun |(authorize_d1_l4 )_11| () Bool)
+(declare-fun |(increase_priority_d2 )_11| () Bool)
+(declare-fun |(authorize_d2_l2 )_11| () Bool)
+(declare-fun |(increase_factor )_11| () Bool)
+(declare-fun |(authorize_d2_l1 )_10| () Bool)
+(declare-fun |(authorize_all_d1 )_10| () Bool)
+(declare-fun |(authorize_d1_l1 )_10| () Bool)
+(declare-fun |(decrease_factor )_10| () Bool)
+(declare-fun |(authorize_all_d2 )_10| () Bool)
+(declare-fun |(authorize_d2_l4 )_10| () Bool)
+(declare-fun |(authorize_d1_l2 )_10| () Bool)
+(declare-fun |(increase_priority_d1 )_10| () Bool)
+(declare-fun |(authorize_d2_l3 )_10| () Bool)
+(declare-fun |(authorize_d1_l3 )_10| () Bool)
+(declare-fun |(authorize_d1_l4 )_10| () Bool)
+(declare-fun |(increase_priority_d2 )_10| () Bool)
+(declare-fun |(authorize_d2_l2 )_10| () Bool)
+(declare-fun |(increase_factor )_10| () Bool)
+(declare-fun |(authorize_d2_l1 )_9| () Bool)
+(declare-fun |(authorize_all_d1 )_9| () Bool)
+(declare-fun |(authorize_d1_l1 )_9| () Bool)
+(declare-fun |(decrease_factor )_9| () Bool)
+(declare-fun |(authorize_all_d2 )_9| () Bool)
+(declare-fun |(authorize_d2_l4 )_9| () Bool)
+(declare-fun |(authorize_d1_l2 )_9| () Bool)
+(declare-fun |(increase_priority_d1 )_9| () Bool)
+(declare-fun |(authorize_d2_l3 )_9| () Bool)
+(declare-fun |(authorize_d1_l3 )_9| () Bool)
+(declare-fun |(authorize_d1_l4 )_9| () Bool)
+(declare-fun |(increase_priority_d2 )_9| () Bool)
+(declare-fun |(authorize_d2_l2 )_9| () Bool)
+(declare-fun |(increase_factor )_9| () Bool)
+(declare-fun |(authorize_d2_l1 )_8| () Bool)
+(declare-fun |(authorize_all_d1 )_8| () Bool)
+(declare-fun |(authorize_d1_l1 )_8| () Bool)
+(declare-fun |(decrease_factor )_8| () Bool)
+(declare-fun |(authorize_all_d2 )_8| () Bool)
+(declare-fun |(authorize_d2_l4 )_8| () Bool)
+(declare-fun |(authorize_d1_l2 )_8| () Bool)
+(declare-fun |(increase_priority_d1 )_8| () Bool)
+(declare-fun |(authorize_d2_l3 )_8| () Bool)
+(declare-fun |(authorize_d1_l3 )_8| () Bool)
+(declare-fun |(authorize_d1_l4 )_8| () Bool)
+(declare-fun |(increase_priority_d2 )_8| () Bool)
+(declare-fun |(authorize_d2_l2 )_8| () Bool)
+(declare-fun |(increase_factor )_8| () Bool)
+(declare-fun |(authorize_d2_l1 )_7| () Bool)
+(declare-fun |(authorize_all_d1 )_7| () Bool)
+(declare-fun |(authorize_d1_l1 )_7| () Bool)
+(declare-fun |(decrease_factor )_7| () Bool)
+(declare-fun |(authorize_all_d2 )_7| () Bool)
+(declare-fun |(authorize_d2_l4 )_7| () Bool)
+(declare-fun |(authorize_d1_l2 )_7| () Bool)
+(declare-fun |(increase_priority_d1 )_7| () Bool)
+(declare-fun |(authorize_d2_l3 )_7| () Bool)
+(declare-fun |(authorize_d1_l3 )_7| () Bool)
+(declare-fun |(authorize_d1_l4 )_7| () Bool)
+(declare-fun |(increase_priority_d2 )_7| () Bool)
+(declare-fun |(authorize_d2_l2 )_7| () Bool)
+(declare-fun |(increase_factor )_7| () Bool)
+(declare-fun |(authorize_d2_l1 )_6| () Bool)
+(declare-fun |(authorize_all_d1 )_6| () Bool)
+(declare-fun |(authorize_d1_l1 )_6| () Bool)
+(declare-fun |(decrease_factor )_6| () Bool)
+(declare-fun |(authorize_all_d2 )_6| () Bool)
+(declare-fun |(authorize_d2_l4 )_6| () Bool)
+(declare-fun |(authorize_d1_l2 )_6| () Bool)
+(declare-fun |(increase_priority_d1 )_6| () Bool)
+(declare-fun |(authorize_d2_l3 )_6| () Bool)
+(declare-fun |(authorize_d1_l3 )_6| () Bool)
+(declare-fun |(authorize_d1_l4 )_6| () Bool)
+(declare-fun |(increase_priority_d2 )_6| () Bool)
+(declare-fun |(authorize_d2_l2 )_6| () Bool)
+(declare-fun |(increase_factor )_6| () Bool)
+(declare-fun |(authorize_d2_l1 )_5| () Bool)
+(declare-fun |(authorize_all_d1 )_5| () Bool)
+(declare-fun |(authorize_d1_l1 )_5| () Bool)
+(declare-fun |(decrease_factor )_5| () Bool)
+(declare-fun |(authorize_all_d2 )_5| () Bool)
+(declare-fun |(authorize_d2_l4 )_5| () Bool)
+(declare-fun |(authorize_d1_l2 )_5| () Bool)
+(declare-fun |(increase_priority_d1 )_5| () Bool)
+(declare-fun |(authorize_d2_l3 )_5| () Bool)
+(declare-fun |(authorize_d1_l3 )_5| () Bool)
+(declare-fun |(authorize_d1_l4 )_5| () Bool)
+(declare-fun |(increase_priority_d2 )_5| () Bool)
+(declare-fun |(authorize_d2_l2 )_5| () Bool)
+(declare-fun |(increase_factor )_5| () Bool)
+(declare-fun |(authorize_d2_l1 )_4| () Bool)
+(declare-fun |(authorize_all_d1 )_4| () Bool)
+(declare-fun |(authorize_d1_l1 )_4| () Bool)
+(declare-fun |(decrease_factor )_4| () Bool)
+(declare-fun |(authorize_all_d2 )_4| () Bool)
+(declare-fun |(authorize_d2_l4 )_4| () Bool)
+(declare-fun |(authorize_d1_l2 )_4| () Bool)
+(declare-fun |(increase_priority_d1 )_4| () Bool)
+(declare-fun |(authorize_d2_l3 )_4| () Bool)
+(declare-fun |(authorize_d1_l3 )_4| () Bool)
+(declare-fun |(authorize_d1_l4 )_4| () Bool)
+(declare-fun |(increase_priority_d2 )_4| () Bool)
+(declare-fun |(authorize_d2_l2 )_4| () Bool)
+(declare-fun |(increase_factor )_4| () Bool)
+(declare-fun |(authorize_d2_l1 )_3| () Bool)
+(declare-fun |(authorize_all_d1 )_3| () Bool)
+(declare-fun |(authorize_d1_l1 )_3| () Bool)
+(declare-fun |(decrease_factor )_3| () Bool)
+(declare-fun |(authorize_all_d2 )_3| () Bool)
+(declare-fun |(authorize_d2_l4 )_3| () Bool)
+(declare-fun |(authorize_d1_l2 )_3| () Bool)
+(declare-fun |(increase_priority_d1 )_3| () Bool)
+(declare-fun |(authorize_d2_l3 )_3| () Bool)
+(declare-fun |(authorize_d1_l3 )_3| () Bool)
+(declare-fun |(authorize_d1_l4 )_3| () Bool)
+(declare-fun |(increase_priority_d2 )_3| () Bool)
+(declare-fun |(authorize_d2_l2 )_3| () Bool)
+(declare-fun |(increase_factor )_3| () Bool)
+(declare-fun |(authorize_d2_l1 )_2| () Bool)
+(declare-fun |(authorize_all_d1 )_2| () Bool)
+(declare-fun |(authorize_d1_l1 )_2| () Bool)
+(declare-fun |(decrease_factor )_2| () Bool)
+(declare-fun |(authorize_all_d2 )_2| () Bool)
+(declare-fun |(authorize_d2_l4 )_2| () Bool)
+(declare-fun |(authorize_d1_l2 )_2| () Bool)
+(declare-fun |(increase_priority_d1 )_2| () Bool)
+(declare-fun |(authorize_d2_l3 )_2| () Bool)
+(declare-fun |(authorize_d1_l3 )_2| () Bool)
+(declare-fun |(authorize_d1_l4 )_2| () Bool)
+(declare-fun |(increase_priority_d2 )_2| () Bool)
+(declare-fun |(authorize_d2_l2 )_2| () Bool)
+(declare-fun |(increase_factor )_2| () Bool)
+(declare-fun |(authorize_d2_l1 )_1| () Bool)
+(declare-fun |(authorize_all_d1 )_1| () Bool)
+(declare-fun |(authorize_d1_l1 )_1| () Bool)
+(declare-fun |(decrease_factor )_1| () Bool)
+(declare-fun |(authorize_all_d2 )_1| () Bool)
+(declare-fun |(authorize_d2_l4 )_1| () Bool)
+(declare-fun |(authorize_d1_l2 )_1| () Bool)
+(declare-fun |(increase_priority_d1 )_1| () Bool)
+(declare-fun |(authorize_d2_l3 )_1| () Bool)
+(declare-fun |(authorize_d1_l3 )_1| () Bool)
+(declare-fun |(authorize_d1_l4 )_1| () Bool)
+(declare-fun |(increase_priority_d2 )_1| () Bool)
+(declare-fun |(authorize_d2_l2 )_1| () Bool)
+(declare-fun |(increase_factor )_1| () Bool)
+(declare-fun |(authorize_d2_l1 )_0| () Bool)
+(declare-fun |(authorize_all_d1 )_0| () Bool)
+(declare-fun |(authorize_d1_l1 )_0| () Bool)
+(declare-fun |(decrease_factor )_0| () Bool)
+(declare-fun |(authorize_all_d2 )_0| () Bool)
+(declare-fun |(authorize_d2_l4 )_0| () Bool)
+(declare-fun |(authorize_d1_l2 )_0| () Bool)
+(declare-fun |(increase_priority_d1 )_0| () Bool)
+(declare-fun |(authorize_d2_l3 )_0| () Bool)
+(declare-fun |(authorize_d1_l3 )_0| () Bool)
+(declare-fun |(authorize_d1_l4 )_0| () Bool)
+(declare-fun |(increase_priority_d2 )_0| () Bool)
+(declare-fun |(authorize_d2_l2 )_0| () Bool)
+(declare-fun |(increase_factor )_0| () Bool)
+(declare-fun |(authorize_d2_l1 )_20| () Bool)
+(declare-fun |(authorize_all_d1 )_20| () Bool)
+(declare-fun |(authorize_d1_l1 )_20| () Bool)
+(declare-fun |(decrease_factor )_20| () Bool)
+(declare-fun |(authorize_all_d2 )_20| () Bool)
+(declare-fun |(authorize_d2_l4 )_20| () Bool)
+(declare-fun |(authorize_d1_l2 )_20| () Bool)
+(declare-fun |(increase_priority_d1 )_20| () Bool)
+(declare-fun |(authorize_d2_l3 )_20| () Bool)
+(declare-fun |(authorize_d1_l3 )_20| () Bool)
+(declare-fun |(authorize_d1_l4 )_20| () Bool)
+(declare-fun |(increase_priority_d2 )_20| () Bool)
+(declare-fun |(authorize_d2_l2 )_20| () Bool)
+(declare-fun |(increase_factor )_20| () Bool)
+(declare-fun |(authorize_d2_l1 )_21| () Bool)
+(declare-fun |(authorize_all_d1 )_21| () Bool)
+(declare-fun |(authorize_d1_l1 )_21| () Bool)
+(declare-fun |(decrease_factor )_21| () Bool)
+(declare-fun |(authorize_all_d2 )_21| () Bool)
+(declare-fun |(authorize_d2_l4 )_21| () Bool)
+(declare-fun |(authorize_d1_l2 )_21| () Bool)
+(declare-fun |(increase_priority_d1 )_21| () Bool)
+(declare-fun |(authorize_d2_l3 )_21| () Bool)
+(declare-fun |(authorize_d1_l3 )_21| () Bool)
+(declare-fun |(authorize_d1_l4 )_21| () Bool)
+(declare-fun |(increase_priority_d2 )_21| () Bool)
+(declare-fun |(authorize_d2_l2 )_21| () Bool)
+(declare-fun |(increase_factor )_21| () Bool)
+(declare-fun clear_d1_l1_0 () Bool)
+(declare-fun clear_d1_l2_0 () Bool)
+(declare-fun clear_d1_l3_0 () Bool)
+(declare-fun clear_d1_l4_0 () Bool)
+(declare-fun clear_d2_l1_0 () Bool)
+(declare-fun clear_d2_l2_0 () Bool)
+(declare-fun clear_d2_l3_0 () Bool)
+(declare-fun clear_d2_l4_0 () Bool)
+(declare-fun priority_d1_0 () Real)
+(declare-fun priority_d2_0 () Real)
+(declare-fun factor_0 () Real)
+(declare-fun clear_d1_l1_1 () Bool)
+(declare-fun clear_d1_l2_1 () Bool)
+(declare-fun clear_d1_l3_1 () Bool)
+(declare-fun clear_d1_l4_1 () Bool)
+(declare-fun clear_d2_l1_1 () Bool)
+(declare-fun clear_d2_l2_1 () Bool)
+(declare-fun clear_d2_l3_1 () Bool)
+(declare-fun clear_d2_l4_1 () Bool)
+(declare-fun priority_d1_1 () Real)
+(declare-fun priority_d2_1 () Real)
+(declare-fun factor_1 () Real)
+(declare-fun clear_d1_l1_2 () Bool)
+(declare-fun clear_d1_l2_2 () Bool)
+(declare-fun clear_d1_l3_2 () Bool)
+(declare-fun clear_d1_l4_2 () Bool)
+(declare-fun clear_d2_l1_2 () Bool)
+(declare-fun clear_d2_l2_2 () Bool)
+(declare-fun clear_d2_l3_2 () Bool)
+(declare-fun clear_d2_l4_2 () Bool)
+(declare-fun priority_d1_2 () Real)
+(declare-fun priority_d2_2 () Real)
+(declare-fun factor_2 () Real)
+(declare-fun clear_d1_l1_3 () Bool)
+(declare-fun clear_d1_l2_3 () Bool)
+(declare-fun clear_d1_l3_3 () Bool)
+(declare-fun clear_d1_l4_3 () Bool)
+(declare-fun clear_d2_l1_3 () Bool)
+(declare-fun clear_d2_l2_3 () Bool)
+(declare-fun clear_d2_l3_3 () Bool)
+(declare-fun clear_d2_l4_3 () Bool)
+(declare-fun priority_d1_3 () Real)
+(declare-fun priority_d2_3 () Real)
+(declare-fun factor_3 () Real)
+(declare-fun clear_d1_l1_4 () Bool)
+(declare-fun clear_d1_l2_4 () Bool)
+(declare-fun clear_d1_l3_4 () Bool)
+(declare-fun clear_d1_l4_4 () Bool)
+(declare-fun clear_d2_l1_4 () Bool)
+(declare-fun clear_d2_l2_4 () Bool)
+(declare-fun clear_d2_l3_4 () Bool)
+(declare-fun clear_d2_l4_4 () Bool)
+(declare-fun priority_d1_4 () Real)
+(declare-fun priority_d2_4 () Real)
+(declare-fun factor_4 () Real)
+(declare-fun clear_d1_l1_5 () Bool)
+(declare-fun clear_d1_l2_5 () Bool)
+(declare-fun clear_d1_l3_5 () Bool)
+(declare-fun clear_d1_l4_5 () Bool)
+(declare-fun clear_d2_l1_5 () Bool)
+(declare-fun clear_d2_l2_5 () Bool)
+(declare-fun clear_d2_l3_5 () Bool)
+(declare-fun clear_d2_l4_5 () Bool)
+(declare-fun priority_d1_5 () Real)
+(declare-fun priority_d2_5 () Real)
+(declare-fun factor_5 () Real)
+(declare-fun clear_d1_l1_6 () Bool)
+(declare-fun clear_d1_l2_6 () Bool)
+(declare-fun clear_d1_l3_6 () Bool)
+(declare-fun clear_d1_l4_6 () Bool)
+(declare-fun clear_d2_l1_6 () Bool)
+(declare-fun clear_d2_l2_6 () Bool)
+(declare-fun clear_d2_l3_6 () Bool)
+(declare-fun clear_d2_l4_6 () Bool)
+(declare-fun priority_d1_6 () Real)
+(declare-fun priority_d2_6 () Real)
+(declare-fun factor_6 () Real)
+(declare-fun clear_d1_l1_7 () Bool)
+(declare-fun clear_d1_l2_7 () Bool)
+(declare-fun clear_d1_l3_7 () Bool)
+(declare-fun clear_d1_l4_7 () Bool)
+(declare-fun clear_d2_l1_7 () Bool)
+(declare-fun clear_d2_l2_7 () Bool)
+(declare-fun clear_d2_l3_7 () Bool)
+(declare-fun clear_d2_l4_7 () Bool)
+(declare-fun priority_d1_7 () Real)
+(declare-fun priority_d2_7 () Real)
+(declare-fun factor_7 () Real)
+(declare-fun clear_d1_l1_8 () Bool)
+(declare-fun clear_d1_l2_8 () Bool)
+(declare-fun clear_d1_l3_8 () Bool)
+(declare-fun clear_d1_l4_8 () Bool)
+(declare-fun clear_d2_l1_8 () Bool)
+(declare-fun clear_d2_l2_8 () Bool)
+(declare-fun clear_d2_l3_8 () Bool)
+(declare-fun clear_d2_l4_8 () Bool)
+(declare-fun priority_d1_8 () Real)
+(declare-fun priority_d2_8 () Real)
+(declare-fun factor_8 () Real)
+(declare-fun clear_d1_l1_9 () Bool)
+(declare-fun clear_d1_l2_9 () Bool)
+(declare-fun clear_d1_l3_9 () Bool)
+(declare-fun clear_d1_l4_9 () Bool)
+(declare-fun clear_d2_l1_9 () Bool)
+(declare-fun clear_d2_l2_9 () Bool)
+(declare-fun clear_d2_l3_9 () Bool)
+(declare-fun clear_d2_l4_9 () Bool)
+(declare-fun priority_d1_9 () Real)
+(declare-fun priority_d2_9 () Real)
+(declare-fun factor_9 () Real)
+(declare-fun clear_d1_l1_10 () Bool)
+(declare-fun clear_d1_l2_10 () Bool)
+(declare-fun clear_d1_l3_10 () Bool)
+(declare-fun clear_d1_l4_10 () Bool)
+(declare-fun clear_d2_l1_10 () Bool)
+(declare-fun clear_d2_l2_10 () Bool)
+(declare-fun clear_d2_l3_10 () Bool)
+(declare-fun clear_d2_l4_10 () Bool)
+(declare-fun priority_d1_10 () Real)
+(declare-fun priority_d2_10 () Real)
+(declare-fun factor_10 () Real)
+(declare-fun clear_d1_l1_11 () Bool)
+(declare-fun clear_d1_l2_11 () Bool)
+(declare-fun clear_d1_l3_11 () Bool)
+(declare-fun clear_d1_l4_11 () Bool)
+(declare-fun clear_d2_l1_11 () Bool)
+(declare-fun clear_d2_l2_11 () Bool)
+(declare-fun clear_d2_l3_11 () Bool)
+(declare-fun clear_d2_l4_11 () Bool)
+(declare-fun priority_d1_11 () Real)
+(declare-fun priority_d2_11 () Real)
+(declare-fun factor_11 () Real)
+(declare-fun clear_d1_l1_12 () Bool)
+(declare-fun clear_d1_l2_12 () Bool)
+(declare-fun clear_d1_l3_12 () Bool)
+(declare-fun clear_d1_l4_12 () Bool)
+(declare-fun clear_d2_l1_12 () Bool)
+(declare-fun clear_d2_l2_12 () Bool)
+(declare-fun clear_d2_l3_12 () Bool)
+(declare-fun clear_d2_l4_12 () Bool)
+(declare-fun priority_d1_12 () Real)
+(declare-fun priority_d2_12 () Real)
+(declare-fun factor_12 () Real)
+(declare-fun clear_d1_l1_13 () Bool)
+(declare-fun clear_d1_l2_13 () Bool)
+(declare-fun clear_d1_l3_13 () Bool)
+(declare-fun clear_d1_l4_13 () Bool)
+(declare-fun clear_d2_l1_13 () Bool)
+(declare-fun clear_d2_l2_13 () Bool)
+(declare-fun clear_d2_l3_13 () Bool)
+(declare-fun clear_d2_l4_13 () Bool)
+(declare-fun priority_d1_13 () Real)
+(declare-fun priority_d2_13 () Real)
+(declare-fun factor_13 () Real)
+(declare-fun clear_d1_l1_14 () Bool)
+(declare-fun clear_d1_l2_14 () Bool)
+(declare-fun clear_d1_l3_14 () Bool)
+(declare-fun clear_d1_l4_14 () Bool)
+(declare-fun clear_d2_l1_14 () Bool)
+(declare-fun clear_d2_l2_14 () Bool)
+(declare-fun clear_d2_l3_14 () Bool)
+(declare-fun clear_d2_l4_14 () Bool)
+(declare-fun priority_d1_14 () Real)
+(declare-fun priority_d2_14 () Real)
+(declare-fun factor_14 () Real)
+(declare-fun clear_d1_l1_15 () Bool)
+(declare-fun clear_d1_l2_15 () Bool)
+(declare-fun clear_d1_l3_15 () Bool)
+(declare-fun clear_d1_l4_15 () Bool)
+(declare-fun clear_d2_l1_15 () Bool)
+(declare-fun clear_d2_l2_15 () Bool)
+(declare-fun clear_d2_l3_15 () Bool)
+(declare-fun clear_d2_l4_15 () Bool)
+(declare-fun priority_d1_15 () Real)
+(declare-fun priority_d2_15 () Real)
+(declare-fun factor_15 () Real)
+(declare-fun clear_d1_l1_16 () Bool)
+(declare-fun clear_d1_l2_16 () Bool)
+(declare-fun clear_d1_l3_16 () Bool)
+(declare-fun clear_d1_l4_16 () Bool)
+(declare-fun clear_d2_l1_16 () Bool)
+(declare-fun clear_d2_l2_16 () Bool)
+(declare-fun clear_d2_l3_16 () Bool)
+(declare-fun clear_d2_l4_16 () Bool)
+(declare-fun priority_d1_16 () Real)
+(declare-fun priority_d2_16 () Real)
+(declare-fun factor_16 () Real)
+(declare-fun clear_d1_l1_17 () Bool)
+(declare-fun clear_d1_l2_17 () Bool)
+(declare-fun clear_d1_l3_17 () Bool)
+(declare-fun clear_d1_l4_17 () Bool)
+(declare-fun clear_d2_l1_17 () Bool)
+(declare-fun clear_d2_l2_17 () Bool)
+(declare-fun clear_d2_l3_17 () Bool)
+(declare-fun clear_d2_l4_17 () Bool)
+(declare-fun priority_d1_17 () Real)
+(declare-fun priority_d2_17 () Real)
+(declare-fun factor_17 () Real)
+(declare-fun clear_d1_l1_18 () Bool)
+(declare-fun clear_d1_l2_18 () Bool)
+(declare-fun clear_d1_l3_18 () Bool)
+(declare-fun clear_d1_l4_18 () Bool)
+(declare-fun clear_d2_l1_18 () Bool)
+(declare-fun clear_d2_l2_18 () Bool)
+(declare-fun clear_d2_l3_18 () Bool)
+(declare-fun clear_d2_l4_18 () Bool)
+(declare-fun priority_d1_18 () Real)
+(declare-fun priority_d2_18 () Real)
+(declare-fun factor_18 () Real)
+(declare-fun clear_d1_l1_19 () Bool)
+(declare-fun clear_d1_l2_19 () Bool)
+(declare-fun clear_d1_l3_19 () Bool)
+(declare-fun clear_d1_l4_19 () Bool)
+(declare-fun clear_d2_l1_19 () Bool)
+(declare-fun clear_d2_l2_19 () Bool)
+(declare-fun clear_d2_l3_19 () Bool)
+(declare-fun clear_d2_l4_19 () Bool)
+(declare-fun priority_d1_19 () Real)
+(declare-fun priority_d2_19 () Real)
+(declare-fun factor_19 () Real)
+(declare-fun cost_d2_0 () Real)
+(declare-fun cost_d2_1 () Real)
+(declare-fun cost_d1_0 () Real)
+(declare-fun cost_d1_1 () Real)
+(declare-fun cost_d2_2 () Real)
+(declare-fun cost_d1_2 () Real)
+(declare-fun cost_d2_3 () Real)
+(declare-fun cost_d1_3 () Real)
+(declare-fun cost_d2_4 () Real)
+(declare-fun cost_d1_4 () Real)
+(declare-fun cost_d2_5 () Real)
+(declare-fun cost_d1_5 () Real)
+(declare-fun cost_d2_6 () Real)
+(declare-fun cost_d1_6 () Real)
+(declare-fun cost_d2_7 () Real)
+(declare-fun cost_d1_7 () Real)
+(declare-fun cost_d2_8 () Real)
+(declare-fun cost_d1_8 () Real)
+(declare-fun cost_d2_9 () Real)
+(declare-fun cost_d1_9 () Real)
+(declare-fun cost_d2_10 () Real)
+(declare-fun cost_d1_10 () Real)
+(declare-fun cost_d2_11 () Real)
+(declare-fun cost_d1_11 () Real)
+(declare-fun cost_d2_12 () Real)
+(declare-fun cost_d1_12 () Real)
+(declare-fun cost_d2_13 () Real)
+(declare-fun cost_d1_13 () Real)
+(declare-fun cost_d2_14 () Real)
+(declare-fun cost_d1_14 () Real)
+(declare-fun cost_d2_15 () Real)
+(declare-fun cost_d1_15 () Real)
+(declare-fun cost_d2_16 () Real)
+(declare-fun cost_d1_16 () Real)
+(declare-fun cost_d2_17 () Real)
+(declare-fun cost_d1_17 () Real)
+(declare-fun cost_d2_18 () Real)
+(declare-fun cost_d1_18 () Real)
+(declare-fun cost_d2_19 () Real)
+(declare-fun cost_d1_19 () Real)
+(declare-fun cost_d2_20 () Real)
+(declare-fun cost_d1_20 () Real)
+(declare-fun |__fv_(authorize_d2_l1 )_cost_21| () Real)
+(declare-fun |__fv_(authorize_all_d1 )_cost_21| () Real)
+(declare-fun |__fv_(authorize_d1_l1 )_cost_21| () Real)
+(declare-fun |__fv_(decrease_factor )_cost_21| () Real)
+(declare-fun |__fv_(authorize_all_d2 )_cost_21| () Real)
+(declare-fun |__fv_(authorize_d2_l4 )_cost_21| () Real)
+(declare-fun |__fv_(authorize_d1_l2 )_cost_21| () Real)
+(declare-fun |__fv_(increase_priority_d1 )_cost_21| () Real)
+(declare-fun |__fv_(authorize_d2_l3 )_cost_21| () Real)
+(declare-fun |__fv_(authorize_d1_l3 )_cost_21| () Real)
+(declare-fun |__fv_(authorize_d1_l4 )_cost_21| () Real)
+(declare-fun |__fv_(increase_priority_d2 )_cost_21| () Real)
+(declare-fun |__fv_(authorize_d2_l2 )_cost_21| () Real)
+(declare-fun |__fv_(increase_factor )_cost_21| () Real)
+(declare-fun add_cost_21 () Real)
+(declare-fun |__fv_(authorize_d2_l1 )_cost_20| () Real)
+(declare-fun |__fv_(authorize_all_d1 )_cost_20| () Real)
+(declare-fun |__fv_(authorize_d1_l1 )_cost_20| () Real)
+(declare-fun |__fv_(decrease_factor )_cost_20| () Real)
+(declare-fun |__fv_(authorize_all_d2 )_cost_20| () Real)
+(declare-fun |__fv_(authorize_d2_l4 )_cost_20| () Real)
+(declare-fun |__fv_(authorize_d1_l2 )_cost_20| () Real)
+(declare-fun |__fv_(increase_priority_d1 )_cost_20| () Real)
+(declare-fun |__fv_(authorize_d2_l3 )_cost_20| () Real)
+(declare-fun |__fv_(authorize_d1_l3 )_cost_20| () Real)
+(declare-fun |__fv_(authorize_d1_l4 )_cost_20| () Real)
+(declare-fun |__fv_(increase_priority_d2 )_cost_20| () Real)
+(declare-fun |__fv_(authorize_d2_l2 )_cost_20| () Real)
+(declare-fun |__fv_(increase_factor )_cost_20| () Real)
+(declare-fun add_cost_20 () Real)
+(declare-fun __rev_fv_cost_20 () Real)
+(assert (=> (or tpriority_d2_21) (or (< (- priority_d2_20 3.0) 0.0))))
+(assert (let ((a!1 (or (not clear_d2_l1_20)
+               (not clear_d2_l2_20)
+               (not clear_d2_l4_20)
+               (not clear_d2_l3_20)
+               (and (>= (- priority_d2_20 3.0) 0.0)
+                    (not clear_d2_l1_20)
+                    (not clear_d2_l2_20)
+                    (not clear_d2_l3_20)
+                    (not clear_d2_l4_20))
+               (and tpriority_d2_21
+                    (not clear_d2_l1_20)
+                    (not clear_d2_l2_20)
+                    (not clear_d2_l3_20)
+                    (not clear_d2_l4_20)))))
+  (=> (or tclear_d2_l2_21 tclear_d2_l3_21 tclear_d2_l1_21 tclear_d2_l4_21) a!1)))
+(assert (=> (or tpriority_d1_21) (or (< (- priority_d1_20 3.0) 0.0))))
+(assert (=> (or tfactor_21) (or (<= (- factor_20 10.0) 0.0) (>= (- factor_20 1.0) 0.0))))
+(assert (let ((a!1 (or (not clear_d1_l1_20)
+               (not clear_d1_l3_20)
+               (and tpriority_d1_21
+                    (not clear_d1_l1_20)
+                    (not clear_d1_l2_20)
+                    (not clear_d1_l3_20)
+                    (not clear_d1_l4_20))
+               (and (>= (- priority_d1_20 3.0) 0.0)
+                    (not clear_d1_l1_20)
+                    (not clear_d1_l2_20)
+                    (not clear_d1_l3_20)
+                    (not clear_d1_l4_20))
+               (not clear_d1_l4_20)
+               (not clear_d1_l2_20))))
+  (=> (or tclear_d1_l3_21 tclear_d1_l1_21 tclear_d1_l2_21 tclear_d1_l4_21) a!1)))
+(assert (=> (or |(increase_factor )_20|
+        |(authorize_d2_l2 )_20|
+        |(increase_priority_d2 )_20|
+        |(authorize_d1_l4 )_20|
+        |(authorize_d1_l3 )_20|
+        |(authorize_d2_l3 )_20|
+        |(increase_priority_d1 )_20|
+        |(authorize_d1_l2 )_20|
+        |(authorize_d2_l4 )_20|
+        |(authorize_all_d2 )_20|
+        |(decrease_factor )_20|
+        |(authorize_d1_l1 )_20|
+        |(authorize_all_d1 )_20|
+        |(authorize_d2_l1 )_20|)
+    (and (or |(increase_factor )_0|
+             |(authorize_d2_l2 )_0|
+             |(increase_priority_d2 )_0|
+             |(authorize_d1_l4 )_0|
+             |(authorize_d1_l3 )_0|
+             |(authorize_d2_l3 )_0|
+             |(increase_priority_d1 )_0|
+             |(authorize_d1_l2 )_0|
+             |(authorize_d2_l4 )_0|
+             |(authorize_all_d2 )_0|
+             |(decrease_factor )_0|
+             |(authorize_d1_l1 )_0|
+             |(authorize_all_d1 )_0|
+             |(authorize_d2_l1 )_0|)
+         (or |(increase_factor )_1|
+             |(authorize_d2_l2 )_1|
+             |(increase_priority_d2 )_1|
+             |(authorize_d1_l4 )_1|
+             |(authorize_d1_l3 )_1|
+             |(authorize_d2_l3 )_1|
+             |(increase_priority_d1 )_1|
+             |(authorize_d1_l2 )_1|
+             |(authorize_d2_l4 )_1|
+             |(authorize_all_d2 )_1|
+             |(decrease_factor )_1|
+             |(authorize_d1_l1 )_1|
+             |(authorize_all_d1 )_1|
+             |(authorize_d2_l1 )_1|)
+         (or |(increase_factor )_2|
+             |(authorize_d2_l2 )_2|
+             |(increase_priority_d2 )_2|
+             |(authorize_d1_l4 )_2|
+             |(authorize_d1_l3 )_2|
+             |(authorize_d2_l3 )_2|
+             |(increase_priority_d1 )_2|
+             |(authorize_d1_l2 )_2|
+             |(authorize_d2_l4 )_2|
+             |(authorize_all_d2 )_2|
+             |(decrease_factor )_2|
+             |(authorize_d1_l1 )_2|
+             |(authorize_all_d1 )_2|
+             |(authorize_d2_l1 )_2|)
+         (or |(increase_factor )_3|
+             |(authorize_d2_l2 )_3|
+             |(increase_priority_d2 )_3|
+             |(authorize_d1_l4 )_3|
+             |(authorize_d1_l3 )_3|
+             |(authorize_d2_l3 )_3|
+             |(increase_priority_d1 )_3|
+             |(authorize_d1_l2 )_3|
+             |(authorize_d2_l4 )_3|
+             |(authorize_all_d2 )_3|
+             |(decrease_factor )_3|
+             |(authorize_d1_l1 )_3|
+             |(authorize_all_d1 )_3|
+             |(authorize_d2_l1 )_3|)
+         (or |(increase_factor )_4|
+             |(authorize_d2_l2 )_4|
+             |(increase_priority_d2 )_4|
+             |(authorize_d1_l4 )_4|
+             |(authorize_d1_l3 )_4|
+             |(authorize_d2_l3 )_4|
+             |(increase_priority_d1 )_4|
+             |(authorize_d1_l2 )_4|
+             |(authorize_d2_l4 )_4|
+             |(authorize_all_d2 )_4|
+             |(decrease_factor )_4|
+             |(authorize_d1_l1 )_4|
+             |(authorize_all_d1 )_4|
+             |(authorize_d2_l1 )_4|)
+         (or |(increase_factor )_5|
+             |(authorize_d2_l2 )_5|
+             |(increase_priority_d2 )_5|
+             |(authorize_d1_l4 )_5|
+             |(authorize_d1_l3 )_5|
+             |(authorize_d2_l3 )_5|
+             |(increase_priority_d1 )_5|
+             |(authorize_d1_l2 )_5|
+             |(authorize_d2_l4 )_5|
+             |(authorize_all_d2 )_5|
+             |(decrease_factor )_5|
+             |(authorize_d1_l1 )_5|
+             |(authorize_all_d1 )_5|
+             |(authorize_d2_l1 )_5|)
+         (or |(increase_factor )_6|
+             |(authorize_d2_l2 )_6|
+             |(increase_priority_d2 )_6|
+             |(authorize_d1_l4 )_6|
+             |(authorize_d1_l3 )_6|
+             |(authorize_d2_l3 )_6|
+             |(increase_priority_d1 )_6|
+             |(authorize_d1_l2 )_6|
+             |(authorize_d2_l4 )_6|
+             |(authorize_all_d2 )_6|
+             |(decrease_factor )_6|
+             |(authorize_d1_l1 )_6|
+             |(authorize_all_d1 )_6|
+             |(authorize_d2_l1 )_6|)
+         (or |(increase_factor )_7|
+             |(authorize_d2_l2 )_7|
+             |(increase_priority_d2 )_7|
+             |(authorize_d1_l4 )_7|
+             |(authorize_d1_l3 )_7|
+             |(authorize_d2_l3 )_7|
+             |(increase_priority_d1 )_7|
+             |(authorize_d1_l2 )_7|
+             |(authorize_d2_l4 )_7|
+             |(authorize_all_d2 )_7|
+             |(decrease_factor )_7|
+             |(authorize_d1_l1 )_7|
+             |(authorize_all_d1 )_7|
+             |(authorize_d2_l1 )_7|)
+         (or |(increase_factor )_8|
+             |(authorize_d2_l2 )_8|
+             |(increase_priority_d2 )_8|
+             |(authorize_d1_l4 )_8|
+             |(authorize_d1_l3 )_8|
+             |(authorize_d2_l3 )_8|
+             |(increase_priority_d1 )_8|
+             |(authorize_d1_l2 )_8|
+             |(authorize_d2_l4 )_8|
+             |(authorize_all_d2 )_8|
+             |(decrease_factor )_8|
+             |(authorize_d1_l1 )_8|
+             |(authorize_all_d1 )_8|
+             |(authorize_d2_l1 )_8|)
+         (or |(increase_factor )_9|
+             |(authorize_d2_l2 )_9|
+             |(increase_priority_d2 )_9|
+             |(authorize_d1_l4 )_9|
+             |(authorize_d1_l3 )_9|
+             |(authorize_d2_l3 )_9|
+             |(increase_priority_d1 )_9|
+             |(authorize_d1_l2 )_9|
+             |(authorize_d2_l4 )_9|
+             |(authorize_all_d2 )_9|
+             |(decrease_factor )_9|
+             |(authorize_d1_l1 )_9|
+             |(authorize_all_d1 )_9|
+             |(authorize_d2_l1 )_9|)
+         (or |(increase_factor )_10|
+             |(authorize_d2_l2 )_10|
+             |(increase_priority_d2 )_10|
+             |(authorize_d1_l4 )_10|
+             |(authorize_d1_l3 )_10|
+             |(authorize_d2_l3 )_10|
+             |(increase_priority_d1 )_10|
+             |(authorize_d1_l2 )_10|
+             |(authorize_d2_l4 )_10|
+             |(authorize_all_d2 )_10|
+             |(decrease_factor )_10|
+             |(authorize_d1_l1 )_10|
+             |(authorize_all_d1 )_10|
+             |(authorize_d2_l1 )_10|)
+         (or |(increase_factor )_11|
+             |(authorize_d2_l2 )_11|
+             |(increase_priority_d2 )_11|
+             |(authorize_d1_l4 )_11|
+             |(authorize_d1_l3 )_11|
+             |(authorize_d2_l3 )_11|
+             |(increase_priority_d1 )_11|
+             |(authorize_d1_l2 )_11|
+             |(authorize_d2_l4 )_11|
+             |(authorize_all_d2 )_11|
+             |(decrease_factor )_11|
+             |(authorize_d1_l1 )_11|
+             |(authorize_all_d1 )_11|
+             |(authorize_d2_l1 )_11|)
+         (or |(increase_factor )_12|
+             |(authorize_d2_l2 )_12|
+             |(increase_priority_d2 )_12|
+             |(authorize_d1_l4 )_12|
+             |(authorize_d1_l3 )_12|
+             |(authorize_d2_l3 )_12|
+             |(increase_priority_d1 )_12|
+             |(authorize_d1_l2 )_12|
+             |(authorize_d2_l4 )_12|
+             |(authorize_all_d2 )_12|
+             |(decrease_factor )_12|
+             |(authorize_d1_l1 )_12|
+             |(authorize_all_d1 )_12|
+             |(authorize_d2_l1 )_12|)
+         (or |(increase_factor )_13|
+             |(authorize_d2_l2 )_13|
+             |(increase_priority_d2 )_13|
+             |(authorize_d1_l4 )_13|
+             |(authorize_d1_l3 )_13|
+             |(authorize_d2_l3 )_13|
+             |(increase_priority_d1 )_13|
+             |(authorize_d1_l2 )_13|
+             |(authorize_d2_l4 )_13|
+             |(authorize_all_d2 )_13|
+             |(decrease_factor )_13|
+             |(authorize_d1_l1 )_13|
+             |(authorize_all_d1 )_13|
+             |(authorize_d2_l1 )_13|)
+         (or |(increase_factor )_14|
+             |(authorize_d2_l2 )_14|
+             |(increase_priority_d2 )_14|
+             |(authorize_d1_l4 )_14|
+             |(authorize_d1_l3 )_14|
+             |(authorize_d2_l3 )_14|
+             |(increase_priority_d1 )_14|
+             |(authorize_d1_l2 )_14|
+             |(authorize_d2_l4 )_14|
+             |(authorize_all_d2 )_14|
+             |(decrease_factor )_14|
+             |(authorize_d1_l1 )_14|
+             |(authorize_all_d1 )_14|
+             |(authorize_d2_l1 )_14|)
+         (or |(increase_factor )_15|
+             |(authorize_d2_l2 )_15|
+             |(increase_priority_d2 )_15|
+             |(authorize_d1_l4 )_15|
+             |(authorize_d1_l3 )_15|
+             |(authorize_d2_l3 )_15|
+             |(increase_priority_d1 )_15|
+             |(authorize_d1_l2 )_15|
+             |(authorize_d2_l4 )_15|
+             |(authorize_all_d2 )_15|
+             |(decrease_factor )_15|
+             |(authorize_d1_l1 )_15|
+             |(authorize_all_d1 )_15|
+             |(authorize_d2_l1 )_15|)
+         (or |(increase_factor )_16|
+             |(authorize_d2_l2 )_16|
+             |(increase_priority_d2 )_16|
+             |(authorize_d1_l4 )_16|
+             |(authorize_d1_l3 )_16|
+             |(authorize_d2_l3 )_16|
+             |(increase_priority_d1 )_16|
+             |(authorize_d1_l2 )_16|
+             |(authorize_d2_l4 )_16|
+             |(authorize_all_d2 )_16|
+             |(decrease_factor )_16|
+             |(authorize_d1_l1 )_16|
+             |(authorize_all_d1 )_16|
+             |(authorize_d2_l1 )_16|)
+         (or |(increase_factor )_17|
+             |(authorize_d2_l2 )_17|
+             |(increase_priority_d2 )_17|
+             |(authorize_d1_l4 )_17|
+             |(authorize_d1_l3 )_17|
+             |(authorize_d2_l3 )_17|
+             |(increase_priority_d1 )_17|
+             |(authorize_d1_l2 )_17|
+             |(authorize_d2_l4 )_17|
+             |(authorize_all_d2 )_17|
+             |(decrease_factor )_17|
+             |(authorize_d1_l1 )_17|
+             |(authorize_all_d1 )_17|
+             |(authorize_d2_l1 )_17|)
+         (or |(increase_factor )_18|
+             |(authorize_d2_l2 )_18|
+             |(increase_priority_d2 )_18|
+             |(authorize_d1_l4 )_18|
+             |(authorize_d1_l3 )_18|
+             |(authorize_d2_l3 )_18|
+             |(increase_priority_d1 )_18|
+             |(authorize_d1_l2 )_18|
+             |(authorize_d2_l4 )_18|
+             |(authorize_all_d2 )_18|
+             |(decrease_factor )_18|
+             |(authorize_d1_l1 )_18|
+             |(authorize_all_d1 )_18|
+             |(authorize_d2_l1 )_18|)
+         (or |(increase_factor )_19|
+             |(authorize_d2_l2 )_19|
+             |(increase_priority_d2 )_19|
+             |(authorize_d1_l4 )_19|
+             |(authorize_d1_l3 )_19|
+             |(authorize_d2_l3 )_19|
+             |(increase_priority_d1 )_19|
+             |(authorize_d1_l2 )_19|
+             |(authorize_d2_l4 )_19|
+             |(authorize_all_d2 )_19|
+             |(decrease_factor )_19|
+             |(authorize_d1_l1 )_19|
+             |(authorize_all_d1 )_19|
+             |(authorize_d2_l1 )_19|))))
+(assert (=> (or |(increase_factor )_21|
+        |(authorize_d2_l2 )_21|
+        |(increase_priority_d2 )_21|
+        |(authorize_d1_l4 )_21|
+        |(authorize_d1_l3 )_21|
+        |(authorize_d2_l3 )_21|
+        |(increase_priority_d1 )_21|
+        |(authorize_d1_l2 )_21|
+        |(authorize_d2_l4 )_21|
+        |(authorize_all_d2 )_21|
+        |(decrease_factor )_21|
+        |(authorize_d1_l1 )_21|
+        |(authorize_all_d1 )_21|
+        |(authorize_d2_l1 )_21|)
+    (and (or |(increase_factor )_0|
+             |(authorize_d2_l2 )_0|
+             |(increase_priority_d2 )_0|
+             |(authorize_d1_l4 )_0|
+             |(authorize_d1_l3 )_0|
+             |(authorize_d2_l3 )_0|
+             |(increase_priority_d1 )_0|
+             |(authorize_d1_l2 )_0|
+             |(authorize_d2_l4 )_0|
+             |(authorize_all_d2 )_0|
+             |(decrease_factor )_0|
+             |(authorize_d1_l1 )_0|
+             |(authorize_all_d1 )_0|
+             |(authorize_d2_l1 )_0|)
+         (or |(increase_factor )_1|
+             |(authorize_d2_l2 )_1|
+             |(increase_priority_d2 )_1|
+             |(authorize_d1_l4 )_1|
+             |(authorize_d1_l3 )_1|
+             |(authorize_d2_l3 )_1|
+             |(increase_priority_d1 )_1|
+             |(authorize_d1_l2 )_1|
+             |(authorize_d2_l4 )_1|
+             |(authorize_all_d2 )_1|
+             |(decrease_factor )_1|
+             |(authorize_d1_l1 )_1|
+             |(authorize_all_d1 )_1|
+             |(authorize_d2_l1 )_1|)
+         (or |(increase_factor )_2|
+             |(authorize_d2_l2 )_2|
+             |(increase_priority_d2 )_2|
+             |(authorize_d1_l4 )_2|
+             |(authorize_d1_l3 )_2|
+             |(authorize_d2_l3 )_2|
+             |(increase_priority_d1 )_2|
+             |(authorize_d1_l2 )_2|
+             |(authorize_d2_l4 )_2|
+             |(authorize_all_d2 )_2|
+             |(decrease_factor )_2|
+             |(authorize_d1_l1 )_2|
+             |(authorize_all_d1 )_2|
+             |(authorize_d2_l1 )_2|)
+         (or |(increase_factor )_3|
+             |(authorize_d2_l2 )_3|
+             |(increase_priority_d2 )_3|
+             |(authorize_d1_l4 )_3|
+             |(authorize_d1_l3 )_3|
+             |(authorize_d2_l3 )_3|
+             |(increase_priority_d1 )_3|
+             |(authorize_d1_l2 )_3|
+             |(authorize_d2_l4 )_3|
+             |(authorize_all_d2 )_3|
+             |(decrease_factor )_3|
+             |(authorize_d1_l1 )_3|
+             |(authorize_all_d1 )_3|
+             |(authorize_d2_l1 )_3|)
+         (or |(increase_factor )_4|
+             |(authorize_d2_l2 )_4|
+             |(increase_priority_d2 )_4|
+             |(authorize_d1_l4 )_4|
+             |(authorize_d1_l3 )_4|
+             |(authorize_d2_l3 )_4|
+             |(increase_priority_d1 )_4|
+             |(authorize_d1_l2 )_4|
+             |(authorize_d2_l4 )_4|
+             |(authorize_all_d2 )_4|
+             |(decrease_factor )_4|
+             |(authorize_d1_l1 )_4|
+             |(authorize_all_d1 )_4|
+             |(authorize_d2_l1 )_4|)
+         (or |(increase_factor )_5|
+             |(authorize_d2_l2 )_5|
+             |(increase_priority_d2 )_5|
+             |(authorize_d1_l4 )_5|
+             |(authorize_d1_l3 )_5|
+             |(authorize_d2_l3 )_5|
+             |(increase_priority_d1 )_5|
+             |(authorize_d1_l2 )_5|
+             |(authorize_d2_l4 )_5|
+             |(authorize_all_d2 )_5|
+             |(decrease_factor )_5|
+             |(authorize_d1_l1 )_5|
+             |(authorize_all_d1 )_5|
+             |(authorize_d2_l1 )_5|)
+         (or |(increase_factor )_6|
+             |(authorize_d2_l2 )_6|
+             |(increase_priority_d2 )_6|
+             |(authorize_d1_l4 )_6|
+             |(authorize_d1_l3 )_6|
+             |(authorize_d2_l3 )_6|
+             |(increase_priority_d1 )_6|
+             |(authorize_d1_l2 )_6|
+             |(authorize_d2_l4 )_6|
+             |(authorize_all_d2 )_6|
+             |(decrease_factor )_6|
+             |(authorize_d1_l1 )_6|
+             |(authorize_all_d1 )_6|
+             |(authorize_d2_l1 )_6|)
+         (or |(increase_factor )_7|
+             |(authorize_d2_l2 )_7|
+             |(increase_priority_d2 )_7|
+             |(authorize_d1_l4 )_7|
+             |(authorize_d1_l3 )_7|
+             |(authorize_d2_l3 )_7|
+             |(increase_priority_d1 )_7|
+             |(authorize_d1_l2 )_7|
+             |(authorize_d2_l4 )_7|
+             |(authorize_all_d2 )_7|
+             |(decrease_factor )_7|
+             |(authorize_d1_l1 )_7|
+             |(authorize_all_d1 )_7|
+             |(authorize_d2_l1 )_7|)
+         (or |(increase_factor )_8|
+             |(authorize_d2_l2 )_8|
+             |(increase_priority_d2 )_8|
+             |(authorize_d1_l4 )_8|
+             |(authorize_d1_l3 )_8|
+             |(authorize_d2_l3 )_8|
+             |(increase_priority_d1 )_8|
+             |(authorize_d1_l2 )_8|
+             |(authorize_d2_l4 )_8|
+             |(authorize_all_d2 )_8|
+             |(decrease_factor )_8|
+             |(authorize_d1_l1 )_8|
+             |(authorize_all_d1 )_8|
+             |(authorize_d2_l1 )_8|)
+         (or |(increase_factor )_9|
+             |(authorize_d2_l2 )_9|
+             |(increase_priority_d2 )_9|
+             |(authorize_d1_l4 )_9|
+             |(authorize_d1_l3 )_9|
+             |(authorize_d2_l3 )_9|
+             |(increase_priority_d1 )_9|
+             |(authorize_d1_l2 )_9|
+             |(authorize_d2_l4 )_9|
+             |(authorize_all_d2 )_9|
+             |(decrease_factor )_9|
+             |(authorize_d1_l1 )_9|
+             |(authorize_all_d1 )_9|
+             |(authorize_d2_l1 )_9|)
+         (or |(increase_factor )_10|
+             |(authorize_d2_l2 )_10|
+             |(increase_priority_d2 )_10|
+             |(authorize_d1_l4 )_10|
+             |(authorize_d1_l3 )_10|
+             |(authorize_d2_l3 )_10|
+             |(increase_priority_d1 )_10|
+             |(authorize_d1_l2 )_10|
+             |(authorize_d2_l4 )_10|
+             |(authorize_all_d2 )_10|
+             |(decrease_factor )_10|
+             |(authorize_d1_l1 )_10|
+             |(authorize_all_d1 )_10|
+             |(authorize_d2_l1 )_10|)
+         (or |(increase_factor )_11|
+             |(authorize_d2_l2 )_11|
+             |(increase_priority_d2 )_11|
+             |(authorize_d1_l4 )_11|
+             |(authorize_d1_l3 )_11|
+             |(authorize_d2_l3 )_11|
+             |(increase_priority_d1 )_11|
+             |(authorize_d1_l2 )_11|
+             |(authorize_d2_l4 )_11|
+             |(authorize_all_d2 )_11|
+             |(decrease_factor )_11|
+             |(authorize_d1_l1 )_11|
+             |(authorize_all_d1 )_11|
+             |(authorize_d2_l1 )_11|)
+         (or |(increase_factor )_12|
+             |(authorize_d2_l2 )_12|
+             |(increase_priority_d2 )_12|
+             |(authorize_d1_l4 )_12|
+             |(authorize_d1_l3 )_12|
+             |(authorize_d2_l3 )_12|
+             |(increase_priority_d1 )_12|
+             |(authorize_d1_l2 )_12|
+             |(authorize_d2_l4 )_12|
+             |(authorize_all_d2 )_12|
+             |(decrease_factor )_12|
+             |(authorize_d1_l1 )_12|
+             |(authorize_all_d1 )_12|
+             |(authorize_d2_l1 )_12|)
+         (or |(increase_factor )_13|
+             |(authorize_d2_l2 )_13|
+             |(increase_priority_d2 )_13|
+             |(authorize_d1_l4 )_13|
+             |(authorize_d1_l3 )_13|
+             |(authorize_d2_l3 )_13|
+             |(increase_priority_d1 )_13|
+             |(authorize_d1_l2 )_13|
+             |(authorize_d2_l4 )_13|
+             |(authorize_all_d2 )_13|
+             |(decrease_factor )_13|
+             |(authorize_d1_l1 )_13|
+             |(authorize_all_d1 )_13|
+             |(authorize_d2_l1 )_13|)
+         (or |(increase_factor )_14|
+             |(authorize_d2_l2 )_14|
+             |(increase_priority_d2 )_14|
+             |(authorize_d1_l4 )_14|
+             |(authorize_d1_l3 )_14|
+             |(authorize_d2_l3 )_14|
+             |(increase_priority_d1 )_14|
+             |(authorize_d1_l2 )_14|
+             |(authorize_d2_l4 )_14|
+             |(authorize_all_d2 )_14|
+             |(decrease_factor )_14|
+             |(authorize_d1_l1 )_14|
+             |(authorize_all_d1 )_14|
+             |(authorize_d2_l1 )_14|)
+         (or |(increase_factor )_15|
+             |(authorize_d2_l2 )_15|
+             |(increase_priority_d2 )_15|
+             |(authorize_d1_l4 )_15|
+             |(authorize_d1_l3 )_15|
+             |(authorize_d2_l3 )_15|
+             |(increase_priority_d1 )_15|
+             |(authorize_d1_l2 )_15|
+             |(authorize_d2_l4 )_15|
+             |(authorize_all_d2 )_15|
+             |(decrease_factor )_15|
+             |(authorize_d1_l1 )_15|
+             |(authorize_all_d1 )_15|
+             |(authorize_d2_l1 )_15|)
+         (or |(increase_factor )_16|
+             |(authorize_d2_l2 )_16|
+             |(increase_priority_d2 )_16|
+             |(authorize_d1_l4 )_16|
+             |(authorize_d1_l3 )_16|
+             |(authorize_d2_l3 )_16|
+             |(increase_priority_d1 )_16|
+             |(authorize_d1_l2 )_16|
+             |(authorize_d2_l4 )_16|
+             |(authorize_all_d2 )_16|
+             |(decrease_factor )_16|
+             |(authorize_d1_l1 )_16|
+             |(authorize_all_d1 )_16|
+             |(authorize_d2_l1 )_16|)
+         (or |(increase_factor )_17|
+             |(authorize_d2_l2 )_17|
+             |(increase_priority_d2 )_17|
+             |(authorize_d1_l4 )_17|
+             |(authorize_d1_l3 )_17|
+             |(authorize_d2_l3 )_17|
+             |(increase_priority_d1 )_17|
+             |(authorize_d1_l2 )_17|
+             |(authorize_d2_l4 )_17|
+             |(authorize_all_d2 )_17|
+             |(decrease_factor )_17|
+             |(authorize_d1_l1 )_17|
+             |(authorize_all_d1 )_17|
+             |(authorize_d2_l1 )_17|)
+         (or |(increase_factor )_18|
+             |(authorize_d2_l2 )_18|
+             |(increase_priority_d2 )_18|
+             |(authorize_d1_l4 )_18|
+             |(authorize_d1_l3 )_18|
+             |(authorize_d2_l3 )_18|
+             |(increase_priority_d1 )_18|
+             |(authorize_d1_l2 )_18|
+             |(authorize_d2_l4 )_18|
+             |(authorize_all_d2 )_18|
+             |(decrease_factor )_18|
+             |(authorize_d1_l1 )_18|
+             |(authorize_all_d1 )_18|
+             |(authorize_d2_l1 )_18|)
+         (or |(increase_factor )_19|
+             |(authorize_d2_l2 )_19|
+             |(increase_priority_d2 )_19|
+             |(authorize_d1_l4 )_19|
+             |(authorize_d1_l3 )_19|
+             |(authorize_d2_l3 )_19|
+             |(increase_priority_d1 )_19|
+             |(authorize_d1_l2 )_19|
+             |(authorize_d2_l4 )_19|
+             |(authorize_all_d2 )_19|
+             |(decrease_factor )_19|
+             |(authorize_d1_l1 )_19|
+             |(authorize_all_d1 )_19|
+             |(authorize_d2_l1 )_19|))))
+(assert true)
+(assert (=> |(authorize_d1_l1 )_1|
+    (or |(authorize_d1_l1 )_0|
+        clear_d1_l1_0
+        |(authorize_d1_l4 )_0|
+        |(authorize_d2_l1 )_0|
+        |(authorize_d2_l2 )_0|
+        |(increase_priority_d1 )_0|
+        |(authorize_d1_l3 )_0|
+        |(increase_priority_d2 )_0|
+        |(authorize_d1_l2 )_0|
+        |(decrease_factor )_0|
+        |(authorize_all_d2 )_0|
+        |(authorize_d2_l4 )_0|
+        |(increase_factor )_0|
+        |(authorize_d2_l3 )_0|
+        |(authorize_all_d1 )_0|)))
+(assert (=> |(authorize_d1_l2 )_1|
+    (or |(authorize_d1_l2 )_0|
+        clear_d1_l2_0
+        |(authorize_all_d1 )_0|
+        |(authorize_d2_l1 )_0|
+        |(increase_priority_d1 )_0|
+        |(increase_priority_d2 )_0|
+        |(authorize_d2_l2 )_0|
+        |(authorize_d1_l1 )_0|
+        |(authorize_all_d2 )_0|
+        |(decrease_factor )_0|
+        |(authorize_d1_l3 )_0|
+        |(increase_factor )_0|
+        |(authorize_d1_l4 )_0|
+        |(authorize_d2_l4 )_0|
+        |(authorize_d2_l3 )_0|)))
+(assert (=> |(authorize_d1_l3 )_1|
+    (or |(authorize_d1_l3 )_0|
+        clear_d1_l3_0
+        |(authorize_all_d1 )_0|
+        |(authorize_d1_l4 )_0|
+        |(authorize_d2_l1 )_0|
+        |(authorize_d2_l4 )_0|
+        |(decrease_factor )_0|
+        |(increase_factor )_0|
+        |(authorize_d1_l1 )_0|
+        |(increase_priority_d1 )_0|
+        |(authorize_d2_l3 )_0|
+        |(authorize_d2_l2 )_0|
+        |(increase_priority_d2 )_0|
+        |(authorize_d1_l2 )_0|
+        |(authorize_all_d2 )_0|)))
+(assert (=> |(authorize_d1_l4 )_1|
+    (or |(authorize_d1_l4 )_0|
+        clear_d1_l4_0
+        |(increase_priority_d1 )_0|
+        |(authorize_d1_l1 )_0|
+        |(authorize_d1_l3 )_0|
+        |(authorize_d2_l1 )_0|
+        |(authorize_all_d1 )_0|
+        |(authorize_d2_l2 )_0|
+        |(increase_priority_d2 )_0|
+        |(authorize_d2_l4 )_0|
+        |(authorize_all_d2 )_0|
+        |(decrease_factor )_0|
+        |(authorize_d2_l3 )_0|
+        |(authorize_d1_l2 )_0|
+        |(increase_factor )_0|)))
+(assert (=> |(authorize_d2_l1 )_1|
+    (or |(authorize_d2_l1 )_0|
+        clear_d2_l1_0
+        |(increase_priority_d1 )_0|
+        |(authorize_d1_l1 )_0|
+        |(authorize_d1_l4 )_0|
+        |(authorize_d1_l2 )_0|
+        |(authorize_d1_l3 )_0|
+        |(authorize_d2_l2 )_0|
+        |(authorize_d2_l4 )_0|
+        |(increase_factor )_0|
+        |(increase_priority_d2 )_0|
+        |(authorize_all_d1 )_0|
+        |(authorize_d2_l3 )_0|
+        |(decrease_factor )_0|
+        |(authorize_all_d2 )_0|)))
+(assert (=> |(authorize_d2_l2 )_1|
+    (or |(authorize_d2_l2 )_0|
+        clear_d2_l2_0
+        |(authorize_d1_l4 )_0|
+        |(decrease_factor )_0|
+        |(authorize_d2_l1 )_0|
+        |(authorize_d1_l1 )_0|
+        |(authorize_d1_l2 )_0|
+        |(increase_factor )_0|
+        |(increase_priority_d1 )_0|
+        |(authorize_d2_l4 )_0|
+        |(authorize_d1_l3 )_0|
+        |(authorize_all_d2 )_0|
+        |(authorize_all_d1 )_0|
+        |(increase_priority_d2 )_0|
+        |(authorize_d2_l3 )_0|)))
+(assert (=> |(authorize_d2_l3 )_1|
+    (or |(authorize_d2_l3 )_0|
+        clear_d2_l3_0
+        |(increase_priority_d2 )_0|
+        |(authorize_d1_l3 )_0|
+        |(authorize_d1_l4 )_0|
+        |(authorize_all_d2 )_0|
+        |(authorize_d2_l1 )_0|
+        |(authorize_all_d1 )_0|
+        |(decrease_factor )_0|
+        |(authorize_d1_l1 )_0|
+        |(authorize_d2_l2 )_0|
+        |(authorize_d2_l4 )_0|
+        |(increase_priority_d1 )_0|
+        |(increase_factor )_0|
+        |(authorize_d1_l2 )_0|)))
+(assert (=> |(authorize_d2_l4 )_1|
+    (or |(authorize_d2_l4 )_0|
+        clear_d2_l4_0
+        |(authorize_all_d2 )_0|
+        |(authorize_d1_l4 )_0|
+        |(authorize_d1_l3 )_0|
+        |(authorize_d2_l1 )_0|
+        |(increase_factor )_0|
+        |(decrease_factor )_0|
+        |(authorize_all_d1 )_0|
+        |(authorize_d2_l2 )_0|
+        |(increase_priority_d2 )_0|
+        |(authorize_d1_l1 )_0|
+        |(authorize_d1_l2 )_0|
+        |(authorize_d2_l3 )_0|
+        |(increase_priority_d1 )_0|)))
+(assert (let ((a!1 (or |(increase_priority_d1 )_0|
+               (not (< (- priority_d1_0 3.0) 0.0))
+               |(authorize_d1_l4 )_0|
+               |(authorize_d2_l1 )_0|
+               |(authorize_all_d1 )_0|
+               |(authorize_d1_l2 )_0|
+               |(authorize_d1_l1 )_0|
+               |(authorize_d1_l3 )_0|
+               |(increase_priority_d2 )_0|
+               |(authorize_d2_l2 )_0|
+               |(increase_factor )_0|
+               |(authorize_all_d2 )_0|
+               |(decrease_factor )_0|
+               |(authorize_d2_l3 )_0|
+               |(authorize_d2_l4 )_0|)))
+  (=> |(increase_priority_d1 )_1| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d1 )_0|
+               (not (>= (- priority_d1_0 3.0) 0.0))
+               clear_d1_l1_0
+               clear_d1_l2_0
+               clear_d1_l3_0
+               clear_d1_l4_0
+               |(decrease_factor )_0|
+               |(increase_priority_d1 )_0|
+               |(authorize_d1_l3 )_0|
+               |(authorize_d1_l2 )_0|
+               |(authorize_d1_l4 )_0|
+               |(authorize_all_d2 )_0|
+               |(increase_factor )_0|
+               |(authorize_d2_l4 )_0|
+               |(increase_priority_d2 )_0|
+               |(authorize_d2_l1 )_0|
+               |(authorize_d2_l3 )_0|
+               |(authorize_d2_l2 )_0|
+               |(authorize_d1_l1 )_0|)))
+  (=> |(authorize_all_d1 )_1| a!1)))
+(assert (let ((a!1 (or |(increase_priority_d2 )_0|
+               (not (< (- priority_d2_0 3.0) 0.0))
+               |(authorize_d2_l3 )_0|
+               |(authorize_d1_l4 )_0|
+               |(authorize_all_d2 )_0|
+               |(authorize_d1_l2 )_0|
+               |(increase_factor )_0|
+               |(increase_priority_d1 )_0|
+               |(authorize_d1_l1 )_0|
+               |(authorize_all_d1 )_0|
+               |(authorize_d2_l1 )_0|
+               |(authorize_d1_l3 )_0|
+               |(authorize_d2_l4 )_0|
+               |(authorize_d2_l2 )_0|
+               |(decrease_factor )_0|)))
+  (=> |(increase_priority_d2 )_1| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d2 )_0|
+               (not (>= (- priority_d2_0 3.0) 0.0))
+               clear_d2_l1_0
+               clear_d2_l2_0
+               clear_d2_l3_0
+               clear_d2_l4_0
+               |(authorize_d2_l4 )_0|
+               |(authorize_all_d1 )_0|
+               |(increase_priority_d2 )_0|
+               |(authorize_d1_l4 )_0|
+               |(increase_factor )_0|
+               |(decrease_factor )_0|
+               |(authorize_d1_l1 )_0|
+               |(authorize_d2_l3 )_0|
+               |(increase_priority_d1 )_0|
+               |(authorize_d2_l2 )_0|
+               |(authorize_d1_l2 )_0|
+               |(authorize_d1_l3 )_0|
+               |(authorize_d2_l1 )_0|)))
+  (=> |(authorize_all_d2 )_1| a!1)))
+(assert (let ((a!1 (or |(decrease_factor )_0|
+               (not (>= (- factor_0 1.0) 0.0))
+               |(authorize_all_d1 )_0|
+               |(increase_factor )_0|
+               |(authorize_d2_l2 )_0|
+               |(authorize_d1_l3 )_0|
+               |(authorize_d2_l4 )_0|
+               |(authorize_d1_l4 )_0|
+               |(authorize_all_d2 )_0|
+               |(authorize_d1_l1 )_0|
+               |(authorize_d1_l2 )_0|
+               |(increase_priority_d1 )_0|
+               |(authorize_d2_l3 )_0|
+               |(authorize_d2_l1 )_0|
+               |(increase_priority_d2 )_0|)))
+  (=> |(decrease_factor )_1| a!1)))
+(assert (let ((a!1 (or |(increase_factor )_0|
+               (not (<= (- factor_0 10.0) 0.0))
+               |(decrease_factor )_0|
+               |(authorize_all_d2 )_0|
+               |(authorize_d1_l3 )_0|
+               |(authorize_d2_l4 )_0|
+               |(increase_priority_d2 )_0|
+               |(authorize_d2_l1 )_0|
+               |(authorize_d2_l2 )_0|
+               |(authorize_all_d1 )_0|
+               |(increase_priority_d1 )_0|
+               |(authorize_d1_l2 )_0|
+               |(authorize_d1_l1 )_0|
+               |(authorize_d1_l4 )_0|
+               |(authorize_d2_l3 )_0|)))
+  (=> |(increase_factor )_1| a!1)))
+(assert (=> |(authorize_d1_l1 )_2|
+    (or |(authorize_d1_l1 )_1|
+        clear_d1_l1_1
+        |(authorize_d1_l4 )_1|
+        |(authorize_d2_l1 )_1|
+        |(authorize_d2_l2 )_1|
+        |(increase_priority_d1 )_1|
+        |(authorize_d1_l3 )_1|
+        |(increase_priority_d2 )_1|
+        |(authorize_d1_l2 )_1|
+        |(decrease_factor )_1|
+        |(authorize_all_d2 )_1|
+        |(authorize_d2_l4 )_1|
+        |(increase_factor )_1|
+        |(authorize_d2_l3 )_1|
+        |(authorize_all_d1 )_1|)))
+(assert (=> |(authorize_d1_l2 )_2|
+    (or |(authorize_d1_l2 )_1|
+        clear_d1_l2_1
+        |(authorize_all_d1 )_1|
+        |(authorize_d2_l1 )_1|
+        |(increase_priority_d1 )_1|
+        |(increase_priority_d2 )_1|
+        |(authorize_d2_l2 )_1|
+        |(authorize_d1_l1 )_1|
+        |(authorize_all_d2 )_1|
+        |(decrease_factor )_1|
+        |(authorize_d1_l3 )_1|
+        |(increase_factor )_1|
+        |(authorize_d1_l4 )_1|
+        |(authorize_d2_l4 )_1|
+        |(authorize_d2_l3 )_1|)))
+(assert (=> |(authorize_d1_l3 )_2|
+    (or |(authorize_d1_l3 )_1|
+        clear_d1_l3_1
+        |(authorize_all_d1 )_1|
+        |(authorize_d1_l4 )_1|
+        |(authorize_d2_l1 )_1|
+        |(authorize_d2_l4 )_1|
+        |(decrease_factor )_1|
+        |(increase_factor )_1|
+        |(authorize_d1_l1 )_1|
+        |(increase_priority_d1 )_1|
+        |(authorize_d2_l3 )_1|
+        |(authorize_d2_l2 )_1|
+        |(increase_priority_d2 )_1|
+        |(authorize_d1_l2 )_1|
+        |(authorize_all_d2 )_1|)))
+(assert (=> |(authorize_d1_l4 )_2|
+    (or |(authorize_d1_l4 )_1|
+        clear_d1_l4_1
+        |(increase_priority_d1 )_1|
+        |(authorize_d1_l1 )_1|
+        |(authorize_d1_l3 )_1|
+        |(authorize_d2_l1 )_1|
+        |(authorize_all_d1 )_1|
+        |(authorize_d2_l2 )_1|
+        |(increase_priority_d2 )_1|
+        |(authorize_d2_l4 )_1|
+        |(authorize_all_d2 )_1|
+        |(decrease_factor )_1|
+        |(authorize_d2_l3 )_1|
+        |(authorize_d1_l2 )_1|
+        |(increase_factor )_1|)))
+(assert (=> |(authorize_d2_l1 )_2|
+    (or |(authorize_d2_l1 )_1|
+        clear_d2_l1_1
+        |(increase_priority_d1 )_1|
+        |(authorize_d1_l1 )_1|
+        |(authorize_d1_l4 )_1|
+        |(authorize_d1_l2 )_1|
+        |(authorize_d1_l3 )_1|
+        |(authorize_d2_l2 )_1|
+        |(authorize_d2_l4 )_1|
+        |(increase_factor )_1|
+        |(increase_priority_d2 )_1|
+        |(authorize_all_d1 )_1|
+        |(authorize_d2_l3 )_1|
+        |(decrease_factor )_1|
+        |(authorize_all_d2 )_1|)))
+(assert (=> |(authorize_d2_l2 )_2|
+    (or |(authorize_d2_l2 )_1|
+        clear_d2_l2_1
+        |(authorize_d1_l4 )_1|
+        |(decrease_factor )_1|
+        |(authorize_d2_l1 )_1|
+        |(authorize_d1_l1 )_1|
+        |(authorize_d1_l2 )_1|
+        |(increase_factor )_1|
+        |(increase_priority_d1 )_1|
+        |(authorize_d2_l4 )_1|
+        |(authorize_d1_l3 )_1|
+        |(authorize_all_d2 )_1|
+        |(authorize_all_d1 )_1|
+        |(increase_priority_d2 )_1|
+        |(authorize_d2_l3 )_1|)))
+(assert (=> |(authorize_d2_l3 )_2|
+    (or |(authorize_d2_l3 )_1|
+        clear_d2_l3_1
+        |(increase_priority_d2 )_1|
+        |(authorize_d1_l3 )_1|
+        |(authorize_d1_l4 )_1|
+        |(authorize_all_d2 )_1|
+        |(authorize_d2_l1 )_1|
+        |(authorize_all_d1 )_1|
+        |(decrease_factor )_1|
+        |(authorize_d1_l1 )_1|
+        |(authorize_d2_l2 )_1|
+        |(authorize_d2_l4 )_1|
+        |(increase_priority_d1 )_1|
+        |(increase_factor )_1|
+        |(authorize_d1_l2 )_1|)))
+(assert (=> |(authorize_d2_l4 )_2|
+    (or |(authorize_d2_l4 )_1|
+        clear_d2_l4_1
+        |(authorize_all_d2 )_1|
+        |(authorize_d1_l4 )_1|
+        |(authorize_d1_l3 )_1|
+        |(authorize_d2_l1 )_1|
+        |(increase_factor )_1|
+        |(decrease_factor )_1|
+        |(authorize_all_d1 )_1|
+        |(authorize_d2_l2 )_1|
+        |(increase_priority_d2 )_1|
+        |(authorize_d1_l1 )_1|
+        |(authorize_d1_l2 )_1|
+        |(authorize_d2_l3 )_1|
+        |(increase_priority_d1 )_1|)))
+(assert (let ((a!1 (or |(increase_priority_d1 )_1|
+               (not (< (- priority_d1_1 3.0) 0.0))
+               |(authorize_d1_l4 )_1|
+               |(authorize_d2_l1 )_1|
+               |(authorize_all_d1 )_1|
+               |(authorize_d1_l2 )_1|
+               |(authorize_d1_l1 )_1|
+               |(authorize_d1_l3 )_1|
+               |(increase_priority_d2 )_1|
+               |(authorize_d2_l2 )_1|
+               |(increase_factor )_1|
+               |(authorize_all_d2 )_1|
+               |(decrease_factor )_1|
+               |(authorize_d2_l3 )_1|
+               |(authorize_d2_l4 )_1|)))
+  (=> |(increase_priority_d1 )_2| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d1 )_1|
+               (not (>= (- priority_d1_1 3.0) 0.0))
+               clear_d1_l1_1
+               clear_d1_l2_1
+               clear_d1_l3_1
+               clear_d1_l4_1
+               |(decrease_factor )_1|
+               |(increase_priority_d1 )_1|
+               |(authorize_d1_l3 )_1|
+               |(authorize_d1_l2 )_1|
+               |(authorize_d1_l4 )_1|
+               |(authorize_all_d2 )_1|
+               |(increase_factor )_1|
+               |(authorize_d2_l4 )_1|
+               |(increase_priority_d2 )_1|
+               |(authorize_d2_l1 )_1|
+               |(authorize_d2_l3 )_1|
+               |(authorize_d2_l2 )_1|
+               |(authorize_d1_l1 )_1|)))
+  (=> |(authorize_all_d1 )_2| a!1)))
+(assert (let ((a!1 (or |(increase_priority_d2 )_1|
+               (not (< (- priority_d2_1 3.0) 0.0))
+               |(authorize_d2_l3 )_1|
+               |(authorize_d1_l4 )_1|
+               |(authorize_all_d2 )_1|
+               |(authorize_d1_l2 )_1|
+               |(increase_factor )_1|
+               |(increase_priority_d1 )_1|
+               |(authorize_d1_l1 )_1|
+               |(authorize_all_d1 )_1|
+               |(authorize_d2_l1 )_1|
+               |(authorize_d1_l3 )_1|
+               |(authorize_d2_l4 )_1|
+               |(authorize_d2_l2 )_1|
+               |(decrease_factor )_1|)))
+  (=> |(increase_priority_d2 )_2| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d2 )_1|
+               (not (>= (- priority_d2_1 3.0) 0.0))
+               clear_d2_l1_1
+               clear_d2_l2_1
+               clear_d2_l3_1
+               clear_d2_l4_1
+               |(authorize_d2_l4 )_1|
+               |(authorize_all_d1 )_1|
+               |(increase_priority_d2 )_1|
+               |(authorize_d1_l4 )_1|
+               |(increase_factor )_1|
+               |(decrease_factor )_1|
+               |(authorize_d1_l1 )_1|
+               |(authorize_d2_l3 )_1|
+               |(increase_priority_d1 )_1|
+               |(authorize_d2_l2 )_1|
+               |(authorize_d1_l2 )_1|
+               |(authorize_d1_l3 )_1|
+               |(authorize_d2_l1 )_1|)))
+  (=> |(authorize_all_d2 )_2| a!1)))
+(assert (let ((a!1 (or |(decrease_factor )_1|
+               (not (>= (- factor_1 1.0) 0.0))
+               |(authorize_all_d1 )_1|
+               |(increase_factor )_1|
+               |(authorize_d2_l2 )_1|
+               |(authorize_d1_l3 )_1|
+               |(authorize_d2_l4 )_1|
+               |(authorize_d1_l4 )_1|
+               |(authorize_all_d2 )_1|
+               |(authorize_d1_l1 )_1|
+               |(authorize_d1_l2 )_1|
+               |(increase_priority_d1 )_1|
+               |(authorize_d2_l3 )_1|
+               |(authorize_d2_l1 )_1|
+               |(increase_priority_d2 )_1|)))
+  (=> |(decrease_factor )_2| a!1)))
+(assert (let ((a!1 (or |(increase_factor )_1|
+               (not (<= (- factor_1 10.0) 0.0))
+               |(decrease_factor )_1|
+               |(authorize_all_d2 )_1|
+               |(authorize_d1_l3 )_1|
+               |(authorize_d2_l4 )_1|
+               |(increase_priority_d2 )_1|
+               |(authorize_d2_l1 )_1|
+               |(authorize_d2_l2 )_1|
+               |(authorize_all_d1 )_1|
+               |(increase_priority_d1 )_1|
+               |(authorize_d1_l2 )_1|
+               |(authorize_d1_l1 )_1|
+               |(authorize_d1_l4 )_1|
+               |(authorize_d2_l3 )_1|)))
+  (=> |(increase_factor )_2| a!1)))
+(assert (=> |(authorize_d1_l1 )_3|
+    (or |(authorize_d1_l1 )_2|
+        clear_d1_l1_2
+        |(authorize_d1_l4 )_2|
+        |(authorize_d2_l1 )_2|
+        |(authorize_d2_l2 )_2|
+        |(increase_priority_d1 )_2|
+        |(authorize_d1_l3 )_2|
+        |(increase_priority_d2 )_2|
+        |(authorize_d1_l2 )_2|
+        |(decrease_factor )_2|
+        |(authorize_all_d2 )_2|
+        |(authorize_d2_l4 )_2|
+        |(increase_factor )_2|
+        |(authorize_d2_l3 )_2|
+        |(authorize_all_d1 )_2|)))
+(assert (=> |(authorize_d1_l2 )_3|
+    (or |(authorize_d1_l2 )_2|
+        clear_d1_l2_2
+        |(authorize_all_d1 )_2|
+        |(authorize_d2_l1 )_2|
+        |(increase_priority_d1 )_2|
+        |(increase_priority_d2 )_2|
+        |(authorize_d2_l2 )_2|
+        |(authorize_d1_l1 )_2|
+        |(authorize_all_d2 )_2|
+        |(decrease_factor )_2|
+        |(authorize_d1_l3 )_2|
+        |(increase_factor )_2|
+        |(authorize_d1_l4 )_2|
+        |(authorize_d2_l4 )_2|
+        |(authorize_d2_l3 )_2|)))
+(assert (=> |(authorize_d1_l3 )_3|
+    (or |(authorize_d1_l3 )_2|
+        clear_d1_l3_2
+        |(authorize_all_d1 )_2|
+        |(authorize_d1_l4 )_2|
+        |(authorize_d2_l1 )_2|
+        |(authorize_d2_l4 )_2|
+        |(decrease_factor )_2|
+        |(increase_factor )_2|
+        |(authorize_d1_l1 )_2|
+        |(increase_priority_d1 )_2|
+        |(authorize_d2_l3 )_2|
+        |(authorize_d2_l2 )_2|
+        |(increase_priority_d2 )_2|
+        |(authorize_d1_l2 )_2|
+        |(authorize_all_d2 )_2|)))
+(assert (=> |(authorize_d1_l4 )_3|
+    (or |(authorize_d1_l4 )_2|
+        clear_d1_l4_2
+        |(increase_priority_d1 )_2|
+        |(authorize_d1_l1 )_2|
+        |(authorize_d1_l3 )_2|
+        |(authorize_d2_l1 )_2|
+        |(authorize_all_d1 )_2|
+        |(authorize_d2_l2 )_2|
+        |(increase_priority_d2 )_2|
+        |(authorize_d2_l4 )_2|
+        |(authorize_all_d2 )_2|
+        |(decrease_factor )_2|
+        |(authorize_d2_l3 )_2|
+        |(authorize_d1_l2 )_2|
+        |(increase_factor )_2|)))
+(assert (=> |(authorize_d2_l1 )_3|
+    (or |(authorize_d2_l1 )_2|
+        clear_d2_l1_2
+        |(increase_priority_d1 )_2|
+        |(authorize_d1_l1 )_2|
+        |(authorize_d1_l4 )_2|
+        |(authorize_d1_l2 )_2|
+        |(authorize_d1_l3 )_2|
+        |(authorize_d2_l2 )_2|
+        |(authorize_d2_l4 )_2|
+        |(increase_factor )_2|
+        |(increase_priority_d2 )_2|
+        |(authorize_all_d1 )_2|
+        |(authorize_d2_l3 )_2|
+        |(decrease_factor )_2|
+        |(authorize_all_d2 )_2|)))
+(assert (=> |(authorize_d2_l2 )_3|
+    (or |(authorize_d2_l2 )_2|
+        clear_d2_l2_2
+        |(authorize_d1_l4 )_2|
+        |(decrease_factor )_2|
+        |(authorize_d2_l1 )_2|
+        |(authorize_d1_l1 )_2|
+        |(authorize_d1_l2 )_2|
+        |(increase_factor )_2|
+        |(increase_priority_d1 )_2|
+        |(authorize_d2_l4 )_2|
+        |(authorize_d1_l3 )_2|
+        |(authorize_all_d2 )_2|
+        |(authorize_all_d1 )_2|
+        |(increase_priority_d2 )_2|
+        |(authorize_d2_l3 )_2|)))
+(assert (=> |(authorize_d2_l3 )_3|
+    (or |(authorize_d2_l3 )_2|
+        clear_d2_l3_2
+        |(increase_priority_d2 )_2|
+        |(authorize_d1_l3 )_2|
+        |(authorize_d1_l4 )_2|
+        |(authorize_all_d2 )_2|
+        |(authorize_d2_l1 )_2|
+        |(authorize_all_d1 )_2|
+        |(decrease_factor )_2|
+        |(authorize_d1_l1 )_2|
+        |(authorize_d2_l2 )_2|
+        |(authorize_d2_l4 )_2|
+        |(increase_priority_d1 )_2|
+        |(increase_factor )_2|
+        |(authorize_d1_l2 )_2|)))
+(assert (=> |(authorize_d2_l4 )_3|
+    (or |(authorize_d2_l4 )_2|
+        clear_d2_l4_2
+        |(authorize_all_d2 )_2|
+        |(authorize_d1_l4 )_2|
+        |(authorize_d1_l3 )_2|
+        |(authorize_d2_l1 )_2|
+        |(increase_factor )_2|
+        |(decrease_factor )_2|
+        |(authorize_all_d1 )_2|
+        |(authorize_d2_l2 )_2|
+        |(increase_priority_d2 )_2|
+        |(authorize_d1_l1 )_2|
+        |(authorize_d1_l2 )_2|
+        |(authorize_d2_l3 )_2|
+        |(increase_priority_d1 )_2|)))
+(assert (let ((a!1 (or |(increase_priority_d1 )_2|
+               (not (< (- priority_d1_2 3.0) 0.0))
+               |(authorize_d1_l4 )_2|
+               |(authorize_d2_l1 )_2|
+               |(authorize_all_d1 )_2|
+               |(authorize_d1_l2 )_2|
+               |(authorize_d1_l1 )_2|
+               |(authorize_d1_l3 )_2|
+               |(increase_priority_d2 )_2|
+               |(authorize_d2_l2 )_2|
+               |(increase_factor )_2|
+               |(authorize_all_d2 )_2|
+               |(decrease_factor )_2|
+               |(authorize_d2_l3 )_2|
+               |(authorize_d2_l4 )_2|)))
+  (=> |(increase_priority_d1 )_3| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d1 )_2|
+               (not (>= (- priority_d1_2 3.0) 0.0))
+               clear_d1_l1_2
+               clear_d1_l2_2
+               clear_d1_l3_2
+               clear_d1_l4_2
+               |(decrease_factor )_2|
+               |(increase_priority_d1 )_2|
+               |(authorize_d1_l3 )_2|
+               |(authorize_d1_l2 )_2|
+               |(authorize_d1_l4 )_2|
+               |(authorize_all_d2 )_2|
+               |(increase_factor )_2|
+               |(authorize_d2_l4 )_2|
+               |(increase_priority_d2 )_2|
+               |(authorize_d2_l1 )_2|
+               |(authorize_d2_l3 )_2|
+               |(authorize_d2_l2 )_2|
+               |(authorize_d1_l1 )_2|)))
+  (=> |(authorize_all_d1 )_3| a!1)))
+(assert (let ((a!1 (or |(increase_priority_d2 )_2|
+               (not (< (- priority_d2_2 3.0) 0.0))
+               |(authorize_d2_l3 )_2|
+               |(authorize_d1_l4 )_2|
+               |(authorize_all_d2 )_2|
+               |(authorize_d1_l2 )_2|
+               |(increase_factor )_2|
+               |(increase_priority_d1 )_2|
+               |(authorize_d1_l1 )_2|
+               |(authorize_all_d1 )_2|
+               |(authorize_d2_l1 )_2|
+               |(authorize_d1_l3 )_2|
+               |(authorize_d2_l4 )_2|
+               |(authorize_d2_l2 )_2|
+               |(decrease_factor )_2|)))
+  (=> |(increase_priority_d2 )_3| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d2 )_2|
+               (not (>= (- priority_d2_2 3.0) 0.0))
+               clear_d2_l1_2
+               clear_d2_l2_2
+               clear_d2_l3_2
+               clear_d2_l4_2
+               |(authorize_d2_l4 )_2|
+               |(authorize_all_d1 )_2|
+               |(increase_priority_d2 )_2|
+               |(authorize_d1_l4 )_2|
+               |(increase_factor )_2|
+               |(decrease_factor )_2|
+               |(authorize_d1_l1 )_2|
+               |(authorize_d2_l3 )_2|
+               |(increase_priority_d1 )_2|
+               |(authorize_d2_l2 )_2|
+               |(authorize_d1_l2 )_2|
+               |(authorize_d1_l3 )_2|
+               |(authorize_d2_l1 )_2|)))
+  (=> |(authorize_all_d2 )_3| a!1)))
+(assert (let ((a!1 (or |(decrease_factor )_2|
+               (not (>= (- factor_2 1.0) 0.0))
+               |(authorize_all_d1 )_2|
+               |(increase_factor )_2|
+               |(authorize_d2_l2 )_2|
+               |(authorize_d1_l3 )_2|
+               |(authorize_d2_l4 )_2|
+               |(authorize_d1_l4 )_2|
+               |(authorize_all_d2 )_2|
+               |(authorize_d1_l1 )_2|
+               |(authorize_d1_l2 )_2|
+               |(increase_priority_d1 )_2|
+               |(authorize_d2_l3 )_2|
+               |(authorize_d2_l1 )_2|
+               |(increase_priority_d2 )_2|)))
+  (=> |(decrease_factor )_3| a!1)))
+(assert (let ((a!1 (or |(increase_factor )_2|
+               (not (<= (- factor_2 10.0) 0.0))
+               |(decrease_factor )_2|
+               |(authorize_all_d2 )_2|
+               |(authorize_d1_l3 )_2|
+               |(authorize_d2_l4 )_2|
+               |(increase_priority_d2 )_2|
+               |(authorize_d2_l1 )_2|
+               |(authorize_d2_l2 )_2|
+               |(authorize_all_d1 )_2|
+               |(increase_priority_d1 )_2|
+               |(authorize_d1_l2 )_2|
+               |(authorize_d1_l1 )_2|
+               |(authorize_d1_l4 )_2|
+               |(authorize_d2_l3 )_2|)))
+  (=> |(increase_factor )_3| a!1)))
+(assert (=> |(authorize_d1_l1 )_4|
+    (or |(authorize_d1_l1 )_3|
+        clear_d1_l1_3
+        |(authorize_d1_l4 )_3|
+        |(authorize_d2_l1 )_3|
+        |(authorize_d2_l2 )_3|
+        |(increase_priority_d1 )_3|
+        |(authorize_d1_l3 )_3|
+        |(increase_priority_d2 )_3|
+        |(authorize_d1_l2 )_3|
+        |(decrease_factor )_3|
+        |(authorize_all_d2 )_3|
+        |(authorize_d2_l4 )_3|
+        |(increase_factor )_3|
+        |(authorize_d2_l3 )_3|
+        |(authorize_all_d1 )_3|)))
+(assert (=> |(authorize_d1_l2 )_4|
+    (or |(authorize_d1_l2 )_3|
+        clear_d1_l2_3
+        |(authorize_all_d1 )_3|
+        |(authorize_d2_l1 )_3|
+        |(increase_priority_d1 )_3|
+        |(increase_priority_d2 )_3|
+        |(authorize_d2_l2 )_3|
+        |(authorize_d1_l1 )_3|
+        |(authorize_all_d2 )_3|
+        |(decrease_factor )_3|
+        |(authorize_d1_l3 )_3|
+        |(increase_factor )_3|
+        |(authorize_d1_l4 )_3|
+        |(authorize_d2_l4 )_3|
+        |(authorize_d2_l3 )_3|)))
+(assert (=> |(authorize_d1_l3 )_4|
+    (or |(authorize_d1_l3 )_3|
+        clear_d1_l3_3
+        |(authorize_all_d1 )_3|
+        |(authorize_d1_l4 )_3|
+        |(authorize_d2_l1 )_3|
+        |(authorize_d2_l4 )_3|
+        |(decrease_factor )_3|
+        |(increase_factor )_3|
+        |(authorize_d1_l1 )_3|
+        |(increase_priority_d1 )_3|
+        |(authorize_d2_l3 )_3|
+        |(authorize_d2_l2 )_3|
+        |(increase_priority_d2 )_3|
+        |(authorize_d1_l2 )_3|
+        |(authorize_all_d2 )_3|)))
+(assert (=> |(authorize_d1_l4 )_4|
+    (or |(authorize_d1_l4 )_3|
+        clear_d1_l4_3
+        |(increase_priority_d1 )_3|
+        |(authorize_d1_l1 )_3|
+        |(authorize_d1_l3 )_3|
+        |(authorize_d2_l1 )_3|
+        |(authorize_all_d1 )_3|
+        |(authorize_d2_l2 )_3|
+        |(increase_priority_d2 )_3|
+        |(authorize_d2_l4 )_3|
+        |(authorize_all_d2 )_3|
+        |(decrease_factor )_3|
+        |(authorize_d2_l3 )_3|
+        |(authorize_d1_l2 )_3|
+        |(increase_factor )_3|)))
+(assert (=> |(authorize_d2_l1 )_4|
+    (or |(authorize_d2_l1 )_3|
+        clear_d2_l1_3
+        |(increase_priority_d1 )_3|
+        |(authorize_d1_l1 )_3|
+        |(authorize_d1_l4 )_3|
+        |(authorize_d1_l2 )_3|
+        |(authorize_d1_l3 )_3|
+        |(authorize_d2_l2 )_3|
+        |(authorize_d2_l4 )_3|
+        |(increase_factor )_3|
+        |(increase_priority_d2 )_3|
+        |(authorize_all_d1 )_3|
+        |(authorize_d2_l3 )_3|
+        |(decrease_factor )_3|
+        |(authorize_all_d2 )_3|)))
+(assert (=> |(authorize_d2_l2 )_4|
+    (or |(authorize_d2_l2 )_3|
+        clear_d2_l2_3
+        |(authorize_d1_l4 )_3|
+        |(decrease_factor )_3|
+        |(authorize_d2_l1 )_3|
+        |(authorize_d1_l1 )_3|
+        |(authorize_d1_l2 )_3|
+        |(increase_factor )_3|
+        |(increase_priority_d1 )_3|
+        |(authorize_d2_l4 )_3|
+        |(authorize_d1_l3 )_3|
+        |(authorize_all_d2 )_3|
+        |(authorize_all_d1 )_3|
+        |(increase_priority_d2 )_3|
+        |(authorize_d2_l3 )_3|)))
+(assert (=> |(authorize_d2_l3 )_4|
+    (or |(authorize_d2_l3 )_3|
+        clear_d2_l3_3
+        |(increase_priority_d2 )_3|
+        |(authorize_d1_l3 )_3|
+        |(authorize_d1_l4 )_3|
+        |(authorize_all_d2 )_3|
+        |(authorize_d2_l1 )_3|
+        |(authorize_all_d1 )_3|
+        |(decrease_factor )_3|
+        |(authorize_d1_l1 )_3|
+        |(authorize_d2_l2 )_3|
+        |(authorize_d2_l4 )_3|
+        |(increase_priority_d1 )_3|
+        |(increase_factor )_3|
+        |(authorize_d1_l2 )_3|)))
+(assert (=> |(authorize_d2_l4 )_4|
+    (or |(authorize_d2_l4 )_3|
+        clear_d2_l4_3
+        |(authorize_all_d2 )_3|
+        |(authorize_d1_l4 )_3|
+        |(authorize_d1_l3 )_3|
+        |(authorize_d2_l1 )_3|
+        |(increase_factor )_3|
+        |(decrease_factor )_3|
+        |(authorize_all_d1 )_3|
+        |(authorize_d2_l2 )_3|
+        |(increase_priority_d2 )_3|
+        |(authorize_d1_l1 )_3|
+        |(authorize_d1_l2 )_3|
+        |(authorize_d2_l3 )_3|
+        |(increase_priority_d1 )_3|)))
+(assert (let ((a!1 (or |(increase_priority_d1 )_3|
+               (not (< (- priority_d1_3 3.0) 0.0))
+               |(authorize_d1_l4 )_3|
+               |(authorize_d2_l1 )_3|
+               |(authorize_all_d1 )_3|
+               |(authorize_d1_l2 )_3|
+               |(authorize_d1_l1 )_3|
+               |(authorize_d1_l3 )_3|
+               |(increase_priority_d2 )_3|
+               |(authorize_d2_l2 )_3|
+               |(increase_factor )_3|
+               |(authorize_all_d2 )_3|
+               |(decrease_factor )_3|
+               |(authorize_d2_l3 )_3|
+               |(authorize_d2_l4 )_3|)))
+  (=> |(increase_priority_d1 )_4| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d1 )_3|
+               (not (>= (- priority_d1_3 3.0) 0.0))
+               clear_d1_l1_3
+               clear_d1_l2_3
+               clear_d1_l3_3
+               clear_d1_l4_3
+               |(decrease_factor )_3|
+               |(increase_priority_d1 )_3|
+               |(authorize_d1_l3 )_3|
+               |(authorize_d1_l2 )_3|
+               |(authorize_d1_l4 )_3|
+               |(authorize_all_d2 )_3|
+               |(increase_factor )_3|
+               |(authorize_d2_l4 )_3|
+               |(increase_priority_d2 )_3|
+               |(authorize_d2_l1 )_3|
+               |(authorize_d2_l3 )_3|
+               |(authorize_d2_l2 )_3|
+               |(authorize_d1_l1 )_3|)))
+  (=> |(authorize_all_d1 )_4| a!1)))
+(assert (let ((a!1 (or |(increase_priority_d2 )_3|
+               (not (< (- priority_d2_3 3.0) 0.0))
+               |(authorize_d2_l3 )_3|
+               |(authorize_d1_l4 )_3|
+               |(authorize_all_d2 )_3|
+               |(authorize_d1_l2 )_3|
+               |(increase_factor )_3|
+               |(increase_priority_d1 )_3|
+               |(authorize_d1_l1 )_3|
+               |(authorize_all_d1 )_3|
+               |(authorize_d2_l1 )_3|
+               |(authorize_d1_l3 )_3|
+               |(authorize_d2_l4 )_3|
+               |(authorize_d2_l2 )_3|
+               |(decrease_factor )_3|)))
+  (=> |(increase_priority_d2 )_4| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d2 )_3|
+               (not (>= (- priority_d2_3 3.0) 0.0))
+               clear_d2_l1_3
+               clear_d2_l2_3
+               clear_d2_l3_3
+               clear_d2_l4_3
+               |(authorize_d2_l4 )_3|
+               |(authorize_all_d1 )_3|
+               |(increase_priority_d2 )_3|
+               |(authorize_d1_l4 )_3|
+               |(increase_factor )_3|
+               |(decrease_factor )_3|
+               |(authorize_d1_l1 )_3|
+               |(authorize_d2_l3 )_3|
+               |(increase_priority_d1 )_3|
+               |(authorize_d2_l2 )_3|
+               |(authorize_d1_l2 )_3|
+               |(authorize_d1_l3 )_3|
+               |(authorize_d2_l1 )_3|)))
+  (=> |(authorize_all_d2 )_4| a!1)))
+(assert (let ((a!1 (or |(decrease_factor )_3|
+               (not (>= (- factor_3 1.0) 0.0))
+               |(authorize_all_d1 )_3|
+               |(increase_factor )_3|
+               |(authorize_d2_l2 )_3|
+               |(authorize_d1_l3 )_3|
+               |(authorize_d2_l4 )_3|
+               |(authorize_d1_l4 )_3|
+               |(authorize_all_d2 )_3|
+               |(authorize_d1_l1 )_3|
+               |(authorize_d1_l2 )_3|
+               |(increase_priority_d1 )_3|
+               |(authorize_d2_l3 )_3|
+               |(authorize_d2_l1 )_3|
+               |(increase_priority_d2 )_3|)))
+  (=> |(decrease_factor )_4| a!1)))
+(assert (let ((a!1 (or |(increase_factor )_3|
+               (not (<= (- factor_3 10.0) 0.0))
+               |(decrease_factor )_3|
+               |(authorize_all_d2 )_3|
+               |(authorize_d1_l3 )_3|
+               |(authorize_d2_l4 )_3|
+               |(increase_priority_d2 )_3|
+               |(authorize_d2_l1 )_3|
+               |(authorize_d2_l2 )_3|
+               |(authorize_all_d1 )_3|
+               |(increase_priority_d1 )_3|
+               |(authorize_d1_l2 )_3|
+               |(authorize_d1_l1 )_3|
+               |(authorize_d1_l4 )_3|
+               |(authorize_d2_l3 )_3|)))
+  (=> |(increase_factor )_4| a!1)))
+(assert (=> |(authorize_d1_l1 )_5|
+    (or |(authorize_d1_l1 )_4|
+        clear_d1_l1_4
+        |(authorize_d1_l4 )_4|
+        |(authorize_d2_l1 )_4|
+        |(authorize_d2_l2 )_4|
+        |(increase_priority_d1 )_4|
+        |(authorize_d1_l3 )_4|
+        |(increase_priority_d2 )_4|
+        |(authorize_d1_l2 )_4|
+        |(decrease_factor )_4|
+        |(authorize_all_d2 )_4|
+        |(authorize_d2_l4 )_4|
+        |(increase_factor )_4|
+        |(authorize_d2_l3 )_4|
+        |(authorize_all_d1 )_4|)))
+(assert (=> |(authorize_d1_l2 )_5|
+    (or |(authorize_d1_l2 )_4|
+        clear_d1_l2_4
+        |(authorize_all_d1 )_4|
+        |(authorize_d2_l1 )_4|
+        |(increase_priority_d1 )_4|
+        |(increase_priority_d2 )_4|
+        |(authorize_d2_l2 )_4|
+        |(authorize_d1_l1 )_4|
+        |(authorize_all_d2 )_4|
+        |(decrease_factor )_4|
+        |(authorize_d1_l3 )_4|
+        |(increase_factor )_4|
+        |(authorize_d1_l4 )_4|
+        |(authorize_d2_l4 )_4|
+        |(authorize_d2_l3 )_4|)))
+(assert (=> |(authorize_d1_l3 )_5|
+    (or |(authorize_d1_l3 )_4|
+        clear_d1_l3_4
+        |(authorize_all_d1 )_4|
+        |(authorize_d1_l4 )_4|
+        |(authorize_d2_l1 )_4|
+        |(authorize_d2_l4 )_4|
+        |(decrease_factor )_4|
+        |(increase_factor )_4|
+        |(authorize_d1_l1 )_4|
+        |(increase_priority_d1 )_4|
+        |(authorize_d2_l3 )_4|
+        |(authorize_d2_l2 )_4|
+        |(increase_priority_d2 )_4|
+        |(authorize_d1_l2 )_4|
+        |(authorize_all_d2 )_4|)))
+(assert (=> |(authorize_d1_l4 )_5|
+    (or |(authorize_d1_l4 )_4|
+        clear_d1_l4_4
+        |(increase_priority_d1 )_4|
+        |(authorize_d1_l1 )_4|
+        |(authorize_d1_l3 )_4|
+        |(authorize_d2_l1 )_4|
+        |(authorize_all_d1 )_4|
+        |(authorize_d2_l2 )_4|
+        |(increase_priority_d2 )_4|
+        |(authorize_d2_l4 )_4|
+        |(authorize_all_d2 )_4|
+        |(decrease_factor )_4|
+        |(authorize_d2_l3 )_4|
+        |(authorize_d1_l2 )_4|
+        |(increase_factor )_4|)))
+(assert (=> |(authorize_d2_l1 )_5|
+    (or |(authorize_d2_l1 )_4|
+        clear_d2_l1_4
+        |(increase_priority_d1 )_4|
+        |(authorize_d1_l1 )_4|
+        |(authorize_d1_l4 )_4|
+        |(authorize_d1_l2 )_4|
+        |(authorize_d1_l3 )_4|
+        |(authorize_d2_l2 )_4|
+        |(authorize_d2_l4 )_4|
+        |(increase_factor )_4|
+        |(increase_priority_d2 )_4|
+        |(authorize_all_d1 )_4|
+        |(authorize_d2_l3 )_4|
+        |(decrease_factor )_4|
+        |(authorize_all_d2 )_4|)))
+(assert (=> |(authorize_d2_l2 )_5|
+    (or |(authorize_d2_l2 )_4|
+        clear_d2_l2_4
+        |(authorize_d1_l4 )_4|
+        |(decrease_factor )_4|
+        |(authorize_d2_l1 )_4|
+        |(authorize_d1_l1 )_4|
+        |(authorize_d1_l2 )_4|
+        |(increase_factor )_4|
+        |(increase_priority_d1 )_4|
+        |(authorize_d2_l4 )_4|
+        |(authorize_d1_l3 )_4|
+        |(authorize_all_d2 )_4|
+        |(authorize_all_d1 )_4|
+        |(increase_priority_d2 )_4|
+        |(authorize_d2_l3 )_4|)))
+(assert (=> |(authorize_d2_l3 )_5|
+    (or |(authorize_d2_l3 )_4|
+        clear_d2_l3_4
+        |(increase_priority_d2 )_4|
+        |(authorize_d1_l3 )_4|
+        |(authorize_d1_l4 )_4|
+        |(authorize_all_d2 )_4|
+        |(authorize_d2_l1 )_4|
+        |(authorize_all_d1 )_4|
+        |(decrease_factor )_4|
+        |(authorize_d1_l1 )_4|
+        |(authorize_d2_l2 )_4|
+        |(authorize_d2_l4 )_4|
+        |(increase_priority_d1 )_4|
+        |(increase_factor )_4|
+        |(authorize_d1_l2 )_4|)))
+(assert (=> |(authorize_d2_l4 )_5|
+    (or |(authorize_d2_l4 )_4|
+        clear_d2_l4_4
+        |(authorize_all_d2 )_4|
+        |(authorize_d1_l4 )_4|
+        |(authorize_d1_l3 )_4|
+        |(authorize_d2_l1 )_4|
+        |(increase_factor )_4|
+        |(decrease_factor )_4|
+        |(authorize_all_d1 )_4|
+        |(authorize_d2_l2 )_4|
+        |(increase_priority_d2 )_4|
+        |(authorize_d1_l1 )_4|
+        |(authorize_d1_l2 )_4|
+        |(authorize_d2_l3 )_4|
+        |(increase_priority_d1 )_4|)))
+(assert (let ((a!1 (or |(increase_priority_d1 )_4|
+               (not (< (- priority_d1_4 3.0) 0.0))
+               |(authorize_d1_l4 )_4|
+               |(authorize_d2_l1 )_4|
+               |(authorize_all_d1 )_4|
+               |(authorize_d1_l2 )_4|
+               |(authorize_d1_l1 )_4|
+               |(authorize_d1_l3 )_4|
+               |(increase_priority_d2 )_4|
+               |(authorize_d2_l2 )_4|
+               |(increase_factor )_4|
+               |(authorize_all_d2 )_4|
+               |(decrease_factor )_4|
+               |(authorize_d2_l3 )_4|
+               |(authorize_d2_l4 )_4|)))
+  (=> |(increase_priority_d1 )_5| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d1 )_4|
+               (not (>= (- priority_d1_4 3.0) 0.0))
+               clear_d1_l1_4
+               clear_d1_l2_4
+               clear_d1_l3_4
+               clear_d1_l4_4
+               |(decrease_factor )_4|
+               |(increase_priority_d1 )_4|
+               |(authorize_d1_l3 )_4|
+               |(authorize_d1_l2 )_4|
+               |(authorize_d1_l4 )_4|
+               |(authorize_all_d2 )_4|
+               |(increase_factor )_4|
+               |(authorize_d2_l4 )_4|
+               |(increase_priority_d2 )_4|
+               |(authorize_d2_l1 )_4|
+               |(authorize_d2_l3 )_4|
+               |(authorize_d2_l2 )_4|
+               |(authorize_d1_l1 )_4|)))
+  (=> |(authorize_all_d1 )_5| a!1)))
+(assert (let ((a!1 (or |(increase_priority_d2 )_4|
+               (not (< (- priority_d2_4 3.0) 0.0))
+               |(authorize_d2_l3 )_4|
+               |(authorize_d1_l4 )_4|
+               |(authorize_all_d2 )_4|
+               |(authorize_d1_l2 )_4|
+               |(increase_factor )_4|
+               |(increase_priority_d1 )_4|
+               |(authorize_d1_l1 )_4|
+               |(authorize_all_d1 )_4|
+               |(authorize_d2_l1 )_4|
+               |(authorize_d1_l3 )_4|
+               |(authorize_d2_l4 )_4|
+               |(authorize_d2_l2 )_4|
+               |(decrease_factor )_4|)))
+  (=> |(increase_priority_d2 )_5| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d2 )_4|
+               (not (>= (- priority_d2_4 3.0) 0.0))
+               clear_d2_l1_4
+               clear_d2_l2_4
+               clear_d2_l3_4
+               clear_d2_l4_4
+               |(authorize_d2_l4 )_4|
+               |(authorize_all_d1 )_4|
+               |(increase_priority_d2 )_4|
+               |(authorize_d1_l4 )_4|
+               |(increase_factor )_4|
+               |(decrease_factor )_4|
+               |(authorize_d1_l1 )_4|
+               |(authorize_d2_l3 )_4|
+               |(increase_priority_d1 )_4|
+               |(authorize_d2_l2 )_4|
+               |(authorize_d1_l2 )_4|
+               |(authorize_d1_l3 )_4|
+               |(authorize_d2_l1 )_4|)))
+  (=> |(authorize_all_d2 )_5| a!1)))
+(assert (let ((a!1 (or |(decrease_factor )_4|
+               (not (>= (- factor_4 1.0) 0.0))
+               |(authorize_all_d1 )_4|
+               |(increase_factor )_4|
+               |(authorize_d2_l2 )_4|
+               |(authorize_d1_l3 )_4|
+               |(authorize_d2_l4 )_4|
+               |(authorize_d1_l4 )_4|
+               |(authorize_all_d2 )_4|
+               |(authorize_d1_l1 )_4|
+               |(authorize_d1_l2 )_4|
+               |(increase_priority_d1 )_4|
+               |(authorize_d2_l3 )_4|
+               |(authorize_d2_l1 )_4|
+               |(increase_priority_d2 )_4|)))
+  (=> |(decrease_factor )_5| a!1)))
+(assert (let ((a!1 (or |(increase_factor )_4|
+               (not (<= (- factor_4 10.0) 0.0))
+               |(decrease_factor )_4|
+               |(authorize_all_d2 )_4|
+               |(authorize_d1_l3 )_4|
+               |(authorize_d2_l4 )_4|
+               |(increase_priority_d2 )_4|
+               |(authorize_d2_l1 )_4|
+               |(authorize_d2_l2 )_4|
+               |(authorize_all_d1 )_4|
+               |(increase_priority_d1 )_4|
+               |(authorize_d1_l2 )_4|
+               |(authorize_d1_l1 )_4|
+               |(authorize_d1_l4 )_4|
+               |(authorize_d2_l3 )_4|)))
+  (=> |(increase_factor )_5| a!1)))
+(assert (=> |(authorize_d1_l1 )_6|
+    (or |(authorize_d1_l1 )_5|
+        clear_d1_l1_5
+        |(authorize_d1_l4 )_5|
+        |(authorize_d2_l1 )_5|
+        |(authorize_d2_l2 )_5|
+        |(increase_priority_d1 )_5|
+        |(authorize_d1_l3 )_5|
+        |(increase_priority_d2 )_5|
+        |(authorize_d1_l2 )_5|
+        |(decrease_factor )_5|
+        |(authorize_all_d2 )_5|
+        |(authorize_d2_l4 )_5|
+        |(increase_factor )_5|
+        |(authorize_d2_l3 )_5|
+        |(authorize_all_d1 )_5|)))
+(assert (=> |(authorize_d1_l2 )_6|
+    (or |(authorize_d1_l2 )_5|
+        clear_d1_l2_5
+        |(authorize_all_d1 )_5|
+        |(authorize_d2_l1 )_5|
+        |(increase_priority_d1 )_5|
+        |(increase_priority_d2 )_5|
+        |(authorize_d2_l2 )_5|
+        |(authorize_d1_l1 )_5|
+        |(authorize_all_d2 )_5|
+        |(decrease_factor )_5|
+        |(authorize_d1_l3 )_5|
+        |(increase_factor )_5|
+        |(authorize_d1_l4 )_5|
+        |(authorize_d2_l4 )_5|
+        |(authorize_d2_l3 )_5|)))
+(assert (=> |(authorize_d1_l3 )_6|
+    (or |(authorize_d1_l3 )_5|
+        clear_d1_l3_5
+        |(authorize_all_d1 )_5|
+        |(authorize_d1_l4 )_5|
+        |(authorize_d2_l1 )_5|
+        |(authorize_d2_l4 )_5|
+        |(decrease_factor )_5|
+        |(increase_factor )_5|
+        |(authorize_d1_l1 )_5|
+        |(increase_priority_d1 )_5|
+        |(authorize_d2_l3 )_5|
+        |(authorize_d2_l2 )_5|
+        |(increase_priority_d2 )_5|
+        |(authorize_d1_l2 )_5|
+        |(authorize_all_d2 )_5|)))
+(assert (=> |(authorize_d1_l4 )_6|
+    (or |(authorize_d1_l4 )_5|
+        clear_d1_l4_5
+        |(increase_priority_d1 )_5|
+        |(authorize_d1_l1 )_5|
+        |(authorize_d1_l3 )_5|
+        |(authorize_d2_l1 )_5|
+        |(authorize_all_d1 )_5|
+        |(authorize_d2_l2 )_5|
+        |(increase_priority_d2 )_5|
+        |(authorize_d2_l4 )_5|
+        |(authorize_all_d2 )_5|
+        |(decrease_factor )_5|
+        |(authorize_d2_l3 )_5|
+        |(authorize_d1_l2 )_5|
+        |(increase_factor )_5|)))
+(assert (=> |(authorize_d2_l1 )_6|
+    (or |(authorize_d2_l1 )_5|
+        clear_d2_l1_5
+        |(increase_priority_d1 )_5|
+        |(authorize_d1_l1 )_5|
+        |(authorize_d1_l4 )_5|
+        |(authorize_d1_l2 )_5|
+        |(authorize_d1_l3 )_5|
+        |(authorize_d2_l2 )_5|
+        |(authorize_d2_l4 )_5|
+        |(increase_factor )_5|
+        |(increase_priority_d2 )_5|
+        |(authorize_all_d1 )_5|
+        |(authorize_d2_l3 )_5|
+        |(decrease_factor )_5|
+        |(authorize_all_d2 )_5|)))
+(assert (=> |(authorize_d2_l2 )_6|
+    (or |(authorize_d2_l2 )_5|
+        clear_d2_l2_5
+        |(authorize_d1_l4 )_5|
+        |(decrease_factor )_5|
+        |(authorize_d2_l1 )_5|
+        |(authorize_d1_l1 )_5|
+        |(authorize_d1_l2 )_5|
+        |(increase_factor )_5|
+        |(increase_priority_d1 )_5|
+        |(authorize_d2_l4 )_5|
+        |(authorize_d1_l3 )_5|
+        |(authorize_all_d2 )_5|
+        |(authorize_all_d1 )_5|
+        |(increase_priority_d2 )_5|
+        |(authorize_d2_l3 )_5|)))
+(assert (=> |(authorize_d2_l3 )_6|
+    (or |(authorize_d2_l3 )_5|
+        clear_d2_l3_5
+        |(increase_priority_d2 )_5|
+        |(authorize_d1_l3 )_5|
+        |(authorize_d1_l4 )_5|
+        |(authorize_all_d2 )_5|
+        |(authorize_d2_l1 )_5|
+        |(authorize_all_d1 )_5|
+        |(decrease_factor )_5|
+        |(authorize_d1_l1 )_5|
+        |(authorize_d2_l2 )_5|
+        |(authorize_d2_l4 )_5|
+        |(increase_priority_d1 )_5|
+        |(increase_factor )_5|
+        |(authorize_d1_l2 )_5|)))
+(assert (=> |(authorize_d2_l4 )_6|
+    (or |(authorize_d2_l4 )_5|
+        clear_d2_l4_5
+        |(authorize_all_d2 )_5|
+        |(authorize_d1_l4 )_5|
+        |(authorize_d1_l3 )_5|
+        |(authorize_d2_l1 )_5|
+        |(increase_factor )_5|
+        |(decrease_factor )_5|
+        |(authorize_all_d1 )_5|
+        |(authorize_d2_l2 )_5|
+        |(increase_priority_d2 )_5|
+        |(authorize_d1_l1 )_5|
+        |(authorize_d1_l2 )_5|
+        |(authorize_d2_l3 )_5|
+        |(increase_priority_d1 )_5|)))
+(assert (let ((a!1 (or |(increase_priority_d1 )_5|
+               (not (< (- priority_d1_5 3.0) 0.0))
+               |(authorize_d1_l4 )_5|
+               |(authorize_d2_l1 )_5|
+               |(authorize_all_d1 )_5|
+               |(authorize_d1_l2 )_5|
+               |(authorize_d1_l1 )_5|
+               |(authorize_d1_l3 )_5|
+               |(increase_priority_d2 )_5|
+               |(authorize_d2_l2 )_5|
+               |(increase_factor )_5|
+               |(authorize_all_d2 )_5|
+               |(decrease_factor )_5|
+               |(authorize_d2_l3 )_5|
+               |(authorize_d2_l4 )_5|)))
+  (=> |(increase_priority_d1 )_6| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d1 )_5|
+               (not (>= (- priority_d1_5 3.0) 0.0))
+               clear_d1_l1_5
+               clear_d1_l2_5
+               clear_d1_l3_5
+               clear_d1_l4_5
+               |(decrease_factor )_5|
+               |(increase_priority_d1 )_5|
+               |(authorize_d1_l3 )_5|
+               |(authorize_d1_l2 )_5|
+               |(authorize_d1_l4 )_5|
+               |(authorize_all_d2 )_5|
+               |(increase_factor )_5|
+               |(authorize_d2_l4 )_5|
+               |(increase_priority_d2 )_5|
+               |(authorize_d2_l1 )_5|
+               |(authorize_d2_l3 )_5|
+               |(authorize_d2_l2 )_5|
+               |(authorize_d1_l1 )_5|)))
+  (=> |(authorize_all_d1 )_6| a!1)))
+(assert (let ((a!1 (or |(increase_priority_d2 )_5|
+               (not (< (- priority_d2_5 3.0) 0.0))
+               |(authorize_d2_l3 )_5|
+               |(authorize_d1_l4 )_5|
+               |(authorize_all_d2 )_5|
+               |(authorize_d1_l2 )_5|
+               |(increase_factor )_5|
+               |(increase_priority_d1 )_5|
+               |(authorize_d1_l1 )_5|
+               |(authorize_all_d1 )_5|
+               |(authorize_d2_l1 )_5|
+               |(authorize_d1_l3 )_5|
+               |(authorize_d2_l4 )_5|
+               |(authorize_d2_l2 )_5|
+               |(decrease_factor )_5|)))
+  (=> |(increase_priority_d2 )_6| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d2 )_5|
+               (not (>= (- priority_d2_5 3.0) 0.0))
+               clear_d2_l1_5
+               clear_d2_l2_5
+               clear_d2_l3_5
+               clear_d2_l4_5
+               |(authorize_d2_l4 )_5|
+               |(authorize_all_d1 )_5|
+               |(increase_priority_d2 )_5|
+               |(authorize_d1_l4 )_5|
+               |(increase_factor )_5|
+               |(decrease_factor )_5|
+               |(authorize_d1_l1 )_5|
+               |(authorize_d2_l3 )_5|
+               |(increase_priority_d1 )_5|
+               |(authorize_d2_l2 )_5|
+               |(authorize_d1_l2 )_5|
+               |(authorize_d1_l3 )_5|
+               |(authorize_d2_l1 )_5|)))
+  (=> |(authorize_all_d2 )_6| a!1)))
+(assert (let ((a!1 (or |(decrease_factor )_5|
+               (not (>= (- factor_5 1.0) 0.0))
+               |(authorize_all_d1 )_5|
+               |(increase_factor )_5|
+               |(authorize_d2_l2 )_5|
+               |(authorize_d1_l3 )_5|
+               |(authorize_d2_l4 )_5|
+               |(authorize_d1_l4 )_5|
+               |(authorize_all_d2 )_5|
+               |(authorize_d1_l1 )_5|
+               |(authorize_d1_l2 )_5|
+               |(increase_priority_d1 )_5|
+               |(authorize_d2_l3 )_5|
+               |(authorize_d2_l1 )_5|
+               |(increase_priority_d2 )_5|)))
+  (=> |(decrease_factor )_6| a!1)))
+(assert (let ((a!1 (or |(increase_factor )_5|
+               (not (<= (- factor_5 10.0) 0.0))
+               |(decrease_factor )_5|
+               |(authorize_all_d2 )_5|
+               |(authorize_d1_l3 )_5|
+               |(authorize_d2_l4 )_5|
+               |(increase_priority_d2 )_5|
+               |(authorize_d2_l1 )_5|
+               |(authorize_d2_l2 )_5|
+               |(authorize_all_d1 )_5|
+               |(increase_priority_d1 )_5|
+               |(authorize_d1_l2 )_5|
+               |(authorize_d1_l1 )_5|
+               |(authorize_d1_l4 )_5|
+               |(authorize_d2_l3 )_5|)))
+  (=> |(increase_factor )_6| a!1)))
+(assert (=> |(authorize_d1_l1 )_7|
+    (or |(authorize_d1_l1 )_6|
+        clear_d1_l1_6
+        |(authorize_d1_l4 )_6|
+        |(authorize_d2_l1 )_6|
+        |(authorize_d2_l2 )_6|
+        |(increase_priority_d1 )_6|
+        |(authorize_d1_l3 )_6|
+        |(increase_priority_d2 )_6|
+        |(authorize_d1_l2 )_6|
+        |(decrease_factor )_6|
+        |(authorize_all_d2 )_6|
+        |(authorize_d2_l4 )_6|
+        |(increase_factor )_6|
+        |(authorize_d2_l3 )_6|
+        |(authorize_all_d1 )_6|)))
+(assert (=> |(authorize_d1_l2 )_7|
+    (or |(authorize_d1_l2 )_6|
+        clear_d1_l2_6
+        |(authorize_all_d1 )_6|
+        |(authorize_d2_l1 )_6|
+        |(increase_priority_d1 )_6|
+        |(increase_priority_d2 )_6|
+        |(authorize_d2_l2 )_6|
+        |(authorize_d1_l1 )_6|
+        |(authorize_all_d2 )_6|
+        |(decrease_factor )_6|
+        |(authorize_d1_l3 )_6|
+        |(increase_factor )_6|
+        |(authorize_d1_l4 )_6|
+        |(authorize_d2_l4 )_6|
+        |(authorize_d2_l3 )_6|)))
+(assert (=> |(authorize_d1_l3 )_7|
+    (or |(authorize_d1_l3 )_6|
+        clear_d1_l3_6
+        |(authorize_all_d1 )_6|
+        |(authorize_d1_l4 )_6|
+        |(authorize_d2_l1 )_6|
+        |(authorize_d2_l4 )_6|
+        |(decrease_factor )_6|
+        |(increase_factor )_6|
+        |(authorize_d1_l1 )_6|
+        |(increase_priority_d1 )_6|
+        |(authorize_d2_l3 )_6|
+        |(authorize_d2_l2 )_6|
+        |(increase_priority_d2 )_6|
+        |(authorize_d1_l2 )_6|
+        |(authorize_all_d2 )_6|)))
+(assert (=> |(authorize_d1_l4 )_7|
+    (or |(authorize_d1_l4 )_6|
+        clear_d1_l4_6
+        |(increase_priority_d1 )_6|
+        |(authorize_d1_l1 )_6|
+        |(authorize_d1_l3 )_6|
+        |(authorize_d2_l1 )_6|
+        |(authorize_all_d1 )_6|
+        |(authorize_d2_l2 )_6|
+        |(increase_priority_d2 )_6|
+        |(authorize_d2_l4 )_6|
+        |(authorize_all_d2 )_6|
+        |(decrease_factor )_6|
+        |(authorize_d2_l3 )_6|
+        |(authorize_d1_l2 )_6|
+        |(increase_factor )_6|)))
+(assert (=> |(authorize_d2_l1 )_7|
+    (or |(authorize_d2_l1 )_6|
+        clear_d2_l1_6
+        |(increase_priority_d1 )_6|
+        |(authorize_d1_l1 )_6|
+        |(authorize_d1_l4 )_6|
+        |(authorize_d1_l2 )_6|
+        |(authorize_d1_l3 )_6|
+        |(authorize_d2_l2 )_6|
+        |(authorize_d2_l4 )_6|
+        |(increase_factor )_6|
+        |(increase_priority_d2 )_6|
+        |(authorize_all_d1 )_6|
+        |(authorize_d2_l3 )_6|
+        |(decrease_factor )_6|
+        |(authorize_all_d2 )_6|)))
+(assert (=> |(authorize_d2_l2 )_7|
+    (or |(authorize_d2_l2 )_6|
+        clear_d2_l2_6
+        |(authorize_d1_l4 )_6|
+        |(decrease_factor )_6|
+        |(authorize_d2_l1 )_6|
+        |(authorize_d1_l1 )_6|
+        |(authorize_d1_l2 )_6|
+        |(increase_factor )_6|
+        |(increase_priority_d1 )_6|
+        |(authorize_d2_l4 )_6|
+        |(authorize_d1_l3 )_6|
+        |(authorize_all_d2 )_6|
+        |(authorize_all_d1 )_6|
+        |(increase_priority_d2 )_6|
+        |(authorize_d2_l3 )_6|)))
+(assert (=> |(authorize_d2_l3 )_7|
+    (or |(authorize_d2_l3 )_6|
+        clear_d2_l3_6
+        |(increase_priority_d2 )_6|
+        |(authorize_d1_l3 )_6|
+        |(authorize_d1_l4 )_6|
+        |(authorize_all_d2 )_6|
+        |(authorize_d2_l1 )_6|
+        |(authorize_all_d1 )_6|
+        |(decrease_factor )_6|
+        |(authorize_d1_l1 )_6|
+        |(authorize_d2_l2 )_6|
+        |(authorize_d2_l4 )_6|
+        |(increase_priority_d1 )_6|
+        |(increase_factor )_6|
+        |(authorize_d1_l2 )_6|)))
+(assert (=> |(authorize_d2_l4 )_7|
+    (or |(authorize_d2_l4 )_6|
+        clear_d2_l4_6
+        |(authorize_all_d2 )_6|
+        |(authorize_d1_l4 )_6|
+        |(authorize_d1_l3 )_6|
+        |(authorize_d2_l1 )_6|
+        |(increase_factor )_6|
+        |(decrease_factor )_6|
+        |(authorize_all_d1 )_6|
+        |(authorize_d2_l2 )_6|
+        |(increase_priority_d2 )_6|
+        |(authorize_d1_l1 )_6|
+        |(authorize_d1_l2 )_6|
+        |(authorize_d2_l3 )_6|
+        |(increase_priority_d1 )_6|)))
+(assert (let ((a!1 (or |(increase_priority_d1 )_6|
+               (not (< (- priority_d1_6 3.0) 0.0))
+               |(authorize_d1_l4 )_6|
+               |(authorize_d2_l1 )_6|
+               |(authorize_all_d1 )_6|
+               |(authorize_d1_l2 )_6|
+               |(authorize_d1_l1 )_6|
+               |(authorize_d1_l3 )_6|
+               |(increase_priority_d2 )_6|
+               |(authorize_d2_l2 )_6|
+               |(increase_factor )_6|
+               |(authorize_all_d2 )_6|
+               |(decrease_factor )_6|
+               |(authorize_d2_l3 )_6|
+               |(authorize_d2_l4 )_6|)))
+  (=> |(increase_priority_d1 )_7| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d1 )_6|
+               (not (>= (- priority_d1_6 3.0) 0.0))
+               clear_d1_l1_6
+               clear_d1_l2_6
+               clear_d1_l3_6
+               clear_d1_l4_6
+               |(decrease_factor )_6|
+               |(increase_priority_d1 )_6|
+               |(authorize_d1_l3 )_6|
+               |(authorize_d1_l2 )_6|
+               |(authorize_d1_l4 )_6|
+               |(authorize_all_d2 )_6|
+               |(increase_factor )_6|
+               |(authorize_d2_l4 )_6|
+               |(increase_priority_d2 )_6|
+               |(authorize_d2_l1 )_6|
+               |(authorize_d2_l3 )_6|
+               |(authorize_d2_l2 )_6|
+               |(authorize_d1_l1 )_6|)))
+  (=> |(authorize_all_d1 )_7| a!1)))
+(assert (let ((a!1 (or |(increase_priority_d2 )_6|
+               (not (< (- priority_d2_6 3.0) 0.0))
+               |(authorize_d2_l3 )_6|
+               |(authorize_d1_l4 )_6|
+               |(authorize_all_d2 )_6|
+               |(authorize_d1_l2 )_6|
+               |(increase_factor )_6|
+               |(increase_priority_d1 )_6|
+               |(authorize_d1_l1 )_6|
+               |(authorize_all_d1 )_6|
+               |(authorize_d2_l1 )_6|
+               |(authorize_d1_l3 )_6|
+               |(authorize_d2_l4 )_6|
+               |(authorize_d2_l2 )_6|
+               |(decrease_factor )_6|)))
+  (=> |(increase_priority_d2 )_7| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d2 )_6|
+               (not (>= (- priority_d2_6 3.0) 0.0))
+               clear_d2_l1_6
+               clear_d2_l2_6
+               clear_d2_l3_6
+               clear_d2_l4_6
+               |(authorize_d2_l4 )_6|
+               |(authorize_all_d1 )_6|
+               |(increase_priority_d2 )_6|
+               |(authorize_d1_l4 )_6|
+               |(increase_factor )_6|
+               |(decrease_factor )_6|
+               |(authorize_d1_l1 )_6|
+               |(authorize_d2_l3 )_6|
+               |(increase_priority_d1 )_6|
+               |(authorize_d2_l2 )_6|
+               |(authorize_d1_l2 )_6|
+               |(authorize_d1_l3 )_6|
+               |(authorize_d2_l1 )_6|)))
+  (=> |(authorize_all_d2 )_7| a!1)))
+(assert (let ((a!1 (or |(decrease_factor )_6|
+               (not (>= (- factor_6 1.0) 0.0))
+               |(authorize_all_d1 )_6|
+               |(increase_factor )_6|
+               |(authorize_d2_l2 )_6|
+               |(authorize_d1_l3 )_6|
+               |(authorize_d2_l4 )_6|
+               |(authorize_d1_l4 )_6|
+               |(authorize_all_d2 )_6|
+               |(authorize_d1_l1 )_6|
+               |(authorize_d1_l2 )_6|
+               |(increase_priority_d1 )_6|
+               |(authorize_d2_l3 )_6|
+               |(authorize_d2_l1 )_6|
+               |(increase_priority_d2 )_6|)))
+  (=> |(decrease_factor )_7| a!1)))
+(assert (let ((a!1 (or |(increase_factor )_6|
+               (not (<= (- factor_6 10.0) 0.0))
+               |(decrease_factor )_6|
+               |(authorize_all_d2 )_6|
+               |(authorize_d1_l3 )_6|
+               |(authorize_d2_l4 )_6|
+               |(increase_priority_d2 )_6|
+               |(authorize_d2_l1 )_6|
+               |(authorize_d2_l2 )_6|
+               |(authorize_all_d1 )_6|
+               |(increase_priority_d1 )_6|
+               |(authorize_d1_l2 )_6|
+               |(authorize_d1_l1 )_6|
+               |(authorize_d1_l4 )_6|
+               |(authorize_d2_l3 )_6|)))
+  (=> |(increase_factor )_7| a!1)))
+(assert (=> |(authorize_d1_l1 )_8|
+    (or |(authorize_d1_l1 )_7|
+        clear_d1_l1_7
+        |(authorize_d1_l4 )_7|
+        |(authorize_d2_l1 )_7|
+        |(authorize_d2_l2 )_7|
+        |(increase_priority_d1 )_7|
+        |(authorize_d1_l3 )_7|
+        |(increase_priority_d2 )_7|
+        |(authorize_d1_l2 )_7|
+        |(decrease_factor )_7|
+        |(authorize_all_d2 )_7|
+        |(authorize_d2_l4 )_7|
+        |(increase_factor )_7|
+        |(authorize_d2_l3 )_7|
+        |(authorize_all_d1 )_7|)))
+(assert (=> |(authorize_d1_l2 )_8|
+    (or |(authorize_d1_l2 )_7|
+        clear_d1_l2_7
+        |(authorize_all_d1 )_7|
+        |(authorize_d2_l1 )_7|
+        |(increase_priority_d1 )_7|
+        |(increase_priority_d2 )_7|
+        |(authorize_d2_l2 )_7|
+        |(authorize_d1_l1 )_7|
+        |(authorize_all_d2 )_7|
+        |(decrease_factor )_7|
+        |(authorize_d1_l3 )_7|
+        |(increase_factor )_7|
+        |(authorize_d1_l4 )_7|
+        |(authorize_d2_l4 )_7|
+        |(authorize_d2_l3 )_7|)))
+(assert (=> |(authorize_d1_l3 )_8|
+    (or |(authorize_d1_l3 )_7|
+        clear_d1_l3_7
+        |(authorize_all_d1 )_7|
+        |(authorize_d1_l4 )_7|
+        |(authorize_d2_l1 )_7|
+        |(authorize_d2_l4 )_7|
+        |(decrease_factor )_7|
+        |(increase_factor )_7|
+        |(authorize_d1_l1 )_7|
+        |(increase_priority_d1 )_7|
+        |(authorize_d2_l3 )_7|
+        |(authorize_d2_l2 )_7|
+        |(increase_priority_d2 )_7|
+        |(authorize_d1_l2 )_7|
+        |(authorize_all_d2 )_7|)))
+(assert (=> |(authorize_d1_l4 )_8|
+    (or |(authorize_d1_l4 )_7|
+        clear_d1_l4_7
+        |(increase_priority_d1 )_7|
+        |(authorize_d1_l1 )_7|
+        |(authorize_d1_l3 )_7|
+        |(authorize_d2_l1 )_7|
+        |(authorize_all_d1 )_7|
+        |(authorize_d2_l2 )_7|
+        |(increase_priority_d2 )_7|
+        |(authorize_d2_l4 )_7|
+        |(authorize_all_d2 )_7|
+        |(decrease_factor )_7|
+        |(authorize_d2_l3 )_7|
+        |(authorize_d1_l2 )_7|
+        |(increase_factor )_7|)))
+(assert (=> |(authorize_d2_l1 )_8|
+    (or |(authorize_d2_l1 )_7|
+        clear_d2_l1_7
+        |(increase_priority_d1 )_7|
+        |(authorize_d1_l1 )_7|
+        |(authorize_d1_l4 )_7|
+        |(authorize_d1_l2 )_7|
+        |(authorize_d1_l3 )_7|
+        |(authorize_d2_l2 )_7|
+        |(authorize_d2_l4 )_7|
+        |(increase_factor )_7|
+        |(increase_priority_d2 )_7|
+        |(authorize_all_d1 )_7|
+        |(authorize_d2_l3 )_7|
+        |(decrease_factor )_7|
+        |(authorize_all_d2 )_7|)))
+(assert (=> |(authorize_d2_l2 )_8|
+    (or |(authorize_d2_l2 )_7|
+        clear_d2_l2_7
+        |(authorize_d1_l4 )_7|
+        |(decrease_factor )_7|
+        |(authorize_d2_l1 )_7|
+        |(authorize_d1_l1 )_7|
+        |(authorize_d1_l2 )_7|
+        |(increase_factor )_7|
+        |(increase_priority_d1 )_7|
+        |(authorize_d2_l4 )_7|
+        |(authorize_d1_l3 )_7|
+        |(authorize_all_d2 )_7|
+        |(authorize_all_d1 )_7|
+        |(increase_priority_d2 )_7|
+        |(authorize_d2_l3 )_7|)))
+(assert (=> |(authorize_d2_l3 )_8|
+    (or |(authorize_d2_l3 )_7|
+        clear_d2_l3_7
+        |(increase_priority_d2 )_7|
+        |(authorize_d1_l3 )_7|
+        |(authorize_d1_l4 )_7|
+        |(authorize_all_d2 )_7|
+        |(authorize_d2_l1 )_7|
+        |(authorize_all_d1 )_7|
+        |(decrease_factor )_7|
+        |(authorize_d1_l1 )_7|
+        |(authorize_d2_l2 )_7|
+        |(authorize_d2_l4 )_7|
+        |(increase_priority_d1 )_7|
+        |(increase_factor )_7|
+        |(authorize_d1_l2 )_7|)))
+(assert (=> |(authorize_d2_l4 )_8|
+    (or |(authorize_d2_l4 )_7|
+        clear_d2_l4_7
+        |(authorize_all_d2 )_7|
+        |(authorize_d1_l4 )_7|
+        |(authorize_d1_l3 )_7|
+        |(authorize_d2_l1 )_7|
+        |(increase_factor )_7|
+        |(decrease_factor )_7|
+        |(authorize_all_d1 )_7|
+        |(authorize_d2_l2 )_7|
+        |(increase_priority_d2 )_7|
+        |(authorize_d1_l1 )_7|
+        |(authorize_d1_l2 )_7|
+        |(authorize_d2_l3 )_7|
+        |(increase_priority_d1 )_7|)))
+(assert (let ((a!1 (or |(increase_priority_d1 )_7|
+               (not (< (- priority_d1_7 3.0) 0.0))
+               |(authorize_d1_l4 )_7|
+               |(authorize_d2_l1 )_7|
+               |(authorize_all_d1 )_7|
+               |(authorize_d1_l2 )_7|
+               |(authorize_d1_l1 )_7|
+               |(authorize_d1_l3 )_7|
+               |(increase_priority_d2 )_7|
+               |(authorize_d2_l2 )_7|
+               |(increase_factor )_7|
+               |(authorize_all_d2 )_7|
+               |(decrease_factor )_7|
+               |(authorize_d2_l3 )_7|
+               |(authorize_d2_l4 )_7|)))
+  (=> |(increase_priority_d1 )_8| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d1 )_7|
+               (not (>= (- priority_d1_7 3.0) 0.0))
+               clear_d1_l1_7
+               clear_d1_l2_7
+               clear_d1_l3_7
+               clear_d1_l4_7
+               |(decrease_factor )_7|
+               |(increase_priority_d1 )_7|
+               |(authorize_d1_l3 )_7|
+               |(authorize_d1_l2 )_7|
+               |(authorize_d1_l4 )_7|
+               |(authorize_all_d2 )_7|
+               |(increase_factor )_7|
+               |(authorize_d2_l4 )_7|
+               |(increase_priority_d2 )_7|
+               |(authorize_d2_l1 )_7|
+               |(authorize_d2_l3 )_7|
+               |(authorize_d2_l2 )_7|
+               |(authorize_d1_l1 )_7|)))
+  (=> |(authorize_all_d1 )_8| a!1)))
+(assert (let ((a!1 (or |(increase_priority_d2 )_7|
+               (not (< (- priority_d2_7 3.0) 0.0))
+               |(authorize_d2_l3 )_7|
+               |(authorize_d1_l4 )_7|
+               |(authorize_all_d2 )_7|
+               |(authorize_d1_l2 )_7|
+               |(increase_factor )_7|
+               |(increase_priority_d1 )_7|
+               |(authorize_d1_l1 )_7|
+               |(authorize_all_d1 )_7|
+               |(authorize_d2_l1 )_7|
+               |(authorize_d1_l3 )_7|
+               |(authorize_d2_l4 )_7|
+               |(authorize_d2_l2 )_7|
+               |(decrease_factor )_7|)))
+  (=> |(increase_priority_d2 )_8| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d2 )_7|
+               (not (>= (- priority_d2_7 3.0) 0.0))
+               clear_d2_l1_7
+               clear_d2_l2_7
+               clear_d2_l3_7
+               clear_d2_l4_7
+               |(authorize_d2_l4 )_7|
+               |(authorize_all_d1 )_7|
+               |(increase_priority_d2 )_7|
+               |(authorize_d1_l4 )_7|
+               |(increase_factor )_7|
+               |(decrease_factor )_7|
+               |(authorize_d1_l1 )_7|
+               |(authorize_d2_l3 )_7|
+               |(increase_priority_d1 )_7|
+               |(authorize_d2_l2 )_7|
+               |(authorize_d1_l2 )_7|
+               |(authorize_d1_l3 )_7|
+               |(authorize_d2_l1 )_7|)))
+  (=> |(authorize_all_d2 )_8| a!1)))
+(assert (let ((a!1 (or |(decrease_factor )_7|
+               (not (>= (- factor_7 1.0) 0.0))
+               |(authorize_all_d1 )_7|
+               |(increase_factor )_7|
+               |(authorize_d2_l2 )_7|
+               |(authorize_d1_l3 )_7|
+               |(authorize_d2_l4 )_7|
+               |(authorize_d1_l4 )_7|
+               |(authorize_all_d2 )_7|
+               |(authorize_d1_l1 )_7|
+               |(authorize_d1_l2 )_7|
+               |(increase_priority_d1 )_7|
+               |(authorize_d2_l3 )_7|
+               |(authorize_d2_l1 )_7|
+               |(increase_priority_d2 )_7|)))
+  (=> |(decrease_factor )_8| a!1)))
+(assert (let ((a!1 (or |(increase_factor )_7|
+               (not (<= (- factor_7 10.0) 0.0))
+               |(decrease_factor )_7|
+               |(authorize_all_d2 )_7|
+               |(authorize_d1_l3 )_7|
+               |(authorize_d2_l4 )_7|
+               |(increase_priority_d2 )_7|
+               |(authorize_d2_l1 )_7|
+               |(authorize_d2_l2 )_7|
+               |(authorize_all_d1 )_7|
+               |(increase_priority_d1 )_7|
+               |(authorize_d1_l2 )_7|
+               |(authorize_d1_l1 )_7|
+               |(authorize_d1_l4 )_7|
+               |(authorize_d2_l3 )_7|)))
+  (=> |(increase_factor )_8| a!1)))
+(assert (=> |(authorize_d1_l1 )_9|
+    (or |(authorize_d1_l1 )_8|
+        clear_d1_l1_8
+        |(authorize_d1_l4 )_8|
+        |(authorize_d2_l1 )_8|
+        |(authorize_d2_l2 )_8|
+        |(increase_priority_d1 )_8|
+        |(authorize_d1_l3 )_8|
+        |(increase_priority_d2 )_8|
+        |(authorize_d1_l2 )_8|
+        |(decrease_factor )_8|
+        |(authorize_all_d2 )_8|
+        |(authorize_d2_l4 )_8|
+        |(increase_factor )_8|
+        |(authorize_d2_l3 )_8|
+        |(authorize_all_d1 )_8|)))
+(assert (=> |(authorize_d1_l2 )_9|
+    (or |(authorize_d1_l2 )_8|
+        clear_d1_l2_8
+        |(authorize_all_d1 )_8|
+        |(authorize_d2_l1 )_8|
+        |(increase_priority_d1 )_8|
+        |(increase_priority_d2 )_8|
+        |(authorize_d2_l2 )_8|
+        |(authorize_d1_l1 )_8|
+        |(authorize_all_d2 )_8|
+        |(decrease_factor )_8|
+        |(authorize_d1_l3 )_8|
+        |(increase_factor )_8|
+        |(authorize_d1_l4 )_8|
+        |(authorize_d2_l4 )_8|
+        |(authorize_d2_l3 )_8|)))
+(assert (=> |(authorize_d1_l3 )_9|
+    (or |(authorize_d1_l3 )_8|
+        clear_d1_l3_8
+        |(authorize_all_d1 )_8|
+        |(authorize_d1_l4 )_8|
+        |(authorize_d2_l1 )_8|
+        |(authorize_d2_l4 )_8|
+        |(decrease_factor )_8|
+        |(increase_factor )_8|
+        |(authorize_d1_l1 )_8|
+        |(increase_priority_d1 )_8|
+        |(authorize_d2_l3 )_8|
+        |(authorize_d2_l2 )_8|
+        |(increase_priority_d2 )_8|
+        |(authorize_d1_l2 )_8|
+        |(authorize_all_d2 )_8|)))
+(assert (=> |(authorize_d1_l4 )_9|
+    (or |(authorize_d1_l4 )_8|
+        clear_d1_l4_8
+        |(increase_priority_d1 )_8|
+        |(authorize_d1_l1 )_8|
+        |(authorize_d1_l3 )_8|
+        |(authorize_d2_l1 )_8|
+        |(authorize_all_d1 )_8|
+        |(authorize_d2_l2 )_8|
+        |(increase_priority_d2 )_8|
+        |(authorize_d2_l4 )_8|
+        |(authorize_all_d2 )_8|
+        |(decrease_factor )_8|
+        |(authorize_d2_l3 )_8|
+        |(authorize_d1_l2 )_8|
+        |(increase_factor )_8|)))
+(assert (=> |(authorize_d2_l1 )_9|
+    (or |(authorize_d2_l1 )_8|
+        clear_d2_l1_8
+        |(increase_priority_d1 )_8|
+        |(authorize_d1_l1 )_8|
+        |(authorize_d1_l4 )_8|
+        |(authorize_d1_l2 )_8|
+        |(authorize_d1_l3 )_8|
+        |(authorize_d2_l2 )_8|
+        |(authorize_d2_l4 )_8|
+        |(increase_factor )_8|
+        |(increase_priority_d2 )_8|
+        |(authorize_all_d1 )_8|
+        |(authorize_d2_l3 )_8|
+        |(decrease_factor )_8|
+        |(authorize_all_d2 )_8|)))
+(assert (=> |(authorize_d2_l2 )_9|
+    (or |(authorize_d2_l2 )_8|
+        clear_d2_l2_8
+        |(authorize_d1_l4 )_8|
+        |(decrease_factor )_8|
+        |(authorize_d2_l1 )_8|
+        |(authorize_d1_l1 )_8|
+        |(authorize_d1_l2 )_8|
+        |(increase_factor )_8|
+        |(increase_priority_d1 )_8|
+        |(authorize_d2_l4 )_8|
+        |(authorize_d1_l3 )_8|
+        |(authorize_all_d2 )_8|
+        |(authorize_all_d1 )_8|
+        |(increase_priority_d2 )_8|
+        |(authorize_d2_l3 )_8|)))
+(assert (=> |(authorize_d2_l3 )_9|
+    (or |(authorize_d2_l3 )_8|
+        clear_d2_l3_8
+        |(increase_priority_d2 )_8|
+        |(authorize_d1_l3 )_8|
+        |(authorize_d1_l4 )_8|
+        |(authorize_all_d2 )_8|
+        |(authorize_d2_l1 )_8|
+        |(authorize_all_d1 )_8|
+        |(decrease_factor )_8|
+        |(authorize_d1_l1 )_8|
+        |(authorize_d2_l2 )_8|
+        |(authorize_d2_l4 )_8|
+        |(increase_priority_d1 )_8|
+        |(increase_factor )_8|
+        |(authorize_d1_l2 )_8|)))
+(assert (=> |(authorize_d2_l4 )_9|
+    (or |(authorize_d2_l4 )_8|
+        clear_d2_l4_8
+        |(authorize_all_d2 )_8|
+        |(authorize_d1_l4 )_8|
+        |(authorize_d1_l3 )_8|
+        |(authorize_d2_l1 )_8|
+        |(increase_factor )_8|
+        |(decrease_factor )_8|
+        |(authorize_all_d1 )_8|
+        |(authorize_d2_l2 )_8|
+        |(increase_priority_d2 )_8|
+        |(authorize_d1_l1 )_8|
+        |(authorize_d1_l2 )_8|
+        |(authorize_d2_l3 )_8|
+        |(increase_priority_d1 )_8|)))
+(assert (let ((a!1 (or |(increase_priority_d1 )_8|
+               (not (< (- priority_d1_8 3.0) 0.0))
+               |(authorize_d1_l4 )_8|
+               |(authorize_d2_l1 )_8|
+               |(authorize_all_d1 )_8|
+               |(authorize_d1_l2 )_8|
+               |(authorize_d1_l1 )_8|
+               |(authorize_d1_l3 )_8|
+               |(increase_priority_d2 )_8|
+               |(authorize_d2_l2 )_8|
+               |(increase_factor )_8|
+               |(authorize_all_d2 )_8|
+               |(decrease_factor )_8|
+               |(authorize_d2_l3 )_8|
+               |(authorize_d2_l4 )_8|)))
+  (=> |(increase_priority_d1 )_9| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d1 )_8|
+               (not (>= (- priority_d1_8 3.0) 0.0))
+               clear_d1_l1_8
+               clear_d1_l2_8
+               clear_d1_l3_8
+               clear_d1_l4_8
+               |(decrease_factor )_8|
+               |(increase_priority_d1 )_8|
+               |(authorize_d1_l3 )_8|
+               |(authorize_d1_l2 )_8|
+               |(authorize_d1_l4 )_8|
+               |(authorize_all_d2 )_8|
+               |(increase_factor )_8|
+               |(authorize_d2_l4 )_8|
+               |(increase_priority_d2 )_8|
+               |(authorize_d2_l1 )_8|
+               |(authorize_d2_l3 )_8|
+               |(authorize_d2_l2 )_8|
+               |(authorize_d1_l1 )_8|)))
+  (=> |(authorize_all_d1 )_9| a!1)))
+(assert (let ((a!1 (or |(increase_priority_d2 )_8|
+               (not (< (- priority_d2_8 3.0) 0.0))
+               |(authorize_d2_l3 )_8|
+               |(authorize_d1_l4 )_8|
+               |(authorize_all_d2 )_8|
+               |(authorize_d1_l2 )_8|
+               |(increase_factor )_8|
+               |(increase_priority_d1 )_8|
+               |(authorize_d1_l1 )_8|
+               |(authorize_all_d1 )_8|
+               |(authorize_d2_l1 )_8|
+               |(authorize_d1_l3 )_8|
+               |(authorize_d2_l4 )_8|
+               |(authorize_d2_l2 )_8|
+               |(decrease_factor )_8|)))
+  (=> |(increase_priority_d2 )_9| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d2 )_8|
+               (not (>= (- priority_d2_8 3.0) 0.0))
+               clear_d2_l1_8
+               clear_d2_l2_8
+               clear_d2_l3_8
+               clear_d2_l4_8
+               |(authorize_d2_l4 )_8|
+               |(authorize_all_d1 )_8|
+               |(increase_priority_d2 )_8|
+               |(authorize_d1_l4 )_8|
+               |(increase_factor )_8|
+               |(decrease_factor )_8|
+               |(authorize_d1_l1 )_8|
+               |(authorize_d2_l3 )_8|
+               |(increase_priority_d1 )_8|
+               |(authorize_d2_l2 )_8|
+               |(authorize_d1_l2 )_8|
+               |(authorize_d1_l3 )_8|
+               |(authorize_d2_l1 )_8|)))
+  (=> |(authorize_all_d2 )_9| a!1)))
+(assert (let ((a!1 (or |(decrease_factor )_8|
+               (not (>= (- factor_8 1.0) 0.0))
+               |(authorize_all_d1 )_8|
+               |(increase_factor )_8|
+               |(authorize_d2_l2 )_8|
+               |(authorize_d1_l3 )_8|
+               |(authorize_d2_l4 )_8|
+               |(authorize_d1_l4 )_8|
+               |(authorize_all_d2 )_8|
+               |(authorize_d1_l1 )_8|
+               |(authorize_d1_l2 )_8|
+               |(increase_priority_d1 )_8|
+               |(authorize_d2_l3 )_8|
+               |(authorize_d2_l1 )_8|
+               |(increase_priority_d2 )_8|)))
+  (=> |(decrease_factor )_9| a!1)))
+(assert (let ((a!1 (or |(increase_factor )_8|
+               (not (<= (- factor_8 10.0) 0.0))
+               |(decrease_factor )_8|
+               |(authorize_all_d2 )_8|
+               |(authorize_d1_l3 )_8|
+               |(authorize_d2_l4 )_8|
+               |(increase_priority_d2 )_8|
+               |(authorize_d2_l1 )_8|
+               |(authorize_d2_l2 )_8|
+               |(authorize_all_d1 )_8|
+               |(increase_priority_d1 )_8|
+               |(authorize_d1_l2 )_8|
+               |(authorize_d1_l1 )_8|
+               |(authorize_d1_l4 )_8|
+               |(authorize_d2_l3 )_8|)))
+  (=> |(increase_factor )_9| a!1)))
+(assert (=> |(authorize_d1_l1 )_10|
+    (or |(authorize_d1_l1 )_9|
+        clear_d1_l1_9
+        |(authorize_d1_l4 )_9|
+        |(authorize_d2_l1 )_9|
+        |(authorize_d2_l2 )_9|
+        |(increase_priority_d1 )_9|
+        |(authorize_d1_l3 )_9|
+        |(increase_priority_d2 )_9|
+        |(authorize_d1_l2 )_9|
+        |(decrease_factor )_9|
+        |(authorize_all_d2 )_9|
+        |(authorize_d2_l4 )_9|
+        |(increase_factor )_9|
+        |(authorize_d2_l3 )_9|
+        |(authorize_all_d1 )_9|)))
+(assert (=> |(authorize_d1_l2 )_10|
+    (or |(authorize_d1_l2 )_9|
+        clear_d1_l2_9
+        |(authorize_all_d1 )_9|
+        |(authorize_d2_l1 )_9|
+        |(increase_priority_d1 )_9|
+        |(increase_priority_d2 )_9|
+        |(authorize_d2_l2 )_9|
+        |(authorize_d1_l1 )_9|
+        |(authorize_all_d2 )_9|
+        |(decrease_factor )_9|
+        |(authorize_d1_l3 )_9|
+        |(increase_factor )_9|
+        |(authorize_d1_l4 )_9|
+        |(authorize_d2_l4 )_9|
+        |(authorize_d2_l3 )_9|)))
+(assert (=> |(authorize_d1_l3 )_10|
+    (or |(authorize_d1_l3 )_9|
+        clear_d1_l3_9
+        |(authorize_all_d1 )_9|
+        |(authorize_d1_l4 )_9|
+        |(authorize_d2_l1 )_9|
+        |(authorize_d2_l4 )_9|
+        |(decrease_factor )_9|
+        |(increase_factor )_9|
+        |(authorize_d1_l1 )_9|
+        |(increase_priority_d1 )_9|
+        |(authorize_d2_l3 )_9|
+        |(authorize_d2_l2 )_9|
+        |(increase_priority_d2 )_9|
+        |(authorize_d1_l2 )_9|
+        |(authorize_all_d2 )_9|)))
+(assert (=> |(authorize_d1_l4 )_10|
+    (or |(authorize_d1_l4 )_9|
+        clear_d1_l4_9
+        |(increase_priority_d1 )_9|
+        |(authorize_d1_l1 )_9|
+        |(authorize_d1_l3 )_9|
+        |(authorize_d2_l1 )_9|
+        |(authorize_all_d1 )_9|
+        |(authorize_d2_l2 )_9|
+        |(increase_priority_d2 )_9|
+        |(authorize_d2_l4 )_9|
+        |(authorize_all_d2 )_9|
+        |(decrease_factor )_9|
+        |(authorize_d2_l3 )_9|
+        |(authorize_d1_l2 )_9|
+        |(increase_factor )_9|)))
+(assert (=> |(authorize_d2_l1 )_10|
+    (or |(authorize_d2_l1 )_9|
+        clear_d2_l1_9
+        |(increase_priority_d1 )_9|
+        |(authorize_d1_l1 )_9|
+        |(authorize_d1_l4 )_9|
+        |(authorize_d1_l2 )_9|
+        |(authorize_d1_l3 )_9|
+        |(authorize_d2_l2 )_9|
+        |(authorize_d2_l4 )_9|
+        |(increase_factor )_9|
+        |(increase_priority_d2 )_9|
+        |(authorize_all_d1 )_9|
+        |(authorize_d2_l3 )_9|
+        |(decrease_factor )_9|
+        |(authorize_all_d2 )_9|)))
+(assert (=> |(authorize_d2_l2 )_10|
+    (or |(authorize_d2_l2 )_9|
+        clear_d2_l2_9
+        |(authorize_d1_l4 )_9|
+        |(decrease_factor )_9|
+        |(authorize_d2_l1 )_9|
+        |(authorize_d1_l1 )_9|
+        |(authorize_d1_l2 )_9|
+        |(increase_factor )_9|
+        |(increase_priority_d1 )_9|
+        |(authorize_d2_l4 )_9|
+        |(authorize_d1_l3 )_9|
+        |(authorize_all_d2 )_9|
+        |(authorize_all_d1 )_9|
+        |(increase_priority_d2 )_9|
+        |(authorize_d2_l3 )_9|)))
+(assert (=> |(authorize_d2_l3 )_10|
+    (or |(authorize_d2_l3 )_9|
+        clear_d2_l3_9
+        |(increase_priority_d2 )_9|
+        |(authorize_d1_l3 )_9|
+        |(authorize_d1_l4 )_9|
+        |(authorize_all_d2 )_9|
+        |(authorize_d2_l1 )_9|
+        |(authorize_all_d1 )_9|
+        |(decrease_factor )_9|
+        |(authorize_d1_l1 )_9|
+        |(authorize_d2_l2 )_9|
+        |(authorize_d2_l4 )_9|
+        |(increase_priority_d1 )_9|
+        |(increase_factor )_9|
+        |(authorize_d1_l2 )_9|)))
+(assert (=> |(authorize_d2_l4 )_10|
+    (or |(authorize_d2_l4 )_9|
+        clear_d2_l4_9
+        |(authorize_all_d2 )_9|
+        |(authorize_d1_l4 )_9|
+        |(authorize_d1_l3 )_9|
+        |(authorize_d2_l1 )_9|
+        |(increase_factor )_9|
+        |(decrease_factor )_9|
+        |(authorize_all_d1 )_9|
+        |(authorize_d2_l2 )_9|
+        |(increase_priority_d2 )_9|
+        |(authorize_d1_l1 )_9|
+        |(authorize_d1_l2 )_9|
+        |(authorize_d2_l3 )_9|
+        |(increase_priority_d1 )_9|)))
+(assert (let ((a!1 (or |(increase_priority_d1 )_9|
+               (not (< (- priority_d1_9 3.0) 0.0))
+               |(authorize_d1_l4 )_9|
+               |(authorize_d2_l1 )_9|
+               |(authorize_all_d1 )_9|
+               |(authorize_d1_l2 )_9|
+               |(authorize_d1_l1 )_9|
+               |(authorize_d1_l3 )_9|
+               |(increase_priority_d2 )_9|
+               |(authorize_d2_l2 )_9|
+               |(increase_factor )_9|
+               |(authorize_all_d2 )_9|
+               |(decrease_factor )_9|
+               |(authorize_d2_l3 )_9|
+               |(authorize_d2_l4 )_9|)))
+  (=> |(increase_priority_d1 )_10| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d1 )_9|
+               (not (>= (- priority_d1_9 3.0) 0.0))
+               clear_d1_l1_9
+               clear_d1_l2_9
+               clear_d1_l3_9
+               clear_d1_l4_9
+               |(decrease_factor )_9|
+               |(increase_priority_d1 )_9|
+               |(authorize_d1_l3 )_9|
+               |(authorize_d1_l2 )_9|
+               |(authorize_d1_l4 )_9|
+               |(authorize_all_d2 )_9|
+               |(increase_factor )_9|
+               |(authorize_d2_l4 )_9|
+               |(increase_priority_d2 )_9|
+               |(authorize_d2_l1 )_9|
+               |(authorize_d2_l3 )_9|
+               |(authorize_d2_l2 )_9|
+               |(authorize_d1_l1 )_9|)))
+  (=> |(authorize_all_d1 )_10| a!1)))
+(assert (let ((a!1 (or |(increase_priority_d2 )_9|
+               (not (< (- priority_d2_9 3.0) 0.0))
+               |(authorize_d2_l3 )_9|
+               |(authorize_d1_l4 )_9|
+               |(authorize_all_d2 )_9|
+               |(authorize_d1_l2 )_9|
+               |(increase_factor )_9|
+               |(increase_priority_d1 )_9|
+               |(authorize_d1_l1 )_9|
+               |(authorize_all_d1 )_9|
+               |(authorize_d2_l1 )_9|
+               |(authorize_d1_l3 )_9|
+               |(authorize_d2_l4 )_9|
+               |(authorize_d2_l2 )_9|
+               |(decrease_factor )_9|)))
+  (=> |(increase_priority_d2 )_10| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d2 )_9|
+               (not (>= (- priority_d2_9 3.0) 0.0))
+               clear_d2_l1_9
+               clear_d2_l2_9
+               clear_d2_l3_9
+               clear_d2_l4_9
+               |(authorize_d2_l4 )_9|
+               |(authorize_all_d1 )_9|
+               |(increase_priority_d2 )_9|
+               |(authorize_d1_l4 )_9|
+               |(increase_factor )_9|
+               |(decrease_factor )_9|
+               |(authorize_d1_l1 )_9|
+               |(authorize_d2_l3 )_9|
+               |(increase_priority_d1 )_9|
+               |(authorize_d2_l2 )_9|
+               |(authorize_d1_l2 )_9|
+               |(authorize_d1_l3 )_9|
+               |(authorize_d2_l1 )_9|)))
+  (=> |(authorize_all_d2 )_10| a!1)))
+(assert (let ((a!1 (or |(decrease_factor )_9|
+               (not (>= (- factor_9 1.0) 0.0))
+               |(authorize_all_d1 )_9|
+               |(increase_factor )_9|
+               |(authorize_d2_l2 )_9|
+               |(authorize_d1_l3 )_9|
+               |(authorize_d2_l4 )_9|
+               |(authorize_d1_l4 )_9|
+               |(authorize_all_d2 )_9|
+               |(authorize_d1_l1 )_9|
+               |(authorize_d1_l2 )_9|
+               |(increase_priority_d1 )_9|
+               |(authorize_d2_l3 )_9|
+               |(authorize_d2_l1 )_9|
+               |(increase_priority_d2 )_9|)))
+  (=> |(decrease_factor )_10| a!1)))
+(assert (let ((a!1 (or |(increase_factor )_9|
+               (not (<= (- factor_9 10.0) 0.0))
+               |(decrease_factor )_9|
+               |(authorize_all_d2 )_9|
+               |(authorize_d1_l3 )_9|
+               |(authorize_d2_l4 )_9|
+               |(increase_priority_d2 )_9|
+               |(authorize_d2_l1 )_9|
+               |(authorize_d2_l2 )_9|
+               |(authorize_all_d1 )_9|
+               |(increase_priority_d1 )_9|
+               |(authorize_d1_l2 )_9|
+               |(authorize_d1_l1 )_9|
+               |(authorize_d1_l4 )_9|
+               |(authorize_d2_l3 )_9|)))
+  (=> |(increase_factor )_10| a!1)))
+(assert (=> |(authorize_d1_l1 )_11|
+    (or |(authorize_d1_l1 )_10|
+        clear_d1_l1_10
+        |(authorize_d1_l4 )_10|
+        |(authorize_d2_l1 )_10|
+        |(authorize_d2_l2 )_10|
+        |(increase_priority_d1 )_10|
+        |(authorize_d1_l3 )_10|
+        |(increase_priority_d2 )_10|
+        |(authorize_d1_l2 )_10|
+        |(decrease_factor )_10|
+        |(authorize_all_d2 )_10|
+        |(authorize_d2_l4 )_10|
+        |(increase_factor )_10|
+        |(authorize_d2_l3 )_10|
+        |(authorize_all_d1 )_10|)))
+(assert (=> |(authorize_d1_l2 )_11|
+    (or |(authorize_d1_l2 )_10|
+        clear_d1_l2_10
+        |(authorize_all_d1 )_10|
+        |(authorize_d2_l1 )_10|
+        |(increase_priority_d1 )_10|
+        |(increase_priority_d2 )_10|
+        |(authorize_d2_l2 )_10|
+        |(authorize_d1_l1 )_10|
+        |(authorize_all_d2 )_10|
+        |(decrease_factor )_10|
+        |(authorize_d1_l3 )_10|
+        |(increase_factor )_10|
+        |(authorize_d1_l4 )_10|
+        |(authorize_d2_l4 )_10|
+        |(authorize_d2_l3 )_10|)))
+(assert (=> |(authorize_d1_l3 )_11|
+    (or |(authorize_d1_l3 )_10|
+        clear_d1_l3_10
+        |(authorize_all_d1 )_10|
+        |(authorize_d1_l4 )_10|
+        |(authorize_d2_l1 )_10|
+        |(authorize_d2_l4 )_10|
+        |(decrease_factor )_10|
+        |(increase_factor )_10|
+        |(authorize_d1_l1 )_10|
+        |(increase_priority_d1 )_10|
+        |(authorize_d2_l3 )_10|
+        |(authorize_d2_l2 )_10|
+        |(increase_priority_d2 )_10|
+        |(authorize_d1_l2 )_10|
+        |(authorize_all_d2 )_10|)))
+(assert (=> |(authorize_d1_l4 )_11|
+    (or |(authorize_d1_l4 )_10|
+        clear_d1_l4_10
+        |(increase_priority_d1 )_10|
+        |(authorize_d1_l1 )_10|
+        |(authorize_d1_l3 )_10|
+        |(authorize_d2_l1 )_10|
+        |(authorize_all_d1 )_10|
+        |(authorize_d2_l2 )_10|
+        |(increase_priority_d2 )_10|
+        |(authorize_d2_l4 )_10|
+        |(authorize_all_d2 )_10|
+        |(decrease_factor )_10|
+        |(authorize_d2_l3 )_10|
+        |(authorize_d1_l2 )_10|
+        |(increase_factor )_10|)))
+(assert (=> |(authorize_d2_l1 )_11|
+    (or |(authorize_d2_l1 )_10|
+        clear_d2_l1_10
+        |(increase_priority_d1 )_10|
+        |(authorize_d1_l1 )_10|
+        |(authorize_d1_l4 )_10|
+        |(authorize_d1_l2 )_10|
+        |(authorize_d1_l3 )_10|
+        |(authorize_d2_l2 )_10|
+        |(authorize_d2_l4 )_10|
+        |(increase_factor )_10|
+        |(increase_priority_d2 )_10|
+        |(authorize_all_d1 )_10|
+        |(authorize_d2_l3 )_10|
+        |(decrease_factor )_10|
+        |(authorize_all_d2 )_10|)))
+(assert (=> |(authorize_d2_l2 )_11|
+    (or |(authorize_d2_l2 )_10|
+        clear_d2_l2_10
+        |(authorize_d1_l4 )_10|
+        |(decrease_factor )_10|
+        |(authorize_d2_l1 )_10|
+        |(authorize_d1_l1 )_10|
+        |(authorize_d1_l2 )_10|
+        |(increase_factor )_10|
+        |(increase_priority_d1 )_10|
+        |(authorize_d2_l4 )_10|
+        |(authorize_d1_l3 )_10|
+        |(authorize_all_d2 )_10|
+        |(authorize_all_d1 )_10|
+        |(increase_priority_d2 )_10|
+        |(authorize_d2_l3 )_10|)))
+(assert (=> |(authorize_d2_l3 )_11|
+    (or |(authorize_d2_l3 )_10|
+        clear_d2_l3_10
+        |(increase_priority_d2 )_10|
+        |(authorize_d1_l3 )_10|
+        |(authorize_d1_l4 )_10|
+        |(authorize_all_d2 )_10|
+        |(authorize_d2_l1 )_10|
+        |(authorize_all_d1 )_10|
+        |(decrease_factor )_10|
+        |(authorize_d1_l1 )_10|
+        |(authorize_d2_l2 )_10|
+        |(authorize_d2_l4 )_10|
+        |(increase_priority_d1 )_10|
+        |(increase_factor )_10|
+        |(authorize_d1_l2 )_10|)))
+(assert (=> |(authorize_d2_l4 )_11|
+    (or |(authorize_d2_l4 )_10|
+        clear_d2_l4_10
+        |(authorize_all_d2 )_10|
+        |(authorize_d1_l4 )_10|
+        |(authorize_d1_l3 )_10|
+        |(authorize_d2_l1 )_10|
+        |(increase_factor )_10|
+        |(decrease_factor )_10|
+        |(authorize_all_d1 )_10|
+        |(authorize_d2_l2 )_10|
+        |(increase_priority_d2 )_10|
+        |(authorize_d1_l1 )_10|
+        |(authorize_d1_l2 )_10|
+        |(authorize_d2_l3 )_10|
+        |(increase_priority_d1 )_10|)))
+(assert (let ((a!1 (or |(increase_priority_d1 )_10|
+               (not (< (- priority_d1_10 3.0) 0.0))
+               |(authorize_d1_l4 )_10|
+               |(authorize_d2_l1 )_10|
+               |(authorize_all_d1 )_10|
+               |(authorize_d1_l2 )_10|
+               |(authorize_d1_l1 )_10|
+               |(authorize_d1_l3 )_10|
+               |(increase_priority_d2 )_10|
+               |(authorize_d2_l2 )_10|
+               |(increase_factor )_10|
+               |(authorize_all_d2 )_10|
+               |(decrease_factor )_10|
+               |(authorize_d2_l3 )_10|
+               |(authorize_d2_l4 )_10|)))
+  (=> |(increase_priority_d1 )_11| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d1 )_10|
+               (not (>= (- priority_d1_10 3.0) 0.0))
+               clear_d1_l1_10
+               clear_d1_l2_10
+               clear_d1_l3_10
+               clear_d1_l4_10
+               |(decrease_factor )_10|
+               |(increase_priority_d1 )_10|
+               |(authorize_d1_l3 )_10|
+               |(authorize_d1_l2 )_10|
+               |(authorize_d1_l4 )_10|
+               |(authorize_all_d2 )_10|
+               |(increase_factor )_10|
+               |(authorize_d2_l4 )_10|
+               |(increase_priority_d2 )_10|
+               |(authorize_d2_l1 )_10|
+               |(authorize_d2_l3 )_10|
+               |(authorize_d2_l2 )_10|
+               |(authorize_d1_l1 )_10|)))
+  (=> |(authorize_all_d1 )_11| a!1)))
+(assert (let ((a!1 (or |(increase_priority_d2 )_10|
+               (not (< (- priority_d2_10 3.0) 0.0))
+               |(authorize_d2_l3 )_10|
+               |(authorize_d1_l4 )_10|
+               |(authorize_all_d2 )_10|
+               |(authorize_d1_l2 )_10|
+               |(increase_factor )_10|
+               |(increase_priority_d1 )_10|
+               |(authorize_d1_l1 )_10|
+               |(authorize_all_d1 )_10|
+               |(authorize_d2_l1 )_10|
+               |(authorize_d1_l3 )_10|
+               |(authorize_d2_l4 )_10|
+               |(authorize_d2_l2 )_10|
+               |(decrease_factor )_10|)))
+  (=> |(increase_priority_d2 )_11| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d2 )_10|
+               (not (>= (- priority_d2_10 3.0) 0.0))
+               clear_d2_l1_10
+               clear_d2_l2_10
+               clear_d2_l3_10
+               clear_d2_l4_10
+               |(authorize_d2_l4 )_10|
+               |(authorize_all_d1 )_10|
+               |(increase_priority_d2 )_10|
+               |(authorize_d1_l4 )_10|
+               |(increase_factor )_10|
+               |(decrease_factor )_10|
+               |(authorize_d1_l1 )_10|
+               |(authorize_d2_l3 )_10|
+               |(increase_priority_d1 )_10|
+               |(authorize_d2_l2 )_10|
+               |(authorize_d1_l2 )_10|
+               |(authorize_d1_l3 )_10|
+               |(authorize_d2_l1 )_10|)))
+  (=> |(authorize_all_d2 )_11| a!1)))
+(assert (let ((a!1 (or |(decrease_factor )_10|
+               (not (>= (- factor_10 1.0) 0.0))
+               |(authorize_all_d1 )_10|
+               |(increase_factor )_10|
+               |(authorize_d2_l2 )_10|
+               |(authorize_d1_l3 )_10|
+               |(authorize_d2_l4 )_10|
+               |(authorize_d1_l4 )_10|
+               |(authorize_all_d2 )_10|
+               |(authorize_d1_l1 )_10|
+               |(authorize_d1_l2 )_10|
+               |(increase_priority_d1 )_10|
+               |(authorize_d2_l3 )_10|
+               |(authorize_d2_l1 )_10|
+               |(increase_priority_d2 )_10|)))
+  (=> |(decrease_factor )_11| a!1)))
+(assert (let ((a!1 (or |(increase_factor )_10|
+               (not (<= (- factor_10 10.0) 0.0))
+               |(decrease_factor )_10|
+               |(authorize_all_d2 )_10|
+               |(authorize_d1_l3 )_10|
+               |(authorize_d2_l4 )_10|
+               |(increase_priority_d2 )_10|
+               |(authorize_d2_l1 )_10|
+               |(authorize_d2_l2 )_10|
+               |(authorize_all_d1 )_10|
+               |(increase_priority_d1 )_10|
+               |(authorize_d1_l2 )_10|
+               |(authorize_d1_l1 )_10|
+               |(authorize_d1_l4 )_10|
+               |(authorize_d2_l3 )_10|)))
+  (=> |(increase_factor )_11| a!1)))
+(assert (=> |(authorize_d1_l1 )_12|
+    (or |(authorize_d1_l1 )_11|
+        clear_d1_l1_11
+        |(authorize_d1_l4 )_11|
+        |(authorize_d2_l1 )_11|
+        |(authorize_d2_l2 )_11|
+        |(increase_priority_d1 )_11|
+        |(authorize_d1_l3 )_11|
+        |(increase_priority_d2 )_11|
+        |(authorize_d1_l2 )_11|
+        |(decrease_factor )_11|
+        |(authorize_all_d2 )_11|
+        |(authorize_d2_l4 )_11|
+        |(increase_factor )_11|
+        |(authorize_d2_l3 )_11|
+        |(authorize_all_d1 )_11|)))
+(assert (=> |(authorize_d1_l2 )_12|
+    (or |(authorize_d1_l2 )_11|
+        clear_d1_l2_11
+        |(authorize_all_d1 )_11|
+        |(authorize_d2_l1 )_11|
+        |(increase_priority_d1 )_11|
+        |(increase_priority_d2 )_11|
+        |(authorize_d2_l2 )_11|
+        |(authorize_d1_l1 )_11|
+        |(authorize_all_d2 )_11|
+        |(decrease_factor )_11|
+        |(authorize_d1_l3 )_11|
+        |(increase_factor )_11|
+        |(authorize_d1_l4 )_11|
+        |(authorize_d2_l4 )_11|
+        |(authorize_d2_l3 )_11|)))
+(assert (=> |(authorize_d1_l3 )_12|
+    (or |(authorize_d1_l3 )_11|
+        clear_d1_l3_11
+        |(authorize_all_d1 )_11|
+        |(authorize_d1_l4 )_11|
+        |(authorize_d2_l1 )_11|
+        |(authorize_d2_l4 )_11|
+        |(decrease_factor )_11|
+        |(increase_factor )_11|
+        |(authorize_d1_l1 )_11|
+        |(increase_priority_d1 )_11|
+        |(authorize_d2_l3 )_11|
+        |(authorize_d2_l2 )_11|
+        |(increase_priority_d2 )_11|
+        |(authorize_d1_l2 )_11|
+        |(authorize_all_d2 )_11|)))
+(assert (=> |(authorize_d1_l4 )_12|
+    (or |(authorize_d1_l4 )_11|
+        clear_d1_l4_11
+        |(increase_priority_d1 )_11|
+        |(authorize_d1_l1 )_11|
+        |(authorize_d1_l3 )_11|
+        |(authorize_d2_l1 )_11|
+        |(authorize_all_d1 )_11|
+        |(authorize_d2_l2 )_11|
+        |(increase_priority_d2 )_11|
+        |(authorize_d2_l4 )_11|
+        |(authorize_all_d2 )_11|
+        |(decrease_factor )_11|
+        |(authorize_d2_l3 )_11|
+        |(authorize_d1_l2 )_11|
+        |(increase_factor )_11|)))
+(assert (=> |(authorize_d2_l1 )_12|
+    (or |(authorize_d2_l1 )_11|
+        clear_d2_l1_11
+        |(increase_priority_d1 )_11|
+        |(authorize_d1_l1 )_11|
+        |(authorize_d1_l4 )_11|
+        |(authorize_d1_l2 )_11|
+        |(authorize_d1_l3 )_11|
+        |(authorize_d2_l2 )_11|
+        |(authorize_d2_l4 )_11|
+        |(increase_factor )_11|
+        |(increase_priority_d2 )_11|
+        |(authorize_all_d1 )_11|
+        |(authorize_d2_l3 )_11|
+        |(decrease_factor )_11|
+        |(authorize_all_d2 )_11|)))
+(assert (=> |(authorize_d2_l2 )_12|
+    (or |(authorize_d2_l2 )_11|
+        clear_d2_l2_11
+        |(authorize_d1_l4 )_11|
+        |(decrease_factor )_11|
+        |(authorize_d2_l1 )_11|
+        |(authorize_d1_l1 )_11|
+        |(authorize_d1_l2 )_11|
+        |(increase_factor )_11|
+        |(increase_priority_d1 )_11|
+        |(authorize_d2_l4 )_11|
+        |(authorize_d1_l3 )_11|
+        |(authorize_all_d2 )_11|
+        |(authorize_all_d1 )_11|
+        |(increase_priority_d2 )_11|
+        |(authorize_d2_l3 )_11|)))
+(assert (=> |(authorize_d2_l3 )_12|
+    (or |(authorize_d2_l3 )_11|
+        clear_d2_l3_11
+        |(increase_priority_d2 )_11|
+        |(authorize_d1_l3 )_11|
+        |(authorize_d1_l4 )_11|
+        |(authorize_all_d2 )_11|
+        |(authorize_d2_l1 )_11|
+        |(authorize_all_d1 )_11|
+        |(decrease_factor )_11|
+        |(authorize_d1_l1 )_11|
+        |(authorize_d2_l2 )_11|
+        |(authorize_d2_l4 )_11|
+        |(increase_priority_d1 )_11|
+        |(increase_factor )_11|
+        |(authorize_d1_l2 )_11|)))
+(assert (=> |(authorize_d2_l4 )_12|
+    (or |(authorize_d2_l4 )_11|
+        clear_d2_l4_11
+        |(authorize_all_d2 )_11|
+        |(authorize_d1_l4 )_11|
+        |(authorize_d1_l3 )_11|
+        |(authorize_d2_l1 )_11|
+        |(increase_factor )_11|
+        |(decrease_factor )_11|
+        |(authorize_all_d1 )_11|
+        |(authorize_d2_l2 )_11|
+        |(increase_priority_d2 )_11|
+        |(authorize_d1_l1 )_11|
+        |(authorize_d1_l2 )_11|
+        |(authorize_d2_l3 )_11|
+        |(increase_priority_d1 )_11|)))
+(assert (let ((a!1 (or |(increase_priority_d1 )_11|
+               (not (< (- priority_d1_11 3.0) 0.0))
+               |(authorize_d1_l4 )_11|
+               |(authorize_d2_l1 )_11|
+               |(authorize_all_d1 )_11|
+               |(authorize_d1_l2 )_11|
+               |(authorize_d1_l1 )_11|
+               |(authorize_d1_l3 )_11|
+               |(increase_priority_d2 )_11|
+               |(authorize_d2_l2 )_11|
+               |(increase_factor )_11|
+               |(authorize_all_d2 )_11|
+               |(decrease_factor )_11|
+               |(authorize_d2_l3 )_11|
+               |(authorize_d2_l4 )_11|)))
+  (=> |(increase_priority_d1 )_12| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d1 )_11|
+               (not (>= (- priority_d1_11 3.0) 0.0))
+               clear_d1_l1_11
+               clear_d1_l2_11
+               clear_d1_l3_11
+               clear_d1_l4_11
+               |(decrease_factor )_11|
+               |(increase_priority_d1 )_11|
+               |(authorize_d1_l3 )_11|
+               |(authorize_d1_l2 )_11|
+               |(authorize_d1_l4 )_11|
+               |(authorize_all_d2 )_11|
+               |(increase_factor )_11|
+               |(authorize_d2_l4 )_11|
+               |(increase_priority_d2 )_11|
+               |(authorize_d2_l1 )_11|
+               |(authorize_d2_l3 )_11|
+               |(authorize_d2_l2 )_11|
+               |(authorize_d1_l1 )_11|)))
+  (=> |(authorize_all_d1 )_12| a!1)))
+(assert (let ((a!1 (or |(increase_priority_d2 )_11|
+               (not (< (- priority_d2_11 3.0) 0.0))
+               |(authorize_d2_l3 )_11|
+               |(authorize_d1_l4 )_11|
+               |(authorize_all_d2 )_11|
+               |(authorize_d1_l2 )_11|
+               |(increase_factor )_11|
+               |(increase_priority_d1 )_11|
+               |(authorize_d1_l1 )_11|
+               |(authorize_all_d1 )_11|
+               |(authorize_d2_l1 )_11|
+               |(authorize_d1_l3 )_11|
+               |(authorize_d2_l4 )_11|
+               |(authorize_d2_l2 )_11|
+               |(decrease_factor )_11|)))
+  (=> |(increase_priority_d2 )_12| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d2 )_11|
+               (not (>= (- priority_d2_11 3.0) 0.0))
+               clear_d2_l1_11
+               clear_d2_l2_11
+               clear_d2_l3_11
+               clear_d2_l4_11
+               |(authorize_d2_l4 )_11|
+               |(authorize_all_d1 )_11|
+               |(increase_priority_d2 )_11|
+               |(authorize_d1_l4 )_11|
+               |(increase_factor )_11|
+               |(decrease_factor )_11|
+               |(authorize_d1_l1 )_11|
+               |(authorize_d2_l3 )_11|
+               |(increase_priority_d1 )_11|
+               |(authorize_d2_l2 )_11|
+               |(authorize_d1_l2 )_11|
+               |(authorize_d1_l3 )_11|
+               |(authorize_d2_l1 )_11|)))
+  (=> |(authorize_all_d2 )_12| a!1)))
+(assert (let ((a!1 (or |(decrease_factor )_11|
+               (not (>= (- factor_11 1.0) 0.0))
+               |(authorize_all_d1 )_11|
+               |(increase_factor )_11|
+               |(authorize_d2_l2 )_11|
+               |(authorize_d1_l3 )_11|
+               |(authorize_d2_l4 )_11|
+               |(authorize_d1_l4 )_11|
+               |(authorize_all_d2 )_11|
+               |(authorize_d1_l1 )_11|
+               |(authorize_d1_l2 )_11|
+               |(increase_priority_d1 )_11|
+               |(authorize_d2_l3 )_11|
+               |(authorize_d2_l1 )_11|
+               |(increase_priority_d2 )_11|)))
+  (=> |(decrease_factor )_12| a!1)))
+(assert (let ((a!1 (or |(increase_factor )_11|
+               (not (<= (- factor_11 10.0) 0.0))
+               |(decrease_factor )_11|
+               |(authorize_all_d2 )_11|
+               |(authorize_d1_l3 )_11|
+               |(authorize_d2_l4 )_11|
+               |(increase_priority_d2 )_11|
+               |(authorize_d2_l1 )_11|
+               |(authorize_d2_l2 )_11|
+               |(authorize_all_d1 )_11|
+               |(increase_priority_d1 )_11|
+               |(authorize_d1_l2 )_11|
+               |(authorize_d1_l1 )_11|
+               |(authorize_d1_l4 )_11|
+               |(authorize_d2_l3 )_11|)))
+  (=> |(increase_factor )_12| a!1)))
+(assert (=> |(authorize_d1_l1 )_13|
+    (or |(authorize_d1_l1 )_12|
+        clear_d1_l1_12
+        |(authorize_d1_l4 )_12|
+        |(authorize_d2_l1 )_12|
+        |(authorize_d2_l2 )_12|
+        |(increase_priority_d1 )_12|
+        |(authorize_d1_l3 )_12|
+        |(increase_priority_d2 )_12|
+        |(authorize_d1_l2 )_12|
+        |(decrease_factor )_12|
+        |(authorize_all_d2 )_12|
+        |(authorize_d2_l4 )_12|
+        |(increase_factor )_12|
+        |(authorize_d2_l3 )_12|
+        |(authorize_all_d1 )_12|)))
+(assert (=> |(authorize_d1_l2 )_13|
+    (or |(authorize_d1_l2 )_12|
+        clear_d1_l2_12
+        |(authorize_all_d1 )_12|
+        |(authorize_d2_l1 )_12|
+        |(increase_priority_d1 )_12|
+        |(increase_priority_d2 )_12|
+        |(authorize_d2_l2 )_12|
+        |(authorize_d1_l1 )_12|
+        |(authorize_all_d2 )_12|
+        |(decrease_factor )_12|
+        |(authorize_d1_l3 )_12|
+        |(increase_factor )_12|
+        |(authorize_d1_l4 )_12|
+        |(authorize_d2_l4 )_12|
+        |(authorize_d2_l3 )_12|)))
+(assert (=> |(authorize_d1_l3 )_13|
+    (or |(authorize_d1_l3 )_12|
+        clear_d1_l3_12
+        |(authorize_all_d1 )_12|
+        |(authorize_d1_l4 )_12|
+        |(authorize_d2_l1 )_12|
+        |(authorize_d2_l4 )_12|
+        |(decrease_factor )_12|
+        |(increase_factor )_12|
+        |(authorize_d1_l1 )_12|
+        |(increase_priority_d1 )_12|
+        |(authorize_d2_l3 )_12|
+        |(authorize_d2_l2 )_12|
+        |(increase_priority_d2 )_12|
+        |(authorize_d1_l2 )_12|
+        |(authorize_all_d2 )_12|)))
+(assert (=> |(authorize_d1_l4 )_13|
+    (or |(authorize_d1_l4 )_12|
+        clear_d1_l4_12
+        |(increase_priority_d1 )_12|
+        |(authorize_d1_l1 )_12|
+        |(authorize_d1_l3 )_12|
+        |(authorize_d2_l1 )_12|
+        |(authorize_all_d1 )_12|
+        |(authorize_d2_l2 )_12|
+        |(increase_priority_d2 )_12|
+        |(authorize_d2_l4 )_12|
+        |(authorize_all_d2 )_12|
+        |(decrease_factor )_12|
+        |(authorize_d2_l3 )_12|
+        |(authorize_d1_l2 )_12|
+        |(increase_factor )_12|)))
+(assert (=> |(authorize_d2_l1 )_13|
+    (or |(authorize_d2_l1 )_12|
+        clear_d2_l1_12
+        |(increase_priority_d1 )_12|
+        |(authorize_d1_l1 )_12|
+        |(authorize_d1_l4 )_12|
+        |(authorize_d1_l2 )_12|
+        |(authorize_d1_l3 )_12|
+        |(authorize_d2_l2 )_12|
+        |(authorize_d2_l4 )_12|
+        |(increase_factor )_12|
+        |(increase_priority_d2 )_12|
+        |(authorize_all_d1 )_12|
+        |(authorize_d2_l3 )_12|
+        |(decrease_factor )_12|
+        |(authorize_all_d2 )_12|)))
+(assert (=> |(authorize_d2_l2 )_13|
+    (or |(authorize_d2_l2 )_12|
+        clear_d2_l2_12
+        |(authorize_d1_l4 )_12|
+        |(decrease_factor )_12|
+        |(authorize_d2_l1 )_12|
+        |(authorize_d1_l1 )_12|
+        |(authorize_d1_l2 )_12|
+        |(increase_factor )_12|
+        |(increase_priority_d1 )_12|
+        |(authorize_d2_l4 )_12|
+        |(authorize_d1_l3 )_12|
+        |(authorize_all_d2 )_12|
+        |(authorize_all_d1 )_12|
+        |(increase_priority_d2 )_12|
+        |(authorize_d2_l3 )_12|)))
+(assert (=> |(authorize_d2_l3 )_13|
+    (or |(authorize_d2_l3 )_12|
+        clear_d2_l3_12
+        |(increase_priority_d2 )_12|
+        |(authorize_d1_l3 )_12|
+        |(authorize_d1_l4 )_12|
+        |(authorize_all_d2 )_12|
+        |(authorize_d2_l1 )_12|
+        |(authorize_all_d1 )_12|
+        |(decrease_factor )_12|
+        |(authorize_d1_l1 )_12|
+        |(authorize_d2_l2 )_12|
+        |(authorize_d2_l4 )_12|
+        |(increase_priority_d1 )_12|
+        |(increase_factor )_12|
+        |(authorize_d1_l2 )_12|)))
+(assert (=> |(authorize_d2_l4 )_13|
+    (or |(authorize_d2_l4 )_12|
+        clear_d2_l4_12
+        |(authorize_all_d2 )_12|
+        |(authorize_d1_l4 )_12|
+        |(authorize_d1_l3 )_12|
+        |(authorize_d2_l1 )_12|
+        |(increase_factor )_12|
+        |(decrease_factor )_12|
+        |(authorize_all_d1 )_12|
+        |(authorize_d2_l2 )_12|
+        |(increase_priority_d2 )_12|
+        |(authorize_d1_l1 )_12|
+        |(authorize_d1_l2 )_12|
+        |(authorize_d2_l3 )_12|
+        |(increase_priority_d1 )_12|)))
+(assert (let ((a!1 (or |(increase_priority_d1 )_12|
+               (not (< (- priority_d1_12 3.0) 0.0))
+               |(authorize_d1_l4 )_12|
+               |(authorize_d2_l1 )_12|
+               |(authorize_all_d1 )_12|
+               |(authorize_d1_l2 )_12|
+               |(authorize_d1_l1 )_12|
+               |(authorize_d1_l3 )_12|
+               |(increase_priority_d2 )_12|
+               |(authorize_d2_l2 )_12|
+               |(increase_factor )_12|
+               |(authorize_all_d2 )_12|
+               |(decrease_factor )_12|
+               |(authorize_d2_l3 )_12|
+               |(authorize_d2_l4 )_12|)))
+  (=> |(increase_priority_d1 )_13| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d1 )_12|
+               (not (>= (- priority_d1_12 3.0) 0.0))
+               clear_d1_l1_12
+               clear_d1_l2_12
+               clear_d1_l3_12
+               clear_d1_l4_12
+               |(decrease_factor )_12|
+               |(increase_priority_d1 )_12|
+               |(authorize_d1_l3 )_12|
+               |(authorize_d1_l2 )_12|
+               |(authorize_d1_l4 )_12|
+               |(authorize_all_d2 )_12|
+               |(increase_factor )_12|
+               |(authorize_d2_l4 )_12|
+               |(increase_priority_d2 )_12|
+               |(authorize_d2_l1 )_12|
+               |(authorize_d2_l3 )_12|
+               |(authorize_d2_l2 )_12|
+               |(authorize_d1_l1 )_12|)))
+  (=> |(authorize_all_d1 )_13| a!1)))
+(assert (let ((a!1 (or |(increase_priority_d2 )_12|
+               (not (< (- priority_d2_12 3.0) 0.0))
+               |(authorize_d2_l3 )_12|
+               |(authorize_d1_l4 )_12|
+               |(authorize_all_d2 )_12|
+               |(authorize_d1_l2 )_12|
+               |(increase_factor )_12|
+               |(increase_priority_d1 )_12|
+               |(authorize_d1_l1 )_12|
+               |(authorize_all_d1 )_12|
+               |(authorize_d2_l1 )_12|
+               |(authorize_d1_l3 )_12|
+               |(authorize_d2_l4 )_12|
+               |(authorize_d2_l2 )_12|
+               |(decrease_factor )_12|)))
+  (=> |(increase_priority_d2 )_13| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d2 )_12|
+               (not (>= (- priority_d2_12 3.0) 0.0))
+               clear_d2_l1_12
+               clear_d2_l2_12
+               clear_d2_l3_12
+               clear_d2_l4_12
+               |(authorize_d2_l4 )_12|
+               |(authorize_all_d1 )_12|
+               |(increase_priority_d2 )_12|
+               |(authorize_d1_l4 )_12|
+               |(increase_factor )_12|
+               |(decrease_factor )_12|
+               |(authorize_d1_l1 )_12|
+               |(authorize_d2_l3 )_12|
+               |(increase_priority_d1 )_12|
+               |(authorize_d2_l2 )_12|
+               |(authorize_d1_l2 )_12|
+               |(authorize_d1_l3 )_12|
+               |(authorize_d2_l1 )_12|)))
+  (=> |(authorize_all_d2 )_13| a!1)))
+(assert (let ((a!1 (or |(decrease_factor )_12|
+               (not (>= (- factor_12 1.0) 0.0))
+               |(authorize_all_d1 )_12|
+               |(increase_factor )_12|
+               |(authorize_d2_l2 )_12|
+               |(authorize_d1_l3 )_12|
+               |(authorize_d2_l4 )_12|
+               |(authorize_d1_l4 )_12|
+               |(authorize_all_d2 )_12|
+               |(authorize_d1_l1 )_12|
+               |(authorize_d1_l2 )_12|
+               |(increase_priority_d1 )_12|
+               |(authorize_d2_l3 )_12|
+               |(authorize_d2_l1 )_12|
+               |(increase_priority_d2 )_12|)))
+  (=> |(decrease_factor )_13| a!1)))
+(assert (let ((a!1 (or |(increase_factor )_12|
+               (not (<= (- factor_12 10.0) 0.0))
+               |(decrease_factor )_12|
+               |(authorize_all_d2 )_12|
+               |(authorize_d1_l3 )_12|
+               |(authorize_d2_l4 )_12|
+               |(increase_priority_d2 )_12|
+               |(authorize_d2_l1 )_12|
+               |(authorize_d2_l2 )_12|
+               |(authorize_all_d1 )_12|
+               |(increase_priority_d1 )_12|
+               |(authorize_d1_l2 )_12|
+               |(authorize_d1_l1 )_12|
+               |(authorize_d1_l4 )_12|
+               |(authorize_d2_l3 )_12|)))
+  (=> |(increase_factor )_13| a!1)))
+(assert (=> |(authorize_d1_l1 )_14|
+    (or |(authorize_d1_l1 )_13|
+        clear_d1_l1_13
+        |(authorize_d1_l4 )_13|
+        |(authorize_d2_l1 )_13|
+        |(authorize_d2_l2 )_13|
+        |(increase_priority_d1 )_13|
+        |(authorize_d1_l3 )_13|
+        |(increase_priority_d2 )_13|
+        |(authorize_d1_l2 )_13|
+        |(decrease_factor )_13|
+        |(authorize_all_d2 )_13|
+        |(authorize_d2_l4 )_13|
+        |(increase_factor )_13|
+        |(authorize_d2_l3 )_13|
+        |(authorize_all_d1 )_13|)))
+(assert (=> |(authorize_d1_l2 )_14|
+    (or |(authorize_d1_l2 )_13|
+        clear_d1_l2_13
+        |(authorize_all_d1 )_13|
+        |(authorize_d2_l1 )_13|
+        |(increase_priority_d1 )_13|
+        |(increase_priority_d2 )_13|
+        |(authorize_d2_l2 )_13|
+        |(authorize_d1_l1 )_13|
+        |(authorize_all_d2 )_13|
+        |(decrease_factor )_13|
+        |(authorize_d1_l3 )_13|
+        |(increase_factor )_13|
+        |(authorize_d1_l4 )_13|
+        |(authorize_d2_l4 )_13|
+        |(authorize_d2_l3 )_13|)))
+(assert (=> |(authorize_d1_l3 )_14|
+    (or |(authorize_d1_l3 )_13|
+        clear_d1_l3_13
+        |(authorize_all_d1 )_13|
+        |(authorize_d1_l4 )_13|
+        |(authorize_d2_l1 )_13|
+        |(authorize_d2_l4 )_13|
+        |(decrease_factor )_13|
+        |(increase_factor )_13|
+        |(authorize_d1_l1 )_13|
+        |(increase_priority_d1 )_13|
+        |(authorize_d2_l3 )_13|
+        |(authorize_d2_l2 )_13|
+        |(increase_priority_d2 )_13|
+        |(authorize_d1_l2 )_13|
+        |(authorize_all_d2 )_13|)))
+(assert (=> |(authorize_d1_l4 )_14|
+    (or |(authorize_d1_l4 )_13|
+        clear_d1_l4_13
+        |(increase_priority_d1 )_13|
+        |(authorize_d1_l1 )_13|
+        |(authorize_d1_l3 )_13|
+        |(authorize_d2_l1 )_13|
+        |(authorize_all_d1 )_13|
+        |(authorize_d2_l2 )_13|
+        |(increase_priority_d2 )_13|
+        |(authorize_d2_l4 )_13|
+        |(authorize_all_d2 )_13|
+        |(decrease_factor )_13|
+        |(authorize_d2_l3 )_13|
+        |(authorize_d1_l2 )_13|
+        |(increase_factor )_13|)))
+(assert (=> |(authorize_d2_l1 )_14|
+    (or |(authorize_d2_l1 )_13|
+        clear_d2_l1_13
+        |(increase_priority_d1 )_13|
+        |(authorize_d1_l1 )_13|
+        |(authorize_d1_l4 )_13|
+        |(authorize_d1_l2 )_13|
+        |(authorize_d1_l3 )_13|
+        |(authorize_d2_l2 )_13|
+        |(authorize_d2_l4 )_13|
+        |(increase_factor )_13|
+        |(increase_priority_d2 )_13|
+        |(authorize_all_d1 )_13|
+        |(authorize_d2_l3 )_13|
+        |(decrease_factor )_13|
+        |(authorize_all_d2 )_13|)))
+(assert (=> |(authorize_d2_l2 )_14|
+    (or |(authorize_d2_l2 )_13|
+        clear_d2_l2_13
+        |(authorize_d1_l4 )_13|
+        |(decrease_factor )_13|
+        |(authorize_d2_l1 )_13|
+        |(authorize_d1_l1 )_13|
+        |(authorize_d1_l2 )_13|
+        |(increase_factor )_13|
+        |(increase_priority_d1 )_13|
+        |(authorize_d2_l4 )_13|
+        |(authorize_d1_l3 )_13|
+        |(authorize_all_d2 )_13|
+        |(authorize_all_d1 )_13|
+        |(increase_priority_d2 )_13|
+        |(authorize_d2_l3 )_13|)))
+(assert (=> |(authorize_d2_l3 )_14|
+    (or |(authorize_d2_l3 )_13|
+        clear_d2_l3_13
+        |(increase_priority_d2 )_13|
+        |(authorize_d1_l3 )_13|
+        |(authorize_d1_l4 )_13|
+        |(authorize_all_d2 )_13|
+        |(authorize_d2_l1 )_13|
+        |(authorize_all_d1 )_13|
+        |(decrease_factor )_13|
+        |(authorize_d1_l1 )_13|
+        |(authorize_d2_l2 )_13|
+        |(authorize_d2_l4 )_13|
+        |(increase_priority_d1 )_13|
+        |(increase_factor )_13|
+        |(authorize_d1_l2 )_13|)))
+(assert (=> |(authorize_d2_l4 )_14|
+    (or |(authorize_d2_l4 )_13|
+        clear_d2_l4_13
+        |(authorize_all_d2 )_13|
+        |(authorize_d1_l4 )_13|
+        |(authorize_d1_l3 )_13|
+        |(authorize_d2_l1 )_13|
+        |(increase_factor )_13|
+        |(decrease_factor )_13|
+        |(authorize_all_d1 )_13|
+        |(authorize_d2_l2 )_13|
+        |(increase_priority_d2 )_13|
+        |(authorize_d1_l1 )_13|
+        |(authorize_d1_l2 )_13|
+        |(authorize_d2_l3 )_13|
+        |(increase_priority_d1 )_13|)))
+(assert (let ((a!1 (or |(increase_priority_d1 )_13|
+               (not (< (- priority_d1_13 3.0) 0.0))
+               |(authorize_d1_l4 )_13|
+               |(authorize_d2_l1 )_13|
+               |(authorize_all_d1 )_13|
+               |(authorize_d1_l2 )_13|
+               |(authorize_d1_l1 )_13|
+               |(authorize_d1_l3 )_13|
+               |(increase_priority_d2 )_13|
+               |(authorize_d2_l2 )_13|
+               |(increase_factor )_13|
+               |(authorize_all_d2 )_13|
+               |(decrease_factor )_13|
+               |(authorize_d2_l3 )_13|
+               |(authorize_d2_l4 )_13|)))
+  (=> |(increase_priority_d1 )_14| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d1 )_13|
+               (not (>= (- priority_d1_13 3.0) 0.0))
+               clear_d1_l1_13
+               clear_d1_l2_13
+               clear_d1_l3_13
+               clear_d1_l4_13
+               |(decrease_factor )_13|
+               |(increase_priority_d1 )_13|
+               |(authorize_d1_l3 )_13|
+               |(authorize_d1_l2 )_13|
+               |(authorize_d1_l4 )_13|
+               |(authorize_all_d2 )_13|
+               |(increase_factor )_13|
+               |(authorize_d2_l4 )_13|
+               |(increase_priority_d2 )_13|
+               |(authorize_d2_l1 )_13|
+               |(authorize_d2_l3 )_13|
+               |(authorize_d2_l2 )_13|
+               |(authorize_d1_l1 )_13|)))
+  (=> |(authorize_all_d1 )_14| a!1)))
+(assert (let ((a!1 (or |(increase_priority_d2 )_13|
+               (not (< (- priority_d2_13 3.0) 0.0))
+               |(authorize_d2_l3 )_13|
+               |(authorize_d1_l4 )_13|
+               |(authorize_all_d2 )_13|
+               |(authorize_d1_l2 )_13|
+               |(increase_factor )_13|
+               |(increase_priority_d1 )_13|
+               |(authorize_d1_l1 )_13|
+               |(authorize_all_d1 )_13|
+               |(authorize_d2_l1 )_13|
+               |(authorize_d1_l3 )_13|
+               |(authorize_d2_l4 )_13|
+               |(authorize_d2_l2 )_13|
+               |(decrease_factor )_13|)))
+  (=> |(increase_priority_d2 )_14| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d2 )_13|
+               (not (>= (- priority_d2_13 3.0) 0.0))
+               clear_d2_l1_13
+               clear_d2_l2_13
+               clear_d2_l3_13
+               clear_d2_l4_13
+               |(authorize_d2_l4 )_13|
+               |(authorize_all_d1 )_13|
+               |(increase_priority_d2 )_13|
+               |(authorize_d1_l4 )_13|
+               |(increase_factor )_13|
+               |(decrease_factor )_13|
+               |(authorize_d1_l1 )_13|
+               |(authorize_d2_l3 )_13|
+               |(increase_priority_d1 )_13|
+               |(authorize_d2_l2 )_13|
+               |(authorize_d1_l2 )_13|
+               |(authorize_d1_l3 )_13|
+               |(authorize_d2_l1 )_13|)))
+  (=> |(authorize_all_d2 )_14| a!1)))
+(assert (let ((a!1 (or |(decrease_factor )_13|
+               (not (>= (- factor_13 1.0) 0.0))
+               |(authorize_all_d1 )_13|
+               |(increase_factor )_13|
+               |(authorize_d2_l2 )_13|
+               |(authorize_d1_l3 )_13|
+               |(authorize_d2_l4 )_13|
+               |(authorize_d1_l4 )_13|
+               |(authorize_all_d2 )_13|
+               |(authorize_d1_l1 )_13|
+               |(authorize_d1_l2 )_13|
+               |(increase_priority_d1 )_13|
+               |(authorize_d2_l3 )_13|
+               |(authorize_d2_l1 )_13|
+               |(increase_priority_d2 )_13|)))
+  (=> |(decrease_factor )_14| a!1)))
+(assert (let ((a!1 (or |(increase_factor )_13|
+               (not (<= (- factor_13 10.0) 0.0))
+               |(decrease_factor )_13|
+               |(authorize_all_d2 )_13|
+               |(authorize_d1_l3 )_13|
+               |(authorize_d2_l4 )_13|
+               |(increase_priority_d2 )_13|
+               |(authorize_d2_l1 )_13|
+               |(authorize_d2_l2 )_13|
+               |(authorize_all_d1 )_13|
+               |(increase_priority_d1 )_13|
+               |(authorize_d1_l2 )_13|
+               |(authorize_d1_l1 )_13|
+               |(authorize_d1_l4 )_13|
+               |(authorize_d2_l3 )_13|)))
+  (=> |(increase_factor )_14| a!1)))
+(assert (=> |(authorize_d1_l1 )_15|
+    (or |(authorize_d1_l1 )_14|
+        clear_d1_l1_14
+        |(authorize_d1_l4 )_14|
+        |(authorize_d2_l1 )_14|
+        |(authorize_d2_l2 )_14|
+        |(increase_priority_d1 )_14|
+        |(authorize_d1_l3 )_14|
+        |(increase_priority_d2 )_14|
+        |(authorize_d1_l2 )_14|
+        |(decrease_factor )_14|
+        |(authorize_all_d2 )_14|
+        |(authorize_d2_l4 )_14|
+        |(increase_factor )_14|
+        |(authorize_d2_l3 )_14|
+        |(authorize_all_d1 )_14|)))
+(assert (=> |(authorize_d1_l2 )_15|
+    (or |(authorize_d1_l2 )_14|
+        clear_d1_l2_14
+        |(authorize_all_d1 )_14|
+        |(authorize_d2_l1 )_14|
+        |(increase_priority_d1 )_14|
+        |(increase_priority_d2 )_14|
+        |(authorize_d2_l2 )_14|
+        |(authorize_d1_l1 )_14|
+        |(authorize_all_d2 )_14|
+        |(decrease_factor )_14|
+        |(authorize_d1_l3 )_14|
+        |(increase_factor )_14|
+        |(authorize_d1_l4 )_14|
+        |(authorize_d2_l4 )_14|
+        |(authorize_d2_l3 )_14|)))
+(assert (=> |(authorize_d1_l3 )_15|
+    (or |(authorize_d1_l3 )_14|
+        clear_d1_l3_14
+        |(authorize_all_d1 )_14|
+        |(authorize_d1_l4 )_14|
+        |(authorize_d2_l1 )_14|
+        |(authorize_d2_l4 )_14|
+        |(decrease_factor )_14|
+        |(increase_factor )_14|
+        |(authorize_d1_l1 )_14|
+        |(increase_priority_d1 )_14|
+        |(authorize_d2_l3 )_14|
+        |(authorize_d2_l2 )_14|
+        |(increase_priority_d2 )_14|
+        |(authorize_d1_l2 )_14|
+        |(authorize_all_d2 )_14|)))
+(assert (=> |(authorize_d1_l4 )_15|
+    (or |(authorize_d1_l4 )_14|
+        clear_d1_l4_14
+        |(increase_priority_d1 )_14|
+        |(authorize_d1_l1 )_14|
+        |(authorize_d1_l3 )_14|
+        |(authorize_d2_l1 )_14|
+        |(authorize_all_d1 )_14|
+        |(authorize_d2_l2 )_14|
+        |(increase_priority_d2 )_14|
+        |(authorize_d2_l4 )_14|
+        |(authorize_all_d2 )_14|
+        |(decrease_factor )_14|
+        |(authorize_d2_l3 )_14|
+        |(authorize_d1_l2 )_14|
+        |(increase_factor )_14|)))
+(assert (=> |(authorize_d2_l1 )_15|
+    (or |(authorize_d2_l1 )_14|
+        clear_d2_l1_14
+        |(increase_priority_d1 )_14|
+        |(authorize_d1_l1 )_14|
+        |(authorize_d1_l4 )_14|
+        |(authorize_d1_l2 )_14|
+        |(authorize_d1_l3 )_14|
+        |(authorize_d2_l2 )_14|
+        |(authorize_d2_l4 )_14|
+        |(increase_factor )_14|
+        |(increase_priority_d2 )_14|
+        |(authorize_all_d1 )_14|
+        |(authorize_d2_l3 )_14|
+        |(decrease_factor )_14|
+        |(authorize_all_d2 )_14|)))
+(assert (=> |(authorize_d2_l2 )_15|
+    (or |(authorize_d2_l2 )_14|
+        clear_d2_l2_14
+        |(authorize_d1_l4 )_14|
+        |(decrease_factor )_14|
+        |(authorize_d2_l1 )_14|
+        |(authorize_d1_l1 )_14|
+        |(authorize_d1_l2 )_14|
+        |(increase_factor )_14|
+        |(increase_priority_d1 )_14|
+        |(authorize_d2_l4 )_14|
+        |(authorize_d1_l3 )_14|
+        |(authorize_all_d2 )_14|
+        |(authorize_all_d1 )_14|
+        |(increase_priority_d2 )_14|
+        |(authorize_d2_l3 )_14|)))
+(assert (=> |(authorize_d2_l3 )_15|
+    (or |(authorize_d2_l3 )_14|
+        clear_d2_l3_14
+        |(increase_priority_d2 )_14|
+        |(authorize_d1_l3 )_14|
+        |(authorize_d1_l4 )_14|
+        |(authorize_all_d2 )_14|
+        |(authorize_d2_l1 )_14|
+        |(authorize_all_d1 )_14|
+        |(decrease_factor )_14|
+        |(authorize_d1_l1 )_14|
+        |(authorize_d2_l2 )_14|
+        |(authorize_d2_l4 )_14|
+        |(increase_priority_d1 )_14|
+        |(increase_factor )_14|
+        |(authorize_d1_l2 )_14|)))
+(assert (=> |(authorize_d2_l4 )_15|
+    (or |(authorize_d2_l4 )_14|
+        clear_d2_l4_14
+        |(authorize_all_d2 )_14|
+        |(authorize_d1_l4 )_14|
+        |(authorize_d1_l3 )_14|
+        |(authorize_d2_l1 )_14|
+        |(increase_factor )_14|
+        |(decrease_factor )_14|
+        |(authorize_all_d1 )_14|
+        |(authorize_d2_l2 )_14|
+        |(increase_priority_d2 )_14|
+        |(authorize_d1_l1 )_14|
+        |(authorize_d1_l2 )_14|
+        |(authorize_d2_l3 )_14|
+        |(increase_priority_d1 )_14|)))
+(assert (let ((a!1 (or |(increase_priority_d1 )_14|
+               (not (< (- priority_d1_14 3.0) 0.0))
+               |(authorize_d1_l4 )_14|
+               |(authorize_d2_l1 )_14|
+               |(authorize_all_d1 )_14|
+               |(authorize_d1_l2 )_14|
+               |(authorize_d1_l1 )_14|
+               |(authorize_d1_l3 )_14|
+               |(increase_priority_d2 )_14|
+               |(authorize_d2_l2 )_14|
+               |(increase_factor )_14|
+               |(authorize_all_d2 )_14|
+               |(decrease_factor )_14|
+               |(authorize_d2_l3 )_14|
+               |(authorize_d2_l4 )_14|)))
+  (=> |(increase_priority_d1 )_15| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d1 )_14|
+               (not (>= (- priority_d1_14 3.0) 0.0))
+               clear_d1_l1_14
+               clear_d1_l2_14
+               clear_d1_l3_14
+               clear_d1_l4_14
+               |(decrease_factor )_14|
+               |(increase_priority_d1 )_14|
+               |(authorize_d1_l3 )_14|
+               |(authorize_d1_l2 )_14|
+               |(authorize_d1_l4 )_14|
+               |(authorize_all_d2 )_14|
+               |(increase_factor )_14|
+               |(authorize_d2_l4 )_14|
+               |(increase_priority_d2 )_14|
+               |(authorize_d2_l1 )_14|
+               |(authorize_d2_l3 )_14|
+               |(authorize_d2_l2 )_14|
+               |(authorize_d1_l1 )_14|)))
+  (=> |(authorize_all_d1 )_15| a!1)))
+(assert (let ((a!1 (or |(increase_priority_d2 )_14|
+               (not (< (- priority_d2_14 3.0) 0.0))
+               |(authorize_d2_l3 )_14|
+               |(authorize_d1_l4 )_14|
+               |(authorize_all_d2 )_14|
+               |(authorize_d1_l2 )_14|
+               |(increase_factor )_14|
+               |(increase_priority_d1 )_14|
+               |(authorize_d1_l1 )_14|
+               |(authorize_all_d1 )_14|
+               |(authorize_d2_l1 )_14|
+               |(authorize_d1_l3 )_14|
+               |(authorize_d2_l4 )_14|
+               |(authorize_d2_l2 )_14|
+               |(decrease_factor )_14|)))
+  (=> |(increase_priority_d2 )_15| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d2 )_14|
+               (not (>= (- priority_d2_14 3.0) 0.0))
+               clear_d2_l1_14
+               clear_d2_l2_14
+               clear_d2_l3_14
+               clear_d2_l4_14
+               |(authorize_d2_l4 )_14|
+               |(authorize_all_d1 )_14|
+               |(increase_priority_d2 )_14|
+               |(authorize_d1_l4 )_14|
+               |(increase_factor )_14|
+               |(decrease_factor )_14|
+               |(authorize_d1_l1 )_14|
+               |(authorize_d2_l3 )_14|
+               |(increase_priority_d1 )_14|
+               |(authorize_d2_l2 )_14|
+               |(authorize_d1_l2 )_14|
+               |(authorize_d1_l3 )_14|
+               |(authorize_d2_l1 )_14|)))
+  (=> |(authorize_all_d2 )_15| a!1)))
+(assert (let ((a!1 (or |(decrease_factor )_14|
+               (not (>= (- factor_14 1.0) 0.0))
+               |(authorize_all_d1 )_14|
+               |(increase_factor )_14|
+               |(authorize_d2_l2 )_14|
+               |(authorize_d1_l3 )_14|
+               |(authorize_d2_l4 )_14|
+               |(authorize_d1_l4 )_14|
+               |(authorize_all_d2 )_14|
+               |(authorize_d1_l1 )_14|
+               |(authorize_d1_l2 )_14|
+               |(increase_priority_d1 )_14|
+               |(authorize_d2_l3 )_14|
+               |(authorize_d2_l1 )_14|
+               |(increase_priority_d2 )_14|)))
+  (=> |(decrease_factor )_15| a!1)))
+(assert (let ((a!1 (or |(increase_factor )_14|
+               (not (<= (- factor_14 10.0) 0.0))
+               |(decrease_factor )_14|
+               |(authorize_all_d2 )_14|
+               |(authorize_d1_l3 )_14|
+               |(authorize_d2_l4 )_14|
+               |(increase_priority_d2 )_14|
+               |(authorize_d2_l1 )_14|
+               |(authorize_d2_l2 )_14|
+               |(authorize_all_d1 )_14|
+               |(increase_priority_d1 )_14|
+               |(authorize_d1_l2 )_14|
+               |(authorize_d1_l1 )_14|
+               |(authorize_d1_l4 )_14|
+               |(authorize_d2_l3 )_14|)))
+  (=> |(increase_factor )_15| a!1)))
+(assert (=> |(authorize_d1_l1 )_16|
+    (or |(authorize_d1_l1 )_15|
+        clear_d1_l1_15
+        |(authorize_d1_l4 )_15|
+        |(authorize_d2_l1 )_15|
+        |(authorize_d2_l2 )_15|
+        |(increase_priority_d1 )_15|
+        |(authorize_d1_l3 )_15|
+        |(increase_priority_d2 )_15|
+        |(authorize_d1_l2 )_15|
+        |(decrease_factor )_15|
+        |(authorize_all_d2 )_15|
+        |(authorize_d2_l4 )_15|
+        |(increase_factor )_15|
+        |(authorize_d2_l3 )_15|
+        |(authorize_all_d1 )_15|)))
+(assert (=> |(authorize_d1_l2 )_16|
+    (or |(authorize_d1_l2 )_15|
+        clear_d1_l2_15
+        |(authorize_all_d1 )_15|
+        |(authorize_d2_l1 )_15|
+        |(increase_priority_d1 )_15|
+        |(increase_priority_d2 )_15|
+        |(authorize_d2_l2 )_15|
+        |(authorize_d1_l1 )_15|
+        |(authorize_all_d2 )_15|
+        |(decrease_factor )_15|
+        |(authorize_d1_l3 )_15|
+        |(increase_factor )_15|
+        |(authorize_d1_l4 )_15|
+        |(authorize_d2_l4 )_15|
+        |(authorize_d2_l3 )_15|)))
+(assert (=> |(authorize_d1_l3 )_16|
+    (or |(authorize_d1_l3 )_15|
+        clear_d1_l3_15
+        |(authorize_all_d1 )_15|
+        |(authorize_d1_l4 )_15|
+        |(authorize_d2_l1 )_15|
+        |(authorize_d2_l4 )_15|
+        |(decrease_factor )_15|
+        |(increase_factor )_15|
+        |(authorize_d1_l1 )_15|
+        |(increase_priority_d1 )_15|
+        |(authorize_d2_l3 )_15|
+        |(authorize_d2_l2 )_15|
+        |(increase_priority_d2 )_15|
+        |(authorize_d1_l2 )_15|
+        |(authorize_all_d2 )_15|)))
+(assert (=> |(authorize_d1_l4 )_16|
+    (or |(authorize_d1_l4 )_15|
+        clear_d1_l4_15
+        |(increase_priority_d1 )_15|
+        |(authorize_d1_l1 )_15|
+        |(authorize_d1_l3 )_15|
+        |(authorize_d2_l1 )_15|
+        |(authorize_all_d1 )_15|
+        |(authorize_d2_l2 )_15|
+        |(increase_priority_d2 )_15|
+        |(authorize_d2_l4 )_15|
+        |(authorize_all_d2 )_15|
+        |(decrease_factor )_15|
+        |(authorize_d2_l3 )_15|
+        |(authorize_d1_l2 )_15|
+        |(increase_factor )_15|)))
+(assert (=> |(authorize_d2_l1 )_16|
+    (or |(authorize_d2_l1 )_15|
+        clear_d2_l1_15
+        |(increase_priority_d1 )_15|
+        |(authorize_d1_l1 )_15|
+        |(authorize_d1_l4 )_15|
+        |(authorize_d1_l2 )_15|
+        |(authorize_d1_l3 )_15|
+        |(authorize_d2_l2 )_15|
+        |(authorize_d2_l4 )_15|
+        |(increase_factor )_15|
+        |(increase_priority_d2 )_15|
+        |(authorize_all_d1 )_15|
+        |(authorize_d2_l3 )_15|
+        |(decrease_factor )_15|
+        |(authorize_all_d2 )_15|)))
+(assert (=> |(authorize_d2_l2 )_16|
+    (or |(authorize_d2_l2 )_15|
+        clear_d2_l2_15
+        |(authorize_d1_l4 )_15|
+        |(decrease_factor )_15|
+        |(authorize_d2_l1 )_15|
+        |(authorize_d1_l1 )_15|
+        |(authorize_d1_l2 )_15|
+        |(increase_factor )_15|
+        |(increase_priority_d1 )_15|
+        |(authorize_d2_l4 )_15|
+        |(authorize_d1_l3 )_15|
+        |(authorize_all_d2 )_15|
+        |(authorize_all_d1 )_15|
+        |(increase_priority_d2 )_15|
+        |(authorize_d2_l3 )_15|)))
+(assert (=> |(authorize_d2_l3 )_16|
+    (or |(authorize_d2_l3 )_15|
+        clear_d2_l3_15
+        |(increase_priority_d2 )_15|
+        |(authorize_d1_l3 )_15|
+        |(authorize_d1_l4 )_15|
+        |(authorize_all_d2 )_15|
+        |(authorize_d2_l1 )_15|
+        |(authorize_all_d1 )_15|
+        |(decrease_factor )_15|
+        |(authorize_d1_l1 )_15|
+        |(authorize_d2_l2 )_15|
+        |(authorize_d2_l4 )_15|
+        |(increase_priority_d1 )_15|
+        |(increase_factor )_15|
+        |(authorize_d1_l2 )_15|)))
+(assert (=> |(authorize_d2_l4 )_16|
+    (or |(authorize_d2_l4 )_15|
+        clear_d2_l4_15
+        |(authorize_all_d2 )_15|
+        |(authorize_d1_l4 )_15|
+        |(authorize_d1_l3 )_15|
+        |(authorize_d2_l1 )_15|
+        |(increase_factor )_15|
+        |(decrease_factor )_15|
+        |(authorize_all_d1 )_15|
+        |(authorize_d2_l2 )_15|
+        |(increase_priority_d2 )_15|
+        |(authorize_d1_l1 )_15|
+        |(authorize_d1_l2 )_15|
+        |(authorize_d2_l3 )_15|
+        |(increase_priority_d1 )_15|)))
+(assert (let ((a!1 (or |(increase_priority_d1 )_15|
+               (not (< (- priority_d1_15 3.0) 0.0))
+               |(authorize_d1_l4 )_15|
+               |(authorize_d2_l1 )_15|
+               |(authorize_all_d1 )_15|
+               |(authorize_d1_l2 )_15|
+               |(authorize_d1_l1 )_15|
+               |(authorize_d1_l3 )_15|
+               |(increase_priority_d2 )_15|
+               |(authorize_d2_l2 )_15|
+               |(increase_factor )_15|
+               |(authorize_all_d2 )_15|
+               |(decrease_factor )_15|
+               |(authorize_d2_l3 )_15|
+               |(authorize_d2_l4 )_15|)))
+  (=> |(increase_priority_d1 )_16| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d1 )_15|
+               (not (>= (- priority_d1_15 3.0) 0.0))
+               clear_d1_l1_15
+               clear_d1_l2_15
+               clear_d1_l3_15
+               clear_d1_l4_15
+               |(decrease_factor )_15|
+               |(increase_priority_d1 )_15|
+               |(authorize_d1_l3 )_15|
+               |(authorize_d1_l2 )_15|
+               |(authorize_d1_l4 )_15|
+               |(authorize_all_d2 )_15|
+               |(increase_factor )_15|
+               |(authorize_d2_l4 )_15|
+               |(increase_priority_d2 )_15|
+               |(authorize_d2_l1 )_15|
+               |(authorize_d2_l3 )_15|
+               |(authorize_d2_l2 )_15|
+               |(authorize_d1_l1 )_15|)))
+  (=> |(authorize_all_d1 )_16| a!1)))
+(assert (let ((a!1 (or |(increase_priority_d2 )_15|
+               (not (< (- priority_d2_15 3.0) 0.0))
+               |(authorize_d2_l3 )_15|
+               |(authorize_d1_l4 )_15|
+               |(authorize_all_d2 )_15|
+               |(authorize_d1_l2 )_15|
+               |(increase_factor )_15|
+               |(increase_priority_d1 )_15|
+               |(authorize_d1_l1 )_15|
+               |(authorize_all_d1 )_15|
+               |(authorize_d2_l1 )_15|
+               |(authorize_d1_l3 )_15|
+               |(authorize_d2_l4 )_15|
+               |(authorize_d2_l2 )_15|
+               |(decrease_factor )_15|)))
+  (=> |(increase_priority_d2 )_16| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d2 )_15|
+               (not (>= (- priority_d2_15 3.0) 0.0))
+               clear_d2_l1_15
+               clear_d2_l2_15
+               clear_d2_l3_15
+               clear_d2_l4_15
+               |(authorize_d2_l4 )_15|
+               |(authorize_all_d1 )_15|
+               |(increase_priority_d2 )_15|
+               |(authorize_d1_l4 )_15|
+               |(increase_factor )_15|
+               |(decrease_factor )_15|
+               |(authorize_d1_l1 )_15|
+               |(authorize_d2_l3 )_15|
+               |(increase_priority_d1 )_15|
+               |(authorize_d2_l2 )_15|
+               |(authorize_d1_l2 )_15|
+               |(authorize_d1_l3 )_15|
+               |(authorize_d2_l1 )_15|)))
+  (=> |(authorize_all_d2 )_16| a!1)))
+(assert (let ((a!1 (or |(decrease_factor )_15|
+               (not (>= (- factor_15 1.0) 0.0))
+               |(authorize_all_d1 )_15|
+               |(increase_factor )_15|
+               |(authorize_d2_l2 )_15|
+               |(authorize_d1_l3 )_15|
+               |(authorize_d2_l4 )_15|
+               |(authorize_d1_l4 )_15|
+               |(authorize_all_d2 )_15|
+               |(authorize_d1_l1 )_15|
+               |(authorize_d1_l2 )_15|
+               |(increase_priority_d1 )_15|
+               |(authorize_d2_l3 )_15|
+               |(authorize_d2_l1 )_15|
+               |(increase_priority_d2 )_15|)))
+  (=> |(decrease_factor )_16| a!1)))
+(assert (let ((a!1 (or |(increase_factor )_15|
+               (not (<= (- factor_15 10.0) 0.0))
+               |(decrease_factor )_15|
+               |(authorize_all_d2 )_15|
+               |(authorize_d1_l3 )_15|
+               |(authorize_d2_l4 )_15|
+               |(increase_priority_d2 )_15|
+               |(authorize_d2_l1 )_15|
+               |(authorize_d2_l2 )_15|
+               |(authorize_all_d1 )_15|
+               |(increase_priority_d1 )_15|
+               |(authorize_d1_l2 )_15|
+               |(authorize_d1_l1 )_15|
+               |(authorize_d1_l4 )_15|
+               |(authorize_d2_l3 )_15|)))
+  (=> |(increase_factor )_16| a!1)))
+(assert (=> |(authorize_d1_l1 )_17|
+    (or |(authorize_d1_l1 )_16|
+        clear_d1_l1_16
+        |(authorize_d1_l4 )_16|
+        |(authorize_d2_l1 )_16|
+        |(authorize_d2_l2 )_16|
+        |(increase_priority_d1 )_16|
+        |(authorize_d1_l3 )_16|
+        |(increase_priority_d2 )_16|
+        |(authorize_d1_l2 )_16|
+        |(decrease_factor )_16|
+        |(authorize_all_d2 )_16|
+        |(authorize_d2_l4 )_16|
+        |(increase_factor )_16|
+        |(authorize_d2_l3 )_16|
+        |(authorize_all_d1 )_16|)))
+(assert (=> |(authorize_d1_l2 )_17|
+    (or |(authorize_d1_l2 )_16|
+        clear_d1_l2_16
+        |(authorize_all_d1 )_16|
+        |(authorize_d2_l1 )_16|
+        |(increase_priority_d1 )_16|
+        |(increase_priority_d2 )_16|
+        |(authorize_d2_l2 )_16|
+        |(authorize_d1_l1 )_16|
+        |(authorize_all_d2 )_16|
+        |(decrease_factor )_16|
+        |(authorize_d1_l3 )_16|
+        |(increase_factor )_16|
+        |(authorize_d1_l4 )_16|
+        |(authorize_d2_l4 )_16|
+        |(authorize_d2_l3 )_16|)))
+(assert (=> |(authorize_d1_l3 )_17|
+    (or |(authorize_d1_l3 )_16|
+        clear_d1_l3_16
+        |(authorize_all_d1 )_16|
+        |(authorize_d1_l4 )_16|
+        |(authorize_d2_l1 )_16|
+        |(authorize_d2_l4 )_16|
+        |(decrease_factor )_16|
+        |(increase_factor )_16|
+        |(authorize_d1_l1 )_16|
+        |(increase_priority_d1 )_16|
+        |(authorize_d2_l3 )_16|
+        |(authorize_d2_l2 )_16|
+        |(increase_priority_d2 )_16|
+        |(authorize_d1_l2 )_16|
+        |(authorize_all_d2 )_16|)))
+(assert (=> |(authorize_d1_l4 )_17|
+    (or |(authorize_d1_l4 )_16|
+        clear_d1_l4_16
+        |(increase_priority_d1 )_16|
+        |(authorize_d1_l1 )_16|
+        |(authorize_d1_l3 )_16|
+        |(authorize_d2_l1 )_16|
+        |(authorize_all_d1 )_16|
+        |(authorize_d2_l2 )_16|
+        |(increase_priority_d2 )_16|
+        |(authorize_d2_l4 )_16|
+        |(authorize_all_d2 )_16|
+        |(decrease_factor )_16|
+        |(authorize_d2_l3 )_16|
+        |(authorize_d1_l2 )_16|
+        |(increase_factor )_16|)))
+(assert (=> |(authorize_d2_l1 )_17|
+    (or |(authorize_d2_l1 )_16|
+        clear_d2_l1_16
+        |(increase_priority_d1 )_16|
+        |(authorize_d1_l1 )_16|
+        |(authorize_d1_l4 )_16|
+        |(authorize_d1_l2 )_16|
+        |(authorize_d1_l3 )_16|
+        |(authorize_d2_l2 )_16|
+        |(authorize_d2_l4 )_16|
+        |(increase_factor )_16|
+        |(increase_priority_d2 )_16|
+        |(authorize_all_d1 )_16|
+        |(authorize_d2_l3 )_16|
+        |(decrease_factor )_16|
+        |(authorize_all_d2 )_16|)))
+(assert (=> |(authorize_d2_l2 )_17|
+    (or |(authorize_d2_l2 )_16|
+        clear_d2_l2_16
+        |(authorize_d1_l4 )_16|
+        |(decrease_factor )_16|
+        |(authorize_d2_l1 )_16|
+        |(authorize_d1_l1 )_16|
+        |(authorize_d1_l2 )_16|
+        |(increase_factor )_16|
+        |(increase_priority_d1 )_16|
+        |(authorize_d2_l4 )_16|
+        |(authorize_d1_l3 )_16|
+        |(authorize_all_d2 )_16|
+        |(authorize_all_d1 )_16|
+        |(increase_priority_d2 )_16|
+        |(authorize_d2_l3 )_16|)))
+(assert (=> |(authorize_d2_l3 )_17|
+    (or |(authorize_d2_l3 )_16|
+        clear_d2_l3_16
+        |(increase_priority_d2 )_16|
+        |(authorize_d1_l3 )_16|
+        |(authorize_d1_l4 )_16|
+        |(authorize_all_d2 )_16|
+        |(authorize_d2_l1 )_16|
+        |(authorize_all_d1 )_16|
+        |(decrease_factor )_16|
+        |(authorize_d1_l1 )_16|
+        |(authorize_d2_l2 )_16|
+        |(authorize_d2_l4 )_16|
+        |(increase_priority_d1 )_16|
+        |(increase_factor )_16|
+        |(authorize_d1_l2 )_16|)))
+(assert (=> |(authorize_d2_l4 )_17|
+    (or |(authorize_d2_l4 )_16|
+        clear_d2_l4_16
+        |(authorize_all_d2 )_16|
+        |(authorize_d1_l4 )_16|
+        |(authorize_d1_l3 )_16|
+        |(authorize_d2_l1 )_16|
+        |(increase_factor )_16|
+        |(decrease_factor )_16|
+        |(authorize_all_d1 )_16|
+        |(authorize_d2_l2 )_16|
+        |(increase_priority_d2 )_16|
+        |(authorize_d1_l1 )_16|
+        |(authorize_d1_l2 )_16|
+        |(authorize_d2_l3 )_16|
+        |(increase_priority_d1 )_16|)))
+(assert (let ((a!1 (or |(increase_priority_d1 )_16|
+               (not (< (- priority_d1_16 3.0) 0.0))
+               |(authorize_d1_l4 )_16|
+               |(authorize_d2_l1 )_16|
+               |(authorize_all_d1 )_16|
+               |(authorize_d1_l2 )_16|
+               |(authorize_d1_l1 )_16|
+               |(authorize_d1_l3 )_16|
+               |(increase_priority_d2 )_16|
+               |(authorize_d2_l2 )_16|
+               |(increase_factor )_16|
+               |(authorize_all_d2 )_16|
+               |(decrease_factor )_16|
+               |(authorize_d2_l3 )_16|
+               |(authorize_d2_l4 )_16|)))
+  (=> |(increase_priority_d1 )_17| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d1 )_16|
+               (not (>= (- priority_d1_16 3.0) 0.0))
+               clear_d1_l1_16
+               clear_d1_l2_16
+               clear_d1_l3_16
+               clear_d1_l4_16
+               |(decrease_factor )_16|
+               |(increase_priority_d1 )_16|
+               |(authorize_d1_l3 )_16|
+               |(authorize_d1_l2 )_16|
+               |(authorize_d1_l4 )_16|
+               |(authorize_all_d2 )_16|
+               |(increase_factor )_16|
+               |(authorize_d2_l4 )_16|
+               |(increase_priority_d2 )_16|
+               |(authorize_d2_l1 )_16|
+               |(authorize_d2_l3 )_16|
+               |(authorize_d2_l2 )_16|
+               |(authorize_d1_l1 )_16|)))
+  (=> |(authorize_all_d1 )_17| a!1)))
+(assert (let ((a!1 (or |(increase_priority_d2 )_16|
+               (not (< (- priority_d2_16 3.0) 0.0))
+               |(authorize_d2_l3 )_16|
+               |(authorize_d1_l4 )_16|
+               |(authorize_all_d2 )_16|
+               |(authorize_d1_l2 )_16|
+               |(increase_factor )_16|
+               |(increase_priority_d1 )_16|
+               |(authorize_d1_l1 )_16|
+               |(authorize_all_d1 )_16|
+               |(authorize_d2_l1 )_16|
+               |(authorize_d1_l3 )_16|
+               |(authorize_d2_l4 )_16|
+               |(authorize_d2_l2 )_16|
+               |(decrease_factor )_16|)))
+  (=> |(increase_priority_d2 )_17| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d2 )_16|
+               (not (>= (- priority_d2_16 3.0) 0.0))
+               clear_d2_l1_16
+               clear_d2_l2_16
+               clear_d2_l3_16
+               clear_d2_l4_16
+               |(authorize_d2_l4 )_16|
+               |(authorize_all_d1 )_16|
+               |(increase_priority_d2 )_16|
+               |(authorize_d1_l4 )_16|
+               |(increase_factor )_16|
+               |(decrease_factor )_16|
+               |(authorize_d1_l1 )_16|
+               |(authorize_d2_l3 )_16|
+               |(increase_priority_d1 )_16|
+               |(authorize_d2_l2 )_16|
+               |(authorize_d1_l2 )_16|
+               |(authorize_d1_l3 )_16|
+               |(authorize_d2_l1 )_16|)))
+  (=> |(authorize_all_d2 )_17| a!1)))
+(assert (let ((a!1 (or |(decrease_factor )_16|
+               (not (>= (- factor_16 1.0) 0.0))
+               |(authorize_all_d1 )_16|
+               |(increase_factor )_16|
+               |(authorize_d2_l2 )_16|
+               |(authorize_d1_l3 )_16|
+               |(authorize_d2_l4 )_16|
+               |(authorize_d1_l4 )_16|
+               |(authorize_all_d2 )_16|
+               |(authorize_d1_l1 )_16|
+               |(authorize_d1_l2 )_16|
+               |(increase_priority_d1 )_16|
+               |(authorize_d2_l3 )_16|
+               |(authorize_d2_l1 )_16|
+               |(increase_priority_d2 )_16|)))
+  (=> |(decrease_factor )_17| a!1)))
+(assert (let ((a!1 (or |(increase_factor )_16|
+               (not (<= (- factor_16 10.0) 0.0))
+               |(decrease_factor )_16|
+               |(authorize_all_d2 )_16|
+               |(authorize_d1_l3 )_16|
+               |(authorize_d2_l4 )_16|
+               |(increase_priority_d2 )_16|
+               |(authorize_d2_l1 )_16|
+               |(authorize_d2_l2 )_16|
+               |(authorize_all_d1 )_16|
+               |(increase_priority_d1 )_16|
+               |(authorize_d1_l2 )_16|
+               |(authorize_d1_l1 )_16|
+               |(authorize_d1_l4 )_16|
+               |(authorize_d2_l3 )_16|)))
+  (=> |(increase_factor )_17| a!1)))
+(assert (=> |(authorize_d1_l1 )_18|
+    (or |(authorize_d1_l1 )_17|
+        clear_d1_l1_17
+        |(authorize_d1_l4 )_17|
+        |(authorize_d2_l1 )_17|
+        |(authorize_d2_l2 )_17|
+        |(increase_priority_d1 )_17|
+        |(authorize_d1_l3 )_17|
+        |(increase_priority_d2 )_17|
+        |(authorize_d1_l2 )_17|
+        |(decrease_factor )_17|
+        |(authorize_all_d2 )_17|
+        |(authorize_d2_l4 )_17|
+        |(increase_factor )_17|
+        |(authorize_d2_l3 )_17|
+        |(authorize_all_d1 )_17|)))
+(assert (=> |(authorize_d1_l2 )_18|
+    (or |(authorize_d1_l2 )_17|
+        clear_d1_l2_17
+        |(authorize_all_d1 )_17|
+        |(authorize_d2_l1 )_17|
+        |(increase_priority_d1 )_17|
+        |(increase_priority_d2 )_17|
+        |(authorize_d2_l2 )_17|
+        |(authorize_d1_l1 )_17|
+        |(authorize_all_d2 )_17|
+        |(decrease_factor )_17|
+        |(authorize_d1_l3 )_17|
+        |(increase_factor )_17|
+        |(authorize_d1_l4 )_17|
+        |(authorize_d2_l4 )_17|
+        |(authorize_d2_l3 )_17|)))
+(assert (=> |(authorize_d1_l3 )_18|
+    (or |(authorize_d1_l3 )_17|
+        clear_d1_l3_17
+        |(authorize_all_d1 )_17|
+        |(authorize_d1_l4 )_17|
+        |(authorize_d2_l1 )_17|
+        |(authorize_d2_l4 )_17|
+        |(decrease_factor )_17|
+        |(increase_factor )_17|
+        |(authorize_d1_l1 )_17|
+        |(increase_priority_d1 )_17|
+        |(authorize_d2_l3 )_17|
+        |(authorize_d2_l2 )_17|
+        |(increase_priority_d2 )_17|
+        |(authorize_d1_l2 )_17|
+        |(authorize_all_d2 )_17|)))
+(assert (=> |(authorize_d1_l4 )_18|
+    (or |(authorize_d1_l4 )_17|
+        clear_d1_l4_17
+        |(increase_priority_d1 )_17|
+        |(authorize_d1_l1 )_17|
+        |(authorize_d1_l3 )_17|
+        |(authorize_d2_l1 )_17|
+        |(authorize_all_d1 )_17|
+        |(authorize_d2_l2 )_17|
+        |(increase_priority_d2 )_17|
+        |(authorize_d2_l4 )_17|
+        |(authorize_all_d2 )_17|
+        |(decrease_factor )_17|
+        |(authorize_d2_l3 )_17|
+        |(authorize_d1_l2 )_17|
+        |(increase_factor )_17|)))
+(assert (=> |(authorize_d2_l1 )_18|
+    (or |(authorize_d2_l1 )_17|
+        clear_d2_l1_17
+        |(increase_priority_d1 )_17|
+        |(authorize_d1_l1 )_17|
+        |(authorize_d1_l4 )_17|
+        |(authorize_d1_l2 )_17|
+        |(authorize_d1_l3 )_17|
+        |(authorize_d2_l2 )_17|
+        |(authorize_d2_l4 )_17|
+        |(increase_factor )_17|
+        |(increase_priority_d2 )_17|
+        |(authorize_all_d1 )_17|
+        |(authorize_d2_l3 )_17|
+        |(decrease_factor )_17|
+        |(authorize_all_d2 )_17|)))
+(assert (=> |(authorize_d2_l2 )_18|
+    (or |(authorize_d2_l2 )_17|
+        clear_d2_l2_17
+        |(authorize_d1_l4 )_17|
+        |(decrease_factor )_17|
+        |(authorize_d2_l1 )_17|
+        |(authorize_d1_l1 )_17|
+        |(authorize_d1_l2 )_17|
+        |(increase_factor )_17|
+        |(increase_priority_d1 )_17|
+        |(authorize_d2_l4 )_17|
+        |(authorize_d1_l3 )_17|
+        |(authorize_all_d2 )_17|
+        |(authorize_all_d1 )_17|
+        |(increase_priority_d2 )_17|
+        |(authorize_d2_l3 )_17|)))
+(assert (=> |(authorize_d2_l3 )_18|
+    (or |(authorize_d2_l3 )_17|
+        clear_d2_l3_17
+        |(increase_priority_d2 )_17|
+        |(authorize_d1_l3 )_17|
+        |(authorize_d1_l4 )_17|
+        |(authorize_all_d2 )_17|
+        |(authorize_d2_l1 )_17|
+        |(authorize_all_d1 )_17|
+        |(decrease_factor )_17|
+        |(authorize_d1_l1 )_17|
+        |(authorize_d2_l2 )_17|
+        |(authorize_d2_l4 )_17|
+        |(increase_priority_d1 )_17|
+        |(increase_factor )_17|
+        |(authorize_d1_l2 )_17|)))
+(assert (=> |(authorize_d2_l4 )_18|
+    (or |(authorize_d2_l4 )_17|
+        clear_d2_l4_17
+        |(authorize_all_d2 )_17|
+        |(authorize_d1_l4 )_17|
+        |(authorize_d1_l3 )_17|
+        |(authorize_d2_l1 )_17|
+        |(increase_factor )_17|
+        |(decrease_factor )_17|
+        |(authorize_all_d1 )_17|
+        |(authorize_d2_l2 )_17|
+        |(increase_priority_d2 )_17|
+        |(authorize_d1_l1 )_17|
+        |(authorize_d1_l2 )_17|
+        |(authorize_d2_l3 )_17|
+        |(increase_priority_d1 )_17|)))
+(assert (let ((a!1 (or |(increase_priority_d1 )_17|
+               (not (< (- priority_d1_17 3.0) 0.0))
+               |(authorize_d1_l4 )_17|
+               |(authorize_d2_l1 )_17|
+               |(authorize_all_d1 )_17|
+               |(authorize_d1_l2 )_17|
+               |(authorize_d1_l1 )_17|
+               |(authorize_d1_l3 )_17|
+               |(increase_priority_d2 )_17|
+               |(authorize_d2_l2 )_17|
+               |(increase_factor )_17|
+               |(authorize_all_d2 )_17|
+               |(decrease_factor )_17|
+               |(authorize_d2_l3 )_17|
+               |(authorize_d2_l4 )_17|)))
+  (=> |(increase_priority_d1 )_18| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d1 )_17|
+               (not (>= (- priority_d1_17 3.0) 0.0))
+               clear_d1_l1_17
+               clear_d1_l2_17
+               clear_d1_l3_17
+               clear_d1_l4_17
+               |(decrease_factor )_17|
+               |(increase_priority_d1 )_17|
+               |(authorize_d1_l3 )_17|
+               |(authorize_d1_l2 )_17|
+               |(authorize_d1_l4 )_17|
+               |(authorize_all_d2 )_17|
+               |(increase_factor )_17|
+               |(authorize_d2_l4 )_17|
+               |(increase_priority_d2 )_17|
+               |(authorize_d2_l1 )_17|
+               |(authorize_d2_l3 )_17|
+               |(authorize_d2_l2 )_17|
+               |(authorize_d1_l1 )_17|)))
+  (=> |(authorize_all_d1 )_18| a!1)))
+(assert (let ((a!1 (or |(increase_priority_d2 )_17|
+               (not (< (- priority_d2_17 3.0) 0.0))
+               |(authorize_d2_l3 )_17|
+               |(authorize_d1_l4 )_17|
+               |(authorize_all_d2 )_17|
+               |(authorize_d1_l2 )_17|
+               |(increase_factor )_17|
+               |(increase_priority_d1 )_17|
+               |(authorize_d1_l1 )_17|
+               |(authorize_all_d1 )_17|
+               |(authorize_d2_l1 )_17|
+               |(authorize_d1_l3 )_17|
+               |(authorize_d2_l4 )_17|
+               |(authorize_d2_l2 )_17|
+               |(decrease_factor )_17|)))
+  (=> |(increase_priority_d2 )_18| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d2 )_17|
+               (not (>= (- priority_d2_17 3.0) 0.0))
+               clear_d2_l1_17
+               clear_d2_l2_17
+               clear_d2_l3_17
+               clear_d2_l4_17
+               |(authorize_d2_l4 )_17|
+               |(authorize_all_d1 )_17|
+               |(increase_priority_d2 )_17|
+               |(authorize_d1_l4 )_17|
+               |(increase_factor )_17|
+               |(decrease_factor )_17|
+               |(authorize_d1_l1 )_17|
+               |(authorize_d2_l3 )_17|
+               |(increase_priority_d1 )_17|
+               |(authorize_d2_l2 )_17|
+               |(authorize_d1_l2 )_17|
+               |(authorize_d1_l3 )_17|
+               |(authorize_d2_l1 )_17|)))
+  (=> |(authorize_all_d2 )_18| a!1)))
+(assert (let ((a!1 (or |(decrease_factor )_17|
+               (not (>= (- factor_17 1.0) 0.0))
+               |(authorize_all_d1 )_17|
+               |(increase_factor )_17|
+               |(authorize_d2_l2 )_17|
+               |(authorize_d1_l3 )_17|
+               |(authorize_d2_l4 )_17|
+               |(authorize_d1_l4 )_17|
+               |(authorize_all_d2 )_17|
+               |(authorize_d1_l1 )_17|
+               |(authorize_d1_l2 )_17|
+               |(increase_priority_d1 )_17|
+               |(authorize_d2_l3 )_17|
+               |(authorize_d2_l1 )_17|
+               |(increase_priority_d2 )_17|)))
+  (=> |(decrease_factor )_18| a!1)))
+(assert (let ((a!1 (or |(increase_factor )_17|
+               (not (<= (- factor_17 10.0) 0.0))
+               |(decrease_factor )_17|
+               |(authorize_all_d2 )_17|
+               |(authorize_d1_l3 )_17|
+               |(authorize_d2_l4 )_17|
+               |(increase_priority_d2 )_17|
+               |(authorize_d2_l1 )_17|
+               |(authorize_d2_l2 )_17|
+               |(authorize_all_d1 )_17|
+               |(increase_priority_d1 )_17|
+               |(authorize_d1_l2 )_17|
+               |(authorize_d1_l1 )_17|
+               |(authorize_d1_l4 )_17|
+               |(authorize_d2_l3 )_17|)))
+  (=> |(increase_factor )_18| a!1)))
+(assert (=> |(authorize_d1_l1 )_19|
+    (or |(authorize_d1_l1 )_18|
+        clear_d1_l1_18
+        |(authorize_d1_l4 )_18|
+        |(authorize_d2_l1 )_18|
+        |(authorize_d2_l2 )_18|
+        |(increase_priority_d1 )_18|
+        |(authorize_d1_l3 )_18|
+        |(increase_priority_d2 )_18|
+        |(authorize_d1_l2 )_18|
+        |(decrease_factor )_18|
+        |(authorize_all_d2 )_18|
+        |(authorize_d2_l4 )_18|
+        |(increase_factor )_18|
+        |(authorize_d2_l3 )_18|
+        |(authorize_all_d1 )_18|)))
+(assert (=> |(authorize_d1_l2 )_19|
+    (or |(authorize_d1_l2 )_18|
+        clear_d1_l2_18
+        |(authorize_all_d1 )_18|
+        |(authorize_d2_l1 )_18|
+        |(increase_priority_d1 )_18|
+        |(increase_priority_d2 )_18|
+        |(authorize_d2_l2 )_18|
+        |(authorize_d1_l1 )_18|
+        |(authorize_all_d2 )_18|
+        |(decrease_factor )_18|
+        |(authorize_d1_l3 )_18|
+        |(increase_factor )_18|
+        |(authorize_d1_l4 )_18|
+        |(authorize_d2_l4 )_18|
+        |(authorize_d2_l3 )_18|)))
+(assert (=> |(authorize_d1_l3 )_19|
+    (or |(authorize_d1_l3 )_18|
+        clear_d1_l3_18
+        |(authorize_all_d1 )_18|
+        |(authorize_d1_l4 )_18|
+        |(authorize_d2_l1 )_18|
+        |(authorize_d2_l4 )_18|
+        |(decrease_factor )_18|
+        |(increase_factor )_18|
+        |(authorize_d1_l1 )_18|
+        |(increase_priority_d1 )_18|
+        |(authorize_d2_l3 )_18|
+        |(authorize_d2_l2 )_18|
+        |(increase_priority_d2 )_18|
+        |(authorize_d1_l2 )_18|
+        |(authorize_all_d2 )_18|)))
+(assert (=> |(authorize_d1_l4 )_19|
+    (or |(authorize_d1_l4 )_18|
+        clear_d1_l4_18
+        |(increase_priority_d1 )_18|
+        |(authorize_d1_l1 )_18|
+        |(authorize_d1_l3 )_18|
+        |(authorize_d2_l1 )_18|
+        |(authorize_all_d1 )_18|
+        |(authorize_d2_l2 )_18|
+        |(increase_priority_d2 )_18|
+        |(authorize_d2_l4 )_18|
+        |(authorize_all_d2 )_18|
+        |(decrease_factor )_18|
+        |(authorize_d2_l3 )_18|
+        |(authorize_d1_l2 )_18|
+        |(increase_factor )_18|)))
+(assert (=> |(authorize_d2_l1 )_19|
+    (or |(authorize_d2_l1 )_18|
+        clear_d2_l1_18
+        |(increase_priority_d1 )_18|
+        |(authorize_d1_l1 )_18|
+        |(authorize_d1_l4 )_18|
+        |(authorize_d1_l2 )_18|
+        |(authorize_d1_l3 )_18|
+        |(authorize_d2_l2 )_18|
+        |(authorize_d2_l4 )_18|
+        |(increase_factor )_18|
+        |(increase_priority_d2 )_18|
+        |(authorize_all_d1 )_18|
+        |(authorize_d2_l3 )_18|
+        |(decrease_factor )_18|
+        |(authorize_all_d2 )_18|)))
+(assert (=> |(authorize_d2_l2 )_19|
+    (or |(authorize_d2_l2 )_18|
+        clear_d2_l2_18
+        |(authorize_d1_l4 )_18|
+        |(decrease_factor )_18|
+        |(authorize_d2_l1 )_18|
+        |(authorize_d1_l1 )_18|
+        |(authorize_d1_l2 )_18|
+        |(increase_factor )_18|
+        |(increase_priority_d1 )_18|
+        |(authorize_d2_l4 )_18|
+        |(authorize_d1_l3 )_18|
+        |(authorize_all_d2 )_18|
+        |(authorize_all_d1 )_18|
+        |(increase_priority_d2 )_18|
+        |(authorize_d2_l3 )_18|)))
+(assert (=> |(authorize_d2_l3 )_19|
+    (or |(authorize_d2_l3 )_18|
+        clear_d2_l3_18
+        |(increase_priority_d2 )_18|
+        |(authorize_d1_l3 )_18|
+        |(authorize_d1_l4 )_18|
+        |(authorize_all_d2 )_18|
+        |(authorize_d2_l1 )_18|
+        |(authorize_all_d1 )_18|
+        |(decrease_factor )_18|
+        |(authorize_d1_l1 )_18|
+        |(authorize_d2_l2 )_18|
+        |(authorize_d2_l4 )_18|
+        |(increase_priority_d1 )_18|
+        |(increase_factor )_18|
+        |(authorize_d1_l2 )_18|)))
+(assert (=> |(authorize_d2_l4 )_19|
+    (or |(authorize_d2_l4 )_18|
+        clear_d2_l4_18
+        |(authorize_all_d2 )_18|
+        |(authorize_d1_l4 )_18|
+        |(authorize_d1_l3 )_18|
+        |(authorize_d2_l1 )_18|
+        |(increase_factor )_18|
+        |(decrease_factor )_18|
+        |(authorize_all_d1 )_18|
+        |(authorize_d2_l2 )_18|
+        |(increase_priority_d2 )_18|
+        |(authorize_d1_l1 )_18|
+        |(authorize_d1_l2 )_18|
+        |(authorize_d2_l3 )_18|
+        |(increase_priority_d1 )_18|)))
+(assert (let ((a!1 (or |(increase_priority_d1 )_18|
+               (not (< (- priority_d1_18 3.0) 0.0))
+               |(authorize_d1_l4 )_18|
+               |(authorize_d2_l1 )_18|
+               |(authorize_all_d1 )_18|
+               |(authorize_d1_l2 )_18|
+               |(authorize_d1_l1 )_18|
+               |(authorize_d1_l3 )_18|
+               |(increase_priority_d2 )_18|
+               |(authorize_d2_l2 )_18|
+               |(increase_factor )_18|
+               |(authorize_all_d2 )_18|
+               |(decrease_factor )_18|
+               |(authorize_d2_l3 )_18|
+               |(authorize_d2_l4 )_18|)))
+  (=> |(increase_priority_d1 )_19| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d1 )_18|
+               (not (>= (- priority_d1_18 3.0) 0.0))
+               clear_d1_l1_18
+               clear_d1_l2_18
+               clear_d1_l3_18
+               clear_d1_l4_18
+               |(decrease_factor )_18|
+               |(increase_priority_d1 )_18|
+               |(authorize_d1_l3 )_18|
+               |(authorize_d1_l2 )_18|
+               |(authorize_d1_l4 )_18|
+               |(authorize_all_d2 )_18|
+               |(increase_factor )_18|
+               |(authorize_d2_l4 )_18|
+               |(increase_priority_d2 )_18|
+               |(authorize_d2_l1 )_18|
+               |(authorize_d2_l3 )_18|
+               |(authorize_d2_l2 )_18|
+               |(authorize_d1_l1 )_18|)))
+  (=> |(authorize_all_d1 )_19| a!1)))
+(assert (let ((a!1 (or |(increase_priority_d2 )_18|
+               (not (< (- priority_d2_18 3.0) 0.0))
+               |(authorize_d2_l3 )_18|
+               |(authorize_d1_l4 )_18|
+               |(authorize_all_d2 )_18|
+               |(authorize_d1_l2 )_18|
+               |(increase_factor )_18|
+               |(increase_priority_d1 )_18|
+               |(authorize_d1_l1 )_18|
+               |(authorize_all_d1 )_18|
+               |(authorize_d2_l1 )_18|
+               |(authorize_d1_l3 )_18|
+               |(authorize_d2_l4 )_18|
+               |(authorize_d2_l2 )_18|
+               |(decrease_factor )_18|)))
+  (=> |(increase_priority_d2 )_19| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d2 )_18|
+               (not (>= (- priority_d2_18 3.0) 0.0))
+               clear_d2_l1_18
+               clear_d2_l2_18
+               clear_d2_l3_18
+               clear_d2_l4_18
+               |(authorize_d2_l4 )_18|
+               |(authorize_all_d1 )_18|
+               |(increase_priority_d2 )_18|
+               |(authorize_d1_l4 )_18|
+               |(increase_factor )_18|
+               |(decrease_factor )_18|
+               |(authorize_d1_l1 )_18|
+               |(authorize_d2_l3 )_18|
+               |(increase_priority_d1 )_18|
+               |(authorize_d2_l2 )_18|
+               |(authorize_d1_l2 )_18|
+               |(authorize_d1_l3 )_18|
+               |(authorize_d2_l1 )_18|)))
+  (=> |(authorize_all_d2 )_19| a!1)))
+(assert (let ((a!1 (or |(decrease_factor )_18|
+               (not (>= (- factor_18 1.0) 0.0))
+               |(authorize_all_d1 )_18|
+               |(increase_factor )_18|
+               |(authorize_d2_l2 )_18|
+               |(authorize_d1_l3 )_18|
+               |(authorize_d2_l4 )_18|
+               |(authorize_d1_l4 )_18|
+               |(authorize_all_d2 )_18|
+               |(authorize_d1_l1 )_18|
+               |(authorize_d1_l2 )_18|
+               |(increase_priority_d1 )_18|
+               |(authorize_d2_l3 )_18|
+               |(authorize_d2_l1 )_18|
+               |(increase_priority_d2 )_18|)))
+  (=> |(decrease_factor )_19| a!1)))
+(assert (let ((a!1 (or |(increase_factor )_18|
+               (not (<= (- factor_18 10.0) 0.0))
+               |(decrease_factor )_18|
+               |(authorize_all_d2 )_18|
+               |(authorize_d1_l3 )_18|
+               |(authorize_d2_l4 )_18|
+               |(increase_priority_d2 )_18|
+               |(authorize_d2_l1 )_18|
+               |(authorize_d2_l2 )_18|
+               |(authorize_all_d1 )_18|
+               |(increase_priority_d1 )_18|
+               |(authorize_d1_l2 )_18|
+               |(authorize_d1_l1 )_18|
+               |(authorize_d1_l4 )_18|
+               |(authorize_d2_l3 )_18|)))
+  (=> |(increase_factor )_19| a!1)))
+(assert (=> |(authorize_d1_l1 )_20|
+    (or |(authorize_d1_l1 )_19|
+        clear_d1_l1_19
+        |(authorize_d1_l4 )_19|
+        |(authorize_d2_l1 )_19|
+        |(authorize_d2_l2 )_19|
+        |(increase_priority_d1 )_19|
+        |(authorize_d1_l3 )_19|
+        |(increase_priority_d2 )_19|
+        |(authorize_d1_l2 )_19|
+        |(decrease_factor )_19|
+        |(authorize_all_d2 )_19|
+        |(authorize_d2_l4 )_19|
+        |(increase_factor )_19|
+        |(authorize_d2_l3 )_19|
+        |(authorize_all_d1 )_19|)))
+(assert (=> |(authorize_d1_l2 )_20|
+    (or |(authorize_d1_l2 )_19|
+        clear_d1_l2_19
+        |(authorize_all_d1 )_19|
+        |(authorize_d2_l1 )_19|
+        |(increase_priority_d1 )_19|
+        |(increase_priority_d2 )_19|
+        |(authorize_d2_l2 )_19|
+        |(authorize_d1_l1 )_19|
+        |(authorize_all_d2 )_19|
+        |(decrease_factor )_19|
+        |(authorize_d1_l3 )_19|
+        |(increase_factor )_19|
+        |(authorize_d1_l4 )_19|
+        |(authorize_d2_l4 )_19|
+        |(authorize_d2_l3 )_19|)))
+(assert (=> |(authorize_d1_l3 )_20|
+    (or |(authorize_d1_l3 )_19|
+        clear_d1_l3_19
+        |(authorize_all_d1 )_19|
+        |(authorize_d1_l4 )_19|
+        |(authorize_d2_l1 )_19|
+        |(authorize_d2_l4 )_19|
+        |(decrease_factor )_19|
+        |(increase_factor )_19|
+        |(authorize_d1_l1 )_19|
+        |(increase_priority_d1 )_19|
+        |(authorize_d2_l3 )_19|
+        |(authorize_d2_l2 )_19|
+        |(increase_priority_d2 )_19|
+        |(authorize_d1_l2 )_19|
+        |(authorize_all_d2 )_19|)))
+(assert (=> |(authorize_d1_l4 )_20|
+    (or |(authorize_d1_l4 )_19|
+        clear_d1_l4_19
+        |(increase_priority_d1 )_19|
+        |(authorize_d1_l1 )_19|
+        |(authorize_d1_l3 )_19|
+        |(authorize_d2_l1 )_19|
+        |(authorize_all_d1 )_19|
+        |(authorize_d2_l2 )_19|
+        |(increase_priority_d2 )_19|
+        |(authorize_d2_l4 )_19|
+        |(authorize_all_d2 )_19|
+        |(decrease_factor )_19|
+        |(authorize_d2_l3 )_19|
+        |(authorize_d1_l2 )_19|
+        |(increase_factor )_19|)))
+(assert (=> |(authorize_d2_l1 )_20|
+    (or |(authorize_d2_l1 )_19|
+        clear_d2_l1_19
+        |(increase_priority_d1 )_19|
+        |(authorize_d1_l1 )_19|
+        |(authorize_d1_l4 )_19|
+        |(authorize_d1_l2 )_19|
+        |(authorize_d1_l3 )_19|
+        |(authorize_d2_l2 )_19|
+        |(authorize_d2_l4 )_19|
+        |(increase_factor )_19|
+        |(increase_priority_d2 )_19|
+        |(authorize_all_d1 )_19|
+        |(authorize_d2_l3 )_19|
+        |(decrease_factor )_19|
+        |(authorize_all_d2 )_19|)))
+(assert (=> |(authorize_d2_l2 )_20|
+    (or |(authorize_d2_l2 )_19|
+        clear_d2_l2_19
+        |(authorize_d1_l4 )_19|
+        |(decrease_factor )_19|
+        |(authorize_d2_l1 )_19|
+        |(authorize_d1_l1 )_19|
+        |(authorize_d1_l2 )_19|
+        |(increase_factor )_19|
+        |(increase_priority_d1 )_19|
+        |(authorize_d2_l4 )_19|
+        |(authorize_d1_l3 )_19|
+        |(authorize_all_d2 )_19|
+        |(authorize_all_d1 )_19|
+        |(increase_priority_d2 )_19|
+        |(authorize_d2_l3 )_19|)))
+(assert (=> |(authorize_d2_l3 )_20|
+    (or |(authorize_d2_l3 )_19|
+        clear_d2_l3_19
+        |(increase_priority_d2 )_19|
+        |(authorize_d1_l3 )_19|
+        |(authorize_d1_l4 )_19|
+        |(authorize_all_d2 )_19|
+        |(authorize_d2_l1 )_19|
+        |(authorize_all_d1 )_19|
+        |(decrease_factor )_19|
+        |(authorize_d1_l1 )_19|
+        |(authorize_d2_l2 )_19|
+        |(authorize_d2_l4 )_19|
+        |(increase_priority_d1 )_19|
+        |(increase_factor )_19|
+        |(authorize_d1_l2 )_19|)))
+(assert (=> |(authorize_d2_l4 )_20|
+    (or |(authorize_d2_l4 )_19|
+        clear_d2_l4_19
+        |(authorize_all_d2 )_19|
+        |(authorize_d1_l4 )_19|
+        |(authorize_d1_l3 )_19|
+        |(authorize_d2_l1 )_19|
+        |(increase_factor )_19|
+        |(decrease_factor )_19|
+        |(authorize_all_d1 )_19|
+        |(authorize_d2_l2 )_19|
+        |(increase_priority_d2 )_19|
+        |(authorize_d1_l1 )_19|
+        |(authorize_d1_l2 )_19|
+        |(authorize_d2_l3 )_19|
+        |(increase_priority_d1 )_19|)))
+(assert (let ((a!1 (or |(increase_priority_d1 )_19|
+               (not (< (- priority_d1_19 3.0) 0.0))
+               |(authorize_d1_l4 )_19|
+               |(authorize_d2_l1 )_19|
+               |(authorize_all_d1 )_19|
+               |(authorize_d1_l2 )_19|
+               |(authorize_d1_l1 )_19|
+               |(authorize_d1_l3 )_19|
+               |(increase_priority_d2 )_19|
+               |(authorize_d2_l2 )_19|
+               |(increase_factor )_19|
+               |(authorize_all_d2 )_19|
+               |(decrease_factor )_19|
+               |(authorize_d2_l3 )_19|
+               |(authorize_d2_l4 )_19|)))
+  (=> |(increase_priority_d1 )_20| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d1 )_19|
+               (not (>= (- priority_d1_19 3.0) 0.0))
+               clear_d1_l1_19
+               clear_d1_l2_19
+               clear_d1_l3_19
+               clear_d1_l4_19
+               |(decrease_factor )_19|
+               |(increase_priority_d1 )_19|
+               |(authorize_d1_l3 )_19|
+               |(authorize_d1_l2 )_19|
+               |(authorize_d1_l4 )_19|
+               |(authorize_all_d2 )_19|
+               |(increase_factor )_19|
+               |(authorize_d2_l4 )_19|
+               |(increase_priority_d2 )_19|
+               |(authorize_d2_l1 )_19|
+               |(authorize_d2_l3 )_19|
+               |(authorize_d2_l2 )_19|
+               |(authorize_d1_l1 )_19|)))
+  (=> |(authorize_all_d1 )_20| a!1)))
+(assert (let ((a!1 (or |(increase_priority_d2 )_19|
+               (not (< (- priority_d2_19 3.0) 0.0))
+               |(authorize_d2_l3 )_19|
+               |(authorize_d1_l4 )_19|
+               |(authorize_all_d2 )_19|
+               |(authorize_d1_l2 )_19|
+               |(increase_factor )_19|
+               |(increase_priority_d1 )_19|
+               |(authorize_d1_l1 )_19|
+               |(authorize_all_d1 )_19|
+               |(authorize_d2_l1 )_19|
+               |(authorize_d1_l3 )_19|
+               |(authorize_d2_l4 )_19|
+               |(authorize_d2_l2 )_19|
+               |(decrease_factor )_19|)))
+  (=> |(increase_priority_d2 )_20| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d2 )_19|
+               (not (>= (- priority_d2_19 3.0) 0.0))
+               clear_d2_l1_19
+               clear_d2_l2_19
+               clear_d2_l3_19
+               clear_d2_l4_19
+               |(authorize_d2_l4 )_19|
+               |(authorize_all_d1 )_19|
+               |(increase_priority_d2 )_19|
+               |(authorize_d1_l4 )_19|
+               |(increase_factor )_19|
+               |(decrease_factor )_19|
+               |(authorize_d1_l1 )_19|
+               |(authorize_d2_l3 )_19|
+               |(increase_priority_d1 )_19|
+               |(authorize_d2_l2 )_19|
+               |(authorize_d1_l2 )_19|
+               |(authorize_d1_l3 )_19|
+               |(authorize_d2_l1 )_19|)))
+  (=> |(authorize_all_d2 )_20| a!1)))
+(assert (let ((a!1 (or |(decrease_factor )_19|
+               (not (>= (- factor_19 1.0) 0.0))
+               |(authorize_all_d1 )_19|
+               |(increase_factor )_19|
+               |(authorize_d2_l2 )_19|
+               |(authorize_d1_l3 )_19|
+               |(authorize_d2_l4 )_19|
+               |(authorize_d1_l4 )_19|
+               |(authorize_all_d2 )_19|
+               |(authorize_d1_l1 )_19|
+               |(authorize_d1_l2 )_19|
+               |(increase_priority_d1 )_19|
+               |(authorize_d2_l3 )_19|
+               |(authorize_d2_l1 )_19|
+               |(increase_priority_d2 )_19|)))
+  (=> |(decrease_factor )_20| a!1)))
+(assert (let ((a!1 (or |(increase_factor )_19|
+               (not (<= (- factor_19 10.0) 0.0))
+               |(decrease_factor )_19|
+               |(authorize_all_d2 )_19|
+               |(authorize_d1_l3 )_19|
+               |(authorize_d2_l4 )_19|
+               |(increase_priority_d2 )_19|
+               |(authorize_d2_l1 )_19|
+               |(authorize_d2_l2 )_19|
+               |(authorize_all_d1 )_19|
+               |(increase_priority_d1 )_19|
+               |(authorize_d1_l2 )_19|
+               |(authorize_d1_l1 )_19|
+               |(authorize_d1_l4 )_19|
+               |(authorize_d2_l3 )_19|)))
+  (=> |(increase_factor )_20| a!1)))
+(assert (=> |(authorize_d1_l1 )_21|
+    (or |(authorize_d1_l1 )_20|
+        clear_d1_l1_20
+        |(authorize_d1_l4 )_20|
+        |(authorize_d2_l1 )_20|
+        |(authorize_d2_l2 )_20|
+        |(increase_priority_d1 )_20|
+        |(authorize_d1_l3 )_20|
+        |(increase_priority_d2 )_20|
+        |(authorize_d1_l2 )_20|
+        |(decrease_factor )_20|
+        |(authorize_all_d2 )_20|
+        |(authorize_d2_l4 )_20|
+        |(increase_factor )_20|
+        |(authorize_d2_l3 )_20|
+        |(authorize_all_d1 )_20|)))
+(assert (=> |(authorize_d1_l2 )_21|
+    (or |(authorize_d1_l2 )_20|
+        clear_d1_l2_20
+        |(authorize_all_d1 )_20|
+        |(authorize_d2_l1 )_20|
+        |(increase_priority_d1 )_20|
+        |(increase_priority_d2 )_20|
+        |(authorize_d2_l2 )_20|
+        |(authorize_d1_l1 )_20|
+        |(authorize_all_d2 )_20|
+        |(decrease_factor )_20|
+        |(authorize_d1_l3 )_20|
+        |(increase_factor )_20|
+        |(authorize_d1_l4 )_20|
+        |(authorize_d2_l4 )_20|
+        |(authorize_d2_l3 )_20|)))
+(assert (=> |(authorize_d1_l3 )_21|
+    (or |(authorize_d1_l3 )_20|
+        clear_d1_l3_20
+        |(authorize_all_d1 )_20|
+        |(authorize_d1_l4 )_20|
+        |(authorize_d2_l1 )_20|
+        |(authorize_d2_l4 )_20|
+        |(decrease_factor )_20|
+        |(increase_factor )_20|
+        |(authorize_d1_l1 )_20|
+        |(increase_priority_d1 )_20|
+        |(authorize_d2_l3 )_20|
+        |(authorize_d2_l2 )_20|
+        |(increase_priority_d2 )_20|
+        |(authorize_d1_l2 )_20|
+        |(authorize_all_d2 )_20|)))
+(assert (=> |(authorize_d1_l4 )_21|
+    (or |(authorize_d1_l4 )_20|
+        clear_d1_l4_20
+        |(increase_priority_d1 )_20|
+        |(authorize_d1_l1 )_20|
+        |(authorize_d1_l3 )_20|
+        |(authorize_d2_l1 )_20|
+        |(authorize_all_d1 )_20|
+        |(authorize_d2_l2 )_20|
+        |(increase_priority_d2 )_20|
+        |(authorize_d2_l4 )_20|
+        |(authorize_all_d2 )_20|
+        |(decrease_factor )_20|
+        |(authorize_d2_l3 )_20|
+        |(authorize_d1_l2 )_20|
+        |(increase_factor )_20|)))
+(assert (=> |(authorize_d2_l1 )_21|
+    (or |(authorize_d2_l1 )_20|
+        clear_d2_l1_20
+        |(increase_priority_d1 )_20|
+        |(authorize_d1_l1 )_20|
+        |(authorize_d1_l4 )_20|
+        |(authorize_d1_l2 )_20|
+        |(authorize_d1_l3 )_20|
+        |(authorize_d2_l2 )_20|
+        |(authorize_d2_l4 )_20|
+        |(increase_factor )_20|
+        |(increase_priority_d2 )_20|
+        |(authorize_all_d1 )_20|
+        |(authorize_d2_l3 )_20|
+        |(decrease_factor )_20|
+        |(authorize_all_d2 )_20|)))
+(assert (=> |(authorize_d2_l2 )_21|
+    (or |(authorize_d2_l2 )_20|
+        clear_d2_l2_20
+        |(authorize_d1_l4 )_20|
+        |(decrease_factor )_20|
+        |(authorize_d2_l1 )_20|
+        |(authorize_d1_l1 )_20|
+        |(authorize_d1_l2 )_20|
+        |(increase_factor )_20|
+        |(increase_priority_d1 )_20|
+        |(authorize_d2_l4 )_20|
+        |(authorize_d1_l3 )_20|
+        |(authorize_all_d2 )_20|
+        |(authorize_all_d1 )_20|
+        |(increase_priority_d2 )_20|
+        |(authorize_d2_l3 )_20|)))
+(assert (=> |(authorize_d2_l3 )_21|
+    (or |(authorize_d2_l3 )_20|
+        clear_d2_l3_20
+        |(increase_priority_d2 )_20|
+        |(authorize_d1_l3 )_20|
+        |(authorize_d1_l4 )_20|
+        |(authorize_all_d2 )_20|
+        |(authorize_d2_l1 )_20|
+        |(authorize_all_d1 )_20|
+        |(decrease_factor )_20|
+        |(authorize_d1_l1 )_20|
+        |(authorize_d2_l2 )_20|
+        |(authorize_d2_l4 )_20|
+        |(increase_priority_d1 )_20|
+        |(increase_factor )_20|
+        |(authorize_d1_l2 )_20|)))
+(assert (=> |(authorize_d2_l4 )_21|
+    (or |(authorize_d2_l4 )_20|
+        clear_d2_l4_20
+        |(authorize_all_d2 )_20|
+        |(authorize_d1_l4 )_20|
+        |(authorize_d1_l3 )_20|
+        |(authorize_d2_l1 )_20|
+        |(increase_factor )_20|
+        |(decrease_factor )_20|
+        |(authorize_all_d1 )_20|
+        |(authorize_d2_l2 )_20|
+        |(increase_priority_d2 )_20|
+        |(authorize_d1_l1 )_20|
+        |(authorize_d1_l2 )_20|
+        |(authorize_d2_l3 )_20|
+        |(increase_priority_d1 )_20|)))
+(assert (let ((a!1 (or |(increase_priority_d1 )_20|
+               (not (< (- priority_d1_20 3.0) 0.0))
+               |(authorize_d1_l4 )_20|
+               |(authorize_d2_l1 )_20|
+               |(authorize_all_d1 )_20|
+               |(authorize_d1_l2 )_20|
+               |(authorize_d1_l1 )_20|
+               |(authorize_d1_l3 )_20|
+               |(increase_priority_d2 )_20|
+               |(authorize_d2_l2 )_20|
+               |(increase_factor )_20|
+               |(authorize_all_d2 )_20|
+               |(decrease_factor )_20|
+               |(authorize_d2_l3 )_20|
+               |(authorize_d2_l4 )_20|)))
+  (=> |(increase_priority_d1 )_21| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d1 )_20|
+               (not (>= (- priority_d1_20 3.0) 0.0))
+               clear_d1_l1_20
+               clear_d1_l2_20
+               clear_d1_l3_20
+               clear_d1_l4_20
+               |(decrease_factor )_20|
+               |(increase_priority_d1 )_20|
+               |(authorize_d1_l3 )_20|
+               |(authorize_d1_l2 )_20|
+               |(authorize_d1_l4 )_20|
+               |(authorize_all_d2 )_20|
+               |(increase_factor )_20|
+               |(authorize_d2_l4 )_20|
+               |(increase_priority_d2 )_20|
+               |(authorize_d2_l1 )_20|
+               |(authorize_d2_l3 )_20|
+               |(authorize_d2_l2 )_20|
+               |(authorize_d1_l1 )_20|)))
+  (=> |(authorize_all_d1 )_21| a!1)))
+(assert (let ((a!1 (or |(increase_priority_d2 )_20|
+               (not (< (- priority_d2_20 3.0) 0.0))
+               |(authorize_d2_l3 )_20|
+               |(authorize_d1_l4 )_20|
+               |(authorize_all_d2 )_20|
+               |(authorize_d1_l2 )_20|
+               |(increase_factor )_20|
+               |(increase_priority_d1 )_20|
+               |(authorize_d1_l1 )_20|
+               |(authorize_all_d1 )_20|
+               |(authorize_d2_l1 )_20|
+               |(authorize_d1_l3 )_20|
+               |(authorize_d2_l4 )_20|
+               |(authorize_d2_l2 )_20|
+               |(decrease_factor )_20|)))
+  (=> |(increase_priority_d2 )_21| a!1)))
+(assert (let ((a!1 (or |(authorize_all_d2 )_20|
+               (not (>= (- priority_d2_20 3.0) 0.0))
+               clear_d2_l1_20
+               clear_d2_l2_20
+               clear_d2_l3_20
+               clear_d2_l4_20
+               |(authorize_d2_l4 )_20|
+               |(authorize_all_d1 )_20|
+               |(increase_priority_d2 )_20|
+               |(authorize_d1_l4 )_20|
+               |(increase_factor )_20|
+               |(decrease_factor )_20|
+               |(authorize_d1_l1 )_20|
+               |(authorize_d2_l3 )_20|
+               |(increase_priority_d1 )_20|
+               |(authorize_d2_l2 )_20|
+               |(authorize_d1_l2 )_20|
+               |(authorize_d1_l3 )_20|
+               |(authorize_d2_l1 )_20|)))
+  (=> |(authorize_all_d2 )_21| a!1)))
+(assert (let ((a!1 (or |(decrease_factor )_20|
+               (not (>= (- factor_20 1.0) 0.0))
+               |(authorize_all_d1 )_20|
+               |(increase_factor )_20|
+               |(authorize_d2_l2 )_20|
+               |(authorize_d1_l3 )_20|
+               |(authorize_d2_l4 )_20|
+               |(authorize_d1_l4 )_20|
+               |(authorize_all_d2 )_20|
+               |(authorize_d1_l1 )_20|
+               |(authorize_d1_l2 )_20|
+               |(increase_priority_d1 )_20|
+               |(authorize_d2_l3 )_20|
+               |(authorize_d2_l1 )_20|
+               |(increase_priority_d2 )_20|)))
+  (=> |(decrease_factor )_21| a!1)))
+(assert (let ((a!1 (or |(increase_factor )_20|
+               (not (<= (- factor_20 10.0) 0.0))
+               |(decrease_factor )_20|
+               |(authorize_all_d2 )_20|
+               |(authorize_d1_l3 )_20|
+               |(authorize_d2_l4 )_20|
+               |(increase_priority_d2 )_20|
+               |(authorize_d2_l1 )_20|
+               |(authorize_d2_l2 )_20|
+               |(authorize_all_d1 )_20|
+               |(increase_priority_d1 )_20|
+               |(authorize_d1_l2 )_20|
+               |(authorize_d1_l1 )_20|
+               |(authorize_d1_l4 )_20|
+               |(authorize_d2_l3 )_20|)))
+  (=> |(increase_factor )_21| a!1)))
+(assert (or (and clear_d1_l1_20
+         clear_d1_l2_20
+         clear_d1_l3_20
+         clear_d1_l4_20
+         clear_d2_l1_20
+         clear_d2_l2_20
+         clear_d2_l3_20
+         clear_d2_l4_20
+         true)
+    (and (or clear_d1_l1_20 tclear_d1_l1_21)
+         (or clear_d1_l2_20 tclear_d1_l2_21)
+         (or clear_d1_l3_20 tclear_d1_l3_21)
+         (or clear_d1_l4_20 tclear_d1_l4_21)
+         (or clear_d2_l1_20 tclear_d2_l1_21)
+         (or clear_d2_l2_20 tclear_d2_l2_21)
+         (or clear_d2_l3_20 tclear_d2_l3_21)
+         (or clear_d2_l4_20 tclear_d2_l4_21)
+         true)))
+(assert (=> (and (not clear_d2_l4_0) clear_d2_l4_1)
+    (or |(authorize_d2_l4 )_0| |(authorize_all_d2 )_0|)))
+(assert (=> (and clear_d2_l4_0 (not clear_d2_l4_1)) false))
+(assert (=> (and (not clear_d1_l2_0) clear_d1_l2_1)
+    (or |(authorize_d1_l2 )_0| |(authorize_all_d1 )_0|)))
+(assert (=> (and clear_d1_l2_0 (not clear_d1_l2_1))
+    (or |(authorize_d1_l3 )_0| |(authorize_d1_l4 )_0|)))
+(assert (=> (and (not clear_d1_l3_0) clear_d1_l3_1)
+    (or |(authorize_d1_l3 )_0| |(authorize_all_d1 )_0|)))
+(assert (=> (and clear_d1_l3_0 (not clear_d1_l3_1)) (or |(authorize_d1_l4 )_0|)))
+(assert (=> (and (not clear_d2_l2_0) clear_d2_l2_1)
+    (or |(authorize_d2_l2 )_0| |(authorize_all_d2 )_0|)))
+(assert (=> (and clear_d2_l2_0 (not clear_d2_l2_1))
+    (or |(authorize_d2_l3 )_0| |(authorize_d2_l4 )_0|)))
+(assert (=> (and (not clear_d1_l4_0) clear_d1_l4_1)
+    (or |(authorize_d1_l4 )_0| |(authorize_all_d1 )_0|)))
+(assert (=> (and clear_d1_l4_0 (not clear_d1_l4_1)) false))
+(assert (=> (and (not clear_d2_l3_0) clear_d2_l3_1)
+    (or |(authorize_d2_l3 )_0| |(authorize_all_d2 )_0|)))
+(assert (=> (and clear_d2_l3_0 (not clear_d2_l3_1)) (or |(authorize_d2_l4 )_0|)))
+(assert (=> (and (not clear_d1_l1_0) clear_d1_l1_1)
+    (or |(authorize_d1_l1 )_0| |(authorize_all_d1 )_0|)))
+(assert (=> (and clear_d1_l1_0 (not clear_d1_l1_1))
+    (or |(authorize_d1_l2 )_0| |(authorize_d1_l3 )_0| |(authorize_d1_l4 )_0|)))
+(assert (=> (and (not clear_d2_l1_0) clear_d2_l1_1)
+    (or |(authorize_d2_l1 )_0| |(authorize_all_d2 )_0|)))
+(assert (=> (and clear_d2_l1_0 (not clear_d2_l1_1))
+    (or |(authorize_d2_l2 )_0| |(authorize_d2_l3 )_0| |(authorize_d2_l4 )_0|)))
+(assert (or (= priority_d2_1 priority_d2_0) |(increase_priority_d2 )_0|))
+(assert (or (= cost_d2_1 cost_d2_0)
+    |(authorize_d2_l1 )_0|
+    |(authorize_d2_l2 )_0|
+    |(authorize_d2_l3 )_0|
+    |(authorize_d2_l4 )_0|
+    |(increase_priority_d2 )_0|
+    |(authorize_all_d2 )_0|))
+(assert (or (= priority_d1_1 priority_d1_0) |(increase_priority_d1 )_0|))
+(assert (or (= factor_1 factor_0) |(decrease_factor )_0| |(increase_factor )_0|))
+(assert (or (= cost_d1_1 cost_d1_0)
+    |(authorize_d1_l1 )_0|
+    |(authorize_d1_l2 )_0|
+    |(authorize_d1_l3 )_0|
+    |(authorize_d1_l4 )_0|
+    |(increase_priority_d1 )_0|
+    |(authorize_all_d1 )_0|))
+(assert (=> (and (not clear_d2_l4_1) clear_d2_l4_2)
+    (or |(authorize_d2_l4 )_1| |(authorize_all_d2 )_1|)))
+(assert (=> (and clear_d2_l4_1 (not clear_d2_l4_2)) false))
+(assert (=> (and (not clear_d1_l2_1) clear_d1_l2_2)
+    (or |(authorize_d1_l2 )_1| |(authorize_all_d1 )_1|)))
+(assert (=> (and clear_d1_l2_1 (not clear_d1_l2_2))
+    (or |(authorize_d1_l3 )_1| |(authorize_d1_l4 )_1|)))
+(assert (=> (and (not clear_d1_l3_1) clear_d1_l3_2)
+    (or |(authorize_d1_l3 )_1| |(authorize_all_d1 )_1|)))
+(assert (=> (and clear_d1_l3_1 (not clear_d1_l3_2)) (or |(authorize_d1_l4 )_1|)))
+(assert (=> (and (not clear_d2_l2_1) clear_d2_l2_2)
+    (or |(authorize_d2_l2 )_1| |(authorize_all_d2 )_1|)))
+(assert (=> (and clear_d2_l2_1 (not clear_d2_l2_2))
+    (or |(authorize_d2_l3 )_1| |(authorize_d2_l4 )_1|)))
+(assert (=> (and (not clear_d1_l4_1) clear_d1_l4_2)
+    (or |(authorize_d1_l4 )_1| |(authorize_all_d1 )_1|)))
+(assert (=> (and clear_d1_l4_1 (not clear_d1_l4_2)) false))
+(assert (=> (and (not clear_d2_l3_1) clear_d2_l3_2)
+    (or |(authorize_d2_l3 )_1| |(authorize_all_d2 )_1|)))
+(assert (=> (and clear_d2_l3_1 (not clear_d2_l3_2)) (or |(authorize_d2_l4 )_1|)))
+(assert (=> (and (not clear_d1_l1_1) clear_d1_l1_2)
+    (or |(authorize_d1_l1 )_1| |(authorize_all_d1 )_1|)))
+(assert (=> (and clear_d1_l1_1 (not clear_d1_l1_2))
+    (or |(authorize_d1_l2 )_1| |(authorize_d1_l3 )_1| |(authorize_d1_l4 )_1|)))
+(assert (=> (and (not clear_d2_l1_1) clear_d2_l1_2)
+    (or |(authorize_d2_l1 )_1| |(authorize_all_d2 )_1|)))
+(assert (=> (and clear_d2_l1_1 (not clear_d2_l1_2))
+    (or |(authorize_d2_l2 )_1| |(authorize_d2_l3 )_1| |(authorize_d2_l4 )_1|)))
+(assert (or (= priority_d2_2 priority_d2_1) |(increase_priority_d2 )_1|))
+(assert (or (= cost_d2_2 cost_d2_1)
+    |(authorize_d2_l1 )_1|
+    |(authorize_d2_l2 )_1|
+    |(authorize_d2_l3 )_1|
+    |(authorize_d2_l4 )_1|
+    |(increase_priority_d2 )_1|
+    |(authorize_all_d2 )_1|))
+(assert (or (= priority_d1_2 priority_d1_1) |(increase_priority_d1 )_1|))
+(assert (or (= factor_2 factor_1) |(decrease_factor )_1| |(increase_factor )_1|))
+(assert (or (= cost_d1_2 cost_d1_1)
+    |(authorize_d1_l1 )_1|
+    |(authorize_d1_l2 )_1|
+    |(authorize_d1_l3 )_1|
+    |(authorize_d1_l4 )_1|
+    |(increase_priority_d1 )_1|
+    |(authorize_all_d1 )_1|))
+(assert (=> (and (not clear_d2_l4_2) clear_d2_l4_3)
+    (or |(authorize_d2_l4 )_2| |(authorize_all_d2 )_2|)))
+(assert (=> (and clear_d2_l4_2 (not clear_d2_l4_3)) false))
+(assert (=> (and (not clear_d1_l2_2) clear_d1_l2_3)
+    (or |(authorize_d1_l2 )_2| |(authorize_all_d1 )_2|)))
+(assert (=> (and clear_d1_l2_2 (not clear_d1_l2_3))
+    (or |(authorize_d1_l3 )_2| |(authorize_d1_l4 )_2|)))
+(assert (=> (and (not clear_d1_l3_2) clear_d1_l3_3)
+    (or |(authorize_d1_l3 )_2| |(authorize_all_d1 )_2|)))
+(assert (=> (and clear_d1_l3_2 (not clear_d1_l3_3)) (or |(authorize_d1_l4 )_2|)))
+(assert (=> (and (not clear_d2_l2_2) clear_d2_l2_3)
+    (or |(authorize_d2_l2 )_2| |(authorize_all_d2 )_2|)))
+(assert (=> (and clear_d2_l2_2 (not clear_d2_l2_3))
+    (or |(authorize_d2_l3 )_2| |(authorize_d2_l4 )_2|)))
+(assert (=> (and (not clear_d1_l4_2) clear_d1_l4_3)
+    (or |(authorize_d1_l4 )_2| |(authorize_all_d1 )_2|)))
+(assert (=> (and clear_d1_l4_2 (not clear_d1_l4_3)) false))
+(assert (=> (and (not clear_d2_l3_2) clear_d2_l3_3)
+    (or |(authorize_d2_l3 )_2| |(authorize_all_d2 )_2|)))
+(assert (=> (and clear_d2_l3_2 (not clear_d2_l3_3)) (or |(authorize_d2_l4 )_2|)))
+(assert (=> (and (not clear_d1_l1_2) clear_d1_l1_3)
+    (or |(authorize_d1_l1 )_2| |(authorize_all_d1 )_2|)))
+(assert (=> (and clear_d1_l1_2 (not clear_d1_l1_3))
+    (or |(authorize_d1_l2 )_2| |(authorize_d1_l3 )_2| |(authorize_d1_l4 )_2|)))
+(assert (=> (and (not clear_d2_l1_2) clear_d2_l1_3)
+    (or |(authorize_d2_l1 )_2| |(authorize_all_d2 )_2|)))
+(assert (=> (and clear_d2_l1_2 (not clear_d2_l1_3))
+    (or |(authorize_d2_l2 )_2| |(authorize_d2_l3 )_2| |(authorize_d2_l4 )_2|)))
+(assert (or (= priority_d2_3 priority_d2_2) |(increase_priority_d2 )_2|))
+(assert (or (= cost_d2_3 cost_d2_2)
+    |(authorize_d2_l1 )_2|
+    |(authorize_d2_l2 )_2|
+    |(authorize_d2_l3 )_2|
+    |(authorize_d2_l4 )_2|
+    |(increase_priority_d2 )_2|
+    |(authorize_all_d2 )_2|))
+(assert (or (= priority_d1_3 priority_d1_2) |(increase_priority_d1 )_2|))
+(assert (or (= factor_3 factor_2) |(decrease_factor )_2| |(increase_factor )_2|))
+(assert (or (= cost_d1_3 cost_d1_2)
+    |(authorize_d1_l1 )_2|
+    |(authorize_d1_l2 )_2|
+    |(authorize_d1_l3 )_2|
+    |(authorize_d1_l4 )_2|
+    |(increase_priority_d1 )_2|
+    |(authorize_all_d1 )_2|))
+(assert (=> (and (not clear_d2_l4_3) clear_d2_l4_4)
+    (or |(authorize_d2_l4 )_3| |(authorize_all_d2 )_3|)))
+(assert (=> (and clear_d2_l4_3 (not clear_d2_l4_4)) false))
+(assert (=> (and (not clear_d1_l2_3) clear_d1_l2_4)
+    (or |(authorize_d1_l2 )_3| |(authorize_all_d1 )_3|)))
+(assert (=> (and clear_d1_l2_3 (not clear_d1_l2_4))
+    (or |(authorize_d1_l3 )_3| |(authorize_d1_l4 )_3|)))
+(assert (=> (and (not clear_d1_l3_3) clear_d1_l3_4)
+    (or |(authorize_d1_l3 )_3| |(authorize_all_d1 )_3|)))
+(assert (=> (and clear_d1_l3_3 (not clear_d1_l3_4)) (or |(authorize_d1_l4 )_3|)))
+(assert (=> (and (not clear_d2_l2_3) clear_d2_l2_4)
+    (or |(authorize_d2_l2 )_3| |(authorize_all_d2 )_3|)))
+(assert (=> (and clear_d2_l2_3 (not clear_d2_l2_4))
+    (or |(authorize_d2_l3 )_3| |(authorize_d2_l4 )_3|)))
+(assert (=> (and (not clear_d1_l4_3) clear_d1_l4_4)
+    (or |(authorize_d1_l4 )_3| |(authorize_all_d1 )_3|)))
+(assert (=> (and clear_d1_l4_3 (not clear_d1_l4_4)) false))
+(assert (=> (and (not clear_d2_l3_3) clear_d2_l3_4)
+    (or |(authorize_d2_l3 )_3| |(authorize_all_d2 )_3|)))
+(assert (=> (and clear_d2_l3_3 (not clear_d2_l3_4)) (or |(authorize_d2_l4 )_3|)))
+(assert (=> (and (not clear_d1_l1_3) clear_d1_l1_4)
+    (or |(authorize_d1_l1 )_3| |(authorize_all_d1 )_3|)))
+(assert (=> (and clear_d1_l1_3 (not clear_d1_l1_4))
+    (or |(authorize_d1_l2 )_3| |(authorize_d1_l3 )_3| |(authorize_d1_l4 )_3|)))
+(assert (=> (and (not clear_d2_l1_3) clear_d2_l1_4)
+    (or |(authorize_d2_l1 )_3| |(authorize_all_d2 )_3|)))
+(assert (=> (and clear_d2_l1_3 (not clear_d2_l1_4))
+    (or |(authorize_d2_l2 )_3| |(authorize_d2_l3 )_3| |(authorize_d2_l4 )_3|)))
+(assert (or (= priority_d2_4 priority_d2_3) |(increase_priority_d2 )_3|))
+(assert (or (= cost_d2_4 cost_d2_3)
+    |(authorize_d2_l1 )_3|
+    |(authorize_d2_l2 )_3|
+    |(authorize_d2_l3 )_3|
+    |(authorize_d2_l4 )_3|
+    |(increase_priority_d2 )_3|
+    |(authorize_all_d2 )_3|))
+(assert (or (= priority_d1_4 priority_d1_3) |(increase_priority_d1 )_3|))
+(assert (or (= factor_4 factor_3) |(decrease_factor )_3| |(increase_factor )_3|))
+(assert (or (= cost_d1_4 cost_d1_3)
+    |(authorize_d1_l1 )_3|
+    |(authorize_d1_l2 )_3|
+    |(authorize_d1_l3 )_3|
+    |(authorize_d1_l4 )_3|
+    |(increase_priority_d1 )_3|
+    |(authorize_all_d1 )_3|))
+(assert (=> (and (not clear_d2_l4_4) clear_d2_l4_5)
+    (or |(authorize_d2_l4 )_4| |(authorize_all_d2 )_4|)))
+(assert (=> (and clear_d2_l4_4 (not clear_d2_l4_5)) false))
+(assert (=> (and (not clear_d1_l2_4) clear_d1_l2_5)
+    (or |(authorize_d1_l2 )_4| |(authorize_all_d1 )_4|)))
+(assert (=> (and clear_d1_l2_4 (not clear_d1_l2_5))
+    (or |(authorize_d1_l3 )_4| |(authorize_d1_l4 )_4|)))
+(assert (=> (and (not clear_d1_l3_4) clear_d1_l3_5)
+    (or |(authorize_d1_l3 )_4| |(authorize_all_d1 )_4|)))
+(assert (=> (and clear_d1_l3_4 (not clear_d1_l3_5)) (or |(authorize_d1_l4 )_4|)))
+(assert (=> (and (not clear_d2_l2_4) clear_d2_l2_5)
+    (or |(authorize_d2_l2 )_4| |(authorize_all_d2 )_4|)))
+(assert (=> (and clear_d2_l2_4 (not clear_d2_l2_5))
+    (or |(authorize_d2_l3 )_4| |(authorize_d2_l4 )_4|)))
+(assert (=> (and (not clear_d1_l4_4) clear_d1_l4_5)
+    (or |(authorize_d1_l4 )_4| |(authorize_all_d1 )_4|)))
+(assert (=> (and clear_d1_l4_4 (not clear_d1_l4_5)) false))
+(assert (=> (and (not clear_d2_l3_4) clear_d2_l3_5)
+    (or |(authorize_d2_l3 )_4| |(authorize_all_d2 )_4|)))
+(assert (=> (and clear_d2_l3_4 (not clear_d2_l3_5)) (or |(authorize_d2_l4 )_4|)))
+(assert (=> (and (not clear_d1_l1_4) clear_d1_l1_5)
+    (or |(authorize_d1_l1 )_4| |(authorize_all_d1 )_4|)))
+(assert (=> (and clear_d1_l1_4 (not clear_d1_l1_5))
+    (or |(authorize_d1_l2 )_4| |(authorize_d1_l3 )_4| |(authorize_d1_l4 )_4|)))
+(assert (=> (and (not clear_d2_l1_4) clear_d2_l1_5)
+    (or |(authorize_d2_l1 )_4| |(authorize_all_d2 )_4|)))
+(assert (=> (and clear_d2_l1_4 (not clear_d2_l1_5))
+    (or |(authorize_d2_l2 )_4| |(authorize_d2_l3 )_4| |(authorize_d2_l4 )_4|)))
+(assert (or (= priority_d2_5 priority_d2_4) |(increase_priority_d2 )_4|))
+(assert (or (= cost_d2_5 cost_d2_4)
+    |(authorize_d2_l1 )_4|
+    |(authorize_d2_l2 )_4|
+    |(authorize_d2_l3 )_4|
+    |(authorize_d2_l4 )_4|
+    |(increase_priority_d2 )_4|
+    |(authorize_all_d2 )_4|))
+(assert (or (= priority_d1_5 priority_d1_4) |(increase_priority_d1 )_4|))
+(assert (or (= factor_5 factor_4) |(decrease_factor )_4| |(increase_factor )_4|))
+(assert (or (= cost_d1_5 cost_d1_4)
+    |(authorize_d1_l1 )_4|
+    |(authorize_d1_l2 )_4|
+    |(authorize_d1_l3 )_4|
+    |(authorize_d1_l4 )_4|
+    |(increase_priority_d1 )_4|
+    |(authorize_all_d1 )_4|))
+(assert (=> (and (not clear_d2_l4_5) clear_d2_l4_6)
+    (or |(authorize_d2_l4 )_5| |(authorize_all_d2 )_5|)))
+(assert (=> (and clear_d2_l4_5 (not clear_d2_l4_6)) false))
+(assert (=> (and (not clear_d1_l2_5) clear_d1_l2_6)
+    (or |(authorize_d1_l2 )_5| |(authorize_all_d1 )_5|)))
+(assert (=> (and clear_d1_l2_5 (not clear_d1_l2_6))
+    (or |(authorize_d1_l3 )_5| |(authorize_d1_l4 )_5|)))
+(assert (=> (and (not clear_d1_l3_5) clear_d1_l3_6)
+    (or |(authorize_d1_l3 )_5| |(authorize_all_d1 )_5|)))
+(assert (=> (and clear_d1_l3_5 (not clear_d1_l3_6)) (or |(authorize_d1_l4 )_5|)))
+(assert (=> (and (not clear_d2_l2_5) clear_d2_l2_6)
+    (or |(authorize_d2_l2 )_5| |(authorize_all_d2 )_5|)))
+(assert (=> (and clear_d2_l2_5 (not clear_d2_l2_6))
+    (or |(authorize_d2_l3 )_5| |(authorize_d2_l4 )_5|)))
+(assert (=> (and (not clear_d1_l4_5) clear_d1_l4_6)
+    (or |(authorize_d1_l4 )_5| |(authorize_all_d1 )_5|)))
+(assert (=> (and clear_d1_l4_5 (not clear_d1_l4_6)) false))
+(assert (=> (and (not clear_d2_l3_5) clear_d2_l3_6)
+    (or |(authorize_d2_l3 )_5| |(authorize_all_d2 )_5|)))
+(assert (=> (and clear_d2_l3_5 (not clear_d2_l3_6)) (or |(authorize_d2_l4 )_5|)))
+(assert (=> (and (not clear_d1_l1_5) clear_d1_l1_6)
+    (or |(authorize_d1_l1 )_5| |(authorize_all_d1 )_5|)))
+(assert (=> (and clear_d1_l1_5 (not clear_d1_l1_6))
+    (or |(authorize_d1_l2 )_5| |(authorize_d1_l3 )_5| |(authorize_d1_l4 )_5|)))
+(assert (=> (and (not clear_d2_l1_5) clear_d2_l1_6)
+    (or |(authorize_d2_l1 )_5| |(authorize_all_d2 )_5|)))
+(assert (=> (and clear_d2_l1_5 (not clear_d2_l1_6))
+    (or |(authorize_d2_l2 )_5| |(authorize_d2_l3 )_5| |(authorize_d2_l4 )_5|)))
+(assert (or (= priority_d2_6 priority_d2_5) |(increase_priority_d2 )_5|))
+(assert (or (= cost_d2_6 cost_d2_5)
+    |(authorize_d2_l1 )_5|
+    |(authorize_d2_l2 )_5|
+    |(authorize_d2_l3 )_5|
+    |(authorize_d2_l4 )_5|
+    |(increase_priority_d2 )_5|
+    |(authorize_all_d2 )_5|))
+(assert (or (= priority_d1_6 priority_d1_5) |(increase_priority_d1 )_5|))
+(assert (or (= factor_6 factor_5) |(decrease_factor )_5| |(increase_factor )_5|))
+(assert (or (= cost_d1_6 cost_d1_5)
+    |(authorize_d1_l1 )_5|
+    |(authorize_d1_l2 )_5|
+    |(authorize_d1_l3 )_5|
+    |(authorize_d1_l4 )_5|
+    |(increase_priority_d1 )_5|
+    |(authorize_all_d1 )_5|))
+(assert (=> (and (not clear_d2_l4_6) clear_d2_l4_7)
+    (or |(authorize_d2_l4 )_6| |(authorize_all_d2 )_6|)))
+(assert (=> (and clear_d2_l4_6 (not clear_d2_l4_7)) false))
+(assert (=> (and (not clear_d1_l2_6) clear_d1_l2_7)
+    (or |(authorize_d1_l2 )_6| |(authorize_all_d1 )_6|)))
+(assert (=> (and clear_d1_l2_6 (not clear_d1_l2_7))
+    (or |(authorize_d1_l3 )_6| |(authorize_d1_l4 )_6|)))
+(assert (=> (and (not clear_d1_l3_6) clear_d1_l3_7)
+    (or |(authorize_d1_l3 )_6| |(authorize_all_d1 )_6|)))
+(assert (=> (and clear_d1_l3_6 (not clear_d1_l3_7)) (or |(authorize_d1_l4 )_6|)))
+(assert (=> (and (not clear_d2_l2_6) clear_d2_l2_7)
+    (or |(authorize_d2_l2 )_6| |(authorize_all_d2 )_6|)))
+(assert (=> (and clear_d2_l2_6 (not clear_d2_l2_7))
+    (or |(authorize_d2_l3 )_6| |(authorize_d2_l4 )_6|)))
+(assert (=> (and (not clear_d1_l4_6) clear_d1_l4_7)
+    (or |(authorize_d1_l4 )_6| |(authorize_all_d1 )_6|)))
+(assert (=> (and clear_d1_l4_6 (not clear_d1_l4_7)) false))
+(assert (=> (and (not clear_d2_l3_6) clear_d2_l3_7)
+    (or |(authorize_d2_l3 )_6| |(authorize_all_d2 )_6|)))
+(assert (=> (and clear_d2_l3_6 (not clear_d2_l3_7)) (or |(authorize_d2_l4 )_6|)))
+(assert (=> (and (not clear_d1_l1_6) clear_d1_l1_7)
+    (or |(authorize_d1_l1 )_6| |(authorize_all_d1 )_6|)))
+(assert (=> (and clear_d1_l1_6 (not clear_d1_l1_7))
+    (or |(authorize_d1_l2 )_6| |(authorize_d1_l3 )_6| |(authorize_d1_l4 )_6|)))
+(assert (=> (and (not clear_d2_l1_6) clear_d2_l1_7)
+    (or |(authorize_d2_l1 )_6| |(authorize_all_d2 )_6|)))
+(assert (=> (and clear_d2_l1_6 (not clear_d2_l1_7))
+    (or |(authorize_d2_l2 )_6| |(authorize_d2_l3 )_6| |(authorize_d2_l4 )_6|)))
+(assert (or (= priority_d2_7 priority_d2_6) |(increase_priority_d2 )_6|))
+(assert (or (= cost_d2_7 cost_d2_6)
+    |(authorize_d2_l1 )_6|
+    |(authorize_d2_l2 )_6|
+    |(authorize_d2_l3 )_6|
+    |(authorize_d2_l4 )_6|
+    |(increase_priority_d2 )_6|
+    |(authorize_all_d2 )_6|))
+(assert (or (= priority_d1_7 priority_d1_6) |(increase_priority_d1 )_6|))
+(assert (or (= factor_7 factor_6) |(decrease_factor )_6| |(increase_factor )_6|))
+(assert (or (= cost_d1_7 cost_d1_6)
+    |(authorize_d1_l1 )_6|
+    |(authorize_d1_l2 )_6|
+    |(authorize_d1_l3 )_6|
+    |(authorize_d1_l4 )_6|
+    |(increase_priority_d1 )_6|
+    |(authorize_all_d1 )_6|))
+(assert (=> (and (not clear_d2_l4_7) clear_d2_l4_8)
+    (or |(authorize_d2_l4 )_7| |(authorize_all_d2 )_7|)))
+(assert (=> (and clear_d2_l4_7 (not clear_d2_l4_8)) false))
+(assert (=> (and (not clear_d1_l2_7) clear_d1_l2_8)
+    (or |(authorize_d1_l2 )_7| |(authorize_all_d1 )_7|)))
+(assert (=> (and clear_d1_l2_7 (not clear_d1_l2_8))
+    (or |(authorize_d1_l3 )_7| |(authorize_d1_l4 )_7|)))
+(assert (=> (and (not clear_d1_l3_7) clear_d1_l3_8)
+    (or |(authorize_d1_l3 )_7| |(authorize_all_d1 )_7|)))
+(assert (=> (and clear_d1_l3_7 (not clear_d1_l3_8)) (or |(authorize_d1_l4 )_7|)))
+(assert (=> (and (not clear_d2_l2_7) clear_d2_l2_8)
+    (or |(authorize_d2_l2 )_7| |(authorize_all_d2 )_7|)))
+(assert (=> (and clear_d2_l2_7 (not clear_d2_l2_8))
+    (or |(authorize_d2_l3 )_7| |(authorize_d2_l4 )_7|)))
+(assert (=> (and (not clear_d1_l4_7) clear_d1_l4_8)
+    (or |(authorize_d1_l4 )_7| |(authorize_all_d1 )_7|)))
+(assert (=> (and clear_d1_l4_7 (not clear_d1_l4_8)) false))
+(assert (=> (and (not clear_d2_l3_7) clear_d2_l3_8)
+    (or |(authorize_d2_l3 )_7| |(authorize_all_d2 )_7|)))
+(assert (=> (and clear_d2_l3_7 (not clear_d2_l3_8)) (or |(authorize_d2_l4 )_7|)))
+(assert (=> (and (not clear_d1_l1_7) clear_d1_l1_8)
+    (or |(authorize_d1_l1 )_7| |(authorize_all_d1 )_7|)))
+(assert (=> (and clear_d1_l1_7 (not clear_d1_l1_8))
+    (or |(authorize_d1_l2 )_7| |(authorize_d1_l3 )_7| |(authorize_d1_l4 )_7|)))
+(assert (=> (and (not clear_d2_l1_7) clear_d2_l1_8)
+    (or |(authorize_d2_l1 )_7| |(authorize_all_d2 )_7|)))
+(assert (=> (and clear_d2_l1_7 (not clear_d2_l1_8))
+    (or |(authorize_d2_l2 )_7| |(authorize_d2_l3 )_7| |(authorize_d2_l4 )_7|)))
+(assert (or (= priority_d2_8 priority_d2_7) |(increase_priority_d2 )_7|))
+(assert (or (= cost_d2_8 cost_d2_7)
+    |(authorize_d2_l1 )_7|
+    |(authorize_d2_l2 )_7|
+    |(authorize_d2_l3 )_7|
+    |(authorize_d2_l4 )_7|
+    |(increase_priority_d2 )_7|
+    |(authorize_all_d2 )_7|))
+(assert (or (= priority_d1_8 priority_d1_7) |(increase_priority_d1 )_7|))
+(assert (or (= factor_8 factor_7) |(decrease_factor )_7| |(increase_factor )_7|))
+(assert (or (= cost_d1_8 cost_d1_7)
+    |(authorize_d1_l1 )_7|
+    |(authorize_d1_l2 )_7|
+    |(authorize_d1_l3 )_7|
+    |(authorize_d1_l4 )_7|
+    |(increase_priority_d1 )_7|
+    |(authorize_all_d1 )_7|))
+(assert (=> (and (not clear_d2_l4_8) clear_d2_l4_9)
+    (or |(authorize_d2_l4 )_8| |(authorize_all_d2 )_8|)))
+(assert (=> (and clear_d2_l4_8 (not clear_d2_l4_9)) false))
+(assert (=> (and (not clear_d1_l2_8) clear_d1_l2_9)
+    (or |(authorize_d1_l2 )_8| |(authorize_all_d1 )_8|)))
+(assert (=> (and clear_d1_l2_8 (not clear_d1_l2_9))
+    (or |(authorize_d1_l3 )_8| |(authorize_d1_l4 )_8|)))
+(assert (=> (and (not clear_d1_l3_8) clear_d1_l3_9)
+    (or |(authorize_d1_l3 )_8| |(authorize_all_d1 )_8|)))
+(assert (=> (and clear_d1_l3_8 (not clear_d1_l3_9)) (or |(authorize_d1_l4 )_8|)))
+(assert (=> (and (not clear_d2_l2_8) clear_d2_l2_9)
+    (or |(authorize_d2_l2 )_8| |(authorize_all_d2 )_8|)))
+(assert (=> (and clear_d2_l2_8 (not clear_d2_l2_9))
+    (or |(authorize_d2_l3 )_8| |(authorize_d2_l4 )_8|)))
+(assert (=> (and (not clear_d1_l4_8) clear_d1_l4_9)
+    (or |(authorize_d1_l4 )_8| |(authorize_all_d1 )_8|)))
+(assert (=> (and clear_d1_l4_8 (not clear_d1_l4_9)) false))
+(assert (=> (and (not clear_d2_l3_8) clear_d2_l3_9)
+    (or |(authorize_d2_l3 )_8| |(authorize_all_d2 )_8|)))
+(assert (=> (and clear_d2_l3_8 (not clear_d2_l3_9)) (or |(authorize_d2_l4 )_8|)))
+(assert (=> (and (not clear_d1_l1_8) clear_d1_l1_9)
+    (or |(authorize_d1_l1 )_8| |(authorize_all_d1 )_8|)))
+(assert (=> (and clear_d1_l1_8 (not clear_d1_l1_9))
+    (or |(authorize_d1_l2 )_8| |(authorize_d1_l3 )_8| |(authorize_d1_l4 )_8|)))
+(assert (=> (and (not clear_d2_l1_8) clear_d2_l1_9)
+    (or |(authorize_d2_l1 )_8| |(authorize_all_d2 )_8|)))
+(assert (=> (and clear_d2_l1_8 (not clear_d2_l1_9))
+    (or |(authorize_d2_l2 )_8| |(authorize_d2_l3 )_8| |(authorize_d2_l4 )_8|)))
+(assert (or (= priority_d2_9 priority_d2_8) |(increase_priority_d2 )_8|))
+(assert (or (= cost_d2_9 cost_d2_8)
+    |(authorize_d2_l1 )_8|
+    |(authorize_d2_l2 )_8|
+    |(authorize_d2_l3 )_8|
+    |(authorize_d2_l4 )_8|
+    |(increase_priority_d2 )_8|
+    |(authorize_all_d2 )_8|))
+(assert (or (= priority_d1_9 priority_d1_8) |(increase_priority_d1 )_8|))
+(assert (or (= factor_9 factor_8) |(decrease_factor )_8| |(increase_factor )_8|))
+(assert (or (= cost_d1_9 cost_d1_8)
+    |(authorize_d1_l1 )_8|
+    |(authorize_d1_l2 )_8|
+    |(authorize_d1_l3 )_8|
+    |(authorize_d1_l4 )_8|
+    |(increase_priority_d1 )_8|
+    |(authorize_all_d1 )_8|))
+(assert (=> (and (not clear_d2_l4_9) clear_d2_l4_10)
+    (or |(authorize_d2_l4 )_9| |(authorize_all_d2 )_9|)))
+(assert (=> (and clear_d2_l4_9 (not clear_d2_l4_10)) false))
+(assert (=> (and (not clear_d1_l2_9) clear_d1_l2_10)
+    (or |(authorize_d1_l2 )_9| |(authorize_all_d1 )_9|)))
+(assert (=> (and clear_d1_l2_9 (not clear_d1_l2_10))
+    (or |(authorize_d1_l3 )_9| |(authorize_d1_l4 )_9|)))
+(assert (=> (and (not clear_d1_l3_9) clear_d1_l3_10)
+    (or |(authorize_d1_l3 )_9| |(authorize_all_d1 )_9|)))
+(assert (=> (and clear_d1_l3_9 (not clear_d1_l3_10)) (or |(authorize_d1_l4 )_9|)))
+(assert (=> (and (not clear_d2_l2_9) clear_d2_l2_10)
+    (or |(authorize_d2_l2 )_9| |(authorize_all_d2 )_9|)))
+(assert (=> (and clear_d2_l2_9 (not clear_d2_l2_10))
+    (or |(authorize_d2_l3 )_9| |(authorize_d2_l4 )_9|)))
+(assert (=> (and (not clear_d1_l4_9) clear_d1_l4_10)
+    (or |(authorize_d1_l4 )_9| |(authorize_all_d1 )_9|)))
+(assert (=> (and clear_d1_l4_9 (not clear_d1_l4_10)) false))
+(assert (=> (and (not clear_d2_l3_9) clear_d2_l3_10)
+    (or |(authorize_d2_l3 )_9| |(authorize_all_d2 )_9|)))
+(assert (=> (and clear_d2_l3_9 (not clear_d2_l3_10)) (or |(authorize_d2_l4 )_9|)))
+(assert (=> (and (not clear_d1_l1_9) clear_d1_l1_10)
+    (or |(authorize_d1_l1 )_9| |(authorize_all_d1 )_9|)))
+(assert (=> (and clear_d1_l1_9 (not clear_d1_l1_10))
+    (or |(authorize_d1_l2 )_9| |(authorize_d1_l3 )_9| |(authorize_d1_l4 )_9|)))
+(assert (=> (and (not clear_d2_l1_9) clear_d2_l1_10)
+    (or |(authorize_d2_l1 )_9| |(authorize_all_d2 )_9|)))
+(assert (=> (and clear_d2_l1_9 (not clear_d2_l1_10))
+    (or |(authorize_d2_l2 )_9| |(authorize_d2_l3 )_9| |(authorize_d2_l4 )_9|)))
+(assert (or (= priority_d2_10 priority_d2_9) |(increase_priority_d2 )_9|))
+(assert (or (= cost_d2_10 cost_d2_9)
+    |(authorize_d2_l1 )_9|
+    |(authorize_d2_l2 )_9|
+    |(authorize_d2_l3 )_9|
+    |(authorize_d2_l4 )_9|
+    |(increase_priority_d2 )_9|
+    |(authorize_all_d2 )_9|))
+(assert (or (= priority_d1_10 priority_d1_9) |(increase_priority_d1 )_9|))
+(assert (or (= factor_10 factor_9) |(decrease_factor )_9| |(increase_factor )_9|))
+(assert (or (= cost_d1_10 cost_d1_9)
+    |(authorize_d1_l1 )_9|
+    |(authorize_d1_l2 )_9|
+    |(authorize_d1_l3 )_9|
+    |(authorize_d1_l4 )_9|
+    |(increase_priority_d1 )_9|
+    |(authorize_all_d1 )_9|))
+(assert (=> (and (not clear_d2_l4_10) clear_d2_l4_11)
+    (or |(authorize_d2_l4 )_10| |(authorize_all_d2 )_10|)))
+(assert (=> (and clear_d2_l4_10 (not clear_d2_l4_11)) false))
+(assert (=> (and (not clear_d1_l2_10) clear_d1_l2_11)
+    (or |(authorize_d1_l2 )_10| |(authorize_all_d1 )_10|)))
+(assert (=> (and clear_d1_l2_10 (not clear_d1_l2_11))
+    (or |(authorize_d1_l3 )_10| |(authorize_d1_l4 )_10|)))
+(assert (=> (and (not clear_d1_l3_10) clear_d1_l3_11)
+    (or |(authorize_d1_l3 )_10| |(authorize_all_d1 )_10|)))
+(assert (=> (and clear_d1_l3_10 (not clear_d1_l3_11)) (or |(authorize_d1_l4 )_10|)))
+(assert (=> (and (not clear_d2_l2_10) clear_d2_l2_11)
+    (or |(authorize_d2_l2 )_10| |(authorize_all_d2 )_10|)))
+(assert (=> (and clear_d2_l2_10 (not clear_d2_l2_11))
+    (or |(authorize_d2_l3 )_10| |(authorize_d2_l4 )_10|)))
+(assert (=> (and (not clear_d1_l4_10) clear_d1_l4_11)
+    (or |(authorize_d1_l4 )_10| |(authorize_all_d1 )_10|)))
+(assert (=> (and clear_d1_l4_10 (not clear_d1_l4_11)) false))
+(assert (=> (and (not clear_d2_l3_10) clear_d2_l3_11)
+    (or |(authorize_d2_l3 )_10| |(authorize_all_d2 )_10|)))
+(assert (=> (and clear_d2_l3_10 (not clear_d2_l3_11)) (or |(authorize_d2_l4 )_10|)))
+(assert (=> (and (not clear_d1_l1_10) clear_d1_l1_11)
+    (or |(authorize_d1_l1 )_10| |(authorize_all_d1 )_10|)))
+(assert (=> (and clear_d1_l1_10 (not clear_d1_l1_11))
+    (or |(authorize_d1_l2 )_10| |(authorize_d1_l3 )_10| |(authorize_d1_l4 )_10|)))
+(assert (=> (and (not clear_d2_l1_10) clear_d2_l1_11)
+    (or |(authorize_d2_l1 )_10| |(authorize_all_d2 )_10|)))
+(assert (=> (and clear_d2_l1_10 (not clear_d2_l1_11))
+    (or |(authorize_d2_l2 )_10| |(authorize_d2_l3 )_10| |(authorize_d2_l4 )_10|)))
+(assert (or (= priority_d2_11 priority_d2_10) |(increase_priority_d2 )_10|))
+(assert (or (= cost_d2_11 cost_d2_10)
+    |(authorize_d2_l1 )_10|
+    |(authorize_d2_l2 )_10|
+    |(authorize_d2_l3 )_10|
+    |(authorize_d2_l4 )_10|
+    |(increase_priority_d2 )_10|
+    |(authorize_all_d2 )_10|))
+(assert (or (= priority_d1_11 priority_d1_10) |(increase_priority_d1 )_10|))
+(assert (or (= factor_11 factor_10) |(decrease_factor )_10| |(increase_factor )_10|))
+(assert (or (= cost_d1_11 cost_d1_10)
+    |(authorize_d1_l1 )_10|
+    |(authorize_d1_l2 )_10|
+    |(authorize_d1_l3 )_10|
+    |(authorize_d1_l4 )_10|
+    |(increase_priority_d1 )_10|
+    |(authorize_all_d1 )_10|))
+(assert (=> (and (not clear_d2_l4_11) clear_d2_l4_12)
+    (or |(authorize_d2_l4 )_11| |(authorize_all_d2 )_11|)))
+(assert (=> (and clear_d2_l4_11 (not clear_d2_l4_12)) false))
+(assert (=> (and (not clear_d1_l2_11) clear_d1_l2_12)
+    (or |(authorize_d1_l2 )_11| |(authorize_all_d1 )_11|)))
+(assert (=> (and clear_d1_l2_11 (not clear_d1_l2_12))
+    (or |(authorize_d1_l3 )_11| |(authorize_d1_l4 )_11|)))
+(assert (=> (and (not clear_d1_l3_11) clear_d1_l3_12)
+    (or |(authorize_d1_l3 )_11| |(authorize_all_d1 )_11|)))
+(assert (=> (and clear_d1_l3_11 (not clear_d1_l3_12)) (or |(authorize_d1_l4 )_11|)))
+(assert (=> (and (not clear_d2_l2_11) clear_d2_l2_12)
+    (or |(authorize_d2_l2 )_11| |(authorize_all_d2 )_11|)))
+(assert (=> (and clear_d2_l2_11 (not clear_d2_l2_12))
+    (or |(authorize_d2_l3 )_11| |(authorize_d2_l4 )_11|)))
+(assert (=> (and (not clear_d1_l4_11) clear_d1_l4_12)
+    (or |(authorize_d1_l4 )_11| |(authorize_all_d1 )_11|)))
+(assert (=> (and clear_d1_l4_11 (not clear_d1_l4_12)) false))
+(assert (=> (and (not clear_d2_l3_11) clear_d2_l3_12)
+    (or |(authorize_d2_l3 )_11| |(authorize_all_d2 )_11|)))
+(assert (=> (and clear_d2_l3_11 (not clear_d2_l3_12)) (or |(authorize_d2_l4 )_11|)))
+(assert (=> (and (not clear_d1_l1_11) clear_d1_l1_12)
+    (or |(authorize_d1_l1 )_11| |(authorize_all_d1 )_11|)))
+(assert (=> (and clear_d1_l1_11 (not clear_d1_l1_12))
+    (or |(authorize_d1_l2 )_11| |(authorize_d1_l3 )_11| |(authorize_d1_l4 )_11|)))
+(assert (=> (and (not clear_d2_l1_11) clear_d2_l1_12)
+    (or |(authorize_d2_l1 )_11| |(authorize_all_d2 )_11|)))
+(assert (=> (and clear_d2_l1_11 (not clear_d2_l1_12))
+    (or |(authorize_d2_l2 )_11| |(authorize_d2_l3 )_11| |(authorize_d2_l4 )_11|)))
+(assert (or (= priority_d2_12 priority_d2_11) |(increase_priority_d2 )_11|))
+(assert (or (= cost_d2_12 cost_d2_11)
+    |(authorize_d2_l1 )_11|
+    |(authorize_d2_l2 )_11|
+    |(authorize_d2_l3 )_11|
+    |(authorize_d2_l4 )_11|
+    |(increase_priority_d2 )_11|
+    |(authorize_all_d2 )_11|))
+(assert (or (= priority_d1_12 priority_d1_11) |(increase_priority_d1 )_11|))
+(assert (or (= factor_12 factor_11) |(decrease_factor )_11| |(increase_factor )_11|))
+(assert (or (= cost_d1_12 cost_d1_11)
+    |(authorize_d1_l1 )_11|
+    |(authorize_d1_l2 )_11|
+    |(authorize_d1_l3 )_11|
+    |(authorize_d1_l4 )_11|
+    |(increase_priority_d1 )_11|
+    |(authorize_all_d1 )_11|))
+(assert (=> (and (not clear_d2_l4_12) clear_d2_l4_13)
+    (or |(authorize_d2_l4 )_12| |(authorize_all_d2 )_12|)))
+(assert (=> (and clear_d2_l4_12 (not clear_d2_l4_13)) false))
+(assert (=> (and (not clear_d1_l2_12) clear_d1_l2_13)
+    (or |(authorize_d1_l2 )_12| |(authorize_all_d1 )_12|)))
+(assert (=> (and clear_d1_l2_12 (not clear_d1_l2_13))
+    (or |(authorize_d1_l3 )_12| |(authorize_d1_l4 )_12|)))
+(assert (=> (and (not clear_d1_l3_12) clear_d1_l3_13)
+    (or |(authorize_d1_l3 )_12| |(authorize_all_d1 )_12|)))
+(assert (=> (and clear_d1_l3_12 (not clear_d1_l3_13)) (or |(authorize_d1_l4 )_12|)))
+(assert (=> (and (not clear_d2_l2_12) clear_d2_l2_13)
+    (or |(authorize_d2_l2 )_12| |(authorize_all_d2 )_12|)))
+(assert (=> (and clear_d2_l2_12 (not clear_d2_l2_13))
+    (or |(authorize_d2_l3 )_12| |(authorize_d2_l4 )_12|)))
+(assert (=> (and (not clear_d1_l4_12) clear_d1_l4_13)
+    (or |(authorize_d1_l4 )_12| |(authorize_all_d1 )_12|)))
+(assert (=> (and clear_d1_l4_12 (not clear_d1_l4_13)) false))
+(assert (=> (and (not clear_d2_l3_12) clear_d2_l3_13)
+    (or |(authorize_d2_l3 )_12| |(authorize_all_d2 )_12|)))
+(assert (=> (and clear_d2_l3_12 (not clear_d2_l3_13)) (or |(authorize_d2_l4 )_12|)))
+(assert (=> (and (not clear_d1_l1_12) clear_d1_l1_13)
+    (or |(authorize_d1_l1 )_12| |(authorize_all_d1 )_12|)))
+(assert (=> (and clear_d1_l1_12 (not clear_d1_l1_13))
+    (or |(authorize_d1_l2 )_12| |(authorize_d1_l3 )_12| |(authorize_d1_l4 )_12|)))
+(assert (=> (and (not clear_d2_l1_12) clear_d2_l1_13)
+    (or |(authorize_d2_l1 )_12| |(authorize_all_d2 )_12|)))
+(assert (=> (and clear_d2_l1_12 (not clear_d2_l1_13))
+    (or |(authorize_d2_l2 )_12| |(authorize_d2_l3 )_12| |(authorize_d2_l4 )_12|)))
+(assert (or (= priority_d2_13 priority_d2_12) |(increase_priority_d2 )_12|))
+(assert (or (= cost_d2_13 cost_d2_12)
+    |(authorize_d2_l1 )_12|
+    |(authorize_d2_l2 )_12|
+    |(authorize_d2_l3 )_12|
+    |(authorize_d2_l4 )_12|
+    |(increase_priority_d2 )_12|
+    |(authorize_all_d2 )_12|))
+(assert (or (= priority_d1_13 priority_d1_12) |(increase_priority_d1 )_12|))
+(assert (or (= factor_13 factor_12) |(decrease_factor )_12| |(increase_factor )_12|))
+(assert (or (= cost_d1_13 cost_d1_12)
+    |(authorize_d1_l1 )_12|
+    |(authorize_d1_l2 )_12|
+    |(authorize_d1_l3 )_12|
+    |(authorize_d1_l4 )_12|
+    |(increase_priority_d1 )_12|
+    |(authorize_all_d1 )_12|))
+(assert (=> (and (not clear_d2_l4_13) clear_d2_l4_14)
+    (or |(authorize_d2_l4 )_13| |(authorize_all_d2 )_13|)))
+(assert (=> (and clear_d2_l4_13 (not clear_d2_l4_14)) false))
+(assert (=> (and (not clear_d1_l2_13) clear_d1_l2_14)
+    (or |(authorize_d1_l2 )_13| |(authorize_all_d1 )_13|)))
+(assert (=> (and clear_d1_l2_13 (not clear_d1_l2_14))
+    (or |(authorize_d1_l3 )_13| |(authorize_d1_l4 )_13|)))
+(assert (=> (and (not clear_d1_l3_13) clear_d1_l3_14)
+    (or |(authorize_d1_l3 )_13| |(authorize_all_d1 )_13|)))
+(assert (=> (and clear_d1_l3_13 (not clear_d1_l3_14)) (or |(authorize_d1_l4 )_13|)))
+(assert (=> (and (not clear_d2_l2_13) clear_d2_l2_14)
+    (or |(authorize_d2_l2 )_13| |(authorize_all_d2 )_13|)))
+(assert (=> (and clear_d2_l2_13 (not clear_d2_l2_14))
+    (or |(authorize_d2_l3 )_13| |(authorize_d2_l4 )_13|)))
+(assert (=> (and (not clear_d1_l4_13) clear_d1_l4_14)
+    (or |(authorize_d1_l4 )_13| |(authorize_all_d1 )_13|)))
+(assert (=> (and clear_d1_l4_13 (not clear_d1_l4_14)) false))
+(assert (=> (and (not clear_d2_l3_13) clear_d2_l3_14)
+    (or |(authorize_d2_l3 )_13| |(authorize_all_d2 )_13|)))
+(assert (=> (and clear_d2_l3_13 (not clear_d2_l3_14)) (or |(authorize_d2_l4 )_13|)))
+(assert (=> (and (not clear_d1_l1_13) clear_d1_l1_14)
+    (or |(authorize_d1_l1 )_13| |(authorize_all_d1 )_13|)))
+(assert (=> (and clear_d1_l1_13 (not clear_d1_l1_14))
+    (or |(authorize_d1_l2 )_13| |(authorize_d1_l3 )_13| |(authorize_d1_l4 )_13|)))
+(assert (=> (and (not clear_d2_l1_13) clear_d2_l1_14)
+    (or |(authorize_d2_l1 )_13| |(authorize_all_d2 )_13|)))
+(assert (=> (and clear_d2_l1_13 (not clear_d2_l1_14))
+    (or |(authorize_d2_l2 )_13| |(authorize_d2_l3 )_13| |(authorize_d2_l4 )_13|)))
+(assert (or (= priority_d2_14 priority_d2_13) |(increase_priority_d2 )_13|))
+(assert (or (= cost_d2_14 cost_d2_13)
+    |(authorize_d2_l1 )_13|
+    |(authorize_d2_l2 )_13|
+    |(authorize_d2_l3 )_13|
+    |(authorize_d2_l4 )_13|
+    |(increase_priority_d2 )_13|
+    |(authorize_all_d2 )_13|))
+(assert (or (= priority_d1_14 priority_d1_13) |(increase_priority_d1 )_13|))
+(assert (or (= factor_14 factor_13) |(decrease_factor )_13| |(increase_factor )_13|))
+(assert (or (= cost_d1_14 cost_d1_13)
+    |(authorize_d1_l1 )_13|
+    |(authorize_d1_l2 )_13|
+    |(authorize_d1_l3 )_13|
+    |(authorize_d1_l4 )_13|
+    |(increase_priority_d1 )_13|
+    |(authorize_all_d1 )_13|))
+(assert (=> (and (not clear_d2_l4_14) clear_d2_l4_15)
+    (or |(authorize_d2_l4 )_14| |(authorize_all_d2 )_14|)))
+(assert (=> (and clear_d2_l4_14 (not clear_d2_l4_15)) false))
+(assert (=> (and (not clear_d1_l2_14) clear_d1_l2_15)
+    (or |(authorize_d1_l2 )_14| |(authorize_all_d1 )_14|)))
+(assert (=> (and clear_d1_l2_14 (not clear_d1_l2_15))
+    (or |(authorize_d1_l3 )_14| |(authorize_d1_l4 )_14|)))
+(assert (=> (and (not clear_d1_l3_14) clear_d1_l3_15)
+    (or |(authorize_d1_l3 )_14| |(authorize_all_d1 )_14|)))
+(assert (=> (and clear_d1_l3_14 (not clear_d1_l3_15)) (or |(authorize_d1_l4 )_14|)))
+(assert (=> (and (not clear_d2_l2_14) clear_d2_l2_15)
+    (or |(authorize_d2_l2 )_14| |(authorize_all_d2 )_14|)))
+(assert (=> (and clear_d2_l2_14 (not clear_d2_l2_15))
+    (or |(authorize_d2_l3 )_14| |(authorize_d2_l4 )_14|)))
+(assert (=> (and (not clear_d1_l4_14) clear_d1_l4_15)
+    (or |(authorize_d1_l4 )_14| |(authorize_all_d1 )_14|)))
+(assert (=> (and clear_d1_l4_14 (not clear_d1_l4_15)) false))
+(assert (=> (and (not clear_d2_l3_14) clear_d2_l3_15)
+    (or |(authorize_d2_l3 )_14| |(authorize_all_d2 )_14|)))
+(assert (=> (and clear_d2_l3_14 (not clear_d2_l3_15)) (or |(authorize_d2_l4 )_14|)))
+(assert (=> (and (not clear_d1_l1_14) clear_d1_l1_15)
+    (or |(authorize_d1_l1 )_14| |(authorize_all_d1 )_14|)))
+(assert (=> (and clear_d1_l1_14 (not clear_d1_l1_15))
+    (or |(authorize_d1_l2 )_14| |(authorize_d1_l3 )_14| |(authorize_d1_l4 )_14|)))
+(assert (=> (and (not clear_d2_l1_14) clear_d2_l1_15)
+    (or |(authorize_d2_l1 )_14| |(authorize_all_d2 )_14|)))
+(assert (=> (and clear_d2_l1_14 (not clear_d2_l1_15))
+    (or |(authorize_d2_l2 )_14| |(authorize_d2_l3 )_14| |(authorize_d2_l4 )_14|)))
+(assert (or (= priority_d2_15 priority_d2_14) |(increase_priority_d2 )_14|))
+(assert (or (= cost_d2_15 cost_d2_14)
+    |(authorize_d2_l1 )_14|
+    |(authorize_d2_l2 )_14|
+    |(authorize_d2_l3 )_14|
+    |(authorize_d2_l4 )_14|
+    |(increase_priority_d2 )_14|
+    |(authorize_all_d2 )_14|))
+(assert (or (= priority_d1_15 priority_d1_14) |(increase_priority_d1 )_14|))
+(assert (or (= factor_15 factor_14) |(decrease_factor )_14| |(increase_factor )_14|))
+(assert (or (= cost_d1_15 cost_d1_14)
+    |(authorize_d1_l1 )_14|
+    |(authorize_d1_l2 )_14|
+    |(authorize_d1_l3 )_14|
+    |(authorize_d1_l4 )_14|
+    |(increase_priority_d1 )_14|
+    |(authorize_all_d1 )_14|))
+(assert (=> (and (not clear_d2_l4_15) clear_d2_l4_16)
+    (or |(authorize_d2_l4 )_15| |(authorize_all_d2 )_15|)))
+(assert (=> (and clear_d2_l4_15 (not clear_d2_l4_16)) false))
+(assert (=> (and (not clear_d1_l2_15) clear_d1_l2_16)
+    (or |(authorize_d1_l2 )_15| |(authorize_all_d1 )_15|)))
+(assert (=> (and clear_d1_l2_15 (not clear_d1_l2_16))
+    (or |(authorize_d1_l3 )_15| |(authorize_d1_l4 )_15|)))
+(assert (=> (and (not clear_d1_l3_15) clear_d1_l3_16)
+    (or |(authorize_d1_l3 )_15| |(authorize_all_d1 )_15|)))
+(assert (=> (and clear_d1_l3_15 (not clear_d1_l3_16)) (or |(authorize_d1_l4 )_15|)))
+(assert (=> (and (not clear_d2_l2_15) clear_d2_l2_16)
+    (or |(authorize_d2_l2 )_15| |(authorize_all_d2 )_15|)))
+(assert (=> (and clear_d2_l2_15 (not clear_d2_l2_16))
+    (or |(authorize_d2_l3 )_15| |(authorize_d2_l4 )_15|)))
+(assert (=> (and (not clear_d1_l4_15) clear_d1_l4_16)
+    (or |(authorize_d1_l4 )_15| |(authorize_all_d1 )_15|)))
+(assert (=> (and clear_d1_l4_15 (not clear_d1_l4_16)) false))
+(assert (=> (and (not clear_d2_l3_15) clear_d2_l3_16)
+    (or |(authorize_d2_l3 )_15| |(authorize_all_d2 )_15|)))
+(assert (=> (and clear_d2_l3_15 (not clear_d2_l3_16)) (or |(authorize_d2_l4 )_15|)))
+(assert (=> (and (not clear_d1_l1_15) clear_d1_l1_16)
+    (or |(authorize_d1_l1 )_15| |(authorize_all_d1 )_15|)))
+(assert (=> (and clear_d1_l1_15 (not clear_d1_l1_16))
+    (or |(authorize_d1_l2 )_15| |(authorize_d1_l3 )_15| |(authorize_d1_l4 )_15|)))
+(assert (=> (and (not clear_d2_l1_15) clear_d2_l1_16)
+    (or |(authorize_d2_l1 )_15| |(authorize_all_d2 )_15|)))
+(assert (=> (and clear_d2_l1_15 (not clear_d2_l1_16))
+    (or |(authorize_d2_l2 )_15| |(authorize_d2_l3 )_15| |(authorize_d2_l4 )_15|)))
+(assert (or (= priority_d2_16 priority_d2_15) |(increase_priority_d2 )_15|))
+(assert (or (= cost_d2_16 cost_d2_15)
+    |(authorize_d2_l1 )_15|
+    |(authorize_d2_l2 )_15|
+    |(authorize_d2_l3 )_15|
+    |(authorize_d2_l4 )_15|
+    |(increase_priority_d2 )_15|
+    |(authorize_all_d2 )_15|))
+(assert (or (= priority_d1_16 priority_d1_15) |(increase_priority_d1 )_15|))
+(assert (or (= factor_16 factor_15) |(decrease_factor )_15| |(increase_factor )_15|))
+(assert (or (= cost_d1_16 cost_d1_15)
+    |(authorize_d1_l1 )_15|
+    |(authorize_d1_l2 )_15|
+    |(authorize_d1_l3 )_15|
+    |(authorize_d1_l4 )_15|
+    |(increase_priority_d1 )_15|
+    |(authorize_all_d1 )_15|))
+(assert (=> (and (not clear_d2_l4_16) clear_d2_l4_17)
+    (or |(authorize_d2_l4 )_16| |(authorize_all_d2 )_16|)))
+(assert (=> (and clear_d2_l4_16 (not clear_d2_l4_17)) false))
+(assert (=> (and (not clear_d1_l2_16) clear_d1_l2_17)
+    (or |(authorize_d1_l2 )_16| |(authorize_all_d1 )_16|)))
+(assert (=> (and clear_d1_l2_16 (not clear_d1_l2_17))
+    (or |(authorize_d1_l3 )_16| |(authorize_d1_l4 )_16|)))
+(assert (=> (and (not clear_d1_l3_16) clear_d1_l3_17)
+    (or |(authorize_d1_l3 )_16| |(authorize_all_d1 )_16|)))
+(assert (=> (and clear_d1_l3_16 (not clear_d1_l3_17)) (or |(authorize_d1_l4 )_16|)))
+(assert (=> (and (not clear_d2_l2_16) clear_d2_l2_17)
+    (or |(authorize_d2_l2 )_16| |(authorize_all_d2 )_16|)))
+(assert (=> (and clear_d2_l2_16 (not clear_d2_l2_17))
+    (or |(authorize_d2_l3 )_16| |(authorize_d2_l4 )_16|)))
+(assert (=> (and (not clear_d1_l4_16) clear_d1_l4_17)
+    (or |(authorize_d1_l4 )_16| |(authorize_all_d1 )_16|)))
+(assert (=> (and clear_d1_l4_16 (not clear_d1_l4_17)) false))
+(assert (=> (and (not clear_d2_l3_16) clear_d2_l3_17)
+    (or |(authorize_d2_l3 )_16| |(authorize_all_d2 )_16|)))
+(assert (=> (and clear_d2_l3_16 (not clear_d2_l3_17)) (or |(authorize_d2_l4 )_16|)))
+(assert (=> (and (not clear_d1_l1_16) clear_d1_l1_17)
+    (or |(authorize_d1_l1 )_16| |(authorize_all_d1 )_16|)))
+(assert (=> (and clear_d1_l1_16 (not clear_d1_l1_17))
+    (or |(authorize_d1_l2 )_16| |(authorize_d1_l3 )_16| |(authorize_d1_l4 )_16|)))
+(assert (=> (and (not clear_d2_l1_16) clear_d2_l1_17)
+    (or |(authorize_d2_l1 )_16| |(authorize_all_d2 )_16|)))
+(assert (=> (and clear_d2_l1_16 (not clear_d2_l1_17))
+    (or |(authorize_d2_l2 )_16| |(authorize_d2_l3 )_16| |(authorize_d2_l4 )_16|)))
+(assert (or (= priority_d2_17 priority_d2_16) |(increase_priority_d2 )_16|))
+(assert (or (= cost_d2_17 cost_d2_16)
+    |(authorize_d2_l1 )_16|
+    |(authorize_d2_l2 )_16|
+    |(authorize_d2_l3 )_16|
+    |(authorize_d2_l4 )_16|
+    |(increase_priority_d2 )_16|
+    |(authorize_all_d2 )_16|))
+(assert (or (= priority_d1_17 priority_d1_16) |(increase_priority_d1 )_16|))
+(assert (or (= factor_17 factor_16) |(decrease_factor )_16| |(increase_factor )_16|))
+(assert (or (= cost_d1_17 cost_d1_16)
+    |(authorize_d1_l1 )_16|
+    |(authorize_d1_l2 )_16|
+    |(authorize_d1_l3 )_16|
+    |(authorize_d1_l4 )_16|
+    |(increase_priority_d1 )_16|
+    |(authorize_all_d1 )_16|))
+(assert (=> (and (not clear_d2_l4_17) clear_d2_l4_18)
+    (or |(authorize_d2_l4 )_17| |(authorize_all_d2 )_17|)))
+(assert (=> (and clear_d2_l4_17 (not clear_d2_l4_18)) false))
+(assert (=> (and (not clear_d1_l2_17) clear_d1_l2_18)
+    (or |(authorize_d1_l2 )_17| |(authorize_all_d1 )_17|)))
+(assert (=> (and clear_d1_l2_17 (not clear_d1_l2_18))
+    (or |(authorize_d1_l3 )_17| |(authorize_d1_l4 )_17|)))
+(assert (=> (and (not clear_d1_l3_17) clear_d1_l3_18)
+    (or |(authorize_d1_l3 )_17| |(authorize_all_d1 )_17|)))
+(assert (=> (and clear_d1_l3_17 (not clear_d1_l3_18)) (or |(authorize_d1_l4 )_17|)))
+(assert (=> (and (not clear_d2_l2_17) clear_d2_l2_18)
+    (or |(authorize_d2_l2 )_17| |(authorize_all_d2 )_17|)))
+(assert (=> (and clear_d2_l2_17 (not clear_d2_l2_18))
+    (or |(authorize_d2_l3 )_17| |(authorize_d2_l4 )_17|)))
+(assert (=> (and (not clear_d1_l4_17) clear_d1_l4_18)
+    (or |(authorize_d1_l4 )_17| |(authorize_all_d1 )_17|)))
+(assert (=> (and clear_d1_l4_17 (not clear_d1_l4_18)) false))
+(assert (=> (and (not clear_d2_l3_17) clear_d2_l3_18)
+    (or |(authorize_d2_l3 )_17| |(authorize_all_d2 )_17|)))
+(assert (=> (and clear_d2_l3_17 (not clear_d2_l3_18)) (or |(authorize_d2_l4 )_17|)))
+(assert (=> (and (not clear_d1_l1_17) clear_d1_l1_18)
+    (or |(authorize_d1_l1 )_17| |(authorize_all_d1 )_17|)))
+(assert (=> (and clear_d1_l1_17 (not clear_d1_l1_18))
+    (or |(authorize_d1_l2 )_17| |(authorize_d1_l3 )_17| |(authorize_d1_l4 )_17|)))
+(assert (=> (and (not clear_d2_l1_17) clear_d2_l1_18)
+    (or |(authorize_d2_l1 )_17| |(authorize_all_d2 )_17|)))
+(assert (=> (and clear_d2_l1_17 (not clear_d2_l1_18))
+    (or |(authorize_d2_l2 )_17| |(authorize_d2_l3 )_17| |(authorize_d2_l4 )_17|)))
+(assert (or (= priority_d2_18 priority_d2_17) |(increase_priority_d2 )_17|))
+(assert (or (= cost_d2_18 cost_d2_17)
+    |(authorize_d2_l1 )_17|
+    |(authorize_d2_l2 )_17|
+    |(authorize_d2_l3 )_17|
+    |(authorize_d2_l4 )_17|
+    |(increase_priority_d2 )_17|
+    |(authorize_all_d2 )_17|))
+(assert (or (= priority_d1_18 priority_d1_17) |(increase_priority_d1 )_17|))
+(assert (or (= factor_18 factor_17) |(decrease_factor )_17| |(increase_factor )_17|))
+(assert (or (= cost_d1_18 cost_d1_17)
+    |(authorize_d1_l1 )_17|
+    |(authorize_d1_l2 )_17|
+    |(authorize_d1_l3 )_17|
+    |(authorize_d1_l4 )_17|
+    |(increase_priority_d1 )_17|
+    |(authorize_all_d1 )_17|))
+(assert (=> (and (not clear_d2_l4_18) clear_d2_l4_19)
+    (or |(authorize_d2_l4 )_18| |(authorize_all_d2 )_18|)))
+(assert (=> (and clear_d2_l4_18 (not clear_d2_l4_19)) false))
+(assert (=> (and (not clear_d1_l2_18) clear_d1_l2_19)
+    (or |(authorize_d1_l2 )_18| |(authorize_all_d1 )_18|)))
+(assert (=> (and clear_d1_l2_18 (not clear_d1_l2_19))
+    (or |(authorize_d1_l3 )_18| |(authorize_d1_l4 )_18|)))
+(assert (=> (and (not clear_d1_l3_18) clear_d1_l3_19)
+    (or |(authorize_d1_l3 )_18| |(authorize_all_d1 )_18|)))
+(assert (=> (and clear_d1_l3_18 (not clear_d1_l3_19)) (or |(authorize_d1_l4 )_18|)))
+(assert (=> (and (not clear_d2_l2_18) clear_d2_l2_19)
+    (or |(authorize_d2_l2 )_18| |(authorize_all_d2 )_18|)))
+(assert (=> (and clear_d2_l2_18 (not clear_d2_l2_19))
+    (or |(authorize_d2_l3 )_18| |(authorize_d2_l4 )_18|)))
+(assert (=> (and (not clear_d1_l4_18) clear_d1_l4_19)
+    (or |(authorize_d1_l4 )_18| |(authorize_all_d1 )_18|)))
+(assert (=> (and clear_d1_l4_18 (not clear_d1_l4_19)) false))
+(assert (=> (and (not clear_d2_l3_18) clear_d2_l3_19)
+    (or |(authorize_d2_l3 )_18| |(authorize_all_d2 )_18|)))
+(assert (=> (and clear_d2_l3_18 (not clear_d2_l3_19)) (or |(authorize_d2_l4 )_18|)))
+(assert (=> (and (not clear_d1_l1_18) clear_d1_l1_19)
+    (or |(authorize_d1_l1 )_18| |(authorize_all_d1 )_18|)))
+(assert (=> (and clear_d1_l1_18 (not clear_d1_l1_19))
+    (or |(authorize_d1_l2 )_18| |(authorize_d1_l3 )_18| |(authorize_d1_l4 )_18|)))
+(assert (=> (and (not clear_d2_l1_18) clear_d2_l1_19)
+    (or |(authorize_d2_l1 )_18| |(authorize_all_d2 )_18|)))
+(assert (=> (and clear_d2_l1_18 (not clear_d2_l1_19))
+    (or |(authorize_d2_l2 )_18| |(authorize_d2_l3 )_18| |(authorize_d2_l4 )_18|)))
+(assert (or (= priority_d2_19 priority_d2_18) |(increase_priority_d2 )_18|))
+(assert (or (= cost_d2_19 cost_d2_18)
+    |(authorize_d2_l1 )_18|
+    |(authorize_d2_l2 )_18|
+    |(authorize_d2_l3 )_18|
+    |(authorize_d2_l4 )_18|
+    |(increase_priority_d2 )_18|
+    |(authorize_all_d2 )_18|))
+(assert (or (= priority_d1_19 priority_d1_18) |(increase_priority_d1 )_18|))
+(assert (or (= factor_19 factor_18) |(decrease_factor )_18| |(increase_factor )_18|))
+(assert (or (= cost_d1_19 cost_d1_18)
+    |(authorize_d1_l1 )_18|
+    |(authorize_d1_l2 )_18|
+    |(authorize_d1_l3 )_18|
+    |(authorize_d1_l4 )_18|
+    |(increase_priority_d1 )_18|
+    |(authorize_all_d1 )_18|))
+(assert (=> (and (not clear_d2_l4_19) clear_d2_l4_20)
+    (or |(authorize_d2_l4 )_19| |(authorize_all_d2 )_19|)))
+(assert (=> (and clear_d2_l4_19 (not clear_d2_l4_20)) false))
+(assert (=> (and (not clear_d1_l2_19) clear_d1_l2_20)
+    (or |(authorize_d1_l2 )_19| |(authorize_all_d1 )_19|)))
+(assert (=> (and clear_d1_l2_19 (not clear_d1_l2_20))
+    (or |(authorize_d1_l3 )_19| |(authorize_d1_l4 )_19|)))
+(assert (=> (and (not clear_d1_l3_19) clear_d1_l3_20)
+    (or |(authorize_d1_l3 )_19| |(authorize_all_d1 )_19|)))
+(assert (=> (and clear_d1_l3_19 (not clear_d1_l3_20)) (or |(authorize_d1_l4 )_19|)))
+(assert (=> (and (not clear_d2_l2_19) clear_d2_l2_20)
+    (or |(authorize_d2_l2 )_19| |(authorize_all_d2 )_19|)))
+(assert (=> (and clear_d2_l2_19 (not clear_d2_l2_20))
+    (or |(authorize_d2_l3 )_19| |(authorize_d2_l4 )_19|)))
+(assert (=> (and (not clear_d1_l4_19) clear_d1_l4_20)
+    (or |(authorize_d1_l4 )_19| |(authorize_all_d1 )_19|)))
+(assert (=> (and clear_d1_l4_19 (not clear_d1_l4_20)) false))
+(assert (=> (and (not clear_d2_l3_19) clear_d2_l3_20)
+    (or |(authorize_d2_l3 )_19| |(authorize_all_d2 )_19|)))
+(assert (=> (and clear_d2_l3_19 (not clear_d2_l3_20)) (or |(authorize_d2_l4 )_19|)))
+(assert (=> (and (not clear_d1_l1_19) clear_d1_l1_20)
+    (or |(authorize_d1_l1 )_19| |(authorize_all_d1 )_19|)))
+(assert (=> (and clear_d1_l1_19 (not clear_d1_l1_20))
+    (or |(authorize_d1_l2 )_19| |(authorize_d1_l3 )_19| |(authorize_d1_l4 )_19|)))
+(assert (=> (and (not clear_d2_l1_19) clear_d2_l1_20)
+    (or |(authorize_d2_l1 )_19| |(authorize_all_d2 )_19|)))
+(assert (=> (and clear_d2_l1_19 (not clear_d2_l1_20))
+    (or |(authorize_d2_l2 )_19| |(authorize_d2_l3 )_19| |(authorize_d2_l4 )_19|)))
+(assert (or (= priority_d2_20 priority_d2_19) |(increase_priority_d2 )_19|))
+(assert (or (= cost_d2_20 cost_d2_19)
+    |(authorize_d2_l1 )_19|
+    |(authorize_d2_l2 )_19|
+    |(authorize_d2_l3 )_19|
+    |(authorize_d2_l4 )_19|
+    |(increase_priority_d2 )_19|
+    |(authorize_all_d2 )_19|))
+(assert (or (= priority_d1_20 priority_d1_19) |(increase_priority_d1 )_19|))
+(assert (or (= factor_20 factor_19) |(decrease_factor )_19| |(increase_factor )_19|))
+(assert (or (= cost_d1_20 cost_d1_19)
+    |(authorize_d1_l1 )_19|
+    |(authorize_d1_l2 )_19|
+    |(authorize_d1_l3 )_19|
+    |(authorize_d1_l4 )_19|
+    |(increase_priority_d1 )_19|
+    |(authorize_all_d1 )_19|))
+(assert (= factor_0 1.0))
+(assert (= cost_d1_0 0.0))
+(assert (= priority_d1_0 1.0))
+(assert (= cost_d2_0 0.0))
+(assert (= priority_d2_0 1.0))
+(assert (not clear_d2_l4_0))
+(assert (not clear_d2_l1_0))
+(assert (not clear_d2_l2_0))
+(assert (not clear_d2_l3_0))
+(assert (not clear_d1_l4_0))
+(assert (not clear_d1_l1_0))
+(assert (not clear_d1_l3_0))
+(assert (not clear_d1_l2_0))
+(assert (=> |(authorize_d1_l1 )_20| (not clear_d1_l1_20)))
+(assert (=> |(authorize_d1_l1 )_20| tclear_d1_l1_21))
+(assert (=> |(authorize_d1_l2 )_20| (not clear_d1_l2_20)))
+(assert (=> |(authorize_d1_l2 )_20| tclear_d1_l2_21))
+(assert (=> |(authorize_d1_l2 )_20| tclear_d1_l1_21))
+(assert (=> |(authorize_d1_l3 )_20| (not clear_d1_l3_20)))
+(assert (=> |(authorize_d1_l3 )_20| tclear_d1_l3_21))
+(assert (=> |(authorize_d1_l3 )_20| tclear_d1_l1_21))
+(assert (=> |(authorize_d1_l3 )_20| tclear_d1_l2_21))
+(assert (=> |(authorize_d1_l4 )_20| (not clear_d1_l4_20)))
+(assert (=> |(authorize_d1_l4 )_20| tclear_d1_l4_21))
+(assert (=> |(authorize_d1_l4 )_20| tclear_d1_l1_21))
+(assert (=> |(authorize_d1_l4 )_20| tclear_d1_l2_21))
+(assert (=> |(authorize_d1_l4 )_20| tclear_d1_l3_21))
+(assert (=> |(authorize_d2_l1 )_20| (not clear_d2_l1_20)))
+(assert (=> |(authorize_d2_l1 )_20| tclear_d2_l1_21))
+(assert (=> |(authorize_d2_l2 )_20| (not clear_d2_l2_20)))
+(assert (=> |(authorize_d2_l2 )_20| tclear_d2_l2_21))
+(assert (=> |(authorize_d2_l2 )_20| tclear_d2_l1_21))
+(assert (=> |(authorize_d2_l3 )_20| (not clear_d2_l3_20)))
+(assert (=> |(authorize_d2_l3 )_20| tclear_d2_l3_21))
+(assert (=> |(authorize_d2_l3 )_20| tclear_d2_l1_21))
+(assert (=> |(authorize_d2_l3 )_20| tclear_d2_l2_21))
+(assert (=> |(authorize_d2_l4 )_20| (not clear_d2_l4_20)))
+(assert (=> |(authorize_d2_l4 )_20| tclear_d2_l4_21))
+(assert (=> |(authorize_d2_l4 )_20| tclear_d2_l1_21))
+(assert (=> |(authorize_d2_l4 )_20| tclear_d2_l2_21))
+(assert (=> |(authorize_d2_l4 )_20| tclear_d2_l3_21))
+(assert (=> |(increase_priority_d1 )_20| (< (- priority_d1_20 3.0) 0.0)))
+(assert (=> |(increase_priority_d1 )_20| tpriority_d1_21))
+(assert (=> |(authorize_all_d1 )_20| (>= (- priority_d1_20 3.0) 0.0)))
+(assert (=> |(authorize_all_d1 )_20| (not clear_d1_l1_20)))
+(assert (=> |(authorize_all_d1 )_20| (not clear_d1_l2_20)))
+(assert (=> |(authorize_all_d1 )_20| (not clear_d1_l3_20)))
+(assert (=> |(authorize_all_d1 )_20| (not clear_d1_l4_20)))
+(assert (=> |(authorize_all_d1 )_20| tclear_d1_l1_21))
+(assert (=> |(authorize_all_d1 )_20| tclear_d1_l2_21))
+(assert (=> |(authorize_all_d1 )_20| tclear_d1_l3_21))
+(assert (=> |(authorize_all_d1 )_20| tclear_d1_l4_21))
+(assert (=> |(increase_priority_d2 )_20| (< (- priority_d2_20 3.0) 0.0)))
+(assert (=> |(increase_priority_d2 )_20| tpriority_d2_21))
+(assert (=> |(authorize_all_d2 )_20| (>= (- priority_d2_20 3.0) 0.0)))
+(assert (=> |(authorize_all_d2 )_20| (not clear_d2_l1_20)))
+(assert (=> |(authorize_all_d2 )_20| (not clear_d2_l2_20)))
+(assert (=> |(authorize_all_d2 )_20| (not clear_d2_l3_20)))
+(assert (=> |(authorize_all_d2 )_20| (not clear_d2_l4_20)))
+(assert (=> |(authorize_all_d2 )_20| tclear_d2_l1_21))
+(assert (=> |(authorize_all_d2 )_20| tclear_d2_l2_21))
+(assert (=> |(authorize_all_d2 )_20| tclear_d2_l3_21))
+(assert (=> |(authorize_all_d2 )_20| tclear_d2_l4_21))
+(assert (=> |(decrease_factor )_20| (>= (- factor_20 1.0) 0.0)))
+(assert (=> |(decrease_factor )_20| tfactor_21))
+(assert (=> |(increase_factor )_20| (<= (- factor_20 10.0) 0.0)))
+(assert (=> |(increase_factor )_20| tfactor_21))
+(assert (=> |(authorize_d1_l1 )_0| (not clear_d1_l1_0)))
+(assert (=> |(authorize_d1_l1 )_0| clear_d1_l1_1))
+(assert (=> |(authorize_d1_l1 )_0| (= cost_d1_1 (+ cost_d1_0 1.0))))
+(assert (=> |(authorize_d1_l2 )_0| (not clear_d1_l2_0)))
+(assert (=> |(authorize_d1_l2 )_0| clear_d1_l2_1))
+(assert (=> |(authorize_d1_l2 )_0| (not clear_d1_l1_1)))
+(assert (=> |(authorize_d1_l2 )_0| (= cost_d1_1 (+ cost_d1_0 2.0))))
+(assert (=> |(authorize_d1_l3 )_0| (not clear_d1_l3_0)))
+(assert (=> |(authorize_d1_l3 )_0| clear_d1_l3_1))
+(assert (=> |(authorize_d1_l3 )_0| (not clear_d1_l1_1)))
+(assert (=> |(authorize_d1_l3 )_0| (not clear_d1_l2_1)))
+(assert (=> |(authorize_d1_l3 )_0| (= cost_d1_1 (+ cost_d1_0 3.0))))
+(assert (=> |(authorize_d1_l4 )_0| (not clear_d1_l4_0)))
+(assert (=> |(authorize_d1_l4 )_0| clear_d1_l4_1))
+(assert (=> |(authorize_d1_l4 )_0| (not clear_d1_l1_1)))
+(assert (=> |(authorize_d1_l4 )_0| (not clear_d1_l2_1)))
+(assert (=> |(authorize_d1_l4 )_0| (not clear_d1_l3_1)))
+(assert (=> |(authorize_d1_l4 )_0| (= cost_d1_1 (+ cost_d1_0 4.0))))
+(assert (=> |(authorize_d2_l1 )_0| (not clear_d2_l1_0)))
+(assert (=> |(authorize_d2_l1 )_0| clear_d2_l1_1))
+(assert (=> |(authorize_d2_l1 )_0| (= cost_d2_1 (+ cost_d2_0 1.0))))
+(assert (=> |(authorize_d2_l2 )_0| (not clear_d2_l2_0)))
+(assert (=> |(authorize_d2_l2 )_0| clear_d2_l2_1))
+(assert (=> |(authorize_d2_l2 )_0| (not clear_d2_l1_1)))
+(assert (=> |(authorize_d2_l2 )_0| (= cost_d2_1 (+ cost_d2_0 2.0))))
+(assert (=> |(authorize_d2_l3 )_0| (not clear_d2_l3_0)))
+(assert (=> |(authorize_d2_l3 )_0| clear_d2_l3_1))
+(assert (=> |(authorize_d2_l3 )_0| (not clear_d2_l1_1)))
+(assert (=> |(authorize_d2_l3 )_0| (not clear_d2_l2_1)))
+(assert (=> |(authorize_d2_l3 )_0| (= cost_d2_1 (+ cost_d2_0 3.0))))
+(assert (=> |(authorize_d2_l4 )_0| (not clear_d2_l4_0)))
+(assert (=> |(authorize_d2_l4 )_0| clear_d2_l4_1))
+(assert (=> |(authorize_d2_l4 )_0| (not clear_d2_l1_1)))
+(assert (=> |(authorize_d2_l4 )_0| (not clear_d2_l2_1)))
+(assert (=> |(authorize_d2_l4 )_0| (not clear_d2_l3_1)))
+(assert (=> |(authorize_d2_l4 )_0| (= cost_d2_1 (+ cost_d2_0 4.0))))
+(assert (=> |(increase_priority_d1 )_0| (< (- priority_d1_0 3.0) 0.0)))
+(assert (=> |(increase_priority_d1 )_0| (= priority_d1_1 (+ priority_d1_0 factor_0))))
+(assert (=> |(increase_priority_d1 )_0|
+    (= cost_d1_1 (+ cost_d1_0 (* factor_0 priority_d1_0)))))
+(assert (=> |(authorize_all_d1 )_0| (>= (- priority_d1_0 3.0) 0.0)))
+(assert (=> |(authorize_all_d1 )_0| (not clear_d1_l1_0)))
+(assert (=> |(authorize_all_d1 )_0| (not clear_d1_l2_0)))
+(assert (=> |(authorize_all_d1 )_0| (not clear_d1_l3_0)))
+(assert (=> |(authorize_all_d1 )_0| (not clear_d1_l4_0)))
+(assert (=> |(authorize_all_d1 )_0| clear_d1_l1_1))
+(assert (=> |(authorize_all_d1 )_0| clear_d1_l2_1))
+(assert (=> |(authorize_all_d1 )_0| clear_d1_l3_1))
+(assert (=> |(authorize_all_d1 )_0| clear_d1_l4_1))
+(assert (=> |(authorize_all_d1 )_0| (= cost_d1_1 (+ cost_d1_0 4.0))))
+(assert (=> |(increase_priority_d2 )_0| (< (- priority_d2_0 3.0) 0.0)))
+(assert (=> |(increase_priority_d2 )_0| (= priority_d2_1 (+ priority_d2_0 factor_0))))
+(assert (=> |(increase_priority_d2 )_0|
+    (= cost_d2_1 (+ cost_d2_0 (* factor_0 priority_d2_0)))))
+(assert (=> |(authorize_all_d2 )_0| (>= (- priority_d2_0 3.0) 0.0)))
+(assert (=> |(authorize_all_d2 )_0| (not clear_d2_l1_0)))
+(assert (=> |(authorize_all_d2 )_0| (not clear_d2_l2_0)))
+(assert (=> |(authorize_all_d2 )_0| (not clear_d2_l3_0)))
+(assert (=> |(authorize_all_d2 )_0| (not clear_d2_l4_0)))
+(assert (=> |(authorize_all_d2 )_0| clear_d2_l1_1))
+(assert (=> |(authorize_all_d2 )_0| clear_d2_l2_1))
+(assert (=> |(authorize_all_d2 )_0| clear_d2_l3_1))
+(assert (=> |(authorize_all_d2 )_0| clear_d2_l4_1))
+(assert (=> |(authorize_all_d2 )_0| (= cost_d2_1 (+ cost_d2_0 4.0))))
+(assert (=> |(decrease_factor )_0| (>= (- factor_0 1.0) 0.0)))
+(assert (=> |(decrease_factor )_0| (= factor_1 (- factor_0 (* (/ 1.0 2.0) factor_0)))))
+(assert (=> |(increase_factor )_0| (<= (- factor_0 10.0) 0.0)))
+(assert (=> |(increase_factor )_0| (= factor_1 (+ factor_0 (* (/ 1.0 2.0) factor_0)))))
+(assert (=> |(authorize_d1_l1 )_1| (not clear_d1_l1_1)))
+(assert (=> |(authorize_d1_l1 )_1| clear_d1_l1_2))
+(assert (=> |(authorize_d1_l1 )_1| (= cost_d1_2 (+ cost_d1_1 1.0))))
+(assert (=> |(authorize_d1_l2 )_1| (not clear_d1_l2_1)))
+(assert (=> |(authorize_d1_l2 )_1| clear_d1_l2_2))
+(assert (=> |(authorize_d1_l2 )_1| (not clear_d1_l1_2)))
+(assert (=> |(authorize_d1_l2 )_1| (= cost_d1_2 (+ cost_d1_1 2.0))))
+(assert (=> |(authorize_d1_l3 )_1| (not clear_d1_l3_1)))
+(assert (=> |(authorize_d1_l3 )_1| clear_d1_l3_2))
+(assert (=> |(authorize_d1_l3 )_1| (not clear_d1_l1_2)))
+(assert (=> |(authorize_d1_l3 )_1| (not clear_d1_l2_2)))
+(assert (=> |(authorize_d1_l3 )_1| (= cost_d1_2 (+ cost_d1_1 3.0))))
+(assert (=> |(authorize_d1_l4 )_1| (not clear_d1_l4_1)))
+(assert (=> |(authorize_d1_l4 )_1| clear_d1_l4_2))
+(assert (=> |(authorize_d1_l4 )_1| (not clear_d1_l1_2)))
+(assert (=> |(authorize_d1_l4 )_1| (not clear_d1_l2_2)))
+(assert (=> |(authorize_d1_l4 )_1| (not clear_d1_l3_2)))
+(assert (=> |(authorize_d1_l4 )_1| (= cost_d1_2 (+ cost_d1_1 4.0))))
+(assert (=> |(authorize_d2_l1 )_1| (not clear_d2_l1_1)))
+(assert (=> |(authorize_d2_l1 )_1| clear_d2_l1_2))
+(assert (=> |(authorize_d2_l1 )_1| (= cost_d2_2 (+ cost_d2_1 1.0))))
+(assert (=> |(authorize_d2_l2 )_1| (not clear_d2_l2_1)))
+(assert (=> |(authorize_d2_l2 )_1| clear_d2_l2_2))
+(assert (=> |(authorize_d2_l2 )_1| (not clear_d2_l1_2)))
+(assert (=> |(authorize_d2_l2 )_1| (= cost_d2_2 (+ cost_d2_1 2.0))))
+(assert (=> |(authorize_d2_l3 )_1| (not clear_d2_l3_1)))
+(assert (=> |(authorize_d2_l3 )_1| clear_d2_l3_2))
+(assert (=> |(authorize_d2_l3 )_1| (not clear_d2_l1_2)))
+(assert (=> |(authorize_d2_l3 )_1| (not clear_d2_l2_2)))
+(assert (=> |(authorize_d2_l3 )_1| (= cost_d2_2 (+ cost_d2_1 3.0))))
+(assert (=> |(authorize_d2_l4 )_1| (not clear_d2_l4_1)))
+(assert (=> |(authorize_d2_l4 )_1| clear_d2_l4_2))
+(assert (=> |(authorize_d2_l4 )_1| (not clear_d2_l1_2)))
+(assert (=> |(authorize_d2_l4 )_1| (not clear_d2_l2_2)))
+(assert (=> |(authorize_d2_l4 )_1| (not clear_d2_l3_2)))
+(assert (=> |(authorize_d2_l4 )_1| (= cost_d2_2 (+ cost_d2_1 4.0))))
+(assert (=> |(increase_priority_d1 )_1| (< (- priority_d1_1 3.0) 0.0)))
+(assert (=> |(increase_priority_d1 )_1| (= priority_d1_2 (+ priority_d1_1 factor_1))))
+(assert (=> |(increase_priority_d1 )_1|
+    (= cost_d1_2 (+ cost_d1_1 (* factor_1 priority_d1_1)))))
+(assert (=> |(authorize_all_d1 )_1| (>= (- priority_d1_1 3.0) 0.0)))
+(assert (=> |(authorize_all_d1 )_1| (not clear_d1_l1_1)))
+(assert (=> |(authorize_all_d1 )_1| (not clear_d1_l2_1)))
+(assert (=> |(authorize_all_d1 )_1| (not clear_d1_l3_1)))
+(assert (=> |(authorize_all_d1 )_1| (not clear_d1_l4_1)))
+(assert (=> |(authorize_all_d1 )_1| clear_d1_l1_2))
+(assert (=> |(authorize_all_d1 )_1| clear_d1_l2_2))
+(assert (=> |(authorize_all_d1 )_1| clear_d1_l3_2))
+(assert (=> |(authorize_all_d1 )_1| clear_d1_l4_2))
+(assert (=> |(authorize_all_d1 )_1| (= cost_d1_2 (+ cost_d1_1 4.0))))
+(assert (=> |(increase_priority_d2 )_1| (< (- priority_d2_1 3.0) 0.0)))
+(assert (=> |(increase_priority_d2 )_1| (= priority_d2_2 (+ priority_d2_1 factor_1))))
+(assert (=> |(increase_priority_d2 )_1|
+    (= cost_d2_2 (+ cost_d2_1 (* factor_1 priority_d2_1)))))
+(assert (=> |(authorize_all_d2 )_1| (>= (- priority_d2_1 3.0) 0.0)))
+(assert (=> |(authorize_all_d2 )_1| (not clear_d2_l1_1)))
+(assert (=> |(authorize_all_d2 )_1| (not clear_d2_l2_1)))
+(assert (=> |(authorize_all_d2 )_1| (not clear_d2_l3_1)))
+(assert (=> |(authorize_all_d2 )_1| (not clear_d2_l4_1)))
+(assert (=> |(authorize_all_d2 )_1| clear_d2_l1_2))
+(assert (=> |(authorize_all_d2 )_1| clear_d2_l2_2))
+(assert (=> |(authorize_all_d2 )_1| clear_d2_l3_2))
+(assert (=> |(authorize_all_d2 )_1| clear_d2_l4_2))
+(assert (=> |(authorize_all_d2 )_1| (= cost_d2_2 (+ cost_d2_1 4.0))))
+(assert (=> |(decrease_factor )_1| (>= (- factor_1 1.0) 0.0)))
+(assert (=> |(decrease_factor )_1| (= factor_2 (- factor_1 (* (/ 1.0 2.0) factor_1)))))
+(assert (=> |(increase_factor )_1| (<= (- factor_1 10.0) 0.0)))
+(assert (=> |(increase_factor )_1| (= factor_2 (+ factor_1 (* (/ 1.0 2.0) factor_1)))))
+(assert (=> |(authorize_d1_l1 )_2| (not clear_d1_l1_2)))
+(assert (=> |(authorize_d1_l1 )_2| clear_d1_l1_3))
+(assert (=> |(authorize_d1_l1 )_2| (= cost_d1_3 (+ cost_d1_2 1.0))))
+(assert (=> |(authorize_d1_l2 )_2| (not clear_d1_l2_2)))
+(assert (=> |(authorize_d1_l2 )_2| clear_d1_l2_3))
+(assert (=> |(authorize_d1_l2 )_2| (not clear_d1_l1_3)))
+(assert (=> |(authorize_d1_l2 )_2| (= cost_d1_3 (+ cost_d1_2 2.0))))
+(assert (=> |(authorize_d1_l3 )_2| (not clear_d1_l3_2)))
+(assert (=> |(authorize_d1_l3 )_2| clear_d1_l3_3))
+(assert (=> |(authorize_d1_l3 )_2| (not clear_d1_l1_3)))
+(assert (=> |(authorize_d1_l3 )_2| (not clear_d1_l2_3)))
+(assert (=> |(authorize_d1_l3 )_2| (= cost_d1_3 (+ cost_d1_2 3.0))))
+(assert (=> |(authorize_d1_l4 )_2| (not clear_d1_l4_2)))
+(assert (=> |(authorize_d1_l4 )_2| clear_d1_l4_3))
+(assert (=> |(authorize_d1_l4 )_2| (not clear_d1_l1_3)))
+(assert (=> |(authorize_d1_l4 )_2| (not clear_d1_l2_3)))
+(assert (=> |(authorize_d1_l4 )_2| (not clear_d1_l3_3)))
+(assert (=> |(authorize_d1_l4 )_2| (= cost_d1_3 (+ cost_d1_2 4.0))))
+(assert (=> |(authorize_d2_l1 )_2| (not clear_d2_l1_2)))
+(assert (=> |(authorize_d2_l1 )_2| clear_d2_l1_3))
+(assert (=> |(authorize_d2_l1 )_2| (= cost_d2_3 (+ cost_d2_2 1.0))))
+(assert (=> |(authorize_d2_l2 )_2| (not clear_d2_l2_2)))
+(assert (=> |(authorize_d2_l2 )_2| clear_d2_l2_3))
+(assert (=> |(authorize_d2_l2 )_2| (not clear_d2_l1_3)))
+(assert (=> |(authorize_d2_l2 )_2| (= cost_d2_3 (+ cost_d2_2 2.0))))
+(assert (=> |(authorize_d2_l3 )_2| (not clear_d2_l3_2)))
+(assert (=> |(authorize_d2_l3 )_2| clear_d2_l3_3))
+(assert (=> |(authorize_d2_l3 )_2| (not clear_d2_l1_3)))
+(assert (=> |(authorize_d2_l3 )_2| (not clear_d2_l2_3)))
+(assert (=> |(authorize_d2_l3 )_2| (= cost_d2_3 (+ cost_d2_2 3.0))))
+(assert (=> |(authorize_d2_l4 )_2| (not clear_d2_l4_2)))
+(assert (=> |(authorize_d2_l4 )_2| clear_d2_l4_3))
+(assert (=> |(authorize_d2_l4 )_2| (not clear_d2_l1_3)))
+(assert (=> |(authorize_d2_l4 )_2| (not clear_d2_l2_3)))
+(assert (=> |(authorize_d2_l4 )_2| (not clear_d2_l3_3)))
+(assert (=> |(authorize_d2_l4 )_2| (= cost_d2_3 (+ cost_d2_2 4.0))))
+(assert (=> |(increase_priority_d1 )_2| (< (- priority_d1_2 3.0) 0.0)))
+(assert (=> |(increase_priority_d1 )_2| (= priority_d1_3 (+ priority_d1_2 factor_2))))
+(assert (=> |(increase_priority_d1 )_2|
+    (= cost_d1_3 (+ cost_d1_2 (* factor_2 priority_d1_2)))))
+(assert (=> |(authorize_all_d1 )_2| (>= (- priority_d1_2 3.0) 0.0)))
+(assert (=> |(authorize_all_d1 )_2| (not clear_d1_l1_2)))
+(assert (=> |(authorize_all_d1 )_2| (not clear_d1_l2_2)))
+(assert (=> |(authorize_all_d1 )_2| (not clear_d1_l3_2)))
+(assert (=> |(authorize_all_d1 )_2| (not clear_d1_l4_2)))
+(assert (=> |(authorize_all_d1 )_2| clear_d1_l1_3))
+(assert (=> |(authorize_all_d1 )_2| clear_d1_l2_3))
+(assert (=> |(authorize_all_d1 )_2| clear_d1_l3_3))
+(assert (=> |(authorize_all_d1 )_2| clear_d1_l4_3))
+(assert (=> |(authorize_all_d1 )_2| (= cost_d1_3 (+ cost_d1_2 4.0))))
+(assert (=> |(increase_priority_d2 )_2| (< (- priority_d2_2 3.0) 0.0)))
+(assert (=> |(increase_priority_d2 )_2| (= priority_d2_3 (+ priority_d2_2 factor_2))))
+(assert (=> |(increase_priority_d2 )_2|
+    (= cost_d2_3 (+ cost_d2_2 (* factor_2 priority_d2_2)))))
+(assert (=> |(authorize_all_d2 )_2| (>= (- priority_d2_2 3.0) 0.0)))
+(assert (=> |(authorize_all_d2 )_2| (not clear_d2_l1_2)))
+(assert (=> |(authorize_all_d2 )_2| (not clear_d2_l2_2)))
+(assert (=> |(authorize_all_d2 )_2| (not clear_d2_l3_2)))
+(assert (=> |(authorize_all_d2 )_2| (not clear_d2_l4_2)))
+(assert (=> |(authorize_all_d2 )_2| clear_d2_l1_3))
+(assert (=> |(authorize_all_d2 )_2| clear_d2_l2_3))
+(assert (=> |(authorize_all_d2 )_2| clear_d2_l3_3))
+(assert (=> |(authorize_all_d2 )_2| clear_d2_l4_3))
+(assert (=> |(authorize_all_d2 )_2| (= cost_d2_3 (+ cost_d2_2 4.0))))
+(assert (=> |(decrease_factor )_2| (>= (- factor_2 1.0) 0.0)))
+(assert (=> |(decrease_factor )_2| (= factor_3 (- factor_2 (* (/ 1.0 2.0) factor_2)))))
+(assert (=> |(increase_factor )_2| (<= (- factor_2 10.0) 0.0)))
+(assert (=> |(increase_factor )_2| (= factor_3 (+ factor_2 (* (/ 1.0 2.0) factor_2)))))
+(assert (=> |(authorize_d1_l1 )_3| (not clear_d1_l1_3)))
+(assert (=> |(authorize_d1_l1 )_3| clear_d1_l1_4))
+(assert (=> |(authorize_d1_l1 )_3| (= cost_d1_4 (+ cost_d1_3 1.0))))
+(assert (=> |(authorize_d1_l2 )_3| (not clear_d1_l2_3)))
+(assert (=> |(authorize_d1_l2 )_3| clear_d1_l2_4))
+(assert (=> |(authorize_d1_l2 )_3| (not clear_d1_l1_4)))
+(assert (=> |(authorize_d1_l2 )_3| (= cost_d1_4 (+ cost_d1_3 2.0))))
+(assert (=> |(authorize_d1_l3 )_3| (not clear_d1_l3_3)))
+(assert (=> |(authorize_d1_l3 )_3| clear_d1_l3_4))
+(assert (=> |(authorize_d1_l3 )_3| (not clear_d1_l1_4)))
+(assert (=> |(authorize_d1_l3 )_3| (not clear_d1_l2_4)))
+(assert (=> |(authorize_d1_l3 )_3| (= cost_d1_4 (+ cost_d1_3 3.0))))
+(assert (=> |(authorize_d1_l4 )_3| (not clear_d1_l4_3)))
+(assert (=> |(authorize_d1_l4 )_3| clear_d1_l4_4))
+(assert (=> |(authorize_d1_l4 )_3| (not clear_d1_l1_4)))
+(assert (=> |(authorize_d1_l4 )_3| (not clear_d1_l2_4)))
+(assert (=> |(authorize_d1_l4 )_3| (not clear_d1_l3_4)))
+(assert (=> |(authorize_d1_l4 )_3| (= cost_d1_4 (+ cost_d1_3 4.0))))
+(assert (=> |(authorize_d2_l1 )_3| (not clear_d2_l1_3)))
+(assert (=> |(authorize_d2_l1 )_3| clear_d2_l1_4))
+(assert (=> |(authorize_d2_l1 )_3| (= cost_d2_4 (+ cost_d2_3 1.0))))
+(assert (=> |(authorize_d2_l2 )_3| (not clear_d2_l2_3)))
+(assert (=> |(authorize_d2_l2 )_3| clear_d2_l2_4))
+(assert (=> |(authorize_d2_l2 )_3| (not clear_d2_l1_4)))
+(assert (=> |(authorize_d2_l2 )_3| (= cost_d2_4 (+ cost_d2_3 2.0))))
+(assert (=> |(authorize_d2_l3 )_3| (not clear_d2_l3_3)))
+(assert (=> |(authorize_d2_l3 )_3| clear_d2_l3_4))
+(assert (=> |(authorize_d2_l3 )_3| (not clear_d2_l1_4)))
+(assert (=> |(authorize_d2_l3 )_3| (not clear_d2_l2_4)))
+(assert (=> |(authorize_d2_l3 )_3| (= cost_d2_4 (+ cost_d2_3 3.0))))
+(assert (=> |(authorize_d2_l4 )_3| (not clear_d2_l4_3)))
+(assert (=> |(authorize_d2_l4 )_3| clear_d2_l4_4))
+(assert (=> |(authorize_d2_l4 )_3| (not clear_d2_l1_4)))
+(assert (=> |(authorize_d2_l4 )_3| (not clear_d2_l2_4)))
+(assert (=> |(authorize_d2_l4 )_3| (not clear_d2_l3_4)))
+(assert (=> |(authorize_d2_l4 )_3| (= cost_d2_4 (+ cost_d2_3 4.0))))
+(assert (=> |(increase_priority_d1 )_3| (< (- priority_d1_3 3.0) 0.0)))
+(assert (=> |(increase_priority_d1 )_3| (= priority_d1_4 (+ priority_d1_3 factor_3))))
+(assert (=> |(increase_priority_d1 )_3|
+    (= cost_d1_4 (+ cost_d1_3 (* factor_3 priority_d1_3)))))
+(assert (=> |(authorize_all_d1 )_3| (>= (- priority_d1_3 3.0) 0.0)))
+(assert (=> |(authorize_all_d1 )_3| (not clear_d1_l1_3)))
+(assert (=> |(authorize_all_d1 )_3| (not clear_d1_l2_3)))
+(assert (=> |(authorize_all_d1 )_3| (not clear_d1_l3_3)))
+(assert (=> |(authorize_all_d1 )_3| (not clear_d1_l4_3)))
+(assert (=> |(authorize_all_d1 )_3| clear_d1_l1_4))
+(assert (=> |(authorize_all_d1 )_3| clear_d1_l2_4))
+(assert (=> |(authorize_all_d1 )_3| clear_d1_l3_4))
+(assert (=> |(authorize_all_d1 )_3| clear_d1_l4_4))
+(assert (=> |(authorize_all_d1 )_3| (= cost_d1_4 (+ cost_d1_3 4.0))))
+(assert (=> |(increase_priority_d2 )_3| (< (- priority_d2_3 3.0) 0.0)))
+(assert (=> |(increase_priority_d2 )_3| (= priority_d2_4 (+ priority_d2_3 factor_3))))
+(assert (=> |(increase_priority_d2 )_3|
+    (= cost_d2_4 (+ cost_d2_3 (* factor_3 priority_d2_3)))))
+(assert (=> |(authorize_all_d2 )_3| (>= (- priority_d2_3 3.0) 0.0)))
+(assert (=> |(authorize_all_d2 )_3| (not clear_d2_l1_3)))
+(assert (=> |(authorize_all_d2 )_3| (not clear_d2_l2_3)))
+(assert (=> |(authorize_all_d2 )_3| (not clear_d2_l3_3)))
+(assert (=> |(authorize_all_d2 )_3| (not clear_d2_l4_3)))
+(assert (=> |(authorize_all_d2 )_3| clear_d2_l1_4))
+(assert (=> |(authorize_all_d2 )_3| clear_d2_l2_4))
+(assert (=> |(authorize_all_d2 )_3| clear_d2_l3_4))
+(assert (=> |(authorize_all_d2 )_3| clear_d2_l4_4))
+(assert (=> |(authorize_all_d2 )_3| (= cost_d2_4 (+ cost_d2_3 4.0))))
+(assert (=> |(decrease_factor )_3| (>= (- factor_3 1.0) 0.0)))
+(assert (=> |(decrease_factor )_3| (= factor_4 (- factor_3 (* (/ 1.0 2.0) factor_3)))))
+(assert (=> |(increase_factor )_3| (<= (- factor_3 10.0) 0.0)))
+(assert (=> |(increase_factor )_3| (= factor_4 (+ factor_3 (* (/ 1.0 2.0) factor_3)))))
+(assert (=> |(authorize_d1_l1 )_4| (not clear_d1_l1_4)))
+(assert (=> |(authorize_d1_l1 )_4| clear_d1_l1_5))
+(assert (=> |(authorize_d1_l1 )_4| (= cost_d1_5 (+ cost_d1_4 1.0))))
+(assert (=> |(authorize_d1_l2 )_4| (not clear_d1_l2_4)))
+(assert (=> |(authorize_d1_l2 )_4| clear_d1_l2_5))
+(assert (=> |(authorize_d1_l2 )_4| (not clear_d1_l1_5)))
+(assert (=> |(authorize_d1_l2 )_4| (= cost_d1_5 (+ cost_d1_4 2.0))))
+(assert (=> |(authorize_d1_l3 )_4| (not clear_d1_l3_4)))
+(assert (=> |(authorize_d1_l3 )_4| clear_d1_l3_5))
+(assert (=> |(authorize_d1_l3 )_4| (not clear_d1_l1_5)))
+(assert (=> |(authorize_d1_l3 )_4| (not clear_d1_l2_5)))
+(assert (=> |(authorize_d1_l3 )_4| (= cost_d1_5 (+ cost_d1_4 3.0))))
+(assert (=> |(authorize_d1_l4 )_4| (not clear_d1_l4_4)))
+(assert (=> |(authorize_d1_l4 )_4| clear_d1_l4_5))
+(assert (=> |(authorize_d1_l4 )_4| (not clear_d1_l1_5)))
+(assert (=> |(authorize_d1_l4 )_4| (not clear_d1_l2_5)))
+(assert (=> |(authorize_d1_l4 )_4| (not clear_d1_l3_5)))
+(assert (=> |(authorize_d1_l4 )_4| (= cost_d1_5 (+ cost_d1_4 4.0))))
+(assert (=> |(authorize_d2_l1 )_4| (not clear_d2_l1_4)))
+(assert (=> |(authorize_d2_l1 )_4| clear_d2_l1_5))
+(assert (=> |(authorize_d2_l1 )_4| (= cost_d2_5 (+ cost_d2_4 1.0))))
+(assert (=> |(authorize_d2_l2 )_4| (not clear_d2_l2_4)))
+(assert (=> |(authorize_d2_l2 )_4| clear_d2_l2_5))
+(assert (=> |(authorize_d2_l2 )_4| (not clear_d2_l1_5)))
+(assert (=> |(authorize_d2_l2 )_4| (= cost_d2_5 (+ cost_d2_4 2.0))))
+(assert (=> |(authorize_d2_l3 )_4| (not clear_d2_l3_4)))
+(assert (=> |(authorize_d2_l3 )_4| clear_d2_l3_5))
+(assert (=> |(authorize_d2_l3 )_4| (not clear_d2_l1_5)))
+(assert (=> |(authorize_d2_l3 )_4| (not clear_d2_l2_5)))
+(assert (=> |(authorize_d2_l3 )_4| (= cost_d2_5 (+ cost_d2_4 3.0))))
+(assert (=> |(authorize_d2_l4 )_4| (not clear_d2_l4_4)))
+(assert (=> |(authorize_d2_l4 )_4| clear_d2_l4_5))
+(assert (=> |(authorize_d2_l4 )_4| (not clear_d2_l1_5)))
+(assert (=> |(authorize_d2_l4 )_4| (not clear_d2_l2_5)))
+(assert (=> |(authorize_d2_l4 )_4| (not clear_d2_l3_5)))
+(assert (=> |(authorize_d2_l4 )_4| (= cost_d2_5 (+ cost_d2_4 4.0))))
+(assert (=> |(increase_priority_d1 )_4| (< (- priority_d1_4 3.0) 0.0)))
+(assert (=> |(increase_priority_d1 )_4| (= priority_d1_5 (+ priority_d1_4 factor_4))))
+(assert (=> |(increase_priority_d1 )_4|
+    (= cost_d1_5 (+ cost_d1_4 (* factor_4 priority_d1_4)))))
+(assert (=> |(authorize_all_d1 )_4| (>= (- priority_d1_4 3.0) 0.0)))
+(assert (=> |(authorize_all_d1 )_4| (not clear_d1_l1_4)))
+(assert (=> |(authorize_all_d1 )_4| (not clear_d1_l2_4)))
+(assert (=> |(authorize_all_d1 )_4| (not clear_d1_l3_4)))
+(assert (=> |(authorize_all_d1 )_4| (not clear_d1_l4_4)))
+(assert (=> |(authorize_all_d1 )_4| clear_d1_l1_5))
+(assert (=> |(authorize_all_d1 )_4| clear_d1_l2_5))
+(assert (=> |(authorize_all_d1 )_4| clear_d1_l3_5))
+(assert (=> |(authorize_all_d1 )_4| clear_d1_l4_5))
+(assert (=> |(authorize_all_d1 )_4| (= cost_d1_5 (+ cost_d1_4 4.0))))
+(assert (=> |(increase_priority_d2 )_4| (< (- priority_d2_4 3.0) 0.0)))
+(assert (=> |(increase_priority_d2 )_4| (= priority_d2_5 (+ priority_d2_4 factor_4))))
+(assert (=> |(increase_priority_d2 )_4|
+    (= cost_d2_5 (+ cost_d2_4 (* factor_4 priority_d2_4)))))
+(assert (=> |(authorize_all_d2 )_4| (>= (- priority_d2_4 3.0) 0.0)))
+(assert (=> |(authorize_all_d2 )_4| (not clear_d2_l1_4)))
+(assert (=> |(authorize_all_d2 )_4| (not clear_d2_l2_4)))
+(assert (=> |(authorize_all_d2 )_4| (not clear_d2_l3_4)))
+(assert (=> |(authorize_all_d2 )_4| (not clear_d2_l4_4)))
+(assert (=> |(authorize_all_d2 )_4| clear_d2_l1_5))
+(assert (=> |(authorize_all_d2 )_4| clear_d2_l2_5))
+(assert (=> |(authorize_all_d2 )_4| clear_d2_l3_5))
+(assert (=> |(authorize_all_d2 )_4| clear_d2_l4_5))
+(assert (=> |(authorize_all_d2 )_4| (= cost_d2_5 (+ cost_d2_4 4.0))))
+(assert (=> |(decrease_factor )_4| (>= (- factor_4 1.0) 0.0)))
+(assert (=> |(decrease_factor )_4| (= factor_5 (- factor_4 (* (/ 1.0 2.0) factor_4)))))
+(assert (=> |(increase_factor )_4| (<= (- factor_4 10.0) 0.0)))
+(assert (=> |(increase_factor )_4| (= factor_5 (+ factor_4 (* (/ 1.0 2.0) factor_4)))))
+(assert (=> |(authorize_d1_l1 )_5| (not clear_d1_l1_5)))
+(assert (=> |(authorize_d1_l1 )_5| clear_d1_l1_6))
+(assert (=> |(authorize_d1_l1 )_5| (= cost_d1_6 (+ cost_d1_5 1.0))))
+(assert (=> |(authorize_d1_l2 )_5| (not clear_d1_l2_5)))
+(assert (=> |(authorize_d1_l2 )_5| clear_d1_l2_6))
+(assert (=> |(authorize_d1_l2 )_5| (not clear_d1_l1_6)))
+(assert (=> |(authorize_d1_l2 )_5| (= cost_d1_6 (+ cost_d1_5 2.0))))
+(assert (=> |(authorize_d1_l3 )_5| (not clear_d1_l3_5)))
+(assert (=> |(authorize_d1_l3 )_5| clear_d1_l3_6))
+(assert (=> |(authorize_d1_l3 )_5| (not clear_d1_l1_6)))
+(assert (=> |(authorize_d1_l3 )_5| (not clear_d1_l2_6)))
+(assert (=> |(authorize_d1_l3 )_5| (= cost_d1_6 (+ cost_d1_5 3.0))))
+(assert (=> |(authorize_d1_l4 )_5| (not clear_d1_l4_5)))
+(assert (=> |(authorize_d1_l4 )_5| clear_d1_l4_6))
+(assert (=> |(authorize_d1_l4 )_5| (not clear_d1_l1_6)))
+(assert (=> |(authorize_d1_l4 )_5| (not clear_d1_l2_6)))
+(assert (=> |(authorize_d1_l4 )_5| (not clear_d1_l3_6)))
+(assert (=> |(authorize_d1_l4 )_5| (= cost_d1_6 (+ cost_d1_5 4.0))))
+(assert (=> |(authorize_d2_l1 )_5| (not clear_d2_l1_5)))
+(assert (=> |(authorize_d2_l1 )_5| clear_d2_l1_6))
+(assert (=> |(authorize_d2_l1 )_5| (= cost_d2_6 (+ cost_d2_5 1.0))))
+(assert (=> |(authorize_d2_l2 )_5| (not clear_d2_l2_5)))
+(assert (=> |(authorize_d2_l2 )_5| clear_d2_l2_6))
+(assert (=> |(authorize_d2_l2 )_5| (not clear_d2_l1_6)))
+(assert (=> |(authorize_d2_l2 )_5| (= cost_d2_6 (+ cost_d2_5 2.0))))
+(assert (=> |(authorize_d2_l3 )_5| (not clear_d2_l3_5)))
+(assert (=> |(authorize_d2_l3 )_5| clear_d2_l3_6))
+(assert (=> |(authorize_d2_l3 )_5| (not clear_d2_l1_6)))
+(assert (=> |(authorize_d2_l3 )_5| (not clear_d2_l2_6)))
+(assert (=> |(authorize_d2_l3 )_5| (= cost_d2_6 (+ cost_d2_5 3.0))))
+(assert (=> |(authorize_d2_l4 )_5| (not clear_d2_l4_5)))
+(assert (=> |(authorize_d2_l4 )_5| clear_d2_l4_6))
+(assert (=> |(authorize_d2_l4 )_5| (not clear_d2_l1_6)))
+(assert (=> |(authorize_d2_l4 )_5| (not clear_d2_l2_6)))
+(assert (=> |(authorize_d2_l4 )_5| (not clear_d2_l3_6)))
+(assert (=> |(authorize_d2_l4 )_5| (= cost_d2_6 (+ cost_d2_5 4.0))))
+(assert (=> |(increase_priority_d1 )_5| (< (- priority_d1_5 3.0) 0.0)))
+(assert (=> |(increase_priority_d1 )_5| (= priority_d1_6 (+ priority_d1_5 factor_5))))
+(assert (=> |(increase_priority_d1 )_5|
+    (= cost_d1_6 (+ cost_d1_5 (* factor_5 priority_d1_5)))))
+(assert (=> |(authorize_all_d1 )_5| (>= (- priority_d1_5 3.0) 0.0)))
+(assert (=> |(authorize_all_d1 )_5| (not clear_d1_l1_5)))
+(assert (=> |(authorize_all_d1 )_5| (not clear_d1_l2_5)))
+(assert (=> |(authorize_all_d1 )_5| (not clear_d1_l3_5)))
+(assert (=> |(authorize_all_d1 )_5| (not clear_d1_l4_5)))
+(assert (=> |(authorize_all_d1 )_5| clear_d1_l1_6))
+(assert (=> |(authorize_all_d1 )_5| clear_d1_l2_6))
+(assert (=> |(authorize_all_d1 )_5| clear_d1_l3_6))
+(assert (=> |(authorize_all_d1 )_5| clear_d1_l4_6))
+(assert (=> |(authorize_all_d1 )_5| (= cost_d1_6 (+ cost_d1_5 4.0))))
+(assert (=> |(increase_priority_d2 )_5| (< (- priority_d2_5 3.0) 0.0)))
+(assert (=> |(increase_priority_d2 )_5| (= priority_d2_6 (+ priority_d2_5 factor_5))))
+(assert (=> |(increase_priority_d2 )_5|
+    (= cost_d2_6 (+ cost_d2_5 (* factor_5 priority_d2_5)))))
+(assert (=> |(authorize_all_d2 )_5| (>= (- priority_d2_5 3.0) 0.0)))
+(assert (=> |(authorize_all_d2 )_5| (not clear_d2_l1_5)))
+(assert (=> |(authorize_all_d2 )_5| (not clear_d2_l2_5)))
+(assert (=> |(authorize_all_d2 )_5| (not clear_d2_l3_5)))
+(assert (=> |(authorize_all_d2 )_5| (not clear_d2_l4_5)))
+(assert (=> |(authorize_all_d2 )_5| clear_d2_l1_6))
+(assert (=> |(authorize_all_d2 )_5| clear_d2_l2_6))
+(assert (=> |(authorize_all_d2 )_5| clear_d2_l3_6))
+(assert (=> |(authorize_all_d2 )_5| clear_d2_l4_6))
+(assert (=> |(authorize_all_d2 )_5| (= cost_d2_6 (+ cost_d2_5 4.0))))
+(assert (=> |(decrease_factor )_5| (>= (- factor_5 1.0) 0.0)))
+(assert (=> |(decrease_factor )_5| (= factor_6 (- factor_5 (* (/ 1.0 2.0) factor_5)))))
+(assert (=> |(increase_factor )_5| (<= (- factor_5 10.0) 0.0)))
+(assert (=> |(increase_factor )_5| (= factor_6 (+ factor_5 (* (/ 1.0 2.0) factor_5)))))
+(assert (=> |(authorize_d1_l1 )_6| (not clear_d1_l1_6)))
+(assert (=> |(authorize_d1_l1 )_6| clear_d1_l1_7))
+(assert (=> |(authorize_d1_l1 )_6| (= cost_d1_7 (+ cost_d1_6 1.0))))
+(assert (=> |(authorize_d1_l2 )_6| (not clear_d1_l2_6)))
+(assert (=> |(authorize_d1_l2 )_6| clear_d1_l2_7))
+(assert (=> |(authorize_d1_l2 )_6| (not clear_d1_l1_7)))
+(assert (=> |(authorize_d1_l2 )_6| (= cost_d1_7 (+ cost_d1_6 2.0))))
+(assert (=> |(authorize_d1_l3 )_6| (not clear_d1_l3_6)))
+(assert (=> |(authorize_d1_l3 )_6| clear_d1_l3_7))
+(assert (=> |(authorize_d1_l3 )_6| (not clear_d1_l1_7)))
+(assert (=> |(authorize_d1_l3 )_6| (not clear_d1_l2_7)))
+(assert (=> |(authorize_d1_l3 )_6| (= cost_d1_7 (+ cost_d1_6 3.0))))
+(assert (=> |(authorize_d1_l4 )_6| (not clear_d1_l4_6)))
+(assert (=> |(authorize_d1_l4 )_6| clear_d1_l4_7))
+(assert (=> |(authorize_d1_l4 )_6| (not clear_d1_l1_7)))
+(assert (=> |(authorize_d1_l4 )_6| (not clear_d1_l2_7)))
+(assert (=> |(authorize_d1_l4 )_6| (not clear_d1_l3_7)))
+(assert (=> |(authorize_d1_l4 )_6| (= cost_d1_7 (+ cost_d1_6 4.0))))
+(assert (=> |(authorize_d2_l1 )_6| (not clear_d2_l1_6)))
+(assert (=> |(authorize_d2_l1 )_6| clear_d2_l1_7))
+(assert (=> |(authorize_d2_l1 )_6| (= cost_d2_7 (+ cost_d2_6 1.0))))
+(assert (=> |(authorize_d2_l2 )_6| (not clear_d2_l2_6)))
+(assert (=> |(authorize_d2_l2 )_6| clear_d2_l2_7))
+(assert (=> |(authorize_d2_l2 )_6| (not clear_d2_l1_7)))
+(assert (=> |(authorize_d2_l2 )_6| (= cost_d2_7 (+ cost_d2_6 2.0))))
+(assert (=> |(authorize_d2_l3 )_6| (not clear_d2_l3_6)))
+(assert (=> |(authorize_d2_l3 )_6| clear_d2_l3_7))
+(assert (=> |(authorize_d2_l3 )_6| (not clear_d2_l1_7)))
+(assert (=> |(authorize_d2_l3 )_6| (not clear_d2_l2_7)))
+(assert (=> |(authorize_d2_l3 )_6| (= cost_d2_7 (+ cost_d2_6 3.0))))
+(assert (=> |(authorize_d2_l4 )_6| (not clear_d2_l4_6)))
+(assert (=> |(authorize_d2_l4 )_6| clear_d2_l4_7))
+(assert (=> |(authorize_d2_l4 )_6| (not clear_d2_l1_7)))
+(assert (=> |(authorize_d2_l4 )_6| (not clear_d2_l2_7)))
+(assert (=> |(authorize_d2_l4 )_6| (not clear_d2_l3_7)))
+(assert (=> |(authorize_d2_l4 )_6| (= cost_d2_7 (+ cost_d2_6 4.0))))
+(assert (=> |(increase_priority_d1 )_6| (< (- priority_d1_6 3.0) 0.0)))
+(assert (=> |(increase_priority_d1 )_6| (= priority_d1_7 (+ priority_d1_6 factor_6))))
+(assert (=> |(increase_priority_d1 )_6|
+    (= cost_d1_7 (+ cost_d1_6 (* factor_6 priority_d1_6)))))
+(assert (=> |(authorize_all_d1 )_6| (>= (- priority_d1_6 3.0) 0.0)))
+(assert (=> |(authorize_all_d1 )_6| (not clear_d1_l1_6)))
+(assert (=> |(authorize_all_d1 )_6| (not clear_d1_l2_6)))
+(assert (=> |(authorize_all_d1 )_6| (not clear_d1_l3_6)))
+(assert (=> |(authorize_all_d1 )_6| (not clear_d1_l4_6)))
+(assert (=> |(authorize_all_d1 )_6| clear_d1_l1_7))
+(assert (=> |(authorize_all_d1 )_6| clear_d1_l2_7))
+(assert (=> |(authorize_all_d1 )_6| clear_d1_l3_7))
+(assert (=> |(authorize_all_d1 )_6| clear_d1_l4_7))
+(assert (=> |(authorize_all_d1 )_6| (= cost_d1_7 (+ cost_d1_6 4.0))))
+(assert (=> |(increase_priority_d2 )_6| (< (- priority_d2_6 3.0) 0.0)))
+(assert (=> |(increase_priority_d2 )_6| (= priority_d2_7 (+ priority_d2_6 factor_6))))
+(assert (=> |(increase_priority_d2 )_6|
+    (= cost_d2_7 (+ cost_d2_6 (* factor_6 priority_d2_6)))))
+(assert (=> |(authorize_all_d2 )_6| (>= (- priority_d2_6 3.0) 0.0)))
+(assert (=> |(authorize_all_d2 )_6| (not clear_d2_l1_6)))
+(assert (=> |(authorize_all_d2 )_6| (not clear_d2_l2_6)))
+(assert (=> |(authorize_all_d2 )_6| (not clear_d2_l3_6)))
+(assert (=> |(authorize_all_d2 )_6| (not clear_d2_l4_6)))
+(assert (=> |(authorize_all_d2 )_6| clear_d2_l1_7))
+(assert (=> |(authorize_all_d2 )_6| clear_d2_l2_7))
+(assert (=> |(authorize_all_d2 )_6| clear_d2_l3_7))
+(assert (=> |(authorize_all_d2 )_6| clear_d2_l4_7))
+(assert (=> |(authorize_all_d2 )_6| (= cost_d2_7 (+ cost_d2_6 4.0))))
+(assert (=> |(decrease_factor )_6| (>= (- factor_6 1.0) 0.0)))
+(assert (=> |(decrease_factor )_6| (= factor_7 (- factor_6 (* (/ 1.0 2.0) factor_6)))))
+(assert (=> |(increase_factor )_6| (<= (- factor_6 10.0) 0.0)))
+(assert (=> |(increase_factor )_6| (= factor_7 (+ factor_6 (* (/ 1.0 2.0) factor_6)))))
+(assert (=> |(authorize_d1_l1 )_7| (not clear_d1_l1_7)))
+(assert (=> |(authorize_d1_l1 )_7| clear_d1_l1_8))
+(assert (=> |(authorize_d1_l1 )_7| (= cost_d1_8 (+ cost_d1_7 1.0))))
+(assert (=> |(authorize_d1_l2 )_7| (not clear_d1_l2_7)))
+(assert (=> |(authorize_d1_l2 )_7| clear_d1_l2_8))
+(assert (=> |(authorize_d1_l2 )_7| (not clear_d1_l1_8)))
+(assert (=> |(authorize_d1_l2 )_7| (= cost_d1_8 (+ cost_d1_7 2.0))))
+(assert (=> |(authorize_d1_l3 )_7| (not clear_d1_l3_7)))
+(assert (=> |(authorize_d1_l3 )_7| clear_d1_l3_8))
+(assert (=> |(authorize_d1_l3 )_7| (not clear_d1_l1_8)))
+(assert (=> |(authorize_d1_l3 )_7| (not clear_d1_l2_8)))
+(assert (=> |(authorize_d1_l3 )_7| (= cost_d1_8 (+ cost_d1_7 3.0))))
+(assert (=> |(authorize_d1_l4 )_7| (not clear_d1_l4_7)))
+(assert (=> |(authorize_d1_l4 )_7| clear_d1_l4_8))
+(assert (=> |(authorize_d1_l4 )_7| (not clear_d1_l1_8)))
+(assert (=> |(authorize_d1_l4 )_7| (not clear_d1_l2_8)))
+(assert (=> |(authorize_d1_l4 )_7| (not clear_d1_l3_8)))
+(assert (=> |(authorize_d1_l4 )_7| (= cost_d1_8 (+ cost_d1_7 4.0))))
+(assert (=> |(authorize_d2_l1 )_7| (not clear_d2_l1_7)))
+(assert (=> |(authorize_d2_l1 )_7| clear_d2_l1_8))
+(assert (=> |(authorize_d2_l1 )_7| (= cost_d2_8 (+ cost_d2_7 1.0))))
+(assert (=> |(authorize_d2_l2 )_7| (not clear_d2_l2_7)))
+(assert (=> |(authorize_d2_l2 )_7| clear_d2_l2_8))
+(assert (=> |(authorize_d2_l2 )_7| (not clear_d2_l1_8)))
+(assert (=> |(authorize_d2_l2 )_7| (= cost_d2_8 (+ cost_d2_7 2.0))))
+(assert (=> |(authorize_d2_l3 )_7| (not clear_d2_l3_7)))
+(assert (=> |(authorize_d2_l3 )_7| clear_d2_l3_8))
+(assert (=> |(authorize_d2_l3 )_7| (not clear_d2_l1_8)))
+(assert (=> |(authorize_d2_l3 )_7| (not clear_d2_l2_8)))
+(assert (=> |(authorize_d2_l3 )_7| (= cost_d2_8 (+ cost_d2_7 3.0))))
+(assert (=> |(authorize_d2_l4 )_7| (not clear_d2_l4_7)))
+(assert (=> |(authorize_d2_l4 )_7| clear_d2_l4_8))
+(assert (=> |(authorize_d2_l4 )_7| (not clear_d2_l1_8)))
+(assert (=> |(authorize_d2_l4 )_7| (not clear_d2_l2_8)))
+(assert (=> |(authorize_d2_l4 )_7| (not clear_d2_l3_8)))
+(assert (=> |(authorize_d2_l4 )_7| (= cost_d2_8 (+ cost_d2_7 4.0))))
+(assert (=> |(increase_priority_d1 )_7| (< (- priority_d1_7 3.0) 0.0)))
+(assert (=> |(increase_priority_d1 )_7| (= priority_d1_8 (+ priority_d1_7 factor_7))))
+(assert (=> |(increase_priority_d1 )_7|
+    (= cost_d1_8 (+ cost_d1_7 (* factor_7 priority_d1_7)))))
+(assert (=> |(authorize_all_d1 )_7| (>= (- priority_d1_7 3.0) 0.0)))
+(assert (=> |(authorize_all_d1 )_7| (not clear_d1_l1_7)))
+(assert (=> |(authorize_all_d1 )_7| (not clear_d1_l2_7)))
+(assert (=> |(authorize_all_d1 )_7| (not clear_d1_l3_7)))
+(assert (=> |(authorize_all_d1 )_7| (not clear_d1_l4_7)))
+(assert (=> |(authorize_all_d1 )_7| clear_d1_l1_8))
+(assert (=> |(authorize_all_d1 )_7| clear_d1_l2_8))
+(assert (=> |(authorize_all_d1 )_7| clear_d1_l3_8))
+(assert (=> |(authorize_all_d1 )_7| clear_d1_l4_8))
+(assert (=> |(authorize_all_d1 )_7| (= cost_d1_8 (+ cost_d1_7 4.0))))
+(assert (=> |(increase_priority_d2 )_7| (< (- priority_d2_7 3.0) 0.0)))
+(assert (=> |(increase_priority_d2 )_7| (= priority_d2_8 (+ priority_d2_7 factor_7))))
+(assert (=> |(increase_priority_d2 )_7|
+    (= cost_d2_8 (+ cost_d2_7 (* factor_7 priority_d2_7)))))
+(assert (=> |(authorize_all_d2 )_7| (>= (- priority_d2_7 3.0) 0.0)))
+(assert (=> |(authorize_all_d2 )_7| (not clear_d2_l1_7)))
+(assert (=> |(authorize_all_d2 )_7| (not clear_d2_l2_7)))
+(assert (=> |(authorize_all_d2 )_7| (not clear_d2_l3_7)))
+(assert (=> |(authorize_all_d2 )_7| (not clear_d2_l4_7)))
+(assert (=> |(authorize_all_d2 )_7| clear_d2_l1_8))
+(assert (=> |(authorize_all_d2 )_7| clear_d2_l2_8))
+(assert (=> |(authorize_all_d2 )_7| clear_d2_l3_8))
+(assert (=> |(authorize_all_d2 )_7| clear_d2_l4_8))
+(assert (=> |(authorize_all_d2 )_7| (= cost_d2_8 (+ cost_d2_7 4.0))))
+(assert (=> |(decrease_factor )_7| (>= (- factor_7 1.0) 0.0)))
+(assert (=> |(decrease_factor )_7| (= factor_8 (- factor_7 (* (/ 1.0 2.0) factor_7)))))
+(assert (=> |(increase_factor )_7| (<= (- factor_7 10.0) 0.0)))
+(assert (=> |(increase_factor )_7| (= factor_8 (+ factor_7 (* (/ 1.0 2.0) factor_7)))))
+(assert (=> |(authorize_d1_l1 )_8| (not clear_d1_l1_8)))
+(assert (=> |(authorize_d1_l1 )_8| clear_d1_l1_9))
+(assert (=> |(authorize_d1_l1 )_8| (= cost_d1_9 (+ cost_d1_8 1.0))))
+(assert (=> |(authorize_d1_l2 )_8| (not clear_d1_l2_8)))
+(assert (=> |(authorize_d1_l2 )_8| clear_d1_l2_9))
+(assert (=> |(authorize_d1_l2 )_8| (not clear_d1_l1_9)))
+(assert (=> |(authorize_d1_l2 )_8| (= cost_d1_9 (+ cost_d1_8 2.0))))
+(assert (=> |(authorize_d1_l3 )_8| (not clear_d1_l3_8)))
+(assert (=> |(authorize_d1_l3 )_8| clear_d1_l3_9))
+(assert (=> |(authorize_d1_l3 )_8| (not clear_d1_l1_9)))
+(assert (=> |(authorize_d1_l3 )_8| (not clear_d1_l2_9)))
+(assert (=> |(authorize_d1_l3 )_8| (= cost_d1_9 (+ cost_d1_8 3.0))))
+(assert (=> |(authorize_d1_l4 )_8| (not clear_d1_l4_8)))
+(assert (=> |(authorize_d1_l4 )_8| clear_d1_l4_9))
+(assert (=> |(authorize_d1_l4 )_8| (not clear_d1_l1_9)))
+(assert (=> |(authorize_d1_l4 )_8| (not clear_d1_l2_9)))
+(assert (=> |(authorize_d1_l4 )_8| (not clear_d1_l3_9)))
+(assert (=> |(authorize_d1_l4 )_8| (= cost_d1_9 (+ cost_d1_8 4.0))))
+(assert (=> |(authorize_d2_l1 )_8| (not clear_d2_l1_8)))
+(assert (=> |(authorize_d2_l1 )_8| clear_d2_l1_9))
+(assert (=> |(authorize_d2_l1 )_8| (= cost_d2_9 (+ cost_d2_8 1.0))))
+(assert (=> |(authorize_d2_l2 )_8| (not clear_d2_l2_8)))
+(assert (=> |(authorize_d2_l2 )_8| clear_d2_l2_9))
+(assert (=> |(authorize_d2_l2 )_8| (not clear_d2_l1_9)))
+(assert (=> |(authorize_d2_l2 )_8| (= cost_d2_9 (+ cost_d2_8 2.0))))
+(assert (=> |(authorize_d2_l3 )_8| (not clear_d2_l3_8)))
+(assert (=> |(authorize_d2_l3 )_8| clear_d2_l3_9))
+(assert (=> |(authorize_d2_l3 )_8| (not clear_d2_l1_9)))
+(assert (=> |(authorize_d2_l3 )_8| (not clear_d2_l2_9)))
+(assert (=> |(authorize_d2_l3 )_8| (= cost_d2_9 (+ cost_d2_8 3.0))))
+(assert (=> |(authorize_d2_l4 )_8| (not clear_d2_l4_8)))
+(assert (=> |(authorize_d2_l4 )_8| clear_d2_l4_9))
+(assert (=> |(authorize_d2_l4 )_8| (not clear_d2_l1_9)))
+(assert (=> |(authorize_d2_l4 )_8| (not clear_d2_l2_9)))
+(assert (=> |(authorize_d2_l4 )_8| (not clear_d2_l3_9)))
+(assert (=> |(authorize_d2_l4 )_8| (= cost_d2_9 (+ cost_d2_8 4.0))))
+(assert (=> |(increase_priority_d1 )_8| (< (- priority_d1_8 3.0) 0.0)))
+(assert (=> |(increase_priority_d1 )_8| (= priority_d1_9 (+ priority_d1_8 factor_8))))
+(assert (=> |(increase_priority_d1 )_8|
+    (= cost_d1_9 (+ cost_d1_8 (* factor_8 priority_d1_8)))))
+(assert (=> |(authorize_all_d1 )_8| (>= (- priority_d1_8 3.0) 0.0)))
+(assert (=> |(authorize_all_d1 )_8| (not clear_d1_l1_8)))
+(assert (=> |(authorize_all_d1 )_8| (not clear_d1_l2_8)))
+(assert (=> |(authorize_all_d1 )_8| (not clear_d1_l3_8)))
+(assert (=> |(authorize_all_d1 )_8| (not clear_d1_l4_8)))
+(assert (=> |(authorize_all_d1 )_8| clear_d1_l1_9))
+(assert (=> |(authorize_all_d1 )_8| clear_d1_l2_9))
+(assert (=> |(authorize_all_d1 )_8| clear_d1_l3_9))
+(assert (=> |(authorize_all_d1 )_8| clear_d1_l4_9))
+(assert (=> |(authorize_all_d1 )_8| (= cost_d1_9 (+ cost_d1_8 4.0))))
+(assert (=> |(increase_priority_d2 )_8| (< (- priority_d2_8 3.0) 0.0)))
+(assert (=> |(increase_priority_d2 )_8| (= priority_d2_9 (+ priority_d2_8 factor_8))))
+(assert (=> |(increase_priority_d2 )_8|
+    (= cost_d2_9 (+ cost_d2_8 (* factor_8 priority_d2_8)))))
+(assert (=> |(authorize_all_d2 )_8| (>= (- priority_d2_8 3.0) 0.0)))
+(assert (=> |(authorize_all_d2 )_8| (not clear_d2_l1_8)))
+(assert (=> |(authorize_all_d2 )_8| (not clear_d2_l2_8)))
+(assert (=> |(authorize_all_d2 )_8| (not clear_d2_l3_8)))
+(assert (=> |(authorize_all_d2 )_8| (not clear_d2_l4_8)))
+(assert (=> |(authorize_all_d2 )_8| clear_d2_l1_9))
+(assert (=> |(authorize_all_d2 )_8| clear_d2_l2_9))
+(assert (=> |(authorize_all_d2 )_8| clear_d2_l3_9))
+(assert (=> |(authorize_all_d2 )_8| clear_d2_l4_9))
+(assert (=> |(authorize_all_d2 )_8| (= cost_d2_9 (+ cost_d2_8 4.0))))
+(assert (=> |(decrease_factor )_8| (>= (- factor_8 1.0) 0.0)))
+(assert (=> |(decrease_factor )_8| (= factor_9 (- factor_8 (* (/ 1.0 2.0) factor_8)))))
+(assert (=> |(increase_factor )_8| (<= (- factor_8 10.0) 0.0)))
+(assert (=> |(increase_factor )_8| (= factor_9 (+ factor_8 (* (/ 1.0 2.0) factor_8)))))
+(assert (=> |(authorize_d1_l1 )_9| (not clear_d1_l1_9)))
+(assert (=> |(authorize_d1_l1 )_9| clear_d1_l1_10))
+(assert (=> |(authorize_d1_l1 )_9| (= cost_d1_10 (+ cost_d1_9 1.0))))
+(assert (=> |(authorize_d1_l2 )_9| (not clear_d1_l2_9)))
+(assert (=> |(authorize_d1_l2 )_9| clear_d1_l2_10))
+(assert (=> |(authorize_d1_l2 )_9| (not clear_d1_l1_10)))
+(assert (=> |(authorize_d1_l2 )_9| (= cost_d1_10 (+ cost_d1_9 2.0))))
+(assert (=> |(authorize_d1_l3 )_9| (not clear_d1_l3_9)))
+(assert (=> |(authorize_d1_l3 )_9| clear_d1_l3_10))
+(assert (=> |(authorize_d1_l3 )_9| (not clear_d1_l1_10)))
+(assert (=> |(authorize_d1_l3 )_9| (not clear_d1_l2_10)))
+(assert (=> |(authorize_d1_l3 )_9| (= cost_d1_10 (+ cost_d1_9 3.0))))
+(assert (=> |(authorize_d1_l4 )_9| (not clear_d1_l4_9)))
+(assert (=> |(authorize_d1_l4 )_9| clear_d1_l4_10))
+(assert (=> |(authorize_d1_l4 )_9| (not clear_d1_l1_10)))
+(assert (=> |(authorize_d1_l4 )_9| (not clear_d1_l2_10)))
+(assert (=> |(authorize_d1_l4 )_9| (not clear_d1_l3_10)))
+(assert (=> |(authorize_d1_l4 )_9| (= cost_d1_10 (+ cost_d1_9 4.0))))
+(assert (=> |(authorize_d2_l1 )_9| (not clear_d2_l1_9)))
+(assert (=> |(authorize_d2_l1 )_9| clear_d2_l1_10))
+(assert (=> |(authorize_d2_l1 )_9| (= cost_d2_10 (+ cost_d2_9 1.0))))
+(assert (=> |(authorize_d2_l2 )_9| (not clear_d2_l2_9)))
+(assert (=> |(authorize_d2_l2 )_9| clear_d2_l2_10))
+(assert (=> |(authorize_d2_l2 )_9| (not clear_d2_l1_10)))
+(assert (=> |(authorize_d2_l2 )_9| (= cost_d2_10 (+ cost_d2_9 2.0))))
+(assert (=> |(authorize_d2_l3 )_9| (not clear_d2_l3_9)))
+(assert (=> |(authorize_d2_l3 )_9| clear_d2_l3_10))
+(assert (=> |(authorize_d2_l3 )_9| (not clear_d2_l1_10)))
+(assert (=> |(authorize_d2_l3 )_9| (not clear_d2_l2_10)))
+(assert (=> |(authorize_d2_l3 )_9| (= cost_d2_10 (+ cost_d2_9 3.0))))
+(assert (=> |(authorize_d2_l4 )_9| (not clear_d2_l4_9)))
+(assert (=> |(authorize_d2_l4 )_9| clear_d2_l4_10))
+(assert (=> |(authorize_d2_l4 )_9| (not clear_d2_l1_10)))
+(assert (=> |(authorize_d2_l4 )_9| (not clear_d2_l2_10)))
+(assert (=> |(authorize_d2_l4 )_9| (not clear_d2_l3_10)))
+(assert (=> |(authorize_d2_l4 )_9| (= cost_d2_10 (+ cost_d2_9 4.0))))
+(assert (=> |(increase_priority_d1 )_9| (< (- priority_d1_9 3.0) 0.0)))
+(assert (=> |(increase_priority_d1 )_9| (= priority_d1_10 (+ priority_d1_9 factor_9))))
+(assert (=> |(increase_priority_d1 )_9|
+    (= cost_d1_10 (+ cost_d1_9 (* factor_9 priority_d1_9)))))
+(assert (=> |(authorize_all_d1 )_9| (>= (- priority_d1_9 3.0) 0.0)))
+(assert (=> |(authorize_all_d1 )_9| (not clear_d1_l1_9)))
+(assert (=> |(authorize_all_d1 )_9| (not clear_d1_l2_9)))
+(assert (=> |(authorize_all_d1 )_9| (not clear_d1_l3_9)))
+(assert (=> |(authorize_all_d1 )_9| (not clear_d1_l4_9)))
+(assert (=> |(authorize_all_d1 )_9| clear_d1_l1_10))
+(assert (=> |(authorize_all_d1 )_9| clear_d1_l2_10))
+(assert (=> |(authorize_all_d1 )_9| clear_d1_l3_10))
+(assert (=> |(authorize_all_d1 )_9| clear_d1_l4_10))
+(assert (=> |(authorize_all_d1 )_9| (= cost_d1_10 (+ cost_d1_9 4.0))))
+(assert (=> |(increase_priority_d2 )_9| (< (- priority_d2_9 3.0) 0.0)))
+(assert (=> |(increase_priority_d2 )_9| (= priority_d2_10 (+ priority_d2_9 factor_9))))
+(assert (=> |(increase_priority_d2 )_9|
+    (= cost_d2_10 (+ cost_d2_9 (* factor_9 priority_d2_9)))))
+(assert (=> |(authorize_all_d2 )_9| (>= (- priority_d2_9 3.0) 0.0)))
+(assert (=> |(authorize_all_d2 )_9| (not clear_d2_l1_9)))
+(assert (=> |(authorize_all_d2 )_9| (not clear_d2_l2_9)))
+(assert (=> |(authorize_all_d2 )_9| (not clear_d2_l3_9)))
+(assert (=> |(authorize_all_d2 )_9| (not clear_d2_l4_9)))
+(assert (=> |(authorize_all_d2 )_9| clear_d2_l1_10))
+(assert (=> |(authorize_all_d2 )_9| clear_d2_l2_10))
+(assert (=> |(authorize_all_d2 )_9| clear_d2_l3_10))
+(assert (=> |(authorize_all_d2 )_9| clear_d2_l4_10))
+(assert (=> |(authorize_all_d2 )_9| (= cost_d2_10 (+ cost_d2_9 4.0))))
+(assert (=> |(decrease_factor )_9| (>= (- factor_9 1.0) 0.0)))
+(assert (=> |(decrease_factor )_9| (= factor_10 (- factor_9 (* (/ 1.0 2.0) factor_9)))))
+(assert (=> |(increase_factor )_9| (<= (- factor_9 10.0) 0.0)))
+(assert (=> |(increase_factor )_9| (= factor_10 (+ factor_9 (* (/ 1.0 2.0) factor_9)))))
+(assert (=> |(authorize_d1_l1 )_10| (not clear_d1_l1_10)))
+(assert (=> |(authorize_d1_l1 )_10| clear_d1_l1_11))
+(assert (=> |(authorize_d1_l1 )_10| (= cost_d1_11 (+ cost_d1_10 1.0))))
+(assert (=> |(authorize_d1_l2 )_10| (not clear_d1_l2_10)))
+(assert (=> |(authorize_d1_l2 )_10| clear_d1_l2_11))
+(assert (=> |(authorize_d1_l2 )_10| (not clear_d1_l1_11)))
+(assert (=> |(authorize_d1_l2 )_10| (= cost_d1_11 (+ cost_d1_10 2.0))))
+(assert (=> |(authorize_d1_l3 )_10| (not clear_d1_l3_10)))
+(assert (=> |(authorize_d1_l3 )_10| clear_d1_l3_11))
+(assert (=> |(authorize_d1_l3 )_10| (not clear_d1_l1_11)))
+(assert (=> |(authorize_d1_l3 )_10| (not clear_d1_l2_11)))
+(assert (=> |(authorize_d1_l3 )_10| (= cost_d1_11 (+ cost_d1_10 3.0))))
+(assert (=> |(authorize_d1_l4 )_10| (not clear_d1_l4_10)))
+(assert (=> |(authorize_d1_l4 )_10| clear_d1_l4_11))
+(assert (=> |(authorize_d1_l4 )_10| (not clear_d1_l1_11)))
+(assert (=> |(authorize_d1_l4 )_10| (not clear_d1_l2_11)))
+(assert (=> |(authorize_d1_l4 )_10| (not clear_d1_l3_11)))
+(assert (=> |(authorize_d1_l4 )_10| (= cost_d1_11 (+ cost_d1_10 4.0))))
+(assert (=> |(authorize_d2_l1 )_10| (not clear_d2_l1_10)))
+(assert (=> |(authorize_d2_l1 )_10| clear_d2_l1_11))
+(assert (=> |(authorize_d2_l1 )_10| (= cost_d2_11 (+ cost_d2_10 1.0))))
+(assert (=> |(authorize_d2_l2 )_10| (not clear_d2_l2_10)))
+(assert (=> |(authorize_d2_l2 )_10| clear_d2_l2_11))
+(assert (=> |(authorize_d2_l2 )_10| (not clear_d2_l1_11)))
+(assert (=> |(authorize_d2_l2 )_10| (= cost_d2_11 (+ cost_d2_10 2.0))))
+(assert (=> |(authorize_d2_l3 )_10| (not clear_d2_l3_10)))
+(assert (=> |(authorize_d2_l3 )_10| clear_d2_l3_11))
+(assert (=> |(authorize_d2_l3 )_10| (not clear_d2_l1_11)))
+(assert (=> |(authorize_d2_l3 )_10| (not clear_d2_l2_11)))
+(assert (=> |(authorize_d2_l3 )_10| (= cost_d2_11 (+ cost_d2_10 3.0))))
+(assert (=> |(authorize_d2_l4 )_10| (not clear_d2_l4_10)))
+(assert (=> |(authorize_d2_l4 )_10| clear_d2_l4_11))
+(assert (=> |(authorize_d2_l4 )_10| (not clear_d2_l1_11)))
+(assert (=> |(authorize_d2_l4 )_10| (not clear_d2_l2_11)))
+(assert (=> |(authorize_d2_l4 )_10| (not clear_d2_l3_11)))
+(assert (=> |(authorize_d2_l4 )_10| (= cost_d2_11 (+ cost_d2_10 4.0))))
+(assert (=> |(increase_priority_d1 )_10| (< (- priority_d1_10 3.0) 0.0)))
+(assert (=> |(increase_priority_d1 )_10|
+    (= priority_d1_11 (+ priority_d1_10 factor_10))))
+(assert (=> |(increase_priority_d1 )_10|
+    (= cost_d1_11 (+ cost_d1_10 (* factor_10 priority_d1_10)))))
+(assert (=> |(authorize_all_d1 )_10| (>= (- priority_d1_10 3.0) 0.0)))
+(assert (=> |(authorize_all_d1 )_10| (not clear_d1_l1_10)))
+(assert (=> |(authorize_all_d1 )_10| (not clear_d1_l2_10)))
+(assert (=> |(authorize_all_d1 )_10| (not clear_d1_l3_10)))
+(assert (=> |(authorize_all_d1 )_10| (not clear_d1_l4_10)))
+(assert (=> |(authorize_all_d1 )_10| clear_d1_l1_11))
+(assert (=> |(authorize_all_d1 )_10| clear_d1_l2_11))
+(assert (=> |(authorize_all_d1 )_10| clear_d1_l3_11))
+(assert (=> |(authorize_all_d1 )_10| clear_d1_l4_11))
+(assert (=> |(authorize_all_d1 )_10| (= cost_d1_11 (+ cost_d1_10 4.0))))
+(assert (=> |(increase_priority_d2 )_10| (< (- priority_d2_10 3.0) 0.0)))
+(assert (=> |(increase_priority_d2 )_10|
+    (= priority_d2_11 (+ priority_d2_10 factor_10))))
+(assert (=> |(increase_priority_d2 )_10|
+    (= cost_d2_11 (+ cost_d2_10 (* factor_10 priority_d2_10)))))
+(assert (=> |(authorize_all_d2 )_10| (>= (- priority_d2_10 3.0) 0.0)))
+(assert (=> |(authorize_all_d2 )_10| (not clear_d2_l1_10)))
+(assert (=> |(authorize_all_d2 )_10| (not clear_d2_l2_10)))
+(assert (=> |(authorize_all_d2 )_10| (not clear_d2_l3_10)))
+(assert (=> |(authorize_all_d2 )_10| (not clear_d2_l4_10)))
+(assert (=> |(authorize_all_d2 )_10| clear_d2_l1_11))
+(assert (=> |(authorize_all_d2 )_10| clear_d2_l2_11))
+(assert (=> |(authorize_all_d2 )_10| clear_d2_l3_11))
+(assert (=> |(authorize_all_d2 )_10| clear_d2_l4_11))
+(assert (=> |(authorize_all_d2 )_10| (= cost_d2_11 (+ cost_d2_10 4.0))))
+(assert (=> |(decrease_factor )_10| (>= (- factor_10 1.0) 0.0)))
+(assert (=> |(decrease_factor )_10|
+    (= factor_11 (- factor_10 (* (/ 1.0 2.0) factor_10)))))
+(assert (=> |(increase_factor )_10| (<= (- factor_10 10.0) 0.0)))
+(assert (=> |(increase_factor )_10|
+    (= factor_11 (+ factor_10 (* (/ 1.0 2.0) factor_10)))))
+(assert (=> |(authorize_d1_l1 )_11| (not clear_d1_l1_11)))
+(assert (=> |(authorize_d1_l1 )_11| clear_d1_l1_12))
+(assert (=> |(authorize_d1_l1 )_11| (= cost_d1_12 (+ cost_d1_11 1.0))))
+(assert (=> |(authorize_d1_l2 )_11| (not clear_d1_l2_11)))
+(assert (=> |(authorize_d1_l2 )_11| clear_d1_l2_12))
+(assert (=> |(authorize_d1_l2 )_11| (not clear_d1_l1_12)))
+(assert (=> |(authorize_d1_l2 )_11| (= cost_d1_12 (+ cost_d1_11 2.0))))
+(assert (=> |(authorize_d1_l3 )_11| (not clear_d1_l3_11)))
+(assert (=> |(authorize_d1_l3 )_11| clear_d1_l3_12))
+(assert (=> |(authorize_d1_l3 )_11| (not clear_d1_l1_12)))
+(assert (=> |(authorize_d1_l3 )_11| (not clear_d1_l2_12)))
+(assert (=> |(authorize_d1_l3 )_11| (= cost_d1_12 (+ cost_d1_11 3.0))))
+(assert (=> |(authorize_d1_l4 )_11| (not clear_d1_l4_11)))
+(assert (=> |(authorize_d1_l4 )_11| clear_d1_l4_12))
+(assert (=> |(authorize_d1_l4 )_11| (not clear_d1_l1_12)))
+(assert (=> |(authorize_d1_l4 )_11| (not clear_d1_l2_12)))
+(assert (=> |(authorize_d1_l4 )_11| (not clear_d1_l3_12)))
+(assert (=> |(authorize_d1_l4 )_11| (= cost_d1_12 (+ cost_d1_11 4.0))))
+(assert (=> |(authorize_d2_l1 )_11| (not clear_d2_l1_11)))
+(assert (=> |(authorize_d2_l1 )_11| clear_d2_l1_12))
+(assert (=> |(authorize_d2_l1 )_11| (= cost_d2_12 (+ cost_d2_11 1.0))))
+(assert (=> |(authorize_d2_l2 )_11| (not clear_d2_l2_11)))
+(assert (=> |(authorize_d2_l2 )_11| clear_d2_l2_12))
+(assert (=> |(authorize_d2_l2 )_11| (not clear_d2_l1_12)))
+(assert (=> |(authorize_d2_l2 )_11| (= cost_d2_12 (+ cost_d2_11 2.0))))
+(assert (=> |(authorize_d2_l3 )_11| (not clear_d2_l3_11)))
+(assert (=> |(authorize_d2_l3 )_11| clear_d2_l3_12))
+(assert (=> |(authorize_d2_l3 )_11| (not clear_d2_l1_12)))
+(assert (=> |(authorize_d2_l3 )_11| (not clear_d2_l2_12)))
+(assert (=> |(authorize_d2_l3 )_11| (= cost_d2_12 (+ cost_d2_11 3.0))))
+(assert (=> |(authorize_d2_l4 )_11| (not clear_d2_l4_11)))
+(assert (=> |(authorize_d2_l4 )_11| clear_d2_l4_12))
+(assert (=> |(authorize_d2_l4 )_11| (not clear_d2_l1_12)))
+(assert (=> |(authorize_d2_l4 )_11| (not clear_d2_l2_12)))
+(assert (=> |(authorize_d2_l4 )_11| (not clear_d2_l3_12)))
+(assert (=> |(authorize_d2_l4 )_11| (= cost_d2_12 (+ cost_d2_11 4.0))))
+(assert (=> |(increase_priority_d1 )_11| (< (- priority_d1_11 3.0) 0.0)))
+(assert (=> |(increase_priority_d1 )_11|
+    (= priority_d1_12 (+ priority_d1_11 factor_11))))
+(assert (=> |(increase_priority_d1 )_11|
+    (= cost_d1_12 (+ cost_d1_11 (* factor_11 priority_d1_11)))))
+(assert (=> |(authorize_all_d1 )_11| (>= (- priority_d1_11 3.0) 0.0)))
+(assert (=> |(authorize_all_d1 )_11| (not clear_d1_l1_11)))
+(assert (=> |(authorize_all_d1 )_11| (not clear_d1_l2_11)))
+(assert (=> |(authorize_all_d1 )_11| (not clear_d1_l3_11)))
+(assert (=> |(authorize_all_d1 )_11| (not clear_d1_l4_11)))
+(assert (=> |(authorize_all_d1 )_11| clear_d1_l1_12))
+(assert (=> |(authorize_all_d1 )_11| clear_d1_l2_12))
+(assert (=> |(authorize_all_d1 )_11| clear_d1_l3_12))
+(assert (=> |(authorize_all_d1 )_11| clear_d1_l4_12))
+(assert (=> |(authorize_all_d1 )_11| (= cost_d1_12 (+ cost_d1_11 4.0))))
+(assert (=> |(increase_priority_d2 )_11| (< (- priority_d2_11 3.0) 0.0)))
+(assert (=> |(increase_priority_d2 )_11|
+    (= priority_d2_12 (+ priority_d2_11 factor_11))))
+(assert (=> |(increase_priority_d2 )_11|
+    (= cost_d2_12 (+ cost_d2_11 (* factor_11 priority_d2_11)))))
+(assert (=> |(authorize_all_d2 )_11| (>= (- priority_d2_11 3.0) 0.0)))
+(assert (=> |(authorize_all_d2 )_11| (not clear_d2_l1_11)))
+(assert (=> |(authorize_all_d2 )_11| (not clear_d2_l2_11)))
+(assert (=> |(authorize_all_d2 )_11| (not clear_d2_l3_11)))
+(assert (=> |(authorize_all_d2 )_11| (not clear_d2_l4_11)))
+(assert (=> |(authorize_all_d2 )_11| clear_d2_l1_12))
+(assert (=> |(authorize_all_d2 )_11| clear_d2_l2_12))
+(assert (=> |(authorize_all_d2 )_11| clear_d2_l3_12))
+(assert (=> |(authorize_all_d2 )_11| clear_d2_l4_12))
+(assert (=> |(authorize_all_d2 )_11| (= cost_d2_12 (+ cost_d2_11 4.0))))
+(assert (=> |(decrease_factor )_11| (>= (- factor_11 1.0) 0.0)))
+(assert (=> |(decrease_factor )_11|
+    (= factor_12 (- factor_11 (* (/ 1.0 2.0) factor_11)))))
+(assert (=> |(increase_factor )_11| (<= (- factor_11 10.0) 0.0)))
+(assert (=> |(increase_factor )_11|
+    (= factor_12 (+ factor_11 (* (/ 1.0 2.0) factor_11)))))
+(assert (=> |(authorize_d1_l1 )_12| (not clear_d1_l1_12)))
+(assert (=> |(authorize_d1_l1 )_12| clear_d1_l1_13))
+(assert (=> |(authorize_d1_l1 )_12| (= cost_d1_13 (+ cost_d1_12 1.0))))
+(assert (=> |(authorize_d1_l2 )_12| (not clear_d1_l2_12)))
+(assert (=> |(authorize_d1_l2 )_12| clear_d1_l2_13))
+(assert (=> |(authorize_d1_l2 )_12| (not clear_d1_l1_13)))
+(assert (=> |(authorize_d1_l2 )_12| (= cost_d1_13 (+ cost_d1_12 2.0))))
+(assert (=> |(authorize_d1_l3 )_12| (not clear_d1_l3_12)))
+(assert (=> |(authorize_d1_l3 )_12| clear_d1_l3_13))
+(assert (=> |(authorize_d1_l3 )_12| (not clear_d1_l1_13)))
+(assert (=> |(authorize_d1_l3 )_12| (not clear_d1_l2_13)))
+(assert (=> |(authorize_d1_l3 )_12| (= cost_d1_13 (+ cost_d1_12 3.0))))
+(assert (=> |(authorize_d1_l4 )_12| (not clear_d1_l4_12)))
+(assert (=> |(authorize_d1_l4 )_12| clear_d1_l4_13))
+(assert (=> |(authorize_d1_l4 )_12| (not clear_d1_l1_13)))
+(assert (=> |(authorize_d1_l4 )_12| (not clear_d1_l2_13)))
+(assert (=> |(authorize_d1_l4 )_12| (not clear_d1_l3_13)))
+(assert (=> |(authorize_d1_l4 )_12| (= cost_d1_13 (+ cost_d1_12 4.0))))
+(assert (=> |(authorize_d2_l1 )_12| (not clear_d2_l1_12)))
+(assert (=> |(authorize_d2_l1 )_12| clear_d2_l1_13))
+(assert (=> |(authorize_d2_l1 )_12| (= cost_d2_13 (+ cost_d2_12 1.0))))
+(assert (=> |(authorize_d2_l2 )_12| (not clear_d2_l2_12)))
+(assert (=> |(authorize_d2_l2 )_12| clear_d2_l2_13))
+(assert (=> |(authorize_d2_l2 )_12| (not clear_d2_l1_13)))
+(assert (=> |(authorize_d2_l2 )_12| (= cost_d2_13 (+ cost_d2_12 2.0))))
+(assert (=> |(authorize_d2_l3 )_12| (not clear_d2_l3_12)))
+(assert (=> |(authorize_d2_l3 )_12| clear_d2_l3_13))
+(assert (=> |(authorize_d2_l3 )_12| (not clear_d2_l1_13)))
+(assert (=> |(authorize_d2_l3 )_12| (not clear_d2_l2_13)))
+(assert (=> |(authorize_d2_l3 )_12| (= cost_d2_13 (+ cost_d2_12 3.0))))
+(assert (=> |(authorize_d2_l4 )_12| (not clear_d2_l4_12)))
+(assert (=> |(authorize_d2_l4 )_12| clear_d2_l4_13))
+(assert (=> |(authorize_d2_l4 )_12| (not clear_d2_l1_13)))
+(assert (=> |(authorize_d2_l4 )_12| (not clear_d2_l2_13)))
+(assert (=> |(authorize_d2_l4 )_12| (not clear_d2_l3_13)))
+(assert (=> |(authorize_d2_l4 )_12| (= cost_d2_13 (+ cost_d2_12 4.0))))
+(assert (=> |(increase_priority_d1 )_12| (< (- priority_d1_12 3.0) 0.0)))
+(assert (=> |(increase_priority_d1 )_12|
+    (= priority_d1_13 (+ priority_d1_12 factor_12))))
+(assert (=> |(increase_priority_d1 )_12|
+    (= cost_d1_13 (+ cost_d1_12 (* factor_12 priority_d1_12)))))
+(assert (=> |(authorize_all_d1 )_12| (>= (- priority_d1_12 3.0) 0.0)))
+(assert (=> |(authorize_all_d1 )_12| (not clear_d1_l1_12)))
+(assert (=> |(authorize_all_d1 )_12| (not clear_d1_l2_12)))
+(assert (=> |(authorize_all_d1 )_12| (not clear_d1_l3_12)))
+(assert (=> |(authorize_all_d1 )_12| (not clear_d1_l4_12)))
+(assert (=> |(authorize_all_d1 )_12| clear_d1_l1_13))
+(assert (=> |(authorize_all_d1 )_12| clear_d1_l2_13))
+(assert (=> |(authorize_all_d1 )_12| clear_d1_l3_13))
+(assert (=> |(authorize_all_d1 )_12| clear_d1_l4_13))
+(assert (=> |(authorize_all_d1 )_12| (= cost_d1_13 (+ cost_d1_12 4.0))))
+(assert (=> |(increase_priority_d2 )_12| (< (- priority_d2_12 3.0) 0.0)))
+(assert (=> |(increase_priority_d2 )_12|
+    (= priority_d2_13 (+ priority_d2_12 factor_12))))
+(assert (=> |(increase_priority_d2 )_12|
+    (= cost_d2_13 (+ cost_d2_12 (* factor_12 priority_d2_12)))))
+(assert (=> |(authorize_all_d2 )_12| (>= (- priority_d2_12 3.0) 0.0)))
+(assert (=> |(authorize_all_d2 )_12| (not clear_d2_l1_12)))
+(assert (=> |(authorize_all_d2 )_12| (not clear_d2_l2_12)))
+(assert (=> |(authorize_all_d2 )_12| (not clear_d2_l3_12)))
+(assert (=> |(authorize_all_d2 )_12| (not clear_d2_l4_12)))
+(assert (=> |(authorize_all_d2 )_12| clear_d2_l1_13))
+(assert (=> |(authorize_all_d2 )_12| clear_d2_l2_13))
+(assert (=> |(authorize_all_d2 )_12| clear_d2_l3_13))
+(assert (=> |(authorize_all_d2 )_12| clear_d2_l4_13))
+(assert (=> |(authorize_all_d2 )_12| (= cost_d2_13 (+ cost_d2_12 4.0))))
+(assert (=> |(decrease_factor )_12| (>= (- factor_12 1.0) 0.0)))
+(assert (=> |(decrease_factor )_12|
+    (= factor_13 (- factor_12 (* (/ 1.0 2.0) factor_12)))))
+(assert (=> |(increase_factor )_12| (<= (- factor_12 10.0) 0.0)))
+(assert (=> |(increase_factor )_12|
+    (= factor_13 (+ factor_12 (* (/ 1.0 2.0) factor_12)))))
+(assert (=> |(authorize_d1_l1 )_13| (not clear_d1_l1_13)))
+(assert (=> |(authorize_d1_l1 )_13| clear_d1_l1_14))
+(assert (=> |(authorize_d1_l1 )_13| (= cost_d1_14 (+ cost_d1_13 1.0))))
+(assert (=> |(authorize_d1_l2 )_13| (not clear_d1_l2_13)))
+(assert (=> |(authorize_d1_l2 )_13| clear_d1_l2_14))
+(assert (=> |(authorize_d1_l2 )_13| (not clear_d1_l1_14)))
+(assert (=> |(authorize_d1_l2 )_13| (= cost_d1_14 (+ cost_d1_13 2.0))))
+(assert (=> |(authorize_d1_l3 )_13| (not clear_d1_l3_13)))
+(assert (=> |(authorize_d1_l3 )_13| clear_d1_l3_14))
+(assert (=> |(authorize_d1_l3 )_13| (not clear_d1_l1_14)))
+(assert (=> |(authorize_d1_l3 )_13| (not clear_d1_l2_14)))
+(assert (=> |(authorize_d1_l3 )_13| (= cost_d1_14 (+ cost_d1_13 3.0))))
+(assert (=> |(authorize_d1_l4 )_13| (not clear_d1_l4_13)))
+(assert (=> |(authorize_d1_l4 )_13| clear_d1_l4_14))
+(assert (=> |(authorize_d1_l4 )_13| (not clear_d1_l1_14)))
+(assert (=> |(authorize_d1_l4 )_13| (not clear_d1_l2_14)))
+(assert (=> |(authorize_d1_l4 )_13| (not clear_d1_l3_14)))
+(assert (=> |(authorize_d1_l4 )_13| (= cost_d1_14 (+ cost_d1_13 4.0))))
+(assert (=> |(authorize_d2_l1 )_13| (not clear_d2_l1_13)))
+(assert (=> |(authorize_d2_l1 )_13| clear_d2_l1_14))
+(assert (=> |(authorize_d2_l1 )_13| (= cost_d2_14 (+ cost_d2_13 1.0))))
+(assert (=> |(authorize_d2_l2 )_13| (not clear_d2_l2_13)))
+(assert (=> |(authorize_d2_l2 )_13| clear_d2_l2_14))
+(assert (=> |(authorize_d2_l2 )_13| (not clear_d2_l1_14)))
+(assert (=> |(authorize_d2_l2 )_13| (= cost_d2_14 (+ cost_d2_13 2.0))))
+(assert (=> |(authorize_d2_l3 )_13| (not clear_d2_l3_13)))
+(assert (=> |(authorize_d2_l3 )_13| clear_d2_l3_14))
+(assert (=> |(authorize_d2_l3 )_13| (not clear_d2_l1_14)))
+(assert (=> |(authorize_d2_l3 )_13| (not clear_d2_l2_14)))
+(assert (=> |(authorize_d2_l3 )_13| (= cost_d2_14 (+ cost_d2_13 3.0))))
+(assert (=> |(authorize_d2_l4 )_13| (not clear_d2_l4_13)))
+(assert (=> |(authorize_d2_l4 )_13| clear_d2_l4_14))
+(assert (=> |(authorize_d2_l4 )_13| (not clear_d2_l1_14)))
+(assert (=> |(authorize_d2_l4 )_13| (not clear_d2_l2_14)))
+(assert (=> |(authorize_d2_l4 )_13| (not clear_d2_l3_14)))
+(assert (=> |(authorize_d2_l4 )_13| (= cost_d2_14 (+ cost_d2_13 4.0))))
+(assert (=> |(increase_priority_d1 )_13| (< (- priority_d1_13 3.0) 0.0)))
+(assert (=> |(increase_priority_d1 )_13|
+    (= priority_d1_14 (+ priority_d1_13 factor_13))))
+(assert (=> |(increase_priority_d1 )_13|
+    (= cost_d1_14 (+ cost_d1_13 (* factor_13 priority_d1_13)))))
+(assert (=> |(authorize_all_d1 )_13| (>= (- priority_d1_13 3.0) 0.0)))
+(assert (=> |(authorize_all_d1 )_13| (not clear_d1_l1_13)))
+(assert (=> |(authorize_all_d1 )_13| (not clear_d1_l2_13)))
+(assert (=> |(authorize_all_d1 )_13| (not clear_d1_l3_13)))
+(assert (=> |(authorize_all_d1 )_13| (not clear_d1_l4_13)))
+(assert (=> |(authorize_all_d1 )_13| clear_d1_l1_14))
+(assert (=> |(authorize_all_d1 )_13| clear_d1_l2_14))
+(assert (=> |(authorize_all_d1 )_13| clear_d1_l3_14))
+(assert (=> |(authorize_all_d1 )_13| clear_d1_l4_14))
+(assert (=> |(authorize_all_d1 )_13| (= cost_d1_14 (+ cost_d1_13 4.0))))
+(assert (=> |(increase_priority_d2 )_13| (< (- priority_d2_13 3.0) 0.0)))
+(assert (=> |(increase_priority_d2 )_13|
+    (= priority_d2_14 (+ priority_d2_13 factor_13))))
+(assert (=> |(increase_priority_d2 )_13|
+    (= cost_d2_14 (+ cost_d2_13 (* factor_13 priority_d2_13)))))
+(assert (=> |(authorize_all_d2 )_13| (>= (- priority_d2_13 3.0) 0.0)))
+(assert (=> |(authorize_all_d2 )_13| (not clear_d2_l1_13)))
+(assert (=> |(authorize_all_d2 )_13| (not clear_d2_l2_13)))
+(assert (=> |(authorize_all_d2 )_13| (not clear_d2_l3_13)))
+(assert (=> |(authorize_all_d2 )_13| (not clear_d2_l4_13)))
+(assert (=> |(authorize_all_d2 )_13| clear_d2_l1_14))
+(assert (=> |(authorize_all_d2 )_13| clear_d2_l2_14))
+(assert (=> |(authorize_all_d2 )_13| clear_d2_l3_14))
+(assert (=> |(authorize_all_d2 )_13| clear_d2_l4_14))
+(assert (=> |(authorize_all_d2 )_13| (= cost_d2_14 (+ cost_d2_13 4.0))))
+(assert (=> |(decrease_factor )_13| (>= (- factor_13 1.0) 0.0)))
+(assert (=> |(decrease_factor )_13|
+    (= factor_14 (- factor_13 (* (/ 1.0 2.0) factor_13)))))
+(assert (=> |(increase_factor )_13| (<= (- factor_13 10.0) 0.0)))
+(assert (=> |(increase_factor )_13|
+    (= factor_14 (+ factor_13 (* (/ 1.0 2.0) factor_13)))))
+(assert (=> |(authorize_d1_l1 )_14| (not clear_d1_l1_14)))
+(assert (=> |(authorize_d1_l1 )_14| clear_d1_l1_15))
+(assert (=> |(authorize_d1_l1 )_14| (= cost_d1_15 (+ cost_d1_14 1.0))))
+(assert (=> |(authorize_d1_l2 )_14| (not clear_d1_l2_14)))
+(assert (=> |(authorize_d1_l2 )_14| clear_d1_l2_15))
+(assert (=> |(authorize_d1_l2 )_14| (not clear_d1_l1_15)))
+(assert (=> |(authorize_d1_l2 )_14| (= cost_d1_15 (+ cost_d1_14 2.0))))
+(assert (=> |(authorize_d1_l3 )_14| (not clear_d1_l3_14)))
+(assert (=> |(authorize_d1_l3 )_14| clear_d1_l3_15))
+(assert (=> |(authorize_d1_l3 )_14| (not clear_d1_l1_15)))
+(assert (=> |(authorize_d1_l3 )_14| (not clear_d1_l2_15)))
+(assert (=> |(authorize_d1_l3 )_14| (= cost_d1_15 (+ cost_d1_14 3.0))))
+(assert (=> |(authorize_d1_l4 )_14| (not clear_d1_l4_14)))
+(assert (=> |(authorize_d1_l4 )_14| clear_d1_l4_15))
+(assert (=> |(authorize_d1_l4 )_14| (not clear_d1_l1_15)))
+(assert (=> |(authorize_d1_l4 )_14| (not clear_d1_l2_15)))
+(assert (=> |(authorize_d1_l4 )_14| (not clear_d1_l3_15)))
+(assert (=> |(authorize_d1_l4 )_14| (= cost_d1_15 (+ cost_d1_14 4.0))))
+(assert (=> |(authorize_d2_l1 )_14| (not clear_d2_l1_14)))
+(assert (=> |(authorize_d2_l1 )_14| clear_d2_l1_15))
+(assert (=> |(authorize_d2_l1 )_14| (= cost_d2_15 (+ cost_d2_14 1.0))))
+(assert (=> |(authorize_d2_l2 )_14| (not clear_d2_l2_14)))
+(assert (=> |(authorize_d2_l2 )_14| clear_d2_l2_15))
+(assert (=> |(authorize_d2_l2 )_14| (not clear_d2_l1_15)))
+(assert (=> |(authorize_d2_l2 )_14| (= cost_d2_15 (+ cost_d2_14 2.0))))
+(assert (=> |(authorize_d2_l3 )_14| (not clear_d2_l3_14)))
+(assert (=> |(authorize_d2_l3 )_14| clear_d2_l3_15))
+(assert (=> |(authorize_d2_l3 )_14| (not clear_d2_l1_15)))
+(assert (=> |(authorize_d2_l3 )_14| (not clear_d2_l2_15)))
+(assert (=> |(authorize_d2_l3 )_14| (= cost_d2_15 (+ cost_d2_14 3.0))))
+(assert (=> |(authorize_d2_l4 )_14| (not clear_d2_l4_14)))
+(assert (=> |(authorize_d2_l4 )_14| clear_d2_l4_15))
+(assert (=> |(authorize_d2_l4 )_14| (not clear_d2_l1_15)))
+(assert (=> |(authorize_d2_l4 )_14| (not clear_d2_l2_15)))
+(assert (=> |(authorize_d2_l4 )_14| (not clear_d2_l3_15)))
+(assert (=> |(authorize_d2_l4 )_14| (= cost_d2_15 (+ cost_d2_14 4.0))))
+(assert (=> |(increase_priority_d1 )_14| (< (- priority_d1_14 3.0) 0.0)))
+(assert (=> |(increase_priority_d1 )_14|
+    (= priority_d1_15 (+ priority_d1_14 factor_14))))
+(assert (=> |(increase_priority_d1 )_14|
+    (= cost_d1_15 (+ cost_d1_14 (* factor_14 priority_d1_14)))))
+(assert (=> |(authorize_all_d1 )_14| (>= (- priority_d1_14 3.0) 0.0)))
+(assert (=> |(authorize_all_d1 )_14| (not clear_d1_l1_14)))
+(assert (=> |(authorize_all_d1 )_14| (not clear_d1_l2_14)))
+(assert (=> |(authorize_all_d1 )_14| (not clear_d1_l3_14)))
+(assert (=> |(authorize_all_d1 )_14| (not clear_d1_l4_14)))
+(assert (=> |(authorize_all_d1 )_14| clear_d1_l1_15))
+(assert (=> |(authorize_all_d1 )_14| clear_d1_l2_15))
+(assert (=> |(authorize_all_d1 )_14| clear_d1_l3_15))
+(assert (=> |(authorize_all_d1 )_14| clear_d1_l4_15))
+(assert (=> |(authorize_all_d1 )_14| (= cost_d1_15 (+ cost_d1_14 4.0))))
+(assert (=> |(increase_priority_d2 )_14| (< (- priority_d2_14 3.0) 0.0)))
+(assert (=> |(increase_priority_d2 )_14|
+    (= priority_d2_15 (+ priority_d2_14 factor_14))))
+(assert (=> |(increase_priority_d2 )_14|
+    (= cost_d2_15 (+ cost_d2_14 (* factor_14 priority_d2_14)))))
+(assert (=> |(authorize_all_d2 )_14| (>= (- priority_d2_14 3.0) 0.0)))
+(assert (=> |(authorize_all_d2 )_14| (not clear_d2_l1_14)))
+(assert (=> |(authorize_all_d2 )_14| (not clear_d2_l2_14)))
+(assert (=> |(authorize_all_d2 )_14| (not clear_d2_l3_14)))
+(assert (=> |(authorize_all_d2 )_14| (not clear_d2_l4_14)))
+(assert (=> |(authorize_all_d2 )_14| clear_d2_l1_15))
+(assert (=> |(authorize_all_d2 )_14| clear_d2_l2_15))
+(assert (=> |(authorize_all_d2 )_14| clear_d2_l3_15))
+(assert (=> |(authorize_all_d2 )_14| clear_d2_l4_15))
+(assert (=> |(authorize_all_d2 )_14| (= cost_d2_15 (+ cost_d2_14 4.0))))
+(assert (=> |(decrease_factor )_14| (>= (- factor_14 1.0) 0.0)))
+(assert (=> |(decrease_factor )_14|
+    (= factor_15 (- factor_14 (* (/ 1.0 2.0) factor_14)))))
+(assert (=> |(increase_factor )_14| (<= (- factor_14 10.0) 0.0)))
+(assert (=> |(increase_factor )_14|
+    (= factor_15 (+ factor_14 (* (/ 1.0 2.0) factor_14)))))
+(assert (=> |(authorize_d1_l1 )_15| (not clear_d1_l1_15)))
+(assert (=> |(authorize_d1_l1 )_15| clear_d1_l1_16))
+(assert (=> |(authorize_d1_l1 )_15| (= cost_d1_16 (+ cost_d1_15 1.0))))
+(assert (=> |(authorize_d1_l2 )_15| (not clear_d1_l2_15)))
+(assert (=> |(authorize_d1_l2 )_15| clear_d1_l2_16))
+(assert (=> |(authorize_d1_l2 )_15| (not clear_d1_l1_16)))
+(assert (=> |(authorize_d1_l2 )_15| (= cost_d1_16 (+ cost_d1_15 2.0))))
+(assert (=> |(authorize_d1_l3 )_15| (not clear_d1_l3_15)))
+(assert (=> |(authorize_d1_l3 )_15| clear_d1_l3_16))
+(assert (=> |(authorize_d1_l3 )_15| (not clear_d1_l1_16)))
+(assert (=> |(authorize_d1_l3 )_15| (not clear_d1_l2_16)))
+(assert (=> |(authorize_d1_l3 )_15| (= cost_d1_16 (+ cost_d1_15 3.0))))
+(assert (=> |(authorize_d1_l4 )_15| (not clear_d1_l4_15)))
+(assert (=> |(authorize_d1_l4 )_15| clear_d1_l4_16))
+(assert (=> |(authorize_d1_l4 )_15| (not clear_d1_l1_16)))
+(assert (=> |(authorize_d1_l4 )_15| (not clear_d1_l2_16)))
+(assert (=> |(authorize_d1_l4 )_15| (not clear_d1_l3_16)))
+(assert (=> |(authorize_d1_l4 )_15| (= cost_d1_16 (+ cost_d1_15 4.0))))
+(assert (=> |(authorize_d2_l1 )_15| (not clear_d2_l1_15)))
+(assert (=> |(authorize_d2_l1 )_15| clear_d2_l1_16))
+(assert (=> |(authorize_d2_l1 )_15| (= cost_d2_16 (+ cost_d2_15 1.0))))
+(assert (=> |(authorize_d2_l2 )_15| (not clear_d2_l2_15)))
+(assert (=> |(authorize_d2_l2 )_15| clear_d2_l2_16))
+(assert (=> |(authorize_d2_l2 )_15| (not clear_d2_l1_16)))
+(assert (=> |(authorize_d2_l2 )_15| (= cost_d2_16 (+ cost_d2_15 2.0))))
+(assert (=> |(authorize_d2_l3 )_15| (not clear_d2_l3_15)))
+(assert (=> |(authorize_d2_l3 )_15| clear_d2_l3_16))
+(assert (=> |(authorize_d2_l3 )_15| (not clear_d2_l1_16)))
+(assert (=> |(authorize_d2_l3 )_15| (not clear_d2_l2_16)))
+(assert (=> |(authorize_d2_l3 )_15| (= cost_d2_16 (+ cost_d2_15 3.0))))
+(assert (=> |(authorize_d2_l4 )_15| (not clear_d2_l4_15)))
+(assert (=> |(authorize_d2_l4 )_15| clear_d2_l4_16))
+(assert (=> |(authorize_d2_l4 )_15| (not clear_d2_l1_16)))
+(assert (=> |(authorize_d2_l4 )_15| (not clear_d2_l2_16)))
+(assert (=> |(authorize_d2_l4 )_15| (not clear_d2_l3_16)))
+(assert (=> |(authorize_d2_l4 )_15| (= cost_d2_16 (+ cost_d2_15 4.0))))
+(assert (=> |(increase_priority_d1 )_15| (< (- priority_d1_15 3.0) 0.0)))
+(assert (=> |(increase_priority_d1 )_15|
+    (= priority_d1_16 (+ priority_d1_15 factor_15))))
+(assert (=> |(increase_priority_d1 )_15|
+    (= cost_d1_16 (+ cost_d1_15 (* factor_15 priority_d1_15)))))
+(assert (=> |(authorize_all_d1 )_15| (>= (- priority_d1_15 3.0) 0.0)))
+(assert (=> |(authorize_all_d1 )_15| (not clear_d1_l1_15)))
+(assert (=> |(authorize_all_d1 )_15| (not clear_d1_l2_15)))
+(assert (=> |(authorize_all_d1 )_15| (not clear_d1_l3_15)))
+(assert (=> |(authorize_all_d1 )_15| (not clear_d1_l4_15)))
+(assert (=> |(authorize_all_d1 )_15| clear_d1_l1_16))
+(assert (=> |(authorize_all_d1 )_15| clear_d1_l2_16))
+(assert (=> |(authorize_all_d1 )_15| clear_d1_l3_16))
+(assert (=> |(authorize_all_d1 )_15| clear_d1_l4_16))
+(assert (=> |(authorize_all_d1 )_15| (= cost_d1_16 (+ cost_d1_15 4.0))))
+(assert (=> |(increase_priority_d2 )_15| (< (- priority_d2_15 3.0) 0.0)))
+(assert (=> |(increase_priority_d2 )_15|
+    (= priority_d2_16 (+ priority_d2_15 factor_15))))
+(assert (=> |(increase_priority_d2 )_15|
+    (= cost_d2_16 (+ cost_d2_15 (* factor_15 priority_d2_15)))))
+(assert (=> |(authorize_all_d2 )_15| (>= (- priority_d2_15 3.0) 0.0)))
+(assert (=> |(authorize_all_d2 )_15| (not clear_d2_l1_15)))
+(assert (=> |(authorize_all_d2 )_15| (not clear_d2_l2_15)))
+(assert (=> |(authorize_all_d2 )_15| (not clear_d2_l3_15)))
+(assert (=> |(authorize_all_d2 )_15| (not clear_d2_l4_15)))
+(assert (=> |(authorize_all_d2 )_15| clear_d2_l1_16))
+(assert (=> |(authorize_all_d2 )_15| clear_d2_l2_16))
+(assert (=> |(authorize_all_d2 )_15| clear_d2_l3_16))
+(assert (=> |(authorize_all_d2 )_15| clear_d2_l4_16))
+(assert (=> |(authorize_all_d2 )_15| (= cost_d2_16 (+ cost_d2_15 4.0))))
+(assert (=> |(decrease_factor )_15| (>= (- factor_15 1.0) 0.0)))
+(assert (=> |(decrease_factor )_15|
+    (= factor_16 (- factor_15 (* (/ 1.0 2.0) factor_15)))))
+(assert (=> |(increase_factor )_15| (<= (- factor_15 10.0) 0.0)))
+(assert (=> |(increase_factor )_15|
+    (= factor_16 (+ factor_15 (* (/ 1.0 2.0) factor_15)))))
+(assert (=> |(authorize_d1_l1 )_16| (not clear_d1_l1_16)))
+(assert (=> |(authorize_d1_l1 )_16| clear_d1_l1_17))
+(assert (=> |(authorize_d1_l1 )_16| (= cost_d1_17 (+ cost_d1_16 1.0))))
+(assert (=> |(authorize_d1_l2 )_16| (not clear_d1_l2_16)))
+(assert (=> |(authorize_d1_l2 )_16| clear_d1_l2_17))
+(assert (=> |(authorize_d1_l2 )_16| (not clear_d1_l1_17)))
+(assert (=> |(authorize_d1_l2 )_16| (= cost_d1_17 (+ cost_d1_16 2.0))))
+(assert (=> |(authorize_d1_l3 )_16| (not clear_d1_l3_16)))
+(assert (=> |(authorize_d1_l3 )_16| clear_d1_l3_17))
+(assert (=> |(authorize_d1_l3 )_16| (not clear_d1_l1_17)))
+(assert (=> |(authorize_d1_l3 )_16| (not clear_d1_l2_17)))
+(assert (=> |(authorize_d1_l3 )_16| (= cost_d1_17 (+ cost_d1_16 3.0))))
+(assert (=> |(authorize_d1_l4 )_16| (not clear_d1_l4_16)))
+(assert (=> |(authorize_d1_l4 )_16| clear_d1_l4_17))
+(assert (=> |(authorize_d1_l4 )_16| (not clear_d1_l1_17)))
+(assert (=> |(authorize_d1_l4 )_16| (not clear_d1_l2_17)))
+(assert (=> |(authorize_d1_l4 )_16| (not clear_d1_l3_17)))
+(assert (=> |(authorize_d1_l4 )_16| (= cost_d1_17 (+ cost_d1_16 4.0))))
+(assert (=> |(authorize_d2_l1 )_16| (not clear_d2_l1_16)))
+(assert (=> |(authorize_d2_l1 )_16| clear_d2_l1_17))
+(assert (=> |(authorize_d2_l1 )_16| (= cost_d2_17 (+ cost_d2_16 1.0))))
+(assert (=> |(authorize_d2_l2 )_16| (not clear_d2_l2_16)))
+(assert (=> |(authorize_d2_l2 )_16| clear_d2_l2_17))
+(assert (=> |(authorize_d2_l2 )_16| (not clear_d2_l1_17)))
+(assert (=> |(authorize_d2_l2 )_16| (= cost_d2_17 (+ cost_d2_16 2.0))))
+(assert (=> |(authorize_d2_l3 )_16| (not clear_d2_l3_16)))
+(assert (=> |(authorize_d2_l3 )_16| clear_d2_l3_17))
+(assert (=> |(authorize_d2_l3 )_16| (not clear_d2_l1_17)))
+(assert (=> |(authorize_d2_l3 )_16| (not clear_d2_l2_17)))
+(assert (=> |(authorize_d2_l3 )_16| (= cost_d2_17 (+ cost_d2_16 3.0))))
+(assert (=> |(authorize_d2_l4 )_16| (not clear_d2_l4_16)))
+(assert (=> |(authorize_d2_l4 )_16| clear_d2_l4_17))
+(assert (=> |(authorize_d2_l4 )_16| (not clear_d2_l1_17)))
+(assert (=> |(authorize_d2_l4 )_16| (not clear_d2_l2_17)))
+(assert (=> |(authorize_d2_l4 )_16| (not clear_d2_l3_17)))
+(assert (=> |(authorize_d2_l4 )_16| (= cost_d2_17 (+ cost_d2_16 4.0))))
+(assert (=> |(increase_priority_d1 )_16| (< (- priority_d1_16 3.0) 0.0)))
+(assert (=> |(increase_priority_d1 )_16|
+    (= priority_d1_17 (+ priority_d1_16 factor_16))))
+(assert (=> |(increase_priority_d1 )_16|
+    (= cost_d1_17 (+ cost_d1_16 (* factor_16 priority_d1_16)))))
+(assert (=> |(authorize_all_d1 )_16| (>= (- priority_d1_16 3.0) 0.0)))
+(assert (=> |(authorize_all_d1 )_16| (not clear_d1_l1_16)))
+(assert (=> |(authorize_all_d1 )_16| (not clear_d1_l2_16)))
+(assert (=> |(authorize_all_d1 )_16| (not clear_d1_l3_16)))
+(assert (=> |(authorize_all_d1 )_16| (not clear_d1_l4_16)))
+(assert (=> |(authorize_all_d1 )_16| clear_d1_l1_17))
+(assert (=> |(authorize_all_d1 )_16| clear_d1_l2_17))
+(assert (=> |(authorize_all_d1 )_16| clear_d1_l3_17))
+(assert (=> |(authorize_all_d1 )_16| clear_d1_l4_17))
+(assert (=> |(authorize_all_d1 )_16| (= cost_d1_17 (+ cost_d1_16 4.0))))
+(assert (=> |(increase_priority_d2 )_16| (< (- priority_d2_16 3.0) 0.0)))
+(assert (=> |(increase_priority_d2 )_16|
+    (= priority_d2_17 (+ priority_d2_16 factor_16))))
+(assert (=> |(increase_priority_d2 )_16|
+    (= cost_d2_17 (+ cost_d2_16 (* factor_16 priority_d2_16)))))
+(assert (=> |(authorize_all_d2 )_16| (>= (- priority_d2_16 3.0) 0.0)))
+(assert (=> |(authorize_all_d2 )_16| (not clear_d2_l1_16)))
+(assert (=> |(authorize_all_d2 )_16| (not clear_d2_l2_16)))
+(assert (=> |(authorize_all_d2 )_16| (not clear_d2_l3_16)))
+(assert (=> |(authorize_all_d2 )_16| (not clear_d2_l4_16)))
+(assert (=> |(authorize_all_d2 )_16| clear_d2_l1_17))
+(assert (=> |(authorize_all_d2 )_16| clear_d2_l2_17))
+(assert (=> |(authorize_all_d2 )_16| clear_d2_l3_17))
+(assert (=> |(authorize_all_d2 )_16| clear_d2_l4_17))
+(assert (=> |(authorize_all_d2 )_16| (= cost_d2_17 (+ cost_d2_16 4.0))))
+(assert (=> |(decrease_factor )_16| (>= (- factor_16 1.0) 0.0)))
+(assert (=> |(decrease_factor )_16|
+    (= factor_17 (- factor_16 (* (/ 1.0 2.0) factor_16)))))
+(assert (=> |(increase_factor )_16| (<= (- factor_16 10.0) 0.0)))
+(assert (=> |(increase_factor )_16|
+    (= factor_17 (+ factor_16 (* (/ 1.0 2.0) factor_16)))))
+(assert (=> |(authorize_d1_l1 )_17| (not clear_d1_l1_17)))
+(assert (=> |(authorize_d1_l1 )_17| clear_d1_l1_18))
+(assert (=> |(authorize_d1_l1 )_17| (= cost_d1_18 (+ cost_d1_17 1.0))))
+(assert (=> |(authorize_d1_l2 )_17| (not clear_d1_l2_17)))
+(assert (=> |(authorize_d1_l2 )_17| clear_d1_l2_18))
+(assert (=> |(authorize_d1_l2 )_17| (not clear_d1_l1_18)))
+(assert (=> |(authorize_d1_l2 )_17| (= cost_d1_18 (+ cost_d1_17 2.0))))
+(assert (=> |(authorize_d1_l3 )_17| (not clear_d1_l3_17)))
+(assert (=> |(authorize_d1_l3 )_17| clear_d1_l3_18))
+(assert (=> |(authorize_d1_l3 )_17| (not clear_d1_l1_18)))
+(assert (=> |(authorize_d1_l3 )_17| (not clear_d1_l2_18)))
+(assert (=> |(authorize_d1_l3 )_17| (= cost_d1_18 (+ cost_d1_17 3.0))))
+(assert (=> |(authorize_d1_l4 )_17| (not clear_d1_l4_17)))
+(assert (=> |(authorize_d1_l4 )_17| clear_d1_l4_18))
+(assert (=> |(authorize_d1_l4 )_17| (not clear_d1_l1_18)))
+(assert (=> |(authorize_d1_l4 )_17| (not clear_d1_l2_18)))
+(assert (=> |(authorize_d1_l4 )_17| (not clear_d1_l3_18)))
+(assert (=> |(authorize_d1_l4 )_17| (= cost_d1_18 (+ cost_d1_17 4.0))))
+(assert (=> |(authorize_d2_l1 )_17| (not clear_d2_l1_17)))
+(assert (=> |(authorize_d2_l1 )_17| clear_d2_l1_18))
+(assert (=> |(authorize_d2_l1 )_17| (= cost_d2_18 (+ cost_d2_17 1.0))))
+(assert (=> |(authorize_d2_l2 )_17| (not clear_d2_l2_17)))
+(assert (=> |(authorize_d2_l2 )_17| clear_d2_l2_18))
+(assert (=> |(authorize_d2_l2 )_17| (not clear_d2_l1_18)))
+(assert (=> |(authorize_d2_l2 )_17| (= cost_d2_18 (+ cost_d2_17 2.0))))
+(assert (=> |(authorize_d2_l3 )_17| (not clear_d2_l3_17)))
+(assert (=> |(authorize_d2_l3 )_17| clear_d2_l3_18))
+(assert (=> |(authorize_d2_l3 )_17| (not clear_d2_l1_18)))
+(assert (=> |(authorize_d2_l3 )_17| (not clear_d2_l2_18)))
+(assert (=> |(authorize_d2_l3 )_17| (= cost_d2_18 (+ cost_d2_17 3.0))))
+(assert (=> |(authorize_d2_l4 )_17| (not clear_d2_l4_17)))
+(assert (=> |(authorize_d2_l4 )_17| clear_d2_l4_18))
+(assert (=> |(authorize_d2_l4 )_17| (not clear_d2_l1_18)))
+(assert (=> |(authorize_d2_l4 )_17| (not clear_d2_l2_18)))
+(assert (=> |(authorize_d2_l4 )_17| (not clear_d2_l3_18)))
+(assert (=> |(authorize_d2_l4 )_17| (= cost_d2_18 (+ cost_d2_17 4.0))))
+(assert (=> |(increase_priority_d1 )_17| (< (- priority_d1_17 3.0) 0.0)))
+(assert (=> |(increase_priority_d1 )_17|
+    (= priority_d1_18 (+ priority_d1_17 factor_17))))
+(assert (=> |(increase_priority_d1 )_17|
+    (= cost_d1_18 (+ cost_d1_17 (* factor_17 priority_d1_17)))))
+(assert (=> |(authorize_all_d1 )_17| (>= (- priority_d1_17 3.0) 0.0)))
+(assert (=> |(authorize_all_d1 )_17| (not clear_d1_l1_17)))
+(assert (=> |(authorize_all_d1 )_17| (not clear_d1_l2_17)))
+(assert (=> |(authorize_all_d1 )_17| (not clear_d1_l3_17)))
+(assert (=> |(authorize_all_d1 )_17| (not clear_d1_l4_17)))
+(assert (=> |(authorize_all_d1 )_17| clear_d1_l1_18))
+(assert (=> |(authorize_all_d1 )_17| clear_d1_l2_18))
+(assert (=> |(authorize_all_d1 )_17| clear_d1_l3_18))
+(assert (=> |(authorize_all_d1 )_17| clear_d1_l4_18))
+(assert (=> |(authorize_all_d1 )_17| (= cost_d1_18 (+ cost_d1_17 4.0))))
+(assert (=> |(increase_priority_d2 )_17| (< (- priority_d2_17 3.0) 0.0)))
+(assert (=> |(increase_priority_d2 )_17|
+    (= priority_d2_18 (+ priority_d2_17 factor_17))))
+(assert (=> |(increase_priority_d2 )_17|
+    (= cost_d2_18 (+ cost_d2_17 (* factor_17 priority_d2_17)))))
+(assert (=> |(authorize_all_d2 )_17| (>= (- priority_d2_17 3.0) 0.0)))
+(assert (=> |(authorize_all_d2 )_17| (not clear_d2_l1_17)))
+(assert (=> |(authorize_all_d2 )_17| (not clear_d2_l2_17)))
+(assert (=> |(authorize_all_d2 )_17| (not clear_d2_l3_17)))
+(assert (=> |(authorize_all_d2 )_17| (not clear_d2_l4_17)))
+(assert (=> |(authorize_all_d2 )_17| clear_d2_l1_18))
+(assert (=> |(authorize_all_d2 )_17| clear_d2_l2_18))
+(assert (=> |(authorize_all_d2 )_17| clear_d2_l3_18))
+(assert (=> |(authorize_all_d2 )_17| clear_d2_l4_18))
+(assert (=> |(authorize_all_d2 )_17| (= cost_d2_18 (+ cost_d2_17 4.0))))
+(assert (=> |(decrease_factor )_17| (>= (- factor_17 1.0) 0.0)))
+(assert (=> |(decrease_factor )_17|
+    (= factor_18 (- factor_17 (* (/ 1.0 2.0) factor_17)))))
+(assert (=> |(increase_factor )_17| (<= (- factor_17 10.0) 0.0)))
+(assert (=> |(increase_factor )_17|
+    (= factor_18 (+ factor_17 (* (/ 1.0 2.0) factor_17)))))
+(assert (=> |(authorize_d1_l1 )_18| (not clear_d1_l1_18)))
+(assert (=> |(authorize_d1_l1 )_18| clear_d1_l1_19))
+(assert (=> |(authorize_d1_l1 )_18| (= cost_d1_19 (+ cost_d1_18 1.0))))
+(assert (=> |(authorize_d1_l2 )_18| (not clear_d1_l2_18)))
+(assert (=> |(authorize_d1_l2 )_18| clear_d1_l2_19))
+(assert (=> |(authorize_d1_l2 )_18| (not clear_d1_l1_19)))
+(assert (=> |(authorize_d1_l2 )_18| (= cost_d1_19 (+ cost_d1_18 2.0))))
+(assert (=> |(authorize_d1_l3 )_18| (not clear_d1_l3_18)))
+(assert (=> |(authorize_d1_l3 )_18| clear_d1_l3_19))
+(assert (=> |(authorize_d1_l3 )_18| (not clear_d1_l1_19)))
+(assert (=> |(authorize_d1_l3 )_18| (not clear_d1_l2_19)))
+(assert (=> |(authorize_d1_l3 )_18| (= cost_d1_19 (+ cost_d1_18 3.0))))
+(assert (=> |(authorize_d1_l4 )_18| (not clear_d1_l4_18)))
+(assert (=> |(authorize_d1_l4 )_18| clear_d1_l4_19))
+(assert (=> |(authorize_d1_l4 )_18| (not clear_d1_l1_19)))
+(assert (=> |(authorize_d1_l4 )_18| (not clear_d1_l2_19)))
+(assert (=> |(authorize_d1_l4 )_18| (not clear_d1_l3_19)))
+(assert (=> |(authorize_d1_l4 )_18| (= cost_d1_19 (+ cost_d1_18 4.0))))
+(assert (=> |(authorize_d2_l1 )_18| (not clear_d2_l1_18)))
+(assert (=> |(authorize_d2_l1 )_18| clear_d2_l1_19))
+(assert (=> |(authorize_d2_l1 )_18| (= cost_d2_19 (+ cost_d2_18 1.0))))
+(assert (=> |(authorize_d2_l2 )_18| (not clear_d2_l2_18)))
+(assert (=> |(authorize_d2_l2 )_18| clear_d2_l2_19))
+(assert (=> |(authorize_d2_l2 )_18| (not clear_d2_l1_19)))
+(assert (=> |(authorize_d2_l2 )_18| (= cost_d2_19 (+ cost_d2_18 2.0))))
+(assert (=> |(authorize_d2_l3 )_18| (not clear_d2_l3_18)))
+(assert (=> |(authorize_d2_l3 )_18| clear_d2_l3_19))
+(assert (=> |(authorize_d2_l3 )_18| (not clear_d2_l1_19)))
+(assert (=> |(authorize_d2_l3 )_18| (not clear_d2_l2_19)))
+(assert (=> |(authorize_d2_l3 )_18| (= cost_d2_19 (+ cost_d2_18 3.0))))
+(assert (=> |(authorize_d2_l4 )_18| (not clear_d2_l4_18)))
+(assert (=> |(authorize_d2_l4 )_18| clear_d2_l4_19))
+(assert (=> |(authorize_d2_l4 )_18| (not clear_d2_l1_19)))
+(assert (=> |(authorize_d2_l4 )_18| (not clear_d2_l2_19)))
+(assert (=> |(authorize_d2_l4 )_18| (not clear_d2_l3_19)))
+(assert (=> |(authorize_d2_l4 )_18| (= cost_d2_19 (+ cost_d2_18 4.0))))
+(assert (=> |(increase_priority_d1 )_18| (< (- priority_d1_18 3.0) 0.0)))
+(assert (=> |(increase_priority_d1 )_18|
+    (= priority_d1_19 (+ priority_d1_18 factor_18))))
+(assert (=> |(increase_priority_d1 )_18|
+    (= cost_d1_19 (+ cost_d1_18 (* factor_18 priority_d1_18)))))
+(assert (=> |(authorize_all_d1 )_18| (>= (- priority_d1_18 3.0) 0.0)))
+(assert (=> |(authorize_all_d1 )_18| (not clear_d1_l1_18)))
+(assert (=> |(authorize_all_d1 )_18| (not clear_d1_l2_18)))
+(assert (=> |(authorize_all_d1 )_18| (not clear_d1_l3_18)))
+(assert (=> |(authorize_all_d1 )_18| (not clear_d1_l4_18)))
+(assert (=> |(authorize_all_d1 )_18| clear_d1_l1_19))
+(assert (=> |(authorize_all_d1 )_18| clear_d1_l2_19))
+(assert (=> |(authorize_all_d1 )_18| clear_d1_l3_19))
+(assert (=> |(authorize_all_d1 )_18| clear_d1_l4_19))
+(assert (=> |(authorize_all_d1 )_18| (= cost_d1_19 (+ cost_d1_18 4.0))))
+(assert (=> |(increase_priority_d2 )_18| (< (- priority_d2_18 3.0) 0.0)))
+(assert (=> |(increase_priority_d2 )_18|
+    (= priority_d2_19 (+ priority_d2_18 factor_18))))
+(assert (=> |(increase_priority_d2 )_18|
+    (= cost_d2_19 (+ cost_d2_18 (* factor_18 priority_d2_18)))))
+(assert (=> |(authorize_all_d2 )_18| (>= (- priority_d2_18 3.0) 0.0)))
+(assert (=> |(authorize_all_d2 )_18| (not clear_d2_l1_18)))
+(assert (=> |(authorize_all_d2 )_18| (not clear_d2_l2_18)))
+(assert (=> |(authorize_all_d2 )_18| (not clear_d2_l3_18)))
+(assert (=> |(authorize_all_d2 )_18| (not clear_d2_l4_18)))
+(assert (=> |(authorize_all_d2 )_18| clear_d2_l1_19))
+(assert (=> |(authorize_all_d2 )_18| clear_d2_l2_19))
+(assert (=> |(authorize_all_d2 )_18| clear_d2_l3_19))
+(assert (=> |(authorize_all_d2 )_18| clear_d2_l4_19))
+(assert (=> |(authorize_all_d2 )_18| (= cost_d2_19 (+ cost_d2_18 4.0))))
+(assert (=> |(decrease_factor )_18| (>= (- factor_18 1.0) 0.0)))
+(assert (=> |(decrease_factor )_18|
+    (= factor_19 (- factor_18 (* (/ 1.0 2.0) factor_18)))))
+(assert (=> |(increase_factor )_18| (<= (- factor_18 10.0) 0.0)))
+(assert (=> |(increase_factor )_18|
+    (= factor_19 (+ factor_18 (* (/ 1.0 2.0) factor_18)))))
+(assert (=> |(authorize_d1_l1 )_19| (not clear_d1_l1_19)))
+(assert (=> |(authorize_d1_l1 )_19| clear_d1_l1_20))
+(assert (=> |(authorize_d1_l1 )_19| (= cost_d1_20 (+ cost_d1_19 1.0))))
+(assert (=> |(authorize_d1_l2 )_19| (not clear_d1_l2_19)))
+(assert (=> |(authorize_d1_l2 )_19| clear_d1_l2_20))
+(assert (=> |(authorize_d1_l2 )_19| (not clear_d1_l1_20)))
+(assert (=> |(authorize_d1_l2 )_19| (= cost_d1_20 (+ cost_d1_19 2.0))))
+(assert (=> |(authorize_d1_l3 )_19| (not clear_d1_l3_19)))
+(assert (=> |(authorize_d1_l3 )_19| clear_d1_l3_20))
+(assert (=> |(authorize_d1_l3 )_19| (not clear_d1_l1_20)))
+(assert (=> |(authorize_d1_l3 )_19| (not clear_d1_l2_20)))
+(assert (=> |(authorize_d1_l3 )_19| (= cost_d1_20 (+ cost_d1_19 3.0))))
+(assert (=> |(authorize_d1_l4 )_19| (not clear_d1_l4_19)))
+(assert (=> |(authorize_d1_l4 )_19| clear_d1_l4_20))
+(assert (=> |(authorize_d1_l4 )_19| (not clear_d1_l1_20)))
+(assert (=> |(authorize_d1_l4 )_19| (not clear_d1_l2_20)))
+(assert (=> |(authorize_d1_l4 )_19| (not clear_d1_l3_20)))
+(assert (=> |(authorize_d1_l4 )_19| (= cost_d1_20 (+ cost_d1_19 4.0))))
+(assert (=> |(authorize_d2_l1 )_19| (not clear_d2_l1_19)))
+(assert (=> |(authorize_d2_l1 )_19| clear_d2_l1_20))
+(assert (=> |(authorize_d2_l1 )_19| (= cost_d2_20 (+ cost_d2_19 1.0))))
+(assert (=> |(authorize_d2_l2 )_19| (not clear_d2_l2_19)))
+(assert (=> |(authorize_d2_l2 )_19| clear_d2_l2_20))
+(assert (=> |(authorize_d2_l2 )_19| (not clear_d2_l1_20)))
+(assert (=> |(authorize_d2_l2 )_19| (= cost_d2_20 (+ cost_d2_19 2.0))))
+(assert (=> |(authorize_d2_l3 )_19| (not clear_d2_l3_19)))
+(assert (=> |(authorize_d2_l3 )_19| clear_d2_l3_20))
+(assert (=> |(authorize_d2_l3 )_19| (not clear_d2_l1_20)))
+(assert (=> |(authorize_d2_l3 )_19| (not clear_d2_l2_20)))
+(assert (=> |(authorize_d2_l3 )_19| (= cost_d2_20 (+ cost_d2_19 3.0))))
+(assert (=> |(authorize_d2_l4 )_19| (not clear_d2_l4_19)))
+(assert (=> |(authorize_d2_l4 )_19| clear_d2_l4_20))
+(assert (=> |(authorize_d2_l4 )_19| (not clear_d2_l1_20)))
+(assert (=> |(authorize_d2_l4 )_19| (not clear_d2_l2_20)))
+(assert (=> |(authorize_d2_l4 )_19| (not clear_d2_l3_20)))
+(assert (=> |(authorize_d2_l4 )_19| (= cost_d2_20 (+ cost_d2_19 4.0))))
+(assert (=> |(increase_priority_d1 )_19| (< (- priority_d1_19 3.0) 0.0)))
+(assert (=> |(increase_priority_d1 )_19|
+    (= priority_d1_20 (+ priority_d1_19 factor_19))))
+(assert (=> |(increase_priority_d1 )_19|
+    (= cost_d1_20 (+ cost_d1_19 (* factor_19 priority_d1_19)))))
+(assert (=> |(authorize_all_d1 )_19| (>= (- priority_d1_19 3.0) 0.0)))
+(assert (=> |(authorize_all_d1 )_19| (not clear_d1_l1_19)))
+(assert (=> |(authorize_all_d1 )_19| (not clear_d1_l2_19)))
+(assert (=> |(authorize_all_d1 )_19| (not clear_d1_l3_19)))
+(assert (=> |(authorize_all_d1 )_19| (not clear_d1_l4_19)))
+(assert (=> |(authorize_all_d1 )_19| clear_d1_l1_20))
+(assert (=> |(authorize_all_d1 )_19| clear_d1_l2_20))
+(assert (=> |(authorize_all_d1 )_19| clear_d1_l3_20))
+(assert (=> |(authorize_all_d1 )_19| clear_d1_l4_20))
+(assert (=> |(authorize_all_d1 )_19| (= cost_d1_20 (+ cost_d1_19 4.0))))
+(assert (=> |(increase_priority_d2 )_19| (< (- priority_d2_19 3.0) 0.0)))
+(assert (=> |(increase_priority_d2 )_19|
+    (= priority_d2_20 (+ priority_d2_19 factor_19))))
+(assert (=> |(increase_priority_d2 )_19|
+    (= cost_d2_20 (+ cost_d2_19 (* factor_19 priority_d2_19)))))
+(assert (=> |(authorize_all_d2 )_19| (>= (- priority_d2_19 3.0) 0.0)))
+(assert (=> |(authorize_all_d2 )_19| (not clear_d2_l1_19)))
+(assert (=> |(authorize_all_d2 )_19| (not clear_d2_l2_19)))
+(assert (=> |(authorize_all_d2 )_19| (not clear_d2_l3_19)))
+(assert (=> |(authorize_all_d2 )_19| (not clear_d2_l4_19)))
+(assert (=> |(authorize_all_d2 )_19| clear_d2_l1_20))
+(assert (=> |(authorize_all_d2 )_19| clear_d2_l2_20))
+(assert (=> |(authorize_all_d2 )_19| clear_d2_l3_20))
+(assert (=> |(authorize_all_d2 )_19| clear_d2_l4_20))
+(assert (=> |(authorize_all_d2 )_19| (= cost_d2_20 (+ cost_d2_19 4.0))))
+(assert (=> |(decrease_factor )_19| (>= (- factor_19 1.0) 0.0)))
+(assert (=> |(decrease_factor )_19|
+    (= factor_20 (- factor_19 (* (/ 1.0 2.0) factor_19)))))
+(assert (=> |(increase_factor )_19| (<= (- factor_19 10.0) 0.0)))
+(assert (=> |(increase_factor )_19|
+    (= factor_20 (+ factor_19 (* (/ 1.0 2.0) factor_19)))))
+(assert (let ((a!1 (= |__fv_(increase_priority_d2 )_cost_20|
+              (* 1.0 (+ 0.0 (* factor_20 priority_d2_20)))))
+      (a!2 (<= |__fv_(increase_priority_d2 )_cost_20|
+               (* 1.0 (+ 0.0 (* factor_20 priority_d2_20)))))
+      (a!3 (= |__fv_(increase_priority_d1 )_cost_20|
+              (* 1.0 (+ 0.0 (* factor_20 priority_d1_20)))))
+      (a!4 (<= |__fv_(increase_priority_d1 )_cost_20|
+               (* 1.0 (+ 0.0 (* factor_20 priority_d1_20)))))
+      (a!5 (= |__fv_(increase_priority_d2 )_cost_21|
+              (* 1.0 (+ 0.0 (* factor_20 priority_d2_20)))))
+      (a!6 (<= |__fv_(increase_priority_d2 )_cost_21|
+               (* 1.0 (+ 0.0 (* factor_20 priority_d2_20)))))
+      (a!7 (= |__fv_(increase_priority_d1 )_cost_21|
+              (* 1.0 (+ 0.0 (* factor_20 priority_d1_20)))))
+      (a!8 (<= |__fv_(increase_priority_d1 )_cost_21|
+               (* 1.0 (+ 0.0 (* factor_20 priority_d1_20))))))
+  (and (=> |(increase_factor )_20| (= |__fv_(increase_factor )_cost_20| 0.0))
+       (=> (not |(increase_factor )_20|)
+           (= |__fv_(increase_factor )_cost_20| 0.0))
+       (>= |__fv_(increase_factor )_cost_20| 0.0)
+       (<= |__fv_(increase_factor )_cost_20| 0.0)
+       (=> |(authorize_d2_l2 )_20| (= |__fv_(authorize_d2_l2 )_cost_20| 2.0))
+       (=> (not |(authorize_d2_l2 )_20|)
+           (= |__fv_(authorize_d2_l2 )_cost_20| 0.0))
+       (>= |__fv_(authorize_d2_l2 )_cost_20| 0.0)
+       (<= |__fv_(authorize_d2_l2 )_cost_20| 2.0)
+       (=> |(increase_priority_d2 )_20| a!1)
+       (=> (not |(increase_priority_d2 )_20|)
+           (= |__fv_(increase_priority_d2 )_cost_20| 0.0))
+       (>= |__fv_(increase_priority_d2 )_cost_20| 0.0)
+       a!2
+       (=> |(authorize_d1_l4 )_20| (= |__fv_(authorize_d1_l4 )_cost_20| 4.0))
+       (=> (not |(authorize_d1_l4 )_20|)
+           (= |__fv_(authorize_d1_l4 )_cost_20| 0.0))
+       (>= |__fv_(authorize_d1_l4 )_cost_20| 0.0)
+       (<= |__fv_(authorize_d1_l4 )_cost_20| 4.0)
+       (=> |(authorize_d1_l3 )_20| (= |__fv_(authorize_d1_l3 )_cost_20| 3.0))
+       (=> (not |(authorize_d1_l3 )_20|)
+           (= |__fv_(authorize_d1_l3 )_cost_20| 0.0))
+       (>= |__fv_(authorize_d1_l3 )_cost_20| 0.0)
+       (<= |__fv_(authorize_d1_l3 )_cost_20| 3.0)
+       (=> |(authorize_d2_l3 )_20| (= |__fv_(authorize_d2_l3 )_cost_20| 3.0))
+       (=> (not |(authorize_d2_l3 )_20|)
+           (= |__fv_(authorize_d2_l3 )_cost_20| 0.0))
+       (>= |__fv_(authorize_d2_l3 )_cost_20| 0.0)
+       (<= |__fv_(authorize_d2_l3 )_cost_20| 3.0)
+       (=> |(increase_priority_d1 )_20| a!3)
+       (=> (not |(increase_priority_d1 )_20|)
+           (= |__fv_(increase_priority_d1 )_cost_20| 0.0))
+       (>= |__fv_(increase_priority_d1 )_cost_20| 0.0)
+       a!4
+       (=> |(authorize_d1_l2 )_20| (= |__fv_(authorize_d1_l2 )_cost_20| 2.0))
+       (=> (not |(authorize_d1_l2 )_20|)
+           (= |__fv_(authorize_d1_l2 )_cost_20| 0.0))
+       (>= |__fv_(authorize_d1_l2 )_cost_20| 0.0)
+       (<= |__fv_(authorize_d1_l2 )_cost_20| 2.0)
+       (=> |(authorize_d2_l4 )_20| (= |__fv_(authorize_d2_l4 )_cost_20| 4.0))
+       (=> (not |(authorize_d2_l4 )_20|)
+           (= |__fv_(authorize_d2_l4 )_cost_20| 0.0))
+       (>= |__fv_(authorize_d2_l4 )_cost_20| 0.0)
+       (<= |__fv_(authorize_d2_l4 )_cost_20| 4.0)
+       (=> |(authorize_all_d2 )_20| (= |__fv_(authorize_all_d2 )_cost_20| 4.0))
+       (=> (not |(authorize_all_d2 )_20|)
+           (= |__fv_(authorize_all_d2 )_cost_20| 0.0))
+       (>= |__fv_(authorize_all_d2 )_cost_20| 0.0)
+       (<= |__fv_(authorize_all_d2 )_cost_20| 4.0)
+       (=> |(decrease_factor )_20| (= |__fv_(decrease_factor )_cost_20| 0.0))
+       (=> (not |(decrease_factor )_20|)
+           (= |__fv_(decrease_factor )_cost_20| 0.0))
+       (>= |__fv_(decrease_factor )_cost_20| 0.0)
+       (<= |__fv_(decrease_factor )_cost_20| 0.0)
+       (=> |(authorize_d1_l1 )_20| (= |__fv_(authorize_d1_l1 )_cost_20| 1.0))
+       (=> (not |(authorize_d1_l1 )_20|)
+           (= |__fv_(authorize_d1_l1 )_cost_20| 0.0))
+       (>= |__fv_(authorize_d1_l1 )_cost_20| 0.0)
+       (<= |__fv_(authorize_d1_l1 )_cost_20| 1.0)
+       (=> |(authorize_all_d1 )_20| (= |__fv_(authorize_all_d1 )_cost_20| 4.0))
+       (=> (not |(authorize_all_d1 )_20|)
+           (= |__fv_(authorize_all_d1 )_cost_20| 0.0))
+       (>= |__fv_(authorize_all_d1 )_cost_20| 0.0)
+       (<= |__fv_(authorize_all_d1 )_cost_20| 4.0)
+       (=> |(authorize_d2_l1 )_20| (= |__fv_(authorize_d2_l1 )_cost_20| 1.0))
+       (=> (not |(authorize_d2_l1 )_20|)
+           (= |__fv_(authorize_d2_l1 )_cost_20| 0.0))
+       (>= |__fv_(authorize_d2_l1 )_cost_20| 0.0)
+       (<= |__fv_(authorize_d2_l1 )_cost_20| 1.0)
+       (= add_cost_20
+          (+ 0.0
+             |__fv_(increase_factor )_cost_20|
+             |__fv_(authorize_d2_l2 )_cost_20|
+             |__fv_(increase_priority_d2 )_cost_20|
+             |__fv_(authorize_d1_l4 )_cost_20|
+             |__fv_(authorize_d1_l3 )_cost_20|
+             |__fv_(authorize_d2_l3 )_cost_20|
+             |__fv_(increase_priority_d1 )_cost_20|
+             |__fv_(authorize_d1_l2 )_cost_20|
+             |__fv_(authorize_d2_l4 )_cost_20|
+             |__fv_(authorize_all_d2 )_cost_20|
+             |__fv_(decrease_factor )_cost_20|
+             |__fv_(authorize_d1_l1 )_cost_20|
+             |__fv_(authorize_all_d1 )_cost_20|
+             |__fv_(authorize_d2_l1 )_cost_20|))
+       (=> |(increase_factor )_21| (= |__fv_(increase_factor )_cost_21| 0.0))
+       (=> (not |(increase_factor )_21|)
+           (= |__fv_(increase_factor )_cost_21| 0.0))
+       (>= |__fv_(increase_factor )_cost_21| 0.0)
+       (<= |__fv_(increase_factor )_cost_21| 0.0)
+       (=> |(authorize_d2_l2 )_21| (= |__fv_(authorize_d2_l2 )_cost_21| 2.0))
+       (=> (not |(authorize_d2_l2 )_21|)
+           (= |__fv_(authorize_d2_l2 )_cost_21| 0.0))
+       (>= |__fv_(authorize_d2_l2 )_cost_21| 0.0)
+       (<= |__fv_(authorize_d2_l2 )_cost_21| 2.0)
+       (=> |(increase_priority_d2 )_21| a!5)
+       (=> (not |(increase_priority_d2 )_21|)
+           (= |__fv_(increase_priority_d2 )_cost_21| 0.0))
+       (>= |__fv_(increase_priority_d2 )_cost_21| 0.0)
+       a!6
+       (=> |(authorize_d1_l4 )_21| (= |__fv_(authorize_d1_l4 )_cost_21| 4.0))
+       (=> (not |(authorize_d1_l4 )_21|)
+           (= |__fv_(authorize_d1_l4 )_cost_21| 0.0))
+       (>= |__fv_(authorize_d1_l4 )_cost_21| 0.0)
+       (<= |__fv_(authorize_d1_l4 )_cost_21| 4.0)
+       (=> |(authorize_d1_l3 )_21| (= |__fv_(authorize_d1_l3 )_cost_21| 3.0))
+       (=> (not |(authorize_d1_l3 )_21|)
+           (= |__fv_(authorize_d1_l3 )_cost_21| 0.0))
+       (>= |__fv_(authorize_d1_l3 )_cost_21| 0.0)
+       (<= |__fv_(authorize_d1_l3 )_cost_21| 3.0)
+       (=> |(authorize_d2_l3 )_21| (= |__fv_(authorize_d2_l3 )_cost_21| 3.0))
+       (=> (not |(authorize_d2_l3 )_21|)
+           (= |__fv_(authorize_d2_l3 )_cost_21| 0.0))
+       (>= |__fv_(authorize_d2_l3 )_cost_21| 0.0)
+       (<= |__fv_(authorize_d2_l3 )_cost_21| 3.0)
+       (=> |(increase_priority_d1 )_21| a!7)
+       (=> (not |(increase_priority_d1 )_21|)
+           (= |__fv_(increase_priority_d1 )_cost_21| 0.0))
+       (>= |__fv_(increase_priority_d1 )_cost_21| 0.0)
+       a!8
+       (=> |(authorize_d1_l2 )_21| (= |__fv_(authorize_d1_l2 )_cost_21| 2.0))
+       (=> (not |(authorize_d1_l2 )_21|)
+           (= |__fv_(authorize_d1_l2 )_cost_21| 0.0))
+       (>= |__fv_(authorize_d1_l2 )_cost_21| 0.0)
+       (<= |__fv_(authorize_d1_l2 )_cost_21| 2.0)
+       (=> |(authorize_d2_l4 )_21| (= |__fv_(authorize_d2_l4 )_cost_21| 4.0))
+       (=> (not |(authorize_d2_l4 )_21|)
+           (= |__fv_(authorize_d2_l4 )_cost_21| 0.0))
+       (>= |__fv_(authorize_d2_l4 )_cost_21| 0.0)
+       (<= |__fv_(authorize_d2_l4 )_cost_21| 4.0)
+       (=> |(authorize_all_d2 )_21| (= |__fv_(authorize_all_d2 )_cost_21| 4.0))
+       (=> (not |(authorize_all_d2 )_21|)
+           (= |__fv_(authorize_all_d2 )_cost_21| 0.0))
+       (>= |__fv_(authorize_all_d2 )_cost_21| 0.0)
+       (<= |__fv_(authorize_all_d2 )_cost_21| 4.0)
+       (=> |(decrease_factor )_21| (= |__fv_(decrease_factor )_cost_21| 0.0))
+       (=> (not |(decrease_factor )_21|)
+           (= |__fv_(decrease_factor )_cost_21| 0.0))
+       (>= |__fv_(decrease_factor )_cost_21| 0.0)
+       (<= |__fv_(decrease_factor )_cost_21| 0.0)
+       (=> |(authorize_d1_l1 )_21| (= |__fv_(authorize_d1_l1 )_cost_21| 1.0))
+       (=> (not |(authorize_d1_l1 )_21|)
+           (= |__fv_(authorize_d1_l1 )_cost_21| 0.0))
+       (>= |__fv_(authorize_d1_l1 )_cost_21| 0.0)
+       (<= |__fv_(authorize_d1_l1 )_cost_21| 1.0)
+       (=> |(authorize_all_d1 )_21| (= |__fv_(authorize_all_d1 )_cost_21| 4.0))
+       (=> (not |(authorize_all_d1 )_21|)
+           (= |__fv_(authorize_all_d1 )_cost_21| 0.0))
+       (>= |__fv_(authorize_all_d1 )_cost_21| 0.0)
+       (<= |__fv_(authorize_all_d1 )_cost_21| 4.0)
+       (=> |(authorize_d2_l1 )_21| (= |__fv_(authorize_d2_l1 )_cost_21| 1.0))
+       (=> (not |(authorize_d2_l1 )_21|)
+           (= |__fv_(authorize_d2_l1 )_cost_21| 0.0))
+       (>= |__fv_(authorize_d2_l1 )_cost_21| 0.0)
+       (<= |__fv_(authorize_d2_l1 )_cost_21| 1.0)
+       (= add_cost_21
+          (+ 0.0
+             |__fv_(increase_factor )_cost_21|
+             |__fv_(authorize_d2_l2 )_cost_21|
+             |__fv_(increase_priority_d2 )_cost_21|
+             |__fv_(authorize_d1_l4 )_cost_21|
+             |__fv_(authorize_d1_l3 )_cost_21|
+             |__fv_(authorize_d2_l3 )_cost_21|
+             |__fv_(increase_priority_d1 )_cost_21|
+             |__fv_(authorize_d1_l2 )_cost_21|
+             |__fv_(authorize_d2_l4 )_cost_21|
+             |__fv_(authorize_all_d2 )_cost_21|
+             |__fv_(decrease_factor )_cost_21|
+             |__fv_(authorize_d1_l1 )_cost_21|
+             |__fv_(authorize_all_d1 )_cost_21|
+             |__fv_(authorize_d2_l1 )_cost_21|)))))
+(assert (= __rev_fv_cost_20
+   (+ (* 2.0 cost_d2_20 cost_d2_20)
+      (* 1.0 cost_d1_20 cost_d1_20)
+      0.0
+      add_cost_20
+      add_cost_21)))
+(assert (<= (+ 0.0
+       (ite |(increase_factor )_0| 1.0 0.0)
+       (ite |(authorize_d2_l2 )_0| 1.0 0.0)
+       (ite |(increase_priority_d2 )_0| 1.0 0.0)
+       (ite |(authorize_d1_l4 )_0| 1.0 0.0)
+       (ite |(authorize_d1_l3 )_0| 1.0 0.0)
+       (ite |(authorize_d2_l3 )_0| 1.0 0.0)
+       (ite |(increase_priority_d1 )_0| 1.0 0.0)
+       (ite |(authorize_d1_l2 )_0| 1.0 0.0)
+       (ite |(authorize_d2_l4 )_0| 1.0 0.0)
+       (ite |(authorize_all_d2 )_0| 1.0 0.0)
+       (ite |(decrease_factor )_0| 1.0 0.0)
+       (ite |(authorize_d1_l1 )_0| 1.0 0.0)
+       (ite |(authorize_all_d1 )_0| 1.0 0.0)
+       (ite |(authorize_d2_l1 )_0| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_factor )_1| 1.0 0.0)
+       (ite |(authorize_d2_l2 )_1| 1.0 0.0)
+       (ite |(increase_priority_d2 )_1| 1.0 0.0)
+       (ite |(authorize_d1_l4 )_1| 1.0 0.0)
+       (ite |(authorize_d1_l3 )_1| 1.0 0.0)
+       (ite |(authorize_d2_l3 )_1| 1.0 0.0)
+       (ite |(increase_priority_d1 )_1| 1.0 0.0)
+       (ite |(authorize_d1_l2 )_1| 1.0 0.0)
+       (ite |(authorize_d2_l4 )_1| 1.0 0.0)
+       (ite |(authorize_all_d2 )_1| 1.0 0.0)
+       (ite |(decrease_factor )_1| 1.0 0.0)
+       (ite |(authorize_d1_l1 )_1| 1.0 0.0)
+       (ite |(authorize_all_d1 )_1| 1.0 0.0)
+       (ite |(authorize_d2_l1 )_1| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_factor )_2| 1.0 0.0)
+       (ite |(authorize_d2_l2 )_2| 1.0 0.0)
+       (ite |(increase_priority_d2 )_2| 1.0 0.0)
+       (ite |(authorize_d1_l4 )_2| 1.0 0.0)
+       (ite |(authorize_d1_l3 )_2| 1.0 0.0)
+       (ite |(authorize_d2_l3 )_2| 1.0 0.0)
+       (ite |(increase_priority_d1 )_2| 1.0 0.0)
+       (ite |(authorize_d1_l2 )_2| 1.0 0.0)
+       (ite |(authorize_d2_l4 )_2| 1.0 0.0)
+       (ite |(authorize_all_d2 )_2| 1.0 0.0)
+       (ite |(decrease_factor )_2| 1.0 0.0)
+       (ite |(authorize_d1_l1 )_2| 1.0 0.0)
+       (ite |(authorize_all_d1 )_2| 1.0 0.0)
+       (ite |(authorize_d2_l1 )_2| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_factor )_3| 1.0 0.0)
+       (ite |(authorize_d2_l2 )_3| 1.0 0.0)
+       (ite |(increase_priority_d2 )_3| 1.0 0.0)
+       (ite |(authorize_d1_l4 )_3| 1.0 0.0)
+       (ite |(authorize_d1_l3 )_3| 1.0 0.0)
+       (ite |(authorize_d2_l3 )_3| 1.0 0.0)
+       (ite |(increase_priority_d1 )_3| 1.0 0.0)
+       (ite |(authorize_d1_l2 )_3| 1.0 0.0)
+       (ite |(authorize_d2_l4 )_3| 1.0 0.0)
+       (ite |(authorize_all_d2 )_3| 1.0 0.0)
+       (ite |(decrease_factor )_3| 1.0 0.0)
+       (ite |(authorize_d1_l1 )_3| 1.0 0.0)
+       (ite |(authorize_all_d1 )_3| 1.0 0.0)
+       (ite |(authorize_d2_l1 )_3| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_factor )_4| 1.0 0.0)
+       (ite |(authorize_d2_l2 )_4| 1.0 0.0)
+       (ite |(increase_priority_d2 )_4| 1.0 0.0)
+       (ite |(authorize_d1_l4 )_4| 1.0 0.0)
+       (ite |(authorize_d1_l3 )_4| 1.0 0.0)
+       (ite |(authorize_d2_l3 )_4| 1.0 0.0)
+       (ite |(increase_priority_d1 )_4| 1.0 0.0)
+       (ite |(authorize_d1_l2 )_4| 1.0 0.0)
+       (ite |(authorize_d2_l4 )_4| 1.0 0.0)
+       (ite |(authorize_all_d2 )_4| 1.0 0.0)
+       (ite |(decrease_factor )_4| 1.0 0.0)
+       (ite |(authorize_d1_l1 )_4| 1.0 0.0)
+       (ite |(authorize_all_d1 )_4| 1.0 0.0)
+       (ite |(authorize_d2_l1 )_4| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_factor )_5| 1.0 0.0)
+       (ite |(authorize_d2_l2 )_5| 1.0 0.0)
+       (ite |(increase_priority_d2 )_5| 1.0 0.0)
+       (ite |(authorize_d1_l4 )_5| 1.0 0.0)
+       (ite |(authorize_d1_l3 )_5| 1.0 0.0)
+       (ite |(authorize_d2_l3 )_5| 1.0 0.0)
+       (ite |(increase_priority_d1 )_5| 1.0 0.0)
+       (ite |(authorize_d1_l2 )_5| 1.0 0.0)
+       (ite |(authorize_d2_l4 )_5| 1.0 0.0)
+       (ite |(authorize_all_d2 )_5| 1.0 0.0)
+       (ite |(decrease_factor )_5| 1.0 0.0)
+       (ite |(authorize_d1_l1 )_5| 1.0 0.0)
+       (ite |(authorize_all_d1 )_5| 1.0 0.0)
+       (ite |(authorize_d2_l1 )_5| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_factor )_6| 1.0 0.0)
+       (ite |(authorize_d2_l2 )_6| 1.0 0.0)
+       (ite |(increase_priority_d2 )_6| 1.0 0.0)
+       (ite |(authorize_d1_l4 )_6| 1.0 0.0)
+       (ite |(authorize_d1_l3 )_6| 1.0 0.0)
+       (ite |(authorize_d2_l3 )_6| 1.0 0.0)
+       (ite |(increase_priority_d1 )_6| 1.0 0.0)
+       (ite |(authorize_d1_l2 )_6| 1.0 0.0)
+       (ite |(authorize_d2_l4 )_6| 1.0 0.0)
+       (ite |(authorize_all_d2 )_6| 1.0 0.0)
+       (ite |(decrease_factor )_6| 1.0 0.0)
+       (ite |(authorize_d1_l1 )_6| 1.0 0.0)
+       (ite |(authorize_all_d1 )_6| 1.0 0.0)
+       (ite |(authorize_d2_l1 )_6| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_factor )_7| 1.0 0.0)
+       (ite |(authorize_d2_l2 )_7| 1.0 0.0)
+       (ite |(increase_priority_d2 )_7| 1.0 0.0)
+       (ite |(authorize_d1_l4 )_7| 1.0 0.0)
+       (ite |(authorize_d1_l3 )_7| 1.0 0.0)
+       (ite |(authorize_d2_l3 )_7| 1.0 0.0)
+       (ite |(increase_priority_d1 )_7| 1.0 0.0)
+       (ite |(authorize_d1_l2 )_7| 1.0 0.0)
+       (ite |(authorize_d2_l4 )_7| 1.0 0.0)
+       (ite |(authorize_all_d2 )_7| 1.0 0.0)
+       (ite |(decrease_factor )_7| 1.0 0.0)
+       (ite |(authorize_d1_l1 )_7| 1.0 0.0)
+       (ite |(authorize_all_d1 )_7| 1.0 0.0)
+       (ite |(authorize_d2_l1 )_7| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_factor )_8| 1.0 0.0)
+       (ite |(authorize_d2_l2 )_8| 1.0 0.0)
+       (ite |(increase_priority_d2 )_8| 1.0 0.0)
+       (ite |(authorize_d1_l4 )_8| 1.0 0.0)
+       (ite |(authorize_d1_l3 )_8| 1.0 0.0)
+       (ite |(authorize_d2_l3 )_8| 1.0 0.0)
+       (ite |(increase_priority_d1 )_8| 1.0 0.0)
+       (ite |(authorize_d1_l2 )_8| 1.0 0.0)
+       (ite |(authorize_d2_l4 )_8| 1.0 0.0)
+       (ite |(authorize_all_d2 )_8| 1.0 0.0)
+       (ite |(decrease_factor )_8| 1.0 0.0)
+       (ite |(authorize_d1_l1 )_8| 1.0 0.0)
+       (ite |(authorize_all_d1 )_8| 1.0 0.0)
+       (ite |(authorize_d2_l1 )_8| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_factor )_9| 1.0 0.0)
+       (ite |(authorize_d2_l2 )_9| 1.0 0.0)
+       (ite |(increase_priority_d2 )_9| 1.0 0.0)
+       (ite |(authorize_d1_l4 )_9| 1.0 0.0)
+       (ite |(authorize_d1_l3 )_9| 1.0 0.0)
+       (ite |(authorize_d2_l3 )_9| 1.0 0.0)
+       (ite |(increase_priority_d1 )_9| 1.0 0.0)
+       (ite |(authorize_d1_l2 )_9| 1.0 0.0)
+       (ite |(authorize_d2_l4 )_9| 1.0 0.0)
+       (ite |(authorize_all_d2 )_9| 1.0 0.0)
+       (ite |(decrease_factor )_9| 1.0 0.0)
+       (ite |(authorize_d1_l1 )_9| 1.0 0.0)
+       (ite |(authorize_all_d1 )_9| 1.0 0.0)
+       (ite |(authorize_d2_l1 )_9| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_factor )_10| 1.0 0.0)
+       (ite |(authorize_d2_l2 )_10| 1.0 0.0)
+       (ite |(increase_priority_d2 )_10| 1.0 0.0)
+       (ite |(authorize_d1_l4 )_10| 1.0 0.0)
+       (ite |(authorize_d1_l3 )_10| 1.0 0.0)
+       (ite |(authorize_d2_l3 )_10| 1.0 0.0)
+       (ite |(increase_priority_d1 )_10| 1.0 0.0)
+       (ite |(authorize_d1_l2 )_10| 1.0 0.0)
+       (ite |(authorize_d2_l4 )_10| 1.0 0.0)
+       (ite |(authorize_all_d2 )_10| 1.0 0.0)
+       (ite |(decrease_factor )_10| 1.0 0.0)
+       (ite |(authorize_d1_l1 )_10| 1.0 0.0)
+       (ite |(authorize_all_d1 )_10| 1.0 0.0)
+       (ite |(authorize_d2_l1 )_10| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_factor )_11| 1.0 0.0)
+       (ite |(authorize_d2_l2 )_11| 1.0 0.0)
+       (ite |(increase_priority_d2 )_11| 1.0 0.0)
+       (ite |(authorize_d1_l4 )_11| 1.0 0.0)
+       (ite |(authorize_d1_l3 )_11| 1.0 0.0)
+       (ite |(authorize_d2_l3 )_11| 1.0 0.0)
+       (ite |(increase_priority_d1 )_11| 1.0 0.0)
+       (ite |(authorize_d1_l2 )_11| 1.0 0.0)
+       (ite |(authorize_d2_l4 )_11| 1.0 0.0)
+       (ite |(authorize_all_d2 )_11| 1.0 0.0)
+       (ite |(decrease_factor )_11| 1.0 0.0)
+       (ite |(authorize_d1_l1 )_11| 1.0 0.0)
+       (ite |(authorize_all_d1 )_11| 1.0 0.0)
+       (ite |(authorize_d2_l1 )_11| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_factor )_12| 1.0 0.0)
+       (ite |(authorize_d2_l2 )_12| 1.0 0.0)
+       (ite |(increase_priority_d2 )_12| 1.0 0.0)
+       (ite |(authorize_d1_l4 )_12| 1.0 0.0)
+       (ite |(authorize_d1_l3 )_12| 1.0 0.0)
+       (ite |(authorize_d2_l3 )_12| 1.0 0.0)
+       (ite |(increase_priority_d1 )_12| 1.0 0.0)
+       (ite |(authorize_d1_l2 )_12| 1.0 0.0)
+       (ite |(authorize_d2_l4 )_12| 1.0 0.0)
+       (ite |(authorize_all_d2 )_12| 1.0 0.0)
+       (ite |(decrease_factor )_12| 1.0 0.0)
+       (ite |(authorize_d1_l1 )_12| 1.0 0.0)
+       (ite |(authorize_all_d1 )_12| 1.0 0.0)
+       (ite |(authorize_d2_l1 )_12| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_factor )_13| 1.0 0.0)
+       (ite |(authorize_d2_l2 )_13| 1.0 0.0)
+       (ite |(increase_priority_d2 )_13| 1.0 0.0)
+       (ite |(authorize_d1_l4 )_13| 1.0 0.0)
+       (ite |(authorize_d1_l3 )_13| 1.0 0.0)
+       (ite |(authorize_d2_l3 )_13| 1.0 0.0)
+       (ite |(increase_priority_d1 )_13| 1.0 0.0)
+       (ite |(authorize_d1_l2 )_13| 1.0 0.0)
+       (ite |(authorize_d2_l4 )_13| 1.0 0.0)
+       (ite |(authorize_all_d2 )_13| 1.0 0.0)
+       (ite |(decrease_factor )_13| 1.0 0.0)
+       (ite |(authorize_d1_l1 )_13| 1.0 0.0)
+       (ite |(authorize_all_d1 )_13| 1.0 0.0)
+       (ite |(authorize_d2_l1 )_13| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_factor )_14| 1.0 0.0)
+       (ite |(authorize_d2_l2 )_14| 1.0 0.0)
+       (ite |(increase_priority_d2 )_14| 1.0 0.0)
+       (ite |(authorize_d1_l4 )_14| 1.0 0.0)
+       (ite |(authorize_d1_l3 )_14| 1.0 0.0)
+       (ite |(authorize_d2_l3 )_14| 1.0 0.0)
+       (ite |(increase_priority_d1 )_14| 1.0 0.0)
+       (ite |(authorize_d1_l2 )_14| 1.0 0.0)
+       (ite |(authorize_d2_l4 )_14| 1.0 0.0)
+       (ite |(authorize_all_d2 )_14| 1.0 0.0)
+       (ite |(decrease_factor )_14| 1.0 0.0)
+       (ite |(authorize_d1_l1 )_14| 1.0 0.0)
+       (ite |(authorize_all_d1 )_14| 1.0 0.0)
+       (ite |(authorize_d2_l1 )_14| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_factor )_15| 1.0 0.0)
+       (ite |(authorize_d2_l2 )_15| 1.0 0.0)
+       (ite |(increase_priority_d2 )_15| 1.0 0.0)
+       (ite |(authorize_d1_l4 )_15| 1.0 0.0)
+       (ite |(authorize_d1_l3 )_15| 1.0 0.0)
+       (ite |(authorize_d2_l3 )_15| 1.0 0.0)
+       (ite |(increase_priority_d1 )_15| 1.0 0.0)
+       (ite |(authorize_d1_l2 )_15| 1.0 0.0)
+       (ite |(authorize_d2_l4 )_15| 1.0 0.0)
+       (ite |(authorize_all_d2 )_15| 1.0 0.0)
+       (ite |(decrease_factor )_15| 1.0 0.0)
+       (ite |(authorize_d1_l1 )_15| 1.0 0.0)
+       (ite |(authorize_all_d1 )_15| 1.0 0.0)
+       (ite |(authorize_d2_l1 )_15| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_factor )_16| 1.0 0.0)
+       (ite |(authorize_d2_l2 )_16| 1.0 0.0)
+       (ite |(increase_priority_d2 )_16| 1.0 0.0)
+       (ite |(authorize_d1_l4 )_16| 1.0 0.0)
+       (ite |(authorize_d1_l3 )_16| 1.0 0.0)
+       (ite |(authorize_d2_l3 )_16| 1.0 0.0)
+       (ite |(increase_priority_d1 )_16| 1.0 0.0)
+       (ite |(authorize_d1_l2 )_16| 1.0 0.0)
+       (ite |(authorize_d2_l4 )_16| 1.0 0.0)
+       (ite |(authorize_all_d2 )_16| 1.0 0.0)
+       (ite |(decrease_factor )_16| 1.0 0.0)
+       (ite |(authorize_d1_l1 )_16| 1.0 0.0)
+       (ite |(authorize_all_d1 )_16| 1.0 0.0)
+       (ite |(authorize_d2_l1 )_16| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_factor )_17| 1.0 0.0)
+       (ite |(authorize_d2_l2 )_17| 1.0 0.0)
+       (ite |(increase_priority_d2 )_17| 1.0 0.0)
+       (ite |(authorize_d1_l4 )_17| 1.0 0.0)
+       (ite |(authorize_d1_l3 )_17| 1.0 0.0)
+       (ite |(authorize_d2_l3 )_17| 1.0 0.0)
+       (ite |(increase_priority_d1 )_17| 1.0 0.0)
+       (ite |(authorize_d1_l2 )_17| 1.0 0.0)
+       (ite |(authorize_d2_l4 )_17| 1.0 0.0)
+       (ite |(authorize_all_d2 )_17| 1.0 0.0)
+       (ite |(decrease_factor )_17| 1.0 0.0)
+       (ite |(authorize_d1_l1 )_17| 1.0 0.0)
+       (ite |(authorize_all_d1 )_17| 1.0 0.0)
+       (ite |(authorize_d2_l1 )_17| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_factor )_18| 1.0 0.0)
+       (ite |(authorize_d2_l2 )_18| 1.0 0.0)
+       (ite |(increase_priority_d2 )_18| 1.0 0.0)
+       (ite |(authorize_d1_l4 )_18| 1.0 0.0)
+       (ite |(authorize_d1_l3 )_18| 1.0 0.0)
+       (ite |(authorize_d2_l3 )_18| 1.0 0.0)
+       (ite |(increase_priority_d1 )_18| 1.0 0.0)
+       (ite |(authorize_d1_l2 )_18| 1.0 0.0)
+       (ite |(authorize_d2_l4 )_18| 1.0 0.0)
+       (ite |(authorize_all_d2 )_18| 1.0 0.0)
+       (ite |(decrease_factor )_18| 1.0 0.0)
+       (ite |(authorize_d1_l1 )_18| 1.0 0.0)
+       (ite |(authorize_all_d1 )_18| 1.0 0.0)
+       (ite |(authorize_d2_l1 )_18| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_factor )_19| 1.0 0.0)
+       (ite |(authorize_d2_l2 )_19| 1.0 0.0)
+       (ite |(increase_priority_d2 )_19| 1.0 0.0)
+       (ite |(authorize_d1_l4 )_19| 1.0 0.0)
+       (ite |(authorize_d1_l3 )_19| 1.0 0.0)
+       (ite |(authorize_d2_l3 )_19| 1.0 0.0)
+       (ite |(increase_priority_d1 )_19| 1.0 0.0)
+       (ite |(authorize_d1_l2 )_19| 1.0 0.0)
+       (ite |(authorize_d2_l4 )_19| 1.0 0.0)
+       (ite |(authorize_all_d2 )_19| 1.0 0.0)
+       (ite |(decrease_factor )_19| 1.0 0.0)
+       (ite |(authorize_d1_l1 )_19| 1.0 0.0)
+       (ite |(authorize_all_d1 )_19| 1.0 0.0)
+       (ite |(authorize_d2_l1 )_19| 1.0 0.0))
+    1.0))
+(assert (=> |(authorize_d1_l1 )_21| (or (not clear_d1_l1_20) tclear_d1_l1_21)))
+(assert (=> |(authorize_d1_l1 )_21| tclear_d1_l1_21))
+(assert (=> |(authorize_d1_l2 )_21| (or (not clear_d1_l2_20) tclear_d1_l2_21)))
+(assert (=> |(authorize_d1_l2 )_21| tclear_d1_l2_21))
+(assert (=> |(authorize_d1_l2 )_21| tclear_d1_l1_21))
+(assert (=> |(authorize_d1_l3 )_21| (or (not clear_d1_l3_20) tclear_d1_l3_21)))
+(assert (=> |(authorize_d1_l3 )_21| tclear_d1_l3_21))
+(assert (=> |(authorize_d1_l3 )_21| tclear_d1_l1_21))
+(assert (=> |(authorize_d1_l3 )_21| tclear_d1_l2_21))
+(assert (=> |(authorize_d1_l4 )_21| (or (not clear_d1_l4_20) tclear_d1_l4_21)))
+(assert (=> |(authorize_d1_l4 )_21| tclear_d1_l4_21))
+(assert (=> |(authorize_d1_l4 )_21| tclear_d1_l1_21))
+(assert (=> |(authorize_d1_l4 )_21| tclear_d1_l2_21))
+(assert (=> |(authorize_d1_l4 )_21| tclear_d1_l3_21))
+(assert (=> |(authorize_d2_l1 )_21| (or (not clear_d2_l1_20) tclear_d2_l1_21)))
+(assert (=> |(authorize_d2_l1 )_21| tclear_d2_l1_21))
+(assert (=> |(authorize_d2_l2 )_21| (or (not clear_d2_l2_20) tclear_d2_l2_21)))
+(assert (=> |(authorize_d2_l2 )_21| tclear_d2_l2_21))
+(assert (=> |(authorize_d2_l2 )_21| tclear_d2_l1_21))
+(assert (=> |(authorize_d2_l3 )_21| (or (not clear_d2_l3_20) tclear_d2_l3_21)))
+(assert (=> |(authorize_d2_l3 )_21| tclear_d2_l3_21))
+(assert (=> |(authorize_d2_l3 )_21| tclear_d2_l1_21))
+(assert (=> |(authorize_d2_l3 )_21| tclear_d2_l2_21))
+(assert (=> |(authorize_d2_l4 )_21| (or (not clear_d2_l4_20) tclear_d2_l4_21)))
+(assert (=> |(authorize_d2_l4 )_21| tclear_d2_l4_21))
+(assert (=> |(authorize_d2_l4 )_21| tclear_d2_l1_21))
+(assert (=> |(authorize_d2_l4 )_21| tclear_d2_l2_21))
+(assert (=> |(authorize_d2_l4 )_21| tclear_d2_l3_21))
+(assert (=> |(increase_priority_d1 )_21|
+    (or (< (- priority_d1_20 3.0) 0.0) tpriority_d1_21)))
+(assert (=> |(increase_priority_d1 )_21| tpriority_d1_21))
+(assert (=> |(authorize_all_d1 )_21|
+    (or (>= (- priority_d1_20 3.0) 0.0) tpriority_d1_21)))
+(assert (=> |(authorize_all_d1 )_21| (or (not clear_d1_l1_20) tclear_d1_l1_21)))
+(assert (=> |(authorize_all_d1 )_21| (or (not clear_d1_l2_20) tclear_d1_l2_21)))
+(assert (=> |(authorize_all_d1 )_21| (or (not clear_d1_l3_20) tclear_d1_l3_21)))
+(assert (=> |(authorize_all_d1 )_21| (or (not clear_d1_l4_20) tclear_d1_l4_21)))
+(assert (=> |(authorize_all_d1 )_21| tclear_d1_l1_21))
+(assert (=> |(authorize_all_d1 )_21| tclear_d1_l2_21))
+(assert (=> |(authorize_all_d1 )_21| tclear_d1_l3_21))
+(assert (=> |(authorize_all_d1 )_21| tclear_d1_l4_21))
+(assert (=> |(increase_priority_d2 )_21|
+    (or (< (- priority_d2_20 3.0) 0.0) tpriority_d2_21)))
+(assert (=> |(increase_priority_d2 )_21| tpriority_d2_21))
+(assert (=> |(authorize_all_d2 )_21|
+    (or (>= (- priority_d2_20 3.0) 0.0) tpriority_d2_21)))
+(assert (=> |(authorize_all_d2 )_21| (or (not clear_d2_l1_20) tclear_d2_l1_21)))
+(assert (=> |(authorize_all_d2 )_21| (or (not clear_d2_l2_20) tclear_d2_l2_21)))
+(assert (=> |(authorize_all_d2 )_21| (or (not clear_d2_l3_20) tclear_d2_l3_21)))
+(assert (=> |(authorize_all_d2 )_21| (or (not clear_d2_l4_20) tclear_d2_l4_21)))
+(assert (=> |(authorize_all_d2 )_21| tclear_d2_l1_21))
+(assert (=> |(authorize_all_d2 )_21| tclear_d2_l2_21))
+(assert (=> |(authorize_all_d2 )_21| tclear_d2_l3_21))
+(assert (=> |(authorize_all_d2 )_21| tclear_d2_l4_21))
+(assert (=> |(decrease_factor )_21| (or (>= (- factor_20 1.0) 0.0) tfactor_21)))
+(assert (=> |(decrease_factor )_21| tfactor_21))
+(assert (=> |(increase_factor )_21| (or (<= (- factor_20 10.0) 0.0) tfactor_21)))
+(assert (=> |(increase_factor )_21| tfactor_21))
+(assert (=> tclear_d2_l4_21
+    (or |(authorize_d2_l4 )_21|
+        |(authorize_d2_l4 )_20|
+        |(authorize_all_d2 )_21|
+        |(authorize_all_d2 )_20|)))
+(assert (=> tclear_d1_l2_21
+    (or |(authorize_d1_l2 )_21|
+        |(authorize_d1_l2 )_20|
+        |(authorize_d1_l3 )_21|
+        |(authorize_d1_l3 )_20|
+        |(authorize_d1_l4 )_21|
+        |(authorize_d1_l4 )_20|
+        |(authorize_all_d1 )_21|
+        |(authorize_all_d1 )_20|)))
+(assert (=> tclear_d1_l3_21
+    (or |(authorize_d1_l3 )_21|
+        |(authorize_d1_l3 )_20|
+        |(authorize_d1_l4 )_21|
+        |(authorize_d1_l4 )_20|
+        |(authorize_all_d1 )_21|
+        |(authorize_all_d1 )_20|)))
+(assert (=> tclear_d2_l2_21
+    (or |(authorize_d2_l2 )_21|
+        |(authorize_d2_l2 )_20|
+        |(authorize_d2_l3 )_21|
+        |(authorize_d2_l3 )_20|
+        |(authorize_d2_l4 )_21|
+        |(authorize_d2_l4 )_20|
+        |(authorize_all_d2 )_21|
+        |(authorize_all_d2 )_20|)))
+(assert (=> tclear_d1_l4_21
+    (or |(authorize_d1_l4 )_21|
+        |(authorize_d1_l4 )_20|
+        |(authorize_all_d1 )_21|
+        |(authorize_all_d1 )_20|)))
+(assert (=> tclear_d2_l3_21
+    (or |(authorize_d2_l3 )_21|
+        |(authorize_d2_l3 )_20|
+        |(authorize_d2_l4 )_21|
+        |(authorize_d2_l4 )_20|
+        |(authorize_all_d2 )_21|
+        |(authorize_all_d2 )_20|)))
+(assert (=> tclear_d1_l1_21
+    (or |(authorize_d1_l1 )_21|
+        |(authorize_d1_l1 )_20|
+        |(authorize_d1_l2 )_21|
+        |(authorize_d1_l2 )_20|
+        |(authorize_d1_l3 )_21|
+        |(authorize_d1_l3 )_20|
+        |(authorize_d1_l4 )_21|
+        |(authorize_d1_l4 )_20|
+        |(authorize_all_d1 )_21|
+        |(authorize_all_d1 )_20|)))
+(assert (=> tclear_d2_l1_21
+    (or |(authorize_d2_l1 )_21|
+        |(authorize_d2_l1 )_20|
+        |(authorize_d2_l2 )_21|
+        |(authorize_d2_l2 )_20|
+        |(authorize_d2_l3 )_21|
+        |(authorize_d2_l3 )_20|
+        |(authorize_d2_l4 )_21|
+        |(authorize_d2_l4 )_20|
+        |(authorize_all_d2 )_21|
+        |(authorize_all_d2 )_20|)))
+(assert (=> tpriority_d2_21
+    (or |(increase_priority_d2 )_21| |(increase_priority_d2 )_20|)))
+(assert (=> tpriority_d1_21
+    (or |(increase_priority_d1 )_21| |(increase_priority_d1 )_20|)))
+(assert (=> tfactor_21
+    (or |(decrease_factor )_21|
+        |(decrease_factor )_20|
+        |(increase_factor )_21|
+        |(increase_factor )_20|)))
+(assert (<= 0 __rev_fv_cost_20))
+(minimize __rev_fv_cost_20)
+(check-sat)
+(exit)

@@ -1,0 +1,7 @@
+# Environment
+env
+__pycache__
+
+# Configuration files
+config.yaml
+results

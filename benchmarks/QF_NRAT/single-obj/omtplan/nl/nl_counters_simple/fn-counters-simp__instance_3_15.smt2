@@ -1,0 +1,4610 @@
+; benchmark generated from Z3 python API
+(set-info :status unknown)
+(declare-fun rate_value_c0_15 () Real)
+(declare-fun trate_value_c0_16 () Bool)
+(declare-fun rate_value_c2_15 () Real)
+(declare-fun trate_value_c2_16 () Bool)
+(declare-fun rate_value_c1_15 () Real)
+(declare-fun trate_value_c1_16 () Bool)
+(declare-fun |(increment c2)_14| () Bool)
+(declare-fun |(increase_rate c1)_14| () Bool)
+(declare-fun |(increment c0)_14| () Bool)
+(declare-fun |(decrement_rate c1)_14| () Bool)
+(declare-fun |(decrement_rate c0)_14| () Bool)
+(declare-fun |(increment c1)_14| () Bool)
+(declare-fun |(decrement c0)_14| () Bool)
+(declare-fun |(decrement c1)_14| () Bool)
+(declare-fun |(decrement_rate c2)_14| () Bool)
+(declare-fun |(decrement c2)_14| () Bool)
+(declare-fun |(increase_rate c0)_14| () Bool)
+(declare-fun |(increase_rate c2)_14| () Bool)
+(declare-fun |(increment c2)_13| () Bool)
+(declare-fun |(increase_rate c1)_13| () Bool)
+(declare-fun |(increment c0)_13| () Bool)
+(declare-fun |(decrement_rate c1)_13| () Bool)
+(declare-fun |(decrement_rate c0)_13| () Bool)
+(declare-fun |(increment c1)_13| () Bool)
+(declare-fun |(decrement c0)_13| () Bool)
+(declare-fun |(decrement c1)_13| () Bool)
+(declare-fun |(decrement_rate c2)_13| () Bool)
+(declare-fun |(decrement c2)_13| () Bool)
+(declare-fun |(increase_rate c0)_13| () Bool)
+(declare-fun |(increase_rate c2)_13| () Bool)
+(declare-fun |(increment c2)_12| () Bool)
+(declare-fun |(increase_rate c1)_12| () Bool)
+(declare-fun |(increment c0)_12| () Bool)
+(declare-fun |(decrement_rate c1)_12| () Bool)
+(declare-fun |(decrement_rate c0)_12| () Bool)
+(declare-fun |(increment c1)_12| () Bool)
+(declare-fun |(decrement c0)_12| () Bool)
+(declare-fun |(decrement c1)_12| () Bool)
+(declare-fun |(decrement_rate c2)_12| () Bool)
+(declare-fun |(decrement c2)_12| () Bool)
+(declare-fun |(increase_rate c0)_12| () Bool)
+(declare-fun |(increase_rate c2)_12| () Bool)
+(declare-fun |(increment c2)_11| () Bool)
+(declare-fun |(increase_rate c1)_11| () Bool)
+(declare-fun |(increment c0)_11| () Bool)
+(declare-fun |(decrement_rate c1)_11| () Bool)
+(declare-fun |(decrement_rate c0)_11| () Bool)
+(declare-fun |(increment c1)_11| () Bool)
+(declare-fun |(decrement c0)_11| () Bool)
+(declare-fun |(decrement c1)_11| () Bool)
+(declare-fun |(decrement_rate c2)_11| () Bool)
+(declare-fun |(decrement c2)_11| () Bool)
+(declare-fun |(increase_rate c0)_11| () Bool)
+(declare-fun |(increase_rate c2)_11| () Bool)
+(declare-fun |(increment c2)_10| () Bool)
+(declare-fun |(increase_rate c1)_10| () Bool)
+(declare-fun |(increment c0)_10| () Bool)
+(declare-fun |(decrement_rate c1)_10| () Bool)
+(declare-fun |(decrement_rate c0)_10| () Bool)
+(declare-fun |(increment c1)_10| () Bool)
+(declare-fun |(decrement c0)_10| () Bool)
+(declare-fun |(decrement c1)_10| () Bool)
+(declare-fun |(decrement_rate c2)_10| () Bool)
+(declare-fun |(decrement c2)_10| () Bool)
+(declare-fun |(increase_rate c0)_10| () Bool)
+(declare-fun |(increase_rate c2)_10| () Bool)
+(declare-fun |(increment c2)_9| () Bool)
+(declare-fun |(increase_rate c1)_9| () Bool)
+(declare-fun |(increment c0)_9| () Bool)
+(declare-fun |(decrement_rate c1)_9| () Bool)
+(declare-fun |(decrement_rate c0)_9| () Bool)
+(declare-fun |(increment c1)_9| () Bool)
+(declare-fun |(decrement c0)_9| () Bool)
+(declare-fun |(decrement c1)_9| () Bool)
+(declare-fun |(decrement_rate c2)_9| () Bool)
+(declare-fun |(decrement c2)_9| () Bool)
+(declare-fun |(increase_rate c0)_9| () Bool)
+(declare-fun |(increase_rate c2)_9| () Bool)
+(declare-fun |(increment c2)_8| () Bool)
+(declare-fun |(increase_rate c1)_8| () Bool)
+(declare-fun |(increment c0)_8| () Bool)
+(declare-fun |(decrement_rate c1)_8| () Bool)
+(declare-fun |(decrement_rate c0)_8| () Bool)
+(declare-fun |(increment c1)_8| () Bool)
+(declare-fun |(decrement c0)_8| () Bool)
+(declare-fun |(decrement c1)_8| () Bool)
+(declare-fun |(decrement_rate c2)_8| () Bool)
+(declare-fun |(decrement c2)_8| () Bool)
+(declare-fun |(increase_rate c0)_8| () Bool)
+(declare-fun |(increase_rate c2)_8| () Bool)
+(declare-fun |(increment c2)_7| () Bool)
+(declare-fun |(increase_rate c1)_7| () Bool)
+(declare-fun |(increment c0)_7| () Bool)
+(declare-fun |(decrement_rate c1)_7| () Bool)
+(declare-fun |(decrement_rate c0)_7| () Bool)
+(declare-fun |(increment c1)_7| () Bool)
+(declare-fun |(decrement c0)_7| () Bool)
+(declare-fun |(decrement c1)_7| () Bool)
+(declare-fun |(decrement_rate c2)_7| () Bool)
+(declare-fun |(decrement c2)_7| () Bool)
+(declare-fun |(increase_rate c0)_7| () Bool)
+(declare-fun |(increase_rate c2)_7| () Bool)
+(declare-fun |(increment c2)_6| () Bool)
+(declare-fun |(increase_rate c1)_6| () Bool)
+(declare-fun |(increment c0)_6| () Bool)
+(declare-fun |(decrement_rate c1)_6| () Bool)
+(declare-fun |(decrement_rate c0)_6| () Bool)
+(declare-fun |(increment c1)_6| () Bool)
+(declare-fun |(decrement c0)_6| () Bool)
+(declare-fun |(decrement c1)_6| () Bool)
+(declare-fun |(decrement_rate c2)_6| () Bool)
+(declare-fun |(decrement c2)_6| () Bool)
+(declare-fun |(increase_rate c0)_6| () Bool)
+(declare-fun |(increase_rate c2)_6| () Bool)
+(declare-fun |(increment c2)_5| () Bool)
+(declare-fun |(increase_rate c1)_5| () Bool)
+(declare-fun |(increment c0)_5| () Bool)
+(declare-fun |(decrement_rate c1)_5| () Bool)
+(declare-fun |(decrement_rate c0)_5| () Bool)
+(declare-fun |(increment c1)_5| () Bool)
+(declare-fun |(decrement c0)_5| () Bool)
+(declare-fun |(decrement c1)_5| () Bool)
+(declare-fun |(decrement_rate c2)_5| () Bool)
+(declare-fun |(decrement c2)_5| () Bool)
+(declare-fun |(increase_rate c0)_5| () Bool)
+(declare-fun |(increase_rate c2)_5| () Bool)
+(declare-fun |(increment c2)_4| () Bool)
+(declare-fun |(increase_rate c1)_4| () Bool)
+(declare-fun |(increment c0)_4| () Bool)
+(declare-fun |(decrement_rate c1)_4| () Bool)
+(declare-fun |(decrement_rate c0)_4| () Bool)
+(declare-fun |(increment c1)_4| () Bool)
+(declare-fun |(decrement c0)_4| () Bool)
+(declare-fun |(decrement c1)_4| () Bool)
+(declare-fun |(decrement_rate c2)_4| () Bool)
+(declare-fun |(decrement c2)_4| () Bool)
+(declare-fun |(increase_rate c0)_4| () Bool)
+(declare-fun |(increase_rate c2)_4| () Bool)
+(declare-fun |(increment c2)_3| () Bool)
+(declare-fun |(increase_rate c1)_3| () Bool)
+(declare-fun |(increment c0)_3| () Bool)
+(declare-fun |(decrement_rate c1)_3| () Bool)
+(declare-fun |(decrement_rate c0)_3| () Bool)
+(declare-fun |(increment c1)_3| () Bool)
+(declare-fun |(decrement c0)_3| () Bool)
+(declare-fun |(decrement c1)_3| () Bool)
+(declare-fun |(decrement_rate c2)_3| () Bool)
+(declare-fun |(decrement c2)_3| () Bool)
+(declare-fun |(increase_rate c0)_3| () Bool)
+(declare-fun |(increase_rate c2)_3| () Bool)
+(declare-fun |(increment c2)_2| () Bool)
+(declare-fun |(increase_rate c1)_2| () Bool)
+(declare-fun |(increment c0)_2| () Bool)
+(declare-fun |(decrement_rate c1)_2| () Bool)
+(declare-fun |(decrement_rate c0)_2| () Bool)
+(declare-fun |(increment c1)_2| () Bool)
+(declare-fun |(decrement c0)_2| () Bool)
+(declare-fun |(decrement c1)_2| () Bool)
+(declare-fun |(decrement_rate c2)_2| () Bool)
+(declare-fun |(decrement c2)_2| () Bool)
+(declare-fun |(increase_rate c0)_2| () Bool)
+(declare-fun |(increase_rate c2)_2| () Bool)
+(declare-fun |(increment c2)_1| () Bool)
+(declare-fun |(increase_rate c1)_1| () Bool)
+(declare-fun |(increment c0)_1| () Bool)
+(declare-fun |(decrement_rate c1)_1| () Bool)
+(declare-fun |(decrement_rate c0)_1| () Bool)
+(declare-fun |(increment c1)_1| () Bool)
+(declare-fun |(decrement c0)_1| () Bool)
+(declare-fun |(decrement c1)_1| () Bool)
+(declare-fun |(decrement_rate c2)_1| () Bool)
+(declare-fun |(decrement c2)_1| () Bool)
+(declare-fun |(increase_rate c0)_1| () Bool)
+(declare-fun |(increase_rate c2)_1| () Bool)
+(declare-fun |(increment c2)_0| () Bool)
+(declare-fun |(increase_rate c1)_0| () Bool)
+(declare-fun |(increment c0)_0| () Bool)
+(declare-fun |(decrement_rate c1)_0| () Bool)
+(declare-fun |(decrement_rate c0)_0| () Bool)
+(declare-fun |(increment c1)_0| () Bool)
+(declare-fun |(decrement c0)_0| () Bool)
+(declare-fun |(decrement c1)_0| () Bool)
+(declare-fun |(decrement_rate c2)_0| () Bool)
+(declare-fun |(decrement c2)_0| () Bool)
+(declare-fun |(increase_rate c0)_0| () Bool)
+(declare-fun |(increase_rate c2)_0| () Bool)
+(declare-fun |(increment c2)_15| () Bool)
+(declare-fun |(increase_rate c1)_15| () Bool)
+(declare-fun |(increment c0)_15| () Bool)
+(declare-fun |(decrement_rate c1)_15| () Bool)
+(declare-fun |(decrement_rate c0)_15| () Bool)
+(declare-fun |(increment c1)_15| () Bool)
+(declare-fun |(decrement c0)_15| () Bool)
+(declare-fun |(decrement c1)_15| () Bool)
+(declare-fun |(decrement_rate c2)_15| () Bool)
+(declare-fun |(decrement c2)_15| () Bool)
+(declare-fun |(increase_rate c0)_15| () Bool)
+(declare-fun |(increase_rate c2)_15| () Bool)
+(declare-fun |(increment c2)_16| () Bool)
+(declare-fun |(increase_rate c1)_16| () Bool)
+(declare-fun |(increment c0)_16| () Bool)
+(declare-fun |(decrement_rate c1)_16| () Bool)
+(declare-fun |(decrement_rate c0)_16| () Bool)
+(declare-fun |(increment c1)_16| () Bool)
+(declare-fun |(decrement c0)_16| () Bool)
+(declare-fun |(decrement c1)_16| () Bool)
+(declare-fun |(decrement_rate c2)_16| () Bool)
+(declare-fun |(decrement c2)_16| () Bool)
+(declare-fun |(increase_rate c0)_16| () Bool)
+(declare-fun |(increase_rate c2)_16| () Bool)
+(declare-fun rate_value_c0_0 () Real)
+(declare-fun rate_value_c1_0 () Real)
+(declare-fun rate_value_c2_0 () Real)
+(declare-fun value_c0_0 () Real)
+(declare-fun value_c1_0 () Real)
+(declare-fun value_c2_0 () Real)
+(declare-fun rate_value_c0_1 () Real)
+(declare-fun rate_value_c1_1 () Real)
+(declare-fun rate_value_c2_1 () Real)
+(declare-fun value_c0_1 () Real)
+(declare-fun value_c1_1 () Real)
+(declare-fun value_c2_1 () Real)
+(declare-fun rate_value_c0_2 () Real)
+(declare-fun rate_value_c1_2 () Real)
+(declare-fun rate_value_c2_2 () Real)
+(declare-fun value_c0_2 () Real)
+(declare-fun value_c1_2 () Real)
+(declare-fun value_c2_2 () Real)
+(declare-fun rate_value_c0_3 () Real)
+(declare-fun rate_value_c1_3 () Real)
+(declare-fun rate_value_c2_3 () Real)
+(declare-fun value_c0_3 () Real)
+(declare-fun value_c1_3 () Real)
+(declare-fun value_c2_3 () Real)
+(declare-fun rate_value_c0_4 () Real)
+(declare-fun rate_value_c1_4 () Real)
+(declare-fun rate_value_c2_4 () Real)
+(declare-fun value_c0_4 () Real)
+(declare-fun value_c1_4 () Real)
+(declare-fun value_c2_4 () Real)
+(declare-fun rate_value_c0_5 () Real)
+(declare-fun rate_value_c1_5 () Real)
+(declare-fun rate_value_c2_5 () Real)
+(declare-fun value_c0_5 () Real)
+(declare-fun value_c1_5 () Real)
+(declare-fun value_c2_5 () Real)
+(declare-fun rate_value_c0_6 () Real)
+(declare-fun rate_value_c1_6 () Real)
+(declare-fun rate_value_c2_6 () Real)
+(declare-fun value_c0_6 () Real)
+(declare-fun value_c1_6 () Real)
+(declare-fun value_c2_6 () Real)
+(declare-fun rate_value_c0_7 () Real)
+(declare-fun rate_value_c1_7 () Real)
+(declare-fun rate_value_c2_7 () Real)
+(declare-fun value_c0_7 () Real)
+(declare-fun value_c1_7 () Real)
+(declare-fun value_c2_7 () Real)
+(declare-fun rate_value_c0_8 () Real)
+(declare-fun rate_value_c1_8 () Real)
+(declare-fun rate_value_c2_8 () Real)
+(declare-fun value_c0_8 () Real)
+(declare-fun value_c1_8 () Real)
+(declare-fun value_c2_8 () Real)
+(declare-fun rate_value_c0_9 () Real)
+(declare-fun rate_value_c1_9 () Real)
+(declare-fun rate_value_c2_9 () Real)
+(declare-fun value_c0_9 () Real)
+(declare-fun value_c1_9 () Real)
+(declare-fun value_c2_9 () Real)
+(declare-fun rate_value_c0_10 () Real)
+(declare-fun rate_value_c1_10 () Real)
+(declare-fun rate_value_c2_10 () Real)
+(declare-fun value_c0_10 () Real)
+(declare-fun value_c1_10 () Real)
+(declare-fun value_c2_10 () Real)
+(declare-fun rate_value_c0_11 () Real)
+(declare-fun rate_value_c1_11 () Real)
+(declare-fun rate_value_c2_11 () Real)
+(declare-fun value_c0_11 () Real)
+(declare-fun value_c1_11 () Real)
+(declare-fun value_c2_11 () Real)
+(declare-fun rate_value_c0_12 () Real)
+(declare-fun rate_value_c1_12 () Real)
+(declare-fun rate_value_c2_12 () Real)
+(declare-fun value_c0_12 () Real)
+(declare-fun value_c1_12 () Real)
+(declare-fun value_c2_12 () Real)
+(declare-fun rate_value_c0_13 () Real)
+(declare-fun rate_value_c1_13 () Real)
+(declare-fun rate_value_c2_13 () Real)
+(declare-fun value_c0_13 () Real)
+(declare-fun value_c1_13 () Real)
+(declare-fun value_c2_13 () Real)
+(declare-fun rate_value_c0_14 () Real)
+(declare-fun rate_value_c1_14 () Real)
+(declare-fun rate_value_c2_14 () Real)
+(declare-fun value_c0_14 () Real)
+(declare-fun value_c1_14 () Real)
+(declare-fun value_c2_14 () Real)
+(declare-fun value_c0_15 () Real)
+(declare-fun value_c1_15 () Real)
+(declare-fun value_c2_15 () Real)
+(declare-fun |__fv_(increment c2)_cost_16| () Real)
+(declare-fun |__fv_(increase_rate c1)_cost_16| () Real)
+(declare-fun |__fv_(increment c0)_cost_16| () Real)
+(declare-fun |__fv_(decrement_rate c1)_cost_16| () Real)
+(declare-fun |__fv_(decrement_rate c0)_cost_16| () Real)
+(declare-fun |__fv_(increment c1)_cost_16| () Real)
+(declare-fun |__fv_(decrement c0)_cost_16| () Real)
+(declare-fun |__fv_(decrement c1)_cost_16| () Real)
+(declare-fun |__fv_(decrement_rate c2)_cost_16| () Real)
+(declare-fun |__fv_(decrement c2)_cost_16| () Real)
+(declare-fun |__fv_(increase_rate c0)_cost_16| () Real)
+(declare-fun |__fv_(increase_rate c2)_cost_16| () Real)
+(declare-fun add_cost_16 () Real)
+(declare-fun |__fv_(increment c2)_cost_15| () Real)
+(declare-fun |__fv_(increase_rate c1)_cost_15| () Real)
+(declare-fun |__fv_(increment c0)_cost_15| () Real)
+(declare-fun |__fv_(decrement_rate c1)_cost_15| () Real)
+(declare-fun |__fv_(decrement_rate c0)_cost_15| () Real)
+(declare-fun |__fv_(increment c1)_cost_15| () Real)
+(declare-fun |__fv_(decrement c0)_cost_15| () Real)
+(declare-fun |__fv_(decrement c1)_cost_15| () Real)
+(declare-fun |__fv_(decrement_rate c2)_cost_15| () Real)
+(declare-fun |__fv_(decrement c2)_cost_15| () Real)
+(declare-fun |__fv_(increase_rate c0)_cost_15| () Real)
+(declare-fun |__fv_(increase_rate c2)_cost_15| () Real)
+(declare-fun add_cost_15 () Real)
+(declare-fun __rev_fv_cost_15 () Real)
+(assert (let ((a!1 (or (>= (- rate_value_c0_15 1.0) 0.0)
+               (<= (- (+ 1.0 rate_value_c0_15) 10.0) 0.0))))
+  (=> (or trate_value_c0_16) a!1)))
+(assert (let ((a!1 (or (>= (- rate_value_c2_15 1.0) 0.0)
+               (<= (- (+ 1.0 rate_value_c2_15) 10.0) 0.0))))
+  (=> (or trate_value_c2_16) a!1)))
+(assert (let ((a!1 (or (<= (- (+ 1.0 rate_value_c1_15) 10.0) 0.0)
+               (>= (- rate_value_c1_15 1.0) 0.0))))
+  (=> (or trate_value_c1_16) a!1)))
+(assert (=> (or |(increase_rate c2)_15|
+        |(increase_rate c0)_15|
+        |(decrement c2)_15|
+        |(decrement_rate c2)_15|
+        |(decrement c1)_15|
+        |(decrement c0)_15|
+        |(increment c1)_15|
+        |(decrement_rate c0)_15|
+        |(decrement_rate c1)_15|
+        |(increment c0)_15|
+        |(increase_rate c1)_15|
+        |(increment c2)_15|)
+    (and (or |(increase_rate c2)_0|
+             |(increase_rate c0)_0|
+             |(decrement c2)_0|
+             |(decrement_rate c2)_0|
+             |(decrement c1)_0|
+             |(decrement c0)_0|
+             |(increment c1)_0|
+             |(decrement_rate c0)_0|
+             |(decrement_rate c1)_0|
+             |(increment c0)_0|
+             |(increase_rate c1)_0|
+             |(increment c2)_0|)
+         (or |(increase_rate c2)_1|
+             |(increase_rate c0)_1|
+             |(decrement c2)_1|
+             |(decrement_rate c2)_1|
+             |(decrement c1)_1|
+             |(decrement c0)_1|
+             |(increment c1)_1|
+             |(decrement_rate c0)_1|
+             |(decrement_rate c1)_1|
+             |(increment c0)_1|
+             |(increase_rate c1)_1|
+             |(increment c2)_1|)
+         (or |(increase_rate c2)_2|
+             |(increase_rate c0)_2|
+             |(decrement c2)_2|
+             |(decrement_rate c2)_2|
+             |(decrement c1)_2|
+             |(decrement c0)_2|
+             |(increment c1)_2|
+             |(decrement_rate c0)_2|
+             |(decrement_rate c1)_2|
+             |(increment c0)_2|
+             |(increase_rate c1)_2|
+             |(increment c2)_2|)
+         (or |(increase_rate c2)_3|
+             |(increase_rate c0)_3|
+             |(decrement c2)_3|
+             |(decrement_rate c2)_3|
+             |(decrement c1)_3|
+             |(decrement c0)_3|
+             |(increment c1)_3|
+             |(decrement_rate c0)_3|
+             |(decrement_rate c1)_3|
+             |(increment c0)_3|
+             |(increase_rate c1)_3|
+             |(increment c2)_3|)
+         (or |(increase_rate c2)_4|
+             |(increase_rate c0)_4|
+             |(decrement c2)_4|
+             |(decrement_rate c2)_4|
+             |(decrement c1)_4|
+             |(decrement c0)_4|
+             |(increment c1)_4|
+             |(decrement_rate c0)_4|
+             |(decrement_rate c1)_4|
+             |(increment c0)_4|
+             |(increase_rate c1)_4|
+             |(increment c2)_4|)
+         (or |(increase_rate c2)_5|
+             |(increase_rate c0)_5|
+             |(decrement c2)_5|
+             |(decrement_rate c2)_5|
+             |(decrement c1)_5|
+             |(decrement c0)_5|
+             |(increment c1)_5|
+             |(decrement_rate c0)_5|
+             |(decrement_rate c1)_5|
+             |(increment c0)_5|
+             |(increase_rate c1)_5|
+             |(increment c2)_5|)
+         (or |(increase_rate c2)_6|
+             |(increase_rate c0)_6|
+             |(decrement c2)_6|
+             |(decrement_rate c2)_6|
+             |(decrement c1)_6|
+             |(decrement c0)_6|
+             |(increment c1)_6|
+             |(decrement_rate c0)_6|
+             |(decrement_rate c1)_6|
+             |(increment c0)_6|
+             |(increase_rate c1)_6|
+             |(increment c2)_6|)
+         (or |(increase_rate c2)_7|
+             |(increase_rate c0)_7|
+             |(decrement c2)_7|
+             |(decrement_rate c2)_7|
+             |(decrement c1)_7|
+             |(decrement c0)_7|
+             |(increment c1)_7|
+             |(decrement_rate c0)_7|
+             |(decrement_rate c1)_7|
+             |(increment c0)_7|
+             |(increase_rate c1)_7|
+             |(increment c2)_7|)
+         (or |(increase_rate c2)_8|
+             |(increase_rate c0)_8|
+             |(decrement c2)_8|
+             |(decrement_rate c2)_8|
+             |(decrement c1)_8|
+             |(decrement c0)_8|
+             |(increment c1)_8|
+             |(decrement_rate c0)_8|
+             |(decrement_rate c1)_8|
+             |(increment c0)_8|
+             |(increase_rate c1)_8|
+             |(increment c2)_8|)
+         (or |(increase_rate c2)_9|
+             |(increase_rate c0)_9|
+             |(decrement c2)_9|
+             |(decrement_rate c2)_9|
+             |(decrement c1)_9|
+             |(decrement c0)_9|
+             |(increment c1)_9|
+             |(decrement_rate c0)_9|
+             |(decrement_rate c1)_9|
+             |(increment c0)_9|
+             |(increase_rate c1)_9|
+             |(increment c2)_9|)
+         (or |(increase_rate c2)_10|
+             |(increase_rate c0)_10|
+             |(decrement c2)_10|
+             |(decrement_rate c2)_10|
+             |(decrement c1)_10|
+             |(decrement c0)_10|
+             |(increment c1)_10|
+             |(decrement_rate c0)_10|
+             |(decrement_rate c1)_10|
+             |(increment c0)_10|
+             |(increase_rate c1)_10|
+             |(increment c2)_10|)
+         (or |(increase_rate c2)_11|
+             |(increase_rate c0)_11|
+             |(decrement c2)_11|
+             |(decrement_rate c2)_11|
+             |(decrement c1)_11|
+             |(decrement c0)_11|
+             |(increment c1)_11|
+             |(decrement_rate c0)_11|
+             |(decrement_rate c1)_11|
+             |(increment c0)_11|
+             |(increase_rate c1)_11|
+             |(increment c2)_11|)
+         (or |(increase_rate c2)_12|
+             |(increase_rate c0)_12|
+             |(decrement c2)_12|
+             |(decrement_rate c2)_12|
+             |(decrement c1)_12|
+             |(decrement c0)_12|
+             |(increment c1)_12|
+             |(decrement_rate c0)_12|
+             |(decrement_rate c1)_12|
+             |(increment c0)_12|
+             |(increase_rate c1)_12|
+             |(increment c2)_12|)
+         (or |(increase_rate c2)_13|
+             |(increase_rate c0)_13|
+             |(decrement c2)_13|
+             |(decrement_rate c2)_13|
+             |(decrement c1)_13|
+             |(decrement c0)_13|
+             |(increment c1)_13|
+             |(decrement_rate c0)_13|
+             |(decrement_rate c1)_13|
+             |(increment c0)_13|
+             |(increase_rate c1)_13|
+             |(increment c2)_13|)
+         (or |(increase_rate c2)_14|
+             |(increase_rate c0)_14|
+             |(decrement c2)_14|
+             |(decrement_rate c2)_14|
+             |(decrement c1)_14|
+             |(decrement c0)_14|
+             |(increment c1)_14|
+             |(decrement_rate c0)_14|
+             |(decrement_rate c1)_14|
+             |(increment c0)_14|
+             |(increase_rate c1)_14|
+             |(increment c2)_14|))))
+(assert (=> (or |(increase_rate c2)_16|
+        |(increase_rate c0)_16|
+        |(decrement c2)_16|
+        |(decrement_rate c2)_16|
+        |(decrement c1)_16|
+        |(decrement c0)_16|
+        |(increment c1)_16|
+        |(decrement_rate c0)_16|
+        |(decrement_rate c1)_16|
+        |(increment c0)_16|
+        |(increase_rate c1)_16|
+        |(increment c2)_16|)
+    (and (or |(increase_rate c2)_0|
+             |(increase_rate c0)_0|
+             |(decrement c2)_0|
+             |(decrement_rate c2)_0|
+             |(decrement c1)_0|
+             |(decrement c0)_0|
+             |(increment c1)_0|
+             |(decrement_rate c0)_0|
+             |(decrement_rate c1)_0|
+             |(increment c0)_0|
+             |(increase_rate c1)_0|
+             |(increment c2)_0|)
+         (or |(increase_rate c2)_1|
+             |(increase_rate c0)_1|
+             |(decrement c2)_1|
+             |(decrement_rate c2)_1|
+             |(decrement c1)_1|
+             |(decrement c0)_1|
+             |(increment c1)_1|
+             |(decrement_rate c0)_1|
+             |(decrement_rate c1)_1|
+             |(increment c0)_1|
+             |(increase_rate c1)_1|
+             |(increment c2)_1|)
+         (or |(increase_rate c2)_2|
+             |(increase_rate c0)_2|
+             |(decrement c2)_2|
+             |(decrement_rate c2)_2|
+             |(decrement c1)_2|
+             |(decrement c0)_2|
+             |(increment c1)_2|
+             |(decrement_rate c0)_2|
+             |(decrement_rate c1)_2|
+             |(increment c0)_2|
+             |(increase_rate c1)_2|
+             |(increment c2)_2|)
+         (or |(increase_rate c2)_3|
+             |(increase_rate c0)_3|
+             |(decrement c2)_3|
+             |(decrement_rate c2)_3|
+             |(decrement c1)_3|
+             |(decrement c0)_3|
+             |(increment c1)_3|
+             |(decrement_rate c0)_3|
+             |(decrement_rate c1)_3|
+             |(increment c0)_3|
+             |(increase_rate c1)_3|
+             |(increment c2)_3|)
+         (or |(increase_rate c2)_4|
+             |(increase_rate c0)_4|
+             |(decrement c2)_4|
+             |(decrement_rate c2)_4|
+             |(decrement c1)_4|
+             |(decrement c0)_4|
+             |(increment c1)_4|
+             |(decrement_rate c0)_4|
+             |(decrement_rate c1)_4|
+             |(increment c0)_4|
+             |(increase_rate c1)_4|
+             |(increment c2)_4|)
+         (or |(increase_rate c2)_5|
+             |(increase_rate c0)_5|
+             |(decrement c2)_5|
+             |(decrement_rate c2)_5|
+             |(decrement c1)_5|
+             |(decrement c0)_5|
+             |(increment c1)_5|
+             |(decrement_rate c0)_5|
+             |(decrement_rate c1)_5|
+             |(increment c0)_5|
+             |(increase_rate c1)_5|
+             |(increment c2)_5|)
+         (or |(increase_rate c2)_6|
+             |(increase_rate c0)_6|
+             |(decrement c2)_6|
+             |(decrement_rate c2)_6|
+             |(decrement c1)_6|
+             |(decrement c0)_6|
+             |(increment c1)_6|
+             |(decrement_rate c0)_6|
+             |(decrement_rate c1)_6|
+             |(increment c0)_6|
+             |(increase_rate c1)_6|
+             |(increment c2)_6|)
+         (or |(increase_rate c2)_7|
+             |(increase_rate c0)_7|
+             |(decrement c2)_7|
+             |(decrement_rate c2)_7|
+             |(decrement c1)_7|
+             |(decrement c0)_7|
+             |(increment c1)_7|
+             |(decrement_rate c0)_7|
+             |(decrement_rate c1)_7|
+             |(increment c0)_7|
+             |(increase_rate c1)_7|
+             |(increment c2)_7|)
+         (or |(increase_rate c2)_8|
+             |(increase_rate c0)_8|
+             |(decrement c2)_8|
+             |(decrement_rate c2)_8|
+             |(decrement c1)_8|
+             |(decrement c0)_8|
+             |(increment c1)_8|
+             |(decrement_rate c0)_8|
+             |(decrement_rate c1)_8|
+             |(increment c0)_8|
+             |(increase_rate c1)_8|
+             |(increment c2)_8|)
+         (or |(increase_rate c2)_9|
+             |(increase_rate c0)_9|
+             |(decrement c2)_9|
+             |(decrement_rate c2)_9|
+             |(decrement c1)_9|
+             |(decrement c0)_9|
+             |(increment c1)_9|
+             |(decrement_rate c0)_9|
+             |(decrement_rate c1)_9|
+             |(increment c0)_9|
+             |(increase_rate c1)_9|
+             |(increment c2)_9|)
+         (or |(increase_rate c2)_10|
+             |(increase_rate c0)_10|
+             |(decrement c2)_10|
+             |(decrement_rate c2)_10|
+             |(decrement c1)_10|
+             |(decrement c0)_10|
+             |(increment c1)_10|
+             |(decrement_rate c0)_10|
+             |(decrement_rate c1)_10|
+             |(increment c0)_10|
+             |(increase_rate c1)_10|
+             |(increment c2)_10|)
+         (or |(increase_rate c2)_11|
+             |(increase_rate c0)_11|
+             |(decrement c2)_11|
+             |(decrement_rate c2)_11|
+             |(decrement c1)_11|
+             |(decrement c0)_11|
+             |(increment c1)_11|
+             |(decrement_rate c0)_11|
+             |(decrement_rate c1)_11|
+             |(increment c0)_11|
+             |(increase_rate c1)_11|
+             |(increment c2)_11|)
+         (or |(increase_rate c2)_12|
+             |(increase_rate c0)_12|
+             |(decrement c2)_12|
+             |(decrement_rate c2)_12|
+             |(decrement c1)_12|
+             |(decrement c0)_12|
+             |(increment c1)_12|
+             |(decrement_rate c0)_12|
+             |(decrement_rate c1)_12|
+             |(increment c0)_12|
+             |(increase_rate c1)_12|
+             |(increment c2)_12|)
+         (or |(increase_rate c2)_13|
+             |(increase_rate c0)_13|
+             |(decrement c2)_13|
+             |(decrement_rate c2)_13|
+             |(decrement c1)_13|
+             |(decrement c0)_13|
+             |(increment c1)_13|
+             |(decrement_rate c0)_13|
+             |(decrement_rate c1)_13|
+             |(increment c0)_13|
+             |(increase_rate c1)_13|
+             |(increment c2)_13|)
+         (or |(increase_rate c2)_14|
+             |(increase_rate c0)_14|
+             |(decrement c2)_14|
+             |(decrement_rate c2)_14|
+             |(decrement c1)_14|
+             |(decrement c0)_14|
+             |(increment c1)_14|
+             |(decrement_rate c0)_14|
+             |(decrement_rate c1)_14|
+             |(increment c0)_14|
+             |(increase_rate c1)_14|
+             |(increment c2)_14|))))
+(assert true)
+(assert (let ((a!1 (or |(decrement_rate c0)_0|
+               (not (>= (- rate_value_c0_0 1.0) 0.0))
+               |(increase_rate c2)_0|
+               |(decrement c0)_0|
+               |(decrement c2)_0|
+               |(increase_rate c0)_0|
+               |(increase_rate c1)_0|
+               |(decrement_rate c2)_0|
+               |(decrement_rate c1)_0|
+               |(increment c0)_0|
+               |(increment c2)_0|
+               |(increment c1)_0|
+               |(decrement c1)_0|)))
+  (=> |(decrement_rate c0)_1| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c1)_0|
+               (not (>= (- rate_value_c1_0 1.0) 0.0))
+               |(increment c0)_0|
+               |(decrement c1)_0|
+               |(increase_rate c1)_0|
+               |(decrement_rate c2)_0|
+               |(increase_rate c2)_0|
+               |(decrement c0)_0|
+               |(decrement c2)_0|
+               |(increment c2)_0|
+               |(increase_rate c0)_0|
+               |(decrement_rate c0)_0|
+               |(increment c1)_0|)))
+  (=> |(decrement_rate c1)_1| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c2)_0|
+               (not (>= (- rate_value_c2_0 1.0) 0.0))
+               |(increment c2)_0|
+               |(increment c0)_0|
+               |(decrement_rate c1)_0|
+               |(decrement c0)_0|
+               |(decrement c1)_0|
+               |(decrement_rate c0)_0|
+               |(increase_rate c0)_0|
+               |(increment c1)_0|
+               |(increase_rate c2)_0|
+               |(decrement c2)_0|
+               |(increase_rate c1)_0|)))
+  (=> |(decrement_rate c2)_1| a!1)))
+(assert (let ((a!1 (or |(decrement c0)_0|
+               (not (>= (- value_c0_0 rate_value_c0_0) 0.0))
+               |(increment c2)_0|
+               |(decrement_rate c0)_0|
+               |(decrement c2)_0|
+               |(increase_rate c0)_0|
+               |(decrement_rate c2)_0|
+               |(decrement_rate c1)_0|
+               |(increase_rate c1)_0|
+               |(increment c1)_0|
+               |(increase_rate c2)_0|
+               |(increment c0)_0|
+               |(decrement c1)_0|)))
+  (=> |(decrement c0)_1| a!1)))
+(assert (let ((a!1 (or |(decrement c1)_0|
+               (not (>= (- value_c1_0 rate_value_c1_0) 0.0))
+               |(decrement_rate c1)_0|
+               |(increase_rate c0)_0|
+               |(decrement_rate c2)_0|
+               |(increment c1)_0|
+               |(increment c0)_0|
+               |(increase_rate c2)_0|
+               |(increase_rate c1)_0|
+               |(decrement c0)_0|
+               |(decrement c2)_0|
+               |(decrement_rate c0)_0|
+               |(increment c2)_0|)))
+  (=> |(decrement c1)_1| a!1)))
+(assert (let ((a!1 (or |(decrement c2)_0|
+               (not (>= (- value_c2_0 rate_value_c2_0) 0.0))
+               |(increase_rate c1)_0|
+               |(increment c1)_0|
+               |(decrement_rate c0)_0|
+               |(decrement c0)_0|
+               |(increment c2)_0|
+               |(increment c0)_0|
+               |(decrement_rate c1)_0|
+               |(increase_rate c2)_0|
+               |(decrement c1)_0|
+               |(increase_rate c0)_0|
+               |(decrement_rate c2)_0|)))
+  (=> |(decrement c2)_1| a!1)))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c0_0) 10.0) 0.0))))
+  (=> |(increase_rate c0)_1|
+      (or |(increase_rate c0)_0|
+          a!1
+          |(decrement c1)_0|
+          |(decrement c0)_0|
+          |(increment c2)_0|
+          |(increment c1)_0|
+          |(decrement_rate c0)_0|
+          |(increment c0)_0|
+          |(decrement_rate c2)_0|
+          |(decrement_rate c1)_0|
+          |(increase_rate c1)_0|
+          |(decrement c2)_0|
+          |(increase_rate c2)_0|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c1_0) 10.0) 0.0))))
+  (=> |(increase_rate c1)_1|
+      (or |(increase_rate c1)_0|
+          a!1
+          |(decrement c2)_0|
+          |(increment c0)_0|
+          |(decrement_rate c1)_0|
+          |(increment c2)_0|
+          |(decrement c0)_0|
+          |(decrement_rate c0)_0|
+          |(increment c1)_0|
+          |(increase_rate c0)_0|
+          |(increase_rate c2)_0|
+          |(decrement c1)_0|
+          |(decrement_rate c2)_0|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c2_0) 10.0) 0.0))))
+  (=> |(increase_rate c2)_1|
+      (or |(increase_rate c2)_0|
+          a!1
+          |(decrement_rate c0)_0|
+          |(decrement_rate c1)_0|
+          |(increment c0)_0|
+          |(decrement c2)_0|
+          |(decrement c0)_0|
+          |(decrement c1)_0|
+          |(increase_rate c1)_0|
+          |(increment c2)_0|
+          |(decrement_rate c2)_0|
+          |(increment c1)_0|
+          |(increase_rate c0)_0|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c0_0 value_c0_0) 6.0) 0.0))))
+  (=> |(increment c0)_1|
+      (or |(increment c0)_0|
+          a!1
+          |(decrement_rate c1)_0|
+          |(increase_rate c1)_0|
+          |(decrement_rate c2)_0|
+          |(decrement c2)_0|
+          |(increase_rate c2)_0|
+          |(increase_rate c0)_0|
+          |(decrement c1)_0|
+          |(increment c1)_0|
+          |(decrement_rate c0)_0|
+          |(decrement c0)_0|
+          |(increment c2)_0|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c1_0 value_c1_0) 6.0) 0.0))))
+  (=> |(increment c1)_1|
+      (or |(increment c1)_0|
+          a!1
+          |(decrement c2)_0|
+          |(increase_rate c0)_0|
+          |(decrement c1)_0|
+          |(increase_rate c1)_0|
+          |(decrement c0)_0|
+          |(decrement_rate c2)_0|
+          |(increment c0)_0|
+          |(decrement_rate c1)_0|
+          |(increase_rate c2)_0|
+          |(decrement_rate c0)_0|
+          |(increment c2)_0|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c2_0 value_c2_0) 6.0) 0.0))))
+  (=> |(increment c2)_1|
+      (or |(increment c2)_0|
+          a!1
+          |(decrement c0)_0|
+          |(decrement_rate c2)_0|
+          |(decrement c2)_0|
+          |(increase_rate c1)_0|
+          |(increase_rate c0)_0|
+          |(decrement_rate c1)_0|
+          |(decrement_rate c0)_0|
+          |(increase_rate c2)_0|
+          |(increment c1)_0|
+          |(decrement c1)_0|
+          |(increment c0)_0|))))
+(assert (let ((a!1 (or |(decrement_rate c0)_1|
+               (not (>= (- rate_value_c0_1 1.0) 0.0))
+               |(increase_rate c2)_1|
+               |(decrement c0)_1|
+               |(decrement c2)_1|
+               |(increase_rate c0)_1|
+               |(increase_rate c1)_1|
+               |(decrement_rate c2)_1|
+               |(decrement_rate c1)_1|
+               |(increment c0)_1|
+               |(increment c2)_1|
+               |(increment c1)_1|
+               |(decrement c1)_1|)))
+  (=> |(decrement_rate c0)_2| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c1)_1|
+               (not (>= (- rate_value_c1_1 1.0) 0.0))
+               |(increment c0)_1|
+               |(decrement c1)_1|
+               |(increase_rate c1)_1|
+               |(decrement_rate c2)_1|
+               |(increase_rate c2)_1|
+               |(decrement c0)_1|
+               |(decrement c2)_1|
+               |(increment c2)_1|
+               |(increase_rate c0)_1|
+               |(decrement_rate c0)_1|
+               |(increment c1)_1|)))
+  (=> |(decrement_rate c1)_2| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c2)_1|
+               (not (>= (- rate_value_c2_1 1.0) 0.0))
+               |(increment c2)_1|
+               |(increment c0)_1|
+               |(decrement_rate c1)_1|
+               |(decrement c0)_1|
+               |(decrement c1)_1|
+               |(decrement_rate c0)_1|
+               |(increase_rate c0)_1|
+               |(increment c1)_1|
+               |(increase_rate c2)_1|
+               |(decrement c2)_1|
+               |(increase_rate c1)_1|)))
+  (=> |(decrement_rate c2)_2| a!1)))
+(assert (let ((a!1 (or |(decrement c0)_1|
+               (not (>= (- value_c0_1 rate_value_c0_1) 0.0))
+               |(increment c2)_1|
+               |(decrement_rate c0)_1|
+               |(decrement c2)_1|
+               |(increase_rate c0)_1|
+               |(decrement_rate c2)_1|
+               |(decrement_rate c1)_1|
+               |(increase_rate c1)_1|
+               |(increment c1)_1|
+               |(increase_rate c2)_1|
+               |(increment c0)_1|
+               |(decrement c1)_1|)))
+  (=> |(decrement c0)_2| a!1)))
+(assert (let ((a!1 (or |(decrement c1)_1|
+               (not (>= (- value_c1_1 rate_value_c1_1) 0.0))
+               |(decrement_rate c1)_1|
+               |(increase_rate c0)_1|
+               |(decrement_rate c2)_1|
+               |(increment c1)_1|
+               |(increment c0)_1|
+               |(increase_rate c2)_1|
+               |(increase_rate c1)_1|
+               |(decrement c0)_1|
+               |(decrement c2)_1|
+               |(decrement_rate c0)_1|
+               |(increment c2)_1|)))
+  (=> |(decrement c1)_2| a!1)))
+(assert (let ((a!1 (or |(decrement c2)_1|
+               (not (>= (- value_c2_1 rate_value_c2_1) 0.0))
+               |(increase_rate c1)_1|
+               |(increment c1)_1|
+               |(decrement_rate c0)_1|
+               |(decrement c0)_1|
+               |(increment c2)_1|
+               |(increment c0)_1|
+               |(decrement_rate c1)_1|
+               |(increase_rate c2)_1|
+               |(decrement c1)_1|
+               |(increase_rate c0)_1|
+               |(decrement_rate c2)_1|)))
+  (=> |(decrement c2)_2| a!1)))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c0_1) 10.0) 0.0))))
+  (=> |(increase_rate c0)_2|
+      (or |(increase_rate c0)_1|
+          a!1
+          |(decrement c1)_1|
+          |(decrement c0)_1|
+          |(increment c2)_1|
+          |(increment c1)_1|
+          |(decrement_rate c0)_1|
+          |(increment c0)_1|
+          |(decrement_rate c2)_1|
+          |(decrement_rate c1)_1|
+          |(increase_rate c1)_1|
+          |(decrement c2)_1|
+          |(increase_rate c2)_1|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c1_1) 10.0) 0.0))))
+  (=> |(increase_rate c1)_2|
+      (or |(increase_rate c1)_1|
+          a!1
+          |(decrement c2)_1|
+          |(increment c0)_1|
+          |(decrement_rate c1)_1|
+          |(increment c2)_1|
+          |(decrement c0)_1|
+          |(decrement_rate c0)_1|
+          |(increment c1)_1|
+          |(increase_rate c0)_1|
+          |(increase_rate c2)_1|
+          |(decrement c1)_1|
+          |(decrement_rate c2)_1|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c2_1) 10.0) 0.0))))
+  (=> |(increase_rate c2)_2|
+      (or |(increase_rate c2)_1|
+          a!1
+          |(decrement_rate c0)_1|
+          |(decrement_rate c1)_1|
+          |(increment c0)_1|
+          |(decrement c2)_1|
+          |(decrement c0)_1|
+          |(decrement c1)_1|
+          |(increase_rate c1)_1|
+          |(increment c2)_1|
+          |(decrement_rate c2)_1|
+          |(increment c1)_1|
+          |(increase_rate c0)_1|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c0_1 value_c0_1) 6.0) 0.0))))
+  (=> |(increment c0)_2|
+      (or |(increment c0)_1|
+          a!1
+          |(decrement_rate c1)_1|
+          |(increase_rate c1)_1|
+          |(decrement_rate c2)_1|
+          |(decrement c2)_1|
+          |(increase_rate c2)_1|
+          |(increase_rate c0)_1|
+          |(decrement c1)_1|
+          |(increment c1)_1|
+          |(decrement_rate c0)_1|
+          |(decrement c0)_1|
+          |(increment c2)_1|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c1_1 value_c1_1) 6.0) 0.0))))
+  (=> |(increment c1)_2|
+      (or |(increment c1)_1|
+          a!1
+          |(decrement c2)_1|
+          |(increase_rate c0)_1|
+          |(decrement c1)_1|
+          |(increase_rate c1)_1|
+          |(decrement c0)_1|
+          |(decrement_rate c2)_1|
+          |(increment c0)_1|
+          |(decrement_rate c1)_1|
+          |(increase_rate c2)_1|
+          |(decrement_rate c0)_1|
+          |(increment c2)_1|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c2_1 value_c2_1) 6.0) 0.0))))
+  (=> |(increment c2)_2|
+      (or |(increment c2)_1|
+          a!1
+          |(decrement c0)_1|
+          |(decrement_rate c2)_1|
+          |(decrement c2)_1|
+          |(increase_rate c1)_1|
+          |(increase_rate c0)_1|
+          |(decrement_rate c1)_1|
+          |(decrement_rate c0)_1|
+          |(increase_rate c2)_1|
+          |(increment c1)_1|
+          |(decrement c1)_1|
+          |(increment c0)_1|))))
+(assert (let ((a!1 (or |(decrement_rate c0)_2|
+               (not (>= (- rate_value_c0_2 1.0) 0.0))
+               |(increase_rate c2)_2|
+               |(decrement c0)_2|
+               |(decrement c2)_2|
+               |(increase_rate c0)_2|
+               |(increase_rate c1)_2|
+               |(decrement_rate c2)_2|
+               |(decrement_rate c1)_2|
+               |(increment c0)_2|
+               |(increment c2)_2|
+               |(increment c1)_2|
+               |(decrement c1)_2|)))
+  (=> |(decrement_rate c0)_3| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c1)_2|
+               (not (>= (- rate_value_c1_2 1.0) 0.0))
+               |(increment c0)_2|
+               |(decrement c1)_2|
+               |(increase_rate c1)_2|
+               |(decrement_rate c2)_2|
+               |(increase_rate c2)_2|
+               |(decrement c0)_2|
+               |(decrement c2)_2|
+               |(increment c2)_2|
+               |(increase_rate c0)_2|
+               |(decrement_rate c0)_2|
+               |(increment c1)_2|)))
+  (=> |(decrement_rate c1)_3| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c2)_2|
+               (not (>= (- rate_value_c2_2 1.0) 0.0))
+               |(increment c2)_2|
+               |(increment c0)_2|
+               |(decrement_rate c1)_2|
+               |(decrement c0)_2|
+               |(decrement c1)_2|
+               |(decrement_rate c0)_2|
+               |(increase_rate c0)_2|
+               |(increment c1)_2|
+               |(increase_rate c2)_2|
+               |(decrement c2)_2|
+               |(increase_rate c1)_2|)))
+  (=> |(decrement_rate c2)_3| a!1)))
+(assert (let ((a!1 (or |(decrement c0)_2|
+               (not (>= (- value_c0_2 rate_value_c0_2) 0.0))
+               |(increment c2)_2|
+               |(decrement_rate c0)_2|
+               |(decrement c2)_2|
+               |(increase_rate c0)_2|
+               |(decrement_rate c2)_2|
+               |(decrement_rate c1)_2|
+               |(increase_rate c1)_2|
+               |(increment c1)_2|
+               |(increase_rate c2)_2|
+               |(increment c0)_2|
+               |(decrement c1)_2|)))
+  (=> |(decrement c0)_3| a!1)))
+(assert (let ((a!1 (or |(decrement c1)_2|
+               (not (>= (- value_c1_2 rate_value_c1_2) 0.0))
+               |(decrement_rate c1)_2|
+               |(increase_rate c0)_2|
+               |(decrement_rate c2)_2|
+               |(increment c1)_2|
+               |(increment c0)_2|
+               |(increase_rate c2)_2|
+               |(increase_rate c1)_2|
+               |(decrement c0)_2|
+               |(decrement c2)_2|
+               |(decrement_rate c0)_2|
+               |(increment c2)_2|)))
+  (=> |(decrement c1)_3| a!1)))
+(assert (let ((a!1 (or |(decrement c2)_2|
+               (not (>= (- value_c2_2 rate_value_c2_2) 0.0))
+               |(increase_rate c1)_2|
+               |(increment c1)_2|
+               |(decrement_rate c0)_2|
+               |(decrement c0)_2|
+               |(increment c2)_2|
+               |(increment c0)_2|
+               |(decrement_rate c1)_2|
+               |(increase_rate c2)_2|
+               |(decrement c1)_2|
+               |(increase_rate c0)_2|
+               |(decrement_rate c2)_2|)))
+  (=> |(decrement c2)_3| a!1)))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c0_2) 10.0) 0.0))))
+  (=> |(increase_rate c0)_3|
+      (or |(increase_rate c0)_2|
+          a!1
+          |(decrement c1)_2|
+          |(decrement c0)_2|
+          |(increment c2)_2|
+          |(increment c1)_2|
+          |(decrement_rate c0)_2|
+          |(increment c0)_2|
+          |(decrement_rate c2)_2|
+          |(decrement_rate c1)_2|
+          |(increase_rate c1)_2|
+          |(decrement c2)_2|
+          |(increase_rate c2)_2|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c1_2) 10.0) 0.0))))
+  (=> |(increase_rate c1)_3|
+      (or |(increase_rate c1)_2|
+          a!1
+          |(decrement c2)_2|
+          |(increment c0)_2|
+          |(decrement_rate c1)_2|
+          |(increment c2)_2|
+          |(decrement c0)_2|
+          |(decrement_rate c0)_2|
+          |(increment c1)_2|
+          |(increase_rate c0)_2|
+          |(increase_rate c2)_2|
+          |(decrement c1)_2|
+          |(decrement_rate c2)_2|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c2_2) 10.0) 0.0))))
+  (=> |(increase_rate c2)_3|
+      (or |(increase_rate c2)_2|
+          a!1
+          |(decrement_rate c0)_2|
+          |(decrement_rate c1)_2|
+          |(increment c0)_2|
+          |(decrement c2)_2|
+          |(decrement c0)_2|
+          |(decrement c1)_2|
+          |(increase_rate c1)_2|
+          |(increment c2)_2|
+          |(decrement_rate c2)_2|
+          |(increment c1)_2|
+          |(increase_rate c0)_2|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c0_2 value_c0_2) 6.0) 0.0))))
+  (=> |(increment c0)_3|
+      (or |(increment c0)_2|
+          a!1
+          |(decrement_rate c1)_2|
+          |(increase_rate c1)_2|
+          |(decrement_rate c2)_2|
+          |(decrement c2)_2|
+          |(increase_rate c2)_2|
+          |(increase_rate c0)_2|
+          |(decrement c1)_2|
+          |(increment c1)_2|
+          |(decrement_rate c0)_2|
+          |(decrement c0)_2|
+          |(increment c2)_2|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c1_2 value_c1_2) 6.0) 0.0))))
+  (=> |(increment c1)_3|
+      (or |(increment c1)_2|
+          a!1
+          |(decrement c2)_2|
+          |(increase_rate c0)_2|
+          |(decrement c1)_2|
+          |(increase_rate c1)_2|
+          |(decrement c0)_2|
+          |(decrement_rate c2)_2|
+          |(increment c0)_2|
+          |(decrement_rate c1)_2|
+          |(increase_rate c2)_2|
+          |(decrement_rate c0)_2|
+          |(increment c2)_2|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c2_2 value_c2_2) 6.0) 0.0))))
+  (=> |(increment c2)_3|
+      (or |(increment c2)_2|
+          a!1
+          |(decrement c0)_2|
+          |(decrement_rate c2)_2|
+          |(decrement c2)_2|
+          |(increase_rate c1)_2|
+          |(increase_rate c0)_2|
+          |(decrement_rate c1)_2|
+          |(decrement_rate c0)_2|
+          |(increase_rate c2)_2|
+          |(increment c1)_2|
+          |(decrement c1)_2|
+          |(increment c0)_2|))))
+(assert (let ((a!1 (or |(decrement_rate c0)_3|
+               (not (>= (- rate_value_c0_3 1.0) 0.0))
+               |(increase_rate c2)_3|
+               |(decrement c0)_3|
+               |(decrement c2)_3|
+               |(increase_rate c0)_3|
+               |(increase_rate c1)_3|
+               |(decrement_rate c2)_3|
+               |(decrement_rate c1)_3|
+               |(increment c0)_3|
+               |(increment c2)_3|
+               |(increment c1)_3|
+               |(decrement c1)_3|)))
+  (=> |(decrement_rate c0)_4| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c1)_3|
+               (not (>= (- rate_value_c1_3 1.0) 0.0))
+               |(increment c0)_3|
+               |(decrement c1)_3|
+               |(increase_rate c1)_3|
+               |(decrement_rate c2)_3|
+               |(increase_rate c2)_3|
+               |(decrement c0)_3|
+               |(decrement c2)_3|
+               |(increment c2)_3|
+               |(increase_rate c0)_3|
+               |(decrement_rate c0)_3|
+               |(increment c1)_3|)))
+  (=> |(decrement_rate c1)_4| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c2)_3|
+               (not (>= (- rate_value_c2_3 1.0) 0.0))
+               |(increment c2)_3|
+               |(increment c0)_3|
+               |(decrement_rate c1)_3|
+               |(decrement c0)_3|
+               |(decrement c1)_3|
+               |(decrement_rate c0)_3|
+               |(increase_rate c0)_3|
+               |(increment c1)_3|
+               |(increase_rate c2)_3|
+               |(decrement c2)_3|
+               |(increase_rate c1)_3|)))
+  (=> |(decrement_rate c2)_4| a!1)))
+(assert (let ((a!1 (or |(decrement c0)_3|
+               (not (>= (- value_c0_3 rate_value_c0_3) 0.0))
+               |(increment c2)_3|
+               |(decrement_rate c0)_3|
+               |(decrement c2)_3|
+               |(increase_rate c0)_3|
+               |(decrement_rate c2)_3|
+               |(decrement_rate c1)_3|
+               |(increase_rate c1)_3|
+               |(increment c1)_3|
+               |(increase_rate c2)_3|
+               |(increment c0)_3|
+               |(decrement c1)_3|)))
+  (=> |(decrement c0)_4| a!1)))
+(assert (let ((a!1 (or |(decrement c1)_3|
+               (not (>= (- value_c1_3 rate_value_c1_3) 0.0))
+               |(decrement_rate c1)_3|
+               |(increase_rate c0)_3|
+               |(decrement_rate c2)_3|
+               |(increment c1)_3|
+               |(increment c0)_3|
+               |(increase_rate c2)_3|
+               |(increase_rate c1)_3|
+               |(decrement c0)_3|
+               |(decrement c2)_3|
+               |(decrement_rate c0)_3|
+               |(increment c2)_3|)))
+  (=> |(decrement c1)_4| a!1)))
+(assert (let ((a!1 (or |(decrement c2)_3|
+               (not (>= (- value_c2_3 rate_value_c2_3) 0.0))
+               |(increase_rate c1)_3|
+               |(increment c1)_3|
+               |(decrement_rate c0)_3|
+               |(decrement c0)_3|
+               |(increment c2)_3|
+               |(increment c0)_3|
+               |(decrement_rate c1)_3|
+               |(increase_rate c2)_3|
+               |(decrement c1)_3|
+               |(increase_rate c0)_3|
+               |(decrement_rate c2)_3|)))
+  (=> |(decrement c2)_4| a!1)))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c0_3) 10.0) 0.0))))
+  (=> |(increase_rate c0)_4|
+      (or |(increase_rate c0)_3|
+          a!1
+          |(decrement c1)_3|
+          |(decrement c0)_3|
+          |(increment c2)_3|
+          |(increment c1)_3|
+          |(decrement_rate c0)_3|
+          |(increment c0)_3|
+          |(decrement_rate c2)_3|
+          |(decrement_rate c1)_3|
+          |(increase_rate c1)_3|
+          |(decrement c2)_3|
+          |(increase_rate c2)_3|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c1_3) 10.0) 0.0))))
+  (=> |(increase_rate c1)_4|
+      (or |(increase_rate c1)_3|
+          a!1
+          |(decrement c2)_3|
+          |(increment c0)_3|
+          |(decrement_rate c1)_3|
+          |(increment c2)_3|
+          |(decrement c0)_3|
+          |(decrement_rate c0)_3|
+          |(increment c1)_3|
+          |(increase_rate c0)_3|
+          |(increase_rate c2)_3|
+          |(decrement c1)_3|
+          |(decrement_rate c2)_3|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c2_3) 10.0) 0.0))))
+  (=> |(increase_rate c2)_4|
+      (or |(increase_rate c2)_3|
+          a!1
+          |(decrement_rate c0)_3|
+          |(decrement_rate c1)_3|
+          |(increment c0)_3|
+          |(decrement c2)_3|
+          |(decrement c0)_3|
+          |(decrement c1)_3|
+          |(increase_rate c1)_3|
+          |(increment c2)_3|
+          |(decrement_rate c2)_3|
+          |(increment c1)_3|
+          |(increase_rate c0)_3|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c0_3 value_c0_3) 6.0) 0.0))))
+  (=> |(increment c0)_4|
+      (or |(increment c0)_3|
+          a!1
+          |(decrement_rate c1)_3|
+          |(increase_rate c1)_3|
+          |(decrement_rate c2)_3|
+          |(decrement c2)_3|
+          |(increase_rate c2)_3|
+          |(increase_rate c0)_3|
+          |(decrement c1)_3|
+          |(increment c1)_3|
+          |(decrement_rate c0)_3|
+          |(decrement c0)_3|
+          |(increment c2)_3|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c1_3 value_c1_3) 6.0) 0.0))))
+  (=> |(increment c1)_4|
+      (or |(increment c1)_3|
+          a!1
+          |(decrement c2)_3|
+          |(increase_rate c0)_3|
+          |(decrement c1)_3|
+          |(increase_rate c1)_3|
+          |(decrement c0)_3|
+          |(decrement_rate c2)_3|
+          |(increment c0)_3|
+          |(decrement_rate c1)_3|
+          |(increase_rate c2)_3|
+          |(decrement_rate c0)_3|
+          |(increment c2)_3|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c2_3 value_c2_3) 6.0) 0.0))))
+  (=> |(increment c2)_4|
+      (or |(increment c2)_3|
+          a!1
+          |(decrement c0)_3|
+          |(decrement_rate c2)_3|
+          |(decrement c2)_3|
+          |(increase_rate c1)_3|
+          |(increase_rate c0)_3|
+          |(decrement_rate c1)_3|
+          |(decrement_rate c0)_3|
+          |(increase_rate c2)_3|
+          |(increment c1)_3|
+          |(decrement c1)_3|
+          |(increment c0)_3|))))
+(assert (let ((a!1 (or |(decrement_rate c0)_4|
+               (not (>= (- rate_value_c0_4 1.0) 0.0))
+               |(increase_rate c2)_4|
+               |(decrement c0)_4|
+               |(decrement c2)_4|
+               |(increase_rate c0)_4|
+               |(increase_rate c1)_4|
+               |(decrement_rate c2)_4|
+               |(decrement_rate c1)_4|
+               |(increment c0)_4|
+               |(increment c2)_4|
+               |(increment c1)_4|
+               |(decrement c1)_4|)))
+  (=> |(decrement_rate c0)_5| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c1)_4|
+               (not (>= (- rate_value_c1_4 1.0) 0.0))
+               |(increment c0)_4|
+               |(decrement c1)_4|
+               |(increase_rate c1)_4|
+               |(decrement_rate c2)_4|
+               |(increase_rate c2)_4|
+               |(decrement c0)_4|
+               |(decrement c2)_4|
+               |(increment c2)_4|
+               |(increase_rate c0)_4|
+               |(decrement_rate c0)_4|
+               |(increment c1)_4|)))
+  (=> |(decrement_rate c1)_5| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c2)_4|
+               (not (>= (- rate_value_c2_4 1.0) 0.0))
+               |(increment c2)_4|
+               |(increment c0)_4|
+               |(decrement_rate c1)_4|
+               |(decrement c0)_4|
+               |(decrement c1)_4|
+               |(decrement_rate c0)_4|
+               |(increase_rate c0)_4|
+               |(increment c1)_4|
+               |(increase_rate c2)_4|
+               |(decrement c2)_4|
+               |(increase_rate c1)_4|)))
+  (=> |(decrement_rate c2)_5| a!1)))
+(assert (let ((a!1 (or |(decrement c0)_4|
+               (not (>= (- value_c0_4 rate_value_c0_4) 0.0))
+               |(increment c2)_4|
+               |(decrement_rate c0)_4|
+               |(decrement c2)_4|
+               |(increase_rate c0)_4|
+               |(decrement_rate c2)_4|
+               |(decrement_rate c1)_4|
+               |(increase_rate c1)_4|
+               |(increment c1)_4|
+               |(increase_rate c2)_4|
+               |(increment c0)_4|
+               |(decrement c1)_4|)))
+  (=> |(decrement c0)_5| a!1)))
+(assert (let ((a!1 (or |(decrement c1)_4|
+               (not (>= (- value_c1_4 rate_value_c1_4) 0.0))
+               |(decrement_rate c1)_4|
+               |(increase_rate c0)_4|
+               |(decrement_rate c2)_4|
+               |(increment c1)_4|
+               |(increment c0)_4|
+               |(increase_rate c2)_4|
+               |(increase_rate c1)_4|
+               |(decrement c0)_4|
+               |(decrement c2)_4|
+               |(decrement_rate c0)_4|
+               |(increment c2)_4|)))
+  (=> |(decrement c1)_5| a!1)))
+(assert (let ((a!1 (or |(decrement c2)_4|
+               (not (>= (- value_c2_4 rate_value_c2_4) 0.0))
+               |(increase_rate c1)_4|
+               |(increment c1)_4|
+               |(decrement_rate c0)_4|
+               |(decrement c0)_4|
+               |(increment c2)_4|
+               |(increment c0)_4|
+               |(decrement_rate c1)_4|
+               |(increase_rate c2)_4|
+               |(decrement c1)_4|
+               |(increase_rate c0)_4|
+               |(decrement_rate c2)_4|)))
+  (=> |(decrement c2)_5| a!1)))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c0_4) 10.0) 0.0))))
+  (=> |(increase_rate c0)_5|
+      (or |(increase_rate c0)_4|
+          a!1
+          |(decrement c1)_4|
+          |(decrement c0)_4|
+          |(increment c2)_4|
+          |(increment c1)_4|
+          |(decrement_rate c0)_4|
+          |(increment c0)_4|
+          |(decrement_rate c2)_4|
+          |(decrement_rate c1)_4|
+          |(increase_rate c1)_4|
+          |(decrement c2)_4|
+          |(increase_rate c2)_4|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c1_4) 10.0) 0.0))))
+  (=> |(increase_rate c1)_5|
+      (or |(increase_rate c1)_4|
+          a!1
+          |(decrement c2)_4|
+          |(increment c0)_4|
+          |(decrement_rate c1)_4|
+          |(increment c2)_4|
+          |(decrement c0)_4|
+          |(decrement_rate c0)_4|
+          |(increment c1)_4|
+          |(increase_rate c0)_4|
+          |(increase_rate c2)_4|
+          |(decrement c1)_4|
+          |(decrement_rate c2)_4|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c2_4) 10.0) 0.0))))
+  (=> |(increase_rate c2)_5|
+      (or |(increase_rate c2)_4|
+          a!1
+          |(decrement_rate c0)_4|
+          |(decrement_rate c1)_4|
+          |(increment c0)_4|
+          |(decrement c2)_4|
+          |(decrement c0)_4|
+          |(decrement c1)_4|
+          |(increase_rate c1)_4|
+          |(increment c2)_4|
+          |(decrement_rate c2)_4|
+          |(increment c1)_4|
+          |(increase_rate c0)_4|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c0_4 value_c0_4) 6.0) 0.0))))
+  (=> |(increment c0)_5|
+      (or |(increment c0)_4|
+          a!1
+          |(decrement_rate c1)_4|
+          |(increase_rate c1)_4|
+          |(decrement_rate c2)_4|
+          |(decrement c2)_4|
+          |(increase_rate c2)_4|
+          |(increase_rate c0)_4|
+          |(decrement c1)_4|
+          |(increment c1)_4|
+          |(decrement_rate c0)_4|
+          |(decrement c0)_4|
+          |(increment c2)_4|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c1_4 value_c1_4) 6.0) 0.0))))
+  (=> |(increment c1)_5|
+      (or |(increment c1)_4|
+          a!1
+          |(decrement c2)_4|
+          |(increase_rate c0)_4|
+          |(decrement c1)_4|
+          |(increase_rate c1)_4|
+          |(decrement c0)_4|
+          |(decrement_rate c2)_4|
+          |(increment c0)_4|
+          |(decrement_rate c1)_4|
+          |(increase_rate c2)_4|
+          |(decrement_rate c0)_4|
+          |(increment c2)_4|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c2_4 value_c2_4) 6.0) 0.0))))
+  (=> |(increment c2)_5|
+      (or |(increment c2)_4|
+          a!1
+          |(decrement c0)_4|
+          |(decrement_rate c2)_4|
+          |(decrement c2)_4|
+          |(increase_rate c1)_4|
+          |(increase_rate c0)_4|
+          |(decrement_rate c1)_4|
+          |(decrement_rate c0)_4|
+          |(increase_rate c2)_4|
+          |(increment c1)_4|
+          |(decrement c1)_4|
+          |(increment c0)_4|))))
+(assert (let ((a!1 (or |(decrement_rate c0)_5|
+               (not (>= (- rate_value_c0_5 1.0) 0.0))
+               |(increase_rate c2)_5|
+               |(decrement c0)_5|
+               |(decrement c2)_5|
+               |(increase_rate c0)_5|
+               |(increase_rate c1)_5|
+               |(decrement_rate c2)_5|
+               |(decrement_rate c1)_5|
+               |(increment c0)_5|
+               |(increment c2)_5|
+               |(increment c1)_5|
+               |(decrement c1)_5|)))
+  (=> |(decrement_rate c0)_6| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c1)_5|
+               (not (>= (- rate_value_c1_5 1.0) 0.0))
+               |(increment c0)_5|
+               |(decrement c1)_5|
+               |(increase_rate c1)_5|
+               |(decrement_rate c2)_5|
+               |(increase_rate c2)_5|
+               |(decrement c0)_5|
+               |(decrement c2)_5|
+               |(increment c2)_5|
+               |(increase_rate c0)_5|
+               |(decrement_rate c0)_5|
+               |(increment c1)_5|)))
+  (=> |(decrement_rate c1)_6| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c2)_5|
+               (not (>= (- rate_value_c2_5 1.0) 0.0))
+               |(increment c2)_5|
+               |(increment c0)_5|
+               |(decrement_rate c1)_5|
+               |(decrement c0)_5|
+               |(decrement c1)_5|
+               |(decrement_rate c0)_5|
+               |(increase_rate c0)_5|
+               |(increment c1)_5|
+               |(increase_rate c2)_5|
+               |(decrement c2)_5|
+               |(increase_rate c1)_5|)))
+  (=> |(decrement_rate c2)_6| a!1)))
+(assert (let ((a!1 (or |(decrement c0)_5|
+               (not (>= (- value_c0_5 rate_value_c0_5) 0.0))
+               |(increment c2)_5|
+               |(decrement_rate c0)_5|
+               |(decrement c2)_5|
+               |(increase_rate c0)_5|
+               |(decrement_rate c2)_5|
+               |(decrement_rate c1)_5|
+               |(increase_rate c1)_5|
+               |(increment c1)_5|
+               |(increase_rate c2)_5|
+               |(increment c0)_5|
+               |(decrement c1)_5|)))
+  (=> |(decrement c0)_6| a!1)))
+(assert (let ((a!1 (or |(decrement c1)_5|
+               (not (>= (- value_c1_5 rate_value_c1_5) 0.0))
+               |(decrement_rate c1)_5|
+               |(increase_rate c0)_5|
+               |(decrement_rate c2)_5|
+               |(increment c1)_5|
+               |(increment c0)_5|
+               |(increase_rate c2)_5|
+               |(increase_rate c1)_5|
+               |(decrement c0)_5|
+               |(decrement c2)_5|
+               |(decrement_rate c0)_5|
+               |(increment c2)_5|)))
+  (=> |(decrement c1)_6| a!1)))
+(assert (let ((a!1 (or |(decrement c2)_5|
+               (not (>= (- value_c2_5 rate_value_c2_5) 0.0))
+               |(increase_rate c1)_5|
+               |(increment c1)_5|
+               |(decrement_rate c0)_5|
+               |(decrement c0)_5|
+               |(increment c2)_5|
+               |(increment c0)_5|
+               |(decrement_rate c1)_5|
+               |(increase_rate c2)_5|
+               |(decrement c1)_5|
+               |(increase_rate c0)_5|
+               |(decrement_rate c2)_5|)))
+  (=> |(decrement c2)_6| a!1)))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c0_5) 10.0) 0.0))))
+  (=> |(increase_rate c0)_6|
+      (or |(increase_rate c0)_5|
+          a!1
+          |(decrement c1)_5|
+          |(decrement c0)_5|
+          |(increment c2)_5|
+          |(increment c1)_5|
+          |(decrement_rate c0)_5|
+          |(increment c0)_5|
+          |(decrement_rate c2)_5|
+          |(decrement_rate c1)_5|
+          |(increase_rate c1)_5|
+          |(decrement c2)_5|
+          |(increase_rate c2)_5|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c1_5) 10.0) 0.0))))
+  (=> |(increase_rate c1)_6|
+      (or |(increase_rate c1)_5|
+          a!1
+          |(decrement c2)_5|
+          |(increment c0)_5|
+          |(decrement_rate c1)_5|
+          |(increment c2)_5|
+          |(decrement c0)_5|
+          |(decrement_rate c0)_5|
+          |(increment c1)_5|
+          |(increase_rate c0)_5|
+          |(increase_rate c2)_5|
+          |(decrement c1)_5|
+          |(decrement_rate c2)_5|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c2_5) 10.0) 0.0))))
+  (=> |(increase_rate c2)_6|
+      (or |(increase_rate c2)_5|
+          a!1
+          |(decrement_rate c0)_5|
+          |(decrement_rate c1)_5|
+          |(increment c0)_5|
+          |(decrement c2)_5|
+          |(decrement c0)_5|
+          |(decrement c1)_5|
+          |(increase_rate c1)_5|
+          |(increment c2)_5|
+          |(decrement_rate c2)_5|
+          |(increment c1)_5|
+          |(increase_rate c0)_5|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c0_5 value_c0_5) 6.0) 0.0))))
+  (=> |(increment c0)_6|
+      (or |(increment c0)_5|
+          a!1
+          |(decrement_rate c1)_5|
+          |(increase_rate c1)_5|
+          |(decrement_rate c2)_5|
+          |(decrement c2)_5|
+          |(increase_rate c2)_5|
+          |(increase_rate c0)_5|
+          |(decrement c1)_5|
+          |(increment c1)_5|
+          |(decrement_rate c0)_5|
+          |(decrement c0)_5|
+          |(increment c2)_5|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c1_5 value_c1_5) 6.0) 0.0))))
+  (=> |(increment c1)_6|
+      (or |(increment c1)_5|
+          a!1
+          |(decrement c2)_5|
+          |(increase_rate c0)_5|
+          |(decrement c1)_5|
+          |(increase_rate c1)_5|
+          |(decrement c0)_5|
+          |(decrement_rate c2)_5|
+          |(increment c0)_5|
+          |(decrement_rate c1)_5|
+          |(increase_rate c2)_5|
+          |(decrement_rate c0)_5|
+          |(increment c2)_5|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c2_5 value_c2_5) 6.0) 0.0))))
+  (=> |(increment c2)_6|
+      (or |(increment c2)_5|
+          a!1
+          |(decrement c0)_5|
+          |(decrement_rate c2)_5|
+          |(decrement c2)_5|
+          |(increase_rate c1)_5|
+          |(increase_rate c0)_5|
+          |(decrement_rate c1)_5|
+          |(decrement_rate c0)_5|
+          |(increase_rate c2)_5|
+          |(increment c1)_5|
+          |(decrement c1)_5|
+          |(increment c0)_5|))))
+(assert (let ((a!1 (or |(decrement_rate c0)_6|
+               (not (>= (- rate_value_c0_6 1.0) 0.0))
+               |(increase_rate c2)_6|
+               |(decrement c0)_6|
+               |(decrement c2)_6|
+               |(increase_rate c0)_6|
+               |(increase_rate c1)_6|
+               |(decrement_rate c2)_6|
+               |(decrement_rate c1)_6|
+               |(increment c0)_6|
+               |(increment c2)_6|
+               |(increment c1)_6|
+               |(decrement c1)_6|)))
+  (=> |(decrement_rate c0)_7| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c1)_6|
+               (not (>= (- rate_value_c1_6 1.0) 0.0))
+               |(increment c0)_6|
+               |(decrement c1)_6|
+               |(increase_rate c1)_6|
+               |(decrement_rate c2)_6|
+               |(increase_rate c2)_6|
+               |(decrement c0)_6|
+               |(decrement c2)_6|
+               |(increment c2)_6|
+               |(increase_rate c0)_6|
+               |(decrement_rate c0)_6|
+               |(increment c1)_6|)))
+  (=> |(decrement_rate c1)_7| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c2)_6|
+               (not (>= (- rate_value_c2_6 1.0) 0.0))
+               |(increment c2)_6|
+               |(increment c0)_6|
+               |(decrement_rate c1)_6|
+               |(decrement c0)_6|
+               |(decrement c1)_6|
+               |(decrement_rate c0)_6|
+               |(increase_rate c0)_6|
+               |(increment c1)_6|
+               |(increase_rate c2)_6|
+               |(decrement c2)_6|
+               |(increase_rate c1)_6|)))
+  (=> |(decrement_rate c2)_7| a!1)))
+(assert (let ((a!1 (or |(decrement c0)_6|
+               (not (>= (- value_c0_6 rate_value_c0_6) 0.0))
+               |(increment c2)_6|
+               |(decrement_rate c0)_6|
+               |(decrement c2)_6|
+               |(increase_rate c0)_6|
+               |(decrement_rate c2)_6|
+               |(decrement_rate c1)_6|
+               |(increase_rate c1)_6|
+               |(increment c1)_6|
+               |(increase_rate c2)_6|
+               |(increment c0)_6|
+               |(decrement c1)_6|)))
+  (=> |(decrement c0)_7| a!1)))
+(assert (let ((a!1 (or |(decrement c1)_6|
+               (not (>= (- value_c1_6 rate_value_c1_6) 0.0))
+               |(decrement_rate c1)_6|
+               |(increase_rate c0)_6|
+               |(decrement_rate c2)_6|
+               |(increment c1)_6|
+               |(increment c0)_6|
+               |(increase_rate c2)_6|
+               |(increase_rate c1)_6|
+               |(decrement c0)_6|
+               |(decrement c2)_6|
+               |(decrement_rate c0)_6|
+               |(increment c2)_6|)))
+  (=> |(decrement c1)_7| a!1)))
+(assert (let ((a!1 (or |(decrement c2)_6|
+               (not (>= (- value_c2_6 rate_value_c2_6) 0.0))
+               |(increase_rate c1)_6|
+               |(increment c1)_6|
+               |(decrement_rate c0)_6|
+               |(decrement c0)_6|
+               |(increment c2)_6|
+               |(increment c0)_6|
+               |(decrement_rate c1)_6|
+               |(increase_rate c2)_6|
+               |(decrement c1)_6|
+               |(increase_rate c0)_6|
+               |(decrement_rate c2)_6|)))
+  (=> |(decrement c2)_7| a!1)))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c0_6) 10.0) 0.0))))
+  (=> |(increase_rate c0)_7|
+      (or |(increase_rate c0)_6|
+          a!1
+          |(decrement c1)_6|
+          |(decrement c0)_6|
+          |(increment c2)_6|
+          |(increment c1)_6|
+          |(decrement_rate c0)_6|
+          |(increment c0)_6|
+          |(decrement_rate c2)_6|
+          |(decrement_rate c1)_6|
+          |(increase_rate c1)_6|
+          |(decrement c2)_6|
+          |(increase_rate c2)_6|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c1_6) 10.0) 0.0))))
+  (=> |(increase_rate c1)_7|
+      (or |(increase_rate c1)_6|
+          a!1
+          |(decrement c2)_6|
+          |(increment c0)_6|
+          |(decrement_rate c1)_6|
+          |(increment c2)_6|
+          |(decrement c0)_6|
+          |(decrement_rate c0)_6|
+          |(increment c1)_6|
+          |(increase_rate c0)_6|
+          |(increase_rate c2)_6|
+          |(decrement c1)_6|
+          |(decrement_rate c2)_6|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c2_6) 10.0) 0.0))))
+  (=> |(increase_rate c2)_7|
+      (or |(increase_rate c2)_6|
+          a!1
+          |(decrement_rate c0)_6|
+          |(decrement_rate c1)_6|
+          |(increment c0)_6|
+          |(decrement c2)_6|
+          |(decrement c0)_6|
+          |(decrement c1)_6|
+          |(increase_rate c1)_6|
+          |(increment c2)_6|
+          |(decrement_rate c2)_6|
+          |(increment c1)_6|
+          |(increase_rate c0)_6|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c0_6 value_c0_6) 6.0) 0.0))))
+  (=> |(increment c0)_7|
+      (or |(increment c0)_6|
+          a!1
+          |(decrement_rate c1)_6|
+          |(increase_rate c1)_6|
+          |(decrement_rate c2)_6|
+          |(decrement c2)_6|
+          |(increase_rate c2)_6|
+          |(increase_rate c0)_6|
+          |(decrement c1)_6|
+          |(increment c1)_6|
+          |(decrement_rate c0)_6|
+          |(decrement c0)_6|
+          |(increment c2)_6|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c1_6 value_c1_6) 6.0) 0.0))))
+  (=> |(increment c1)_7|
+      (or |(increment c1)_6|
+          a!1
+          |(decrement c2)_6|
+          |(increase_rate c0)_6|
+          |(decrement c1)_6|
+          |(increase_rate c1)_6|
+          |(decrement c0)_6|
+          |(decrement_rate c2)_6|
+          |(increment c0)_6|
+          |(decrement_rate c1)_6|
+          |(increase_rate c2)_6|
+          |(decrement_rate c0)_6|
+          |(increment c2)_6|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c2_6 value_c2_6) 6.0) 0.0))))
+  (=> |(increment c2)_7|
+      (or |(increment c2)_6|
+          a!1
+          |(decrement c0)_6|
+          |(decrement_rate c2)_6|
+          |(decrement c2)_6|
+          |(increase_rate c1)_6|
+          |(increase_rate c0)_6|
+          |(decrement_rate c1)_6|
+          |(decrement_rate c0)_6|
+          |(increase_rate c2)_6|
+          |(increment c1)_6|
+          |(decrement c1)_6|
+          |(increment c0)_6|))))
+(assert (let ((a!1 (or |(decrement_rate c0)_7|
+               (not (>= (- rate_value_c0_7 1.0) 0.0))
+               |(increase_rate c2)_7|
+               |(decrement c0)_7|
+               |(decrement c2)_7|
+               |(increase_rate c0)_7|
+               |(increase_rate c1)_7|
+               |(decrement_rate c2)_7|
+               |(decrement_rate c1)_7|
+               |(increment c0)_7|
+               |(increment c2)_7|
+               |(increment c1)_7|
+               |(decrement c1)_7|)))
+  (=> |(decrement_rate c0)_8| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c1)_7|
+               (not (>= (- rate_value_c1_7 1.0) 0.0))
+               |(increment c0)_7|
+               |(decrement c1)_7|
+               |(increase_rate c1)_7|
+               |(decrement_rate c2)_7|
+               |(increase_rate c2)_7|
+               |(decrement c0)_7|
+               |(decrement c2)_7|
+               |(increment c2)_7|
+               |(increase_rate c0)_7|
+               |(decrement_rate c0)_7|
+               |(increment c1)_7|)))
+  (=> |(decrement_rate c1)_8| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c2)_7|
+               (not (>= (- rate_value_c2_7 1.0) 0.0))
+               |(increment c2)_7|
+               |(increment c0)_7|
+               |(decrement_rate c1)_7|
+               |(decrement c0)_7|
+               |(decrement c1)_7|
+               |(decrement_rate c0)_7|
+               |(increase_rate c0)_7|
+               |(increment c1)_7|
+               |(increase_rate c2)_7|
+               |(decrement c2)_7|
+               |(increase_rate c1)_7|)))
+  (=> |(decrement_rate c2)_8| a!1)))
+(assert (let ((a!1 (or |(decrement c0)_7|
+               (not (>= (- value_c0_7 rate_value_c0_7) 0.0))
+               |(increment c2)_7|
+               |(decrement_rate c0)_7|
+               |(decrement c2)_7|
+               |(increase_rate c0)_7|
+               |(decrement_rate c2)_7|
+               |(decrement_rate c1)_7|
+               |(increase_rate c1)_7|
+               |(increment c1)_7|
+               |(increase_rate c2)_7|
+               |(increment c0)_7|
+               |(decrement c1)_7|)))
+  (=> |(decrement c0)_8| a!1)))
+(assert (let ((a!1 (or |(decrement c1)_7|
+               (not (>= (- value_c1_7 rate_value_c1_7) 0.0))
+               |(decrement_rate c1)_7|
+               |(increase_rate c0)_7|
+               |(decrement_rate c2)_7|
+               |(increment c1)_7|
+               |(increment c0)_7|
+               |(increase_rate c2)_7|
+               |(increase_rate c1)_7|
+               |(decrement c0)_7|
+               |(decrement c2)_7|
+               |(decrement_rate c0)_7|
+               |(increment c2)_7|)))
+  (=> |(decrement c1)_8| a!1)))
+(assert (let ((a!1 (or |(decrement c2)_7|
+               (not (>= (- value_c2_7 rate_value_c2_7) 0.0))
+               |(increase_rate c1)_7|
+               |(increment c1)_7|
+               |(decrement_rate c0)_7|
+               |(decrement c0)_7|
+               |(increment c2)_7|
+               |(increment c0)_7|
+               |(decrement_rate c1)_7|
+               |(increase_rate c2)_7|
+               |(decrement c1)_7|
+               |(increase_rate c0)_7|
+               |(decrement_rate c2)_7|)))
+  (=> |(decrement c2)_8| a!1)))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c0_7) 10.0) 0.0))))
+  (=> |(increase_rate c0)_8|
+      (or |(increase_rate c0)_7|
+          a!1
+          |(decrement c1)_7|
+          |(decrement c0)_7|
+          |(increment c2)_7|
+          |(increment c1)_7|
+          |(decrement_rate c0)_7|
+          |(increment c0)_7|
+          |(decrement_rate c2)_7|
+          |(decrement_rate c1)_7|
+          |(increase_rate c1)_7|
+          |(decrement c2)_7|
+          |(increase_rate c2)_7|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c1_7) 10.0) 0.0))))
+  (=> |(increase_rate c1)_8|
+      (or |(increase_rate c1)_7|
+          a!1
+          |(decrement c2)_7|
+          |(increment c0)_7|
+          |(decrement_rate c1)_7|
+          |(increment c2)_7|
+          |(decrement c0)_7|
+          |(decrement_rate c0)_7|
+          |(increment c1)_7|
+          |(increase_rate c0)_7|
+          |(increase_rate c2)_7|
+          |(decrement c1)_7|
+          |(decrement_rate c2)_7|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c2_7) 10.0) 0.0))))
+  (=> |(increase_rate c2)_8|
+      (or |(increase_rate c2)_7|
+          a!1
+          |(decrement_rate c0)_7|
+          |(decrement_rate c1)_7|
+          |(increment c0)_7|
+          |(decrement c2)_7|
+          |(decrement c0)_7|
+          |(decrement c1)_7|
+          |(increase_rate c1)_7|
+          |(increment c2)_7|
+          |(decrement_rate c2)_7|
+          |(increment c1)_7|
+          |(increase_rate c0)_7|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c0_7 value_c0_7) 6.0) 0.0))))
+  (=> |(increment c0)_8|
+      (or |(increment c0)_7|
+          a!1
+          |(decrement_rate c1)_7|
+          |(increase_rate c1)_7|
+          |(decrement_rate c2)_7|
+          |(decrement c2)_7|
+          |(increase_rate c2)_7|
+          |(increase_rate c0)_7|
+          |(decrement c1)_7|
+          |(increment c1)_7|
+          |(decrement_rate c0)_7|
+          |(decrement c0)_7|
+          |(increment c2)_7|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c1_7 value_c1_7) 6.0) 0.0))))
+  (=> |(increment c1)_8|
+      (or |(increment c1)_7|
+          a!1
+          |(decrement c2)_7|
+          |(increase_rate c0)_7|
+          |(decrement c1)_7|
+          |(increase_rate c1)_7|
+          |(decrement c0)_7|
+          |(decrement_rate c2)_7|
+          |(increment c0)_7|
+          |(decrement_rate c1)_7|
+          |(increase_rate c2)_7|
+          |(decrement_rate c0)_7|
+          |(increment c2)_7|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c2_7 value_c2_7) 6.0) 0.0))))
+  (=> |(increment c2)_8|
+      (or |(increment c2)_7|
+          a!1
+          |(decrement c0)_7|
+          |(decrement_rate c2)_7|
+          |(decrement c2)_7|
+          |(increase_rate c1)_7|
+          |(increase_rate c0)_7|
+          |(decrement_rate c1)_7|
+          |(decrement_rate c0)_7|
+          |(increase_rate c2)_7|
+          |(increment c1)_7|
+          |(decrement c1)_7|
+          |(increment c0)_7|))))
+(assert (let ((a!1 (or |(decrement_rate c0)_8|
+               (not (>= (- rate_value_c0_8 1.0) 0.0))
+               |(increase_rate c2)_8|
+               |(decrement c0)_8|
+               |(decrement c2)_8|
+               |(increase_rate c0)_8|
+               |(increase_rate c1)_8|
+               |(decrement_rate c2)_8|
+               |(decrement_rate c1)_8|
+               |(increment c0)_8|
+               |(increment c2)_8|
+               |(increment c1)_8|
+               |(decrement c1)_8|)))
+  (=> |(decrement_rate c0)_9| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c1)_8|
+               (not (>= (- rate_value_c1_8 1.0) 0.0))
+               |(increment c0)_8|
+               |(decrement c1)_8|
+               |(increase_rate c1)_8|
+               |(decrement_rate c2)_8|
+               |(increase_rate c2)_8|
+               |(decrement c0)_8|
+               |(decrement c2)_8|
+               |(increment c2)_8|
+               |(increase_rate c0)_8|
+               |(decrement_rate c0)_8|
+               |(increment c1)_8|)))
+  (=> |(decrement_rate c1)_9| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c2)_8|
+               (not (>= (- rate_value_c2_8 1.0) 0.0))
+               |(increment c2)_8|
+               |(increment c0)_8|
+               |(decrement_rate c1)_8|
+               |(decrement c0)_8|
+               |(decrement c1)_8|
+               |(decrement_rate c0)_8|
+               |(increase_rate c0)_8|
+               |(increment c1)_8|
+               |(increase_rate c2)_8|
+               |(decrement c2)_8|
+               |(increase_rate c1)_8|)))
+  (=> |(decrement_rate c2)_9| a!1)))
+(assert (let ((a!1 (or |(decrement c0)_8|
+               (not (>= (- value_c0_8 rate_value_c0_8) 0.0))
+               |(increment c2)_8|
+               |(decrement_rate c0)_8|
+               |(decrement c2)_8|
+               |(increase_rate c0)_8|
+               |(decrement_rate c2)_8|
+               |(decrement_rate c1)_8|
+               |(increase_rate c1)_8|
+               |(increment c1)_8|
+               |(increase_rate c2)_8|
+               |(increment c0)_8|
+               |(decrement c1)_8|)))
+  (=> |(decrement c0)_9| a!1)))
+(assert (let ((a!1 (or |(decrement c1)_8|
+               (not (>= (- value_c1_8 rate_value_c1_8) 0.0))
+               |(decrement_rate c1)_8|
+               |(increase_rate c0)_8|
+               |(decrement_rate c2)_8|
+               |(increment c1)_8|
+               |(increment c0)_8|
+               |(increase_rate c2)_8|
+               |(increase_rate c1)_8|
+               |(decrement c0)_8|
+               |(decrement c2)_8|
+               |(decrement_rate c0)_8|
+               |(increment c2)_8|)))
+  (=> |(decrement c1)_9| a!1)))
+(assert (let ((a!1 (or |(decrement c2)_8|
+               (not (>= (- value_c2_8 rate_value_c2_8) 0.0))
+               |(increase_rate c1)_8|
+               |(increment c1)_8|
+               |(decrement_rate c0)_8|
+               |(decrement c0)_8|
+               |(increment c2)_8|
+               |(increment c0)_8|
+               |(decrement_rate c1)_8|
+               |(increase_rate c2)_8|
+               |(decrement c1)_8|
+               |(increase_rate c0)_8|
+               |(decrement_rate c2)_8|)))
+  (=> |(decrement c2)_9| a!1)))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c0_8) 10.0) 0.0))))
+  (=> |(increase_rate c0)_9|
+      (or |(increase_rate c0)_8|
+          a!1
+          |(decrement c1)_8|
+          |(decrement c0)_8|
+          |(increment c2)_8|
+          |(increment c1)_8|
+          |(decrement_rate c0)_8|
+          |(increment c0)_8|
+          |(decrement_rate c2)_8|
+          |(decrement_rate c1)_8|
+          |(increase_rate c1)_8|
+          |(decrement c2)_8|
+          |(increase_rate c2)_8|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c1_8) 10.0) 0.0))))
+  (=> |(increase_rate c1)_9|
+      (or |(increase_rate c1)_8|
+          a!1
+          |(decrement c2)_8|
+          |(increment c0)_8|
+          |(decrement_rate c1)_8|
+          |(increment c2)_8|
+          |(decrement c0)_8|
+          |(decrement_rate c0)_8|
+          |(increment c1)_8|
+          |(increase_rate c0)_8|
+          |(increase_rate c2)_8|
+          |(decrement c1)_8|
+          |(decrement_rate c2)_8|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c2_8) 10.0) 0.0))))
+  (=> |(increase_rate c2)_9|
+      (or |(increase_rate c2)_8|
+          a!1
+          |(decrement_rate c0)_8|
+          |(decrement_rate c1)_8|
+          |(increment c0)_8|
+          |(decrement c2)_8|
+          |(decrement c0)_8|
+          |(decrement c1)_8|
+          |(increase_rate c1)_8|
+          |(increment c2)_8|
+          |(decrement_rate c2)_8|
+          |(increment c1)_8|
+          |(increase_rate c0)_8|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c0_8 value_c0_8) 6.0) 0.0))))
+  (=> |(increment c0)_9|
+      (or |(increment c0)_8|
+          a!1
+          |(decrement_rate c1)_8|
+          |(increase_rate c1)_8|
+          |(decrement_rate c2)_8|
+          |(decrement c2)_8|
+          |(increase_rate c2)_8|
+          |(increase_rate c0)_8|
+          |(decrement c1)_8|
+          |(increment c1)_8|
+          |(decrement_rate c0)_8|
+          |(decrement c0)_8|
+          |(increment c2)_8|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c1_8 value_c1_8) 6.0) 0.0))))
+  (=> |(increment c1)_9|
+      (or |(increment c1)_8|
+          a!1
+          |(decrement c2)_8|
+          |(increase_rate c0)_8|
+          |(decrement c1)_8|
+          |(increase_rate c1)_8|
+          |(decrement c0)_8|
+          |(decrement_rate c2)_8|
+          |(increment c0)_8|
+          |(decrement_rate c1)_8|
+          |(increase_rate c2)_8|
+          |(decrement_rate c0)_8|
+          |(increment c2)_8|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c2_8 value_c2_8) 6.0) 0.0))))
+  (=> |(increment c2)_9|
+      (or |(increment c2)_8|
+          a!1
+          |(decrement c0)_8|
+          |(decrement_rate c2)_8|
+          |(decrement c2)_8|
+          |(increase_rate c1)_8|
+          |(increase_rate c0)_8|
+          |(decrement_rate c1)_8|
+          |(decrement_rate c0)_8|
+          |(increase_rate c2)_8|
+          |(increment c1)_8|
+          |(decrement c1)_8|
+          |(increment c0)_8|))))
+(assert (let ((a!1 (or |(decrement_rate c0)_9|
+               (not (>= (- rate_value_c0_9 1.0) 0.0))
+               |(increase_rate c2)_9|
+               |(decrement c0)_9|
+               |(decrement c2)_9|
+               |(increase_rate c0)_9|
+               |(increase_rate c1)_9|
+               |(decrement_rate c2)_9|
+               |(decrement_rate c1)_9|
+               |(increment c0)_9|
+               |(increment c2)_9|
+               |(increment c1)_9|
+               |(decrement c1)_9|)))
+  (=> |(decrement_rate c0)_10| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c1)_9|
+               (not (>= (- rate_value_c1_9 1.0) 0.0))
+               |(increment c0)_9|
+               |(decrement c1)_9|
+               |(increase_rate c1)_9|
+               |(decrement_rate c2)_9|
+               |(increase_rate c2)_9|
+               |(decrement c0)_9|
+               |(decrement c2)_9|
+               |(increment c2)_9|
+               |(increase_rate c0)_9|
+               |(decrement_rate c0)_9|
+               |(increment c1)_9|)))
+  (=> |(decrement_rate c1)_10| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c2)_9|
+               (not (>= (- rate_value_c2_9 1.0) 0.0))
+               |(increment c2)_9|
+               |(increment c0)_9|
+               |(decrement_rate c1)_9|
+               |(decrement c0)_9|
+               |(decrement c1)_9|
+               |(decrement_rate c0)_9|
+               |(increase_rate c0)_9|
+               |(increment c1)_9|
+               |(increase_rate c2)_9|
+               |(decrement c2)_9|
+               |(increase_rate c1)_9|)))
+  (=> |(decrement_rate c2)_10| a!1)))
+(assert (let ((a!1 (or |(decrement c0)_9|
+               (not (>= (- value_c0_9 rate_value_c0_9) 0.0))
+               |(increment c2)_9|
+               |(decrement_rate c0)_9|
+               |(decrement c2)_9|
+               |(increase_rate c0)_9|
+               |(decrement_rate c2)_9|
+               |(decrement_rate c1)_9|
+               |(increase_rate c1)_9|
+               |(increment c1)_9|
+               |(increase_rate c2)_9|
+               |(increment c0)_9|
+               |(decrement c1)_9|)))
+  (=> |(decrement c0)_10| a!1)))
+(assert (let ((a!1 (or |(decrement c1)_9|
+               (not (>= (- value_c1_9 rate_value_c1_9) 0.0))
+               |(decrement_rate c1)_9|
+               |(increase_rate c0)_9|
+               |(decrement_rate c2)_9|
+               |(increment c1)_9|
+               |(increment c0)_9|
+               |(increase_rate c2)_9|
+               |(increase_rate c1)_9|
+               |(decrement c0)_9|
+               |(decrement c2)_9|
+               |(decrement_rate c0)_9|
+               |(increment c2)_9|)))
+  (=> |(decrement c1)_10| a!1)))
+(assert (let ((a!1 (or |(decrement c2)_9|
+               (not (>= (- value_c2_9 rate_value_c2_9) 0.0))
+               |(increase_rate c1)_9|
+               |(increment c1)_9|
+               |(decrement_rate c0)_9|
+               |(decrement c0)_9|
+               |(increment c2)_9|
+               |(increment c0)_9|
+               |(decrement_rate c1)_9|
+               |(increase_rate c2)_9|
+               |(decrement c1)_9|
+               |(increase_rate c0)_9|
+               |(decrement_rate c2)_9|)))
+  (=> |(decrement c2)_10| a!1)))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c0_9) 10.0) 0.0))))
+  (=> |(increase_rate c0)_10|
+      (or |(increase_rate c0)_9|
+          a!1
+          |(decrement c1)_9|
+          |(decrement c0)_9|
+          |(increment c2)_9|
+          |(increment c1)_9|
+          |(decrement_rate c0)_9|
+          |(increment c0)_9|
+          |(decrement_rate c2)_9|
+          |(decrement_rate c1)_9|
+          |(increase_rate c1)_9|
+          |(decrement c2)_9|
+          |(increase_rate c2)_9|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c1_9) 10.0) 0.0))))
+  (=> |(increase_rate c1)_10|
+      (or |(increase_rate c1)_9|
+          a!1
+          |(decrement c2)_9|
+          |(increment c0)_9|
+          |(decrement_rate c1)_9|
+          |(increment c2)_9|
+          |(decrement c0)_9|
+          |(decrement_rate c0)_9|
+          |(increment c1)_9|
+          |(increase_rate c0)_9|
+          |(increase_rate c2)_9|
+          |(decrement c1)_9|
+          |(decrement_rate c2)_9|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c2_9) 10.0) 0.0))))
+  (=> |(increase_rate c2)_10|
+      (or |(increase_rate c2)_9|
+          a!1
+          |(decrement_rate c0)_9|
+          |(decrement_rate c1)_9|
+          |(increment c0)_9|
+          |(decrement c2)_9|
+          |(decrement c0)_9|
+          |(decrement c1)_9|
+          |(increase_rate c1)_9|
+          |(increment c2)_9|
+          |(decrement_rate c2)_9|
+          |(increment c1)_9|
+          |(increase_rate c0)_9|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c0_9 value_c0_9) 6.0) 0.0))))
+  (=> |(increment c0)_10|
+      (or |(increment c0)_9|
+          a!1
+          |(decrement_rate c1)_9|
+          |(increase_rate c1)_9|
+          |(decrement_rate c2)_9|
+          |(decrement c2)_9|
+          |(increase_rate c2)_9|
+          |(increase_rate c0)_9|
+          |(decrement c1)_9|
+          |(increment c1)_9|
+          |(decrement_rate c0)_9|
+          |(decrement c0)_9|
+          |(increment c2)_9|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c1_9 value_c1_9) 6.0) 0.0))))
+  (=> |(increment c1)_10|
+      (or |(increment c1)_9|
+          a!1
+          |(decrement c2)_9|
+          |(increase_rate c0)_9|
+          |(decrement c1)_9|
+          |(increase_rate c1)_9|
+          |(decrement c0)_9|
+          |(decrement_rate c2)_9|
+          |(increment c0)_9|
+          |(decrement_rate c1)_9|
+          |(increase_rate c2)_9|
+          |(decrement_rate c0)_9|
+          |(increment c2)_9|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c2_9 value_c2_9) 6.0) 0.0))))
+  (=> |(increment c2)_10|
+      (or |(increment c2)_9|
+          a!1
+          |(decrement c0)_9|
+          |(decrement_rate c2)_9|
+          |(decrement c2)_9|
+          |(increase_rate c1)_9|
+          |(increase_rate c0)_9|
+          |(decrement_rate c1)_9|
+          |(decrement_rate c0)_9|
+          |(increase_rate c2)_9|
+          |(increment c1)_9|
+          |(decrement c1)_9|
+          |(increment c0)_9|))))
+(assert (let ((a!1 (or |(decrement_rate c0)_10|
+               (not (>= (- rate_value_c0_10 1.0) 0.0))
+               |(increase_rate c2)_10|
+               |(decrement c0)_10|
+               |(decrement c2)_10|
+               |(increase_rate c0)_10|
+               |(increase_rate c1)_10|
+               |(decrement_rate c2)_10|
+               |(decrement_rate c1)_10|
+               |(increment c0)_10|
+               |(increment c2)_10|
+               |(increment c1)_10|
+               |(decrement c1)_10|)))
+  (=> |(decrement_rate c0)_11| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c1)_10|
+               (not (>= (- rate_value_c1_10 1.0) 0.0))
+               |(increment c0)_10|
+               |(decrement c1)_10|
+               |(increase_rate c1)_10|
+               |(decrement_rate c2)_10|
+               |(increase_rate c2)_10|
+               |(decrement c0)_10|
+               |(decrement c2)_10|
+               |(increment c2)_10|
+               |(increase_rate c0)_10|
+               |(decrement_rate c0)_10|
+               |(increment c1)_10|)))
+  (=> |(decrement_rate c1)_11| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c2)_10|
+               (not (>= (- rate_value_c2_10 1.0) 0.0))
+               |(increment c2)_10|
+               |(increment c0)_10|
+               |(decrement_rate c1)_10|
+               |(decrement c0)_10|
+               |(decrement c1)_10|
+               |(decrement_rate c0)_10|
+               |(increase_rate c0)_10|
+               |(increment c1)_10|
+               |(increase_rate c2)_10|
+               |(decrement c2)_10|
+               |(increase_rate c1)_10|)))
+  (=> |(decrement_rate c2)_11| a!1)))
+(assert (let ((a!1 (or |(decrement c0)_10|
+               (not (>= (- value_c0_10 rate_value_c0_10) 0.0))
+               |(increment c2)_10|
+               |(decrement_rate c0)_10|
+               |(decrement c2)_10|
+               |(increase_rate c0)_10|
+               |(decrement_rate c2)_10|
+               |(decrement_rate c1)_10|
+               |(increase_rate c1)_10|
+               |(increment c1)_10|
+               |(increase_rate c2)_10|
+               |(increment c0)_10|
+               |(decrement c1)_10|)))
+  (=> |(decrement c0)_11| a!1)))
+(assert (let ((a!1 (or |(decrement c1)_10|
+               (not (>= (- value_c1_10 rate_value_c1_10) 0.0))
+               |(decrement_rate c1)_10|
+               |(increase_rate c0)_10|
+               |(decrement_rate c2)_10|
+               |(increment c1)_10|
+               |(increment c0)_10|
+               |(increase_rate c2)_10|
+               |(increase_rate c1)_10|
+               |(decrement c0)_10|
+               |(decrement c2)_10|
+               |(decrement_rate c0)_10|
+               |(increment c2)_10|)))
+  (=> |(decrement c1)_11| a!1)))
+(assert (let ((a!1 (or |(decrement c2)_10|
+               (not (>= (- value_c2_10 rate_value_c2_10) 0.0))
+               |(increase_rate c1)_10|
+               |(increment c1)_10|
+               |(decrement_rate c0)_10|
+               |(decrement c0)_10|
+               |(increment c2)_10|
+               |(increment c0)_10|
+               |(decrement_rate c1)_10|
+               |(increase_rate c2)_10|
+               |(decrement c1)_10|
+               |(increase_rate c0)_10|
+               |(decrement_rate c2)_10|)))
+  (=> |(decrement c2)_11| a!1)))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c0_10) 10.0) 0.0))))
+  (=> |(increase_rate c0)_11|
+      (or |(increase_rate c0)_10|
+          a!1
+          |(decrement c1)_10|
+          |(decrement c0)_10|
+          |(increment c2)_10|
+          |(increment c1)_10|
+          |(decrement_rate c0)_10|
+          |(increment c0)_10|
+          |(decrement_rate c2)_10|
+          |(decrement_rate c1)_10|
+          |(increase_rate c1)_10|
+          |(decrement c2)_10|
+          |(increase_rate c2)_10|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c1_10) 10.0) 0.0))))
+  (=> |(increase_rate c1)_11|
+      (or |(increase_rate c1)_10|
+          a!1
+          |(decrement c2)_10|
+          |(increment c0)_10|
+          |(decrement_rate c1)_10|
+          |(increment c2)_10|
+          |(decrement c0)_10|
+          |(decrement_rate c0)_10|
+          |(increment c1)_10|
+          |(increase_rate c0)_10|
+          |(increase_rate c2)_10|
+          |(decrement c1)_10|
+          |(decrement_rate c2)_10|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c2_10) 10.0) 0.0))))
+  (=> |(increase_rate c2)_11|
+      (or |(increase_rate c2)_10|
+          a!1
+          |(decrement_rate c0)_10|
+          |(decrement_rate c1)_10|
+          |(increment c0)_10|
+          |(decrement c2)_10|
+          |(decrement c0)_10|
+          |(decrement c1)_10|
+          |(increase_rate c1)_10|
+          |(increment c2)_10|
+          |(decrement_rate c2)_10|
+          |(increment c1)_10|
+          |(increase_rate c0)_10|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c0_10 value_c0_10) 6.0) 0.0))))
+  (=> |(increment c0)_11|
+      (or |(increment c0)_10|
+          a!1
+          |(decrement_rate c1)_10|
+          |(increase_rate c1)_10|
+          |(decrement_rate c2)_10|
+          |(decrement c2)_10|
+          |(increase_rate c2)_10|
+          |(increase_rate c0)_10|
+          |(decrement c1)_10|
+          |(increment c1)_10|
+          |(decrement_rate c0)_10|
+          |(decrement c0)_10|
+          |(increment c2)_10|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c1_10 value_c1_10) 6.0) 0.0))))
+  (=> |(increment c1)_11|
+      (or |(increment c1)_10|
+          a!1
+          |(decrement c2)_10|
+          |(increase_rate c0)_10|
+          |(decrement c1)_10|
+          |(increase_rate c1)_10|
+          |(decrement c0)_10|
+          |(decrement_rate c2)_10|
+          |(increment c0)_10|
+          |(decrement_rate c1)_10|
+          |(increase_rate c2)_10|
+          |(decrement_rate c0)_10|
+          |(increment c2)_10|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c2_10 value_c2_10) 6.0) 0.0))))
+  (=> |(increment c2)_11|
+      (or |(increment c2)_10|
+          a!1
+          |(decrement c0)_10|
+          |(decrement_rate c2)_10|
+          |(decrement c2)_10|
+          |(increase_rate c1)_10|
+          |(increase_rate c0)_10|
+          |(decrement_rate c1)_10|
+          |(decrement_rate c0)_10|
+          |(increase_rate c2)_10|
+          |(increment c1)_10|
+          |(decrement c1)_10|
+          |(increment c0)_10|))))
+(assert (let ((a!1 (or |(decrement_rate c0)_11|
+               (not (>= (- rate_value_c0_11 1.0) 0.0))
+               |(increase_rate c2)_11|
+               |(decrement c0)_11|
+               |(decrement c2)_11|
+               |(increase_rate c0)_11|
+               |(increase_rate c1)_11|
+               |(decrement_rate c2)_11|
+               |(decrement_rate c1)_11|
+               |(increment c0)_11|
+               |(increment c2)_11|
+               |(increment c1)_11|
+               |(decrement c1)_11|)))
+  (=> |(decrement_rate c0)_12| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c1)_11|
+               (not (>= (- rate_value_c1_11 1.0) 0.0))
+               |(increment c0)_11|
+               |(decrement c1)_11|
+               |(increase_rate c1)_11|
+               |(decrement_rate c2)_11|
+               |(increase_rate c2)_11|
+               |(decrement c0)_11|
+               |(decrement c2)_11|
+               |(increment c2)_11|
+               |(increase_rate c0)_11|
+               |(decrement_rate c0)_11|
+               |(increment c1)_11|)))
+  (=> |(decrement_rate c1)_12| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c2)_11|
+               (not (>= (- rate_value_c2_11 1.0) 0.0))
+               |(increment c2)_11|
+               |(increment c0)_11|
+               |(decrement_rate c1)_11|
+               |(decrement c0)_11|
+               |(decrement c1)_11|
+               |(decrement_rate c0)_11|
+               |(increase_rate c0)_11|
+               |(increment c1)_11|
+               |(increase_rate c2)_11|
+               |(decrement c2)_11|
+               |(increase_rate c1)_11|)))
+  (=> |(decrement_rate c2)_12| a!1)))
+(assert (let ((a!1 (or |(decrement c0)_11|
+               (not (>= (- value_c0_11 rate_value_c0_11) 0.0))
+               |(increment c2)_11|
+               |(decrement_rate c0)_11|
+               |(decrement c2)_11|
+               |(increase_rate c0)_11|
+               |(decrement_rate c2)_11|
+               |(decrement_rate c1)_11|
+               |(increase_rate c1)_11|
+               |(increment c1)_11|
+               |(increase_rate c2)_11|
+               |(increment c0)_11|
+               |(decrement c1)_11|)))
+  (=> |(decrement c0)_12| a!1)))
+(assert (let ((a!1 (or |(decrement c1)_11|
+               (not (>= (- value_c1_11 rate_value_c1_11) 0.0))
+               |(decrement_rate c1)_11|
+               |(increase_rate c0)_11|
+               |(decrement_rate c2)_11|
+               |(increment c1)_11|
+               |(increment c0)_11|
+               |(increase_rate c2)_11|
+               |(increase_rate c1)_11|
+               |(decrement c0)_11|
+               |(decrement c2)_11|
+               |(decrement_rate c0)_11|
+               |(increment c2)_11|)))
+  (=> |(decrement c1)_12| a!1)))
+(assert (let ((a!1 (or |(decrement c2)_11|
+               (not (>= (- value_c2_11 rate_value_c2_11) 0.0))
+               |(increase_rate c1)_11|
+               |(increment c1)_11|
+               |(decrement_rate c0)_11|
+               |(decrement c0)_11|
+               |(increment c2)_11|
+               |(increment c0)_11|
+               |(decrement_rate c1)_11|
+               |(increase_rate c2)_11|
+               |(decrement c1)_11|
+               |(increase_rate c0)_11|
+               |(decrement_rate c2)_11|)))
+  (=> |(decrement c2)_12| a!1)))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c0_11) 10.0) 0.0))))
+  (=> |(increase_rate c0)_12|
+      (or |(increase_rate c0)_11|
+          a!1
+          |(decrement c1)_11|
+          |(decrement c0)_11|
+          |(increment c2)_11|
+          |(increment c1)_11|
+          |(decrement_rate c0)_11|
+          |(increment c0)_11|
+          |(decrement_rate c2)_11|
+          |(decrement_rate c1)_11|
+          |(increase_rate c1)_11|
+          |(decrement c2)_11|
+          |(increase_rate c2)_11|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c1_11) 10.0) 0.0))))
+  (=> |(increase_rate c1)_12|
+      (or |(increase_rate c1)_11|
+          a!1
+          |(decrement c2)_11|
+          |(increment c0)_11|
+          |(decrement_rate c1)_11|
+          |(increment c2)_11|
+          |(decrement c0)_11|
+          |(decrement_rate c0)_11|
+          |(increment c1)_11|
+          |(increase_rate c0)_11|
+          |(increase_rate c2)_11|
+          |(decrement c1)_11|
+          |(decrement_rate c2)_11|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c2_11) 10.0) 0.0))))
+  (=> |(increase_rate c2)_12|
+      (or |(increase_rate c2)_11|
+          a!1
+          |(decrement_rate c0)_11|
+          |(decrement_rate c1)_11|
+          |(increment c0)_11|
+          |(decrement c2)_11|
+          |(decrement c0)_11|
+          |(decrement c1)_11|
+          |(increase_rate c1)_11|
+          |(increment c2)_11|
+          |(decrement_rate c2)_11|
+          |(increment c1)_11|
+          |(increase_rate c0)_11|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c0_11 value_c0_11) 6.0) 0.0))))
+  (=> |(increment c0)_12|
+      (or |(increment c0)_11|
+          a!1
+          |(decrement_rate c1)_11|
+          |(increase_rate c1)_11|
+          |(decrement_rate c2)_11|
+          |(decrement c2)_11|
+          |(increase_rate c2)_11|
+          |(increase_rate c0)_11|
+          |(decrement c1)_11|
+          |(increment c1)_11|
+          |(decrement_rate c0)_11|
+          |(decrement c0)_11|
+          |(increment c2)_11|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c1_11 value_c1_11) 6.0) 0.0))))
+  (=> |(increment c1)_12|
+      (or |(increment c1)_11|
+          a!1
+          |(decrement c2)_11|
+          |(increase_rate c0)_11|
+          |(decrement c1)_11|
+          |(increase_rate c1)_11|
+          |(decrement c0)_11|
+          |(decrement_rate c2)_11|
+          |(increment c0)_11|
+          |(decrement_rate c1)_11|
+          |(increase_rate c2)_11|
+          |(decrement_rate c0)_11|
+          |(increment c2)_11|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c2_11 value_c2_11) 6.0) 0.0))))
+  (=> |(increment c2)_12|
+      (or |(increment c2)_11|
+          a!1
+          |(decrement c0)_11|
+          |(decrement_rate c2)_11|
+          |(decrement c2)_11|
+          |(increase_rate c1)_11|
+          |(increase_rate c0)_11|
+          |(decrement_rate c1)_11|
+          |(decrement_rate c0)_11|
+          |(increase_rate c2)_11|
+          |(increment c1)_11|
+          |(decrement c1)_11|
+          |(increment c0)_11|))))
+(assert (let ((a!1 (or |(decrement_rate c0)_12|
+               (not (>= (- rate_value_c0_12 1.0) 0.0))
+               |(increase_rate c2)_12|
+               |(decrement c0)_12|
+               |(decrement c2)_12|
+               |(increase_rate c0)_12|
+               |(increase_rate c1)_12|
+               |(decrement_rate c2)_12|
+               |(decrement_rate c1)_12|
+               |(increment c0)_12|
+               |(increment c2)_12|
+               |(increment c1)_12|
+               |(decrement c1)_12|)))
+  (=> |(decrement_rate c0)_13| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c1)_12|
+               (not (>= (- rate_value_c1_12 1.0) 0.0))
+               |(increment c0)_12|
+               |(decrement c1)_12|
+               |(increase_rate c1)_12|
+               |(decrement_rate c2)_12|
+               |(increase_rate c2)_12|
+               |(decrement c0)_12|
+               |(decrement c2)_12|
+               |(increment c2)_12|
+               |(increase_rate c0)_12|
+               |(decrement_rate c0)_12|
+               |(increment c1)_12|)))
+  (=> |(decrement_rate c1)_13| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c2)_12|
+               (not (>= (- rate_value_c2_12 1.0) 0.0))
+               |(increment c2)_12|
+               |(increment c0)_12|
+               |(decrement_rate c1)_12|
+               |(decrement c0)_12|
+               |(decrement c1)_12|
+               |(decrement_rate c0)_12|
+               |(increase_rate c0)_12|
+               |(increment c1)_12|
+               |(increase_rate c2)_12|
+               |(decrement c2)_12|
+               |(increase_rate c1)_12|)))
+  (=> |(decrement_rate c2)_13| a!1)))
+(assert (let ((a!1 (or |(decrement c0)_12|
+               (not (>= (- value_c0_12 rate_value_c0_12) 0.0))
+               |(increment c2)_12|
+               |(decrement_rate c0)_12|
+               |(decrement c2)_12|
+               |(increase_rate c0)_12|
+               |(decrement_rate c2)_12|
+               |(decrement_rate c1)_12|
+               |(increase_rate c1)_12|
+               |(increment c1)_12|
+               |(increase_rate c2)_12|
+               |(increment c0)_12|
+               |(decrement c1)_12|)))
+  (=> |(decrement c0)_13| a!1)))
+(assert (let ((a!1 (or |(decrement c1)_12|
+               (not (>= (- value_c1_12 rate_value_c1_12) 0.0))
+               |(decrement_rate c1)_12|
+               |(increase_rate c0)_12|
+               |(decrement_rate c2)_12|
+               |(increment c1)_12|
+               |(increment c0)_12|
+               |(increase_rate c2)_12|
+               |(increase_rate c1)_12|
+               |(decrement c0)_12|
+               |(decrement c2)_12|
+               |(decrement_rate c0)_12|
+               |(increment c2)_12|)))
+  (=> |(decrement c1)_13| a!1)))
+(assert (let ((a!1 (or |(decrement c2)_12|
+               (not (>= (- value_c2_12 rate_value_c2_12) 0.0))
+               |(increase_rate c1)_12|
+               |(increment c1)_12|
+               |(decrement_rate c0)_12|
+               |(decrement c0)_12|
+               |(increment c2)_12|
+               |(increment c0)_12|
+               |(decrement_rate c1)_12|
+               |(increase_rate c2)_12|
+               |(decrement c1)_12|
+               |(increase_rate c0)_12|
+               |(decrement_rate c2)_12|)))
+  (=> |(decrement c2)_13| a!1)))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c0_12) 10.0) 0.0))))
+  (=> |(increase_rate c0)_13|
+      (or |(increase_rate c0)_12|
+          a!1
+          |(decrement c1)_12|
+          |(decrement c0)_12|
+          |(increment c2)_12|
+          |(increment c1)_12|
+          |(decrement_rate c0)_12|
+          |(increment c0)_12|
+          |(decrement_rate c2)_12|
+          |(decrement_rate c1)_12|
+          |(increase_rate c1)_12|
+          |(decrement c2)_12|
+          |(increase_rate c2)_12|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c1_12) 10.0) 0.0))))
+  (=> |(increase_rate c1)_13|
+      (or |(increase_rate c1)_12|
+          a!1
+          |(decrement c2)_12|
+          |(increment c0)_12|
+          |(decrement_rate c1)_12|
+          |(increment c2)_12|
+          |(decrement c0)_12|
+          |(decrement_rate c0)_12|
+          |(increment c1)_12|
+          |(increase_rate c0)_12|
+          |(increase_rate c2)_12|
+          |(decrement c1)_12|
+          |(decrement_rate c2)_12|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c2_12) 10.0) 0.0))))
+  (=> |(increase_rate c2)_13|
+      (or |(increase_rate c2)_12|
+          a!1
+          |(decrement_rate c0)_12|
+          |(decrement_rate c1)_12|
+          |(increment c0)_12|
+          |(decrement c2)_12|
+          |(decrement c0)_12|
+          |(decrement c1)_12|
+          |(increase_rate c1)_12|
+          |(increment c2)_12|
+          |(decrement_rate c2)_12|
+          |(increment c1)_12|
+          |(increase_rate c0)_12|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c0_12 value_c0_12) 6.0) 0.0))))
+  (=> |(increment c0)_13|
+      (or |(increment c0)_12|
+          a!1
+          |(decrement_rate c1)_12|
+          |(increase_rate c1)_12|
+          |(decrement_rate c2)_12|
+          |(decrement c2)_12|
+          |(increase_rate c2)_12|
+          |(increase_rate c0)_12|
+          |(decrement c1)_12|
+          |(increment c1)_12|
+          |(decrement_rate c0)_12|
+          |(decrement c0)_12|
+          |(increment c2)_12|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c1_12 value_c1_12) 6.0) 0.0))))
+  (=> |(increment c1)_13|
+      (or |(increment c1)_12|
+          a!1
+          |(decrement c2)_12|
+          |(increase_rate c0)_12|
+          |(decrement c1)_12|
+          |(increase_rate c1)_12|
+          |(decrement c0)_12|
+          |(decrement_rate c2)_12|
+          |(increment c0)_12|
+          |(decrement_rate c1)_12|
+          |(increase_rate c2)_12|
+          |(decrement_rate c0)_12|
+          |(increment c2)_12|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c2_12 value_c2_12) 6.0) 0.0))))
+  (=> |(increment c2)_13|
+      (or |(increment c2)_12|
+          a!1
+          |(decrement c0)_12|
+          |(decrement_rate c2)_12|
+          |(decrement c2)_12|
+          |(increase_rate c1)_12|
+          |(increase_rate c0)_12|
+          |(decrement_rate c1)_12|
+          |(decrement_rate c0)_12|
+          |(increase_rate c2)_12|
+          |(increment c1)_12|
+          |(decrement c1)_12|
+          |(increment c0)_12|))))
+(assert (let ((a!1 (or |(decrement_rate c0)_13|
+               (not (>= (- rate_value_c0_13 1.0) 0.0))
+               |(increase_rate c2)_13|
+               |(decrement c0)_13|
+               |(decrement c2)_13|
+               |(increase_rate c0)_13|
+               |(increase_rate c1)_13|
+               |(decrement_rate c2)_13|
+               |(decrement_rate c1)_13|
+               |(increment c0)_13|
+               |(increment c2)_13|
+               |(increment c1)_13|
+               |(decrement c1)_13|)))
+  (=> |(decrement_rate c0)_14| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c1)_13|
+               (not (>= (- rate_value_c1_13 1.0) 0.0))
+               |(increment c0)_13|
+               |(decrement c1)_13|
+               |(increase_rate c1)_13|
+               |(decrement_rate c2)_13|
+               |(increase_rate c2)_13|
+               |(decrement c0)_13|
+               |(decrement c2)_13|
+               |(increment c2)_13|
+               |(increase_rate c0)_13|
+               |(decrement_rate c0)_13|
+               |(increment c1)_13|)))
+  (=> |(decrement_rate c1)_14| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c2)_13|
+               (not (>= (- rate_value_c2_13 1.0) 0.0))
+               |(increment c2)_13|
+               |(increment c0)_13|
+               |(decrement_rate c1)_13|
+               |(decrement c0)_13|
+               |(decrement c1)_13|
+               |(decrement_rate c0)_13|
+               |(increase_rate c0)_13|
+               |(increment c1)_13|
+               |(increase_rate c2)_13|
+               |(decrement c2)_13|
+               |(increase_rate c1)_13|)))
+  (=> |(decrement_rate c2)_14| a!1)))
+(assert (let ((a!1 (or |(decrement c0)_13|
+               (not (>= (- value_c0_13 rate_value_c0_13) 0.0))
+               |(increment c2)_13|
+               |(decrement_rate c0)_13|
+               |(decrement c2)_13|
+               |(increase_rate c0)_13|
+               |(decrement_rate c2)_13|
+               |(decrement_rate c1)_13|
+               |(increase_rate c1)_13|
+               |(increment c1)_13|
+               |(increase_rate c2)_13|
+               |(increment c0)_13|
+               |(decrement c1)_13|)))
+  (=> |(decrement c0)_14| a!1)))
+(assert (let ((a!1 (or |(decrement c1)_13|
+               (not (>= (- value_c1_13 rate_value_c1_13) 0.0))
+               |(decrement_rate c1)_13|
+               |(increase_rate c0)_13|
+               |(decrement_rate c2)_13|
+               |(increment c1)_13|
+               |(increment c0)_13|
+               |(increase_rate c2)_13|
+               |(increase_rate c1)_13|
+               |(decrement c0)_13|
+               |(decrement c2)_13|
+               |(decrement_rate c0)_13|
+               |(increment c2)_13|)))
+  (=> |(decrement c1)_14| a!1)))
+(assert (let ((a!1 (or |(decrement c2)_13|
+               (not (>= (- value_c2_13 rate_value_c2_13) 0.0))
+               |(increase_rate c1)_13|
+               |(increment c1)_13|
+               |(decrement_rate c0)_13|
+               |(decrement c0)_13|
+               |(increment c2)_13|
+               |(increment c0)_13|
+               |(decrement_rate c1)_13|
+               |(increase_rate c2)_13|
+               |(decrement c1)_13|
+               |(increase_rate c0)_13|
+               |(decrement_rate c2)_13|)))
+  (=> |(decrement c2)_14| a!1)))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c0_13) 10.0) 0.0))))
+  (=> |(increase_rate c0)_14|
+      (or |(increase_rate c0)_13|
+          a!1
+          |(decrement c1)_13|
+          |(decrement c0)_13|
+          |(increment c2)_13|
+          |(increment c1)_13|
+          |(decrement_rate c0)_13|
+          |(increment c0)_13|
+          |(decrement_rate c2)_13|
+          |(decrement_rate c1)_13|
+          |(increase_rate c1)_13|
+          |(decrement c2)_13|
+          |(increase_rate c2)_13|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c1_13) 10.0) 0.0))))
+  (=> |(increase_rate c1)_14|
+      (or |(increase_rate c1)_13|
+          a!1
+          |(decrement c2)_13|
+          |(increment c0)_13|
+          |(decrement_rate c1)_13|
+          |(increment c2)_13|
+          |(decrement c0)_13|
+          |(decrement_rate c0)_13|
+          |(increment c1)_13|
+          |(increase_rate c0)_13|
+          |(increase_rate c2)_13|
+          |(decrement c1)_13|
+          |(decrement_rate c2)_13|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c2_13) 10.0) 0.0))))
+  (=> |(increase_rate c2)_14|
+      (or |(increase_rate c2)_13|
+          a!1
+          |(decrement_rate c0)_13|
+          |(decrement_rate c1)_13|
+          |(increment c0)_13|
+          |(decrement c2)_13|
+          |(decrement c0)_13|
+          |(decrement c1)_13|
+          |(increase_rate c1)_13|
+          |(increment c2)_13|
+          |(decrement_rate c2)_13|
+          |(increment c1)_13|
+          |(increase_rate c0)_13|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c0_13 value_c0_13) 6.0) 0.0))))
+  (=> |(increment c0)_14|
+      (or |(increment c0)_13|
+          a!1
+          |(decrement_rate c1)_13|
+          |(increase_rate c1)_13|
+          |(decrement_rate c2)_13|
+          |(decrement c2)_13|
+          |(increase_rate c2)_13|
+          |(increase_rate c0)_13|
+          |(decrement c1)_13|
+          |(increment c1)_13|
+          |(decrement_rate c0)_13|
+          |(decrement c0)_13|
+          |(increment c2)_13|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c1_13 value_c1_13) 6.0) 0.0))))
+  (=> |(increment c1)_14|
+      (or |(increment c1)_13|
+          a!1
+          |(decrement c2)_13|
+          |(increase_rate c0)_13|
+          |(decrement c1)_13|
+          |(increase_rate c1)_13|
+          |(decrement c0)_13|
+          |(decrement_rate c2)_13|
+          |(increment c0)_13|
+          |(decrement_rate c1)_13|
+          |(increase_rate c2)_13|
+          |(decrement_rate c0)_13|
+          |(increment c2)_13|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c2_13 value_c2_13) 6.0) 0.0))))
+  (=> |(increment c2)_14|
+      (or |(increment c2)_13|
+          a!1
+          |(decrement c0)_13|
+          |(decrement_rate c2)_13|
+          |(decrement c2)_13|
+          |(increase_rate c1)_13|
+          |(increase_rate c0)_13|
+          |(decrement_rate c1)_13|
+          |(decrement_rate c0)_13|
+          |(increase_rate c2)_13|
+          |(increment c1)_13|
+          |(decrement c1)_13|
+          |(increment c0)_13|))))
+(assert (let ((a!1 (or |(decrement_rate c0)_14|
+               (not (>= (- rate_value_c0_14 1.0) 0.0))
+               |(increase_rate c2)_14|
+               |(decrement c0)_14|
+               |(decrement c2)_14|
+               |(increase_rate c0)_14|
+               |(increase_rate c1)_14|
+               |(decrement_rate c2)_14|
+               |(decrement_rate c1)_14|
+               |(increment c0)_14|
+               |(increment c2)_14|
+               |(increment c1)_14|
+               |(decrement c1)_14|)))
+  (=> |(decrement_rate c0)_15| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c1)_14|
+               (not (>= (- rate_value_c1_14 1.0) 0.0))
+               |(increment c0)_14|
+               |(decrement c1)_14|
+               |(increase_rate c1)_14|
+               |(decrement_rate c2)_14|
+               |(increase_rate c2)_14|
+               |(decrement c0)_14|
+               |(decrement c2)_14|
+               |(increment c2)_14|
+               |(increase_rate c0)_14|
+               |(decrement_rate c0)_14|
+               |(increment c1)_14|)))
+  (=> |(decrement_rate c1)_15| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c2)_14|
+               (not (>= (- rate_value_c2_14 1.0) 0.0))
+               |(increment c2)_14|
+               |(increment c0)_14|
+               |(decrement_rate c1)_14|
+               |(decrement c0)_14|
+               |(decrement c1)_14|
+               |(decrement_rate c0)_14|
+               |(increase_rate c0)_14|
+               |(increment c1)_14|
+               |(increase_rate c2)_14|
+               |(decrement c2)_14|
+               |(increase_rate c1)_14|)))
+  (=> |(decrement_rate c2)_15| a!1)))
+(assert (let ((a!1 (or |(decrement c0)_14|
+               (not (>= (- value_c0_14 rate_value_c0_14) 0.0))
+               |(increment c2)_14|
+               |(decrement_rate c0)_14|
+               |(decrement c2)_14|
+               |(increase_rate c0)_14|
+               |(decrement_rate c2)_14|
+               |(decrement_rate c1)_14|
+               |(increase_rate c1)_14|
+               |(increment c1)_14|
+               |(increase_rate c2)_14|
+               |(increment c0)_14|
+               |(decrement c1)_14|)))
+  (=> |(decrement c0)_15| a!1)))
+(assert (let ((a!1 (or |(decrement c1)_14|
+               (not (>= (- value_c1_14 rate_value_c1_14) 0.0))
+               |(decrement_rate c1)_14|
+               |(increase_rate c0)_14|
+               |(decrement_rate c2)_14|
+               |(increment c1)_14|
+               |(increment c0)_14|
+               |(increase_rate c2)_14|
+               |(increase_rate c1)_14|
+               |(decrement c0)_14|
+               |(decrement c2)_14|
+               |(decrement_rate c0)_14|
+               |(increment c2)_14|)))
+  (=> |(decrement c1)_15| a!1)))
+(assert (let ((a!1 (or |(decrement c2)_14|
+               (not (>= (- value_c2_14 rate_value_c2_14) 0.0))
+               |(increase_rate c1)_14|
+               |(increment c1)_14|
+               |(decrement_rate c0)_14|
+               |(decrement c0)_14|
+               |(increment c2)_14|
+               |(increment c0)_14|
+               |(decrement_rate c1)_14|
+               |(increase_rate c2)_14|
+               |(decrement c1)_14|
+               |(increase_rate c0)_14|
+               |(decrement_rate c2)_14|)))
+  (=> |(decrement c2)_15| a!1)))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c0_14) 10.0) 0.0))))
+  (=> |(increase_rate c0)_15|
+      (or |(increase_rate c0)_14|
+          a!1
+          |(decrement c1)_14|
+          |(decrement c0)_14|
+          |(increment c2)_14|
+          |(increment c1)_14|
+          |(decrement_rate c0)_14|
+          |(increment c0)_14|
+          |(decrement_rate c2)_14|
+          |(decrement_rate c1)_14|
+          |(increase_rate c1)_14|
+          |(decrement c2)_14|
+          |(increase_rate c2)_14|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c1_14) 10.0) 0.0))))
+  (=> |(increase_rate c1)_15|
+      (or |(increase_rate c1)_14|
+          a!1
+          |(decrement c2)_14|
+          |(increment c0)_14|
+          |(decrement_rate c1)_14|
+          |(increment c2)_14|
+          |(decrement c0)_14|
+          |(decrement_rate c0)_14|
+          |(increment c1)_14|
+          |(increase_rate c0)_14|
+          |(increase_rate c2)_14|
+          |(decrement c1)_14|
+          |(decrement_rate c2)_14|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c2_14) 10.0) 0.0))))
+  (=> |(increase_rate c2)_15|
+      (or |(increase_rate c2)_14|
+          a!1
+          |(decrement_rate c0)_14|
+          |(decrement_rate c1)_14|
+          |(increment c0)_14|
+          |(decrement c2)_14|
+          |(decrement c0)_14|
+          |(decrement c1)_14|
+          |(increase_rate c1)_14|
+          |(increment c2)_14|
+          |(decrement_rate c2)_14|
+          |(increment c1)_14|
+          |(increase_rate c0)_14|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c0_14 value_c0_14) 6.0) 0.0))))
+  (=> |(increment c0)_15|
+      (or |(increment c0)_14|
+          a!1
+          |(decrement_rate c1)_14|
+          |(increase_rate c1)_14|
+          |(decrement_rate c2)_14|
+          |(decrement c2)_14|
+          |(increase_rate c2)_14|
+          |(increase_rate c0)_14|
+          |(decrement c1)_14|
+          |(increment c1)_14|
+          |(decrement_rate c0)_14|
+          |(decrement c0)_14|
+          |(increment c2)_14|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c1_14 value_c1_14) 6.0) 0.0))))
+  (=> |(increment c1)_15|
+      (or |(increment c1)_14|
+          a!1
+          |(decrement c2)_14|
+          |(increase_rate c0)_14|
+          |(decrement c1)_14|
+          |(increase_rate c1)_14|
+          |(decrement c0)_14|
+          |(decrement_rate c2)_14|
+          |(increment c0)_14|
+          |(decrement_rate c1)_14|
+          |(increase_rate c2)_14|
+          |(decrement_rate c0)_14|
+          |(increment c2)_14|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c2_14 value_c2_14) 6.0) 0.0))))
+  (=> |(increment c2)_15|
+      (or |(increment c2)_14|
+          a!1
+          |(decrement c0)_14|
+          |(decrement_rate c2)_14|
+          |(decrement c2)_14|
+          |(increase_rate c1)_14|
+          |(increase_rate c0)_14|
+          |(decrement_rate c1)_14|
+          |(decrement_rate c0)_14|
+          |(increase_rate c2)_14|
+          |(increment c1)_14|
+          |(decrement c1)_14|
+          |(increment c0)_14|))))
+(assert (let ((a!1 (or |(decrement_rate c0)_15|
+               (not (>= (- rate_value_c0_15 1.0) 0.0))
+               |(increase_rate c2)_15|
+               |(decrement c0)_15|
+               |(decrement c2)_15|
+               |(increase_rate c0)_15|
+               |(increase_rate c1)_15|
+               |(decrement_rate c2)_15|
+               |(decrement_rate c1)_15|
+               |(increment c0)_15|
+               |(increment c2)_15|
+               |(increment c1)_15|
+               |(decrement c1)_15|)))
+  (=> |(decrement_rate c0)_16| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c1)_15|
+               (not (>= (- rate_value_c1_15 1.0) 0.0))
+               |(increment c0)_15|
+               |(decrement c1)_15|
+               |(increase_rate c1)_15|
+               |(decrement_rate c2)_15|
+               |(increase_rate c2)_15|
+               |(decrement c0)_15|
+               |(decrement c2)_15|
+               |(increment c2)_15|
+               |(increase_rate c0)_15|
+               |(decrement_rate c0)_15|
+               |(increment c1)_15|)))
+  (=> |(decrement_rate c1)_16| a!1)))
+(assert (let ((a!1 (or |(decrement_rate c2)_15|
+               (not (>= (- rate_value_c2_15 1.0) 0.0))
+               |(increment c2)_15|
+               |(increment c0)_15|
+               |(decrement_rate c1)_15|
+               |(decrement c0)_15|
+               |(decrement c1)_15|
+               |(decrement_rate c0)_15|
+               |(increase_rate c0)_15|
+               |(increment c1)_15|
+               |(increase_rate c2)_15|
+               |(decrement c2)_15|
+               |(increase_rate c1)_15|)))
+  (=> |(decrement_rate c2)_16| a!1)))
+(assert (let ((a!1 (or |(decrement c0)_15|
+               (not (>= (- value_c0_15 rate_value_c0_15) 0.0))
+               |(increment c2)_15|
+               |(decrement_rate c0)_15|
+               |(decrement c2)_15|
+               |(increase_rate c0)_15|
+               |(decrement_rate c2)_15|
+               |(decrement_rate c1)_15|
+               |(increase_rate c1)_15|
+               |(increment c1)_15|
+               |(increase_rate c2)_15|
+               |(increment c0)_15|
+               |(decrement c1)_15|)))
+  (=> |(decrement c0)_16| a!1)))
+(assert (let ((a!1 (or |(decrement c1)_15|
+               (not (>= (- value_c1_15 rate_value_c1_15) 0.0))
+               |(decrement_rate c1)_15|
+               |(increase_rate c0)_15|
+               |(decrement_rate c2)_15|
+               |(increment c1)_15|
+               |(increment c0)_15|
+               |(increase_rate c2)_15|
+               |(increase_rate c1)_15|
+               |(decrement c0)_15|
+               |(decrement c2)_15|
+               |(decrement_rate c0)_15|
+               |(increment c2)_15|)))
+  (=> |(decrement c1)_16| a!1)))
+(assert (let ((a!1 (or |(decrement c2)_15|
+               (not (>= (- value_c2_15 rate_value_c2_15) 0.0))
+               |(increase_rate c1)_15|
+               |(increment c1)_15|
+               |(decrement_rate c0)_15|
+               |(decrement c0)_15|
+               |(increment c2)_15|
+               |(increment c0)_15|
+               |(decrement_rate c1)_15|
+               |(increase_rate c2)_15|
+               |(decrement c1)_15|
+               |(increase_rate c0)_15|
+               |(decrement_rate c2)_15|)))
+  (=> |(decrement c2)_16| a!1)))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c0_15) 10.0) 0.0))))
+  (=> |(increase_rate c0)_16|
+      (or |(increase_rate c0)_15|
+          a!1
+          |(decrement c1)_15|
+          |(decrement c0)_15|
+          |(increment c2)_15|
+          |(increment c1)_15|
+          |(decrement_rate c0)_15|
+          |(increment c0)_15|
+          |(decrement_rate c2)_15|
+          |(decrement_rate c1)_15|
+          |(increase_rate c1)_15|
+          |(decrement c2)_15|
+          |(increase_rate c2)_15|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c1_15) 10.0) 0.0))))
+  (=> |(increase_rate c1)_16|
+      (or |(increase_rate c1)_15|
+          a!1
+          |(decrement c2)_15|
+          |(increment c0)_15|
+          |(decrement_rate c1)_15|
+          |(increment c2)_15|
+          |(decrement c0)_15|
+          |(decrement_rate c0)_15|
+          |(increment c1)_15|
+          |(increase_rate c0)_15|
+          |(increase_rate c2)_15|
+          |(decrement c1)_15|
+          |(decrement_rate c2)_15|))))
+(assert (let ((a!1 (not (<= (- (+ 1.0 rate_value_c2_15) 10.0) 0.0))))
+  (=> |(increase_rate c2)_16|
+      (or |(increase_rate c2)_15|
+          a!1
+          |(decrement_rate c0)_15|
+          |(decrement_rate c1)_15|
+          |(increment c0)_15|
+          |(decrement c2)_15|
+          |(decrement c0)_15|
+          |(decrement c1)_15|
+          |(increase_rate c1)_15|
+          |(increment c2)_15|
+          |(decrement_rate c2)_15|
+          |(increment c1)_15|
+          |(increase_rate c0)_15|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c0_15 value_c0_15) 6.0) 0.0))))
+  (=> |(increment c0)_16|
+      (or |(increment c0)_15|
+          a!1
+          |(decrement_rate c1)_15|
+          |(increase_rate c1)_15|
+          |(decrement_rate c2)_15|
+          |(decrement c2)_15|
+          |(increase_rate c2)_15|
+          |(increase_rate c0)_15|
+          |(decrement c1)_15|
+          |(increment c1)_15|
+          |(decrement_rate c0)_15|
+          |(decrement c0)_15|
+          |(increment c2)_15|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c1_15 value_c1_15) 6.0) 0.0))))
+  (=> |(increment c1)_16|
+      (or |(increment c1)_15|
+          a!1
+          |(decrement c2)_15|
+          |(increase_rate c0)_15|
+          |(decrement c1)_15|
+          |(increase_rate c1)_15|
+          |(decrement c0)_15|
+          |(decrement_rate c2)_15|
+          |(increment c0)_15|
+          |(decrement_rate c1)_15|
+          |(increase_rate c2)_15|
+          |(decrement_rate c0)_15|
+          |(increment c2)_15|))))
+(assert (let ((a!1 (not (<= (- (+ rate_value_c2_15 value_c2_15) 6.0) 0.0))))
+  (=> |(increment c2)_16|
+      (or |(increment c2)_15|
+          a!1
+          |(decrement c0)_15|
+          |(decrement_rate c2)_15|
+          |(decrement c2)_15|
+          |(increase_rate c1)_15|
+          |(increase_rate c0)_15|
+          |(decrement_rate c1)_15|
+          |(decrement_rate c0)_15|
+          |(increase_rate c2)_15|
+          |(increment c1)_15|
+          |(decrement c1)_15|
+          |(increment c0)_15|))))
+(assert (let ((a!1 (and true
+                (<= (- (+ 1.0 value_c0_15) value_c1_15) 0.0)
+                (<= (- (+ 1.0 value_c1_15) value_c2_15) 0.0)))
+      (a!2 (or (<= (- (+ 1.0 value_c0_15) value_c1_15) 0.0) false))
+      (a!3 (or (<= (- (+ 1.0 value_c1_15) value_c2_15) 0.0) false)))
+  (or a!1 (and true a!2 a!3))))
+(assert (or (= value_c2_1 value_c2_0) |(decrement c2)_0| |(increment c2)_0|))
+(assert (or (= value_c0_1 value_c0_0) |(decrement c0)_0| |(increment c0)_0|))
+(assert (or (= rate_value_c1_1 rate_value_c1_0)
+    |(decrement_rate c1)_0|
+    |(increase_rate c1)_0|))
+(assert (or (= rate_value_c0_1 rate_value_c0_0)
+    |(decrement_rate c0)_0|
+    |(increase_rate c0)_0|))
+(assert (or (= rate_value_c2_1 rate_value_c2_0)
+    |(decrement_rate c2)_0|
+    |(increase_rate c2)_0|))
+(assert (or (= value_c1_1 value_c1_0) |(decrement c1)_0| |(increment c1)_0|))
+(assert (or (= value_c2_2 value_c2_1) |(decrement c2)_1| |(increment c2)_1|))
+(assert (or (= value_c0_2 value_c0_1) |(decrement c0)_1| |(increment c0)_1|))
+(assert (or (= rate_value_c1_2 rate_value_c1_1)
+    |(decrement_rate c1)_1|
+    |(increase_rate c1)_1|))
+(assert (or (= rate_value_c0_2 rate_value_c0_1)
+    |(decrement_rate c0)_1|
+    |(increase_rate c0)_1|))
+(assert (or (= rate_value_c2_2 rate_value_c2_1)
+    |(decrement_rate c2)_1|
+    |(increase_rate c2)_1|))
+(assert (or (= value_c1_2 value_c1_1) |(decrement c1)_1| |(increment c1)_1|))
+(assert (or (= value_c2_3 value_c2_2) |(decrement c2)_2| |(increment c2)_2|))
+(assert (or (= value_c0_3 value_c0_2) |(decrement c0)_2| |(increment c0)_2|))
+(assert (or (= rate_value_c1_3 rate_value_c1_2)
+    |(decrement_rate c1)_2|
+    |(increase_rate c1)_2|))
+(assert (or (= rate_value_c0_3 rate_value_c0_2)
+    |(decrement_rate c0)_2|
+    |(increase_rate c0)_2|))
+(assert (or (= rate_value_c2_3 rate_value_c2_2)
+    |(decrement_rate c2)_2|
+    |(increase_rate c2)_2|))
+(assert (or (= value_c1_3 value_c1_2) |(decrement c1)_2| |(increment c1)_2|))
+(assert (or (= value_c2_4 value_c2_3) |(decrement c2)_3| |(increment c2)_3|))
+(assert (or (= value_c0_4 value_c0_3) |(decrement c0)_3| |(increment c0)_3|))
+(assert (or (= rate_value_c1_4 rate_value_c1_3)
+    |(decrement_rate c1)_3|
+    |(increase_rate c1)_3|))
+(assert (or (= rate_value_c0_4 rate_value_c0_3)
+    |(decrement_rate c0)_3|
+    |(increase_rate c0)_3|))
+(assert (or (= rate_value_c2_4 rate_value_c2_3)
+    |(decrement_rate c2)_3|
+    |(increase_rate c2)_3|))
+(assert (or (= value_c1_4 value_c1_3) |(decrement c1)_3| |(increment c1)_3|))
+(assert (or (= value_c2_5 value_c2_4) |(decrement c2)_4| |(increment c2)_4|))
+(assert (or (= value_c0_5 value_c0_4) |(decrement c0)_4| |(increment c0)_4|))
+(assert (or (= rate_value_c1_5 rate_value_c1_4)
+    |(decrement_rate c1)_4|
+    |(increase_rate c1)_4|))
+(assert (or (= rate_value_c0_5 rate_value_c0_4)
+    |(decrement_rate c0)_4|
+    |(increase_rate c0)_4|))
+(assert (or (= rate_value_c2_5 rate_value_c2_4)
+    |(decrement_rate c2)_4|
+    |(increase_rate c2)_4|))
+(assert (or (= value_c1_5 value_c1_4) |(decrement c1)_4| |(increment c1)_4|))
+(assert (or (= value_c2_6 value_c2_5) |(decrement c2)_5| |(increment c2)_5|))
+(assert (or (= value_c0_6 value_c0_5) |(decrement c0)_5| |(increment c0)_5|))
+(assert (or (= rate_value_c1_6 rate_value_c1_5)
+    |(decrement_rate c1)_5|
+    |(increase_rate c1)_5|))
+(assert (or (= rate_value_c0_6 rate_value_c0_5)
+    |(decrement_rate c0)_5|
+    |(increase_rate c0)_5|))
+(assert (or (= rate_value_c2_6 rate_value_c2_5)
+    |(decrement_rate c2)_5|
+    |(increase_rate c2)_5|))
+(assert (or (= value_c1_6 value_c1_5) |(decrement c1)_5| |(increment c1)_5|))
+(assert (or (= value_c2_7 value_c2_6) |(decrement c2)_6| |(increment c2)_6|))
+(assert (or (= value_c0_7 value_c0_6) |(decrement c0)_6| |(increment c0)_6|))
+(assert (or (= rate_value_c1_7 rate_value_c1_6)
+    |(decrement_rate c1)_6|
+    |(increase_rate c1)_6|))
+(assert (or (= rate_value_c0_7 rate_value_c0_6)
+    |(decrement_rate c0)_6|
+    |(increase_rate c0)_6|))
+(assert (or (= rate_value_c2_7 rate_value_c2_6)
+    |(decrement_rate c2)_6|
+    |(increase_rate c2)_6|))
+(assert (or (= value_c1_7 value_c1_6) |(decrement c1)_6| |(increment c1)_6|))
+(assert (or (= value_c2_8 value_c2_7) |(decrement c2)_7| |(increment c2)_7|))
+(assert (or (= value_c0_8 value_c0_7) |(decrement c0)_7| |(increment c0)_7|))
+(assert (or (= rate_value_c1_8 rate_value_c1_7)
+    |(decrement_rate c1)_7|
+    |(increase_rate c1)_7|))
+(assert (or (= rate_value_c0_8 rate_value_c0_7)
+    |(decrement_rate c0)_7|
+    |(increase_rate c0)_7|))
+(assert (or (= rate_value_c2_8 rate_value_c2_7)
+    |(decrement_rate c2)_7|
+    |(increase_rate c2)_7|))
+(assert (or (= value_c1_8 value_c1_7) |(decrement c1)_7| |(increment c1)_7|))
+(assert (or (= value_c2_9 value_c2_8) |(decrement c2)_8| |(increment c2)_8|))
+(assert (or (= value_c0_9 value_c0_8) |(decrement c0)_8| |(increment c0)_8|))
+(assert (or (= rate_value_c1_9 rate_value_c1_8)
+    |(decrement_rate c1)_8|
+    |(increase_rate c1)_8|))
+(assert (or (= rate_value_c0_9 rate_value_c0_8)
+    |(decrement_rate c0)_8|
+    |(increase_rate c0)_8|))
+(assert (or (= rate_value_c2_9 rate_value_c2_8)
+    |(decrement_rate c2)_8|
+    |(increase_rate c2)_8|))
+(assert (or (= value_c1_9 value_c1_8) |(decrement c1)_8| |(increment c1)_8|))
+(assert (or (= value_c2_10 value_c2_9) |(decrement c2)_9| |(increment c2)_9|))
+(assert (or (= value_c0_10 value_c0_9) |(decrement c0)_9| |(increment c0)_9|))
+(assert (or (= rate_value_c1_10 rate_value_c1_9)
+    |(decrement_rate c1)_9|
+    |(increase_rate c1)_9|))
+(assert (or (= rate_value_c0_10 rate_value_c0_9)
+    |(decrement_rate c0)_9|
+    |(increase_rate c0)_9|))
+(assert (or (= rate_value_c2_10 rate_value_c2_9)
+    |(decrement_rate c2)_9|
+    |(increase_rate c2)_9|))
+(assert (or (= value_c1_10 value_c1_9) |(decrement c1)_9| |(increment c1)_9|))
+(assert (or (= value_c2_11 value_c2_10) |(decrement c2)_10| |(increment c2)_10|))
+(assert (or (= value_c0_11 value_c0_10) |(decrement c0)_10| |(increment c0)_10|))
+(assert (or (= rate_value_c1_11 rate_value_c1_10)
+    |(decrement_rate c1)_10|
+    |(increase_rate c1)_10|))
+(assert (or (= rate_value_c0_11 rate_value_c0_10)
+    |(decrement_rate c0)_10|
+    |(increase_rate c0)_10|))
+(assert (or (= rate_value_c2_11 rate_value_c2_10)
+    |(decrement_rate c2)_10|
+    |(increase_rate c2)_10|))
+(assert (or (= value_c1_11 value_c1_10) |(decrement c1)_10| |(increment c1)_10|))
+(assert (or (= value_c2_12 value_c2_11) |(decrement c2)_11| |(increment c2)_11|))
+(assert (or (= value_c0_12 value_c0_11) |(decrement c0)_11| |(increment c0)_11|))
+(assert (or (= rate_value_c1_12 rate_value_c1_11)
+    |(decrement_rate c1)_11|
+    |(increase_rate c1)_11|))
+(assert (or (= rate_value_c0_12 rate_value_c0_11)
+    |(decrement_rate c0)_11|
+    |(increase_rate c0)_11|))
+(assert (or (= rate_value_c2_12 rate_value_c2_11)
+    |(decrement_rate c2)_11|
+    |(increase_rate c2)_11|))
+(assert (or (= value_c1_12 value_c1_11) |(decrement c1)_11| |(increment c1)_11|))
+(assert (or (= value_c2_13 value_c2_12) |(decrement c2)_12| |(increment c2)_12|))
+(assert (or (= value_c0_13 value_c0_12) |(decrement c0)_12| |(increment c0)_12|))
+(assert (or (= rate_value_c1_13 rate_value_c1_12)
+    |(decrement_rate c1)_12|
+    |(increase_rate c1)_12|))
+(assert (or (= rate_value_c0_13 rate_value_c0_12)
+    |(decrement_rate c0)_12|
+    |(increase_rate c0)_12|))
+(assert (or (= rate_value_c2_13 rate_value_c2_12)
+    |(decrement_rate c2)_12|
+    |(increase_rate c2)_12|))
+(assert (or (= value_c1_13 value_c1_12) |(decrement c1)_12| |(increment c1)_12|))
+(assert (or (= value_c2_14 value_c2_13) |(decrement c2)_13| |(increment c2)_13|))
+(assert (or (= value_c0_14 value_c0_13) |(decrement c0)_13| |(increment c0)_13|))
+(assert (or (= rate_value_c1_14 rate_value_c1_13)
+    |(decrement_rate c1)_13|
+    |(increase_rate c1)_13|))
+(assert (or (= rate_value_c0_14 rate_value_c0_13)
+    |(decrement_rate c0)_13|
+    |(increase_rate c0)_13|))
+(assert (or (= rate_value_c2_14 rate_value_c2_13)
+    |(decrement_rate c2)_13|
+    |(increase_rate c2)_13|))
+(assert (or (= value_c1_14 value_c1_13) |(decrement c1)_13| |(increment c1)_13|))
+(assert (or (= value_c2_15 value_c2_14) |(decrement c2)_14| |(increment c2)_14|))
+(assert (or (= value_c0_15 value_c0_14) |(decrement c0)_14| |(increment c0)_14|))
+(assert (or (= rate_value_c1_15 rate_value_c1_14)
+    |(decrement_rate c1)_14|
+    |(increase_rate c1)_14|))
+(assert (or (= rate_value_c0_15 rate_value_c0_14)
+    |(decrement_rate c0)_14|
+    |(increase_rate c0)_14|))
+(assert (or (= rate_value_c2_15 rate_value_c2_14)
+    |(decrement_rate c2)_14|
+    |(increase_rate c2)_14|))
+(assert (or (= value_c1_15 value_c1_14) |(decrement c1)_14| |(increment c1)_14|))
+(assert (= value_c0_0 1.0))
+(assert (= value_c1_0 1.0))
+(assert (= value_c2_0 1.0))
+(assert (= rate_value_c0_0 1.0))
+(assert (= rate_value_c1_0 1.0))
+(assert (= rate_value_c2_0 1.0))
+(assert (=> |(decrement_rate c0)_15| (>= (- rate_value_c0_15 1.0) 0.0)))
+(assert (=> |(decrement_rate c0)_15| trate_value_c0_16))
+(assert (=> |(decrement_rate c1)_15| (>= (- rate_value_c1_15 1.0) 0.0)))
+(assert (=> |(decrement_rate c1)_15| trate_value_c1_16))
+(assert (=> |(decrement_rate c2)_15| (>= (- rate_value_c2_15 1.0) 0.0)))
+(assert (=> |(decrement_rate c2)_15| trate_value_c2_16))
+(assert (=> |(decrement c0)_15| (>= (- value_c0_15 rate_value_c0_15) 0.0)))
+(assert (=> |(decrement c1)_15| (>= (- value_c1_15 rate_value_c1_15) 0.0)))
+(assert (=> |(decrement c2)_15| (>= (- value_c2_15 rate_value_c2_15) 0.0)))
+(assert (=> |(increase_rate c0)_15| (<= (- (+ 1.0 rate_value_c0_15) 10.0) 0.0)))
+(assert (=> |(increase_rate c0)_15| trate_value_c0_16))
+(assert (=> |(increase_rate c1)_15| (<= (- (+ 1.0 rate_value_c1_15) 10.0) 0.0)))
+(assert (=> |(increase_rate c1)_15| trate_value_c1_16))
+(assert (=> |(increase_rate c2)_15| (<= (- (+ 1.0 rate_value_c2_15) 10.0) 0.0)))
+(assert (=> |(increase_rate c2)_15| trate_value_c2_16))
+(assert (=> |(increment c0)_15| (<= (- (+ rate_value_c0_15 value_c0_15) 6.0) 0.0)))
+(assert (=> |(increment c1)_15| (<= (- (+ rate_value_c1_15 value_c1_15) 6.0) 0.0)))
+(assert (=> |(increment c2)_15| (<= (- (+ rate_value_c2_15 value_c2_15) 6.0) 0.0)))
+(assert (=> |(decrement_rate c0)_0| (>= (- rate_value_c0_0 1.0) 0.0)))
+(assert (=> |(decrement_rate c0)_0|
+    (= rate_value_c0_1 (- rate_value_c0_0 (* (/ 1.0 2.0) rate_value_c0_0)))))
+(assert (=> |(decrement_rate c1)_0| (>= (- rate_value_c1_0 1.0) 0.0)))
+(assert (=> |(decrement_rate c1)_0|
+    (= rate_value_c1_1 (- rate_value_c1_0 (* (/ 1.0 2.0) rate_value_c1_0)))))
+(assert (=> |(decrement_rate c2)_0| (>= (- rate_value_c2_0 1.0) 0.0)))
+(assert (=> |(decrement_rate c2)_0|
+    (= rate_value_c2_1 (- rate_value_c2_0 (* (/ 1.0 2.0) rate_value_c2_0)))))
+(assert (=> |(decrement c0)_0| (>= (- value_c0_0 rate_value_c0_0) 0.0)))
+(assert (=> |(decrement c0)_0| (= value_c0_1 (- value_c0_0 rate_value_c0_0))))
+(assert (=> |(decrement c1)_0| (>= (- value_c1_0 rate_value_c1_0) 0.0)))
+(assert (=> |(decrement c1)_0| (= value_c1_1 (- value_c1_0 rate_value_c1_0))))
+(assert (=> |(decrement c2)_0| (>= (- value_c2_0 rate_value_c2_0) 0.0)))
+(assert (=> |(decrement c2)_0| (= value_c2_1 (- value_c2_0 rate_value_c2_0))))
+(assert (=> |(increase_rate c0)_0| (<= (- (+ 1.0 rate_value_c0_0) 10.0) 0.0)))
+(assert (=> |(increase_rate c0)_0|
+    (= rate_value_c0_1 (+ (* (/ 1.0 2.0) rate_value_c0_0) rate_value_c0_0))))
+(assert (=> |(increase_rate c1)_0| (<= (- (+ 1.0 rate_value_c1_0) 10.0) 0.0)))
+(assert (=> |(increase_rate c1)_0|
+    (= rate_value_c1_1 (+ (* (/ 1.0 2.0) rate_value_c1_0) rate_value_c1_0))))
+(assert (=> |(increase_rate c2)_0| (<= (- (+ 1.0 rate_value_c2_0) 10.0) 0.0)))
+(assert (=> |(increase_rate c2)_0|
+    (= rate_value_c2_1 (+ (* (/ 1.0 2.0) rate_value_c2_0) rate_value_c2_0))))
+(assert (=> |(increment c0)_0| (<= (- (+ rate_value_c0_0 value_c0_0) 6.0) 0.0)))
+(assert (=> |(increment c0)_0| (= value_c0_1 (+ value_c0_0 rate_value_c0_0))))
+(assert (=> |(increment c1)_0| (<= (- (+ rate_value_c1_0 value_c1_0) 6.0) 0.0)))
+(assert (=> |(increment c1)_0| (= value_c1_1 (+ value_c1_0 rate_value_c1_0))))
+(assert (=> |(increment c2)_0| (<= (- (+ rate_value_c2_0 value_c2_0) 6.0) 0.0)))
+(assert (=> |(increment c2)_0| (= value_c2_1 (+ value_c2_0 rate_value_c2_0))))
+(assert (=> |(decrement_rate c0)_1| (>= (- rate_value_c0_1 1.0) 0.0)))
+(assert (=> |(decrement_rate c0)_1|
+    (= rate_value_c0_2 (- rate_value_c0_1 (* (/ 1.0 2.0) rate_value_c0_1)))))
+(assert (=> |(decrement_rate c1)_1| (>= (- rate_value_c1_1 1.0) 0.0)))
+(assert (=> |(decrement_rate c1)_1|
+    (= rate_value_c1_2 (- rate_value_c1_1 (* (/ 1.0 2.0) rate_value_c1_1)))))
+(assert (=> |(decrement_rate c2)_1| (>= (- rate_value_c2_1 1.0) 0.0)))
+(assert (=> |(decrement_rate c2)_1|
+    (= rate_value_c2_2 (- rate_value_c2_1 (* (/ 1.0 2.0) rate_value_c2_1)))))
+(assert (=> |(decrement c0)_1| (>= (- value_c0_1 rate_value_c0_1) 0.0)))
+(assert (=> |(decrement c0)_1| (= value_c0_2 (- value_c0_1 rate_value_c0_1))))
+(assert (=> |(decrement c1)_1| (>= (- value_c1_1 rate_value_c1_1) 0.0)))
+(assert (=> |(decrement c1)_1| (= value_c1_2 (- value_c1_1 rate_value_c1_1))))
+(assert (=> |(decrement c2)_1| (>= (- value_c2_1 rate_value_c2_1) 0.0)))
+(assert (=> |(decrement c2)_1| (= value_c2_2 (- value_c2_1 rate_value_c2_1))))
+(assert (=> |(increase_rate c0)_1| (<= (- (+ 1.0 rate_value_c0_1) 10.0) 0.0)))
+(assert (=> |(increase_rate c0)_1|
+    (= rate_value_c0_2 (+ (* (/ 1.0 2.0) rate_value_c0_1) rate_value_c0_1))))
+(assert (=> |(increase_rate c1)_1| (<= (- (+ 1.0 rate_value_c1_1) 10.0) 0.0)))
+(assert (=> |(increase_rate c1)_1|
+    (= rate_value_c1_2 (+ (* (/ 1.0 2.0) rate_value_c1_1) rate_value_c1_1))))
+(assert (=> |(increase_rate c2)_1| (<= (- (+ 1.0 rate_value_c2_1) 10.0) 0.0)))
+(assert (=> |(increase_rate c2)_1|
+    (= rate_value_c2_2 (+ (* (/ 1.0 2.0) rate_value_c2_1) rate_value_c2_1))))
+(assert (=> |(increment c0)_1| (<= (- (+ rate_value_c0_1 value_c0_1) 6.0) 0.0)))
+(assert (=> |(increment c0)_1| (= value_c0_2 (+ value_c0_1 rate_value_c0_1))))
+(assert (=> |(increment c1)_1| (<= (- (+ rate_value_c1_1 value_c1_1) 6.0) 0.0)))
+(assert (=> |(increment c1)_1| (= value_c1_2 (+ value_c1_1 rate_value_c1_1))))
+(assert (=> |(increment c2)_1| (<= (- (+ rate_value_c2_1 value_c2_1) 6.0) 0.0)))
+(assert (=> |(increment c2)_1| (= value_c2_2 (+ value_c2_1 rate_value_c2_1))))
+(assert (=> |(decrement_rate c0)_2| (>= (- rate_value_c0_2 1.0) 0.0)))
+(assert (=> |(decrement_rate c0)_2|
+    (= rate_value_c0_3 (- rate_value_c0_2 (* (/ 1.0 2.0) rate_value_c0_2)))))
+(assert (=> |(decrement_rate c1)_2| (>= (- rate_value_c1_2 1.0) 0.0)))
+(assert (=> |(decrement_rate c1)_2|
+    (= rate_value_c1_3 (- rate_value_c1_2 (* (/ 1.0 2.0) rate_value_c1_2)))))
+(assert (=> |(decrement_rate c2)_2| (>= (- rate_value_c2_2 1.0) 0.0)))
+(assert (=> |(decrement_rate c2)_2|
+    (= rate_value_c2_3 (- rate_value_c2_2 (* (/ 1.0 2.0) rate_value_c2_2)))))
+(assert (=> |(decrement c0)_2| (>= (- value_c0_2 rate_value_c0_2) 0.0)))
+(assert (=> |(decrement c0)_2| (= value_c0_3 (- value_c0_2 rate_value_c0_2))))
+(assert (=> |(decrement c1)_2| (>= (- value_c1_2 rate_value_c1_2) 0.0)))
+(assert (=> |(decrement c1)_2| (= value_c1_3 (- value_c1_2 rate_value_c1_2))))
+(assert (=> |(decrement c2)_2| (>= (- value_c2_2 rate_value_c2_2) 0.0)))
+(assert (=> |(decrement c2)_2| (= value_c2_3 (- value_c2_2 rate_value_c2_2))))
+(assert (=> |(increase_rate c0)_2| (<= (- (+ 1.0 rate_value_c0_2) 10.0) 0.0)))
+(assert (=> |(increase_rate c0)_2|
+    (= rate_value_c0_3 (+ (* (/ 1.0 2.0) rate_value_c0_2) rate_value_c0_2))))
+(assert (=> |(increase_rate c1)_2| (<= (- (+ 1.0 rate_value_c1_2) 10.0) 0.0)))
+(assert (=> |(increase_rate c1)_2|
+    (= rate_value_c1_3 (+ (* (/ 1.0 2.0) rate_value_c1_2) rate_value_c1_2))))
+(assert (=> |(increase_rate c2)_2| (<= (- (+ 1.0 rate_value_c2_2) 10.0) 0.0)))
+(assert (=> |(increase_rate c2)_2|
+    (= rate_value_c2_3 (+ (* (/ 1.0 2.0) rate_value_c2_2) rate_value_c2_2))))
+(assert (=> |(increment c0)_2| (<= (- (+ rate_value_c0_2 value_c0_2) 6.0) 0.0)))
+(assert (=> |(increment c0)_2| (= value_c0_3 (+ value_c0_2 rate_value_c0_2))))
+(assert (=> |(increment c1)_2| (<= (- (+ rate_value_c1_2 value_c1_2) 6.0) 0.0)))
+(assert (=> |(increment c1)_2| (= value_c1_3 (+ value_c1_2 rate_value_c1_2))))
+(assert (=> |(increment c2)_2| (<= (- (+ rate_value_c2_2 value_c2_2) 6.0) 0.0)))
+(assert (=> |(increment c2)_2| (= value_c2_3 (+ value_c2_2 rate_value_c2_2))))
+(assert (=> |(decrement_rate c0)_3| (>= (- rate_value_c0_3 1.0) 0.0)))
+(assert (=> |(decrement_rate c0)_3|
+    (= rate_value_c0_4 (- rate_value_c0_3 (* (/ 1.0 2.0) rate_value_c0_3)))))
+(assert (=> |(decrement_rate c1)_3| (>= (- rate_value_c1_3 1.0) 0.0)))
+(assert (=> |(decrement_rate c1)_3|
+    (= rate_value_c1_4 (- rate_value_c1_3 (* (/ 1.0 2.0) rate_value_c1_3)))))
+(assert (=> |(decrement_rate c2)_3| (>= (- rate_value_c2_3 1.0) 0.0)))
+(assert (=> |(decrement_rate c2)_3|
+    (= rate_value_c2_4 (- rate_value_c2_3 (* (/ 1.0 2.0) rate_value_c2_3)))))
+(assert (=> |(decrement c0)_3| (>= (- value_c0_3 rate_value_c0_3) 0.0)))
+(assert (=> |(decrement c0)_3| (= value_c0_4 (- value_c0_3 rate_value_c0_3))))
+(assert (=> |(decrement c1)_3| (>= (- value_c1_3 rate_value_c1_3) 0.0)))
+(assert (=> |(decrement c1)_3| (= value_c1_4 (- value_c1_3 rate_value_c1_3))))
+(assert (=> |(decrement c2)_3| (>= (- value_c2_3 rate_value_c2_3) 0.0)))
+(assert (=> |(decrement c2)_3| (= value_c2_4 (- value_c2_3 rate_value_c2_3))))
+(assert (=> |(increase_rate c0)_3| (<= (- (+ 1.0 rate_value_c0_3) 10.0) 0.0)))
+(assert (=> |(increase_rate c0)_3|
+    (= rate_value_c0_4 (+ (* (/ 1.0 2.0) rate_value_c0_3) rate_value_c0_3))))
+(assert (=> |(increase_rate c1)_3| (<= (- (+ 1.0 rate_value_c1_3) 10.0) 0.0)))
+(assert (=> |(increase_rate c1)_3|
+    (= rate_value_c1_4 (+ (* (/ 1.0 2.0) rate_value_c1_3) rate_value_c1_3))))
+(assert (=> |(increase_rate c2)_3| (<= (- (+ 1.0 rate_value_c2_3) 10.0) 0.0)))
+(assert (=> |(increase_rate c2)_3|
+    (= rate_value_c2_4 (+ (* (/ 1.0 2.0) rate_value_c2_3) rate_value_c2_3))))
+(assert (=> |(increment c0)_3| (<= (- (+ rate_value_c0_3 value_c0_3) 6.0) 0.0)))
+(assert (=> |(increment c0)_3| (= value_c0_4 (+ value_c0_3 rate_value_c0_3))))
+(assert (=> |(increment c1)_3| (<= (- (+ rate_value_c1_3 value_c1_3) 6.0) 0.0)))
+(assert (=> |(increment c1)_3| (= value_c1_4 (+ value_c1_3 rate_value_c1_3))))
+(assert (=> |(increment c2)_3| (<= (- (+ rate_value_c2_3 value_c2_3) 6.0) 0.0)))
+(assert (=> |(increment c2)_3| (= value_c2_4 (+ value_c2_3 rate_value_c2_3))))
+(assert (=> |(decrement_rate c0)_4| (>= (- rate_value_c0_4 1.0) 0.0)))
+(assert (=> |(decrement_rate c0)_4|
+    (= rate_value_c0_5 (- rate_value_c0_4 (* (/ 1.0 2.0) rate_value_c0_4)))))
+(assert (=> |(decrement_rate c1)_4| (>= (- rate_value_c1_4 1.0) 0.0)))
+(assert (=> |(decrement_rate c1)_4|
+    (= rate_value_c1_5 (- rate_value_c1_4 (* (/ 1.0 2.0) rate_value_c1_4)))))
+(assert (=> |(decrement_rate c2)_4| (>= (- rate_value_c2_4 1.0) 0.0)))
+(assert (=> |(decrement_rate c2)_4|
+    (= rate_value_c2_5 (- rate_value_c2_4 (* (/ 1.0 2.0) rate_value_c2_4)))))
+(assert (=> |(decrement c0)_4| (>= (- value_c0_4 rate_value_c0_4) 0.0)))
+(assert (=> |(decrement c0)_4| (= value_c0_5 (- value_c0_4 rate_value_c0_4))))
+(assert (=> |(decrement c1)_4| (>= (- value_c1_4 rate_value_c1_4) 0.0)))
+(assert (=> |(decrement c1)_4| (= value_c1_5 (- value_c1_4 rate_value_c1_4))))
+(assert (=> |(decrement c2)_4| (>= (- value_c2_4 rate_value_c2_4) 0.0)))
+(assert (=> |(decrement c2)_4| (= value_c2_5 (- value_c2_4 rate_value_c2_4))))
+(assert (=> |(increase_rate c0)_4| (<= (- (+ 1.0 rate_value_c0_4) 10.0) 0.0)))
+(assert (=> |(increase_rate c0)_4|
+    (= rate_value_c0_5 (+ (* (/ 1.0 2.0) rate_value_c0_4) rate_value_c0_4))))
+(assert (=> |(increase_rate c1)_4| (<= (- (+ 1.0 rate_value_c1_4) 10.0) 0.0)))
+(assert (=> |(increase_rate c1)_4|
+    (= rate_value_c1_5 (+ (* (/ 1.0 2.0) rate_value_c1_4) rate_value_c1_4))))
+(assert (=> |(increase_rate c2)_4| (<= (- (+ 1.0 rate_value_c2_4) 10.0) 0.0)))
+(assert (=> |(increase_rate c2)_4|
+    (= rate_value_c2_5 (+ (* (/ 1.0 2.0) rate_value_c2_4) rate_value_c2_4))))
+(assert (=> |(increment c0)_4| (<= (- (+ rate_value_c0_4 value_c0_4) 6.0) 0.0)))
+(assert (=> |(increment c0)_4| (= value_c0_5 (+ value_c0_4 rate_value_c0_4))))
+(assert (=> |(increment c1)_4| (<= (- (+ rate_value_c1_4 value_c1_4) 6.0) 0.0)))
+(assert (=> |(increment c1)_4| (= value_c1_5 (+ value_c1_4 rate_value_c1_4))))
+(assert (=> |(increment c2)_4| (<= (- (+ rate_value_c2_4 value_c2_4) 6.0) 0.0)))
+(assert (=> |(increment c2)_4| (= value_c2_5 (+ value_c2_4 rate_value_c2_4))))
+(assert (=> |(decrement_rate c0)_5| (>= (- rate_value_c0_5 1.0) 0.0)))
+(assert (=> |(decrement_rate c0)_5|
+    (= rate_value_c0_6 (- rate_value_c0_5 (* (/ 1.0 2.0) rate_value_c0_5)))))
+(assert (=> |(decrement_rate c1)_5| (>= (- rate_value_c1_5 1.0) 0.0)))
+(assert (=> |(decrement_rate c1)_5|
+    (= rate_value_c1_6 (- rate_value_c1_5 (* (/ 1.0 2.0) rate_value_c1_5)))))
+(assert (=> |(decrement_rate c2)_5| (>= (- rate_value_c2_5 1.0) 0.0)))
+(assert (=> |(decrement_rate c2)_5|
+    (= rate_value_c2_6 (- rate_value_c2_5 (* (/ 1.0 2.0) rate_value_c2_5)))))
+(assert (=> |(decrement c0)_5| (>= (- value_c0_5 rate_value_c0_5) 0.0)))
+(assert (=> |(decrement c0)_5| (= value_c0_6 (- value_c0_5 rate_value_c0_5))))
+(assert (=> |(decrement c1)_5| (>= (- value_c1_5 rate_value_c1_5) 0.0)))
+(assert (=> |(decrement c1)_5| (= value_c1_6 (- value_c1_5 rate_value_c1_5))))
+(assert (=> |(decrement c2)_5| (>= (- value_c2_5 rate_value_c2_5) 0.0)))
+(assert (=> |(decrement c2)_5| (= value_c2_6 (- value_c2_5 rate_value_c2_5))))
+(assert (=> |(increase_rate c0)_5| (<= (- (+ 1.0 rate_value_c0_5) 10.0) 0.0)))
+(assert (=> |(increase_rate c0)_5|
+    (= rate_value_c0_6 (+ (* (/ 1.0 2.0) rate_value_c0_5) rate_value_c0_5))))
+(assert (=> |(increase_rate c1)_5| (<= (- (+ 1.0 rate_value_c1_5) 10.0) 0.0)))
+(assert (=> |(increase_rate c1)_5|
+    (= rate_value_c1_6 (+ (* (/ 1.0 2.0) rate_value_c1_5) rate_value_c1_5))))
+(assert (=> |(increase_rate c2)_5| (<= (- (+ 1.0 rate_value_c2_5) 10.0) 0.0)))
+(assert (=> |(increase_rate c2)_5|
+    (= rate_value_c2_6 (+ (* (/ 1.0 2.0) rate_value_c2_5) rate_value_c2_5))))
+(assert (=> |(increment c0)_5| (<= (- (+ rate_value_c0_5 value_c0_5) 6.0) 0.0)))
+(assert (=> |(increment c0)_5| (= value_c0_6 (+ value_c0_5 rate_value_c0_5))))
+(assert (=> |(increment c1)_5| (<= (- (+ rate_value_c1_5 value_c1_5) 6.0) 0.0)))
+(assert (=> |(increment c1)_5| (= value_c1_6 (+ value_c1_5 rate_value_c1_5))))
+(assert (=> |(increment c2)_5| (<= (- (+ rate_value_c2_5 value_c2_5) 6.0) 0.0)))
+(assert (=> |(increment c2)_5| (= value_c2_6 (+ value_c2_5 rate_value_c2_5))))
+(assert (=> |(decrement_rate c0)_6| (>= (- rate_value_c0_6 1.0) 0.0)))
+(assert (=> |(decrement_rate c0)_6|
+    (= rate_value_c0_7 (- rate_value_c0_6 (* (/ 1.0 2.0) rate_value_c0_6)))))
+(assert (=> |(decrement_rate c1)_6| (>= (- rate_value_c1_6 1.0) 0.0)))
+(assert (=> |(decrement_rate c1)_6|
+    (= rate_value_c1_7 (- rate_value_c1_6 (* (/ 1.0 2.0) rate_value_c1_6)))))
+(assert (=> |(decrement_rate c2)_6| (>= (- rate_value_c2_6 1.0) 0.0)))
+(assert (=> |(decrement_rate c2)_6|
+    (= rate_value_c2_7 (- rate_value_c2_6 (* (/ 1.0 2.0) rate_value_c2_6)))))
+(assert (=> |(decrement c0)_6| (>= (- value_c0_6 rate_value_c0_6) 0.0)))
+(assert (=> |(decrement c0)_6| (= value_c0_7 (- value_c0_6 rate_value_c0_6))))
+(assert (=> |(decrement c1)_6| (>= (- value_c1_6 rate_value_c1_6) 0.0)))
+(assert (=> |(decrement c1)_6| (= value_c1_7 (- value_c1_6 rate_value_c1_6))))
+(assert (=> |(decrement c2)_6| (>= (- value_c2_6 rate_value_c2_6) 0.0)))
+(assert (=> |(decrement c2)_6| (= value_c2_7 (- value_c2_6 rate_value_c2_6))))
+(assert (=> |(increase_rate c0)_6| (<= (- (+ 1.0 rate_value_c0_6) 10.0) 0.0)))
+(assert (=> |(increase_rate c0)_6|
+    (= rate_value_c0_7 (+ (* (/ 1.0 2.0) rate_value_c0_6) rate_value_c0_6))))
+(assert (=> |(increase_rate c1)_6| (<= (- (+ 1.0 rate_value_c1_6) 10.0) 0.0)))
+(assert (=> |(increase_rate c1)_6|
+    (= rate_value_c1_7 (+ (* (/ 1.0 2.0) rate_value_c1_6) rate_value_c1_6))))
+(assert (=> |(increase_rate c2)_6| (<= (- (+ 1.0 rate_value_c2_6) 10.0) 0.0)))
+(assert (=> |(increase_rate c2)_6|
+    (= rate_value_c2_7 (+ (* (/ 1.0 2.0) rate_value_c2_6) rate_value_c2_6))))
+(assert (=> |(increment c0)_6| (<= (- (+ rate_value_c0_6 value_c0_6) 6.0) 0.0)))
+(assert (=> |(increment c0)_6| (= value_c0_7 (+ value_c0_6 rate_value_c0_6))))
+(assert (=> |(increment c1)_6| (<= (- (+ rate_value_c1_6 value_c1_6) 6.0) 0.0)))
+(assert (=> |(increment c1)_6| (= value_c1_7 (+ value_c1_6 rate_value_c1_6))))
+(assert (=> |(increment c2)_6| (<= (- (+ rate_value_c2_6 value_c2_6) 6.0) 0.0)))
+(assert (=> |(increment c2)_6| (= value_c2_7 (+ value_c2_6 rate_value_c2_6))))
+(assert (=> |(decrement_rate c0)_7| (>= (- rate_value_c0_7 1.0) 0.0)))
+(assert (=> |(decrement_rate c0)_7|
+    (= rate_value_c0_8 (- rate_value_c0_7 (* (/ 1.0 2.0) rate_value_c0_7)))))
+(assert (=> |(decrement_rate c1)_7| (>= (- rate_value_c1_7 1.0) 0.0)))
+(assert (=> |(decrement_rate c1)_7|
+    (= rate_value_c1_8 (- rate_value_c1_7 (* (/ 1.0 2.0) rate_value_c1_7)))))
+(assert (=> |(decrement_rate c2)_7| (>= (- rate_value_c2_7 1.0) 0.0)))
+(assert (=> |(decrement_rate c2)_7|
+    (= rate_value_c2_8 (- rate_value_c2_7 (* (/ 1.0 2.0) rate_value_c2_7)))))
+(assert (=> |(decrement c0)_7| (>= (- value_c0_7 rate_value_c0_7) 0.0)))
+(assert (=> |(decrement c0)_7| (= value_c0_8 (- value_c0_7 rate_value_c0_7))))
+(assert (=> |(decrement c1)_7| (>= (- value_c1_7 rate_value_c1_7) 0.0)))
+(assert (=> |(decrement c1)_7| (= value_c1_8 (- value_c1_7 rate_value_c1_7))))
+(assert (=> |(decrement c2)_7| (>= (- value_c2_7 rate_value_c2_7) 0.0)))
+(assert (=> |(decrement c2)_7| (= value_c2_8 (- value_c2_7 rate_value_c2_7))))
+(assert (=> |(increase_rate c0)_7| (<= (- (+ 1.0 rate_value_c0_7) 10.0) 0.0)))
+(assert (=> |(increase_rate c0)_7|
+    (= rate_value_c0_8 (+ (* (/ 1.0 2.0) rate_value_c0_7) rate_value_c0_7))))
+(assert (=> |(increase_rate c1)_7| (<= (- (+ 1.0 rate_value_c1_7) 10.0) 0.0)))
+(assert (=> |(increase_rate c1)_7|
+    (= rate_value_c1_8 (+ (* (/ 1.0 2.0) rate_value_c1_7) rate_value_c1_7))))
+(assert (=> |(increase_rate c2)_7| (<= (- (+ 1.0 rate_value_c2_7) 10.0) 0.0)))
+(assert (=> |(increase_rate c2)_7|
+    (= rate_value_c2_8 (+ (* (/ 1.0 2.0) rate_value_c2_7) rate_value_c2_7))))
+(assert (=> |(increment c0)_7| (<= (- (+ rate_value_c0_7 value_c0_7) 6.0) 0.0)))
+(assert (=> |(increment c0)_7| (= value_c0_8 (+ value_c0_7 rate_value_c0_7))))
+(assert (=> |(increment c1)_7| (<= (- (+ rate_value_c1_7 value_c1_7) 6.0) 0.0)))
+(assert (=> |(increment c1)_7| (= value_c1_8 (+ value_c1_7 rate_value_c1_7))))
+(assert (=> |(increment c2)_7| (<= (- (+ rate_value_c2_7 value_c2_7) 6.0) 0.0)))
+(assert (=> |(increment c2)_7| (= value_c2_8 (+ value_c2_7 rate_value_c2_7))))
+(assert (=> |(decrement_rate c0)_8| (>= (- rate_value_c0_8 1.0) 0.0)))
+(assert (=> |(decrement_rate c0)_8|
+    (= rate_value_c0_9 (- rate_value_c0_8 (* (/ 1.0 2.0) rate_value_c0_8)))))
+(assert (=> |(decrement_rate c1)_8| (>= (- rate_value_c1_8 1.0) 0.0)))
+(assert (=> |(decrement_rate c1)_8|
+    (= rate_value_c1_9 (- rate_value_c1_8 (* (/ 1.0 2.0) rate_value_c1_8)))))
+(assert (=> |(decrement_rate c2)_8| (>= (- rate_value_c2_8 1.0) 0.0)))
+(assert (=> |(decrement_rate c2)_8|
+    (= rate_value_c2_9 (- rate_value_c2_8 (* (/ 1.0 2.0) rate_value_c2_8)))))
+(assert (=> |(decrement c0)_8| (>= (- value_c0_8 rate_value_c0_8) 0.0)))
+(assert (=> |(decrement c0)_8| (= value_c0_9 (- value_c0_8 rate_value_c0_8))))
+(assert (=> |(decrement c1)_8| (>= (- value_c1_8 rate_value_c1_8) 0.0)))
+(assert (=> |(decrement c1)_8| (= value_c1_9 (- value_c1_8 rate_value_c1_8))))
+(assert (=> |(decrement c2)_8| (>= (- value_c2_8 rate_value_c2_8) 0.0)))
+(assert (=> |(decrement c2)_8| (= value_c2_9 (- value_c2_8 rate_value_c2_8))))
+(assert (=> |(increase_rate c0)_8| (<= (- (+ 1.0 rate_value_c0_8) 10.0) 0.0)))
+(assert (=> |(increase_rate c0)_8|
+    (= rate_value_c0_9 (+ (* (/ 1.0 2.0) rate_value_c0_8) rate_value_c0_8))))
+(assert (=> |(increase_rate c1)_8| (<= (- (+ 1.0 rate_value_c1_8) 10.0) 0.0)))
+(assert (=> |(increase_rate c1)_8|
+    (= rate_value_c1_9 (+ (* (/ 1.0 2.0) rate_value_c1_8) rate_value_c1_8))))
+(assert (=> |(increase_rate c2)_8| (<= (- (+ 1.0 rate_value_c2_8) 10.0) 0.0)))
+(assert (=> |(increase_rate c2)_8|
+    (= rate_value_c2_9 (+ (* (/ 1.0 2.0) rate_value_c2_8) rate_value_c2_8))))
+(assert (=> |(increment c0)_8| (<= (- (+ rate_value_c0_8 value_c0_8) 6.0) 0.0)))
+(assert (=> |(increment c0)_8| (= value_c0_9 (+ value_c0_8 rate_value_c0_8))))
+(assert (=> |(increment c1)_8| (<= (- (+ rate_value_c1_8 value_c1_8) 6.0) 0.0)))
+(assert (=> |(increment c1)_8| (= value_c1_9 (+ value_c1_8 rate_value_c1_8))))
+(assert (=> |(increment c2)_8| (<= (- (+ rate_value_c2_8 value_c2_8) 6.0) 0.0)))
+(assert (=> |(increment c2)_8| (= value_c2_9 (+ value_c2_8 rate_value_c2_8))))
+(assert (=> |(decrement_rate c0)_9| (>= (- rate_value_c0_9 1.0) 0.0)))
+(assert (=> |(decrement_rate c0)_9|
+    (= rate_value_c0_10 (- rate_value_c0_9 (* (/ 1.0 2.0) rate_value_c0_9)))))
+(assert (=> |(decrement_rate c1)_9| (>= (- rate_value_c1_9 1.0) 0.0)))
+(assert (=> |(decrement_rate c1)_9|
+    (= rate_value_c1_10 (- rate_value_c1_9 (* (/ 1.0 2.0) rate_value_c1_9)))))
+(assert (=> |(decrement_rate c2)_9| (>= (- rate_value_c2_9 1.0) 0.0)))
+(assert (=> |(decrement_rate c2)_9|
+    (= rate_value_c2_10 (- rate_value_c2_9 (* (/ 1.0 2.0) rate_value_c2_9)))))
+(assert (=> |(decrement c0)_9| (>= (- value_c0_9 rate_value_c0_9) 0.0)))
+(assert (=> |(decrement c0)_9| (= value_c0_10 (- value_c0_9 rate_value_c0_9))))
+(assert (=> |(decrement c1)_9| (>= (- value_c1_9 rate_value_c1_9) 0.0)))
+(assert (=> |(decrement c1)_9| (= value_c1_10 (- value_c1_9 rate_value_c1_9))))
+(assert (=> |(decrement c2)_9| (>= (- value_c2_9 rate_value_c2_9) 0.0)))
+(assert (=> |(decrement c2)_9| (= value_c2_10 (- value_c2_9 rate_value_c2_9))))
+(assert (=> |(increase_rate c0)_9| (<= (- (+ 1.0 rate_value_c0_9) 10.0) 0.0)))
+(assert (=> |(increase_rate c0)_9|
+    (= rate_value_c0_10 (+ (* (/ 1.0 2.0) rate_value_c0_9) rate_value_c0_9))))
+(assert (=> |(increase_rate c1)_9| (<= (- (+ 1.0 rate_value_c1_9) 10.0) 0.0)))
+(assert (=> |(increase_rate c1)_9|
+    (= rate_value_c1_10 (+ (* (/ 1.0 2.0) rate_value_c1_9) rate_value_c1_9))))
+(assert (=> |(increase_rate c2)_9| (<= (- (+ 1.0 rate_value_c2_9) 10.0) 0.0)))
+(assert (=> |(increase_rate c2)_9|
+    (= rate_value_c2_10 (+ (* (/ 1.0 2.0) rate_value_c2_9) rate_value_c2_9))))
+(assert (=> |(increment c0)_9| (<= (- (+ rate_value_c0_9 value_c0_9) 6.0) 0.0)))
+(assert (=> |(increment c0)_9| (= value_c0_10 (+ value_c0_9 rate_value_c0_9))))
+(assert (=> |(increment c1)_9| (<= (- (+ rate_value_c1_9 value_c1_9) 6.0) 0.0)))
+(assert (=> |(increment c1)_9| (= value_c1_10 (+ value_c1_9 rate_value_c1_9))))
+(assert (=> |(increment c2)_9| (<= (- (+ rate_value_c2_9 value_c2_9) 6.0) 0.0)))
+(assert (=> |(increment c2)_9| (= value_c2_10 (+ value_c2_9 rate_value_c2_9))))
+(assert (=> |(decrement_rate c0)_10| (>= (- rate_value_c0_10 1.0) 0.0)))
+(assert (=> |(decrement_rate c0)_10|
+    (= rate_value_c0_11 (- rate_value_c0_10 (* (/ 1.0 2.0) rate_value_c0_10)))))
+(assert (=> |(decrement_rate c1)_10| (>= (- rate_value_c1_10 1.0) 0.0)))
+(assert (=> |(decrement_rate c1)_10|
+    (= rate_value_c1_11 (- rate_value_c1_10 (* (/ 1.0 2.0) rate_value_c1_10)))))
+(assert (=> |(decrement_rate c2)_10| (>= (- rate_value_c2_10 1.0) 0.0)))
+(assert (=> |(decrement_rate c2)_10|
+    (= rate_value_c2_11 (- rate_value_c2_10 (* (/ 1.0 2.0) rate_value_c2_10)))))
+(assert (=> |(decrement c0)_10| (>= (- value_c0_10 rate_value_c0_10) 0.0)))
+(assert (=> |(decrement c0)_10| (= value_c0_11 (- value_c0_10 rate_value_c0_10))))
+(assert (=> |(decrement c1)_10| (>= (- value_c1_10 rate_value_c1_10) 0.0)))
+(assert (=> |(decrement c1)_10| (= value_c1_11 (- value_c1_10 rate_value_c1_10))))
+(assert (=> |(decrement c2)_10| (>= (- value_c2_10 rate_value_c2_10) 0.0)))
+(assert (=> |(decrement c2)_10| (= value_c2_11 (- value_c2_10 rate_value_c2_10))))
+(assert (=> |(increase_rate c0)_10| (<= (- (+ 1.0 rate_value_c0_10) 10.0) 0.0)))
+(assert (=> |(increase_rate c0)_10|
+    (= rate_value_c0_11 (+ (* (/ 1.0 2.0) rate_value_c0_10) rate_value_c0_10))))
+(assert (=> |(increase_rate c1)_10| (<= (- (+ 1.0 rate_value_c1_10) 10.0) 0.0)))
+(assert (=> |(increase_rate c1)_10|
+    (= rate_value_c1_11 (+ (* (/ 1.0 2.0) rate_value_c1_10) rate_value_c1_10))))
+(assert (=> |(increase_rate c2)_10| (<= (- (+ 1.0 rate_value_c2_10) 10.0) 0.0)))
+(assert (=> |(increase_rate c2)_10|
+    (= rate_value_c2_11 (+ (* (/ 1.0 2.0) rate_value_c2_10) rate_value_c2_10))))
+(assert (=> |(increment c0)_10| (<= (- (+ rate_value_c0_10 value_c0_10) 6.0) 0.0)))
+(assert (=> |(increment c0)_10| (= value_c0_11 (+ value_c0_10 rate_value_c0_10))))
+(assert (=> |(increment c1)_10| (<= (- (+ rate_value_c1_10 value_c1_10) 6.0) 0.0)))
+(assert (=> |(increment c1)_10| (= value_c1_11 (+ value_c1_10 rate_value_c1_10))))
+(assert (=> |(increment c2)_10| (<= (- (+ rate_value_c2_10 value_c2_10) 6.0) 0.0)))
+(assert (=> |(increment c2)_10| (= value_c2_11 (+ value_c2_10 rate_value_c2_10))))
+(assert (=> |(decrement_rate c0)_11| (>= (- rate_value_c0_11 1.0) 0.0)))
+(assert (=> |(decrement_rate c0)_11|
+    (= rate_value_c0_12 (- rate_value_c0_11 (* (/ 1.0 2.0) rate_value_c0_11)))))
+(assert (=> |(decrement_rate c1)_11| (>= (- rate_value_c1_11 1.0) 0.0)))
+(assert (=> |(decrement_rate c1)_11|
+    (= rate_value_c1_12 (- rate_value_c1_11 (* (/ 1.0 2.0) rate_value_c1_11)))))
+(assert (=> |(decrement_rate c2)_11| (>= (- rate_value_c2_11 1.0) 0.0)))
+(assert (=> |(decrement_rate c2)_11|
+    (= rate_value_c2_12 (- rate_value_c2_11 (* (/ 1.0 2.0) rate_value_c2_11)))))
+(assert (=> |(decrement c0)_11| (>= (- value_c0_11 rate_value_c0_11) 0.0)))
+(assert (=> |(decrement c0)_11| (= value_c0_12 (- value_c0_11 rate_value_c0_11))))
+(assert (=> |(decrement c1)_11| (>= (- value_c1_11 rate_value_c1_11) 0.0)))
+(assert (=> |(decrement c1)_11| (= value_c1_12 (- value_c1_11 rate_value_c1_11))))
+(assert (=> |(decrement c2)_11| (>= (- value_c2_11 rate_value_c2_11) 0.0)))
+(assert (=> |(decrement c2)_11| (= value_c2_12 (- value_c2_11 rate_value_c2_11))))
+(assert (=> |(increase_rate c0)_11| (<= (- (+ 1.0 rate_value_c0_11) 10.0) 0.0)))
+(assert (=> |(increase_rate c0)_11|
+    (= rate_value_c0_12 (+ (* (/ 1.0 2.0) rate_value_c0_11) rate_value_c0_11))))
+(assert (=> |(increase_rate c1)_11| (<= (- (+ 1.0 rate_value_c1_11) 10.0) 0.0)))
+(assert (=> |(increase_rate c1)_11|
+    (= rate_value_c1_12 (+ (* (/ 1.0 2.0) rate_value_c1_11) rate_value_c1_11))))
+(assert (=> |(increase_rate c2)_11| (<= (- (+ 1.0 rate_value_c2_11) 10.0) 0.0)))
+(assert (=> |(increase_rate c2)_11|
+    (= rate_value_c2_12 (+ (* (/ 1.0 2.0) rate_value_c2_11) rate_value_c2_11))))
+(assert (=> |(increment c0)_11| (<= (- (+ rate_value_c0_11 value_c0_11) 6.0) 0.0)))
+(assert (=> |(increment c0)_11| (= value_c0_12 (+ value_c0_11 rate_value_c0_11))))
+(assert (=> |(increment c1)_11| (<= (- (+ rate_value_c1_11 value_c1_11) 6.0) 0.0)))
+(assert (=> |(increment c1)_11| (= value_c1_12 (+ value_c1_11 rate_value_c1_11))))
+(assert (=> |(increment c2)_11| (<= (- (+ rate_value_c2_11 value_c2_11) 6.0) 0.0)))
+(assert (=> |(increment c2)_11| (= value_c2_12 (+ value_c2_11 rate_value_c2_11))))
+(assert (=> |(decrement_rate c0)_12| (>= (- rate_value_c0_12 1.0) 0.0)))
+(assert (=> |(decrement_rate c0)_12|
+    (= rate_value_c0_13 (- rate_value_c0_12 (* (/ 1.0 2.0) rate_value_c0_12)))))
+(assert (=> |(decrement_rate c1)_12| (>= (- rate_value_c1_12 1.0) 0.0)))
+(assert (=> |(decrement_rate c1)_12|
+    (= rate_value_c1_13 (- rate_value_c1_12 (* (/ 1.0 2.0) rate_value_c1_12)))))
+(assert (=> |(decrement_rate c2)_12| (>= (- rate_value_c2_12 1.0) 0.0)))
+(assert (=> |(decrement_rate c2)_12|
+    (= rate_value_c2_13 (- rate_value_c2_12 (* (/ 1.0 2.0) rate_value_c2_12)))))
+(assert (=> |(decrement c0)_12| (>= (- value_c0_12 rate_value_c0_12) 0.0)))
+(assert (=> |(decrement c0)_12| (= value_c0_13 (- value_c0_12 rate_value_c0_12))))
+(assert (=> |(decrement c1)_12| (>= (- value_c1_12 rate_value_c1_12) 0.0)))
+(assert (=> |(decrement c1)_12| (= value_c1_13 (- value_c1_12 rate_value_c1_12))))
+(assert (=> |(decrement c2)_12| (>= (- value_c2_12 rate_value_c2_12) 0.0)))
+(assert (=> |(decrement c2)_12| (= value_c2_13 (- value_c2_12 rate_value_c2_12))))
+(assert (=> |(increase_rate c0)_12| (<= (- (+ 1.0 rate_value_c0_12) 10.0) 0.0)))
+(assert (=> |(increase_rate c0)_12|
+    (= rate_value_c0_13 (+ (* (/ 1.0 2.0) rate_value_c0_12) rate_value_c0_12))))
+(assert (=> |(increase_rate c1)_12| (<= (- (+ 1.0 rate_value_c1_12) 10.0) 0.0)))
+(assert (=> |(increase_rate c1)_12|
+    (= rate_value_c1_13 (+ (* (/ 1.0 2.0) rate_value_c1_12) rate_value_c1_12))))
+(assert (=> |(increase_rate c2)_12| (<= (- (+ 1.0 rate_value_c2_12) 10.0) 0.0)))
+(assert (=> |(increase_rate c2)_12|
+    (= rate_value_c2_13 (+ (* (/ 1.0 2.0) rate_value_c2_12) rate_value_c2_12))))
+(assert (=> |(increment c0)_12| (<= (- (+ rate_value_c0_12 value_c0_12) 6.0) 0.0)))
+(assert (=> |(increment c0)_12| (= value_c0_13 (+ value_c0_12 rate_value_c0_12))))
+(assert (=> |(increment c1)_12| (<= (- (+ rate_value_c1_12 value_c1_12) 6.0) 0.0)))
+(assert (=> |(increment c1)_12| (= value_c1_13 (+ value_c1_12 rate_value_c1_12))))
+(assert (=> |(increment c2)_12| (<= (- (+ rate_value_c2_12 value_c2_12) 6.0) 0.0)))
+(assert (=> |(increment c2)_12| (= value_c2_13 (+ value_c2_12 rate_value_c2_12))))
+(assert (=> |(decrement_rate c0)_13| (>= (- rate_value_c0_13 1.0) 0.0)))
+(assert (=> |(decrement_rate c0)_13|
+    (= rate_value_c0_14 (- rate_value_c0_13 (* (/ 1.0 2.0) rate_value_c0_13)))))
+(assert (=> |(decrement_rate c1)_13| (>= (- rate_value_c1_13 1.0) 0.0)))
+(assert (=> |(decrement_rate c1)_13|
+    (= rate_value_c1_14 (- rate_value_c1_13 (* (/ 1.0 2.0) rate_value_c1_13)))))
+(assert (=> |(decrement_rate c2)_13| (>= (- rate_value_c2_13 1.0) 0.0)))
+(assert (=> |(decrement_rate c2)_13|
+    (= rate_value_c2_14 (- rate_value_c2_13 (* (/ 1.0 2.0) rate_value_c2_13)))))
+(assert (=> |(decrement c0)_13| (>= (- value_c0_13 rate_value_c0_13) 0.0)))
+(assert (=> |(decrement c0)_13| (= value_c0_14 (- value_c0_13 rate_value_c0_13))))
+(assert (=> |(decrement c1)_13| (>= (- value_c1_13 rate_value_c1_13) 0.0)))
+(assert (=> |(decrement c1)_13| (= value_c1_14 (- value_c1_13 rate_value_c1_13))))
+(assert (=> |(decrement c2)_13| (>= (- value_c2_13 rate_value_c2_13) 0.0)))
+(assert (=> |(decrement c2)_13| (= value_c2_14 (- value_c2_13 rate_value_c2_13))))
+(assert (=> |(increase_rate c0)_13| (<= (- (+ 1.0 rate_value_c0_13) 10.0) 0.0)))
+(assert (=> |(increase_rate c0)_13|
+    (= rate_value_c0_14 (+ (* (/ 1.0 2.0) rate_value_c0_13) rate_value_c0_13))))
+(assert (=> |(increase_rate c1)_13| (<= (- (+ 1.0 rate_value_c1_13) 10.0) 0.0)))
+(assert (=> |(increase_rate c1)_13|
+    (= rate_value_c1_14 (+ (* (/ 1.0 2.0) rate_value_c1_13) rate_value_c1_13))))
+(assert (=> |(increase_rate c2)_13| (<= (- (+ 1.0 rate_value_c2_13) 10.0) 0.0)))
+(assert (=> |(increase_rate c2)_13|
+    (= rate_value_c2_14 (+ (* (/ 1.0 2.0) rate_value_c2_13) rate_value_c2_13))))
+(assert (=> |(increment c0)_13| (<= (- (+ rate_value_c0_13 value_c0_13) 6.0) 0.0)))
+(assert (=> |(increment c0)_13| (= value_c0_14 (+ value_c0_13 rate_value_c0_13))))
+(assert (=> |(increment c1)_13| (<= (- (+ rate_value_c1_13 value_c1_13) 6.0) 0.0)))
+(assert (=> |(increment c1)_13| (= value_c1_14 (+ value_c1_13 rate_value_c1_13))))
+(assert (=> |(increment c2)_13| (<= (- (+ rate_value_c2_13 value_c2_13) 6.0) 0.0)))
+(assert (=> |(increment c2)_13| (= value_c2_14 (+ value_c2_13 rate_value_c2_13))))
+(assert (=> |(decrement_rate c0)_14| (>= (- rate_value_c0_14 1.0) 0.0)))
+(assert (=> |(decrement_rate c0)_14|
+    (= rate_value_c0_15 (- rate_value_c0_14 (* (/ 1.0 2.0) rate_value_c0_14)))))
+(assert (=> |(decrement_rate c1)_14| (>= (- rate_value_c1_14 1.0) 0.0)))
+(assert (=> |(decrement_rate c1)_14|
+    (= rate_value_c1_15 (- rate_value_c1_14 (* (/ 1.0 2.0) rate_value_c1_14)))))
+(assert (=> |(decrement_rate c2)_14| (>= (- rate_value_c2_14 1.0) 0.0)))
+(assert (=> |(decrement_rate c2)_14|
+    (= rate_value_c2_15 (- rate_value_c2_14 (* (/ 1.0 2.0) rate_value_c2_14)))))
+(assert (=> |(decrement c0)_14| (>= (- value_c0_14 rate_value_c0_14) 0.0)))
+(assert (=> |(decrement c0)_14| (= value_c0_15 (- value_c0_14 rate_value_c0_14))))
+(assert (=> |(decrement c1)_14| (>= (- value_c1_14 rate_value_c1_14) 0.0)))
+(assert (=> |(decrement c1)_14| (= value_c1_15 (- value_c1_14 rate_value_c1_14))))
+(assert (=> |(decrement c2)_14| (>= (- value_c2_14 rate_value_c2_14) 0.0)))
+(assert (=> |(decrement c2)_14| (= value_c2_15 (- value_c2_14 rate_value_c2_14))))
+(assert (=> |(increase_rate c0)_14| (<= (- (+ 1.0 rate_value_c0_14) 10.0) 0.0)))
+(assert (=> |(increase_rate c0)_14|
+    (= rate_value_c0_15 (+ (* (/ 1.0 2.0) rate_value_c0_14) rate_value_c0_14))))
+(assert (=> |(increase_rate c1)_14| (<= (- (+ 1.0 rate_value_c1_14) 10.0) 0.0)))
+(assert (=> |(increase_rate c1)_14|
+    (= rate_value_c1_15 (+ (* (/ 1.0 2.0) rate_value_c1_14) rate_value_c1_14))))
+(assert (=> |(increase_rate c2)_14| (<= (- (+ 1.0 rate_value_c2_14) 10.0) 0.0)))
+(assert (=> |(increase_rate c2)_14|
+    (= rate_value_c2_15 (+ (* (/ 1.0 2.0) rate_value_c2_14) rate_value_c2_14))))
+(assert (=> |(increment c0)_14| (<= (- (+ rate_value_c0_14 value_c0_14) 6.0) 0.0)))
+(assert (=> |(increment c0)_14| (= value_c0_15 (+ value_c0_14 rate_value_c0_14))))
+(assert (=> |(increment c1)_14| (<= (- (+ rate_value_c1_14 value_c1_14) 6.0) 0.0)))
+(assert (=> |(increment c1)_14| (= value_c1_15 (+ value_c1_14 rate_value_c1_14))))
+(assert (=> |(increment c2)_14| (<= (- (+ rate_value_c2_14 value_c2_14) 6.0) 0.0)))
+(assert (=> |(increment c2)_14| (= value_c2_15 (+ value_c2_14 rate_value_c2_14))))
+(assert (let ((a!1 (=> |(decrement c2)_15|
+               (= |__fv_(decrement c2)_cost_15|
+                  (* 1.0 (+ 0.0 rate_value_c2_15)))))
+      (a!2 (=> |(decrement c1)_15|
+               (= |__fv_(decrement c1)_cost_15|
+                  (* 1.0 (+ 0.0 rate_value_c1_15)))))
+      (a!3 (=> |(decrement c0)_15|
+               (= |__fv_(decrement c0)_cost_15|
+                  (* 1.0 (+ 0.0 rate_value_c0_15)))))
+      (a!4 (=> |(increment c1)_15|
+               (= |__fv_(increment c1)_cost_15|
+                  (* 1.0 (+ 0.0 rate_value_c1_15)))))
+      (a!5 (=> |(increment c0)_15|
+               (= |__fv_(increment c0)_cost_15|
+                  (* 1.0 (+ 0.0 rate_value_c0_15)))))
+      (a!6 (=> |(increment c2)_15|
+               (= |__fv_(increment c2)_cost_15|
+                  (* 1.0 (+ 0.0 rate_value_c2_15)))))
+      (a!7 (=> |(decrement c2)_16|
+               (= |__fv_(decrement c2)_cost_16|
+                  (* 1.0 (+ 0.0 rate_value_c2_15)))))
+      (a!8 (=> |(decrement c1)_16|
+               (= |__fv_(decrement c1)_cost_16|
+                  (* 1.0 (+ 0.0 rate_value_c1_15)))))
+      (a!9 (=> |(decrement c0)_16|
+               (= |__fv_(decrement c0)_cost_16|
+                  (* 1.0 (+ 0.0 rate_value_c0_15)))))
+      (a!10 (=> |(increment c1)_16|
+                (= |__fv_(increment c1)_cost_16|
+                   (* 1.0 (+ 0.0 rate_value_c1_15)))))
+      (a!11 (=> |(increment c0)_16|
+                (= |__fv_(increment c0)_cost_16|
+                   (* 1.0 (+ 0.0 rate_value_c0_15)))))
+      (a!12 (=> |(increment c2)_16|
+                (= |__fv_(increment c2)_cost_16|
+                   (* 1.0 (+ 0.0 rate_value_c2_15))))))
+  (and (=> |(increase_rate c2)_15| (= |__fv_(increase_rate c2)_cost_15| 0.0))
+       (=> (not |(increase_rate c2)_15|)
+           (= |__fv_(increase_rate c2)_cost_15| 0.0))
+       (>= |__fv_(increase_rate c2)_cost_15| 0.0)
+       (<= |__fv_(increase_rate c2)_cost_15| 0.0)
+       (=> |(increase_rate c0)_15| (= |__fv_(increase_rate c0)_cost_15| 0.0))
+       (=> (not |(increase_rate c0)_15|)
+           (= |__fv_(increase_rate c0)_cost_15| 0.0))
+       (>= |__fv_(increase_rate c0)_cost_15| 0.0)
+       (<= |__fv_(increase_rate c0)_cost_15| 0.0)
+       a!1
+       (=> (not |(decrement c2)_15|) (= |__fv_(decrement c2)_cost_15| 0.0))
+       (>= |__fv_(decrement c2)_cost_15| 0.0)
+       (<= |__fv_(decrement c2)_cost_15| (* 1.0 (+ 0.0 rate_value_c2_15)))
+       (=> |(decrement_rate c2)_15| (= |__fv_(decrement_rate c2)_cost_15| 0.0))
+       (=> (not |(decrement_rate c2)_15|)
+           (= |__fv_(decrement_rate c2)_cost_15| 0.0))
+       (>= |__fv_(decrement_rate c2)_cost_15| 0.0)
+       (<= |__fv_(decrement_rate c2)_cost_15| 0.0)
+       a!2
+       (=> (not |(decrement c1)_15|) (= |__fv_(decrement c1)_cost_15| 0.0))
+       (>= |__fv_(decrement c1)_cost_15| 0.0)
+       (<= |__fv_(decrement c1)_cost_15| (* 1.0 (+ 0.0 rate_value_c1_15)))
+       a!3
+       (=> (not |(decrement c0)_15|) (= |__fv_(decrement c0)_cost_15| 0.0))
+       (>= |__fv_(decrement c0)_cost_15| 0.0)
+       (<= |__fv_(decrement c0)_cost_15| (* 1.0 (+ 0.0 rate_value_c0_15)))
+       a!4
+       (=> (not |(increment c1)_15|) (= |__fv_(increment c1)_cost_15| 0.0))
+       (>= |__fv_(increment c1)_cost_15| 0.0)
+       (<= |__fv_(increment c1)_cost_15| (* 1.0 (+ 0.0 rate_value_c1_15)))
+       (=> |(decrement_rate c0)_15| (= |__fv_(decrement_rate c0)_cost_15| 0.0))
+       (=> (not |(decrement_rate c0)_15|)
+           (= |__fv_(decrement_rate c0)_cost_15| 0.0))
+       (>= |__fv_(decrement_rate c0)_cost_15| 0.0)
+       (<= |__fv_(decrement_rate c0)_cost_15| 0.0)
+       (=> |(decrement_rate c1)_15| (= |__fv_(decrement_rate c1)_cost_15| 0.0))
+       (=> (not |(decrement_rate c1)_15|)
+           (= |__fv_(decrement_rate c1)_cost_15| 0.0))
+       (>= |__fv_(decrement_rate c1)_cost_15| 0.0)
+       (<= |__fv_(decrement_rate c1)_cost_15| 0.0)
+       a!5
+       (=> (not |(increment c0)_15|) (= |__fv_(increment c0)_cost_15| 0.0))
+       (>= |__fv_(increment c0)_cost_15| 0.0)
+       (<= |__fv_(increment c0)_cost_15| (* 1.0 (+ 0.0 rate_value_c0_15)))
+       (=> |(increase_rate c1)_15| (= |__fv_(increase_rate c1)_cost_15| 0.0))
+       (=> (not |(increase_rate c1)_15|)
+           (= |__fv_(increase_rate c1)_cost_15| 0.0))
+       (>= |__fv_(increase_rate c1)_cost_15| 0.0)
+       (<= |__fv_(increase_rate c1)_cost_15| 0.0)
+       a!6
+       (=> (not |(increment c2)_15|) (= |__fv_(increment c2)_cost_15| 0.0))
+       (>= |__fv_(increment c2)_cost_15| 0.0)
+       (<= |__fv_(increment c2)_cost_15| (* 1.0 (+ 0.0 rate_value_c2_15)))
+       (= add_cost_15
+          (+ 0.0
+             |__fv_(increase_rate c2)_cost_15|
+             |__fv_(increase_rate c0)_cost_15|
+             |__fv_(decrement c2)_cost_15|
+             |__fv_(decrement_rate c2)_cost_15|
+             |__fv_(decrement c1)_cost_15|
+             |__fv_(decrement c0)_cost_15|
+             |__fv_(increment c1)_cost_15|
+             |__fv_(decrement_rate c0)_cost_15|
+             |__fv_(decrement_rate c1)_cost_15|
+             |__fv_(increment c0)_cost_15|
+             |__fv_(increase_rate c1)_cost_15|
+             |__fv_(increment c2)_cost_15|))
+       (=> |(increase_rate c2)_16| (= |__fv_(increase_rate c2)_cost_16| 0.0))
+       (=> (not |(increase_rate c2)_16|)
+           (= |__fv_(increase_rate c2)_cost_16| 0.0))
+       (>= |__fv_(increase_rate c2)_cost_16| 0.0)
+       (<= |__fv_(increase_rate c2)_cost_16| 0.0)
+       (=> |(increase_rate c0)_16| (= |__fv_(increase_rate c0)_cost_16| 0.0))
+       (=> (not |(increase_rate c0)_16|)
+           (= |__fv_(increase_rate c0)_cost_16| 0.0))
+       (>= |__fv_(increase_rate c0)_cost_16| 0.0)
+       (<= |__fv_(increase_rate c0)_cost_16| 0.0)
+       a!7
+       (=> (not |(decrement c2)_16|) (= |__fv_(decrement c2)_cost_16| 0.0))
+       (>= |__fv_(decrement c2)_cost_16| 0.0)
+       (<= |__fv_(decrement c2)_cost_16| (* 1.0 (+ 0.0 rate_value_c2_15)))
+       (=> |(decrement_rate c2)_16| (= |__fv_(decrement_rate c2)_cost_16| 0.0))
+       (=> (not |(decrement_rate c2)_16|)
+           (= |__fv_(decrement_rate c2)_cost_16| 0.0))
+       (>= |__fv_(decrement_rate c2)_cost_16| 0.0)
+       (<= |__fv_(decrement_rate c2)_cost_16| 0.0)
+       a!8
+       (=> (not |(decrement c1)_16|) (= |__fv_(decrement c1)_cost_16| 0.0))
+       (>= |__fv_(decrement c1)_cost_16| 0.0)
+       (<= |__fv_(decrement c1)_cost_16| (* 1.0 (+ 0.0 rate_value_c1_15)))
+       a!9
+       (=> (not |(decrement c0)_16|) (= |__fv_(decrement c0)_cost_16| 0.0))
+       (>= |__fv_(decrement c0)_cost_16| 0.0)
+       (<= |__fv_(decrement c0)_cost_16| (* 1.0 (+ 0.0 rate_value_c0_15)))
+       a!10
+       (=> (not |(increment c1)_16|) (= |__fv_(increment c1)_cost_16| 0.0))
+       (>= |__fv_(increment c1)_cost_16| 0.0)
+       (<= |__fv_(increment c1)_cost_16| (* 1.0 (+ 0.0 rate_value_c1_15)))
+       (=> |(decrement_rate c0)_16| (= |__fv_(decrement_rate c0)_cost_16| 0.0))
+       (=> (not |(decrement_rate c0)_16|)
+           (= |__fv_(decrement_rate c0)_cost_16| 0.0))
+       (>= |__fv_(decrement_rate c0)_cost_16| 0.0)
+       (<= |__fv_(decrement_rate c0)_cost_16| 0.0)
+       (=> |(decrement_rate c1)_16| (= |__fv_(decrement_rate c1)_cost_16| 0.0))
+       (=> (not |(decrement_rate c1)_16|)
+           (= |__fv_(decrement_rate c1)_cost_16| 0.0))
+       (>= |__fv_(decrement_rate c1)_cost_16| 0.0)
+       (<= |__fv_(decrement_rate c1)_cost_16| 0.0)
+       a!11
+       (=> (not |(increment c0)_16|) (= |__fv_(increment c0)_cost_16| 0.0))
+       (>= |__fv_(increment c0)_cost_16| 0.0)
+       (<= |__fv_(increment c0)_cost_16| (* 1.0 (+ 0.0 rate_value_c0_15)))
+       (=> |(increase_rate c1)_16| (= |__fv_(increase_rate c1)_cost_16| 0.0))
+       (=> (not |(increase_rate c1)_16|)
+           (= |__fv_(increase_rate c1)_cost_16| 0.0))
+       (>= |__fv_(increase_rate c1)_cost_16| 0.0)
+       (<= |__fv_(increase_rate c1)_cost_16| 0.0)
+       a!12
+       (=> (not |(increment c2)_16|) (= |__fv_(increment c2)_cost_16| 0.0))
+       (>= |__fv_(increment c2)_cost_16| 0.0)
+       (<= |__fv_(increment c2)_cost_16| (* 1.0 (+ 0.0 rate_value_c2_15)))
+       (= add_cost_16
+          (+ 0.0
+             |__fv_(increase_rate c2)_cost_16|
+             |__fv_(increase_rate c0)_cost_16|
+             |__fv_(decrement c2)_cost_16|
+             |__fv_(decrement_rate c2)_cost_16|
+             |__fv_(decrement c1)_cost_16|
+             |__fv_(decrement c0)_cost_16|
+             |__fv_(increment c1)_cost_16|
+             |__fv_(decrement_rate c0)_cost_16|
+             |__fv_(decrement_rate c1)_cost_16|
+             |__fv_(increment c0)_cost_16|
+             |__fv_(increase_rate c1)_cost_16|
+             |__fv_(increment c2)_cost_16|)))))
+(assert (= __rev_fv_cost_15
+   (+ (* value_c0_15 value_c1_15)
+      (* value_c1_15 value_c2_15)
+      0.0
+      add_cost_15
+      add_cost_16)))
+(assert (<= (+ 0.0
+       (ite |(increase_rate c2)_0| 1.0 0.0)
+       (ite |(increase_rate c0)_0| 1.0 0.0)
+       (ite |(decrement c2)_0| 1.0 0.0)
+       (ite |(decrement_rate c2)_0| 1.0 0.0)
+       (ite |(decrement c1)_0| 1.0 0.0)
+       (ite |(decrement c0)_0| 1.0 0.0)
+       (ite |(increment c1)_0| 1.0 0.0)
+       (ite |(decrement_rate c0)_0| 1.0 0.0)
+       (ite |(decrement_rate c1)_0| 1.0 0.0)
+       (ite |(increment c0)_0| 1.0 0.0)
+       (ite |(increase_rate c1)_0| 1.0 0.0)
+       (ite |(increment c2)_0| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_rate c2)_1| 1.0 0.0)
+       (ite |(increase_rate c0)_1| 1.0 0.0)
+       (ite |(decrement c2)_1| 1.0 0.0)
+       (ite |(decrement_rate c2)_1| 1.0 0.0)
+       (ite |(decrement c1)_1| 1.0 0.0)
+       (ite |(decrement c0)_1| 1.0 0.0)
+       (ite |(increment c1)_1| 1.0 0.0)
+       (ite |(decrement_rate c0)_1| 1.0 0.0)
+       (ite |(decrement_rate c1)_1| 1.0 0.0)
+       (ite |(increment c0)_1| 1.0 0.0)
+       (ite |(increase_rate c1)_1| 1.0 0.0)
+       (ite |(increment c2)_1| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_rate c2)_2| 1.0 0.0)
+       (ite |(increase_rate c0)_2| 1.0 0.0)
+       (ite |(decrement c2)_2| 1.0 0.0)
+       (ite |(decrement_rate c2)_2| 1.0 0.0)
+       (ite |(decrement c1)_2| 1.0 0.0)
+       (ite |(decrement c0)_2| 1.0 0.0)
+       (ite |(increment c1)_2| 1.0 0.0)
+       (ite |(decrement_rate c0)_2| 1.0 0.0)
+       (ite |(decrement_rate c1)_2| 1.0 0.0)
+       (ite |(increment c0)_2| 1.0 0.0)
+       (ite |(increase_rate c1)_2| 1.0 0.0)
+       (ite |(increment c2)_2| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_rate c2)_3| 1.0 0.0)
+       (ite |(increase_rate c0)_3| 1.0 0.0)
+       (ite |(decrement c2)_3| 1.0 0.0)
+       (ite |(decrement_rate c2)_3| 1.0 0.0)
+       (ite |(decrement c1)_3| 1.0 0.0)
+       (ite |(decrement c0)_3| 1.0 0.0)
+       (ite |(increment c1)_3| 1.0 0.0)
+       (ite |(decrement_rate c0)_3| 1.0 0.0)
+       (ite |(decrement_rate c1)_3| 1.0 0.0)
+       (ite |(increment c0)_3| 1.0 0.0)
+       (ite |(increase_rate c1)_3| 1.0 0.0)
+       (ite |(increment c2)_3| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_rate c2)_4| 1.0 0.0)
+       (ite |(increase_rate c0)_4| 1.0 0.0)
+       (ite |(decrement c2)_4| 1.0 0.0)
+       (ite |(decrement_rate c2)_4| 1.0 0.0)
+       (ite |(decrement c1)_4| 1.0 0.0)
+       (ite |(decrement c0)_4| 1.0 0.0)
+       (ite |(increment c1)_4| 1.0 0.0)
+       (ite |(decrement_rate c0)_4| 1.0 0.0)
+       (ite |(decrement_rate c1)_4| 1.0 0.0)
+       (ite |(increment c0)_4| 1.0 0.0)
+       (ite |(increase_rate c1)_4| 1.0 0.0)
+       (ite |(increment c2)_4| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_rate c2)_5| 1.0 0.0)
+       (ite |(increase_rate c0)_5| 1.0 0.0)
+       (ite |(decrement c2)_5| 1.0 0.0)
+       (ite |(decrement_rate c2)_5| 1.0 0.0)
+       (ite |(decrement c1)_5| 1.0 0.0)
+       (ite |(decrement c0)_5| 1.0 0.0)
+       (ite |(increment c1)_5| 1.0 0.0)
+       (ite |(decrement_rate c0)_5| 1.0 0.0)
+       (ite |(decrement_rate c1)_5| 1.0 0.0)
+       (ite |(increment c0)_5| 1.0 0.0)
+       (ite |(increase_rate c1)_5| 1.0 0.0)
+       (ite |(increment c2)_5| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_rate c2)_6| 1.0 0.0)
+       (ite |(increase_rate c0)_6| 1.0 0.0)
+       (ite |(decrement c2)_6| 1.0 0.0)
+       (ite |(decrement_rate c2)_6| 1.0 0.0)
+       (ite |(decrement c1)_6| 1.0 0.0)
+       (ite |(decrement c0)_6| 1.0 0.0)
+       (ite |(increment c1)_6| 1.0 0.0)
+       (ite |(decrement_rate c0)_6| 1.0 0.0)
+       (ite |(decrement_rate c1)_6| 1.0 0.0)
+       (ite |(increment c0)_6| 1.0 0.0)
+       (ite |(increase_rate c1)_6| 1.0 0.0)
+       (ite |(increment c2)_6| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_rate c2)_7| 1.0 0.0)
+       (ite |(increase_rate c0)_7| 1.0 0.0)
+       (ite |(decrement c2)_7| 1.0 0.0)
+       (ite |(decrement_rate c2)_7| 1.0 0.0)
+       (ite |(decrement c1)_7| 1.0 0.0)
+       (ite |(decrement c0)_7| 1.0 0.0)
+       (ite |(increment c1)_7| 1.0 0.0)
+       (ite |(decrement_rate c0)_7| 1.0 0.0)
+       (ite |(decrement_rate c1)_7| 1.0 0.0)
+       (ite |(increment c0)_7| 1.0 0.0)
+       (ite |(increase_rate c1)_7| 1.0 0.0)
+       (ite |(increment c2)_7| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_rate c2)_8| 1.0 0.0)
+       (ite |(increase_rate c0)_8| 1.0 0.0)
+       (ite |(decrement c2)_8| 1.0 0.0)
+       (ite |(decrement_rate c2)_8| 1.0 0.0)
+       (ite |(decrement c1)_8| 1.0 0.0)
+       (ite |(decrement c0)_8| 1.0 0.0)
+       (ite |(increment c1)_8| 1.0 0.0)
+       (ite |(decrement_rate c0)_8| 1.0 0.0)
+       (ite |(decrement_rate c1)_8| 1.0 0.0)
+       (ite |(increment c0)_8| 1.0 0.0)
+       (ite |(increase_rate c1)_8| 1.0 0.0)
+       (ite |(increment c2)_8| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_rate c2)_9| 1.0 0.0)
+       (ite |(increase_rate c0)_9| 1.0 0.0)
+       (ite |(decrement c2)_9| 1.0 0.0)
+       (ite |(decrement_rate c2)_9| 1.0 0.0)
+       (ite |(decrement c1)_9| 1.0 0.0)
+       (ite |(decrement c0)_9| 1.0 0.0)
+       (ite |(increment c1)_9| 1.0 0.0)
+       (ite |(decrement_rate c0)_9| 1.0 0.0)
+       (ite |(decrement_rate c1)_9| 1.0 0.0)
+       (ite |(increment c0)_9| 1.0 0.0)
+       (ite |(increase_rate c1)_9| 1.0 0.0)
+       (ite |(increment c2)_9| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_rate c2)_10| 1.0 0.0)
+       (ite |(increase_rate c0)_10| 1.0 0.0)
+       (ite |(decrement c2)_10| 1.0 0.0)
+       (ite |(decrement_rate c2)_10| 1.0 0.0)
+       (ite |(decrement c1)_10| 1.0 0.0)
+       (ite |(decrement c0)_10| 1.0 0.0)
+       (ite |(increment c1)_10| 1.0 0.0)
+       (ite |(decrement_rate c0)_10| 1.0 0.0)
+       (ite |(decrement_rate c1)_10| 1.0 0.0)
+       (ite |(increment c0)_10| 1.0 0.0)
+       (ite |(increase_rate c1)_10| 1.0 0.0)
+       (ite |(increment c2)_10| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_rate c2)_11| 1.0 0.0)
+       (ite |(increase_rate c0)_11| 1.0 0.0)
+       (ite |(decrement c2)_11| 1.0 0.0)
+       (ite |(decrement_rate c2)_11| 1.0 0.0)
+       (ite |(decrement c1)_11| 1.0 0.0)
+       (ite |(decrement c0)_11| 1.0 0.0)
+       (ite |(increment c1)_11| 1.0 0.0)
+       (ite |(decrement_rate c0)_11| 1.0 0.0)
+       (ite |(decrement_rate c1)_11| 1.0 0.0)
+       (ite |(increment c0)_11| 1.0 0.0)
+       (ite |(increase_rate c1)_11| 1.0 0.0)
+       (ite |(increment c2)_11| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_rate c2)_12| 1.0 0.0)
+       (ite |(increase_rate c0)_12| 1.0 0.0)
+       (ite |(decrement c2)_12| 1.0 0.0)
+       (ite |(decrement_rate c2)_12| 1.0 0.0)
+       (ite |(decrement c1)_12| 1.0 0.0)
+       (ite |(decrement c0)_12| 1.0 0.0)
+       (ite |(increment c1)_12| 1.0 0.0)
+       (ite |(decrement_rate c0)_12| 1.0 0.0)
+       (ite |(decrement_rate c1)_12| 1.0 0.0)
+       (ite |(increment c0)_12| 1.0 0.0)
+       (ite |(increase_rate c1)_12| 1.0 0.0)
+       (ite |(increment c2)_12| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_rate c2)_13| 1.0 0.0)
+       (ite |(increase_rate c0)_13| 1.0 0.0)
+       (ite |(decrement c2)_13| 1.0 0.0)
+       (ite |(decrement_rate c2)_13| 1.0 0.0)
+       (ite |(decrement c1)_13| 1.0 0.0)
+       (ite |(decrement c0)_13| 1.0 0.0)
+       (ite |(increment c1)_13| 1.0 0.0)
+       (ite |(decrement_rate c0)_13| 1.0 0.0)
+       (ite |(decrement_rate c1)_13| 1.0 0.0)
+       (ite |(increment c0)_13| 1.0 0.0)
+       (ite |(increase_rate c1)_13| 1.0 0.0)
+       (ite |(increment c2)_13| 1.0 0.0))
+    1.0))
+(assert (<= (+ 0.0
+       (ite |(increase_rate c2)_14| 1.0 0.0)
+       (ite |(increase_rate c0)_14| 1.0 0.0)
+       (ite |(decrement c2)_14| 1.0 0.0)
+       (ite |(decrement_rate c2)_14| 1.0 0.0)
+       (ite |(decrement c1)_14| 1.0 0.0)
+       (ite |(decrement c0)_14| 1.0 0.0)
+       (ite |(increment c1)_14| 1.0 0.0)
+       (ite |(decrement_rate c0)_14| 1.0 0.0)
+       (ite |(decrement_rate c1)_14| 1.0 0.0)
+       (ite |(increment c0)_14| 1.0 0.0)
+       (ite |(increase_rate c1)_14| 1.0 0.0)
+       (ite |(increment c2)_14| 1.0 0.0))
+    1.0))
+(assert (=> |(decrement_rate c0)_16|
+    (or (>= (- rate_value_c0_15 1.0) 0.0) trate_value_c0_16)))
+(assert (=> |(decrement_rate c0)_16| trate_value_c0_16))
+(assert (=> |(decrement_rate c1)_16|
+    (or (>= (- rate_value_c1_15 1.0) 0.0) trate_value_c1_16)))
+(assert (=> |(decrement_rate c1)_16| trate_value_c1_16))
+(assert (=> |(decrement_rate c2)_16|
+    (or (>= (- rate_value_c2_15 1.0) 0.0) trate_value_c2_16)))
+(assert (=> |(decrement_rate c2)_16| trate_value_c2_16))
+(assert (=> |(decrement c0)_16|
+    (or (>= (- value_c0_15 rate_value_c0_15) 0.0) trate_value_c0_16)))
+(assert (=> |(decrement c1)_16|
+    (or (>= (- value_c1_15 rate_value_c1_15) 0.0) trate_value_c1_16)))
+(assert (=> |(decrement c2)_16|
+    (or (>= (- value_c2_15 rate_value_c2_15) 0.0) trate_value_c2_16)))
+(assert (let ((a!1 (or (<= (- (+ 1.0 rate_value_c0_15) 10.0) 0.0) trate_value_c0_16)))
+  (=> |(increase_rate c0)_16| a!1)))
+(assert (=> |(increase_rate c0)_16| trate_value_c0_16))
+(assert (let ((a!1 (or (<= (- (+ 1.0 rate_value_c1_15) 10.0) 0.0) trate_value_c1_16)))
+  (=> |(increase_rate c1)_16| a!1)))
+(assert (=> |(increase_rate c1)_16| trate_value_c1_16))
+(assert (let ((a!1 (or (<= (- (+ 1.0 rate_value_c2_15) 10.0) 0.0) trate_value_c2_16)))
+  (=> |(increase_rate c2)_16| a!1)))
+(assert (=> |(increase_rate c2)_16| trate_value_c2_16))
+(assert (let ((a!1 (or (<= (- (+ rate_value_c0_15 value_c0_15) 6.0) 0.0)
+               trate_value_c0_16)))
+  (=> |(increment c0)_16| a!1)))
+(assert (let ((a!1 (or (<= (- (+ rate_value_c1_15 value_c1_15) 6.0) 0.0)
+               trate_value_c1_16)))
+  (=> |(increment c1)_16| a!1)))
+(assert (let ((a!1 (or (<= (- (+ rate_value_c2_15 value_c2_15) 6.0) 0.0)
+               trate_value_c2_16)))
+  (=> |(increment c2)_16| a!1)))
+(assert (=> trate_value_c1_16
+    (or |(decrement_rate c1)_16|
+        |(decrement_rate c1)_15|
+        |(increase_rate c1)_16|
+        |(increase_rate c1)_15|)))
+(assert (=> trate_value_c0_16
+    (or |(decrement_rate c0)_16|
+        |(decrement_rate c0)_15|
+        |(increase_rate c0)_16|
+        |(increase_rate c0)_15|)))
+(assert (=> trate_value_c2_16
+    (or |(decrement_rate c2)_16|
+        |(decrement_rate c2)_15|
+        |(increase_rate c2)_16|
+        |(increase_rate c2)_15|)))
+(assert (<= 0 __rev_fv_cost_15))
+(minimize __rev_fv_cost_15)
+(check-sat)
+(exit)

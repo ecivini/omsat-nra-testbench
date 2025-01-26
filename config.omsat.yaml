@@ -1,0 +1,32 @@
+# List of solvers
+solver: 
+  name: "OptiMathSAT"
+  cmd: "optimathsat"
+  args: "-optimization=true -model"
+
+# Maximum allowed solving time per problem in seconds
+timeout: 300
+
+# Number of concurrent evaluations running
+processes: 8
+
+# Benchmarks
+benchmarks: [
+    # Base test cases
+    "benchmarks/Test",
+
+    # OMT Plan
+    "benchmarks/QF_NRAT/single-obj/omtplan/nl/car_nl",
+    "benchmarks/QF_NRAT/single-obj/omtplan/nl/convoys_nl",
+    "benchmarks/QF_NRAT/single-obj/omtplan/nl/hvac",
+    "benchmarks/QF_NRAT/single-obj/omtplan/nl/nlcounters",
+    "benchmarks/QF_NRAT/single-obj/omtplan/nl/nl_counters_simple",
+    "benchmarks/QF_NRAT/single-obj/omtplan/nl/sec_clearence_sdac",
+
+    # Schittkowski
+    "benchmarks/QF_NRAT/single-obj/schittkowski/hs",
+    "benchmarks/QF_NRAT/single-obj/schittkowski/s"
+  ] 
+
+# Output dir, add a / to the end
+results: "results/"
