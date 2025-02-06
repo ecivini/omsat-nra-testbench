@@ -61,6 +61,7 @@ def main():
             # Check if file is a test case
             if len(test_case) < 6 or test_case[-5:] != ".smt2":
                 print("[-] Skipping test case: invalid file name", test_case)
+                continue
 
             path = test_directory + "/" + test_case
             evaluator = evaluators[evaluator_id]
