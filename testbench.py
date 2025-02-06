@@ -33,7 +33,14 @@ def main():
     base_path = config["results"]
     result_file_path = base_path + solver_data["name"] + "_" + str(ts) + ".csv"
     result_file = open(result_file_path, "w+")
-    result_file.write("solver,timeout,test case,result,optimum,time\n")
+    result_file.write("solver,timeout,test case,result,optimum,time,"
+        + "nano-total-calls,nano-complete-calls,nano-conflicts,nano-implications,"
+        + "nano-explanations,nano-total-time-check,nano-total-time-opt,"
+        + "nano-total-time-sat-check-exact-substitution,nano-total-time-sat-check-crosses,"
+        + "nano-total-time-sat-check-epsilon-box,nano-successful-opt,nano-total-opt,"
+        + "nano-successful-sat-check-exact-substitution,nano-total-sat-check-exact-substitution,"
+        + "nano-successful-sat-check-crosses,nano-total-sat-check-crosses,"
+        + "nano-successful-sat-check-epsilon-box,nano-total-sat-check-epsilon-box\n")
 
     # Create evaluator instances
     evaluators = []
