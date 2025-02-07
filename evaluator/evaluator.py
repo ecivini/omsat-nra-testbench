@@ -5,7 +5,7 @@ import json
 
 class Evaluator:
 
-    def __init__(self, name: str, cmd: str, params: str, timeout: int, res_file):
+    def __init__(self, name: str, cmd: str, params: str, timeout: int, kind: str, res_file):
         self.name = name 
         self.cmd = cmd
         self.params = params
@@ -13,6 +13,7 @@ class Evaluator:
         self.res_file = res_file
         self.tasks = []
         self.next_id = 0
+        self.kind = kind
 
     def add_task(self, test_case: str):
         self.tasks.append(test_case)
@@ -64,8 +65,10 @@ class Evaluator:
                 print("[-] Solver timed out with test case " + self.tasks[i] + ": " + str(e))
 
             # TODO: Avoid race conditions when updating result file
-            # solver,timeout,test case,result,optimum,time,nano_time,opt_time,check_exact_time,check_crosses_time,check_espilon_time,sol_found_by
-            file_line = self.name + ","
+            file_line = self.kind + ","
+
+            # solver name
+            file_line += self.name + ","
 
             # timeout
             file_line += str(self.timeout) + ","
@@ -76,11 +79,14 @@ class Evaluator:
             # result
             file_line += result + ","
 
-            # optimum
-            file_line += str(optimum) + ","
-
             # time
             file_line += str(round(solve_time, 4)) + ","
+
+            # Create specific data
+            if self.kind == "OMT":
+                file_line += self.create_omt_result(out)
+            else:
+                file_line += self.create_smt_result(out)
 
             # stats
             file_line += self.gen_stats_line(stats)
@@ -156,4 +162,40 @@ class Evaluator:
             line += ","
 
         return line[:-1]
+    
+    def get_model(self, output):
+        blocks = []
+        stack = []
+        start = None
+
+        for i, char in enumerate(output):
+            if output[i:i+6] == "(model": 
+                if not stack:
+                    start = i 
+                stack.append("(")
+            elif char == "(" and stack:
+                stack.append("(") 
+            elif char == ")" and stack:
+                stack.pop() 
+                if not stack: 
+                    block = output[start:i+1]
+                    block = block.replace("\n", "\\n")
+                    blocks.append(block)
+
+        if len(blocks) == 0:
+            return None
+
+        return blocks[0]
+    
+    # TODO
+    def create_omt_result(self, output):
+        return ""
+
+    def create_smt_result(self, output):
+        line = "NF,"
+        model = self.get_model(output)
+        if model:
+            model = model.replace("\n", "\\n")
+            line = model + ","
+        return line
 

@@ -9,6 +9,26 @@ from evaluator.evaluator import Evaluator
 
 CONFIG_FILE = "config.yaml"
 
+allowed_kinds = ["SMT", "OMT"]
+
+smt_csv_header = ("kind,solver,timeout,test case,result,time,model,"
+        + "nano-total-calls,nano-complete-calls,nano-conflicts,nano-implications,"
+        + "nano-explanations,nano-total-time-check,nano-total-time-opt,"
+        + "nano-total-time-sat-check-exact-substitution,nano-total-time-sat-check-crosses,"
+        + "nano-total-time-sat-check-epsilon-box,nano-successful-opt,nano-total-opt,"
+        + "nano-successful-sat-check-exact-substitution,nano-total-sat-check-exact-substitution,"
+        + "nano-successful-sat-check-crosses,nano-total-sat-check-crosses,"
+        + "nano-successful-sat-check-epsilon-box,nano-total-sat-check-epsilon-box\n")
+
+omt_csv_header = ("kind,solver,timeout,test case,result,time,optimum,partial_lower,partial_higher,"
+        + "nano-total-calls,nano-complete-calls,nano-conflicts,nano-implications,"
+        + "nano-explanations,nano-total-time-check,nano-total-time-opt,"
+        + "nano-total-time-sat-check-exact-substitution,nano-total-time-sat-check-crosses,"
+        + "nano-total-time-sat-check-epsilon-box,nano-successful-opt,nano-total-opt,"
+        + "nano-successful-sat-check-exact-substitution,nano-total-sat-check-exact-substitution,"
+        + "nano-successful-sat-check-crosses,nano-total-sat-check-crosses,"
+        + "nano-successful-sat-check-epsilon-box,nano-total-sat-check-epsilon-box\n")
+
 ###############################################################################
 
 """
@@ -28,19 +48,17 @@ def main():
     config = get_config()
     solver_data = config["solver"]
 
+    # Check kind
+    if "kind" not in config or config["kind"] not in allowed_kinds:
+        print("[-] Invalid kind")
+        return
+
     # Create output file
     ts = int(time.time())
     base_path = config["results"]
     result_file_path = base_path + solver_data["name"] + "_" + str(ts) + ".csv"
     result_file = open(result_file_path, "w+")
-    result_file.write("solver,timeout,test case,result,optimum,time,"
-        + "nano-total-calls,nano-complete-calls,nano-conflicts,nano-implications,"
-        + "nano-explanations,nano-total-time-check,nano-total-time-opt,"
-        + "nano-total-time-sat-check-exact-substitution,nano-total-time-sat-check-crosses,"
-        + "nano-total-time-sat-check-epsilon-box,nano-successful-opt,nano-total-opt,"
-        + "nano-successful-sat-check-exact-substitution,nano-total-sat-check-exact-substitution,"
-        + "nano-successful-sat-check-crosses,nano-total-sat-check-crosses,"
-        + "nano-successful-sat-check-epsilon-box,nano-total-sat-check-epsilon-box\n")
+    result_file.write(smt_csv_header if config["kind"] == "SMT" else omt_csv_header)
 
     # Create evaluator instances
     evaluators = []
@@ -51,6 +69,7 @@ def main():
             solver_data["cmd"],
             solver_data["args"],
             int(config["timeout"]),
+            config["kind"],
             result_file
         )
         evaluators.append(evaluator)
