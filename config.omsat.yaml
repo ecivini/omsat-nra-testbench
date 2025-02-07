@@ -2,7 +2,9 @@
 solver: 
   name: "OptiMathSAT"
   cmd: "optimathsat"
-  args: "-optimization=true -model"
+  # NOTE: For Opti / MathSAT you have to specify the timeout parameter if you want
+  # accurate logs
+  args: "-optimization=true -model -timeout=300000" 
 
 # Maximum allowed solving time per problem in seconds
 timeout: 300
