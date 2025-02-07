@@ -23,6 +23,8 @@ class Evaluator:
             result = "timeout"
             solve_time = 0
             optimum = 0.0
+            partial = None
+            model = None
             stats = {}
             try:
                 command = self.cmd
@@ -57,6 +59,14 @@ class Evaluator:
                         for value in objs.values():
                             optimum = value
 
+                        partial = self.get_partial_result(out)
+                        if partial != None:
+                            result = "timeout"
+
+                        model = self.get_model(out)
+                        if model == None:
+                            result = "timeout"
+
                 # Parse statistics
                 stats = self.parse_stats(out)
                 
@@ -84,9 +94,9 @@ class Evaluator:
 
             # Create specific data
             if self.kind == "OMT":
-                file_line += self.create_omt_result(out)
+                file_line += self.create_omt_result(optimum, partial)
             else:
-                file_line += self.create_smt_result(out)
+                file_line += self.create_smt_result(model)
 
             # stats
             file_line += self.gen_stats_line(stats)
@@ -187,13 +197,27 @@ class Evaluator:
 
         return blocks[0]
     
-    # TODO
-    def create_omt_result(self, output):
-        return ""
+    def get_partial_result(self, output):
+        pattern = r"range: \[ ([^\]]+)\ ]"
+        match = re.search(pattern, output)
+        if match:
+            return match.group(1)
+        return None
 
-    def create_smt_result(self, output):
+    # TODO
+    def create_omt_result(self, optimum: float, partial):
+        # optimum,partial_lower,partial_higher,
+        line = str(optimum) + ","
+
+        if partial != None:
+            line += str(partial).replace(" ", "") + ","
+        else:
+            line += "NA,NA,"
+
+        return line
+
+    def create_smt_result(self, model):
         line = "NF,"
-        model = self.get_model(output)
         if model:
             model = model.replace("\n", "\\n")
             line = model + ","
