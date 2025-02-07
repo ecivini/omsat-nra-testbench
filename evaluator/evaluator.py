@@ -22,7 +22,7 @@ class Evaluator:
         for i in range(self.next_id, len(self.tasks)):
             result = "timeout"
             solve_time = 0
-            optimum = 0.0
+            optimum = "NF"
             partial = None
             model = None
             stats = {}
@@ -55,9 +55,9 @@ class Evaluator:
                     else:
                         result = "sat"
                         # TODO: Add support for multiple objectives
-                        objs = self.parse_objectives(out)
-                        for value in objs.values():
-                            optimum = value
+                        obj = self.get_objective(out)
+                        if obj:
+                            optimum = obj
 
                         partial = self.get_partial_result(out)
                         if partial != None:
@@ -105,20 +105,32 @@ class Evaluator:
 
             self.res_file.write(file_line)
 
-    def parse_objectives(self, result):
-        objectives_block = re.search(r"\(objectives\s*\n(.*?)\n\)", result, re.DOTALL)
-    
-        if not objectives_block:
-            return {}  # No objectives section found
+    def get_objective(self, output):
+        start = None
+        try:
+            start = output.index(".cost0")
+        except:
+            return None
+        
+        # Parse from the first occurrence of `.cost0`
+        parenthesis = 0
+        obj = ""
 
-        pattern = r"\(([\.\w]+) (\d+)\)"
-        matches = re.findall(pattern, objectives_block.group(1))
-        
-        variables = {}
-        for var, val in matches:
-            variables[var] = val
-        
-        return variables
+        # len(".cost0 ") = 7
+        for i in range(start + 7, len(output)):
+            char = output[i]
+            if char == '(':
+                parenthesis += 1
+                obj += char
+            elif char == ')' and parenthesis > 0:
+                parenthesis -= 1
+                obj += char
+            elif char == ')' and parenthesis == 0:
+                break
+            else:
+                obj += char
+
+        return obj
     
     def parse_stats(self, result):
         # Initialize an empty dictionary to store the parsed data
