@@ -210,7 +210,7 @@ class Evaluator:
         line = str(optimum) + ","
 
         if partial != None:
-            line += str(partial).replace(" ", "") + ","
+            line += str(partial).replace(", ", ",") + ","
         else:
             line += "NA,NA,"
 
