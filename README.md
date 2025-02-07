@@ -1,13 +1,7 @@
-# OMT Testbench
-
-> This project is still under development and the results may not be accurate in some cases.
+# Opti / MathSAT NRA Testbench
 
 ## Overview
-The OMT Testbench is a tool for benchmarking and testing Optimization Modulo Theory (OMT) solvers. 
-
-## Features
-- **Multiple Solver Support:** Easily integrate and test multiple OMT solvers.
-- **Benchmarking Tools:** Automated performance measurement and comparison.
+This testbench is a tool for benchmarking and testing the Opti / MathSAT solver with Satisfiability Modulo Theory (SMT) and Optimization Modulo Theory (OMT) NRA problems. 
 
 ## Requirements
 - Python 3+
@@ -16,10 +10,10 @@ The OMT Testbench is a tool for benchmarking and testing Optimization Modulo The
 
 ## Installation
 ```bash
-git clone https://github.com/ecivini/omt-testbench
-cd omt-testbench
+git clone https://github.com/ecivini/omsat-nra-testbench
+cd omsat-nra-testbench
 pip3 install -r requirements.txt
-cp config.z3.yaml config.yaml
+cp config.omsat.yaml config.yaml
 mkdir results
 ```
 
@@ -31,7 +25,7 @@ python3 testbench.py
 
 ### Configuration Options
 Configuration of the testbench is done via the `config.yaml` file. You have to specify:
-- `solver`: The solver you want to use (e.g., `optimathsat`, `z3`).
+- `solver`: The solver you want to use (e.g., `optimathsat`, `mathsat`).
 - `benchmarks`: Directoties containing the benchmarks (`.smt2 files`).
 
 ## Project Structure
