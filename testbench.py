@@ -11,7 +11,7 @@ CONFIG_FILE = "config.yaml"
 
 allowed_kinds = ["SMT", "OMT"]
 
-smt_csv_header = ("kind,solver,timeout,test case,result,time,model,"
+smt_csv_header = ("kind,solver,timeout,test_case,result,time,model,"
         + "nano-total-calls,nano-complete-calls,nano-conflicts,nano-implications,"
         + "nano-explanations,nano-total-time-check,nano-total-time-opt,"
         + "nano-total-time-sat-check-exact-substitution,nano-total-time-sat-check-crosses,"
@@ -20,7 +20,7 @@ smt_csv_header = ("kind,solver,timeout,test case,result,time,model,"
         + "nano-successful-sat-check-crosses,nano-total-sat-check-crosses,"
         + "nano-successful-sat-check-epsilon-box,nano-total-sat-check-epsilon-box\n")
 
-omt_csv_header = ("kind,solver,timeout,test case,result,time,optimum,partial_lower,partial_higher,"
+omt_csv_header = ("kind,solver,timeout,test_case,result,time,optimum,partial_lower,partial_upper,"
         + "nano-total-calls,nano-complete-calls,nano-conflicts,nano-implications,"
         + "nano-explanations,nano-total-time-check,nano-total-time-opt,"
         + "nano-total-time-sat-check-exact-substitution,nano-total-time-sat-check-crosses,"
