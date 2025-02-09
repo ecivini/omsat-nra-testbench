@@ -53,7 +53,7 @@ def check_ext(file_path: str, ext: str = ".smt2") -> bool:
 
 def get_test_cases(paths: list[str]) -> Generator[str, None, None]:
     for path in paths:
-        if not os.path.isfile(path):
+        if os.path.isfile(path):
             if check_ext(path):
                 yield path
             else:
