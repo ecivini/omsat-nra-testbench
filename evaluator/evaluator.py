@@ -157,7 +157,7 @@ class Evaluator:
                 parenthesis += 1
             elif char == ')' and parenthesis > 0:
                 parenthesis -= 1
-            elif char == ')' and parenthesis == 0:
+            elif char == ')' and parenthesis == 0 and output[i-1] != "'":
                 break
 
         return error
