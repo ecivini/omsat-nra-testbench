@@ -47,11 +47,17 @@ class Evaluator:
                 out = process.stdout.decode()
 
                 if len(err) > 0:
-                    if "unsat" in out:
-                        result = "unsat"
+                    print("Err: ", err)
+                    result = "error"
                 elif len(out) > 0:
-                    if "unsat" in out:
+                    # Parse eventual errors
+                    if "(error \"" in out:
+                        print("Error [" + self.tasks[i] + "]: " + self.get_error(out))
+                        continue
+                    # Check if unsat
+                    elif "unsat" in out:
                         result = "unsat"
+                    # Parse result
                     else:
                         result = "sat"
                         # TODO: Add support for multiple objectives
@@ -131,6 +137,30 @@ class Evaluator:
                 obj += char
 
         return obj
+
+    def get_error(self, output):
+        start = None
+        try:
+            start = output.index("(error \"")
+        except:
+            return None
+        
+        # Parse from the first occurrence of `.cost0`
+        error = "(error \""
+        parenthesis = 0
+
+        # len(".cost0 ") = 7
+        for i in range(start + 8, len(output)):
+            char = output[i]
+            error += char
+            if char == '(':
+                parenthesis += 1
+            elif char == ')' and parenthesis > 0:
+                parenthesis -= 1
+            elif char == ')' and parenthesis == 0:
+                break
+
+        return error
     
     def parse_stats(self, result):
         # Initialize an empty dictionary to store the parsed data
