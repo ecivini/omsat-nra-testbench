@@ -1,3 +1,4 @@
+from typing import Generator
 import yaml
 import os
 import time
@@ -45,6 +46,26 @@ def get_config():
     return config
 
 ###############################################################################
+def check_ext(file_path: str, ext: str = ".smt2") -> bool:
+    _, fext = os.path.splitext(file_path)
+    return fext == ext
+
+
+def get_test_cases(paths: list[str]) -> Generator[str, None, None]:
+    for path in paths:
+        if os.path.isfile(path):
+            if check_ext(path):
+                yield path
+            else:
+                print("[-] Skipping test case: invalid file name", path)
+
+        for root, _, files in os.walk(path):
+            for file_path in files:
+                test_case = os.path.join(root, file_path)
+                if check_ext(test_case):
+                    yield test_case
+                else:
+                    print("[-] Skipping test case: invalid file name", test_case)
 
 def main():
     config = get_config()
@@ -84,24 +105,11 @@ def main():
 
     # Run tests
     evaluator_id = 0
-    for test_directory in config["benchmarks"]:
-        # Check if it is effictively a directory
-        if not os.path.isdir(test_directory):
-            print("[-] Skipping test directory: invalid benchmark directory", test_directory)
-            continue
+    for test_case in get_test_cases(config["benchmarks"]):
+        evaluator = evaluators[evaluator_id]
+        evaluator.add_task(test_case)
 
-        # Run all tests in the directory
-        for test_case in os.listdir(test_directory):
-            # Check if file is a test case
-            if len(test_case) < 6 or test_case[-5:] != ".smt2":
-                print("[-] Skipping test case: invalid file name", test_case)
-                continue
-
-            path = test_directory + "/" + test_case
-            evaluator = evaluators[evaluator_id]
-            evaluator.add_task(path)
-
-            evaluator_id = (evaluator_id + 1) % processes
+        evaluator_id = (evaluator_id + 1) % processes
 
     # Start solving
     threads = []
