@@ -60,10 +60,10 @@ def get_test_cases(paths: list[str]) -> Generator[str, None, None]:
                 print("[-] Skipping test case: invalid file name", path)
 
         for root, _, files in os.walk(path):
-            for test_case in files:
-                file_path = os.path.join(root, test_case)
-                if check_ext(file_path):
-                    yield file_path
+            for file_path in files:
+                test_case = os.path.join(root, file_path)
+                if check_ext(test_case):
+                    yield test_case
                 else:
                     print("[-] Skipping test case: invalid file name", test_case)
 
