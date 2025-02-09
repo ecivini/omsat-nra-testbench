@@ -47,8 +47,8 @@ def get_config():
 
 ###############################################################################
 def check_ext(file_path: str, ext: str = ".smt2") -> bool:
-    _, ext = os.path.splitext(file_path)
-    return ext == ".smt2"
+    _, fext = os.path.splitext(file_path)
+    return fext == ext
 
 
 def get_test_cases(paths: list[str]) -> Generator[str, None, None]:
