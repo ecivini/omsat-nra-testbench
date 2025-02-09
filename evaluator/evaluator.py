@@ -1,16 +1,18 @@
 import subprocess
 import time
 import re
-import json
+
+MODEL_NOT_AVAILABLE_ERROR = "(error \"model not available\")"
 
 class Evaluator:
 
-    def __init__(self, name: str, cmd: str, params: str, timeout: int, kind: str, res_file):
+    def __init__(self, name: str, cmd: str, params: str, timeout: int, kind: str, res_file, err_file):
         self.name = name 
         self.cmd = cmd
         self.params = params
         self.timeout = timeout
         self.res_file = res_file
+        self.err_file = err_file
         self.tasks = []
         self.next_id = 0
         self.kind = kind
@@ -50,13 +52,15 @@ class Evaluator:
                     print("Err: ", err)
                     result = "error"
                 elif len(out) > 0:
-                    # Parse eventual errors
-                    if "(error \"" in out:
-                        print("Error [" + self.tasks[i] + "]: " + self.get_error(out))
-                        continue
+                    error = self.get_error(out)
+
                     # Check if unsat
-                    elif "unsat" in out:
+                    if "unsat" in out:
                         result = "unsat"
+                    # Parse eventual errors
+                    elif error and error != MODEL_NOT_AVAILABLE_ERROR:
+                        self.log_error(i, out)
+                        result = "error"
                     # Parse result
                     else:
                         result = "sat"
@@ -110,6 +114,11 @@ class Evaluator:
             file_line += "\n"
 
             self.res_file.write(file_line)
+
+    def log_error(self, task_id: int, out):
+        error = self.get_error(out)
+        err_line = self.tasks[task_id] + "," + error + "\n"
+        self.err_file.write(err_line)
 
     def get_objective(self, output):
         start = None
@@ -209,7 +218,7 @@ class Evaluator:
             if metric in stats:
                 line += str(stats[metric])
             else:
-                line += "NA"
+                line += "NF"
 
             line += ","
 

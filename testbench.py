@@ -29,6 +29,8 @@ omt_csv_header = ("kind,solver,timeout,test_case,result,time,optimum,partial_low
         + "nano-successful-sat-check-crosses,nano-total-sat-check-crosses,"
         + "nano-successful-sat-check-epsilon-box,nano-total-sat-check-epsilon-box\n")
 
+error_csv_header = ("test_case,error\n")
+
 ###############################################################################
 
 """
@@ -60,6 +62,11 @@ def main():
     result_file = open(result_file_path, "w+")
     result_file.write(smt_csv_header if config["kind"] == "SMT" else omt_csv_header)
 
+    # Create error file
+    error_file_path = base_path + solver_data["name"] + "_" + str(ts) + "_errors.csv"
+    error_file = open(error_file_path, "w+")
+    error_file.write(error_csv_header)
+
     # Create evaluator instances
     evaluators = []
     processes = int(config["processes"])
@@ -70,7 +77,8 @@ def main():
             solver_data["args"],
             int(config["timeout"]),
             config["kind"],
-            result_file
+            result_file,
+            error_file
         )
         evaluators.append(evaluator)
 
@@ -108,8 +116,9 @@ def main():
     for i in range(processes):
         threads[i].join()
     
-    # Close result file
+    # Close files
     result_file.close()
+    error_file.close()
 
 ###############################################################################
 
