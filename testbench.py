@@ -1,8 +1,8 @@
 from typing import Generator
 import yaml
 import os
-import time
 import threading
+import csv
 
 from evaluator.evaluator import Evaluator
 
@@ -51,9 +51,13 @@ def check_ext(file_path: str, ext: str = ".smt2") -> bool:
     return fext == ext
 
 
-def get_test_cases(paths: list[str]) -> Generator[str, None, None]:
+def get_test_cases(paths: list[str], computed: list[str]) -> Generator[str, None, None]:
     for path in paths:
         if os.path.isfile(path):
+            if path in computed:
+                print("[-] Skipping test case: already computed", path)
+                continue
+
             if check_ext(path):
                 yield path
             else:
@@ -62,10 +66,29 @@ def get_test_cases(paths: list[str]) -> Generator[str, None, None]:
         for root, _, files in os.walk(path):
             for file_path in files:
                 test_case = os.path.join(root, file_path)
+
+                if test_case in computed:
+                    print("[-] Skipping test case: already computed", test_case)
+                    continue
+
                 if check_ext(test_case):
                     yield test_case
                 else:
                     print("[-] Skipping test case: invalid file name", test_case)
+
+def get_already_computed_benchmarks(base_path: str) -> list[str]:
+    if not os.path.isfile(base_path):
+        print("[+] No results file for solver found.")
+        return []
+    
+    computed = []
+    with open(base_path) as csvfile:
+        benchmark = csv.reader(csvfile, delimiter=' ', quotechar='|')
+        for row in benchmark:
+            cols = row[0].split(",")
+            computed.append(cols[3])
+
+    return computed[1:]
 
 def main():
     config = get_config()
@@ -77,16 +100,20 @@ def main():
         return
 
     # Create output file
-    ts = int(time.time())
     base_path = config["results"]
-    result_file_path = base_path + solver_data["name"] + "_" + str(ts) + ".csv"
-    result_file = open(result_file_path, "w+")
-    result_file.write(smt_csv_header if config["kind"] == "SMT" else omt_csv_header)
+    result_file_path = base_path + solver_data["name"] + "_" + config["kind"] + ".csv"
+
+    already_computed = get_already_computed_benchmarks(result_file_path)
+
+    result_file = open(result_file_path, "a+")
+    if len(already_computed) == 0:
+        result_file.write(smt_csv_header if config["kind"] == "SMT" else omt_csv_header)
 
     # Create error file
-    error_file_path = base_path + solver_data["name"] + "_" + str(ts) + "_errors.csv"
-    error_file = open(error_file_path, "w+")
-    error_file.write(error_csv_header)
+    error_file_path = base_path + solver_data["name"] + "_" + config["kind"] + "_errors.csv"
+    error_file = open(error_file_path, "a+")
+    if len(already_computed) == 0:
+        error_file.write(error_csv_header)
 
     # Create evaluator instances
     evaluators = []
@@ -105,7 +132,7 @@ def main():
 
     # Run tests
     evaluator_id = 0
-    for test_case in get_test_cases(config["benchmarks"]):
+    for test_case in get_test_cases(config["benchmarks"], already_computed):
         evaluator = evaluators[evaluator_id]
         evaluator.add_task(test_case)
 
