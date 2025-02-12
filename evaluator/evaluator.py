@@ -23,10 +23,10 @@ class Evaluator:
     def solve(self):
         for i in range(self.next_id, len(self.tasks)):
             result = "timeout"
-            solve_time = 0
+            solve_time = self.timeout + 5
             optimum = "NF"
-            partial = None
-            model = None
+            partial = "NF"
+            model = "NF"
             stats = {}
             try:
                 command = self.cmd
@@ -53,29 +53,32 @@ class Evaluator:
                     result = "error"
                 elif len(out) > 0:
                     error = self.get_error(out)
+                    partial = self.get_partial_result(out) 
 
                     # Check if unsat
-                    if "unsat" in out:
+                    if out.startswith("unsat"):
                         result = "unsat"
                     # Parse eventual errors
                     elif error and error != MODEL_NOT_AVAILABLE_ERROR:
                         self.log_error(i, out)
                         result = "error"
                     # Parse result
-                    else:
+                    elif out.startswith("sat"):
                         result = "sat"
                         # TODO: Add support for multiple objectives
-                        obj = self.get_objective(out)
-                        if obj:
-                            optimum = obj
-
-                        partial = self.get_partial_result(out)
-                        if partial != None:
-                            result = "timeout"
-
-                        model = self.get_model(out)
-                        if model == None:
-                            result = "timeout"
+                        if self.kind == "OMT":
+                            obj = self.get_objective(out)
+                            if obj:
+                                optimum = obj
+                        else:   
+                            model = self.get_model(out)                    
+                    elif (partial and self.kind == "OMT") or self.kind == "SMT":
+                        result = "timeout"
+                    else:
+                        print("[-] Unhadled case with", self.tasks[i])
+                        result = "unhandled"
+                elif len(out) == 0:
+                    result = "crash"
 
                 # Parse statistics
                 stats = self.parse_stats(out)
@@ -83,6 +86,7 @@ class Evaluator:
                 solve_time = end_ts - start_ts
             except Exception as e:
                 print("[-] Solver timed out with test case " + self.tasks[i] + ": " + str(e))
+                result = "forced_timeout"
 
             # TODO: Avoid race conditions when updating result file
             file_line = self.kind + ","
@@ -127,7 +131,6 @@ class Evaluator:
         except:
             return None
         
-        # Parse from the first occurrence of `.cost0`
         parenthesis = 0
         obj = ""
 
@@ -154,7 +157,6 @@ class Evaluator:
         except:
             return None
         
-        # Parse from the first occurrence of `.cost0`
         error = "(error \""
         parenthesis = 0
 
