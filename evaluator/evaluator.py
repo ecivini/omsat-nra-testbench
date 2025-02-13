@@ -77,7 +77,7 @@ class Evaluator:
                     else:
                         print("[-] Unhadled case with", self.tasks[i])
                         result = "unhandled"
-                elif len(out) == 0:
+                elif len(out) == 0 and self.kind != "SMT":
                     result = "crash"
 
                 # Parse statistics
