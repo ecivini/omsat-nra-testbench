@@ -1,11 +1,12 @@
 import subprocess
+import resource
 import re
 
 MODEL_NOT_AVAILABLE_ERROR = "(error \"model not available\")"
 
 class Evaluator:
 
-    def __init__(self, name: str, cmd: str, params: str, timeout: int, kind: str, res_file: str, err_file: str):
+    def __init__(self, name: str, cmd: str, params: str, timeout: int, kind: str, memory_limit_mb: int, res_file: str, err_file: str):
         self.name = name 
         self.cmd = cmd
         self.params = params
@@ -14,9 +15,15 @@ class Evaluator:
         self.err_file = open(err_file, "a")
         self.task = ""
         self.kind = kind
+        self.memory_limit = memory_limit_mb
 
     def add_task(self, test_case: str):
         self.task = test_case
+
+    def set_memory_limit(self):
+        _, hard = resource.getrlimit(resource.RLIMIT_AS)
+        memory_limit_bytes = self.memory_limit * 1024 * 1024
+        resource.setrlimit(resource.RLIMIT_AS, (memory_limit_bytes, hard))
 
     def solve(self):
         result = "timeout"
@@ -37,7 +44,8 @@ class Evaluator:
                 command,
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE,
-                timeout=self.timeout + 5
+                timeout=self.timeout + 5,
+                preexec_fn=self.set_memory_limit
             )
 
             err = process.stderr.decode()

@@ -97,6 +97,7 @@ def solve_task(eval_data: dict) -> None:
         eval_data["args"],
         eval_data["timeout"],
         eval_data["kind"],
+        eval_data["memory_limit"],
         eval_data["result_file"],
         eval_data["error_file"]
     )
@@ -142,6 +143,7 @@ def main():
             "args": solver_data["args"],
             "timeout": int(config["timeout"]),
             "kind": config["kind"],
+            "memory_limit": config["memory"],
             "result_file": result_file_path,
             "error_file": error_file_path,
             "test_case": test_case

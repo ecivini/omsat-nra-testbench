@@ -5,6 +5,9 @@ solver:
   # NOTE: You have to specify the timeout parameter if you want accurate logs
   args: "-optimization=true -model -timeout=300000" 
 
+# MB of memory per core
+memory: 2048
+
 # Maximum allowed solving time per problem in seconds
 timeout: 300
 
