@@ -83,7 +83,8 @@ class Evaluator:
                 # Parse statistics
                 stats = self.parse_stats(out)
                 
-                solve_time = end_ts - start_ts
+                solve_time = str(stats["time-seconds"])
+                # solve_time = end_ts - start_ts
             except Exception as e:
                 print("[-] Solver timed out with test case " + self.tasks[i] + ": " + str(e))
                 result = "forced_timeout"
@@ -104,7 +105,7 @@ class Evaluator:
             file_line += result + ","
 
             # time
-            file_line += str(round(solve_time, 4)) + ","
+            file_line += solve_time + ","
 
             # Create specific data
             if self.kind == "OMT":
