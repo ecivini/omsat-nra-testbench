@@ -1,128 +1,122 @@
 import subprocess
-import time
 import re
 
 MODEL_NOT_AVAILABLE_ERROR = "(error \"model not available\")"
 
 class Evaluator:
 
-    def __init__(self, name: str, cmd: str, params: str, timeout: int, kind: str, res_file, err_file):
+    def __init__(self, name: str, cmd: str, params: str, timeout: int, kind: str, res_file: str, err_file: str):
         self.name = name 
         self.cmd = cmd
         self.params = params
         self.timeout = timeout
-        self.res_file = res_file
-        self.err_file = err_file
-        self.tasks = []
-        self.next_id = 0
+        self.res_file = open(res_file, "a")
+        self.err_file = open(err_file, "a")
+        self.task = ""
         self.kind = kind
 
     def add_task(self, test_case: str):
-        self.tasks.append(test_case)
+        self.task = test_case
 
     def solve(self):
-        for i in range(self.next_id, len(self.tasks)):
-            result = "timeout"
-            solve_time = self.timeout + 5
-            optimum = "NF"
-            partial = "NF"
-            model = "NF"
-            stats = {}
-            try:
-                command = self.cmd
-                if self.params != "":
-                    command += " " + self.params
-                command += " " + self.tasks[i]
+        result = "timeout"
+        solve_time = self.timeout + 5
+        optimum = "NF"
+        partial = "NF"
+        model = "NF"
+        stats = {}
+        try:
+            command = self.cmd
+            if self.params != "":
+                command += " " + self.params
+            command += " " + self.task
 
-                print("[+] Running " + command)
-                command = command.split(" ")
-                start_ts = time.time()
-                process = subprocess.run(
-                    command,
-                    stdout=subprocess.PIPE,
-                    stderr=subprocess.PIPE,
-                    timeout=self.timeout + 5
-                )
-                end_ts = time.time()
+            print("[+] Running " + command)
+            command = command.split(" ")
+            process = subprocess.run(
+                command,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                timeout=self.timeout + 5
+            )
 
-                err = process.stderr.decode()
-                out = process.stdout.decode()
+            err = process.stderr.decode()
+            out = process.stdout.decode()
 
-                if len(err) > 0:
-                    print("Err: ", err)
+            if len(err) > 0:
+                print("Err: ", err)
+                result = "error"
+            elif len(out) > 0:
+                error = self.get_error(out)
+                partial = self.get_partial_result(out) 
+
+                # Check if unsat
+                if out.startswith("unsat"):
+                    result = "unsat"
+                # Parse eventual errors
+                elif error and error != MODEL_NOT_AVAILABLE_ERROR:
+                    self.log_error(out)
                     result = "error"
-                elif len(out) > 0:
-                    error = self.get_error(out)
-                    partial = self.get_partial_result(out) 
+                # Parse result
+                elif out.startswith("sat"):
+                    result = "sat"
+                    # TODO: Add support for multiple objectives
+                    if self.kind == "OMT":
+                        obj = self.get_objective(out)
+                        if obj:
+                            optimum = obj
+                    else:   
+                        model = self.get_model(out)                    
+                elif (partial and self.kind == "OMT") or self.kind == "SMT":
+                    result = "timeout"
+                else:
+                    print("[-] Unhadled case with", self.task)
+                    result = "unhandled"
+            elif len(out) == 0 and self.kind != "SMT":
+                result = "crash"
 
-                    # Check if unsat
-                    if out.startswith("unsat"):
-                        result = "unsat"
-                    # Parse eventual errors
-                    elif error and error != MODEL_NOT_AVAILABLE_ERROR:
-                        self.log_error(i, out)
-                        result = "error"
-                    # Parse result
-                    elif out.startswith("sat"):
-                        result = "sat"
-                        # TODO: Add support for multiple objectives
-                        if self.kind == "OMT":
-                            obj = self.get_objective(out)
-                            if obj:
-                                optimum = obj
-                        else:   
-                            model = self.get_model(out)                    
-                    elif (partial and self.kind == "OMT") or self.kind == "SMT":
-                        result = "timeout"
-                    else:
-                        print("[-] Unhadled case with", self.tasks[i])
-                        result = "unhandled"
-                elif len(out) == 0 and self.kind != "SMT":
-                    result = "crash"
+            # Parse statistics
+            stats = self.parse_stats(out)
+            
+            solve_time = str(stats["time-seconds"])
+        except Exception as e:
+            print("[-] Solver timed out with test case " + self.task + ": " + str(e))
+            result = "forced_timeout"
 
-                # Parse statistics
-                stats = self.parse_stats(out)
-                
-                solve_time = str(stats["time-seconds"])
-                # solve_time = end_ts - start_ts
-            except Exception as e:
-                print("[-] Solver timed out with test case " + self.tasks[i] + ": " + str(e))
-                result = "forced_timeout"
+        # TODO: Avoid race conditions when updating result file
+        file_line = self.kind + ","
 
-            # TODO: Avoid race conditions when updating result file
-            file_line = self.kind + ","
+        # solver name
+        file_line += self.name + ","
 
-            # solver name
-            file_line += self.name + ","
+        # timeout
+        file_line += str(self.timeout) + ","
 
-            # timeout
-            file_line += str(self.timeout) + ","
+        # test case
+        file_line += self.task + ","
 
-            # test case
-            file_line += self.tasks[i] + ","
+        # result
+        file_line += result + ","
 
-            # result
-            file_line += result + ","
+        # time
+        file_line += solve_time + ","
 
-            # time
-            file_line += solve_time + ","
+        # Create specific data
+        if self.kind == "OMT":
+            file_line += self.create_omt_result(optimum, partial)
+        else:
+            file_line += self.create_smt_result(model)
 
-            # Create specific data
-            if self.kind == "OMT":
-                file_line += self.create_omt_result(optimum, partial)
-            else:
-                file_line += self.create_smt_result(model)
+        # stats
+        file_line += self.gen_stats_line(stats)
 
-            # stats
-            file_line += self.gen_stats_line(stats)
+        file_line += "\n"
 
-            file_line += "\n"
+        self.res_file.write(file_line)
 
-            self.res_file.write(file_line)
-
-    def log_error(self, task_id: int, out):
+    def log_error(self, out):
         error = self.get_error(out)
-        err_line = self.tasks[task_id] + "," + error + "\n"
+        err_line = self.task + "," + error + "\n"
         self.err_file.write(err_line)
 
     def get_objective(self, output):

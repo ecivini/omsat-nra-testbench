@@ -1,8 +1,8 @@
 from typing import Generator
 import yaml
 import os
-import threading
 import csv
+from multiprocessing import Pool
 
 from evaluator.evaluator import Evaluator
 
@@ -90,6 +90,20 @@ def get_already_computed_benchmarks(base_path: str) -> list[str]:
 
     return computed[1:]
 
+def solve_task(eval_data: dict) -> None:
+    evaluator = Evaluator(
+        eval_data["name"], 
+        eval_data["cmd"],
+        eval_data["args"],
+        eval_data["timeout"],
+        eval_data["kind"],
+        eval_data["result_file"],
+        eval_data["error_file"]
+    )
+
+    evaluator.add_task(eval_data["test_case"])
+    evaluator.solve()
+
 def main():
     config = get_config()
     solver_data = config["solver"]
@@ -108,48 +122,35 @@ def main():
     result_file = open(result_file_path, "a+")
     if len(already_computed) == 0:
         result_file.write(smt_csv_header if config["kind"] == "SMT" else omt_csv_header)
+    result_file.close()
 
     # Create error file
     error_file_path = base_path + solver_data["name"] + "_" + config["kind"] + "_errors.csv"
     error_file = open(error_file_path, "a+")
     if len(already_computed) == 0:
         error_file.write(error_csv_header)
+    error_file.close()
 
-    # Create evaluator instances
-    evaluators = []
     processes = int(config["processes"])
-    for _ in range(processes):
-        evaluator = Evaluator(
-            solver_data["name"], 
-            solver_data["cmd"],
-            solver_data["args"],
-            int(config["timeout"]),
-            config["kind"],
-            result_file,
-            error_file
-        )
-        evaluators.append(evaluator)
 
     # Run tests
-    evaluator_id = 0
+    evals_data = []
     for test_case in get_test_cases(config["benchmarks"], already_computed):
-        evaluator = evaluators[evaluator_id]
-        evaluator.add_task(test_case)
+        eval_config = {
+            "name": solver_data["name"], 
+            "cmd": solver_data["cmd"],
+            "args": solver_data["args"],
+            "timeout": int(config["timeout"]),
+            "kind": config["kind"],
+            "result_file": result_file_path,
+            "error_file": error_file_path,
+            "test_case": test_case
+        }
+        evals_data.append(eval_config)
 
-        evaluator_id = (evaluator_id + 1) % processes
-
-    # Start solving
-    threads = []
-    for i in range(processes):
-        t = threading.Thread(target=evaluators[i].solve)
-        threads.append(t)
-
-    for i in range(processes):
-        threads[i].start()
-
-    # Wait for completion
-    for i in range(processes):
-        threads[i].join()
+    with Pool(processes=processes) as pool:
+        for _ in pool.imap_unordered(solve_task, evals_data):
+            continue
     
     # Close files
     result_file.close()
