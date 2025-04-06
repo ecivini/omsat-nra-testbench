@@ -1,5 +1,8 @@
 import sys
 
+import matplotlib.pyplot as plt
+import numpy as np
+
 CSV_SEPARATOR = ","
 NUMBER_OF_FIELDS = 25
 TESTED_BENCHMARK_INDEX = 3
@@ -12,6 +15,49 @@ NANO_SAT_INDEX = 4
 NANO_CSV_HEADER = "exact_sub,check_crosses,epsilon_box,benchmark\n"
 ONLY_CSV_HEAHER = "benchmark\n"
 BOTH_CSV_HEADER = "nano_time,vanilla_time,benchmark\n"
+
+def create_scatter_plot(nano_times: list, vanilla_times: list):
+    x = np.array(nano_times)
+    y = np.array(vanilla_times)
+    timeout = 10
+
+    # Define tick positions (5 intermediate values)
+    tick_positions = np.linspace(0, timeout, 6)  # 6 ticks including 0 and 1000
+
+    # Create figure
+    fig, ax = plt.subplots(figsize=(7, 7))
+
+    # Scatter plot
+    ax.scatter(x, y, color='orange', edgecolors='black', label="Data Points", s=80, zorder=3)
+
+    # Reference line y = x
+    ax.plot([0, timeout], [0, timeout], 'k--', label="y = x", zorder=2)
+
+    # Timeout lines (dashed)
+    ax.axvline(timeout, linestyle='--', color='gray')
+    ax.axhline(timeout, linestyle='--', color='gray')
+
+    # Set limits
+    ax.set_xlim(left=0, right=timeout * 1.1)
+    ax.set_ylim(bottom=0, top=timeout * 1.1)
+
+    # Set custom tick marks
+    ax.set_xticks(tick_positions)
+    ax.set_yticks(tick_positions)
+
+    # Labels
+    ax.set_xlabel('MathSAT + NaNo', fontsize=12)
+    ax.set_ylabel('MathSAT Only', fontsize=12)
+
+    # Grid
+    ax.grid(True, linestyle=":", linewidth=0.5)
+
+    # Legend
+    ax.legend()
+
+    # Show plot
+    plt.tight_layout()
+    plt.show()
 
 def process_vanilla_line(line):
     benchmark = line[TESTED_BENCHMARK_INDEX]
@@ -66,6 +112,9 @@ def compute_solved_by_nano(nano_csv_path: str, vanilla_csv_path: str):
                     vanilla_csv.write(line)
         
         # Output problems solved by both solvers
+        x_times = []
+        y_times = []
+
         both_short_path = vanilla_csv_path[:-4] + "_both.csv"
         with open(both_short_path, "w+") as both_csv:
             both_csv.write(BOTH_CSV_HEADER)
@@ -76,6 +125,9 @@ def compute_solved_by_nano(nano_csv_path: str, vanilla_csv_path: str):
                         problem + "\n"
                     both_csv.write(line)
 
+                    x_times.append(float(nano_times[problem]))
+                    y_times.append(float(vanilla_times[problem]))
+
         # Output problems solved by nano only
         nano_only_path = nano_csv_path[:-4] + "_only.csv"
         with open(nano_only_path, "w+") as only_csv:
@@ -84,6 +136,8 @@ def compute_solved_by_nano(nano_csv_path: str, vanilla_csv_path: str):
                 if problem not in vanilla_sat_problems:
                     line = problem + "\n"
                     only_csv.write(line)
+
+        create_scatter_plot(x_times, y_times)
 
 def process_smt_csv(input_csv_path: str, is_nano: bool):
     sat_problems = []
