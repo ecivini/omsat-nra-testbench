@@ -3,6 +3,7 @@ import yaml
 import os
 import csv
 from multiprocessing import Pool
+import random
 
 from evaluator.evaluator import Evaluator
 
@@ -150,6 +151,7 @@ def main():
         }
         evals_data.append(eval_config)
 
+    random.shuffle(evals_data)
     with Pool(processes=processes) as pool:
         for _ in pool.imap_unordered(solve_task, evals_data):
             continue
