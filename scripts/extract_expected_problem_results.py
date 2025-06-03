@@ -14,12 +14,20 @@ BENCHMARK_RESULT_INDEX = 4
 expected_results = {}
 missing_or_unknown_result = []
 
+if os.path.isfile(RESULT_OUTPUT_PATH):
+    print("Loading previously computed expected results.")
+    with open(RESULT_OUTPUT_PATH, "r") as output_file:
+        expected_results = json.load(output_file)
+
 for base_path, dirs, files in os.walk(BENCHMARKS_PATH):
     for file in files:
         if file in [".", ".."]:
             continue
 
         path = os.path.join(base_path, file)
+        if expected_results.get(path) in ["unsat", "sat"]:
+            continue
+
         with open(path, "r") as test_case:
             content = test_case.read()
             result = re.search(EXPECTED_RESULT_PATTERN, content)
@@ -27,7 +35,7 @@ for base_path, dirs, files in os.walk(BENCHMARKS_PATH):
                 missing_or_unknown_result.append(file)
                 print("No matches found for ", path)
                 continue
-            
+
             result = result.group(1)
             if result == "unknown":
                 missing_or_unknown_result.append(file)
