@@ -5,3 +5,8 @@ __pycache__
 # Configuration files
 config.yaml
 results
+
+non-incremental
+benchmarks/Test/SMT
+benchmarks/Test/adhoc
+latest_benchmark.csv
