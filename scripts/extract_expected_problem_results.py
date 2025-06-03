@@ -1,0 +1,46 @@
+import json
+import os
+import re
+
+BENCHMARKS_PATH = "benchmarks/"
+RESULT_OUTPUT_PATH = "./data/expected_results.json"
+LATEST_BENCHMARK = "./data/latest_benchmark.csv"
+
+EXPECTED_RESULT_PATTERN = r"\(set-info\s+:status\s+(sat|unsat|unknown)\)"
+
+BENCHMARK_PATH_INDEX = 3
+BENCHMARK_RESULT_INDEX = 4
+
+expected_results = {}
+missing_result = []
+
+for base_path, dirs, files in os.walk(BENCHMARKS_PATH):
+    for file in files:
+        if file in [".", ".."]:
+            continue
+
+        path = os.path.join(base_path, file)
+        with open(path, "r") as test_case:
+            content = test_case.read()
+            result = re.search(EXPECTED_RESULT_PATTERN, content)
+            if not result:
+                missing_result.append(file)
+                print("No matches found for ", path)
+                continue
+
+            expected_results[path] = result.group(1)
+
+if len(missing_result) > 0:
+    results_from_benchmark = {}
+    with open(LATEST_BENCHMARK, "r") as benchmark_file:
+        for line in benchmark_file.readlines()[1:]:
+            fields = line.split(",")
+            
+            path = fields[BENCHMARK_PATH_INDEX]
+            result = fields[BENCHMARK_RESULT_INDEX]
+            if path not in expected_results and result in ["unsat", "sat"]:
+                print("Adding result from benchmark for ", path)
+                expected_results[path] = result
+
+with open(RESULT_OUTPUT_PATH, "w+") as output_file:
+    json.dump(expected_results, output_file, indent=2)
