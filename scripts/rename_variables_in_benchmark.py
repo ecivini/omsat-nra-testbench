@@ -10,6 +10,10 @@ PI_REPLACEMENT_MAP = {
     "(pi ": "(" + PI_REPLACEMENT + " ",
 }
 
+NUM_REPLACEMENT_MAP = {
+    "|1" : "|v_1",
+}
+
 for base_path, dirs, files in os.walk(BENCHMARKS_PATH):
     for file in files:
         if file in [".", ".."]:
@@ -20,13 +24,16 @@ for base_path, dirs, files in os.walk(BENCHMARKS_PATH):
         full_path = os.path.join(base_path, file)
         with open(full_path, "r") as benchmark_file:
             benchmark = benchmark_file.read()
-            if not PI_DECLARATION in benchmark:
-                continue
+            if PI_DECLARATION in benchmark:
+                print("Updating PI:", full_path)
 
-            print("Updating", full_path)
-
-            for original, replacement in PI_REPLACEMENT_MAP.items():
-                benchmark = benchmark.replace(original, replacement)
+                for original, replacement in PI_REPLACEMENT_MAP.items():
+                    benchmark = benchmark.replace(original, replacement)
+            
+            for original, replacement in NUM_REPLACEMENT_MAP.items():
+                if original in benchmark:
+                    print("Updating NUM:", full_path)
+                    benchmark = benchmark.replace(original, replacement)
 
         with open(full_path, "w") as benchmark_file:
             benchmark_file.write(benchmark)
