@@ -83,14 +83,17 @@ def create_and_save_plot(nano_times: list, vanilla_times: list, save_path: str, 
     cutoff = NANO_TIMEOUT + NANO_TIMEOUT
     nano = [t for t in nano_times if t <= cutoff]
     vanilla = [t for t in vanilla_times if t <= cutoff]
+    virtual_best = [min(t_nano, t_vanilla) for t_nano, t_vanilla in zip(nano, vanilla)]
 
     x1 = np.arange(1, len(nano) + 1)
     x2 = np.arange(1, len(vanilla) + 1)
+    x3 = np.arange(1, len(virtual_best) + 1)
 
     # Plot
     plt.figure(figsize=(10, 6))
-    plt.plot(x1, nano, label="NaNo", marker='o', markersize=3)
-    plt.plot(x2, vanilla, label="Vanilla", marker='^', markersize=3)
+    plt.plot(x1, nano, label="NaNo", marker='o', markersize=2)
+    plt.plot(x2, vanilla, label="Vanilla", marker='^', markersize=2)
+    plt.plot(x3, virtual_best, label="Virtual Best", marker='s', markersize=1)
 
     plt.xlabel(label)
     plt.ylabel("Time (s)")
