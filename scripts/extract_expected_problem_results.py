@@ -34,11 +34,11 @@ for base_path, dirs, files in os.walk(BENCHMARKS_PATH):
             if not result:
                 missing_or_unknown_result.append(file)
                 print("No matches found for ", path)
-                continue
-
-            result = result.group(1)
-            if result == "unknown":
-                missing_or_unknown_result.append(file)
+                result = "unknown"
+            else:
+                result = result.group(1)
+                if result == "unknown":
+                    missing_or_unknown_result.append(file)
 
             expected_results[path] = result
 
