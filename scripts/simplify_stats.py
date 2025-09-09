@@ -27,7 +27,7 @@ SMT_PARAMS_NUM = 25
 EXPECTED_RESULTS_PATH = "./data/expected_results.json"
 
 NANO_CSV_HEADER = "exact_sub,check_crosses,epsilon_box,benchmark\n"
-ONLY_CSV_HEAHER = "benchmark\n"
+ONLY_CSV_HEADER = "benchmark\n"
 BOTH_CSV_HEADER = "nano_time,vanilla_time,benchmark\n"
 
 def get_problems_from_expected_result(result: str) -> dict:
@@ -131,7 +131,7 @@ def compute_solved_by_nano(nano_csv_path: str, vanilla_csv_path: str):
         # Output problems solved by vanilla only
         vanilla_only_path = vanilla_csv_path[:-4] + "_only.csv"
         with open(vanilla_only_path, "w+") as vanilla_csv:
-            vanilla_csv.write(ONLY_CSV_HEAHER)
+            vanilla_csv.write(ONLY_CSV_HEADER)
             for problem in vanilla_data["sat"]:
                 if problem not in nano_data["sat"]:
                     line = problem + "\n"
@@ -151,7 +151,7 @@ def compute_solved_by_nano(nano_csv_path: str, vanilla_csv_path: str):
         # Output problems solved by nano only
         nano_only_path = nano_csv_path[:-4] + "_only.csv"
         with open(nano_only_path, "w+") as only_csv:
-            only_csv.write(ONLY_CSV_HEAHER)
+            only_csv.write(ONLY_CSV_HEADER)
             for problem in nano_data["sat"]:
                 if problem not in vanilla_data["sat"]:
                     line = problem + "\n"
