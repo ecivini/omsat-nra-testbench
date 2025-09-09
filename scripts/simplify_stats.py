@@ -4,13 +4,25 @@ import json
 import matplotlib.pyplot as plt
 
 CSV_SEPARATOR = ","
-NUMBER_OF_FIELDS = 25
 TESTED_BENCHMARK_INDEX = 3
-TIME_INDEX = 5
-NANO_SUCCESSFUL_EXACT_SUB_INDEX = 19
-NANO_SUCCESSFUL_CHECK_CROSSES_INDEX = 21
-NANO_SUCCESSFUL_EPSILON_BOX_INDEX = 23
 NANO_SAT_INDEX = 4
+TIME_INDEX = 5
+
+NANO_CSV_INDEX_MAP = {
+    "SMT": {
+        "successful_exact_sub": 19,
+        "successful_check_crosses": 21,
+        "successful_epsilon_box": 23
+    }, 
+    "OMT": {
+        "successful_exact_sub": 21,
+        "successful_check_crosses": 23,
+        "successful_epsilon_box": 25
+    }
+}
+
+OMT_PARAMS_NUM = 27
+SMT_PARAMS_NUM = 25
 
 EXPECTED_RESULTS_PATH = "./data/expected_results.json"
 
@@ -84,11 +96,11 @@ def process_vanilla_line(line):
         "result": problem_result
     }
 
-def process_nano_line(line):
+def process_nano_line(line: list, problem_type: str):
     benchmark = line[TESTED_BENCHMARK_INDEX]
-    succ_exact_sub = line[NANO_SUCCESSFUL_EXACT_SUB_INDEX]
-    succ_check_crosses = line[NANO_SUCCESSFUL_CHECK_CROSSES_INDEX]
-    succ_epsilon_box = line[NANO_SUCCESSFUL_EPSILON_BOX_INDEX]
+    succ_exact_sub = line[NANO_CSV_INDEX_MAP[problem_type]["successful_exact_sub"]]
+    succ_check_crosses = line[NANO_CSV_INDEX_MAP[problem_type]["successful_check_crosses"]]
+    succ_epsilon_box = line[NANO_CSV_INDEX_MAP[problem_type]["successful_epsilon_box"]]
     problem_result = line[NANO_SAT_INDEX]
     time = line[TIME_INDEX]
     
@@ -111,10 +123,10 @@ def process_nano_line(line):
     }
 
 def compute_solved_by_nano(nano_csv_path: str, vanilla_csv_path: str):
-    nano_data = process_smt_csv(nano_csv_path, True)
+    nano_data = process_csv(nano_csv_path, True)
     
     if vanilla_csv_path:
-        vanilla_data = process_smt_csv(vanilla_csv_path, False)
+        vanilla_data = process_csv(vanilla_csv_path, False)
 
         # Output problems solved by vanilla only
         vanilla_only_path = vanilla_csv_path[:-4] + "_only.csv"
@@ -202,7 +214,7 @@ def compute_solved_by_nano(nano_csv_path: str, vanilla_csv_path: str):
 
         create_scatter_plot(data)
 
-def process_smt_csv(input_csv_path: str, is_nano: bool):
+def process_csv(input_csv_path: str, is_nano: bool):
     sat_problems = []
     unsat_problems = []
     timeout_problems = []
@@ -220,19 +232,31 @@ def process_smt_csv(input_csv_path: str, is_nano: bool):
         solved_by_exact_sub = 0
         solved_by_check_crosses = 0
         solved_by_epsilon_box = 0
+        problem_type = None
+        expected_number_of_fields = 0
         for index, line in enumerate(input_csv):
             if index == 0:
+                line_vals_num = len(line.split(","))
+                if line_vals_num not in [OMT_PARAMS_NUM, SMT_PARAMS_NUM]:
+                    break
+
+                if line_vals_num == OMT_PARAMS_NUM:
+                    problem_type = "OMT"
+                    expected_number_of_fields = OMT_PARAMS_NUM
+                elif line_vals_num == SMT_PARAMS_NUM:
+                    problem_type = "SMT"
+                    expected_number_of_fields = SMT_PARAMS_NUM
                 continue
         
             line_vals = line.split(",")
-            if len(line_vals) != NUMBER_OF_FIELDS:
+            if len(line_vals) != expected_number_of_fields:
                 print("Incorrect number of fields at line", index + 1)
                 break
 
             benchmark = None
             solving_time = None
             if is_nano:
-                stats = process_nano_line(line_vals)
+                stats = process_nano_line(line_vals, problem_type)
                 if stats["result"] == "sat": 
                     if stats["exact_sub"] != "NF" and int(stats["exact_sub"]) > 0:
                         solved_by_exact_sub += 1
@@ -257,7 +281,7 @@ def process_smt_csv(input_csv_path: str, is_nano: bool):
                 sat_problems.append(benchmark)
             elif stats["result"] == "unsat":
                 unsat_problems.append(benchmark)
-            elif stats["result"] in ["timeout", "forced_timeout"]:
+            elif stats["result"] in ["timeout", "forced_timeout", "unhandled"]:
                 timeout_problems.append(benchmark)
             else:
                 error_problem.append(benchmark)
